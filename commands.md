@@ -1,0 +1,15 @@
+# A list of commands to be used in antigravity
+- @ for mentioning files
+- /agents to list all agents
+- /btw side question
+- /clear new conversation
+- /context visualizes context used
+- /hooks manage hooks
+- /planning plan a project before execution
+- /statusline toggles status line
+- /tasks view background tasks
+- /usage view usage quota
+- /goal will keep running until complete
+- /schedule a recurring prompt.
+- /teamwork-preview Invokes a team of agents to handle large tasks
+- /learn creates skills to improve or keep quality from a conversation.
