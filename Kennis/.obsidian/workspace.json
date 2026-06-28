@@ -21,10 +21,14 @@
             "id": "627d6efca7d732b1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "website-council.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "website-council"
             }
           }
         ],
@@ -189,10 +193,18 @@
   },
   "active": "627d6efca7d732b1",
   "lastOpenFiles": [
+    "logs/2026-06-28 - Website Council Review.md",
+    "Status.md",
+    "website-council.md",
+    "gbp_services.md",
+    "SEO-TOOL-PRD.md",
+    "Readme.md",
+    "PROJECTS.md",
+    "progress.md",
+    "Products and Pricing.md",
     "council.md",
     "logs/2026-06-28 - Page Removal & Mobile Perf.md",
     "logs/2026-06-28 - Magisdata Dashboard Council.md",
-    "SEO-TOOL-PRD.md",
     "SOP's/video-to-prd-SOP.md",
     "2026-06-27.md",
     "Untitled.canvas",
@@ -207,15 +219,8 @@
     "Templates/Client Template.md",
     "dashboard-PRD.md",
     "decisions.md",
-    "Products and Pricing.md",
-    "progress.md",
-    "PROJECTS.md",
-    "Status.md",
-    "Readme.md",
     "logs/2026-06-26 - Vault Initialization and Dashboard PRD.md",
     "Templates",
-    "logs/2026-06-26 - Skill Creation.md",
-    "Welcome.md",
     "SOP's",
     "logs"
   ]
