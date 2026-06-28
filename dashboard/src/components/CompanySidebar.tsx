@@ -17,6 +17,7 @@ export default function CompanySidebar() {
       title: "OPERATIONS",
       links: [
         { name: "Clients & Projects", path: "/company/clients" },
+        { name: "Customers", path: "/company/customers" },
         { name: "Tasks & Todos", path: "/company/tasks" },
       ]
     },
