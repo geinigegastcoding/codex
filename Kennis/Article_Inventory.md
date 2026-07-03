@@ -6,7 +6,6 @@ Dit document dient als centrale database voor het tracken van alle gegenereerde 
 
 | Datum | Slug / URL | Focus Keywords | Status | Auteur |
 |---|---|---|---|---|
-| 03-07-2026 | `/inzichten/website-laten-maken-leiden-kosten` | "website laten maken leiden", "website kosten" | Live | Daniël Magis |
 | 03-07-2026 | `/inzichten/heeft-een-loodgieter-een-website-nodig` | "website loodgieter", "heeft een loodgieter een website nodig" | Live | Daniël Magis |
 
 ## Content Gap Analysis (Voorbeeld / Te plannen)
