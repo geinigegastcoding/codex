@@ -1,0 +1,24 @@
+{
+  "name": "magisdata-local-business-hero-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.ts LocalBusinessHero ../magisdata-lokale-bedrijven-hero.mp4 --codec=h264 --pixel-format=yuv420p --overwrite",
+    "still:intro": "remotion still src/index.ts LocalBusinessHero review/intro.png --frame=45 --overwrite",
+    "still:build": "remotion still src/index.ts LocalBusinessHero review/build.png --frame=135 --overwrite",
+    "still:flow": "remotion still src/index.ts LocalBusinessHero review/flow.png --frame=225 --overwrite",
+    "still:cta": "remotion still src/index.ts LocalBusinessHero review/cta.png --frame=330 --overwrite"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}

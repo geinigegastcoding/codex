@@ -31,6 +31,6 @@ This repo is activaly being used between two seperate computers. This means that
 So here is a rule you can use to find where to work. 
 - If the project file is opened in `C:\Users\Daniël\Desktop\Codex` it means that the repo is located on the laptop. This means that all mentions of a E:\MData is not relevant and should be replaced by this one for example instead of E:\MData\Kennis\council use C:\Users\Daniël\Desktop\Codex\Kennis\council. When you know you are working on the laptop a quick way to see this is checking if there is a E drive because the laptop doesn't have it. 
 - If the project file is opened in E:\MData than proceed with the regular file path descriptions or as mentioned above replace the file paths of the laptop with the one associated with the E drive instead. 
-
+- **Verify when working on website**: When you are working on the main website of magisdata always verify your work using screenshots. 
 ## Dashboard Status
 - Het dashboard wordt op dit moment niet gebruikt en zal later weer worden opgepakt. 
