@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{brandnaam} — A boutique real estate agency in {locatie} combining market expertise with personalized service. Browse luxury listings today.">
+  <title>{brandnaam} — Premium Real Estate in {locatie}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --dark-bg: #141010;
+      --dark-bg-alt: #1c1614;
+      --cream: #f5f0e8;
+      --cream-alt: #ede6da;
+      --gold: #c8a45a;
+      --gold-hover: #dbb96e;
+      --text-light: #f5f0e8;
+      --text-dark: #1a1410;
+      --text-muted: #a09888;
+      --border-light: rgba(200, 164, 90, 0.15);
+      --border-dark: rgba(0,0,0,0.08);
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-width: 1200px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--dark-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button { cursor: pointer; font-family: inherit; }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== HEADER / NAV ===== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 18px 0;
+      background: rgba(20, 16, 16, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      transition: background var(--transition);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--text-light);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      transition: color var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--gold);
+      transition: width var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-light);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-light) !important;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-cta .arrow {
+      transition: transform var(--transition);
+    }
+
+    .nav-cta:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 1.5rem;
+      padding: 4px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--dark-bg-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .hero-bg::after {
+      content: '[ Hero Background — Luxury Home Exterior — 16:9 ]';
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(20, 16, 16, 0.5) 0%,
+        rgba(20, 16, 16, 0.3) 40%,
+        rgba(20, 16, 16, 0.6) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-laurel {
+      width: 280px;
+      height: 160px;
+      margin: 0 auto 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* SVG laurel wreath */
+    .hero-laurel svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.45;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      font-weight: 400;
+      letter-spacing: 8px;
+      line-height: 1.1;
+      color: var(--cream);
+      text-transform: uppercase;
+      margin-top: -20px;
+      animation: heroFadeUp 1.2s ease-out;
+    }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== FEATURED LISTINGS ===== */
+    .featured {
+      background: var(--dark-bg-alt);
+      padding: 80px 0;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 48px;
+      color: var(--cream);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .listings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .listing-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+
+    .listing-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .listing-img {
+      aspect-ratio: 4/3;
+      background: #2a2220;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    /* ===== WHY / SERVICES ===== */
+    .why-section {
+      background: var(--cream);
+      color: var(--text-dark);
+      padding: 100px 0;
+    }
+
+    .why-section .section-subtitle {
+      color: var(--gold);
+    }
+
+    .why-section .section-title {
+      color: var(--text-dark);
+      margin-bottom: 56px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+      border: 1px solid var(--border-dark);
+      transition: transform var(--transition), box-shadow var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+
+    .service-card-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: var(--dark-bg);
+      color: var(--cream);
+      margin-bottom: 14px;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+    }
+
+    .service-card p {
+      font-size: 0.88rem;
+      color: #6b6258;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .service-card-img {
+      aspect-ratio: 16/9;
+      background: var(--cream-alt);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      margin-top: 12px;
+    }
+
+    .service-card-link {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: gap var(--transition);
+    }
+
+    .service-card-link:hover {
+      gap: 8px;
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    /* ===== TESTIMONIAL / ABOUT ===== */
+    .testimonial {
+      background: var(--cream);
+      color: var(--text-dark);
+      padding: 80px 0 100px;
+      text-align: center;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .testimonial-avatars {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .avatar-placeholder {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--cream-alt);
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.55rem;
+      color: var(--text-muted);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .testimonial-quote {
+      max-width: 560px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #4a4038;
+      margin-bottom: 28px;
+    }
+
+    .testimonial-quote strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+
+    .testimonial-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      background: var(--cream);
+      color: var(--text-dark);
+      padding: 80px 0 100px;
+    }
+
+    .faq .section-title {
+      color: var(--text-dark);
+    }
+
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 0;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: color var(--transition);
+    }
+
+    .faq-question:hover {
+      color: var(--gold);
+    }
+
+    .faq-icon {
+      font-size: 1.2rem;
+      transition: transform var(--transition);
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+
+    .faq-answer p {
+      font-size: 0.88rem;
+      color: #6b6258;
+      line-height: 1.7;
+    }
+
+    /* ===== INSIGHTS / BLOG ===== */
+    .insights {
+      background: var(--dark-bg);
+      padding: 100px 0;
+    }
+
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .insight-card {
+      cursor: pointer;
+      transition: transform var(--transition);
+    }
+
+    .insight-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .insight-img {
+      aspect-ratio: 4/3;
+      background: var(--dark-bg-alt);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      overflow: hidden;
+    }
+
+    .insight-card h3 {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .insight-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ===== CONTACT FORM ===== */
+    .contact {
+      background: var(--dark-bg-alt);
+      padding: 100px 0;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .contact-form {
+      max-width: 520px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-light);
+      margin-bottom: 2px;
+      margin-top: 14px;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 14px 16px;
+      background: transparent;
+      border: 1px solid rgba(200, 164, 90, 0.2);
+      border-radius: var(--radius-sm);
+      color: var(--text-light);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+      color: var(--text-muted);
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(200, 164, 90, 0.1);
+    }
+
+    .form-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a09888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      cursor: pointer;
+    }
+
+    .form-select option {
+      background: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-submit {
+      margin-top: 24px;
+      padding: 16px 40px;
+      background: var(--gold);
+      color: var(--dark-bg);
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: background var(--transition), transform var(--transition);
+      align-self: center;
+    }
+
+    .form-submit:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--dark-bg);
+      padding: 80px 0 0;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .footer-brand {
+      font-family: var(--font-sans);
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      letter-spacing: 12px;
+      text-align: center;
+      color: var(--cream);
+      margin-bottom: 60px;
+      text-transform: uppercase;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--cream);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      transition: color var(--transition);
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .footer-description {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .footer-description a {
+      color: var(--cream);
+      font-weight: 500;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+    }
+
+    .footer-copyright {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: rgba(200, 164, 90, 0.1);
+      border: 1px solid var(--border-light);
+      font-size: 0.78rem;
+      color: var(--text-light);
+      transition: background var(--transition), border-color var(--transition);
+    }
+
+    .social-btn:hover {
+      background: rgba(200, 164, 90, 0.2);
+      border-color: var(--gold);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .listings-grid,
+      .insights-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(20, 16, 16, 0.98);
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid var(--border-light);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .hero h1 {
+        letter-spacing: 4px;
+      }
+
+      .services-grid,
+      .listings-grid,
+      .insights-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-brand {
+        letter-spacing: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo">{brandnaam}</a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#featured">Listings</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#featured" class="nav-cta">View listings <span class="arrow">→</span></a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-laurel">
+        <svg viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Left laurel branch -->
+          <g opacity="0.6" stroke="#c8a45a" stroke-width="1.2" fill="none">
+            <path d="M140 140 C120 130, 90 120, 70 95"/>
+            <path d="M100 125 C90 115, 75 108, 60 88"/>
+            <path d="M110 118 C95 105, 82 95, 55 75"/>
+            <path d="M118 108 C100 92, 88 82, 50 60"/>
+            <path d="M125 96 C108 80, 95 68, 52 45"/>
+            <path d="M130 82 C115 66, 100 52, 60 30"/>
+            <path d="M135 66 C122 50, 110 38, 75 18"/>
+          </g>
+          <!-- Right laurel branch -->
+          <g opacity="0.6" stroke="#c8a45a" stroke-width="1.2" fill="none">
+            <path d="M140 140 C160 130, 190 120, 210 95"/>
+            <path d="M180 125 C190 115, 205 108, 220 88"/>
+            <path d="M170 118 C185 105, 198 95, 225 75"/>
+            <path d="M162 108 C180 92, 192 82, 230 60"/>
+            <path d="M155 96 C172 80, 185 68, 228 45"/>
+            <path d="M150 82 C165 66, 180 52, 220 30"/>
+            <path d="M145 66 C158 50, 170 38, 205 18"/>
+          </g>
+        </svg>
+      </div>
+      <h1>{brandnaam} Homes</h1>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED LISTINGS ===== -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2 class="section-title fade-in">Featured listings</h2>
+      <div class="listings-grid">
+        <div class="listing-card fade-in">
+          <div class="listing-img">[ Property Image — Modern Villa — 4:3 ]</div>
+        </div>
+        <div class="listing-card fade-in">
+          <div class="listing-img">[ Property Image — City Penthouse — 4:3 ]</div>
+        </div>
+        <div class="listing-card fade-in">
+          <div class="listing-img">[ Property Image — Country Estate — 4:3 ]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY / SERVICES ===== -->
+  <section class="why-section" id="services">
+    <div class="container">
+      <p class="section-subtitle fade-in">Why {brandnaam}?</p>
+      <h2 class="section-title fade-in">Your Journey to the Perfect Home, Simplified</h2>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <span class="service-card-badge">⬡ Browse Listings</span>
+          <div class="service-card-img">[ Listing Preview — Residential Properties ]</div>
+          <p>Explore our curated portfolio of residential and commercial properties at your own pace.</p>
+          <div class="stars">★★★★★</div>
+          <a href="#" class="service-card-link">Browse listing <span>→</span></a>
+        </div>
+        <div class="service-card fade-in">
+          <h3>Connect With Us</h3>
+          <p>We guide you through every step of the offer, negotiation, and closing process with full transparency.</p>
+          <div class="service-card-img">[ Team Photo — {brandnaam} Advisors ]</div>
+        </div>
+        <div class="service-card fade-in">
+          <h3>Close With Confidence</h3>
+          <p>We guide you through every step of the offer, negotiation, and closing process to ensure a smooth transaction.</p>
+          <div class="service-card-img">[ Property Image — Closing Process ]</div>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-card-badge">View 360°</span>
+          <h3>Always happy to serve you</h3>
+          <p>Whether you have a question, need guidance on a listing, or are ready to make an offer — we're here for you every step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL / ABOUT ===== -->
+  <section class="testimonial" id="about">
+    <div class="container">
+      <div class="testimonial-avatars fade-in">
+        <div class="avatar-placeholder">👤</div>
+        <div class="avatar-placeholder">👤</div>
+        <div class="avatar-placeholder">👤</div>
+      </div>
+      <div class="testimonial-quote fade-in">
+        <strong>Real Estate, Done with Integrity</strong>
+        At {brandnaam}, we believe finding a home is one of life's most meaningful moments. That's why we combine deep local market knowledge with personalized service — treating every client not as a transaction, but as a relationship worth nurturing.
+      </div>
+      <p class="testimonial-author fade-in">Founder &amp; Co-founder</p>
+      <p class="testimonial-role fade-in">{voornaam} &amp; {achternaam}</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            How do I get started with {brandnaam}?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Getting started is simple. Browse our listings online, reach out through our contact form, or give us a call. One of our dedicated advisors will guide you through the entire process.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Are the properties on {brandnaam} available for both buying and renting?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we offer both purchase and rental options across residential and commercial properties in {locatie} and surrounding areas.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            How accurate are the property prices listed on the site?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>All prices are regularly updated and verified by our team. We strive for full transparency, but final pricing may vary based on negotiations and market conditions.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            How long does it typically take to close a property deal?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>On average, a property deal takes between 4 to 8 weeks to close, depending on the complexity of the transaction and financing arrangements.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Does {brandnaam} charge buyers a fee for its services?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No, our buyer services are completely free. We are compensated through the seller's commission, so you receive expert guidance at no cost.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Can I schedule a property viewing through {brandnaam}?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! You can schedule a viewing directly through our website or contact our team. We also offer virtual 360° tours for select properties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSIGHTS / BLOG ===== -->
+  <section class="insights" id="insights">
+    <div class="container">
+      <p class="section-subtitle fade-in">Real Estate Insights</p>
+      <h2 class="section-title fade-in">Ideas and inspiration for every step</h2>
+      <div class="insights-grid">
+        <div class="insight-card fade-in">
+          <div class="insight-img">[ Blog Image — Real Estate Agent ]</div>
+          <h3>What Does a Real Estate Agent Actually Do for You?</h3>
+          <p class="insight-meta">Article · Jan 12, 2025</p>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="insight-img">[ Blog Image — Neighborhood ]</div>
+          <h3>How to Choose the Right Neighborhood — Before You Fall in Love With a House</h3>
+          <p class="insight-meta">Article · Jan 9, 2025</p>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="insight-img">[ Blog Image — Hidden Costs ]</div>
+          <h3>The Hidden Costs of Buying a Home — And How to Budget for Them</h3>
+          <p class="insight-meta">Article · Jan 5, 2025</p>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="insight-img">[ Blog Image — Smart Investing ]</div>
+          <h3>The Smart Investor's Guide to Real Estate in 2025</h3>
+          <p class="insight-meta">Article · Dec 28, 2024</p>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="insight-img">[ Blog Image — Renting vs Buying ]</div>
+          <h3>Renting vs. Buying in 2025 — Which Actually Makes More Financial Sense?</h3>
+          <p class="insight-meta">Guide · Dec 20, 2024</p>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="insight-img">[ Blog Image — Property Viewing ]</div>
+          <h3>What to Look for During a Property Viewing — A Room by Room Guide</h3>
+          <p class="insight-meta">Checklist · Dec 15, 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <form class="contact-form fade-in" id="contact-form" onsubmit="return false;">
+        <label class="form-label" for="name">Name</label>
+        <input type="text" id="name" class="form-input" placeholder="Jane Smith">
+
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="form-input" placeholder="jane@example.com">
+
+        <label class="form-label" for="services">Services</label>
+        <select id="services" class="form-select">
+          <option value="" disabled selected>Select a service</option>
+          <option value="buying">Buying</option>
+          <option value="selling">Selling</option>
+          <option value="renting">Renting</option>
+          <option value="valuation">Property Valuation</option>
+        </select>
+
+        <label class="form-label" for="property-listing">Property listing</label>
+        <select id="property-listing" class="form-select">
+          <option value="" disabled selected>Select a listing</option>
+          <option value="villa">Modern Villa — {locatie}</option>
+          <option value="penthouse">City Penthouse — {locatie}</option>
+          <option value="estate">Country Estate — {locatie}</option>
+        </select>
+
+        <label class="form-label" for="message">Message</label>
+        <textarea id="message" class="form-textarea" placeholder="Let us know how we can help..."></textarea>
+
+        <button type="submit" class="form-submit" id="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-brand fade-in">{brandnaam}</div>
+      <div class="footer-grid fade-in">
+        <div class="footer-col">
+          <h4>Site Maps</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">All Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter / X</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-description">A boutique real estate agency combining market expertise with personalized service.</p>
+          <a href="#" class="footer-description" style="display:inline-block; margin-top:8px;">View all Listings →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">Copyright © {brandnaam} reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">𝕏 Made in {locatie}</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Mobile nav toggle
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        // Toggle current
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Scroll-triggered fade-in animations
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

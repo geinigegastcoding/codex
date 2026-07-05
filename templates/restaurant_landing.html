@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{brandnaam} — Crafted for cravings, served with perfection. Explore our menu of premium dishes, catering services, and food stories in {locatie}.">
+  <title>{brandnaam} — Premium Dining &amp; Catering in {locatie}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --red: #B22222;
+      --red-dark: #8B1A1A;
+      --red-light: #D43F3F;
+      --cream: #FFF8F0;
+      --cream-alt: #F5EDE0;
+      --cream-dark: #EDE2D0;
+      --gold: #D4A843;
+      --gold-light: #F0CC6B;
+      --dark: #1A1210;
+      --dark-alt: #2A2018;
+      --text-dark: #1A1210;
+      --text-body: #5A4A3A;
+      --text-muted: #9A8A7A;
+      --text-light: #FFF8F0;
+      --white: #ffffff;
+      --border: rgba(0,0,0,0.08);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-xs: 6px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-width: 1200px;
+      --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+      --shadow-hover: 0 12px 40px rgba(0,0,0,0.14);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--red);
+      padding: 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      background: var(--red-dark);
+      padding: 6px 16px;
+      border-radius: var(--radius-xs);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta-btn {
+      padding: 8px 20px;
+      background: var(--gold);
+      color: var(--dark) !important;
+      border-radius: var(--radius-xs);
+      font-weight: 600;
+      font-size: 0.82rem;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .nav-cta-btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--dark);
+      padding: 140px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center top, rgba(178,34,34,0.15) 0%, transparent 60%);
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      font-weight: 800;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-image {
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: var(--dark-alt);
+      border: 4px solid rgba(212,168,67,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      position: relative;
+      z-index: 1;
+      animation: heroFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* Scattered food thumbnails around hero */
+    .hero-scattered {
+      position: absolute;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: var(--dark-alt);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.5rem; color: var(--text-muted);
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    .hero-scattered:nth-child(1) { top: 20%; left: 5%; }
+    .hero-scattered:nth-child(2) { top: 15%; right: 8%; width: 65px; height: 65px; }
+    .hero-scattered:nth-child(3) { top: 50%; left: 10%; width: 60px; height: 60px; }
+    .hero-scattered:nth-child(4) { top: 55%; right: 5%; width: 70px; height: 70px; }
+    .hero-scattered:nth-child(5) { bottom: 10%; left: 15%; width: 55px; height: 55px; }
+    .hero-scattered:nth-child(6) { bottom: 15%; right: 12%; width: 60px; height: 60px; }
+
+    /* ===== POPULAR DISHES ===== */
+    .popular {
+      padding: 80px 0 60px;
+      background: var(--cream);
+    }
+
+    .section-tag {
+      display: block;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 700;
+      text-align: center;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-desc {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .dishes-scroll {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 16px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .dishes-scroll::-webkit-scrollbar { height: 4px; }
+    .dishes-scroll::-webkit-scrollbar-track { background: var(--cream-alt); border-radius: 4px; }
+    .dishes-scroll::-webkit-scrollbar-thumb { background: var(--red); border-radius: 4px; }
+
+    .dish-chip {
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 20px 8px 8px;
+      background: var(--white);
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      transition: box-shadow var(--transition), transform var(--transition);
+      cursor: pointer;
+    }
+
+    .dish-chip:hover {
+      box-shadow: var(--shadow-card);
+      transform: translateY(-2px);
+    }
+
+    .dish-chip-img {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: var(--cream-alt);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.45rem; color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .dish-chip-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      white-space: nowrap;
+    }
+
+    /* ===== DEALS ===== */
+    .deals {
+      padding: 60px 0 80px;
+      background: var(--cream);
+    }
+
+    .deals-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .deal-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .deal-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .deal-card-bg {
+      aspect-ratio: 16/9;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.7rem;
+    }
+
+    .deal-card:nth-child(odd) .deal-card-bg { background: var(--red); }
+    .deal-card:nth-child(even) .deal-card-bg { background: var(--gold); }
+
+    .deal-card-overlay {
+      position: absolute;
+      inset: 0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.5) 100%);
+    }
+
+    .deal-badge {
+      position: absolute;
+      top: 16px; left: 16px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .deal-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+
+    .deal-card p {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.8);
+      margin-top: 4px;
+    }
+
+    /* ===== DISCOVER FLAVORS / MENU ===== */
+    .discover {
+      padding: 80px 0;
+      background: var(--cream-alt);
+    }
+
+    .discover-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+    }
+
+    .discover-header-text .section-tag,
+    .discover-header-text .section-title {
+      text-align: left;
+    }
+
+    .btn-outline {
+      padding: 10px 24px;
+      border: 2px solid var(--red);
+      border-radius: var(--radius-xs);
+      color: var(--red);
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: transparent;
+      transition: background var(--transition), color var(--transition), transform var(--transition);
+    }
+
+    .btn-outline:hover {
+      background: var(--red);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .menu-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .menu-card-img {
+      aspect-ratio: 16/10;
+      background: var(--cream-dark);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); font-size: 0.75rem;
+    }
+
+    .menu-card-body {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-card-name {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-transform: uppercase;
+    }
+
+    .menu-card-price {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    /* ===== EXPERIENCE / STATS ===== */
+    .experience {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .experience-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .experience-img {
+      aspect-ratio: 4/3;
+      background: var(--dark);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); font-size: 0.8rem;
+      overflow: hidden;
+    }
+
+    .experience-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+      font-weight: 800;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .experience-content p {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .btn-red {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius-xs);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .btn-red:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+    }
+
+    .stats-row {
+      display: flex;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ===== LOVED BY FOOD LOVERS ===== */
+    .loved {
+      padding: 80px 0;
+      background: var(--cream-alt);
+      text-align: center;
+    }
+
+    .loved-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .loved-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 20px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .loved-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .loved-icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: var(--cream);
+      margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .loved-card h3 {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .loved-card p {
+      font-size: 0.82rem;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+
+    /* ===== CATERING ===== */
+    .catering {
+      padding: 80px 0;
+      background: var(--cream);
+    }
+
+    .catering-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+    }
+
+    .catering-header-text .section-tag,
+    .catering-header-text .section-title {
+      text-align: left;
+    }
+
+    .catering-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .catering-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform var(--transition);
+    }
+
+    .catering-card:hover { transform: translateY(-4px); }
+
+    .catering-card-img {
+      aspect-ratio: 4/3;
+      background: var(--cream-dark);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); font-size: 0.7rem;
+    }
+
+    .catering-card-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--white);
+    }
+
+    .catering-card-overlay h3 {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .catering-card-overlay p {
+      font-size: 0.75rem;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials {
+      padding: 80px 0;
+      background: var(--red);
+      color: var(--white);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at bottom, rgba(0,0,0,0.2) 0%, transparent 70%);
+    }
+
+    .testimonials .section-tag { color: var(--gold); }
+    .testimonials .section-title { color: var(--white); }
+
+    .testimonial-quote-mark {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: -20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-text {
+      max-width: 640px;
+      margin: 0 auto 28px;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-author-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--red-dark);
+      border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.5rem; color: rgba(255,255,255,0.5);
+    }
+
+    .testimonial-author-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-author-role {
+      font-size: 0.78rem;
+      opacity: 0.7;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      padding: 80px 0;
+      background: var(--cream);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .faq-left .section-tag,
+    .faq-left .section-title {
+      text-align: left;
+    }
+
+    .faq-left .section-title {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 0;
+    }
+
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: color var(--transition);
+      text-transform: uppercase;
+      font-family: var(--font-display);
+      letter-spacing: 0.3px;
+    }
+
+    .faq-question:hover { color: var(--red); }
+
+    .faq-icon {
+      font-size: 1.1rem;
+      transition: transform var(--transition);
+      flex-shrink: 0;
+      margin-left: 16px;
+      color: var(--red);
+    }
+
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding-bottom: 18px;
+    }
+
+    .faq-answer p {
+      font-size: 0.85rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery {
+      padding: 80px 0 60px;
+      background: var(--cream);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      background: var(--cream-dark);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); font-size: 0.65rem;
+      overflow: hidden;
+      transition: transform var(--transition);
+      cursor: pointer;
+    }
+
+    .gallery-item:hover { transform: scale(1.04); }
+
+    .gallery-item.wide {
+      grid-column: span 2;
+      aspect-ratio: 2/1;
+    }
+
+    /* ===== BLOG / INSIGHTS ===== */
+    .blog {
+      padding: 60px 0 80px;
+      background: var(--cream);
+    }
+
+    .blog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+    }
+
+    .blog-header-text .section-tag,
+    .blog-header-text .section-title {
+      text-align: left;
+    }
+
+    .blog-header-text .section-title {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      line-height: 1.2;
+    }
+
+    /* ===== CTA BANNER ===== */
+    .cta-banner {
+      background: var(--gold);
+      padding: 60px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 20px,
+        rgba(255,255,255,0.05) 20px,
+        rgba(255,255,255,0.05) 40px
+      );
+    }
+
+    .cta-banner-tag {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--dark);
+      opacity: 0.7;
+      margin-bottom: 10px;
+      position: relative; z-index: 1;
+    }
+
+    .cta-banner h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--dark);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      position: relative; z-index: 1;
+    }
+
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: var(--dark);
+      color: var(--cream);
+      border: none;
+      border-radius: var(--radius-xs);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background var(--transition), transform var(--transition);
+      position: relative; z-index: 1;
+    }
+
+    .btn-dark:hover {
+      background: var(--dark-alt);
+      transform: translateY(-2px);
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--dark);
+      color: var(--text-light);
+      padding: 60px 0 0;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr repeat(4, 1fr);
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand-col .nav-logo {
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .footer-brand-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-top: 12px;
+    }
+
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul { list-style: none; }
+
+    .footer-col li { margin-bottom: 10px; }
+
+    .footer-col a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      transition: color var(--transition);
+    }
+
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+    }
+
+    .footer-copyright {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .footer-social-links {
+      display: flex; gap: 16px;
+    }
+
+    .footer-social-links a {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      transition: color var(--transition);
+    }
+
+    .footer-social-links a:hover { color: var(--gold); }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .menu-grid,
+      .catering-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .loved-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .experience-layout,
+      .faq-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-row { justify-content: center; flex-wrap: wrap; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        flex-direction: column;
+        background: var(--red-dark);
+        padding: 20px 24px;
+        gap: 16px;
+      }
+
+      .nav-links.open { display: flex; }
+      .mobile-toggle { display: block; }
+
+      .hero-image { width: 240px; height: 240px; }
+      .hero-scattered { display: none; }
+
+      .deals-grid,
+      .menu-grid,
+      .catering-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .loved-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 2;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .discover-header,
+      .catering-header,
+      .blog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 1;
+        aspect-ratio: 16/9;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo">{brandnaam}</a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#popular">Menu</a></li>
+          <li><a href="#deals">Offers</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact" class="nav-cta-btn">Contact us 🡒</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-scattered">🍕</div>
+    <div class="hero-scattered">🥗</div>
+    <div class="hero-scattered">🌮</div>
+    <div class="hero-scattered">🍔</div>
+    <div class="hero-scattered">🍰</div>
+    <div class="hero-scattered">🍝</div>
+    <div class="hero-content" style="position:relative; z-index:1;">
+      <p class="hero-tag">★ Fresh • Fast • Flavorful ★</p>
+      <h1>Crafted for Cravings<br>Served with Perfection</h1>
+      <div class="hero-image">[ Hero Image — Signature Dish in Bowl — 1:1 ]</div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR DISHES ===== -->
+  <section class="popular" id="popular">
+    <div class="container">
+      <span class="section-tag fade-in">★ {brandnaam} ★</span>
+      <h2 class="section-title fade-in">Explore Our Popular Dishes</h2>
+      <p class="section-desc fade-in">Curated with the finest ingredients and bold flavors — each dish is crafted to satisfy your cravings and elevate your dining experience.</p>
+      <div class="dishes-scroll fade-in">
+        <div class="dish-chip">
+          <div class="dish-chip-img">🍕</div>
+          <span class="dish-chip-name">Pizza</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🍔</div>
+          <span class="dish-chip-name">Premium Burgers</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🥗</div>
+          <span class="dish-chip-name">Fresh Bowls</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🌮</div>
+          <span class="dish-chip-name">Handmade Tacos</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🍝</div>
+          <span class="dish-chip-name">Pasta</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🥩</div>
+          <span class="dish-chip-name">Steaks</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🍰</div>
+          <span class="dish-chip-name">Desserts</span>
+        </div>
+        <div class="dish-chip">
+          <div class="dish-chip-img">🍣</div>
+          <span class="dish-chip-name">Sushi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEALS ===== -->
+  <section class="deals" id="deals">
+    <div class="container">
+      <span class="section-tag fade-in">★ Specials</span>
+      <h2 class="section-title fade-in">Delicious Deals You Can't Miss</h2>
+      <p class="section-desc fade-in">Limited-time offers on your favorite dishes. Grab them before they're gone.</p>
+      <div class="deals-grid fade-in">
+        <div class="deal-card">
+          <div class="deal-card-bg">[ Deal Image — Burger Combo ]</div>
+          <div class="deal-card-overlay">
+            <span class="deal-badge">Family Package</span>
+            <h3>Freshly Prepared<br>Burgers at {prijs_deal}</h3>
+            <p>Available for dine-in &amp; delivery</p>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-card-bg">[ Deal Image — Taco Platter ]</div>
+          <div class="deal-card-overlay">
+            <span class="deal-badge">Crunchy Best Seller</span>
+            <h3>Handmade Tacos<br>Rich, Spicy, Irresistible</h3>
+            <p>Order 3 get 1 free this weekend</p>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-card-bg">[ Deal Image — Stone-Baked Pizza ]</div>
+          <div class="deal-card-overlay">
+            <span class="deal-badge">Chef's Pick</span>
+            <h3>Stone-Baked<br>Melty &amp; Flavorful</h3>
+            <p>Hand-stretched dough, baked to perfection</p>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-card-bg">[ Deal Image — Pasta Night ]</div>
+          <div class="deal-card-overlay">
+            <span class="deal-badge">Weekday Special</span>
+            <h3>Pasta Night<br>Buy One Get One Free</h3>
+            <p>Every Tuesday &amp; Thursday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISCOVER FLAVORS / MENU ===== -->
+  <section class="discover" id="discover">
+    <div class="container">
+      <div class="discover-header fade-in">
+        <div class="discover-header-text">
+          <span class="section-tag">Our Menu</span>
+          <h2 class="section-title">Discover Flavors You'll Love</h2>
+        </div>
+        <a href="#" class="btn-outline">View Full Menu</a>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card fade-in">
+          <div class="menu-card-img">[ Menu Item — Signature Burger ]</div>
+          <div class="menu-card-body">
+            <span class="menu-card-name">Signature Burger</span>
+            <span class="menu-card-price">{prijs_1}</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-card-img">[ Menu Item — Tuscan Tomato Pasta ]</div>
+          <div class="menu-card-body">
+            <span class="menu-card-name">Tuscan Tomato Pasta</span>
+            <span class="menu-card-price">{prijs_2}</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-card-img">[ Menu Item — Grilled Ribeye ]</div>
+          <div class="menu-card-body">
+            <span class="menu-card-name">Grilled Ribeye</span>
+            <span class="menu-card-price">{prijs_3}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / STATS ===== -->
+  <section class="experience" id="about">
+    <div class="container">
+      <div class="experience-layout fade-in">
+        <div class="experience-img">[ Image — Happy Customer Enjoying Food ]</div>
+        <div class="experience-content">
+          <h2>Exceptional Experience With Premium Quality Flavors</h2>
+          <p>At {brandnaam}, we believe every meal should be a celebration. From hand-selected ingredients to dishes crafted by our passionate chefs — we pour love into everything we serve. Whether you're dining in or ordering from home, expect nothing short of extraordinary.</p>
+          <a href="#" class="btn-red">Book Your Table <span>→</span></a>
+        </div>
+      </div>
+      <div class="stats-row fade-in">
+        <div class="stat-item">
+          <div class="stat-number">4K</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">26K</div>
+          <div class="stat-label">Dishes Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">35</div>
+          <div class="stat-label">Menu Items</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">264K</div>
+          <div class="stat-label">Social Followers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOVED BY FOOD LOVERS ===== -->
+  <section class="loved" id="loved">
+    <div class="container">
+      <span class="section-tag fade-in">Why {brandnaam}?</span>
+      <h2 class="section-title fade-in">Loved by Food Lovers</h2>
+      <p class="section-desc fade-in">We combine quality ingredients, expert cooking, and extraordinary flavors to create meals that keep our guests coming back.</p>
+      <div class="loved-grid">
+        <div class="loved-card fade-in">
+          <div class="loved-icon">🍽️</div>
+          <h3>Delicious Food</h3>
+          <p>Every dish is crafted with the freshest ingredients, bold spices, and a dedication to unforgettable flavor.</p>
+        </div>
+        <div class="loved-card fade-in">
+          <div class="loved-icon">🌿</div>
+          <h3>Relaxing Ambiance</h3>
+          <p>Whether it's a quiet dinner or a lively gathering, our warm atmosphere sets the perfect mood.</p>
+        </div>
+        <div class="loved-card fade-in">
+          <div class="loved-icon">⭐</div>
+          <h3>Premium</h3>
+          <p>From plating to service, we maintain the highest standards so every visit feels special.</p>
+        </div>
+        <div class="loved-card fade-in">
+          <div class="loved-icon">🚀</div>
+          <h3>Fresh Ingredients</h3>
+          <p>We source locally wherever possible, ensuring peak freshness and supporting our community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATERING ===== -->
+  <section class="catering" id="catering">
+    <div class="container">
+      <div class="catering-header fade-in">
+        <div class="catering-header-text">
+          <span class="section-tag">Services</span>
+          <h2 class="section-title">Catering for Every Celebration</h2>
+        </div>
+        <a href="#" class="btn-outline">Explore All →</a>
+      </div>
+      <div class="catering-grid">
+        <div class="catering-card fade-in">
+          <div class="catering-card-img">[ Catering — Tomato Risotto ]</div>
+          <div class="catering-card-overlay">
+            <h3>Tomato Risotto</h3>
+            <p>Perfect for intimate gatherings</p>
+          </div>
+        </div>
+        <div class="catering-card fade-in">
+          <div class="catering-card-img">[ Catering — Gourmet Burger Platter ]</div>
+          <div class="catering-card-overlay">
+            <h3>Gourmet Burger Platter</h3>
+            <p>Feed the crowd in style</p>
+          </div>
+        </div>
+        <div class="catering-card fade-in">
+          <div class="catering-card-img">[ Catering — Grilled Chicken Platter ]</div>
+          <div class="catering-card-overlay">
+            <h3>Grilled Chicken Platter</h3>
+            <p>A crowd favorite for any event</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <span class="section-tag fade-in">Reviews</span>
+      <h2 class="section-title fade-in">What Our Customers Say</h2>
+      <div class="testimonial-quote-mark fade-in">❝</div>
+      <p class="testimonial-text fade-in">The food here is absolutely incredible. We ordered the signature burger and truffle fries and they were cooked to perfection. The ambiance is warm and inviting — definitely our new favorite spot in {locatie}. Can't wait to come back!</p>
+      <div class="testimonial-author-wrap fade-in">
+        <div class="testimonial-avatar">👤</div>
+        <div>
+          <div class="testimonial-author-name">{klant_naam}</div>
+          <div class="testimonial-author-role">Loyal Customer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-left fade-in">
+          <span class="section-tag">Support</span>
+          <h2 class="section-title">Frequently<br>Asked Questions</h2>
+        </div>
+        <div class="faq-list fade-in">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does a typical order take?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most dine-in orders are served within 15–25 minutes. Delivery orders typically arrive within 30–45 minutes depending on your location in {locatie}.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does delivery take usually?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We aim for 30–45 minutes for delivery within {locatie}. During peak hours, it may take up to 60 minutes.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer catering services?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely! We offer catering for events of all sizes — from intimate dinners to large corporate events. Contact us to discuss your needs.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I reserve a table online?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, you can reserve a table directly through our website or by calling us. We recommend booking in advance for weekends and holidays.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are your ingredients fresh?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>100%. We source our produce daily from local farms and trusted suppliers in the {locatie} area. Freshness is non-negotiable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <span class="section-tag fade-in">★ Gallery</span>
+      <h2 class="section-title fade-in">A Feast for Your Eyes</h2>
+      <div class="gallery-grid fade-in">
+        <div class="gallery-item">[ Gallery — Pizza Close-up ]</div>
+        <div class="gallery-item wide">[ Gallery — Restaurant Interior Panorama ]</div>
+        <div class="gallery-item">[ Gallery — Fresh Salad ]</div>
+        <div class="gallery-item">[ Gallery — Chef Plating ]</div>
+        <div class="gallery-item">[ Gallery — Burger & Fries ]</div>
+        <div class="gallery-item wide">[ Gallery — Dinner Table Setting ]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG / INSIGHTS ===== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="blog-header fade-in">
+        <div class="blog-header-text">
+          <span class="section-tag">★ Blog</span>
+          <h2 class="section-title">Insights, Trends<br>&amp; Food Stories</h2>
+        </div>
+        <a href="#" class="btn-outline">Read Blog →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" id="contact">
+    <div class="container">
+      <p class="cta-banner-tag fade-in">{brandnaam} | {adres}, {locatie}</p>
+      <h2 class="fade-in">Come and Enjoy</h2>
+      <a href="#" class="btn-dark fade-in">Book a Table →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top fade-in">
+        <div class="footer-brand-col">
+          <span class="nav-logo">{brandnaam}</span>
+          <p class="footer-brand-desc">{brandnaam} is a premium dining destination in {locatie}, serving handcrafted dishes made with the freshest local ingredients. From signature burgers to stone-baked pizzas — taste the difference.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">Burgers</a></li>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Pasta</a></li>
+            <li><a href="#">Desserts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 {brandnaam}. All rights reserved.</p>
+        <div class="footer-social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Mobile nav toggle
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('nav-links').classList.remove('open');
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Scroll-triggered fade-in
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

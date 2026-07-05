@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S. Voice Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="agent-switcher">
+            <span class="label">TARGET AGENT:</span>
+            <select id="agent-select">
+                <option value="antigravity">Antigravity</option>
+                <option value="codex">Codex</option>
+                <option value="claude">Claude Code</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="orb-container">
+        <div id="orb-status" class="status-text">SYSTEM ONLINE: IDLE</div>
+        <div id="jarvis-orb" class="orb state-idle">
+            <div class="core"></div>
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+        </div>
+    </main>
+
+    <section class="chat-section">
+        <div id="chat-log" class="chat-log">
+            <!-- Messages will be appended here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="command-input" placeholder="Type a command or /clear..." autocomplete="off">
+            <button id="send-btn">SEND</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
