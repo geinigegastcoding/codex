@@ -24,11 +24,39 @@
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
-              "title": "Grafiek weergave"
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "a482c36dd1c063f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journals-WrittenByDaniël/Youtube video 6 hours nate CC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Youtube video 6 hours nate CC"
+            }
+          },
+          {
+            "id": "0d00bdbd1122d1bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journals-WrittenByDaniël/Youtube video 6 hours nate CC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Youtube video 6 hours nate CC"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -51,7 +79,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Verkenner"
+              "title": "Files"
             }
           },
           {
@@ -178,23 +206,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open snel wisselen": false,
-      "graph:Open grafiek weergave": false,
-      "canvas:Nieuw doek aanmaken": false,
-      "daily-notes:Open de notitie van vandaag": false,
-      "templates:Sjabloon invoegen": false,
-      "command-palette:Open opdrachtenpaneel": false,
-      "bases:Nieuwe basis maken": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "627d6efca7d732b1",
+  "active": "0d00bdbd1122d1bd",
   "lastOpenFiles": [
+    "Pasted image 20260711164417.png",
+    "Journals-WrittenByDaniël/AGENTS.md.md",
+    "Journals-WrittenByDaniël/Youtube video 6 hours nate CC.md",
+    "Journals-WrittenByDaniël",
+    "website.md",
+    "logs/2026-07-01 - Demo Site Templates.md",
+    "logs/2026-06-28 - Website Council Review.md",
+    "logs/2026-06-28 - Magisdata Dashboard Council.md",
     "Readme.md",
     "decisions.md",
-    "website.md",
     "Status.md",
     "website-council.md",
-    "logs/2026-06-28 - Website Council Review.md",
     "gbp_services.md",
     "SEO-TOOL-PRD.md",
     "PROJECTS.md",
@@ -202,7 +236,6 @@
     "Products and Pricing.md",
     "council.md",
     "logs/2026-06-28 - Page Removal & Mobile Perf.md",
-    "logs/2026-06-28 - Magisdata Dashboard Council.md",
     "SOP's/video-to-prd-SOP.md",
     "2026-06-27.md",
     "Untitled.canvas",
@@ -212,10 +245,6 @@
     "customers/WebsitePapa2.md",
     "logs/2026-06-27 - Magis Data Intelligence.md",
     "Business_Data.md",
-    "logs/2026-06-27 - Dashboard Data Integration.md",
-    "Daniel Magis.md",
-    "Templates/Client Template.md",
-    "dashboard-PRD.md",
     "Templates",
     "SOP's",
     "logs"
