@@ -1,18 +1,14 @@
 # Custom Rules
 
 - Whenever the user types `/end` or requests to end and summarize the conversation, you MUST load and execute the global `end-conversation` skill. Do not perform any other actions or ask further questions. Simply generate the token-optimized summary, write it to the `E:\MData\Kennis\logs` folder using the specified template and naming convention, and output the single-sentence confirmation.
-- By default, always write or create `.md` files within the `E:\MData\Kennis` directory, as it serves as the central context vault for the project, unless the user explicitly specifies another location.
+- By default, always write or create `.md` files within the `E:\MData\Kennis` directory, as it serves as the central context vault for the project, unless the user explicitly specifies another location. Or if they are specific for a certain project or folder and doesn't serve the general context.
 
-## Developer Rules (Andrej Karpathy)
+## General Rules
 
 - **Think before coding**: No silent assumptions. State assumptions explicitly, surface trade-offs, ask before guessing, and push back if a simpler approach exists.
 - **Simplicity first**: Write the minimum code required to solve the problem. Do not add speculative features or build abstractions for single-use code. If a senior engineer would call it overcomplicated, simplify it.
 - **Surgical changes**: Touch only what must be changed. Do not improve adjacent code, comments, or formatting, and do not refactor what isn't broken. Match the existing codebase style.
 - **Goal-driven execution**: Define success criteria and loop until verified. Do not tell the model what steps to follow; tell it what success looks like and let it iterate.
-
-## Workflow Rules (Doobie)
-
-- **Enforce token budgets**: Enforce hard budget limits to prevent endless debugging loops. The recommended limits are 4,000 tokens per task and 30,000 tokens per session. If approaching the budget, summarize and start fresh.
 - **Surface conflicts; don't average them**: If two patterns in the code conflict, do not blend or mix them together. Pick one (usually the newer or more thoroughly tested pattern), explain the choice, and mark the other pattern for cleanup later.
 - **Read before you write**: Before adding new code, check the file exports, the location where the code is called, and any shared utilities. Ensure the model actively reviews adjacent files to avoid duplicate functions.
 - **Use the model only for judgment calls**: Reserve the AI for classification, drafting, summarizing, extraction, and judgment. Do not use it for deterministic routing, retries, or parsing status codes that should follow a fixed programmatic rule.
@@ -32,5 +28,3 @@ So here is a rule you can use to find where to work.
 - If the project file is opened in `C:\Users\Daniël\Desktop\Codex` it means that the repo is located on the laptop. This means that all mentions of a E:\MData is not relevant and should be replaced by this one for example instead of E:\MData\Kennis\council use C:\Users\Daniël\Desktop\Codex\Kennis\council. When you know you are working on the laptop a quick way to see this is checking if there is a E drive because the laptop doesn't have it. 
 - If the project file is opened in E:\MData than proceed with the regular file path descriptions or as mentioned above replace the file paths of the laptop with the one associated with the E drive instead. 
 - **Verify when working on website**: When you are working on the main website of magisdata always verify your work using screenshots. 
-## Dashboard Status
-- Het dashboard wordt op dit moment niet gebruikt en zal later weer worden opgepakt. 

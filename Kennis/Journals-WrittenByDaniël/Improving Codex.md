@@ -1,6 +1,7 @@
 - Implement a feedback loop to prevent same mistakes from happening and decrease amount of itterations needed.
 - Create good agents.md and such
-
+- Context engineering
+- 
 
 # example things for agents.md
 - Writing rules:

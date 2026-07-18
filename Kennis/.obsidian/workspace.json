@@ -8,55 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ebc6f4da2017e851",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "627d6efca7d732b1",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "a482c36dd1c063f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals-WrittenByDaniël/Youtube video 6 hours nate CC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Youtube video 6 hours nate CC"
-            }
-          },
-          {
             "id": "0d00bdbd1122d1bd",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Grafiek weergave"
+            }
+          },
+          {
+            "id": "dde87d2cc2376396",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Journals-WrittenByDaniël/Youtube video 6 hours nate CC.md",
+                "file": "CRm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Youtube video 6 hours nate CC"
+              "title": "CRm"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,7 +55,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Verkenner"
             }
           },
           {
@@ -206,20 +182,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Open snel wisselen": false,
+      "graph:Open grafiek weergave": false,
+      "canvas:Nieuw doek aanmaken": false,
+      "daily-notes:Open de notitie van vandaag": false,
+      "templates:Sjabloon invoegen": false,
+      "command-palette:Open opdrachtenpaneel": false,
+      "bases:Nieuwe basis maken": false
     }
   },
-  "active": "0d00bdbd1122d1bd",
+  "active": "dde87d2cc2376396",
   "lastOpenFiles": [
+    "CRm.md",
+    "Journals-WrittenByDaniël/Improving Codex.md",
     "Pasted image 20260711164417.png",
     "Journals-WrittenByDaniël/AGENTS.md.md",
-    "Journals-WrittenByDaniël/Youtube video 6 hours nate CC.md",
     "Journals-WrittenByDaniël",
     "website.md",
     "logs/2026-07-01 - Demo Site Templates.md",
