@@ -1,6 +1,6 @@
 # Products and Pricing
 
-This note documents the active products, packages, and pricing models offered by Magisdata, sourced directly from the website project [pricing-data.tsx](file:///E:/MData/Website/app/diensten/pricing-data.tsx).
+This note records the latest known MagisData offer. **Last repository review: 24 July 2026.** The website repositories are uninitialized gitlinks in this checkout, so these prices could not be revalidated against the live pricing component. Confirm against the production website before quoting a customer.
 
 ## 1. Website Packages (Yearly Subscriptions)
 Optimized for small businesses (plumbers, barbers) looking for high-performance, conversion-focused websites.
@@ -38,6 +38,10 @@ Saves business owners time by automating lead capture, intake, and back-office w
 - [[Readme]]
 - [[Status]]
 - [[decisions]]
-- [Website pricing-data.tsx](file:///E:/MData/Website/app/diensten/pricing-data.tsx)
+- Website pricing source: `Website/app/diensten/pricing-data.tsx` or `WebsiteMagisData/app/diensten/pricing-data.tsx` on the machine where the relevant gitlink is initialized.
+
+## Quoting rule
+
+Treat amounts in this note as **latest known**, not guaranteed current. Confirm price, billing cadence, VAT treatment, scope, hosting/support and renewal terms in writing before sending a proposal.
 
 %% ponytail: synchronized with pricing-data.tsx; kept tables clear and factual %%

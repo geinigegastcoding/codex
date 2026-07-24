@@ -1,5 +1,7 @@
 # GBP Services
 
+**Status:** Draft Google Business Profile service catalogue, last reviewed 24 July 2026. Prices mirror the latest known offer but could not be checked against the uninitialized website gitlinks. Confirm wording, GBP category eligibility and current prices before publishing.
+
 ## Webdesign (Primaire categorie)
 - Softwareontwikkeling: Ontwerp van conversiegerichte, snelle en mobielvriendelijke websites afgestemd op uw huisstijl en doelgroep.
 - Website-ontwerp: Wij maken een gedetailleerd en gespecialiseerd ontwerp voor uw website op maat gemaakt voor uw huisstijl en doelgroep.
@@ -20,4 +22,11 @@
 - Zoekmachineoptimalisatie: Technische en inhoudelijke optimalisatie om uw bedrijf beter vindbaar te maken in Google en moderne AI-zoekmachines.
 - Vindbaar Basis: Kleine, gerichte verbeteringen aan de website-structuur en pagina's om antwoord te geven op de belangrijkste klantvragen. Inclusief een gratis scan vooraf, een prioriteitenlijst voor SEO/AEO/GEO en basisoptimalisatie van uw kernpagina's. (€ 500)
 - Vindbaar Groei: Ontworpen voor bedrijven die meerdere diensten of regio's (zoals Leiden en omgeving) actief vindbaar en begrijpbaar willen maken. Inclusief zoekintentie-analyse, verbetering van servicepagina's en AEO/GEO-integraties. (€ 1.000)
+- Vindbaar Autoriteit: Uitgebreide content- en entiteitsstructuur voor meerdere prioriteitspagina's, inclusief periodieke controle. (€ 2.500)
 - Groei Gesprek: Een rustig, vrijblijvend adviesgesprek om te bepalen waar uw website, vindbaarheid of procesautomatisering momenteel vastloopt en waar uw grootste groeikansen liggen. (Kosteloos)
+
+## Publicatiecontrole
+
+- Gebruik alleen diensten die werkelijk geleverd kunnen worden en binnen de gekozen GBP-categorie passen.
+- Vermeld geen “meest gekozen” pakket zonder onderbouwde verkoopdata.
+- Stem bedragen en scope af met [[Products and Pricing]] en de productiepagina voordat dit naar GBP wordt gekopieerd.

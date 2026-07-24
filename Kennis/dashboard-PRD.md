@@ -1,5 +1,7 @@
 # Product Requirement Document (PRD): The Ultimate Magisdata Dashboard
 
+> **Status — 24 July 2026:** Historical vision document, not the current implementation contract. Logs describe a separate dashboard with vault graph and customer views, but its source directory is absent from this checkout. The present `CRM/` Sales OS is smaller and uses React/Vite. Reconfirm scope before reviving this PRD.
+
 ## 1. Objective & Vision
 The **Magisdata Personal Dashboard** is a local, highly-advanced, JARVIS-inspired admin interface for Daniel Magis. It serves as the ultimate "God Mode" command center, housing Magisdata business pipelines, school projects, personal to-dos, and financial tracking. It is designed to look visually stunning (Neon Cyan, dark mode, terminal aesthetics) as a high-end showcase for social media, while remaining minimal, fast, and local-first under the hood.
 
@@ -37,11 +39,11 @@ The **Magisdata Personal Dashboard** is a local, highly-advanced, JARVIS-inspire
 - **Visualization**: `react-force-graph` (2D), `react-three-fiber` (3D).
 - **Data Layer**: Local file-system parsing (`fs`, `gray-matter`). Zero external databases. %% ponytail: local MD parsing for ultimate privacy and YAGNI %%
 
-## 5. Next Steps
-1. Wait for the final UI reference image from the founder.
-2. Bootstrap the Next.js application in `E:\MData\dashboard`.
-3. Set up the global UI shell (Dark mode, Neon Cyan accents, telemetry widgets, sidebar).
-4. Implement the local Markdown parsing API.
+## 5. Next Decision Gate
+1. Restore and run the historical dashboard source, if it still exists on another machine.
+2. Decide whether the actual need is the focused `CRM/` Sales OS or the broad personal command center described here; do not blend both by default.
+3. If this PRD is revived, replace machine-specific paths with repository-relative configuration and define a minimal first workflow with real data.
+4. Treat AI chat, 3D demo mode, telemetry and financial modules as optional until the core workflow is used successfully.
 
 ---
 %% ponytail: updated with advanced AI, financial, and productivity modules from phase 2 grill-me session %%

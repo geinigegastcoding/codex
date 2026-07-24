@@ -1,3 +1,7 @@
+# MagisData Website Council Review
+
+> **Historical review from 28 June 2026.** Findings below are recommendations, not proof of current implementation. The website gitlinks are not initialized in this checkout as of 24 July 2026; re-audit the live site and current source before acting. Highest-priority durable checks: intent-matched CTAs, clickable contact path, honest proof, consistent first-person voice, appropriate schema, unique titles/Open Graph data, at least three valid internal links per page, and no broken or Cloudflare email-protection links.
+
 ## ROUND 1: Home Page (`app/page.tsx`)
 
 ### 1. SEO Specialist Review

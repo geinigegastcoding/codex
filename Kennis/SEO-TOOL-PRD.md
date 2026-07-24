@@ -1,8 +1,10 @@
 # Product Requirements Document (PRD): Core 30 AI Agent
 
+> **Status — 24 July 2026:** Research/product concept only. No implementation of this product was found in the current checkout. All performance, cost, timing and ranking statements below are targets or source claims, not verified MagisData results. Validate API terms, privacy, publishing safeguards and unit economics before development.
+
 ## 1. Objective & Vision
 
-**Product Name:** Core 30 AI Agent **Vision:** To automate and execute the entire local SEO workflow—replacing 60+ hours of manual labor per client—by building a 30+ page website architecture that perfectly mirrors a client's Google Business Profile (GBP) using highly localized, human-like AI content. **Core Objective:** Generate fully optimized, locally relevant, and conversion-focused web pages and multimedia content (schema, images, video) for local service businesses at scale. **Primary Value Proposition:** End-to-end execution in ~90 minutes for under $1.00 per page in API costs (Bring Your Own Key model), resulting in dominant local map rankings without the need for manual writing or weekly blogging.
+**Product Name:** Core 30 AI Agent. **Vision:** automate parts of a local SEO workflow around GBP-aligned site architecture and localized content. **Core Objective:** generate reviewable page plans and assets at scale without bypassing human fact-checking or publication approval. **Hypotheses to validate:** whether a 30-page architecture is appropriate per client, whether the workflow can finish in about 90 minutes, and whether API cost can remain below $1 per page. No ranking outcome is guaranteed.
 
 ## 2. Information Architecture & Layout
 
