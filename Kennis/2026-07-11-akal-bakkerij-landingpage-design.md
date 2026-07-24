@@ -1,5 +1,7 @@
 # Akal Bakkerij landingpage
 
+**Status:** Ontwerp uitgevoerd in `customers/Akal Bakkerij/index.html`; nog een demo, geen bevestigde productiepublicatie. Laatst gecontroleerd in de repository op 24 juli 2026.
+
 ## Doel
 
 Een overtuigende Nederlandse demo-landingspagina voor Akal Bakkerij in Leiden. De zaak wordt gepresenteerd als toegankelijke Turkse bakkerij, grill en takeaway — niet als traditionele broodbakker.
@@ -19,7 +21,7 @@ Een overtuigende Nederlandse demo-landingspagina voor Akal Bakkerij in Leiden. D
 - Bewijs: 4,6/5 uit 284 Google-reviews, dagelijks 08:00–20:00.
 - Sfeer- en fotosectie.
 - Bezoekinformatie met adres, telefoon, openingstijden en toegankelijkheid.
-- CTA-volgorde: bestellen via Thuisbezorgd, route openen, bellen.
+- CTA-volgorde in de implementatie: bestellen via Thuisbezorgd, route openen, bellen.
 
 ## Techniek
 
@@ -35,3 +37,10 @@ Een overtuigende Nederlandse demo-landingspagina voor Akal Bakkerij in Leiden. D
 - Werkt zonder consolefouten op desktop en mobiel.
 - Alle knoppen verwijzen naar echte telefoon-, route- of bestelacties.
 - Alleen herkenbaar relevante Akal-foto's worden gebruikt.
+
+## Open vóór publicatie
+
+- Bevestig of de handelsnaam **Akal Bakery**, **Akal Bakkerij** of **Azal Bakkerij** is.
+- Controleer actuele openingstijden, menuprijzen, reviewscore en aantal reviews opnieuw.
+- Verkrijg toestemming voor Google-gebruikersfoto's of vervang ze door eigenaarfoto's.
+- Maak nieuwe desktop- en mobiele screenshots en controleer alle externe links.

@@ -1,5 +1,7 @@
 # Magisdata Customer Dashboard - Council Transcript
 
+> **Archive status — reviewed 24 July 2026:** This is an append-only 54-round brainstorming transcript from 28 June 2026, not the current architecture or an approved implementation plan. Its recommendations conflict with later/current repository reality in places (for example, the transcript's Hetzner/HTMX direction versus the present React/Vite `CRM/` MVP). Preserve it as decision history; use [[decisions]], [[Status]], [[PROJECTS]] and [[CRm]] for current direction. Security, cost, latency and scale claims in the transcript require independent validation before use.
+
 **UI Specialist:** The single most important aspect we MUST get right from day one is **visual hierarchy and cognitive ease**. Customers should feel an immediate "wow" factor through a premium, dynamic interface (e.g., subtle glassmorphism, micro-animations, and a curated dark/light mode palette), but it must never compromise clarity. Data density should not equal visual clutter. We need progressive disclosure—showing high-level ROI and credit status instantly, while keeping complex usage analytics just a fluid, intuitive transition away.
 
 **Product Manager:** Actionable Data Transparency (Usage vs. Value). For the MVP, the dashboard must immediately answer two questions for the customer: "What is Magisdata doing for me right now?" and "How much is it costing?" If they can't trust the data or understand their usage at a glance, nothing else matters. We must prioritize a frictionless, read-only view of their core metrics (data ingested, processing status, billing) over complex analytics or custom reporting, which we will defer to later releases to manage technical scope and speed to market.
@@ -559,7 +561,6 @@ Enforcement: Mechanically enforce in CI/CD using `bundlesize` or `size-limit` in
 **Product Manager:** 1. Public Endpoints: Cloudflare Bot Management autonomously drops floods. 2. Machine-to-Machine: Deploy microscopic Cloudflare Worker in front of `/api/v1/webhooks`. Computes HMAC signature natively at global edge. Botnet sending 10 billion fake webhooks is dropped entirely at the edge. Zero malicious requests reach Fargate.
 
 **Tech Lead:** 1. Rejecting AWS Native Defenses: AWS bills per request to evaluate. 2. Autonomous Cloudflare Shield: Unmetered DDoS mitigation. 3. Native Defenses: Annihilating Slow-Loris (Cloudflare buffers incomplete requests) & Autonomous Bot Management (ML heuristics). 4. Webhook Edge Firewall: Cloudflare Worker executes HMAC signature verification natively at network edge. Malicious traffic mathematically prevented from crossing into AWS VPC. Serverless compute bill remains perfectly flat.
-
 
 
 

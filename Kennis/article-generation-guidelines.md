@@ -2,6 +2,8 @@
 
 Dit document dient als "knowledge base" (context base) voor het genereren van kwalitatieve SEO-artikelen voor MagisData. Het doel is om content gaps te vullen, hoger te ranken in zoekmachines en AI "slop" te vermijden.
 
+**Laatst bijgewerkt:** 24 juli 2026. Publiceer niets zonder broncontrole, redactionele review en technische verificatie.
+
 ## 1. Tone of Voice & Merkidentiteit
 - **Merk:** MagisData
 - **Taal:** Nederlands (Doelland: Nederland)
@@ -19,9 +21,10 @@ Elk gegenereerd artikel (vaak in de sectie `Inzichten` / `Kennisbank`) moet stri
 5. **Conclusie:** Een sterke en nuttige samenvatting aan het eind.
 6. **Relevante FAQ (Veelgestelde Vragen):** 3 tot 5 veelgestelde vragen met korte, directe antwoorden.
 7. **Sterke CTA (Call to Action):** Geen standaard spam. De CTA moet extreem relevant zijn voor het onderwerp (bijv. in een artikel over "Website maken in Leiden" is de interne link / CTA gericht op de "Website laten maken Leiden" pagina).
+8. **Bronnen & claims:** Onderbouw tijdgevoelige, juridische, financiële, technische en cijfermatige claims met actuele primaire bronnen. Verzin geen ervaring, klantresultaat, citaat of statistiek.
 
 ## 3. Interne Links Strategie
-- **Vanuit het artikel:** Minimaal 2-3 links naar gerelateerde MagisData diensten (bijv. Webontwikkeling, SEO, Lokale SEO).
+- **Vanuit het artikel:** Minimaal 3 werkende, contextueel relevante interne links naar bestaande MagisData-pagina's.
 - **Naar het artikel toe:** Zodra een artikel is gegenereerd en gepubliceerd, moet het gelinkt worden vanaf gerelateerde pagina's (via `internal-links.ts` of in-text links).
 - Gebruik exacte en beschrijvende anchorteksten (geen "klik hier").
 
@@ -31,11 +34,16 @@ Elk gegenereerd artikel (vaak in de sectie `Inzichten` / `Kennisbank`) moet stri
 - Plaatsing is essentieel om tekst op te breken en visuele waarde te bieden. (Methoden voor het vinden/genereren van gratis en passende afbeeldingen worden later geautomatiseerd).
 
 ## 5. Implementatie in WebsiteMagisData
-- De artikelen worden als data-objecten in `content/articles.ts` geplaatst.
-- Ze worden gerenderd op `app/inzichten/[slug]/page.tsx` met behulp van React Markdown, zodat de opmaak (tabellen, lijsten, styling) 1 op 1 vertaald wordt naar de MagisData huisstijl.
+- De laatst bekende implementatie gebruikt data-objecten in `content/articles.ts` en rendering via `app/inzichten/[slug]/page.tsx`.
+- Deze paden moeten opnieuw worden gecontroleerd zodra de canonieke website-gitlink beschikbaar is; de websitebron ontbreekt in deze checkout.
+- Controleer vóór publicatie: unieke title (maximaal 70 tekens), description, canonical, Open Graph, robots/indexeerbaarheid, sitemap, relevante schema, afbeeldingsafmetingen/alt-tekst en alle interne/externe links.
 
 ## 6. Te Ontwikkelen (To-Do's)
 - Vergelijkingspagina's bouwen (MagisData vs. andere bureaus, vs. DIY, vs. Lovable, vs. WordPress).
 - Keyword research automatisering/optimalisatie implementeren.
 - Automatische artikelpublicatie opzetten indien mogelijk.
 - LLM citations en search rankings bijhouden.
+
+## Definition of done
+
+Een artikel is pas `Live` wanneer de productie-URL HTTP 200 geeft, mobiel leesbaar is, geen console/buildfouten heeft, in de sitemap staat, minstens drie geldige interne links bevat en in [[Article_Inventory]] is geregistreerd met controledatum.

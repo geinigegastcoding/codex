@@ -1,6 +1,6 @@
 # Akal Bakkerij Landingpage Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+**Status:** Implemented as a local demo on 11 July 2026; not verified as a live production site. Last repository check: 24 July 2026.
 
 **Goal:** Een visueel overtuigende, responsive Nederlandse demo-landingspagina voor Akal Bakkerij bouwen en lokaal draaien.
 
@@ -13,29 +13,27 @@
 ### Task 1: Beeldselectie en art direction
 
 **Files:**
-- Inspect: `E:/MData/customers/Akal Bakkerij/context/*`
-- Create: `E:/MData/customers/Akal Bakkerij/assets/akal-ui-reference.png`
+- Inspect: `customers/Akal Bakkerij/context/*`
+- Create: `customers/Akal Bakkerij/assets/akal-ui-reference.png`
 
-- [ ] Controleer de lokale foto's via een contact sheet en noteer welke winkel- en foodfoto's bruikbaar zijn.
-- [ ] Genereer met Image v2 een warme visuele richting voor een Turkse bakkerij/grill zonder tekst of logo's die als eindcontent moeten worden overgenomen.
-- [ ] Bewaar het gekozen resultaat onder `assets/akal-ui-reference.png`.
+- [x] Lokale bronfoto's verzameld onder `customers/Akal Bakkerij/context/`; geselecteerde versies staan onder `assets/upscaled/`.
+- [x] Warme art-directionreferentie gegenereerd.
+- [x] Referentie opgeslagen als `customers/Akal Bakkerij/assets/akal-ui-reference.png`.
 
 ### Task 2: Landingpage
 
 **Files:**
-- Create: `E:/MData/customers/Akal Bakkerij/index.html`
+- Create: `customers/Akal Bakkerij/index.html`
 
-- [ ] Bouw semantische secties voor hero, assortiment, bewijs, sfeer, bezoekinformatie en footer.
-- [ ] Voeg interne responsive CSS toe in crème, terracotta, olijfgroen en warm rood.
-- [ ] Gebruik inline SVG-iconen en toegankelijke links voor Thuisbezorgd, route en telefoon.
-- [ ] Gebruik alleen relevante lokale foto's met passende alt-teksten.
+- [x] Zelfstandige pagina gebouwd in `customers/Akal Bakkerij/index.html`.
+- [x] Hero, assortiment, bewijs, verhaal, bezoekinformatie en footer geïmplementeerd.
+- [x] Responsive interne CSS, inline SVG-iconen, alt-teksten en echte bestel-, route- en telefoonlinks toegevoegd.
 
 ### Task 3: Verificatie en devserver
 
 **Files:**
-- Verify: `E:/MData/customers/Akal Bakkerij/index.html`
+- Verify: `customers/Akal Bakkerij/index.html`
 
-- [ ] Start een lokale statische HTTP-server vanuit de klantmap.
-- [ ] Controleer dat de pagina en alle lokale assets HTTP 200 teruggeven.
-- [ ] Maak desktop- en mobiele screenshots en controleer layout, leesbaarheid, foto-uitsneden en CTA's.
-- [ ] Controleer dat er geen donkerblauw, paars, zwart, emoji's of consolefouten voorkomen.
+- [x] Lokale implementatie en assets zijn aanwezig in de repository.
+- [ ] Herhaal vóór klantpresentatie de HTTP-, console-, desktop- en mobiele screenshotcontrole.
+- [ ] Bevestig vóór publicatie handelsnaam, actuele openingstijden/prijzen, reviewgegevens en beeldrechten; zie `customers/Akal Bakkerij/info.md`.

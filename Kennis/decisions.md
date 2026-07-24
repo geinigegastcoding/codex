@@ -2,7 +2,39 @@
 
 Decisions made during the development of Magisdata, including their rationale and when to revisit them.
 
+**Last consolidated:** 24 July 2026. A proposal or council verdict is not a decision unless explicitly adopted and reflected in active work.
+
 ## Log of Decisions
+
+### 2026-07-24: Evidence-Based Knowledge Vault
+- **Decision**: Mark unknown metrics as unknown, separate concepts from implementations, and use repository-relative paths because the repository moves between machines.
+- **Rationale**: Placeholder numbers and `E:\MData` links had become misleading in the Linux/laptop checkout.
+- **Revisit**: When an automated, source-attributed data sync is operational.
+
+### 2026-07-24: Sales OS Before Broad Dashboard Expansion
+- **Decision**: Treat `CRM/` as the current operational MVP and validate its lead queue/next-action workflow before adding Gmail or reviving the broad dashboard.
+- **Rationale**: The CRM code is present and buildable; the historical `dashboard/` source is absent.
+- **Revisit**: After real-prospect usage demonstrates the workflow and persistence requirements.
+
+### 2026-07-11: Akal Bakkerij Remains a Demo Pending Confirmation
+- **Decision**: Keep the implemented single-page site as a demo until the preferred trading name, business facts, image rights and customer approval are confirmed.
+- **Rationale**: Source research conflicts between Akal/Azal naming and includes third-party imagery and time-sensitive data.
+- **Revisit**: Before publication or customer presentation.
+
+### 2026-06-30: Single-Language Sitemap
+- **Decision**: Omit redundant language alternates from the Dutch-only sitemap.
+- **Rationale**: The alternates added unnecessary XHTML output and the site has no alternate-language routes.
+- **Revisit**: If a second language launches.
+
+### 2026-06-28: Remove Deprecated AI Service Routes
+- **Decision**: Remove the old AI automation/infrastructure service pages and return 410 for permanently removed routes.
+- **Rationale**: The offering and navigation no longer supported those pages.
+- **Revisit**: Only if a clearly defined replacement offer is approved.
+
+### 2026-06-27: Consent-First Analytics
+- **Decision**: Default analytics consent/storage to denied while keeping the Google tag discoverable through Consent Mode.
+- **Rationale**: Preserve consent-first behavior and reliable tag initialization.
+- **Revisit**: Whenever analytics tooling, consent requirements or deployment headers change.
 
 ### 2026-06-26: Global Session Logging Skill
 - **Decision**: Created the global `end-conversation` skill to automate logging of chat sessions.
@@ -39,20 +71,20 @@ Decisions made during the development of Magisdata, including their rationale an
 - **Rationale**: Directly aligns the template structure with Magisdata's primary revenue driver (selling websites to small local businesses).
 - **Revisit**: After the first 3 website launches.
 
-### 2026-06-26: Proposed Local Lead Auditor & Dashboard Roadmap
-- **Decision**: Outlined a technical roadmap for a local business dashboard (under `/dashboard` in Next.js) and an AI-powered lead auditor script that scrapes prospect websites and auto-generates pitches.
+### 2026-06-26: Local Lead Auditor & Dashboard Proposal
+- **Decision**: Keep a technical proposal for a local business dashboard and AI-powered lead auditor; it was not approved as immediate implementation scope.
 - **Rationale**: Provides a cutting-edge technical strategy that directly accelerates lead generation and client acquisition.
 - **Revisit**: As soon as the main website technical hygiene tasks are completed.
 
 ### 2026-06-26: Vault-First Markdown File Rule
-- **Decision**: Established a rule in `AGENTS.md` to always default to creating and editing `.md` files within the `E:\MData\Kennis` folder.
+- **Decision**: Default general context notes to the repository's `Kennis/` vault, resolving the actual workspace path per machine.
 - **Rationale**: Ensures all project context and documentation are centralized in the Obsidian vault rather than scattered across code folders.
 - **Revisit**: Permanent workflow rule.
 
-### 2026-06-26: Brainstorm & Design First Dashboard Roadmap
+### 2026-06-26: Brainstorm & Design First Dashboard Roadmap (superseded)
 - **Decision**: Adopted a roadmap for the dashboard project that prioritizes feature brainstorming and user-flow design (using Google Flow) before executing any coding steps.
 - **Rationale**: Aligns with the strategic partner model, ensuring features are thoroughly designed and aligned with Daniel's vision before implementation begins.
-- **Revisit**: Next session.
+- **Revisit**: Superseded by the 2026-07-24 Sales OS decision unless the historical dashboard is restored.
 
 
 ## Related Links

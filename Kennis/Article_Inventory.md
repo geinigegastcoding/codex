@@ -1,14 +1,14 @@
 # MagisData Content & Article Inventory
 
-Dit document dient als centrale database voor het tracken van alle gegenereerde artikelen, content gaps en keyword research. Gebruik dit voor de content planning.
+Dit document is het handmatige register voor MagisData-artikelen en contentkansen. **Laatst repository-gecontroleerd: 24 juli 2026.** De actieve websites zijn gitlinks waarvan de inhoud niet in deze checkout aanwezig is; daardoor betekent “geregistreerd” niet automatisch dat de URL nu live en bereikbaar is.
 
 ## Gepubliceerde Artikelen (Live)
 
 | Datum | Slug / URL | Focus Keywords | Status | Auteur |
 |---|---|---|---|---|
-| 03-07-2026 | `/inzichten/heeft-een-loodgieter-een-website-nodig` | "website loodgieter", "heeft een loodgieter een website nodig" | Live | Daniël Magis |
+| 03-07-2026 | `/inzichten/heeft-een-loodgieter-een-website-nodig` | website loodgieter; heeft een loodgieter een website nodig | Geregistreerd; live status opnieuw verifiëren | Daniël Magis |
 
-## Content Gap Analysis (Voorbeeld / Te plannen)
+## Contentkansen (nog te valideren met zoekwoordonderzoek)
 
 | Topic / Niche | Doelwit Keyword | Prioriteit | Opmerkingen |
 |---|---|---|---|
@@ -19,7 +19,8 @@ Dit document dient als centrale database voor het tracken van alle gegenereerde 
 ---
 
 **Werkwijze voor het toevoegen van nieuwe artikelen:**
-1. Kies een open content gap uit de tabel hierboven (of verzin een nieuwe via keyword research).
+1. Valideer zoekintentie, relevantie, concurrentie en bestaande overlap voordat een onderwerp wordt gekozen.
 2. Voer de `seo-article-generator` skill uit voor dit onderwerp.
 3. Voer de `seo-page-publisher` skill uit om het te publiceren.
-4. Voeg het artikel toe aan de "Gepubliceerde Artikelen" tabel hierboven.
+4. Controleer build, metadata, canonical, schema waar relevant, afbeelding(en), minimaal drie geldige interne links en sitemap-opname.
+5. Voeg het artikel pas als `Live` toe nadat de productie-URL HTTP 200 geeft.

@@ -1,58 +1,58 @@
 # Business Data
 
-This file acts as the single source of truth for Magisdata dashboard metrics.
+This file is the dashboard's manual data contract. **Last repository review: 24 July 2026.** Values below are not connected to a verified live GA4, Stripe, Search Console, or CRM sync in this checkout. Unknown values are marked accordingly; do not present them as business facts.
 
 ## Financials
-- Monthly Revenue: 0
-- Cash Flow: 0
-- Profit Margin: 0
-- Revenue Growth: 0
-- Lead to Customer Rate: 0
-- CPA: 0
-- ROI: 0
-- Revenue Trajectory: 0,0,0,0,0,0,0,0,0,0,0,0
+- Monthly Revenue: Unknown
+- Cash Flow: Unknown
+- Profit Margin: Unknown
+- Revenue Growth: Unknown
+- Lead to Customer Rate: Unknown
+- CPA: Unknown
+- ROI: Unknown
+- Revenue Trajectory: No verified data
 
 ## Funnel
-- Visitors: 120
-- Captured: 2
-- Qualified: 1
-- Proposals: 1
-- Closed: 0
+- Visitors: Unknown
+- Captured: Unknown
+- Qualified: Unknown
+- Proposals: Unknown
+- Closed: Unknown
 
 ## Clients
 | Client | Service | MRR | Status |
 | --- | --- | --- | --- |
-| Placeholder Client | SEO Audit | 0 | Inactive |
+| Akal Bakkerij | Demo landing page | Unknown | Demo implemented; relationship and launch status unverified |
 
 ## Projects
 | Project | Client | Status | Progress |
 | --- | --- | --- | --- |
-| First Client Acquisition | Prospects | Pipeline | 10 |
-| Magisdata Local SEO | Internal | In Progress | 60 |
+| First customer acquisition | MagisData | Active focus | Unknown |
+| MagisData public website SEO | Internal | Active; website source unavailable in this checkout | Unknown |
+| Sales OS MVP | Internal | Implemented locally in `CRM/` | MVP |
+| Akal Bakkerij landing page | Akal Bakkerij | Demo implemented in `customers/Akal Bakkerij/` | Demo complete |
 
 ## SEO Metrics
-- Average Position: 6.4
-- Position Change: +1.2
-- AI Citation Score: 82
-- Missing Entities: 3
+- Average Position: Unknown
+- Position Change: Unknown
+- AI Citation Score: Not measured
+- Missing Entities: Not audited
 
 ## SEO Rankings
 | Keyword | Volume | Position | Change |
 | --- | --- | --- | --- |
-| webdesign leiden | 1200 | 3 | +2 |
-| seo bureau zuid holland | 850 | 8 | -1 |
-| goedkope website laten maken | 3400 | 12 | +5 |
-| magisdata | 150 | 1 | 0 |
+| No verified ranking data | — | — | — |
 
 ## Leads To Review
 | URL | Issue | Score |
 | --- | --- | --- |
-| loodgieter-leiden-oud.nl | No Mobile Version | 45 |
-| kapper-jansen.com | Missing Local Schema | 52 |
-| bouwbedrijf-de-vries.nl | Load Time > 5s | 38 |
+| No validated leads recorded | — | — |
 
 ## Leads To Send
 | Name | Email | Pitch |
 | --- | --- | --- |
-| Bakkerij De Hoek | info@dehoek.nl | Groei Package |
-| Schilder Pieters | contact@pieters.nl | Autoriteit Package |
+| No send-ready leads recorded | — | — |
+
+## Data-entry rule
+
+Add a value only with a source and measurement date. Use `Unknown` rather than zero when no measurement exists; zero is a real business value.
