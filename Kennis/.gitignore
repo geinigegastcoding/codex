@@ -1,0 +1,12 @@
+# Obsidian runtime state
+.obsidian/workspace*.json
+.obsidian/cache
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Never commit secrets
+.env
+.env.*

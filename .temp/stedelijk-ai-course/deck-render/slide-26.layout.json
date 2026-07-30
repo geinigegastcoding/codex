@@ -1,0 +1,1276 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/i9fxj9",
+    "id": "i9fxj9",
+    "slide": 26,
+    "layoutId": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F4EF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgf6xsb2",
+      "id": "1",
+      "bbox": [
+        56,
+        32,
+        560,
+        30
+      ],
+      "geometry": "rect",
+      "text": "OEFENEN",
+      "textPreview": "OEFENEN",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OEFENEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OEFENEN",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OEFENEN",
+              "fontSize": 17,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6do7mdcb",
+      "id": "2",
+      "name": "slide-26-title",
+      "bbox": [
+        56,
+        78,
+        1165,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Hands-on 2: ontwerp jouw veilige workflow",
+      "textPreview": "Hands-on 2: ontwerp jouw veilige workflow",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 50,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hands-on 2: ontwerp jouw veilige workflow"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hands-on 2: ontwerp jouw veilige workflow",
+          "resolvedTextStyle": {
+            "fontSize": 50,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hands-on 2: ontwerp jouw veilige workflow",
+              "fontSize": 50,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rexovitw",
+      "id": "3",
+      "bbox": [
+        56,
+        154,
+        1168,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3qps7at",
+      "id": "4",
+      "bbox": [
+        1165,
+        668,
+        58,
+        22
+      ],
+      "geometry": "rect",
+      "text": "26",
+      "textPreview": "26",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "26"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "26",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#667085",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "26",
+              "fontSize": 16,
+              "color": "#667085",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/14zq1cby",
+      "id": "5",
+      "bbox": [
+        56,
+        190,
+        1168,
+        106
+      ],
+      "geometry": "rect",
+      "fillColor": "#6B1F2A",
+      "lineColor": "#6B1F2A",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eh87qxsn",
+      "id": "6",
+      "bbox": [
+        86,
+        213,
+        330,
+        50
+      ],
+      "geometry": "rect",
+      "text": "WERK ALLEEN",
+      "textPreview": "WERK ALLEEN",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 32,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WERK ALLEEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WERK ALLEEN",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WERK ALLEEN",
+              "fontSize": 32,
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f2h8z2t8",
+      "id": "7",
+      "bbox": [
+        420,
+        210,
+        610,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Kies één terugkerende taak en maak de menselijke controle expliciet.",
+      "textPreview": "Kies één terugkerende taak en maak de menselijke controle expliciet.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Kies één terugkerende taak en maak de menselijke controle"
+          },
+          {
+            "index": 2,
+            "text": "expliciet."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Kies één terugkerende taak en maak de menselijke controle expliciet.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Kies één terugkerende taak en maak de menselijke controle expliciet.",
+              "fontSize": 24,
+              "color": "#FFFFFF",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpw7ap",
+      "id": "8",
+      "bbox": [
+        1050,
+        213,
+        135,
+        50
+      ],
+      "geometry": "rect",
+      "text": "3 min",
+      "textPreview": "3 min",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 32,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3 min"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3 min",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3 min",
+              "fontSize": 32,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p8jq5cba",
+      "id": "9",
+      "bbox": [
+        56,
+        360,
+        369.33,
+        34
+      ],
+      "geometry": "rect",
+      "text": "AI-ROL",
+      "textPreview": "AI-ROL",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI-ROL"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI-ROL",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI-ROL",
+              "fontSize": 18,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/14ny5kza",
+      "id": "10",
+      "bbox": [
+        56,
+        408,
+        369.33,
+        66
+      ],
+      "geometry": "rect",
+      "text": "Wat doet AI?",
+      "textPreview": "Wat doet AI?",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wat doet AI?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wat doet AI?",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wat doet AI?",
+              "fontSize": 27,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3excfip",
+      "id": "11",
+      "bbox": [
+        56,
+        485,
+        369.33,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f25w3ahk",
+      "id": "12",
+      "bbox": [
+        56,
+        510,
+        369.33,
+        200
+      ],
+      "geometry": "rect",
+      "text": "Concept\nVarianten\nStructuur\nTweede lezer",
+      "textPreview": "Concept | Varianten | Structuur | Tweede lezer",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Concept"
+          },
+          {
+            "index": 2,
+            "text": "Varianten"
+          },
+          {
+            "index": 3,
+            "text": "Structuur"
+          },
+          {
+            "index": 4,
+            "text": "Tweede lezer"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Concept",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Concept",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Varianten",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Varianten",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Structuur",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Structuur",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "Tweede lezer",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tweede lezer",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ehwfa50z",
+      "id": "13",
+      "bbox": [
+        455.33,
+        360,
+        369.33,
+        34
+      ],
+      "geometry": "rect",
+      "text": "GRENS",
+      "textPreview": "GRENS",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GRENS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GRENS",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GRENS",
+              "fontSize": 18,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p87y94zm",
+      "id": "14",
+      "bbox": [
+        455.33,
+        408,
+        369.33,
+        66
+      ],
+      "geometry": "rect",
+      "text": "Grenzen",
+      "textPreview": "Grenzen",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Grenzen"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Grenzen",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Grenzen",
+              "fontSize": 27,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7exgzi1",
+      "id": "15",
+      "bbox": [
+        455.33,
+        485,
+        369.33,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/365g7uhg",
+      "id": "16",
+      "bbox": [
+        455.33,
+        510,
+        369.33,
+        200
+      ],
+      "geometry": "rect",
+      "text": "Welke data?\nWelk besluit?\nWanneer stop je?",
+      "textPreview": "Welke data? | Welk besluit? | Wanneer stop je?",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Welke data?"
+          },
+          {
+            "index": 2,
+            "text": "Welk besluit?"
+          },
+          {
+            "index": 3,
+            "text": "Wanneer stop je?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Welke data?",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Welke data?",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Welk besluit?",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Welk besluit?",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Wanneer stop je?",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wanneer stop je?",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25wfep0v",
+      "id": "17",
+      "bbox": [
+        854.67,
+        360,
+        369.33,
+        34
+      ],
+      "geometry": "rect",
+      "text": "TEST",
+      "textPreview": "TEST",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TEST"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TEST",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TEST",
+              "fontSize": 18,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5c3ex0z2",
+      "id": "18",
+      "bbox": [
+        854.67,
+        408,
+        369.33,
+        66
+      ],
+      "geometry": "rect",
+      "text": "Morgen testen",
+      "textPreview": "Morgen testen",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Morgen testen"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Morgen testen",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Morgen testen",
+              "fontSize": 27,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4bux4vix",
+      "id": "19",
+      "bbox": [
+        854.67,
+        485,
+        369.33,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wvyxkvqd",
+      "id": "20",
+      "bbox": [
+        854.67,
+        510,
+        369.33,
+        200
+      ],
+      "geometry": "rect",
+      "text": "Kleine taak\nMeet kwaliteit\nDeel bevinding",
+      "textPreview": "Kleine taak | Meet kwaliteit | Deel bevinding",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Kleine taak"
+          },
+          {
+            "index": 2,
+            "text": "Meet kwaliteit"
+          },
+          {
+            "index": 3,
+            "text": "Deel bevinding"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Kleine taak",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Kleine taak",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Meet kwaliteit",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Meet kwaliteit",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Deel bevinding",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Deel bevinding",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,1427 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/bn4ptp",
+    "id": "bn4ptp",
+    "slide": 7,
+    "layoutId": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F4EF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mdojqxsv",
+      "id": "1",
+      "bbox": [
+        56,
+        32,
+        560,
+        30
+      ],
+      "geometry": "rect",
+      "text": "PROMPTEN",
+      "textPreview": "PROMPTEN",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PROMPTEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PROMPTEN",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PROMPTEN",
+              "fontSize": 17,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gz21cbm",
+      "id": "2",
+      "name": "slide-7-title",
+      "bbox": [
+        56,
+        78,
+        1165,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Een goede prompt is een compacte opdrachtbrief",
+      "textPreview": "Een goede prompt is een compacte opdrachtbrief",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 50,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Een goede prompt is een compacte opdrachtbrief"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Een goede prompt is een compacte opdrachtbrief",
+          "resolvedTextStyle": {
+            "fontSize": 50,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Een goede prompt is een compacte opdrachtbrief",
+              "fontSize": 50,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8f61s7a1",
+      "id": "3",
+      "bbox": [
+        56,
+        154,
+        1168,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vihk32ts",
+      "id": "4",
+      "bbox": [
+        1165,
+        668,
+        58,
+        22
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#667085",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 16,
+              "color": "#667085",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ah8juxs7",
+      "id": "5",
+      "bbox": [
+        70,
+        200,
+        45,
+        38
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1",
+              "fontSize": 25,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4z25cbi",
+      "id": "6",
+      "bbox": [
+        135,
+        200,
+        220,
+        38
+      ],
+      "geometry": "rect",
+      "text": "DOEL",
+      "textPreview": "DOEL",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DOEL"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DOEL",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DOEL",
+              "fontSize": 25,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjq1w7ad",
+      "id": "7",
+      "bbox": [
+        390,
+        200,
+        770,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Wat moet er ontstaan?",
+      "textPreview": "Wat moet er ontstaan?",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wat moet er ontstaan?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wat moet er ontstaan?",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wat moet er ontstaan?",
+              "fontSize": 23,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bmd0rit8",
+      "id": "8",
+      "bbox": [
+        70,
+        270,
+        45,
+        38
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2",
+              "fontSize": 25,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ql4jidc3",
+      "id": "9",
+      "bbox": [
+        135,
+        270,
+        220,
+        38
+      ],
+      "geometry": "rect",
+      "text": "CONTEXT",
+      "textPreview": "CONTEXT",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONTEXT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONTEXT",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONTEXT",
+              "fontSize": 25,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4v29k3al",
+      "id": "10",
+      "bbox": [
+        390,
+        270,
+        770,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Vak, klas, leerdoel",
+      "textPreview": "Vak, klas, leerdoel",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Vak, klas, leerdoel"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Vak, klas, leerdoel",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Vak, klas, leerdoel",
+              "fontSize": 23,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwbad8r6",
+      "id": "11",
+      "bbox": [
+        70,
+        340,
+        45,
+        38
+      ],
+      "geometry": "rect",
+      "text": "3",
+      "textPreview": "3",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3",
+              "fontSize": 25,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2tkritsf",
+      "id": "12",
+      "bbox": [
+        135,
+        340,
+        220,
+        38
+      ],
+      "geometry": "rect",
+      "text": "BRONNEN",
+      "textPreview": "BRONNEN",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "BRONNEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "BRONNEN",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "BRONNEN",
+              "fontSize": 25,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3utsbyt0",
+      "id": "13",
+      "bbox": [
+        390,
+        340,
+        770,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Waar mag AI op steunen?",
+      "textPreview": "Waar mag AI op steunen?",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Waar mag AI op steunen?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Waar mag AI op steunen?",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Waar mag AI op steunen?",
+              "fontSize": 23,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czm9onax",
+      "id": "14",
+      "bbox": [
+        70,
+        410,
+        45,
+        38
+      ],
+      "geometry": "rect",
+      "text": "4",
+      "textPreview": "4",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4",
+              "fontSize": 25,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d0vahsr2",
+      "id": "15",
+      "bbox": [
+        135,
+        410,
+        220,
+        38
+      ],
+      "geometry": "rect",
+      "text": "CRITERIA",
+      "textPreview": "CRITERIA",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CRITERIA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CRITERIA",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CRITERIA",
+              "fontSize": 25,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qxkrmdsr",
+      "id": "16",
+      "bbox": [
+        390,
+        410,
+        770,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Wanneer is het bruikbaar?",
+      "textPreview": "Wanneer is het bruikbaar?",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wanneer is het bruikbaar?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wanneer is het bruikbaar?",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wanneer is het bruikbaar?",
+              "fontSize": 23,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rydsfi9c",
+      "id": "17",
+      "bbox": [
+        70,
+        480,
+        45,
+        38
+      ],
+      "geometry": "rect",
+      "text": "5",
+      "textPreview": "5",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5",
+              "fontSize": 25,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s3i9cjad",
+      "id": "18",
+      "bbox": [
+        135,
+        480,
+        220,
+        38
+      ],
+      "geometry": "rect",
+      "text": "FORMAT",
+      "textPreview": "FORMAT",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FORMAT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FORMAT",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FORMAT",
+              "fontSize": 25,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t4raloby",
+      "id": "19",
+      "bbox": [
+        390,
+        480,
+        770,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Hoe wil je het ontvangen?",
+      "textPreview": "Hoe wil je het ontvangen?",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hoe wil je het ontvangen?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hoe wil je het ontvangen?",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hoe wil je het ontvangen?",
+              "fontSize": 23,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9kjq9k3m",
+      "id": "20",
+      "bbox": [
+        70,
+        550,
+        45,
+        38
+      ],
+      "geometry": "rect",
+      "text": "6",
+      "textPreview": "6",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "6"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "6",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "6",
+              "fontSize": 25,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8zapgf2h",
+      "id": "21",
+      "bbox": [
+        135,
+        550,
+        220,
+        38
+      ],
+      "geometry": "rect",
+      "text": "CONTROLE",
+      "textPreview": "CONTROLE",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONTROLE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONTROLE",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONTROLE",
+              "fontSize": 25,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ny187alw",
+      "id": "22",
+      "bbox": [
+        390,
+        550,
+        770,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Wat moet AI en jij checken?",
+      "textPreview": "Wat moet AI en jij checken?",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wat moet AI en jij checken?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wat moet AI en jij checken?",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wat moet AI en jij checken?",
+              "fontSize": 23,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

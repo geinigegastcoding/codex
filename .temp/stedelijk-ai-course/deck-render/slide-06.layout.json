@@ -1,0 +1,747 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/5yor4v",
+    "id": "5yor4v",
+    "slide": 6,
+    "layoutId": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F4EF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h47mxob2",
+      "id": "1",
+      "bbox": [
+        56,
+        32,
+        560,
+        30
+      ],
+      "geometry": "rect",
+      "text": "KANSEN EN GRENZEN",
+      "textPreview": "KANSEN EN GRENZEN",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "KANSEN EN GRENZEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "KANSEN EN GRENZEN",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KANSEN EN GRENZEN",
+              "fontSize": 17,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uhgnmtcb",
+      "id": "2",
+      "name": "slide-6-title",
+      "bbox": [
+        56,
+        78,
+        1165,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Zet AI in waar varianten goedkoop zijn",
+      "textPreview": "Zet AI in waar varianten goedkoop zijn",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 50,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Zet AI in waar varianten goedkoop zijn"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Zet AI in waar varianten goedkoop zijn",
+          "resolvedTextStyle": {
+            "fontSize": 50,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Zet AI in waar varianten goedkoop zijn",
+              "fontSize": 50,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vip4vetw",
+      "id": "3",
+      "bbox": [
+        56,
+        154,
+        1168,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47i5s3ut",
+      "id": "4",
+      "bbox": [
+        1165,
+        668,
+        58,
+        22
+      ],
+      "geometry": "rect",
+      "text": "06",
+      "textPreview": "06",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "06",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#667085",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "06",
+              "fontSize": 16,
+              "color": "#667085",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58r618by",
+      "id": "5",
+      "bbox": [
+        56,
+        215,
+        520,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#6B1F2A",
+      "lineColor": "#6B1F2A",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i50nqtcn",
+      "id": "6",
+      "bbox": [
+        670,
+        215,
+        520,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j69ozyt8",
+      "id": "7",
+      "bbox": [
+        56,
+        241,
+        520,
+        50
+      ],
+      "geometry": "rect",
+      "text": "Sterke rollen",
+      "textPreview": "Sterke rollen",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sterke rollen"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sterke rollen",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sterke rollen",
+              "fontSize": 31,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sbi5w3ap",
+      "id": "8",
+      "bbox": [
+        56,
+        307,
+        520,
+        260
+      ],
+      "geometry": "rect",
+      "text": "• brainstormer\n• eerste versie\n• variantenmaker\n• samenvatter\n• kritische tweede lezer",
+      "textPreview": "• brainstormer | • eerste versie | • variantenmaker | • samenvatter | • kritische tweede lezer",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• brainstormer"
+          },
+          {
+            "index": 2,
+            "text": "• eerste versie"
+          },
+          {
+            "index": 3,
+            "text": "• variantenmaker"
+          },
+          {
+            "index": 4,
+            "text": "• samenvatter"
+          },
+          {
+            "index": 5,
+            "text": "• kritische tweede lezer"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• brainstormer",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• brainstormer",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• eerste versie",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• eerste versie",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• variantenmaker",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• variantenmaker",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• samenvatter",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• samenvatter",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• kritische tweede lezer",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• kritische tweede lezer",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcr658ba",
+      "id": "9",
+      "bbox": [
+        670,
+        241,
+        520,
+        50
+      ],
+      "geometry": "rect",
+      "text": "Zwakke rollen",
+      "textPreview": "Zwakke rollen",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Zwakke rollen"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Zwakke rollen",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Zwakke rollen",
+              "fontSize": 31,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkbepkzy",
+      "id": "10",
+      "bbox": [
+        670,
+        307,
+        520,
+        260
+      ],
+      "geometry": "rect",
+      "text": "• bron van waarheid\n• autonome beoordelaar\n• beslisser over leerlingen\n• detector van intentie\n• beheerder van gevoelige data",
+      "textPreview": "• bron van waarheid | • autonome beoordelaar | • beslisser over leerlingen | • detector van intentie | • beheerder van gevoelige data",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• bron van waarheid"
+          },
+          {
+            "index": 2,
+            "text": "• autonome beoordelaar"
+          },
+          {
+            "index": 3,
+            "text": "• beslisser over leerlingen"
+          },
+          {
+            "index": 4,
+            "text": "• detector van intentie"
+          },
+          {
+            "index": 5,
+            "text": "• beheerder van gevoelige data"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• bron van waarheid",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• bron van waarheid",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• autonome beoordelaar",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• autonome beoordelaar",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• beslisser over leerlingen",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• beslisser over leerlingen",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• detector van intentie",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• detector van intentie",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• beheerder van gevoelige data",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• beheerder van gevoelige data",
+              "fontSize": 27,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

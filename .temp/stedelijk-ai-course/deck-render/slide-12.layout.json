@@ -1,0 +1,1276 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/krr3tc",
+    "id": "krr3tc",
+    "slide": 12,
+    "layoutId": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F4EF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "5eb7fd39-09e5-49b3-acae-6bba2fc6815f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "81c17bb1-f66d-4c6c-9fc9-73f6b682bf0d",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3qd4rehw",
+      "id": "1",
+      "bbox": [
+        56,
+        32,
+        560,
+        30
+      ],
+      "geometry": "rect",
+      "text": "OEFENEN",
+      "textPreview": "OEFENEN",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OEFENEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OEFENEN",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OEFENEN",
+              "fontSize": 17,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/orml0jih",
+      "id": "2",
+      "name": "slide-12-title",
+      "bbox": [
+        56,
+        78,
+        1165,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Hands-on 1: maak een mini-toets",
+      "textPreview": "Hands-on 1: maak een mini-toets",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 50,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hands-on 1: maak een mini-toets"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hands-on 1: maak een mini-toets",
+          "resolvedTextStyle": {
+            "fontSize": 50,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hands-on 1: maak een mini-toets",
+              "fontSize": 50,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfmtozm",
+      "id": "3",
+      "bbox": [
+        56,
+        154,
+        1168,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qto32t07",
+      "id": "4",
+      "bbox": [
+        1165,
+        668,
+        58,
+        22
+      ],
+      "geometry": "rect",
+      "text": "12",
+      "textPreview": "12",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "12"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "12",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#667085",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "12",
+              "fontSize": 16,
+              "color": "#667085",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bex4vyhs",
+      "id": "5",
+      "bbox": [
+        56,
+        190,
+        1168,
+        106
+      ],
+      "geometry": "rect",
+      "fillColor": "#6B1F2A",
+      "lineColor": "#6B1F2A",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cf6l4jid",
+      "id": "6",
+      "bbox": [
+        86,
+        213,
+        330,
+        50
+      ],
+      "geometry": "rect",
+      "text": "WERK IN DUO'S",
+      "textPreview": "WERK IN DUO'S",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 32,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WERK IN DUO'S"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WERK IN DUO'S",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WERK IN DUO'S",
+              "fontSize": 32,
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dgfmxozy",
+      "id": "7",
+      "bbox": [
+        420,
+        210,
+        610,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Kies één echt leerdoel. Gebruik geen herkenbare leerlinggegevens.",
+      "textPreview": "Kies één echt leerdoel. Gebruik geen herkenbare leerlinggegevens.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Kies één echt leerdoel. Gebruik geen herkenbare"
+          },
+          {
+            "index": 2,
+            "text": "leerlinggegevens."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Kies één echt leerdoel. Gebruik geen herkenbare leerlinggegevens.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Kies één echt leerdoel. Gebruik geen herkenbare leerlinggegevens.",
+              "fontSize": 24,
+              "color": "#FFFFFF",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6xk3qp03",
+      "id": "8",
+      "bbox": [
+        1050,
+        213,
+        135,
+        50
+      ],
+      "geometry": "rect",
+      "text": "25 min",
+      "textPreview": "25 min",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 32,
+        "typeface": "+mn-lt",
+        "color": "#D6A756",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "25 min"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "25 min",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "color": "#D6A756",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "25 min",
+              "fontSize": 32,
+              "color": "#D6A756",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7itkjuho",
+      "id": "9",
+      "bbox": [
+        56,
+        360,
+        369.33,
+        34
+      ],
+      "geometry": "rect",
+      "text": "STAP 1",
+      "textPreview": "STAP 1",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STAP 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STAP 1",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STAP 1",
+              "fontSize": 18,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b6h87ut4",
+      "id": "10",
+      "bbox": [
+        56,
+        408,
+        369.33,
+        66
+      ],
+      "geometry": "rect",
+      "text": "Maak",
+      "textPreview": "Maak",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Maak"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Maak",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Maak",
+              "fontSize": 31,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5o7ypcj",
+      "id": "11",
+      "bbox": [
+        56,
+        485,
+        369.33,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x8zq94ba",
+      "id": "12",
+      "bbox": [
+        56,
+        510,
+        369.33,
+        200
+      ],
+      "geometry": "rect",
+      "text": "Toetsmatrijs\n3-5 vragen\nAntwoordmodel",
+      "textPreview": "Toetsmatrijs | 3-5 vragen | Antwoordmodel",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Toetsmatrijs"
+          },
+          {
+            "index": 2,
+            "text": "3-5 vragen"
+          },
+          {
+            "index": 3,
+            "text": "Antwoordmodel"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Toetsmatrijs",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Toetsmatrijs",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "3-5 vragen",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3-5 vragen",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Antwoordmodel",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Antwoordmodel",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7q90zup",
+      "id": "13",
+      "bbox": [
+        455.33,
+        360,
+        369.33,
+        34
+      ],
+      "geometry": "rect",
+      "text": "STAP 2",
+      "textPreview": "STAP 2",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STAP 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STAP 2",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STAP 2",
+              "fontSize": 18,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n2x83ut8",
+      "id": "14",
+      "bbox": [
+        455.33,
+        408,
+        369.33,
+        66
+      ],
+      "geometry": "rect",
+      "text": "Controleer",
+      "textPreview": "Controleer",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Controleer"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Controleer",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Controleer",
+              "fontSize": 31,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m1o7upcn",
+      "id": "15",
+      "bbox": [
+        455.33,
+        485,
+        369.33,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94fq5kby",
+      "id": "16",
+      "bbox": [
+        455.33,
+        510,
+        369.33,
+        200
+      ],
+      "geometry": "rect",
+      "text": "Leerdoel\nAmbiguïteit\nPunten\nHaalbaarheid",
+      "textPreview": "Leerdoel | Ambiguïteit | Punten | Haalbaarheid",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Leerdoel"
+          },
+          {
+            "index": 2,
+            "text": "Ambiguïteit"
+          },
+          {
+            "index": 3,
+            "text": "Punten"
+          },
+          {
+            "index": 4,
+            "text": "Haalbaarheid"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Leerdoel",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Leerdoel",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Ambiguïteit",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ambiguïteit",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Punten",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Punten",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "Haalbaarheid",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Haalbaarheid",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o36pwfud",
+      "id": "17",
+      "bbox": [
+        854.67,
+        360,
+        369.33,
+        34
+      ],
+      "geometry": "rect",
+      "text": "STAP 3",
+      "textPreview": "STAP 3",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#6B1F2A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STAP 3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STAP 3",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#6B1F2A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STAP 3",
+              "fontSize": 18,
+              "color": "#6B1F2A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zex8zatw",
+      "id": "18",
+      "bbox": [
+        854.67,
+        408,
+        369.33,
+        66
+      ],
+      "geometry": "rect",
+      "text": "Verbeter",
+      "textPreview": "Verbeter",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Verbeter"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Verbeter",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "color": "#17222C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Verbeter",
+              "fontSize": 31,
+              "color": "#17222C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed47q5cb",
+      "id": "19",
+      "bbox": [
+        854.67,
+        485,
+        369.33,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6A756",
+      "lineColor": "#D6A756",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/294ri5wj",
+      "id": "20",
+      "bbox": [
+        854.67,
+        510,
+        369.33,
+        200
+      ],
+      "geometry": "rect",
+      "text": "Pas prompt aan\nBewaar versie 2\nDeel één reparatie",
+      "textPreview": "Pas prompt aan | Bewaar versie 2 | Deel één reparatie",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#17222C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Pas prompt aan"
+          },
+          {
+            "index": 2,
+            "text": "Bewaar versie 2"
+          },
+          {
+            "index": 3,
+            "text": "Deel één reparatie"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Pas prompt aan",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pas prompt aan",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Bewaar versie 2",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Bewaar versie 2",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Deel één reparatie",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#17222C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Deel één reparatie",
+              "fontSize": 22,
+              "color": "#17222C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

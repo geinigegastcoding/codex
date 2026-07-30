@@ -1,9 +1,0 @@
-{
-  "dutch_politics": ["tweedekamer", "fractieleider", "coalitieakkoord", "regering", "nsc", "pvv", "vvd", "kabinet", "geert wilders", "pieter omtzigt", "dilan yesilgoz", "caroline van der plas", "dick schoof", "minister"],
-  "dutch_finance": ["aex", "asml", "inflatie", "cbs", "dnb", "belastingdienst", "koopkracht", "rente", "woningmarkt"],
-  "sports": ["ajax", "feyenoord", "psv", "knvb", "champions league", "formule 1", "max verstappen", "red bull racing", "fia", "wielrennen", "tour de france", "olympische spelen"],
-  "technology": ["apple", "google", "microsoft", "openai", "chatgpt", "ai", "artificial intelligence", "smartphone", "cybersecurity", "hack", "datalek", "tweakers"],
-  "entertainment": ["eurovisie", "joost klein", "film", "bioscoop", "netflix", "spotify", "muziek", "festival", "lowlands", "pinkpop"],
-  "local": ["rotterdam", "amsterdam", "den haag", "utrecht", "eindhoven", "veldhoven"],
-  "world": ["oekraïne", "rusland", "poetin", "zelensky", "verenigde staten", "biden", "trump", "verkiezingen", "gaza", "israël"]
-}
