@@ -1,0 +1,1451 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.87,
+      "text": "A local model on a 6-year-old graphics"
+    },
+    {
+      "start": 2.88,
+      "end": 5.87,
+      "text": "card can now write your code all day for"
+    },
+    {
+      "start": 5.88,
+      "end": 8.51,
+      "text": "free with you barely touching any paid"
+    },
+    {
+      "start": 8.52,
+      "end": 11.27,
+      "text": "subscriptions. Nobody that rate limits"
+    },
+    {
+      "start": 11.28,
+      "end": 13.75,
+      "text": "you, bumps the price, or quietly nerfs"
+    },
+    {
+      "start": 13.76,
+      "end": 15.91,
+      "text": "the model you're working with. Sounds"
+    },
+    {
+      "start": 15.92,
+      "end": 17.43,
+      "text": "like the move to make right now with"
+    },
+    {
+      "start": 17.44,
+      "end": 19.31,
+      "text": "frontier models being rug pulled"
+    },
+    {
+      "start": 19.32,
+      "end": 21.67,
+      "text": "overnight. Until you look at the current"
+    },
+    {
+      "start": 21.68,
+      "end": 24.43,
+      "text": "prices of GPU and memory. It's ironic"
+    },
+    {
+      "start": 24.44,
+      "end": 26.67,
+      "text": "that frontier capability is so close"
+    },
+    {
+      "start": 26.68,
+      "end": 29.55,
+      "text": "within our reach, yet so far away. The"
+    },
+    {
+      "start": 29.56,
+      "end": 31.51,
+      "text": "models crossed the line this year, but"
+    },
+    {
+      "start": 31.52,
+      "end": 33.83,
+      "text": "the hardware to run them properly did"
+    },
+    {
+      "start": 33.84,
+      "end": 36.23,
+      "text": "the opposite of getting cheaper. By the"
+    },
+    {
+      "start": 36.24,
+      "end": 37.79,
+      "text": "end of this video, you'll know where"
+    },
+    {
+      "start": 37.8,
+      "end": 40.19,
+      "text": "that line is, what it cost you to cross"
+    },
+    {
+      "start": 40.2,
+      "end": 42.23,
+      "text": "it, and whether you're one of the people"
+    },
+    {
+      "start": 42.24,
+      "end": 44.11,
+      "text": "who actually [music] should."
+    },
+    {
+      "start": 44.12,
+      "end": 46.07,
+      "text": "Running a model on your own machine used"
+    },
+    {
+      "start": 46.08,
+      "end": 47.99,
+      "text": "to be a thing for hobbyists and [music]"
+    },
+    {
+      "start": 48,
+      "end": 50.79,
+      "text": "the privacy obsessed. That changed in"
+    },
+    {
+      "start": 50.8,
+      "end": 53.47,
+      "text": "June. A government order went out and"
+    },
+    {
+      "start": 53.48,
+      "end": 55.19,
+      "text": "within [music] hours two of the most"
+    },
+    {
+      "start": 55.2,
+      "end": 57.15,
+      "text": "capable models on the planet were"
+    },
+    {
+      "start": 57.16,
+      "end": 59.39,
+      "text": "switched off for every customer in the"
+    },
+    {
+      "start": 59.4,
+      "end": 62.215,
+      "text": "world without any prior notice."
+    },
+    {
+      "start": 62.225,
+      "end": 62.27,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 62.28,
+      "end": 64.229,
+      "text": "&gt;&gt; You could be mid-project, paid up in"
+    },
+    {
+      "start": 64.239,
+      "end": 66.23,
+      "text": "full, and the tool you'd built your week"
+    },
+    {
+      "start": 66.24,
+      "end": 68.59,
+      "text": "around was just gone for reasons that"
+    },
+    {
+      "start": 68.6,
+      "end": 71.11,
+      "text": "had nothing to do with you. That sits on"
+    },
+    {
+      "start": 71.12,
+      "end": 73.55,
+      "text": "top of the stuff you already live with."
+    },
+    {
+      "start": 73.56,
+      "end": 75.91,
+      "text": "Models get retired on someone else's"
+    },
+    {
+      "start": 75.92,
+      "end": 78.59,
+      "text": "schedule. Prices move. The version you"
+    },
+    {
+      "start": 78.6,
+      "end": 80.63,
+      "text": "trusted gets replaced by one that"
+    },
+    {
+      "start": 80.64,
+      "end": 82.78999999999999,
+      "text": "behaves differently. It sounds like a"
+    },
+    {
+      "start": 82.8,
+      "end": 84.91,
+      "text": "landlord that changes the locks whenever"
+    },
+    {
+      "start": 84.92,
+      "end": 87.15,
+      "text": "they feel like it, which is why people"
+    },
+    {
+      "start": 87.16,
+      "end": 89.55,
+      "text": "started eyeing the box already sitting"
+    },
+    {
+      "start": 89.56,
+      "end": 92.35,
+      "text": "under their desk. The real-life local"
+    },
+    {
+      "start": 92.36,
+      "end": 95.03,
+      "text": "model metric. Do you still feel the need"
+    },
+    {
+      "start": 95.03999999999999,
+      "end": 96.95,
+      "text": "to double-check its work against [music]"
+    },
+    {
+      "start": 96.96000000000001,
+      "end": 99.43,
+      "text": "the cloud model? For a lot of developers"
+    },
+    {
+      "start": 99.44,
+      "end": 102.22999999999999,
+      "text": "this year, the answer flipped to no."
+    },
+    {
+      "start": 102.24000000000001,
+      "end": 104.63,
+      "text": "What flipped it wasn't raw intelligence,"
+    },
+    {
+      "start": 104.64,
+      "end": 107.71000000000001,
+      "text": "but tool calling. A coding agent is only"
+    },
+    {
+      "start": 107.72,
+      "end": 110.27000000000001,
+      "text": "worth anything if it reliably reads your"
+    },
+    {
+      "start": 110.28,
+      "end": 112.78999999999999,
+      "text": "files, runs your tests, and edits the"
+    },
+    {
+      "start": 112.8,
+      "end": 116.19,
+      "text": "right lines. Older, small models faked"
+    },
+    {
+      "start": 116.2,
+      "end": 118.55,
+      "text": "it. They'd happily describe code they'd"
+    },
+    {
+      "start": 118.56,
+      "end": 119.856,
+      "text": "never opened."
+    },
+    {
+      "start": 119.866,
+      "end": 119.91,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 119.92,
+      "end": 122.95,
+      "text": "&gt;&gt; Somewhere around the 27 to 35 billion"
+    },
+    {
+      "start": 122.96,
+      "end": 125.71,
+      "text": "parameter mark, that got dependable. And"
+    },
+    {
+      "start": 125.72,
+      "end": 127.51,
+      "text": "a model on your desk could finally"
+    },
+    {
+      "start": 127.52,
+      "end": 129.51,
+      "text": "behave like an agent instead of a"
+    },
+    {
+      "start": 129.52,
+      "end": 132.27,
+      "text": "chatbot. But, good enough carries an"
+    },
+    {
+      "start": 132.28,
+      "end": 135.949,
+      "text": "asterisk. Local holds its own on bounded"
+    },
+    {
+      "start": 135.959,
+      "end": 138.27,
+      "text": "work. Auto complete, quick code"
+    },
+    {
+      "start": 138.28,
+      "end": 141.23,
+      "text": "questions, refactoring a module, writing"
+    },
+    {
+      "start": 141.24,
+      "end": 143.87,
+      "text": "tests, well-specified [music] edits."
+    },
+    {
+      "start": 143.88,
+      "end": 146.91,
+      "text": "Hand it a big big multi-file job and let"
+    },
+    {
+      "start": 146.92000000000002,
+      "end": 148.79,
+      "text": "it drive itself, and it still [music]"
+    },
+    {
+      "start": 148.8,
+      "end": 151.55,
+      "text": "loses to the frontier, badly. One"
+    },
+    {
+      "start": 151.56,
+      "end": 154.07,
+      "text": "developer put the trade nicely. A strong"
+    },
+    {
+      "start": 154.07999999999998,
+      "end": 156.75,
+      "text": "local model is a sharp junior who knows"
+    },
+    {
+      "start": 156.76,
+      "end": 158.55,
+      "text": "a little of everything, but needs"
+    },
+    {
+      "start": 158.56,
+      "end": 160.55,
+      "text": "steering. Where the frontier is the"
+    },
+    {
+      "start": 160.56,
+      "end": 162.07,
+      "text": "senior who thinks through the"
+    },
+    {
+      "start": 162.07999999999998,
+      "end": 163.67000000000002,
+      "text": "architecture with you. [music]"
+    },
+    {
+      "start": 163.68,
+      "end": 166.59,
+      "text": "If the senior gets you a 15x speed up,"
+    },
+    {
+      "start": 166.6,
+      "end": 169.07,
+      "text": "the junior gets you five. For something"
+    },
+    {
+      "start": 169.07999999999998,
+      "end": 171.27,
+      "text": "running free on hardware you already"
+    },
+    {
+      "start": 171.28,
+      "end": 173.949,
+      "text": "own, that's still a little absurd. Now,"
+    },
+    {
+      "start": 173.959,
+      "end": 176.23,
+      "text": "the catch. Crossing this line isn't just"
+    },
+    {
+      "start": 176.24,
+      "end": 178.31,
+      "text": "a download away. It's a hardware"
+    },
+    {
+      "start": 178.32,
+      "end": 180.75,
+      "text": "purchase, and one number decides nearly"
+    },
+    {
+      "start": 180.76,
+      "end": 184.47,
+      "text": "everything. Memory. The model has to fit"
+    },
+    {
+      "start": 184.48,
+      "end": 187.47,
+      "text": "in full in fast memory the GPU can"
+    },
+    {
+      "start": 187.48,
+      "end": 190.19,
+      "text": "reach, or it crawls. The math is"
+    },
+    {
+      "start": 190.2,
+      "end": 192.43,
+      "text": "friendly enough to do in your head. At"
+    },
+    {
+      "start": 192.44,
+      "end": 194.71,
+      "text": "the compression people run in practice,"
+    },
+    {
+      "start": 194.72,
+      "end": 197.43,
+      "text": "budget about half a gigabyte of memory"
+    },
+    {
+      "start": 197.44,
+      "end": 200.35,
+      "text": "per billion parameters. A 32 billion"
+    },
+    {
+      "start": 200.36,
+      "end": 203.03,
+      "text": "model then wants roughly 20 gigabytes"
+    },
+    {
+      "start": 203.04,
+      "end": 205.39,
+      "text": "just to sit there before it reads a line"
+    },
+    {
+      "start": 205.4,
+      "end": 208.22899999999998,
+      "text": "of your code. That's why 24 gigabytes of"
+    },
+    {
+      "start": 208.239,
+      "end": 210.99,
+      "text": "VRAM is the number you keep hearing."
+    },
+    {
+      "start": 211,
+      "end": 214.07,
+      "text": "Below that, it's blunt. 16 gigabytes is"
+    },
+    {
+      "start": 214.07999999999998,
+      "end": 216.82999999999998,
+      "text": "fine for auto complete and chat, not"
+    },
+    {
+      "start": 216.84,
+      "end": 219.55,
+      "text": "much more. The floor where local starts"
+    },
+    {
+      "start": 219.56,
+      "end": 221.87,
+      "text": "replacing the cloud for real work is a"
+    },
+    {
+      "start": 221.88,
+      "end": 225.99,
+      "text": "24 gig graphics card, or a Mac with 32"
+    },
+    {
+      "start": 226,
+      "end": 229.55,
+      "text": "to 48 gigs of unified memory. Watch for"
+    },
+    {
+      "start": 229.56,
+      "end": 232.99,
+      "text": "one trap. Those fast mixture of experts"
+    },
+    {
+      "start": 233,
+      "end": 235.15,
+      "text": "models only fire a few billion"
+    },
+    {
+      "start": 235.16,
+      "end": 238.03,
+      "text": "parameters per word. So, people assume"
+    },
+    {
+      "start": 238.04,
+      "end": 240.35,
+      "text": "they're light. They're not. The whole"
+    },
+    {
+      "start": 240.36,
+      "end": 242.47,
+      "text": "model still has to live in memory at"
+    },
+    {
+      "start": 242.48,
+      "end": 244.75,
+      "text": "once, and your context window rents"
+    },
+    {
+      "start": 244.76,
+      "end": 246.99,
+      "text": "space from the same pool. [music] A long"
+    },
+    {
+      "start": 247,
+      "end": 249.83,
+      "text": "one can eat 10 gigs by itself."
+    },
+    {
+      "start": 249.84,
+      "end": 251.67,
+      "text": "There's a quality dial, too."
+    },
+    {
+      "start": 251.68,
+      "end": 254.07,
+      "text": "Quantization, which is just how hard to"
+    },
+    {
+      "start": 254.08,
+      "end": 255.59,
+      "text": "compress the weights. [music]"
+    },
+    {
+      "start": 255.6,
+      "end": 257.59,
+      "text": "Push it too far and a coding model"
+    },
+    {
+      "start": 257.6,
+      "end": 259.372,
+      "text": "starts failing where you can see it."
+    },
+    {
+      "start": 259.382,
+      "end": 260.069,
+      "text": "[music]"
+    },
+    {
+      "start": 260.079,
+      "end": 262.87,
+      "text": "Broken tool calls, malformed JSON,"
+    },
+    {
+      "start": 262.88,
+      "end": 264.613,
+      "text": "switching language halfway through a"
+    },
+    {
+      "start": 264.623,
+      "end": 267.11,
+      "text": "[music] function. So, the rule is to run"
+    },
+    {
+      "start": 267.12,
+      "end": 269.83,
+      "text": "a smaller model at high quality over a"
+    },
+    {
+      "start": 269.84,
+      "end": 273.43,
+      "text": "big one crushed to fit. A sharp 27B"
+    },
+    {
+      "start": 273.44,
+      "end": 277.43,
+      "text": "beats a lobotomized 70B every time. The"
+    },
+    {
+      "start": 277.44,
+      "end": 279.43,
+      "text": "old comfort that hardware just gets"
+    },
+    {
+      "start": 279.44,
+      "end": 280.95,
+      "text": "cheaper if you wait is running"
+    },
+    {
+      "start": 280.96,
+      "end": 283.55,
+      "text": "backwards, though. The AI buildout has"
+    },
+    {
+      "start": 283.56,
+      "end": 286.23,
+      "text": "sent memory prices through the roof."
+    },
+    {
+      "start": 286.24,
+      "end": 289.11,
+      "text": "Used 24 gig cards are appreciating like"
+    },
+    {
+      "start": 289.12,
+      "end": 291.99,
+      "text": "wine. Capability landed on consumer"
+    },
+    {
+      "start": 292,
+      "end": 294.59000000000003,
+      "text": "hardware right as consumer hardware got"
+    },
+    {
+      "start": 294.6,
+      "end": 297.63,
+      "text": "expensive. Close enough to touch, priced"
+    },
+    {
+      "start": 297.64,
+      "end": 300.03,
+      "text": "just out of reach. Say the hardware"
+    },
+    {
+      "start": 300.04,
+      "end": 302.43,
+      "text": "sorted. Going from nothing installed to"
+    },
+    {
+      "start": 302.44,
+      "end": 304.71,
+      "text": "a model writing code in your editor is"
+    },
+    {
+      "start": 304.72,
+      "end": 305.878,
+      "text": "three pieces."
+    },
+    {
+      "start": 305.888,
+      "end": 306.15,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 306.16,
+      "end": 308.59,
+      "text": "&gt;&gt; First, the engine. This is the program"
+    },
+    {
+      "start": 308.6,
+      "end": 310.95,
+      "text": "that loads the model file and runs it."
+    },
+    {
+      "start": 310.96,
+      "end": 313.03,
+      "text": "The thing doing the math behind every"
+    },
+    {
+      "start": 313.04,
+      "end": 315.63,
+      "text": "word it writes. On its own, it's a brain"
+    },
+    {
+      "start": 315.64,
+      "end": 318.19,
+      "text": "in a jar. It can think and talk, but it"
+    },
+    {
+      "start": 318.2,
+      "end": 320.63,
+      "text": "can't touch anything on your machine."
+    },
+    {
+      "start": 320.64,
+      "end": 323.95,
+      "text": "Llama.cpp is the common one. MLX if"
+    },
+    {
+      "start": 323.96,
+      "end": 327.19,
+      "text": "you're on a Mac, and Ollama or LM Studio"
+    },
+    {
+      "start": 327.2,
+      "end": 329.51,
+      "text": "are friendlier wrappers around the same"
+    },
+    {
+      "start": 329.52,
+      "end": 332.39,
+      "text": "job. They all do the same. Run a small"
+    },
+    {
+      "start": 332.4,
+      "end": 334.59000000000003,
+      "text": "server on your own computer, so"
+    },
+    {
+      "start": 334.6,
+      "end": 336.35,
+      "text": "everything else can reach the model"
+    },
+    {
+      "start": 336.36,
+      "end": 338.55,
+      "text": "through a local address. Usually"
+    },
+    {
+      "start": 338.56,
+      "end": 342.71,
+      "text": "something like localhost port 11434."
+    },
+    {
+      "start": 342.72,
+      "end": 345.15,
+      "text": "Second, the harness. Most people have"
+    },
+    {
+      "start": 345.15999999999997,
+      "end": 346.95,
+      "text": "never heard of this one, and it's what"
+    },
+    {
+      "start": 346.96,
+      "end": 349.63,
+      "text": "separates a chatbot from an agent. The"
+    },
+    {
+      "start": 349.64,
+      "end": 351.83,
+      "text": "harness gives the brain a body. When the"
+    },
+    {
+      "start": 351.84000000000003,
+      "end": 354.349,
+      "text": "model writes open this file or run the"
+    },
+    {
+      "start": 354.359,
+      "end": 355.83,
+      "text": "[music] tests, the harness is the"
+    },
+    {
+      "start": 355.84000000000003,
+      "end": 358.11,
+      "text": "program that goes and does it. Pulls the"
+    },
+    {
+      "start": 358.12,
+      "end": 360.55,
+      "text": "file off your disk, runs the command,"
+    },
+    {
+      "start": 360.56,
+      "end": 362.19,
+      "text": "then feeds the result [music] back so"
+    },
+    {
+      "start": 362.2,
+      "end": 364.91,
+      "text": "the model can decide its next move."
+    },
+    {
+      "start": 364.92,
+      "end": 366.83,
+      "text": "Without a harness, the model can only"
+    },
+    {
+      "start": 366.84,
+      "end": 369.67,
+      "text": "describe what it would do. With one, it"
+    },
+    {
+      "start": 369.68,
+      "end": 372.27,
+      "text": "edits your code, runs it, sees what"
+    },
+    {
+      "start": 372.28,
+      "end": 374.39,
+      "text": "broke, and tries again."
+    },
+    {
+      "start": 374.4,
+      "end": 377.87,
+      "text": "By, aider, open code, client, those are"
+    },
+    {
+      "start": 377.88,
+      "end": 380.59,
+      "text": "harnesses. Some live in your terminal,"
+    },
+    {
+      "start": 380.6,
+      "end": 383.55,
+      "text": "some drop straight into your editor."
+    },
+    {
+      "start": 383.56,
+      "end": 385.67,
+      "text": "Third, pointing your editor at the"
+    },
+    {
+      "start": 385.68,
+      "end": 388.31,
+      "text": "thing. Every cloud coding tool you've"
+    },
+    {
+      "start": 388.32,
+      "end": 391.15,
+      "text": "ever used already talks to a model over"
+    },
+    {
+      "start": 391.16,
+      "end": 393.71,
+      "text": "a web address with an API key. [music]"
+    },
+    {
+      "start": 393.72,
+      "end": 396.63,
+      "text": "A local setup uses the identical wiring,"
+    },
+    {
+      "start": 396.64,
+      "end": 398.909,
+      "text": "you just change the address. In your"
+    },
+    {
+      "start": 398.919,
+      "end": 401.03,
+      "text": "editor's AI, you point it at that"
+    },
+    {
+      "start": 401.04,
+      "end": 403.71,
+      "text": "localhost address from the first step."
+    },
+    {
+      "start": 403.72,
+      "end": 406.27,
+      "text": "Same plug, different socket. Except now"
+    },
+    {
+      "start": 406.28,
+      "end": 408.35,
+      "text": "the model answering you sits on your"
+    },
+    {
+      "start": 408.36,
+      "end": 410.679,
+      "text": "desk instead of in a data center."
+    },
+    {
+      "start": 410.689,
+      "end": 411.07,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 411.08,
+      "end": 413.83,
+      "text": "&gt;&gt; The one command on ramps, Ollama, and LM"
+    },
+    {
+      "start": 413.84000000000003,
+      "end": 416.35,
+      "text": "Studio get you running in 5 minutes and"
+    },
+    {
+      "start": 416.36,
+      "end": 418.59000000000003,
+      "text": "hide all of this underneath. That"
+    },
+    {
+      "start": 418.6,
+      "end": 420.59,
+      "text": "convenience has a price, according to"
+    },
+    {
+      "start": 420.6,
+      "end": 423.27,
+      "text": "the local LLM community. They can hand"
+    },
+    {
+      "start": 423.28,
+      "end": 425.19,
+      "text": "you a smaller model than you thought you"
+    },
+    {
+      "start": 425.2,
+      "end": 427.43,
+      "text": "picked, or leave a lot of speed on the"
+    },
+    {
+      "start": 427.44,
+      "end": 430.27,
+      "text": "floor. It's still fine to start easy to"
+    },
+    {
+      "start": 430.28,
+      "end": 432.31,
+      "text": "prove the thing works at all, then"
+    },
+    {
+      "start": 432.32,
+      "end": 434.23,
+      "text": "graduate to the manual tools when the"
+    },
+    {
+      "start": 434.24,
+      "end": 436.31,
+      "text": "convenience start hiding something you"
+    },
+    {
+      "start": 436.32,
+      "end": 437.79,
+      "text": "need to see."
+    },
+    {
+      "start": 437.8,
+      "end": 439.79,
+      "text": "One last warning that saves a brutal"
+    },
+    {
+      "start": 439.8,
+      "end": 442.35,
+      "text": "first day. Don't take the big name cloud"
+    },
+    {
+      "start": 442.36,
+      "end": 445.03,
+      "text": "coding agent and aim it at a small local"
+    },
+    {
+      "start": 445.04,
+      "end": 447.35,
+      "text": "model. It's built for the frontier's"
+    },
+    {
+      "start": 447.36,
+      "end": 449.51,
+      "text": "flavor of tool calling and a giant"
+    },
+    {
+      "start": 449.52,
+      "end": 450.635,
+      "text": "context window,"
+    },
+    {
+      "start": 450.645,
+      "end": 450.75,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 450.76,
+      "end": 453.51,
+      "text": "&gt;&gt; and it faceplants on a 7B. The"
+    },
+    {
+      "start": 453.52,
+      "end": 455.83,
+      "text": "cautionary tale everyone links is the"
+    },
+    {
+      "start": 455.84000000000003,
+      "end": 458.87,
+      "text": "developer who tried exactly that on a 32"
+    },
+    {
+      "start": 458.88,
+      "end": 461.11,
+      "text": "gig laptop and watched the model"
+    },
+    {
+      "start": 461.12,
+      "end": 463.55,
+      "text": "confidently describe his code without"
+    },
+    {
+      "start": 463.56,
+      "end": 466.71,
+      "text": "ever once opening a file. Lighter plain"
+    },
+    {
+      "start": 466.72,
+      "end": 469.03,
+      "text": "text tools handle weak models far"
+    },
+    {
+      "start": 469.04,
+      "end": 471.35,
+      "text": "better. And whatever you run, keep the"
+    },
+    {
+      "start": 471.36,
+      "end": 472.99,
+      "text": "agent in a sandbox. [music]"
+    },
+    {
+      "start": 473,
+      "end": 474.83,
+      "text": "One hallucinated delete command"
+    },
+    {
+      "start": 474.84000000000003,
+      "end": 476.67,
+      "text": "shouldn't be able to take your real"
+    },
+    {
+      "start": 476.68,
+      "end": 478.43,
+      "text": "drive down with it."
+    },
+    {
+      "start": 478.44,
+      "end": 480.55,
+      "text": "What local gives you is control. The"
+    },
+    {
+      "start": 480.56,
+      "end": 482.91,
+      "text": "model can't be silently swapped, rate"
+    },
+    {
+      "start": 482.92,
+      "end": 485.59,
+      "text": "limited at the worst moment, deprecated,"
+    },
+    {
+      "start": 485.6,
+      "end": 487.75,
+      "text": "or switched off by a policy you never"
+    },
+    {
+      "start": 487.76,
+      "end": 489.87,
+      "text": "saw. Your code never leaves the"
+    },
+    {
+      "start": 489.88,
+      "end": 491.27,
+      "text": "building,"
+    },
+    {
+      "start": 491.28,
+      "end": 493.55,
+      "text": "plenty of people finance, healthcare,"
+    },
+    {
+      "start": 493.56,
+      "end": 495.79,
+      "text": "anything under an NDA is the only"
+    },
+    {
+      "start": 495.8,
+      "end": 497.71,
+      "text": "version their legal team will ever"
+    },
+    {
+      "start": 497.72,
+      "end": 500.07,
+      "text": "approve. It runs on a plane, in a"
+    },
+    {
+      "start": 500.08,
+      "end": 502.47,
+      "text": "basement, through [music] an outage, and"
+    },
+    {
+      "start": 502.48,
+      "end": 504.63,
+      "text": "once the hardware's paid off, running it"
+    },
+    {
+      "start": 504.64,
+      "end": 506.63,
+      "text": "flat out all weekend costs [music] you"
+    },
+    {
+      "start": 506.64,
+      "end": 509.39,
+      "text": "electricity. What you give up is just as"
+    },
+    {
+      "start": 509.4,
+      "end": 512.029,
+      "text": "real. The hardest reasoning and the long"
+    },
+    {
+      "start": 512.039,
+      "end": 514.39,
+      "text": "roam free agent jobs still belong to the"
+    },
+    {
+      "start": 514.4,
+      "end": 516.79,
+      "text": "frontier. A giant context [music]"
+    },
+    {
+      "start": 516.8,
+      "end": 518.75,
+      "text": "is slower to chew through on your"
+    },
+    {
+      "start": 518.76,
+      "end": 521.149,
+      "text": "machine, and you signed up for a second"
+    },
+    {
+      "start": 521.159,
+      "end": 523.19,
+      "text": "job, the person [music] who fixes all"
+    },
+    {
+      "start": 523.2,
+      "end": 525.59,
+      "text": "this when a driver update breaks it at"
+    },
+    {
+      "start": 525.6,
+      "end": 528.99,
+      "text": "11:00 p.m. The skeptics land two hits."
+    },
+    {
+      "start": 529,
+      "end": 531.51,
+      "text": "One, this isn't as democratic as it"
+    },
+    {
+      "start": 531.52,
+      "end": 533.87,
+      "text": "sounds. The capability is free, but the"
+    },
+    {
+      "start": 533.88,
+      "end": 537.07,
+      "text": "hardware is a wall, and just buy a 64"
+    },
+    {
+      "start": 537.08,
+      "end": 539.59,
+      "text": "gig Mac is a punchline to anyone on a"
+    },
+    {
+      "start": 539.6,
+      "end": 542.71,
+      "text": "budget. Two, the reverse trap, where a"
+    },
+    {
+      "start": 542.72,
+      "end": 544.75,
+      "text": "weak model [music] flops a task and you"
+    },
+    {
+      "start": 544.76,
+      "end": 547.31,
+      "text": "burn an hour wrestling it into something"
+    },
+    {
+      "start": 547.32,
+      "end": 549.87,
+      "text": "you'd have done yourself in 10 minutes."
+    },
+    {
+      "start": 549.88,
+      "end": 552.67,
+      "text": "Mitchell Hashimoto, who built HashiCorp,"
+    },
+    {
+      "start": 552.68,
+      "end": 555.15,
+      "text": "made that case. For the hardest work on"
+    },
+    {
+      "start": 555.16,
+      "end": 558.59,
+      "text": "a $5,000 machine, local still isn't"
+    },
+    {
+      "start": 558.6,
+      "end": 561.51,
+      "text": "there. For most everyday work, local"
+    },
+    {
+      "start": 561.52,
+      "end": 564.03,
+      "text": "model isn't a worst frontier model, it's"
+    },
+    {
+      "start": 564.04,
+      "end": 565.91,
+      "text": "a different tool with a different deal"
+    },
+    {
+      "start": 565.92,
+      "end": 568.19,
+      "text": "attached. And the most economical move"
+    },
+    {
+      "start": 568.2,
+      "end": 571.35,
+      "text": "today isn't full local, it's hybrid. Let"
+    },
+    {
+      "start": 571.36,
+      "end": 573.55,
+      "text": "a frontier model plan the big messy"
+    },
+    {
+      "start": 573.56,
+      "end": 576.19,
+      "text": "thing, let your local model grind out"
+    },
+    {
+      "start": 576.2,
+      "end": 578.75,
+      "text": "the well-defined pieces for free,"
+    },
+    {
+      "start": 578.76,
+      "end": 582.11,
+      "text": "escalate the hard 20% back to the cloud."
+    },
+    {
+      "start": 582.12,
+      "end": 585.23,
+      "text": "Own what you can, rent what you must."
+    },
+    {
+      "start": 585.24,
+      "end": 586.91,
+      "text": "Zoom out and the [music] gap isn't"
+    },
+    {
+      "start": 586.92,
+      "end": 589.87,
+      "text": "closing so much as getting redrawn. At"
+    },
+    {
+      "start": 589.88,
+      "end": 591.95,
+      "text": "the very top, the frontier still pulls"
+    },
+    {
+      "start": 591.96,
+      "end": 594.43,
+      "text": "away. The best closed models notched"
+    },
+    {
+      "start": 594.44,
+      "end": 596.95,
+      "text": "further ahead this year. The lag between"
+    },
+    {
+      "start": 596.96,
+      "end": 598.59,
+      "text": "the frontier and what you can run at"
+    },
+    {
+      "start": 598.6,
+      "end": 600.83,
+      "text": "home has shrunk from a couple of years"
+    },
+    {
+      "start": 600.84,
+      "end": 603.55,
+      "text": "to roughly 6 months. Open weights"
+    },
+    {
+      "start": 603.56,
+      "end": 605.79,
+      "text": "already make up a big chunk of real"
+    },
+    {
+      "start": 605.8,
+      "end": 607.75,
+      "text": "usage. The push behind them is"
+    },
+    {
+      "start": 607.76,
+      "end": 608.83,
+      "text": "structural. [music]"
+    },
+    {
+      "start": 608.84,
+      "end": 611.59,
+      "text": "Unified memory machines and AI chips"
+    },
+    {
+      "start": 611.6,
+      "end": 614.31,
+      "text": "opening a third hardware path. Plus the"
+    },
+    {
+      "start": 614.32,
+      "end": 615.75,
+      "text": "efficiency tricks that keep [music]"
+    },
+    {
+      "start": 615.76,
+      "end": 618.15,
+      "text": "stuffing more capability into less"
+    },
+    {
+      "start": 618.16,
+      "end": 620.83,
+      "text": "memory. The pull the other way is just"
+    },
+    {
+      "start": 620.84,
+      "end": 623.55,
+      "text": "as real. The labs can keep the very best"
+    },
+    {
+      "start": 623.56,
+      "end": 625.95,
+      "text": "behind the paywall and raise a ceiling"
+    },
+    {
+      "start": 625.96,
+      "end": 628.55,
+      "text": "you can't follow. Whether it's you comes"
+    },
+    {
+      "start": 628.56,
+      "end": 631.43,
+      "text": "down to a few questions. Already have a"
+    },
+    {
+      "start": 631.44,
+      "end": 635.63,
+      "text": "24 gig card or 32 gig plus Mac. Spend a"
+    },
+    {
+      "start": 635.64,
+      "end": 637.95,
+      "text": "lot of your day on bounded coding work"
+    },
+    {
+      "start": 637.96,
+      "end": 640.19,
+      "text": "and like the idea of nobody being able"
+    },
+    {
+      "start": 640.2,
+      "end": 642.79,
+      "text": "to touch your setup. Build the local"
+    },
+    {
+      "start": 642.8,
+      "end": 645.63,
+      "text": "daily driver. Keep a cheap cloud sub for"
+    },
+    {
+      "start": 645.64,
+      "end": 648.19,
+      "text": "the heavy lifting. Mostly turn big"
+    },
+    {
+      "start": 648.2,
+      "end": 650.31,
+      "text": "agents loose on giant [music] code bases"
+    },
+    {
+      "start": 650.32,
+      "end": 652.71,
+      "text": "or the hardware budget isn't there or"
+    },
+    {
+      "start": 652.72,
+      "end": 654.63,
+      "text": "you'd rather not baby sit your own"
+    },
+    {
+      "start": 654.64,
+      "end": 657.07,
+      "text": "infrastructure, the subsidized cloud"
+    },
+    {
+      "start": 657.08,
+      "end": 659.75,
+      "text": "plan is still the rational call. One"
+    },
+    {
+      "start": 659.76,
+      "end": 661.63,
+      "text": "more thing we've covered before. The"
+    },
+    {
+      "start": 661.64,
+      "end": 663.47,
+      "text": "reason that cloud plan feels like a"
+    },
+    {
+      "start": 663.48,
+      "end": 665.91,
+      "text": "steal is that someone else is eating the"
+    },
+    {
+      "start": 665.92,
+      "end": 668.71,
+      "text": "cost for now and that can end on their"
+    },
+    {
+      "start": 668.72,
+      "end": 671.71,
+      "text": "terms, not yours. The model on the box"
+    },
+    {
+      "start": 671.72,
+      "end": 673.55,
+      "text": "under your desk can't be rug [music]"
+    },
+    {
+      "start": 673.56,
+      "end": 676.03,
+      "text": "pulled, can't be repriced, can't be"
+    },
+    {
+      "start": 676.04,
+      "end": 678.577,
+      "text": "retired out from under you. It's slower,"
+    },
+    {
+      "start": 678.587,
+      "end": 680.55,
+      "text": "[music] it's less clever, but it's"
+    },
+    {
+      "start": 680.56,
+      "end": 682.39,
+      "text": "yours. For a growing number of"
+    },
+    {
+      "start": 682.4,
+      "end": 684.472,
+      "text": "developers, that last word is the one"
+    },
+    {
+      "start": 684.482,
+      "end": 701.51,
+      "text": "[music] that finally tips it."
+    },
+    {
+      "start": 701.52,
+      "end": 703.64,
+      "text": "&gt;&gt; Mhm."
+    }
+  ]
+}

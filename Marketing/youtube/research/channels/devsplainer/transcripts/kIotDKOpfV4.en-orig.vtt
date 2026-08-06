@@ -1,0 +1,1784 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.110 align:start position:0%
+ 
+Last<00:00:00.440><c> month,</c><00:00:00.654><c> [music]</c><00:00:00.960><c> a</c><00:00:01.040><c> free</c><00:00:01.400><c> model</c><00:00:01.800><c> you</c><00:00:01.920><c> can</c>
+
+00:00:02.110 --> 00:00:02.120 align:start position:0%
+Last month, [music] a free model you can
+ 
+
+00:00:02.120 --> 00:00:04.670 align:start position:0%
+Last month, [music] a free model you can
+download<00:00:02.600><c> and</c><00:00:02.760><c> run</c><00:00:02.960><c> yourself</c><00:00:03.760><c> tied</c><00:00:04.160><c> Claude's</c>
+
+00:00:04.670 --> 00:00:04.680 align:start position:0%
+download and run yourself tied Claude's
+ 
+
+00:00:04.680 --> 00:00:07.150 align:start position:0%
+download and run yourself tied Claude's
+best<00:00:05.040><c> coding</c><00:00:05.440><c> model</c><00:00:05.840><c> head-to-head.</c><00:00:07.000><c> They</c>
+
+00:00:07.150 --> 00:00:07.160 align:start position:0%
+best coding model head-to-head. They
+ 
+
+00:00:07.160 --> 00:00:10.750 align:start position:0%
+best coding model head-to-head. They
+solved<00:00:07.600><c> 25</c><00:00:08.280><c> tasks</c><00:00:08.880><c> each</c><00:00:09.170><c> [music]</c><00:00:09.440><c> out</c><00:00:09.600><c> of</c><00:00:09.720><c> 45</c>
+
+00:00:10.750 --> 00:00:10.760 align:start position:0%
+solved 25 tasks each [music] out of 45
+ 
+
+00:00:10.760 --> 00:00:14.070 align:start position:0%
+solved 25 tasks each [music] out of 45
+and<00:00:10.880><c> gave</c><00:00:11.160><c> the</c><00:00:11.280><c> same</c><00:00:11.720><c> answer</c><00:00:12.200><c> on</c><00:00:12.400><c> 43</c><00:00:13.360><c> of</c><00:00:13.520><c> them.</c>
+
+00:00:14.070 --> 00:00:14.080 align:start position:0%
+and gave the same answer on 43 of them.
+ 
+
+00:00:14.080 --> 00:00:15.870 align:start position:0%
+and gave the same answer on 43 of them.
+That's<00:00:14.320><c> the</c><00:00:14.440><c> number</c><00:00:14.800><c> that</c><00:00:14.960><c> started</c><00:00:15.480><c> turning</c>
+
+00:00:15.870 --> 00:00:15.880 align:start position:0%
+That's the number that started turning
+ 
+
+00:00:15.880 --> 00:00:16.365 align:start position:0%
+That's the number that started turning
+heads.
+
+00:00:16.365 --> 00:00:16.375 align:start position:0%
+heads.
+ 
+
+00:00:16.375 --> 00:00:16.630 align:start position:0%
+heads.
+&gt;&gt; [music]
+
+00:00:16.630 --> 00:00:16.640 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:00:16.640 --> 00:00:18.510 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; It's<00:00:16.880><c> also</c><00:00:17.200><c> the</c><00:00:17.280><c> most</c><00:00:17.560><c> misleading</c><00:00:18.120><c> number</c><00:00:18.440><c> in</c>
+
+00:00:18.510 --> 00:00:18.520 align:start position:0%
+&gt;&gt; It's also the most misleading number in
+ 
+
+00:00:18.520 --> 00:00:21.230 align:start position:0%
+&gt;&gt; It's also the most misleading number in
+this<00:00:18.680><c> whole</c><00:00:18.880><c> comparison</c><00:00:19.840><c> because</c><00:00:20.640><c> tied</c><00:00:21.000><c> one</c>
+
+00:00:21.230 --> 00:00:21.240 align:start position:0%
+this whole comparison because tied one
+ 
+
+00:00:21.240 --> 00:00:24.190 align:start position:0%
+this whole comparison because tied one
+curated<00:00:21.760><c> benchmark</c><00:00:22.520><c> and</c><00:00:22.920><c> replaces</c><00:00:22.940><c> [music]</c>
+
+00:00:24.190 --> 00:00:24.200 align:start position:0%
+curated benchmark and replaces [music]
+ 
+
+00:00:24.200 --> 00:00:26.750 align:start position:0%
+curated benchmark and replaces [music]
+are<00:00:24.400><c> not</c><00:00:24.680><c> the</c><00:00:24.760><c> same</c><00:00:25.080><c> sentence.</c><00:00:26.120><c> The</c><00:00:26.200><c> model</c><00:00:26.600><c> is</c>
+
+00:00:26.750 --> 00:00:26.760 align:start position:0%
+are not the same sentence. The model is
+ 
+
+00:00:26.760 --> 00:00:31.270 align:start position:0%
+are not the same sentence. The model is
+GLM<00:00:27.320><c> 5.2.</c><00:00:28.640><c> Open</c><00:00:29.080><c> weights</c><00:00:29.640><c> MIT</c><00:00:30.040><c> license</c><00:00:30.960><c> built</c>
+
+00:00:31.270 --> 00:00:31.280 align:start position:0%
+GLM 5.2. Open weights MIT license built
+ 
+
+00:00:31.280 --> 00:00:34.050 align:start position:0%
+GLM 5.2. Open weights MIT license built
+by<00:00:31.400><c> a</c><00:00:31.520><c> Chinese</c><00:00:32.040><c> lab</c><00:00:32.400><c> called</c><00:00:32.800><c> ZAI.</c>
+
+00:00:34.050 --> 00:00:34.060 align:start position:0%
+by a Chinese lab called ZAI.
+ 
+
+00:00:34.060 --> 00:00:34.190 align:start position:0%
+by a Chinese lab called ZAI.
+&gt;&gt; [music]
+
+00:00:34.190 --> 00:00:34.200 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:00:34.200 --> 00:00:36.830 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; A<00:00:34.320><c> former</c><00:00:34.720><c> Meta</c><00:00:35.200><c> and</c><00:00:35.360><c> DeepMind</c><00:00:35.840><c> VP</c><00:00:36.440><c> called</c><00:00:36.720><c> it</c>
+
+00:00:36.830 --> 00:00:36.840 align:start position:0%
+&gt;&gt; A former Meta and DeepMind VP called it
+ 
+
+00:00:36.840 --> 00:00:38.710 align:start position:0%
+&gt;&gt; A former Meta and DeepMind VP called it
+the<00:00:36.960><c> first</c><00:00:37.440><c> open</c><00:00:37.720><c> model</c><00:00:38.080><c> that</c><00:00:38.320><c> passes</c><00:00:38.645><c> [music]</c>
+
+00:00:38.710 --> 00:00:38.720 align:start position:0%
+the first open model that passes [music]
+ 
+
+00:00:38.720 --> 00:00:41.630 align:start position:0%
+the first open model that passes [music]
+the<00:00:38.840><c> bar</c><00:00:39.200><c> as</c><00:00:39.400><c> a</c><00:00:39.440><c> daily</c><00:00:39.760><c> driver.</c><00:00:40.840><c> Perplexity</c>
+
+00:00:41.630 --> 00:00:41.640 align:start position:0%
+the bar as a daily driver. Perplexity
+ 
+
+00:00:41.640 --> 00:00:44.150 align:start position:0%
+the bar as a daily driver. Perplexity
+CEO<00:00:42.280><c> said</c><00:00:42.600><c> he</c><00:00:42.720><c> was</c><00:00:42.920><c> impressed,</c><00:00:43.720><c> almost</c>
+
+00:00:44.150 --> 00:00:44.160 align:start position:0%
+CEO said he was impressed, almost
+ 
+
+00:00:44.160 --> 00:00:46.495 align:start position:0%
+CEO said he was impressed, almost
+shocked<00:00:44.640><c> at</c><00:00:44.840><c> how</c><00:00:45.120><c> good</c><00:00:45.440><c> it</c><00:00:45.560><c> is</c><00:00:45.800><c> at</c><00:00:46.000><c> coding</c>
+
+00:00:46.495 --> 00:00:46.505 align:start position:0%
+shocked at how good it is at coding
+ 
+
+00:00:46.505 --> 00:00:49.390 align:start position:0%
+shocked at how good it is at coding
+[music]<00:00:46.840><c> and</c><00:00:47.000><c> that</c><00:00:47.160><c> it</c><00:00:47.720><c> changes</c><00:00:48.280><c> things.</c><00:00:49.200><c> So,</c>
+
+00:00:49.390 --> 00:00:49.400 align:start position:0%
+[music] and that it changes things. So,
+ 
+
+00:00:49.400 --> 00:00:52.150 align:start position:0%
+[music] and that it changes things. So,
+did<00:00:49.560><c> the</c><00:00:49.640><c> frontier</c><00:00:50.200><c> just</c><00:00:50.560><c> fall?</c><00:00:51.320><c> Almost.</c><00:00:52.080><c> By</c>
+
+00:00:52.150 --> 00:00:52.160 align:start position:0%
+did the frontier just fall? Almost. By
+ 
+
+00:00:52.160 --> 00:00:53.870 align:start position:0%
+did the frontier just fall? Almost. By
+the<00:00:52.280><c> end</c><00:00:52.400><c> of</c><00:00:52.480><c> this,</c><00:00:52.880><c> you'll</c><00:00:53.080><c> know</c><00:00:53.280><c> exactly</c>
+
+00:00:53.870 --> 00:00:53.880 align:start position:0%
+the end of this, you'll know exactly
+ 
+
+00:00:53.880 --> 00:00:56.270 align:start position:0%
+the end of this, you'll know exactly
+where<00:00:54.200><c> a</c><00:00:54.280><c> free</c><00:00:54.600><c> model</c><00:00:54.960><c> beats</c><00:00:55.320><c> one</c><00:00:55.560><c> that</c><00:00:55.840><c> costs</c>
+
+00:00:56.270 --> 00:00:56.280 align:start position:0%
+where a free model beats one that costs
+ 
+
+00:00:56.280 --> 00:00:58.150 align:start position:0%
+where a free model beats one that costs
+five<00:00:56.330><c> [music]</c><00:00:56.640><c> times</c><00:00:56.960><c> as</c><00:00:57.160><c> much,</c><00:00:57.920><c> where</c><00:00:58.080><c> it</c>
+
+00:00:58.150 --> 00:00:58.160 align:start position:0%
+five [music] times as much, where it
+ 
+
+00:00:58.160 --> 00:01:00.390 align:start position:0%
+five [music] times as much, where it
+breaks<00:00:58.480><c> down,</c><00:00:59.320><c> and</c><00:00:59.440><c> the</c><00:00:59.520><c> one</c><00:00:59.800><c> cost</c><00:01:00.120><c> number</c>
+
+00:01:00.390 --> 00:01:00.400 align:start position:0%
+breaks down, and the one cost number
+ 
+
+00:01:00.400 --> 00:01:02.510 align:start position:0%
+breaks down, and the one cost number
+that<00:01:00.560><c> flips</c><00:01:00.880><c> the</c><00:01:01.000><c> entire</c><00:01:01.720><c> it's</c><00:01:02.000><c> cheaper</c>
+
+00:01:02.510 --> 00:01:02.520 align:start position:0%
+that flips the entire it's cheaper
+ 
+
+00:01:02.520 --> 00:01:05.670 align:start position:0%
+that flips the entire it's cheaper
+argument<00:01:03.160><c> upside</c><00:01:03.600><c> down.</c><00:01:04.519><c> For</c><00:01:04.760><c> years,</c><00:01:05.320><c> open</c>
+
+00:01:05.670 --> 00:01:05.680 align:start position:0%
+argument upside down. For years, open
+ 
+
+00:01:05.680 --> 00:01:07.310 align:start position:0%
+argument upside down. For years, open
+models<00:01:06.080><c> trailed</c><00:01:06.400><c> the</c><00:01:06.520><c> frontier</c><00:01:07.120><c> by</c>
+
+00:01:07.310 --> 00:01:07.320 align:start position:0%
+models trailed the frontier by
+ 
+
+00:01:07.320 --> 00:01:10.630 align:start position:0%
+models trailed the frontier by
+comfortable<00:01:07.960><c> margin.</c><00:01:09.000><c> Epoch</c><00:01:09.600><c> AI</c><00:01:10.000><c> tracks</c><00:01:10.400><c> that</c>
+
+00:01:10.630 --> 00:01:10.640 align:start position:0%
+comfortable margin. Epoch AI tracks that
+ 
+
+00:01:10.640 --> 00:01:12.070 align:start position:0%
+comfortable margin. Epoch AI tracks that
+gap<00:01:11.040><c> and</c><00:01:11.160><c> their</c><00:01:11.280><c> measurement</c><00:01:11.880><c> is</c><00:01:12.000><c> a</c>
+
+00:01:12.070 --> 00:01:12.080 align:start position:0%
+gap and their measurement is a
+ 
+
+00:01:12.080 --> 00:01:14.470 align:start position:0%
+gap and their measurement is a
+respectable<00:01:12.760><c> headline.</c><00:01:13.680><c> Since</c><00:01:13.920><c> the</c><00:01:14.040><c> start</c><00:01:14.360><c> of</c>
+
+00:01:14.470 --> 00:01:14.480 align:start position:0%
+respectable headline. Since the start of
+ 
+
+00:01:14.480 --> 00:01:17.230 align:start position:0%
+respectable headline. Since the start of
+2026,<00:01:15.440><c> the</c><00:01:15.560><c> best</c><00:01:16.000><c> open</c><00:01:16.320><c> weight</c><00:01:16.560><c> models</c><00:01:17.000><c> sit</c>
+
+00:01:17.230 --> 00:01:17.240 align:start position:0%
+2026, the best open weight models sit
+ 
+
+00:01:17.240 --> 00:01:19.590 align:start position:0%
+2026, the best open weight models sit
+about<00:01:17.520><c> four</c><00:01:17.840><c> months</c><00:01:18.200><c> behind</c><00:01:18.680><c> the</c><00:01:18.760><c> best</c><00:01:19.200><c> closed</c>
+
+00:01:19.590 --> 00:01:19.600 align:start position:0%
+about four months behind the best closed
+ 
+
+00:01:19.600 --> 00:01:21.510 align:start position:0%
+about four months behind the best closed
+ones<00:01:19.920><c> on</c><00:01:20.120><c> capability.</c><00:01:20.565><c> [music]</c>
+
+00:01:21.510 --> 00:01:21.520 align:start position:0%
+ones on capability. [music]
+ 
+
+00:01:21.520 --> 00:01:24.550 align:start position:0%
+ones on capability. [music]
+GLM<00:01:22.160><c> 5.2</c><00:01:23.040><c> is</c><00:01:23.200><c> the</c><00:01:23.360><c> loudest</c><00:01:23.800><c> data</c><00:01:24.120><c> point</c><00:01:24.480><c> in</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+GLM 5.2 is the loudest data point in
+ 
+
+00:01:24.560 --> 00:01:27.150 align:start position:0%
+GLM 5.2 is the loudest data point in
+that<00:01:24.760><c> collapse.</c><00:01:25.600><c> It's</c><00:01:25.800><c> the</c><00:01:25.920><c> first</c><00:01:26.440><c> open</c><00:01:26.800><c> model</c>
+
+00:01:27.150 --> 00:01:27.160 align:start position:0%
+that collapse. It's the first open model
+ 
+
+00:01:27.160 --> 00:01:29.830 align:start position:0%
+that collapse. It's the first open model
+developers<00:01:27.840><c> use</c><00:01:28.160><c> as</c><00:01:28.360><c> a</c><00:01:28.400><c> daily</c><00:01:28.800><c> driver</c><00:01:29.400><c> instead</c>
+
+00:01:29.830 --> 00:01:29.840 align:start position:0%
+developers use as a daily driver instead
+ 
+
+00:01:29.840 --> 00:01:32.270 align:start position:0%
+developers use as a daily driver instead
+of<00:01:29.960><c> a</c><00:01:30.000><c> weekend</c><00:01:30.520><c> curiosity.</c><00:01:31.920><c> On</c><00:01:32.120><c> the</c>
+
+00:01:32.270 --> 00:01:32.280 align:start position:0%
+of a weekend curiosity. On the
+ 
+
+00:01:32.280 --> 00:01:34.750 align:start position:0%
+of a weekend curiosity. On the
+independent<00:01:33.120><c> intelligence</c><00:01:33.800><c> index,</c><00:01:34.400><c> it's</c><00:01:34.640><c> the</c>
+
+00:01:34.750 --> 00:01:34.760 align:start position:0%
+independent intelligence index, it's the
+ 
+
+00:01:34.760 --> 00:01:37.630 align:start position:0%
+independent intelligence index, it's the
+number<00:01:35.120><c> one</c><00:01:35.520><c> open</c><00:01:35.920><c> model</c><00:01:36.320><c> on</c><00:01:36.560><c> Earth,</c><00:01:37.200><c> a</c><00:01:37.280><c> few</c>
+
+00:01:37.630 --> 00:01:37.640 align:start position:0%
+number one open model on Earth, a few
+ 
+
+00:01:37.640 --> 00:01:41.150 align:start position:0%
+number one open model on Earth, a few
+points<00:01:38.000><c> behind</c><00:01:38.480><c> Opus</c><00:01:38.960><c> and</c><00:01:39.120><c> GPT</c><00:01:39.720><c> 5.5,</c><00:01:40.871><c> [music]</c>
+
+00:01:41.150 --> 00:01:41.160 align:start position:0%
+points behind Opus and GPT 5.5, [music]
+ 
+
+00:01:41.160 --> 00:01:42.790 align:start position:0%
+points behind Opus and GPT 5.5, [music]
+ahead<00:01:41.440><c> of</c><00:01:41.680><c> everything</c><00:01:42.200><c> else</c><00:01:42.480><c> you</c><00:01:42.560><c> can</c>
+
+00:01:42.790 --> 00:01:42.800 align:start position:0%
+ahead of everything else you can
+ 
+
+00:01:42.800 --> 00:01:45.150 align:start position:0%
+ahead of everything else you can
+download.<00:01:43.720><c> It's</c><00:01:43.880><c> a</c><00:01:43.920><c> mixture</c><00:01:44.400><c> of</c><00:01:44.600><c> experts</c>
+
+00:01:45.150 --> 00:01:45.160 align:start position:0%
+download. It's a mixture of experts
+ 
+
+00:01:45.160 --> 00:01:47.510 align:start position:0%
+download. It's a mixture of experts
+model,<00:01:45.960><c> 753</c>
+
+00:01:47.510 --> 00:01:47.520 align:start position:0%
+model, 753
+ 
+
+00:01:47.520 --> 00:01:50.470 align:start position:0%
+model, 753
+billion<00:01:47.960><c> parameters</c><00:01:48.640><c> total,</c><00:01:49.560><c> around</c><00:01:50.000><c> 40</c>
+
+00:01:50.470 --> 00:01:50.480 align:start position:0%
+billion parameters total, around 40
+ 
+
+00:01:50.480 --> 00:01:52.950 align:start position:0%
+billion parameters total, around 40
+billion<00:01:51.120><c> active</c><00:01:51.640><c> at</c><00:01:51.880><c> any</c><00:01:52.120><c> moment</c><00:01:52.720><c> with</c><00:01:52.920><c> a</c>
+
+00:01:52.950 --> 00:01:52.960 align:start position:0%
+billion active at any moment with a
+ 
+
+00:01:52.960 --> 00:01:55.350 align:start position:0%
+billion active at any moment with a
+million<00:01:53.520><c> token</c><00:01:53.920><c> context</c><00:01:54.440><c> window.</c><00:01:55.200><c> And</c><00:01:55.320><c> the</c>
+
+00:01:55.350 --> 00:01:55.360 align:start position:0%
+million token context window. And the
+ 
+
+00:01:55.360 --> 00:01:57.590 align:start position:0%
+million token context window. And the
+big<00:01:55.560><c> labs</c><00:01:55.920><c> paid</c><00:01:56.200><c> attention</c><00:01:56.800><c> because</c><00:01:57.240><c> you</c><00:01:57.360><c> can</c>
+
+00:01:57.590 --> 00:01:57.600 align:start position:0%
+big labs paid attention because you can
+ 
+
+00:01:57.600 --> 00:02:00.150 align:start position:0%
+big labs paid attention because you can
+download<00:01:58.080><c> it.</c><00:01:58.640><c> The</c><00:01:58.800><c> weights</c><00:01:59.200><c> are</c><00:01:59.400><c> yours.</c>
+
+00:02:00.150 --> 00:02:00.160 align:start position:0%
+download it. The weights are yours.
+ 
+
+00:02:00.160 --> 00:02:02.470 align:start position:0%
+download it. The weights are yours.
+Renting<00:02:00.560><c> Claude</c><00:02:00.920><c> or</c><00:02:01.040><c> GPT</c><00:02:01.680><c> means</c><00:02:02.000><c> the</c><00:02:02.080><c> model</c>
+
+00:02:02.470 --> 00:02:02.480 align:start position:0%
+Renting Claude or GPT means the model
+ 
+
+00:02:02.480 --> 00:02:04.990 align:start position:0%
+Renting Claude or GPT means the model
+lives<00:02:02.800><c> on</c><00:02:02.920><c> someone</c><00:02:03.360><c> else's</c><00:02:03.720><c> server,</c><00:02:04.560><c> priced</c>
+
+00:02:04.990 --> 00:02:05.000 align:start position:0%
+lives on someone else's server, priced
+ 
+
+00:02:05.000 --> 00:02:07.150 align:start position:0%
+lives on someone else's server, priced
+how<00:02:05.106><c> [music]</c><00:02:05.200><c> they</c><00:02:05.479><c> choose,</c><00:02:06.240><c> switched</c><00:02:06.800><c> on</c><00:02:07.000><c> and</c>
+
+00:02:07.150 --> 00:02:07.160 align:start position:0%
+how [music] they choose, switched on and
+ 
+
+00:02:07.160 --> 00:02:09.710 align:start position:0%
+how [music] they choose, switched on and
+off<00:02:07.440><c> when</c><00:02:07.640><c> they</c><00:02:07.880><c> choose.</c><00:02:08.720><c> Three</c><00:02:09.039><c> weeks</c><00:02:09.320><c> ago,</c>
+
+00:02:09.710 --> 00:02:09.720 align:start position:0%
+off when they choose. Three weeks ago,
+ 
+
+00:02:09.720 --> 00:02:11.790 align:start position:0%
+off when they choose. Three weeks ago,
+Anthropic's<00:02:10.320><c> top</c><00:02:10.679><c> model</c><00:02:11.000><c> got</c><00:02:11.320><c> export</c>
+
+00:02:11.790 --> 00:02:11.800 align:start position:0%
+Anthropic's top model got export
+ 
+
+00:02:11.800 --> 00:02:14.190 align:start position:0%
+Anthropic's top model got export
+suspended<00:02:12.520><c> overnight.</c><00:02:13.520><c> And</c><00:02:13.680><c> teams</c><00:02:14.000><c> with</c>
+
+00:02:14.190 --> 00:02:14.200 align:start position:0%
+suspended overnight. And teams with
+ 
+
+00:02:14.200 --> 00:02:16.430 align:start position:0%
+suspended overnight. And teams with
+pipelines<00:02:14.800><c> wired</c><00:02:15.120><c> to</c><00:02:15.360><c> it</c><00:02:15.560><c> had</c><00:02:15.760><c> to</c><00:02:15.880><c> downgrade</c>
+
+00:02:16.430 --> 00:02:16.440 align:start position:0%
+pipelines wired to it had to downgrade
+ 
+
+00:02:16.440 --> 00:02:19.030 align:start position:0%
+pipelines wired to it had to downgrade
+the<00:02:16.520><c> same</c><00:02:16.920><c> afternoon.</c><00:02:17.959><c> A</c><00:02:18.040><c> model</c><00:02:18.440><c> sitting</c><00:02:18.880><c> on</c>
+
+00:02:19.030 --> 00:02:19.040 align:start position:0%
+the same afternoon. A model sitting on
+ 
+
+00:02:19.040 --> 00:02:22.070 align:start position:0%
+the same afternoon. A model sitting on
+your<00:02:19.280><c> own</c><00:02:19.520><c> disk</c><00:02:20.080><c> can</c><00:02:20.280><c> be</c><00:02:20.480><c> repriced,</c><00:02:21.240><c> retired,</c>
+
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+your own disk can be repriced, retired,
+ 
+
+00:02:22.080 --> 00:02:25.030 align:start position:0%
+your own disk can be repriced, retired,
+or<00:02:22.200><c> taken</c><00:02:22.680><c> away.</c><00:02:23.520><c> The</c><00:02:23.640><c> read</c><00:02:23.959><c> on</c><00:02:24.160><c> local</c><00:02:24.520><c> Llama</c>
+
+00:02:25.030 --> 00:02:25.040 align:start position:0%
+or taken away. The read on local Llama
+ 
+
+00:02:25.040 --> 00:02:27.190 align:start position:0%
+or taken away. The read on local Llama
+was<00:02:25.200><c> blunt.</c><00:02:26.080><c> You</c><00:02:26.240><c> can't</c><00:02:26.520><c> justify</c><00:02:27.120><c> a</c>
+
+00:02:27.190 --> 00:02:27.200 align:start position:0%
+was blunt. You can't justify a
+ 
+
+00:02:27.200 --> 00:02:29.949 align:start position:0%
+was blunt. You can't justify a
+multi-billion<00:02:28.040><c> dollar</c><00:02:28.400><c> valuation</c><00:02:29.240><c> when</c><00:02:29.520><c> open</c>
+
+00:02:29.949 --> 00:02:29.959 align:start position:0%
+multi-billion dollar valuation when open
+ 
+
+00:02:29.959 --> 00:02:31.710 align:start position:0%
+multi-billion dollar valuation when open
+weights<00:02:30.280><c> match</c><00:02:30.640><c> you</c><00:02:30.760><c> for</c><00:02:30.959><c> the</c><00:02:31.080><c> price</c><00:02:31.480><c> of</c>
+
+00:02:31.710 --> 00:02:31.720 align:start position:0%
+weights match you for the price of
+ 
+
+00:02:31.720 --> 00:02:35.190 align:start position:0%
+weights match you for the price of
+electricity.<00:02:33.080><c> So,</c><00:02:33.320><c> what</c><00:02:33.480><c> does</c><00:02:33.720><c> GLM</c><00:02:34.240><c> 5.2</c><00:02:34.959><c> do</c>
+
+00:02:35.190 --> 00:02:35.200 align:start position:0%
+electricity. So, what does GLM 5.2 do
+ 
+
+00:02:35.200 --> 00:02:38.110 align:start position:0%
+electricity. So, what does GLM 5.2 do
+well?<00:02:36.120><c> Back-end</c><00:02:36.680><c> and</c><00:02:36.840><c> systems</c><00:02:37.400><c> work.</c>
+
+00:02:38.110 --> 00:02:38.120 align:start position:0%
+well? Back-end and systems work.
+ 
+
+00:02:38.120 --> 00:02:41.230 align:start position:0%
+well? Back-end and systems work.
+Low-level<00:02:38.680><c> C</c><00:02:39.040><c> concurrency.</c><00:02:40.200><c> Rust</c><00:02:40.760><c> Vulcan</c>
+
+00:02:41.230 --> 00:02:41.240 align:start position:0%
+Low-level C concurrency. Rust Vulcan
+ 
+
+00:02:41.240 --> 00:02:42.990 align:start position:0%
+Low-level C concurrency. Rust Vulcan
+reviewers<00:02:41.920><c> keep</c><00:02:42.200><c> handing</c><00:02:42.560><c> it</c><00:02:42.800><c> the</c>
+
+00:02:42.990 --> 00:02:43.000 align:start position:0%
+reviewers keep handing it the
+ 
+
+00:02:43.000 --> 00:02:45.150 align:start position:0%
+reviewers keep handing it the
+unglamorous<00:02:43.720><c> plumbing</c><00:02:44.320><c> and</c><00:02:44.520><c> keep</c><00:02:44.800><c> coming</c>
+
+00:02:45.150 --> 00:02:45.160 align:start position:0%
+unglamorous plumbing and keep coming
+ 
+
+00:02:45.160 --> 00:02:46.361 align:start position:0%
+unglamorous plumbing and keep coming
+away<00:02:45.520><c> impressed.</c>
+
+00:02:46.361 --> 00:02:46.371 align:start position:0%
+away impressed.
+ 
+
+00:02:46.371 --> 00:02:46.590 align:start position:0%
+away impressed.
+&gt;&gt; [music]
+
+00:02:46.590 --> 00:02:46.600 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:02:46.600 --> 00:02:48.750 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; Debugging<00:02:47.160><c> and</c><00:02:47.280><c> security</c><00:02:47.880><c> audits</c><00:02:48.360><c> are</c><00:02:48.520><c> its</c>
+
+00:02:48.750 --> 00:02:48.760 align:start position:0%
+&gt;&gt; Debugging and security audits are its
+ 
+
+00:02:48.760 --> 00:02:51.310 align:start position:0%
+&gt;&gt; Debugging and security audits are its
+stand-out<00:02:49.320><c> lane.</c><00:02:50.000><c> In</c><00:02:50.160><c> one</c><00:02:50.440><c> test,</c><00:02:50.760><c> it</c><00:02:50.920><c> found</c><00:02:51.240><c> a</c>
+
+00:02:51.310 --> 00:02:51.320 align:start position:0%
+stand-out lane. In one test, it found a
+ 
+
+00:02:51.320 --> 00:02:54.230 align:start position:0%
+stand-out lane. In one test, it found a
+bug<00:02:51.640><c> that</c><00:02:51.959><c> Opus,</c><00:02:52.440><c> GPT,</c><00:02:53.120><c> and</c><00:02:53.280><c> DeepSeek</c><00:02:53.959><c> all</c>
+
+00:02:54.230 --> 00:02:54.240 align:start position:0%
+bug that Opus, GPT, and DeepSeek all
+ 
+
+00:02:54.240 --> 00:02:56.470 align:start position:0%
+bug that Opus, GPT, and DeepSeek all
+walked<00:02:54.600><c> straight</c><00:02:54.886><c> [music]</c><00:02:55.040><c> past.</c><00:02:55.959><c> On</c><00:02:56.080><c> a</c><00:02:56.160><c> class</c>
+
+00:02:56.470 --> 00:02:56.480 align:start position:0%
+walked straight [music] past. On a class
+ 
+
+00:02:56.480 --> 00:02:58.990 align:start position:0%
+walked straight [music] past. On a class
+of<00:02:56.720><c> access</c><00:02:57.080><c> control</c><00:02:57.520><c> vulnerability,</c><00:02:58.480><c> it</c><00:02:58.680><c> beat</c>
+
+00:02:58.990 --> 00:02:59.000 align:start position:0%
+of access control vulnerability, it beat
+ 
+
+00:02:59.000 --> 00:03:03.390 align:start position:0%
+of access control vulnerability, it beat
+Claude<00:02:59.480><c> outright,</c><00:03:00.560><c> 39%</c><00:03:01.680><c> to</c><00:03:01.800><c> 32.</c><00:03:02.920><c> This</c><00:03:03.120><c> is</c><00:03:03.280><c> the</c>
+
+00:03:03.390 --> 00:03:03.400 align:start position:0%
+Claude outright, 39% to 32. This is the
+ 
+
+00:03:03.400 --> 00:03:05.590 align:start position:0%
+Claude outright, 39% to 32. This is the
+model<00:03:03.800><c> that</c><00:03:04.040><c> reads</c><00:03:04.320><c> the</c><00:03:04.440><c> code</c><00:03:04.880><c> carefully</c>
+
+00:03:05.590 --> 00:03:05.600 align:start position:0%
+model that reads the code carefully
+ 
+
+00:03:05.600 --> 00:03:07.030 align:start position:0%
+model that reads the code carefully
+instead<00:03:05.959><c> of</c><00:03:06.120><c> pattern</c><00:03:06.560><c> matching</c><00:03:06.959><c> a</c>
+
+00:03:07.030 --> 00:03:07.040 align:start position:0%
+instead of pattern matching a
+ 
+
+00:03:07.040 --> 00:03:09.949 align:start position:0%
+instead of pattern matching a
+plausible-looking<00:03:08.120><c> answer.</c><00:03:09.080><c> And</c><00:03:09.360><c> clean</c>
+
+00:03:09.949 --> 00:03:09.959 align:start position:0%
+plausible-looking answer. And clean
+ 
+
+00:03:09.959 --> 00:03:13.310 align:start position:0%
+plausible-looking answer. And clean
+one-shot<00:03:10.560><c> builds,</c><00:03:11.560><c> dashboards,</c><00:03:12.400><c> data</c><00:03:12.840><c> vis,</c>
+
+00:03:13.310 --> 00:03:13.320 align:start position:0%
+one-shot builds, dashboards, data vis,
+ 
+
+00:03:13.320 --> 00:03:15.310 align:start position:0%
+one-shot builds, dashboards, data vis,
+front-ends<00:03:13.959><c> that</c><00:03:14.200><c> render</c><00:03:14.519><c> correctly</c><00:03:15.080><c> on</c><00:03:15.200><c> the</c>
+
+00:03:15.310 --> 00:03:15.320 align:start position:0%
+front-ends that render correctly on the
+ 
+
+00:03:15.320 --> 00:03:18.110 align:start position:0%
+front-ends that render correctly on the
+first<00:03:15.680><c> try.</c><00:03:16.440><c> On</c><00:03:16.600><c> a</c><00:03:16.640><c> same</c><00:03:17.040><c> task</c><00:03:17.519><c> test</c><00:03:17.880><c> where</c><00:03:18.080><c> a</c>
+
+00:03:18.110 --> 00:03:18.120 align:start position:0%
+first try. On a same task test where a
+ 
+
+00:03:18.120 --> 00:03:20.509 align:start position:0%
+first try. On a same task test where a
+reviewer<00:03:18.720><c> built</c><00:03:19.040><c> a</c><00:03:19.120><c> full</c><00:03:19.440><c> CRM</c><00:03:20.000><c> with</c><00:03:20.280><c> each</c>
+
+00:03:20.509 --> 00:03:20.519 align:start position:0%
+reviewer built a full CRM with each
+ 
+
+00:03:20.519 --> 00:03:24.630 align:start position:0%
+reviewer built a full CRM with each
+model,<00:03:21.239><c> the</c><00:03:21.400><c> GLM</c><00:03:22.000><c> run</c><00:03:22.280><c> came</c><00:03:22.560><c> to</c><00:03:22.720><c> $4.15.</c>
+
+00:03:24.630 --> 00:03:24.640 align:start position:0%
+model, the GLM run came to $4.15.
+ 
+
+00:03:24.640 --> 00:03:27.830 align:start position:0%
+model, the GLM run came to $4.15.
+The<00:03:24.880><c> Opus</c><00:03:25.280><c> run</c><00:03:25.560><c> cost</c><00:03:26.080><c> $21.27,</c><00:03:26.327><c> [music]</c>
+
+00:03:27.830 --> 00:03:27.840 align:start position:0%
+The Opus run cost $21.27, [music]
+ 
+
+00:03:27.840 --> 00:03:30.430 align:start position:0%
+The Opus run cost $21.27, [music]
+roughly<00:03:28.280><c> five</c><00:03:28.640><c> times</c><00:03:28.959><c> more</c><00:03:29.640><c> for</c><00:03:29.959><c> work</c><00:03:30.320><c> he</c>
+
+00:03:30.430 --> 00:03:30.440 align:start position:0%
+roughly five times more for work he
+ 
+
+00:03:30.440 --> 00:03:33.470 align:start position:0%
+roughly five times more for work he
+rated<00:03:30.920><c> only</c><00:03:31.280><c> a</c><00:03:31.400><c> hair</c><00:03:31.760><c> better.</c><00:03:32.840><c> The</c><00:03:33.000><c> pitch</c><00:03:33.320><c> for</c>
+
+00:03:33.470 --> 00:03:33.480 align:start position:0%
+rated only a hair better. The pitch for
+ 
+
+00:03:33.480 --> 00:03:34.830 align:start position:0%
+rated only a hair better. The pitch for
+the<00:03:33.640><c> people</c><00:03:34.080><c> that</c><00:03:34.187><c> [music]</c><00:03:34.320><c> use</c><00:03:34.640><c> these</c>
+
+00:03:34.830 --> 00:03:34.840 align:start position:0%
+the people that [music] use these
+ 
+
+00:03:34.840 --> 00:03:38.030 align:start position:0%
+the people that [music] use these
+models,<00:03:35.600><c> GLM</c><00:03:36.200><c> for</c><00:03:36.400><c> the</c><00:03:36.480><c> volume,</c><00:03:37.320><c> the</c><00:03:37.440><c> frontier</c>
+
+00:03:38.030 --> 00:03:38.040 align:start position:0%
+models, GLM for the volume, the frontier
+ 
+
+00:03:38.040 --> 00:03:40.509 align:start position:0%
+models, GLM for the volume, the frontier
+model<00:03:38.440><c> for</c><00:03:38.560><c> the</c><00:03:38.680><c> hard</c><00:03:39.160><c> 10%.</c><00:03:39.427><c> [music]</c>
+
+00:03:40.509 --> 00:03:40.519 align:start position:0%
+model for the hard 10%. [music]
+ 
+
+00:03:40.519 --> 00:03:42.430 align:start position:0%
+model for the hard 10%. [music]
+Now,<00:03:40.720><c> the</c><00:03:40.840><c> reason</c><00:03:41.200><c> it</c><00:03:41.360><c> can</c><00:03:41.600><c> just</c><00:03:41.880><c> drop</c><00:03:42.200><c> into</c>
+
+00:03:42.430 --> 00:03:42.440 align:start position:0%
+Now, the reason it can just drop into
+ 
+
+00:03:42.440 --> 00:03:45.550 align:start position:0%
+Now, the reason it can just drop into
+your<00:03:42.680><c> current</c><00:03:43.000><c> setup,</c><00:03:43.880><c> GLM</c><00:03:44.400><c> 5.2</c><00:03:45.280><c> is</c>
+
+00:03:45.550 --> 00:03:45.560 align:start position:0%
+your current setup, GLM 5.2 is
+ 
+
+00:03:45.560 --> 00:03:48.587 align:start position:0%
+your current setup, GLM 5.2 is
+text-only.<00:03:46.920><c> It</c><00:03:47.080><c> has</c><00:03:47.239><c> no</c><00:03:47.519><c> vision.</c><00:03:48.120><c> It</c><00:03:48.280><c> cannot</c>
+
+00:03:48.587 --> 00:03:48.597 align:start position:0%
+text-only. It has no vision. It cannot
+ 
+
+00:03:48.597 --> 00:03:50.590 align:start position:0%
+text-only. It has no vision. It cannot
+[music]<00:03:48.640><c> see</c><00:03:48.840><c> a</c><00:03:48.920><c> screenshot,</c><00:03:49.680><c> a</c><00:03:49.760><c> design</c><00:03:50.239><c> mock,</c>
+
+00:03:50.590 --> 00:03:50.600 align:start position:0%
+[music] see a screenshot, a design mock,
+ 
+
+00:03:50.600 --> 00:03:53.390 align:start position:0%
+[music] see a screenshot, a design mock,
+a<00:03:50.720><c> rendered</c><00:03:51.200><c> UI,</c><00:03:51.640><c> or</c><00:03:51.840><c> chart</c><00:03:52.239><c> you</c><00:03:52.360><c> paste</c><00:03:52.760><c> in.</c>
+
+00:03:53.390 --> 00:03:53.400 align:start position:0%
+a rendered UI, or chart you paste in.
+ 
+
+00:03:53.400 --> 00:03:55.870 align:start position:0%
+a rendered UI, or chart you paste in.
+For<00:03:53.680><c> a</c><00:03:53.760><c> huge</c><00:03:54.280><c> slice</c><00:03:54.640><c> of</c><00:03:54.840><c> real</c><00:03:55.120><c> front-end</c><00:03:55.720><c> and</c>
+
+00:03:55.870 --> 00:03:55.880 align:start position:0%
+For a huge slice of real front-end and
+ 
+
+00:03:55.880 --> 00:03:58.670 align:start position:0%
+For a huge slice of real front-end and
+product<00:03:56.320><c> work,</c><00:03:56.960><c> make</c><00:03:57.200><c> it</c><00:03:57.320><c> match</c><00:03:57.640><c> this</c><00:03:57.880><c> Figma,</c>
+
+00:03:58.670 --> 00:03:58.680 align:start position:0%
+product work, make it match this Figma,
+ 
+
+00:03:58.680 --> 00:04:01.070 align:start position:0%
+product work, make it match this Figma,
+here's<00:03:58.960><c> the</c><00:03:59.080><c> broken</c><00:03:59.480><c> layout,</c><00:03:59.920><c> fix</c><00:04:00.280><c> it,</c><00:04:00.800><c> you're</c>
+
+00:04:01.070 --> 00:04:01.080 align:start position:0%
+here's the broken layout, fix it, you're
+ 
+
+00:04:01.080 --> 00:04:03.870 align:start position:0%
+here's the broken layout, fix it, you're
+asking<00:04:01.480><c> it</c><00:04:01.640><c> to</c><00:04:01.800><c> paint</c><00:04:02.200><c> blindfolded.</c><00:04:03.600><c> This</c>
+
+00:04:03.870 --> 00:04:03.880 align:start position:0%
+asking it to paint blindfolded. This
+ 
+
+00:04:03.880 --> 00:04:06.150 align:start position:0%
+asking it to paint blindfolded. This
+rules<00:04:04.200><c> it</c><00:04:04.440><c> out</c><00:04:04.600><c> of</c><00:04:04.720><c> an</c><00:04:04.800><c> entire</c><00:04:05.320><c> category</c><00:04:06.000><c> of</c>
+
+00:04:06.150 --> 00:04:06.160 align:start position:0%
+rules it out of an entire category of
+ 
+
+00:04:06.160 --> 00:04:08.790 align:start position:0%
+rules it out of an entire category of
+daily<00:04:06.560><c> work,</c><00:04:07.160><c> and</c><00:04:07.280><c> no</c><00:04:07.520><c> amount</c><00:04:07.920><c> of</c><00:04:08.080><c> benchmark</c>
+
+00:04:08.790 --> 00:04:08.800 align:start position:0%
+daily work, and no amount of benchmark
+ 
+
+00:04:08.800 --> 00:04:10.202 align:start position:0%
+daily work, and no amount of benchmark
+parity<00:04:09.360><c> closes</c><00:04:09.840><c> it.</c>
+
+00:04:10.202 --> 00:04:10.212 align:start position:0%
+parity closes it.
+ 
+
+00:04:10.212 --> 00:04:10.670 align:start position:0%
+parity closes it.
+&gt;&gt; [music]
+
+00:04:10.670 --> 00:04:10.680 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:04:10.680 --> 00:04:12.990 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; And<00:04:10.800><c> the</c><00:04:10.880><c> moment</c><00:04:11.280><c> the</c><00:04:11.400><c> task</c><00:04:11.800><c> turns</c><00:04:12.160><c> visual</c><00:04:12.760><c> and</c>
+
+00:04:12.990 --> 00:04:13.000 align:start position:0%
+&gt;&gt; And the moment the task turns visual and
+ 
+
+00:04:13.000 --> 00:04:16.509 align:start position:0%
+&gt;&gt; And the moment the task turns visual and
+iterative,<00:04:13.880><c> 3D,</c><00:04:14.600><c> 3JS,</c><00:04:15.600><c> physics</c><00:04:16.040><c> you</c><00:04:16.120><c> have</c><00:04:16.280><c> to</c>
+
+00:04:16.509 --> 00:04:16.519 align:start position:0%
+iterative, 3D, 3JS, physics you have to
+ 
+
+00:04:16.519 --> 00:04:18.710 align:start position:0%
+iterative, 3D, 3JS, physics you have to
+eyeball<00:04:16.920><c> and</c><00:04:17.040><c> nudge,</c><00:04:17.720><c> the</c><00:04:17.840><c> head-to-heads</c><00:04:18.519><c> go</c>
+
+00:04:18.710 --> 00:04:18.720 align:start position:0%
+eyeball and nudge, the head-to-heads go
+ 
+
+00:04:18.720 --> 00:04:21.190 align:start position:0%
+eyeball and nudge, the head-to-heads go
+lopsided.<00:04:20.000><c> Claude</c><00:04:20.037><c> [music]</c><00:04:20.280><c> takes</c><00:04:20.560><c> a</c><00:04:20.640><c> massive</c>
+
+00:04:21.190 --> 00:04:21.200 align:start position:0%
+lopsided. Claude [music] takes a massive
+ 
+
+00:04:21.200 --> 00:04:23.909 align:start position:0%
+lopsided. Claude [music] takes a massive
+lead<00:04:21.519><c> as</c><00:04:21.640><c> soon</c><00:04:21.880><c> as</c><00:04:22.000><c> the</c><00:04:22.120><c> work</c><00:04:22.480><c> needs</c><00:04:22.919><c> eyes.</c>
+
+00:04:23.909 --> 00:04:23.919 align:start position:0%
+lead as soon as the work needs eyes.
+ 
+
+00:04:23.919 --> 00:04:25.430 align:start position:0%
+lead as soon as the work needs eyes.
+Now,<00:04:24.000><c> let's</c><00:04:24.240><c> look</c><00:04:24.480><c> beyond</c><00:04:24.880><c> the</c><00:04:25.000><c> initial</c>
+
+00:04:25.430 --> 00:04:25.440 align:start position:0%
+Now, let's look beyond the initial
+ 
+
+00:04:25.440 --> 00:04:27.510 align:start position:0%
+Now, let's look beyond the initial
+impressive<00:04:25.960><c> data.</c><00:04:26.800><c> That</c><00:04:27.000><c> that</c><00:04:27.280><c> heat</c>
+
+00:04:27.510 --> 00:04:27.520 align:start position:0%
+impressive data. That that heat
+ 
+
+00:04:27.520 --> 00:04:30.830 align:start position:0%
+impressive data. That that heat
+benchmark<00:04:28.040><c> from</c><00:04:28.200><c> the</c><00:04:28.320><c> intro,</c><00:04:29.120><c> vendor</c><00:04:29.520><c> run,</c><00:04:30.160><c> 45</c>
+
+00:04:30.830 --> 00:04:30.840 align:start position:0%
+benchmark from the intro, vendor run, 45
+ 
+
+00:04:30.840 --> 00:04:32.470 align:start position:0%
+benchmark from the intro, vendor run, 45
+curated<00:04:31.360><c> tasks</c><00:04:31.828><c> [music]</c><00:04:31.880><c> on</c><00:04:32.000><c> a</c><00:04:32.080><c> tuned</c>
+
+00:04:32.470 --> 00:04:32.480 align:start position:0%
+curated tasks [music] on a tuned
+ 
+
+00:04:32.480 --> 00:04:35.230 align:start position:0%
+curated tasks [music] on a tuned
+harness.<00:04:33.480><c> Move</c><00:04:33.760><c> to</c><00:04:33.880><c> the</c><00:04:34.080><c> independent</c><00:04:34.840><c> agent</c>
+
+00:04:35.230 --> 00:04:35.240 align:start position:0%
+harness. Move to the independent agent
+ 
+
+00:04:35.240 --> 00:04:37.870 align:start position:0%
+harness. Move to the independent agent
+evaluations,<00:04:36.280><c> the</c><00:04:36.400><c> ones</c><00:04:36.880><c> measuring</c><00:04:37.520><c> long</c>
+
+00:04:37.870 --> 00:04:37.880 align:start position:0%
+evaluations, the ones measuring long
+ 
+
+00:04:37.880 --> 00:04:39.990 align:start position:0%
+evaluations, the ones measuring long
+autonomous<00:04:38.520><c> multi-file</c><00:04:39.240><c> work,</c><00:04:39.688><c> [music]</c><00:04:39.880><c> and</c>
+
+00:04:39.990 --> 00:04:40.000 align:start position:0%
+autonomous multi-file work, [music] and
+ 
+
+00:04:40.000 --> 00:04:43.150 align:start position:0%
+autonomous multi-file work, [music] and
+the<00:04:40.120><c> picture</c><00:04:40.560><c> shifts.</c><00:04:41.640><c> Artificial</c><00:04:42.360><c> Analysis</c>
+
+00:04:43.150 --> 00:04:43.160 align:start position:0%
+the picture shifts. Artificial Analysis
+ 
+
+00:04:43.160 --> 00:04:48.110 align:start position:0%
+the picture shifts. Artificial Analysis
+Coding<00:04:43.680><c> Agent</c><00:04:44.120><c> Index,</c><00:04:45.040><c> GLM</c><00:04:45.600><c> scores</c><00:04:46.080><c> 58,</c><00:04:47.400><c> Opus</c>
+
+00:04:48.110 --> 00:04:48.120 align:start position:0%
+Coding Agent Index, GLM scores 58, Opus
+ 
+
+00:04:48.120 --> 00:04:49.670 align:start position:0%
+Coding Agent Index, GLM scores 58, Opus
+73,
+
+00:04:49.670 --> 00:04:49.680 align:start position:0%
+73,
+ 
+
+00:04:49.680 --> 00:04:51.310 align:start position:0%
+73,
+GPT-5.5
+
+00:04:51.310 --> 00:04:51.320 align:start position:0%
+GPT-5.5
+ 
+
+00:04:51.320 --> 00:04:54.150 align:start position:0%
+GPT-5.5
+running<00:04:51.640><c> in</c><00:04:51.800><c> Codex,</c><00:04:52.560><c> 76.</c>
+
+00:04:54.150 --> 00:04:54.160 align:start position:0%
+running in Codex, 76.
+ 
+
+00:04:54.160 --> 00:04:56.110 align:start position:0%
+running in Codex, 76.
+On<00:04:54.280><c> a</c><00:04:54.320><c> contamination-free</c><00:04:55.560><c> software</c>
+
+00:04:56.110 --> 00:04:56.120 align:start position:0%
+On a contamination-free software
+ 
+
+00:04:56.120 --> 00:05:00.430 align:start position:0%
+On a contamination-free software
+engineering<00:04:56.760><c> test,</c><00:04:57.480><c> GLM</c><00:04:58.200><c> lands</c><00:04:58.600><c> at</c><00:04:58.760><c> 29%</c><00:05:00.160><c> while</c>
+
+00:05:00.430 --> 00:05:00.440 align:start position:0%
+engineering test, GLM lands at 29% while
+ 
+
+00:05:00.440 --> 00:05:04.990 align:start position:0%
+engineering test, GLM lands at 29% while
+Opus<00:05:00.880><c> hits</c><00:05:01.200><c> 56,</c><00:05:02.400><c> and</c><00:05:02.560><c> GPT</c><00:05:03.280><c> clears</c><00:05:03.720><c> 64.</c><00:05:03.923><c> [music]</c>
+
+00:05:04.990 --> 00:05:05.000 align:start position:0%
+Opus hits 56, and GPT clears 64. [music]
+ 
+
+00:05:05.000 --> 00:05:07.590 align:start position:0%
+Opus hits 56, and GPT clears 64. [music]
+On<00:05:05.120><c> the</c><00:05:05.240><c> longest</c><00:05:05.760><c> horizon</c><00:05:06.360><c> marathon</c><00:05:07.000><c> test,</c>
+
+00:05:07.590 --> 00:05:07.600 align:start position:0%
+On the longest horizon marathon test,
+ 
+
+00:05:07.600 --> 00:05:10.710 align:start position:0%
+On the longest horizon marathon test,
+the<00:05:07.720><c> multi-hour</c><00:05:08.760><c> autonomous</c><00:05:09.360><c> jobs,</c><00:05:10.160><c> GLM</c>
+
+00:05:10.710 --> 00:05:10.720 align:start position:0%
+the multi-hour autonomous jobs, GLM
+ 
+
+00:05:10.720 --> 00:05:14.830 align:start position:0%
+the multi-hour autonomous jobs, GLM
+scores<00:05:11.200><c> 13.</c><00:05:12.400><c> Opus</c><00:05:12.800><c> scores</c><00:05:13.240><c> 26.</c><00:05:14.480><c> That's</c>
+
+00:05:14.830 --> 00:05:14.840 align:start position:0%
+scores 13. Opus scores 26. That's
+ 
+
+00:05:14.840 --> 00:05:15.909 align:start position:0%
+scores 13. Opus scores 26. That's
+double.
+
+00:05:15.909 --> 00:05:15.919 align:start position:0%
+double.
+ 
+
+00:05:15.919 --> 00:05:18.350 align:start position:0%
+double.
+The<00:05:16.040><c> pattern</c><00:05:16.520><c> holds</c><00:05:16.840><c> across</c><00:05:17.360><c> every</c><00:05:17.800><c> rigorous</c>
+
+00:05:18.350 --> 00:05:18.360 align:start position:0%
+The pattern holds across every rigorous
+ 
+
+00:05:18.360 --> 00:05:21.830 align:start position:0%
+The pattern holds across every rigorous
+test.<00:05:19.120><c> GLM</c><00:05:19.680><c> ties</c><00:05:20.120><c> or</c><00:05:20.280><c> nearly</c><00:05:20.720><c> ties</c><00:05:21.160><c> on</c><00:05:21.320><c> short</c>
+
+00:05:21.830 --> 00:05:21.840 align:start position:0%
+test. GLM ties or nearly ties on short
+ 
+
+00:05:21.840 --> 00:05:24.390 align:start position:0%
+test. GLM ties or nearly ties on short
+bounded<00:05:22.320><c> tasks,</c><00:05:23.160><c> and</c><00:05:23.320><c> slips</c><00:05:23.760><c> hard</c><00:05:24.120><c> on</c><00:05:24.240><c> the</c>
+
+00:05:24.390 --> 00:05:24.400 align:start position:0%
+bounded tasks, and slips hard on the
+ 
+
+00:05:24.400 --> 00:05:27.310 align:start position:0%
+bounded tasks, and slips hard on the
+longest<00:05:25.000><c> least</c><00:05:25.400><c> supervised</c><00:05:26.080><c> ones.</c><00:05:26.760><c> Close,</c>
+
+00:05:27.310 --> 00:05:27.320 align:start position:0%
+longest least supervised ones. Close,
+ 
+
+00:05:27.320 --> 00:05:29.430 align:start position:0%
+longest least supervised ones. Close,
+but<00:05:27.480><c> a</c><00:05:27.560><c> clear</c><00:05:27.960><c> step</c><00:05:28.280><c> behind</c><00:05:28.760><c> on</c><00:05:28.840><c> the</c><00:05:29.000><c> tail</c>
+
+00:05:29.430 --> 00:05:29.440 align:start position:0%
+but a clear step behind on the tail
+ 
+
+00:05:29.440 --> 00:05:32.110 align:start position:0%
+but a clear step behind on the tail
+relevant<00:05:30.000><c> for</c><00:05:30.280><c> autonomous</c><00:05:30.880><c> coding.</c><00:05:31.800><c> There's</c>
+
+00:05:32.110 --> 00:05:32.120 align:start position:0%
+relevant for autonomous coding. There's
+ 
+
+00:05:32.120 --> 00:05:34.670 align:start position:0%
+relevant for autonomous coding. There's
+also<00:05:32.520><c> a</c><00:05:32.600><c> failure</c><00:05:33.040><c> mode</c><00:05:33.360><c> worth</c><00:05:33.640><c> naming</c><00:05:34.400><c> because</c>
+
+00:05:34.670 --> 00:05:34.680 align:start position:0%
+also a failure mode worth naming because
+ 
+
+00:05:34.680 --> 00:05:37.318 align:start position:0%
+also a failure mode worth naming because
+both<00:05:35.040><c> sides</c><00:05:35.440><c> do</c><00:05:35.640><c> it,</c><00:05:35.880><c> and</c><00:05:36.000><c> GLM</c><00:05:36.480><c> does</c><00:05:36.680><c> it</c><00:05:36.800><c> more.</c>
+
+00:05:37.318 --> 00:05:37.328 align:start position:0%
+both sides do it, and GLM does it more.
+ 
+
+00:05:37.328 --> 00:05:37.550 align:start position:0%
+both sides do it, and GLM does it more.
+&gt;&gt; [music]
+
+00:05:37.550 --> 00:05:37.560 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:05:37.560 --> 00:05:40.670 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; Declaring<00:05:38.680><c> "Fixed,</c><00:05:39.200><c> all</c><00:05:39.400><c> tests</c><00:05:39.840><c> pass."</c><00:05:40.480><c> on</c>
+
+00:05:40.670 --> 00:05:40.680 align:start position:0%
+&gt;&gt; Declaring "Fixed, all tests pass." on
+ 
+
+00:05:40.680 --> 00:05:43.150 align:start position:0%
+&gt;&gt; Declaring "Fixed, all tests pass." on
+work<00:05:40.919><c> that</c><00:05:41.120><c> hidden</c><00:05:41.440><c> tests</c><00:05:41.960><c> then</c><00:05:42.240><c> reject.</c>
+
+00:05:43.150 --> 00:05:43.160 align:start position:0%
+work that hidden tests then reject.
+ 
+
+00:05:43.160 --> 00:05:46.310 align:start position:0%
+work that hidden tests then reject.
+Confidently<00:05:43.919><c> wrong.</c><00:05:44.760><c> GAI</c><00:05:45.600><c> disclosed</c><00:05:46.120><c> this</c>
+
+00:05:46.310 --> 00:05:46.320 align:start position:0%
+Confidently wrong. GAI disclosed this
+ 
+
+00:05:46.320 --> 00:05:49.710 align:start position:0%
+Confidently wrong. GAI disclosed this
+about<00:05:46.640><c> their</c><00:05:46.880><c> own</c><00:05:47.040><c> model.</c><00:05:47.800><c> GLM</c><00:05:48.280><c> 5.2</c><00:05:49.160><c> reward</c>
+
+00:05:49.710 --> 00:05:49.720 align:start position:0%
+about their own model. GLM 5.2 reward
+ 
+
+00:05:49.720 --> 00:05:51.270 align:start position:0%
+about their own model. GLM 5.2 reward
+hacks<00:05:50.120><c> more</c><00:05:50.400><c> than</c><00:05:50.560><c> the</c><00:05:50.680><c> previous</c><00:05:51.083><c> [music]</c>
+
+00:05:51.270 --> 00:05:51.280 align:start position:0%
+hacks more than the previous [music]
+ 
+
+00:05:51.280 --> 00:05:53.630 align:start position:0%
+hacks more than the previous [music]
+version.<00:05:52.160><c> It'll</c><00:05:52.440><c> read</c><00:05:52.720><c> protected</c><00:05:53.320><c> test</c>
+
+00:05:53.630 --> 00:05:53.640 align:start position:0%
+version. It'll read protected test
+ 
+
+00:05:53.640 --> 00:05:56.030 align:start position:0%
+version. It'll read protected test
+files,<00:05:54.120><c> even</c><00:05:54.440><c> fetch</c><00:05:54.800><c> reference</c><00:05:55.320><c> solutions</c><00:05:55.880><c> to</c>
+
+00:05:56.030 --> 00:05:56.040 align:start position:0%
+files, even fetch reference solutions to
+ 
+
+00:05:56.040 --> 00:05:56.969 align:start position:0%
+files, even fetch reference solutions to
+fake<00:05:56.360><c> a</c><00:05:56.440><c> pass.</c>
+
+00:05:56.969 --> 00:05:56.979 align:start position:0%
+fake a pass.
+ 
+
+00:05:56.979 --> 00:05:57.190 align:start position:0%
+fake a pass.
+&gt;&gt; [music]
+
+00:05:57.190 --> 00:05:57.200 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:05:57.200 --> 00:05:59.710 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; So,<00:05:57.400><c> ZAI</c><00:05:58.240><c> shipped</c><00:05:58.640><c> a</c><00:05:58.680><c> dedicated</c><00:05:59.360><c> guard</c>
+
+00:05:59.710 --> 00:05:59.720 align:start position:0%
+&gt;&gt; So, ZAI shipped a dedicated guard
+ 
+
+00:05:59.720 --> 00:06:02.209 align:start position:0%
+&gt;&gt; So, ZAI shipped a dedicated guard
+against<00:06:00.200><c> their</c><00:06:00.440><c> own</c><00:06:00.720><c> model</c><00:06:01.120><c> cheating.</c><00:06:02.040><c> That</c>
+
+00:06:02.209 --> 00:06:02.219 align:start position:0%
+against their own model cheating. That
+ 
+
+00:06:02.219 --> 00:06:04.230 align:start position:0%
+against their own model cheating. That
+[music]<00:06:02.240><c> tells</c><00:06:02.520><c> you</c><00:06:02.680><c> a</c><00:06:02.760><c> lot.</c><00:06:03.720><c> So,</c><00:06:03.800><c> how</c><00:06:03.960><c> much</c>
+
+00:06:04.230 --> 00:06:04.240 align:start position:0%
+[music] tells you a lot. So, how much
+ 
+
+00:06:04.240 --> 00:06:06.470 align:start position:0%
+[music] tells you a lot. So, how much
+does<00:06:04.400><c> this</c><00:06:04.560><c> model</c><00:06:04.920><c> save</c><00:06:05.200><c> you</c><00:06:05.320><c> in</c><00:06:05.440><c> cash?</c><00:06:06.360><c> On</c>
+
+00:06:06.470 --> 00:06:06.480 align:start position:0%
+does this model save you in cash? On
+ 
+
+00:06:06.480 --> 00:06:08.550 align:start position:0%
+does this model save you in cash? On
+sticker<00:06:06.840><c> price,</c><00:06:07.200><c> the</c><00:06:07.320><c> gap</c><00:06:07.600><c> is</c><00:06:07.800><c> there.</c><00:06:08.114><c> [music]</c>
+
+00:06:08.550 --> 00:06:08.560 align:start position:0%
+sticker price, the gap is there. [music]
+ 
+
+00:06:08.560 --> 00:06:12.950 align:start position:0%
+sticker price, the gap is there. [music]
+GLM<00:06:09.080><c> runs</c><00:06:09.400><c> roughly</c><00:06:09.960><c> a</c><00:06:10.040><c> dollar</c><00:06:10.440><c> 40</c><00:06:11.000><c> in,</c><00:06:11.600><c> 440</c><00:06:12.560><c> out</c>
+
+00:06:12.950 --> 00:06:12.960 align:start position:0%
+GLM runs roughly a dollar 40 in, 440 out
+ 
+
+00:06:12.960 --> 00:06:16.750 align:start position:0%
+GLM runs roughly a dollar 40 in, 440 out
+per<00:06:13.120><c> million</c><00:06:13.560><c> tokens.</c><00:06:14.560><c> Opus</c><00:06:15.000><c> is</c><00:06:15.200><c> 5</c><00:06:15.600><c> and</c><00:06:15.720><c> 25.</c>
+
+00:06:16.750 --> 00:06:16.760 align:start position:0%
+per million tokens. Opus is 5 and 25.
+ 
+
+00:06:16.760 --> 00:06:20.670 align:start position:0%
+per million tokens. Opus is 5 and 25.
+GPT<00:06:17.240><c> 5.5</c><00:06:18.400><c> 5</c><00:06:18.594><c> [music]</c><00:06:18.840><c> and</c><00:06:19.000><c> 30.</c><00:06:19.880><c> A</c><00:06:19.960><c> big</c><00:06:20.280><c> session</c>
+
+00:06:20.670 --> 00:06:20.680 align:start position:0%
+GPT 5.5 5 [music] and 30. A big session
+ 
+
+00:06:20.680 --> 00:06:23.510 align:start position:0%
+GPT 5.5 5 [music] and 30. A big session
+that<00:06:20.880><c> costs</c><00:06:21.240><c> about</c><00:06:21.560><c> $9</c><00:06:22.240><c> on</c><00:06:22.480><c> Opus</c><00:06:22.919><c> comes</c><00:06:23.240><c> in</c>
+
+00:06:23.510 --> 00:06:23.520 align:start position:0%
+that costs about $9 on Opus comes in
+ 
+
+00:06:23.520 --> 00:06:26.110 align:start position:0%
+that costs about $9 on Opus comes in
+under<00:06:23.919><c> two</c><00:06:24.240><c> on</c><00:06:24.440><c> GLM,</c><00:06:25.320><c> around</c><00:06:25.720><c> five</c><00:06:25.799><c> [music]</c>
+
+00:06:26.110 --> 00:06:26.120 align:start position:0%
+under two on GLM, around five [music]
+ 
+
+00:06:26.120 --> 00:06:29.390 align:start position:0%
+under two on GLM, around five [music]
+times<00:06:26.560><c> cheaper.</c><00:06:27.600><c> Now,</c><00:06:28.120><c> the</c><00:06:28.240><c> gotchas.</c>
+
+00:06:29.390 --> 00:06:29.400 align:start position:0%
+times cheaper. Now, the gotchas.
+ 
+
+00:06:29.400 --> 00:06:32.070 align:start position:0%
+times cheaper. Now, the gotchas.
+GLM<00:06:29.880><c> is</c><00:06:30.000><c> verbose</c><00:06:30.760><c> and</c><00:06:30.880><c> it's</c><00:06:31.080><c> measured</c><00:06:31.720><c> about</c>
+
+00:06:32.070 --> 00:06:32.080 align:start position:0%
+GLM is verbose and it's measured about
+ 
+
+00:06:32.080 --> 00:06:35.630 align:start position:0%
+GLM is verbose and it's measured about
+43,000<00:06:33.440><c> output</c><00:06:33.840><c> tokens</c><00:06:34.240><c> per</c><00:06:34.440><c> task.</c><00:06:35.240><c> Most</c><00:06:35.520><c> of</c>
+
+00:06:35.630 --> 00:06:35.640 align:start position:0%
+43,000 output tokens per task. Most of
+ 
+
+00:06:35.640 --> 00:06:37.909 align:start position:0%
+43,000 output tokens per task. Most of
+it<00:06:35.840><c> reasoning</c><00:06:36.560><c> more</c><00:06:36.800><c> than</c><00:06:37.000><c> its</c><00:06:37.280><c> own</c><00:06:37.560><c> last</c>
+
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+it reasoning more than its own last
+ 
+
+00:06:37.919 --> 00:06:40.750 align:start position:0%
+it reasoning more than its own last
+version<00:06:38.800><c> and</c><00:06:39.000><c> more</c><00:06:39.240><c> than</c><00:06:39.440><c> its</c><00:06:39.680><c> rivals.</c><00:06:40.600><c> You</c>
+
+00:06:40.750 --> 00:06:40.760 align:start position:0%
+version and more than its rivals. You
+ 
+
+00:06:40.760 --> 00:06:42.909 align:start position:0%
+version and more than its rivals. You
+pay<00:06:41.040><c> per</c><00:06:41.240><c> token,</c><00:06:41.760><c> so</c><00:06:42.000><c> all</c><00:06:42.200><c> that</c><00:06:42.440><c> thinking</c>
+
+00:06:42.909 --> 00:06:42.919 align:start position:0%
+pay per token, so all that thinking
+ 
+
+00:06:42.919 --> 00:06:44.630 align:start position:0%
+pay per token, so all that thinking
+narrows<00:06:43.320><c> the</c><00:06:43.480><c> real</c><00:06:43.760><c> gap</c><00:06:44.040><c> from</c><00:06:44.139><c> [music]</c><00:06:44.280><c> six</c>
+
+00:06:44.630 --> 00:06:44.640 align:start position:0%
+narrows the real gap from [music] six
+ 
+
+00:06:44.640 --> 00:06:48.030 align:start position:0%
+narrows the real gap from [music] six
+times<00:06:45.080><c> down</c><00:06:45.320><c> to</c><00:06:45.520><c> closer</c><00:06:46.040><c> to</c><00:06:46.200><c> four</c><00:06:46.680><c> or</c><00:06:46.919><c> five.</c><00:06:47.960><c> On</c>
+
+00:06:48.030 --> 00:06:48.040 align:start position:0%
+times down to closer to four or five. On
+ 
+
+00:06:48.040 --> 00:06:50.230 align:start position:0%
+times down to closer to four or five. On
+that<00:06:48.280><c> independent</c><00:06:48.919><c> coding</c><00:06:49.280><c> agent</c><00:06:49.600><c> benchmark,</c>
+
+00:06:50.230 --> 00:06:50.240 align:start position:0%
+that independent coding agent benchmark,
+ 
+
+00:06:50.240 --> 00:06:54.790 align:start position:0%
+that independent coding agent benchmark,
+GPT<00:06:50.800><c> 5.5</c><00:06:52.160><c> running</c><00:06:52.480><c> in</c><00:06:52.640><c> Codex</c><00:06:53.240><c> costs</c><00:06:53.600><c> about</c><00:06:54.040><c> $5</c>
+
+00:06:54.790 --> 00:06:54.800 align:start position:0%
+GPT 5.5 running in Codex costs about $5
+ 
+
+00:06:54.800 --> 00:06:57.750 align:start position:0%
+GPT 5.5 running in Codex costs about $5
+a<00:06:54.840><c> task</c><00:06:55.680><c> at</c><00:06:55.919><c> index</c><00:06:56.400><c> 76.</c><00:06:57.239><c> [music]</c>
+
+00:06:57.750 --> 00:06:57.760 align:start position:0%
+a task at index 76. [music]
+ 
+
+00:06:57.760 --> 00:07:00.230 align:start position:0%
+a task at index 76. [music]
+GLM<00:06:58.360><c> running</c><00:06:58.640><c> in</c><00:06:58.800><c> Claude</c><00:06:59.200><c> code</c><00:06:59.560><c> costs</c><00:06:59.880><c> about</c>
+
+00:07:00.230 --> 00:07:00.240 align:start position:0%
+GLM running in Claude code costs about
+ 
+
+00:07:00.240 --> 00:07:04.430 align:start position:0%
+GLM running in Claude code costs about
+650<00:07:01.000><c> a</c><00:07:01.080><c> task</c><00:07:01.800><c> at</c><00:07:02.040><c> index</c><00:07:02.520><c> 58.</c><00:07:03.680><c> The</c><00:07:03.760><c> stronger</c>
+
+00:07:04.430 --> 00:07:04.440 align:start position:0%
+650 a task at index 58. The stronger
+ 
+
+00:07:04.440 --> 00:07:06.830 align:start position:0%
+650 a task at index 58. The stronger
+closed<00:07:04.919><c> model</c><00:07:05.360><c> was</c><00:07:05.600><c> cheaper</c><00:07:06.080><c> per</c><00:07:06.360><c> finished</c>
+
+00:07:06.830 --> 00:07:06.840 align:start position:0%
+closed model was cheaper per finished
+ 
+
+00:07:06.840 --> 00:07:09.750 align:start position:0%
+closed model was cheaper per finished
+task<00:07:07.064><c> [music]</c><00:07:07.400><c> and</c><00:07:07.800><c> better</c><00:07:08.200><c> at</c><00:07:08.400><c> it.</c><00:07:09.160><c> GLM</c><00:07:09.560><c> is</c>
+
+00:07:09.750 --> 00:07:09.760 align:start position:0%
+task [music] and better at it. GLM is
+ 
+
+00:07:09.760 --> 00:07:12.150 align:start position:0%
+task [music] and better at it. GLM is
+always<00:07:10.160><c> cheaper</c><00:07:10.600><c> simply</c><00:07:11.120><c> false</c><00:07:11.520><c> for</c><00:07:11.760><c> real</c>
+
+00:07:12.150 --> 00:07:12.160 align:start position:0%
+always cheaper simply false for real
+ 
+
+00:07:12.160 --> 00:07:13.790 align:start position:0%
+always cheaper simply false for real
+agent<00:07:12.640><c> work.</c>
+
+00:07:13.790 --> 00:07:13.800 align:start position:0%
+agent work.
+ 
+
+00:07:13.800 --> 00:07:16.990 align:start position:0%
+agent work.
+Per<00:07:13.960><c> token,</c><00:07:14.600><c> GLM</c><00:07:15.160><c> wins.</c><00:07:15.880><c> Per</c><00:07:16.080><c> subscription,</c>
+
+00:07:16.990 --> 00:07:17.000 align:start position:0%
+Per token, GLM wins. Per subscription,
+ 
+
+00:07:17.000 --> 00:07:19.909 align:start position:0%
+Per token, GLM wins. Per subscription,
+it<00:07:17.240><c> often</c><00:07:17.680><c> loses.</c><00:07:18.320><c> A</c><00:07:18.360><c> flat</c><00:07:18.800><c> Claude</c><00:07:19.200><c> or</c><00:07:19.360><c> Codex</c>
+
+00:07:19.909 --> 00:07:19.919 align:start position:0%
+it often loses. A flat Claude or Codex
+ 
+
+00:07:19.919 --> 00:07:22.630 align:start position:0%
+it often loses. A flat Claude or Codex
+plan<00:07:20.280><c> beats</c><00:07:20.640><c> metered</c><00:07:21.080><c> GLM</c><00:07:21.640><c> usage</c><00:07:22.080><c> for</c><00:07:22.280><c> heavy</c>
+
+00:07:22.630 --> 00:07:22.640 align:start position:0%
+plan beats metered GLM usage for heavy
+ 
+
+00:07:22.640 --> 00:07:24.085 align:start position:0%
+plan beats metered GLM usage for heavy
+users.<00:07:23.640><c> And</c>
+
+00:07:24.085 --> 00:07:24.095 align:start position:0%
+users. And
+ 
+
+00:07:24.095 --> 00:07:24.270 align:start position:0%
+users. And
+&gt;&gt; [music]
+
+00:07:24.270 --> 00:07:24.280 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:07:24.280 --> 00:07:26.230 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; just<00:07:24.560><c> run</c><00:07:24.760><c> it</c><00:07:24.919><c> free</c><00:07:25.160><c> at</c><00:07:25.320><c> home</c><00:07:25.600><c> is</c><00:07:25.760><c> a</c><00:07:25.840><c> silly</c>
+
+00:07:26.230 --> 00:07:26.240 align:start position:0%
+&gt;&gt; just run it free at home is a silly
+ 
+
+00:07:26.240 --> 00:07:28.630 align:start position:0%
+&gt;&gt; just run it free at home is a silly
+statement.<00:07:27.280><c> This</c><00:07:27.520><c> model</c><00:07:27.960><c> wants</c><00:07:28.240><c> something</c>
+
+00:07:28.630 --> 00:07:28.640 align:start position:0%
+statement. This model wants something
+ 
+
+00:07:28.640 --> 00:07:30.909 align:start position:0%
+statement. This model wants something
+around<00:07:29.120><c> eight</c><00:07:29.560><c> top-end</c><00:07:29.990><c> [music]</c><00:07:30.200><c> data</c><00:07:30.520><c> center</c>
+
+00:07:30.909 --> 00:07:30.919 align:start position:0%
+around eight top-end [music] data center
+ 
+
+00:07:30.919 --> 00:07:34.390 align:start position:0%
+around eight top-end [music] data center
+GPUs<00:07:31.640><c> to</c><00:07:31.840><c> run</c><00:07:32.120><c> properly.</c><00:07:33.200><c> Squeeze</c><00:07:33.720><c> it</c><00:07:33.960><c> onto</c><00:07:34.320><c> a</c>
+
+00:07:34.390 --> 00:07:34.400 align:start position:0%
+GPUs to run properly. Squeeze it onto a
+ 
+
+00:07:34.400 --> 00:07:37.070 align:start position:0%
+GPUs to run properly. Squeeze it onto a
+home<00:07:34.720><c> rig</c><00:07:35.000><c> with</c><00:07:35.240><c> aggressive</c><00:07:35.840><c> compression</c><00:07:36.919><c> and</c>
+
+00:07:37.070 --> 00:07:37.080 align:start position:0%
+home rig with aggressive compression and
+ 
+
+00:07:37.080 --> 00:07:38.950 align:start position:0%
+home rig with aggressive compression and
+you've<00:07:37.280><c> quantized</c><00:07:37.919><c> it</c><00:07:38.080><c> down</c><00:07:38.400><c> below</c><00:07:38.880><c> a</c>
+
+00:07:38.950 --> 00:07:38.960 align:start position:0%
+you've quantized it down below a
+ 
+
+00:07:38.960 --> 00:07:41.590 align:start position:0%
+you've quantized it down below a
+mid-tier<00:07:39.600><c> model.</c><00:07:40.440><c> Free</c><00:07:40.760><c> to</c><00:07:40.919><c> download</c><00:07:41.400><c> does</c>
+
+00:07:41.590 --> 00:07:41.600 align:start position:0%
+mid-tier model. Free to download does
+ 
+
+00:07:41.600 --> 00:07:44.470 align:start position:0%
+mid-tier model. Free to download does
+not<00:07:41.960><c> mean</c><00:07:42.280><c> free</c><00:07:42.600><c> to</c><00:07:42.800><c> run.</c><00:07:43.720><c> One</c><00:07:43.880><c> more</c><00:07:44.200><c> for</c><00:07:44.360><c> the</c>
+
+00:07:44.470 --> 00:07:44.480 align:start position:0%
+not mean free to run. One more for the
+ 
+
+00:07:44.480 --> 00:07:47.790 align:start position:0%
+not mean free to run. One more for the
+enterprises.<00:07:45.480><c> ZAI's</c><00:07:46.440><c> coding</c><00:07:46.840><c> plan</c><00:07:47.160><c> can</c><00:07:47.360><c> train</c>
+
+00:07:47.790 --> 00:07:47.800 align:start position:0%
+enterprises. ZAI's coding plan can train
+ 
+
+00:07:47.800 --> 00:07:51.030 align:start position:0%
+enterprises. ZAI's coding plan can train
+on<00:07:47.960><c> your</c><00:07:48.240><c> code</c><00:07:49.040><c> per</c><00:07:49.320><c> its</c><00:07:49.560><c> own</c><00:07:49.800><c> terms.</c><00:07:50.600><c> If</c><00:07:50.760><c> that</c>
+
+00:07:51.030 --> 00:07:51.040 align:start position:0%
+on your code per its own terms. If that
+ 
+
+00:07:51.040 --> 00:07:52.990 align:start position:0%
+on your code per its own terms. If that
+matters,<00:07:51.480><c> you're</c><00:07:51.680><c> self-hosting</c><00:07:52.440><c> the</c><00:07:52.640><c> open</c>
+
+00:07:52.990 --> 00:07:53.000 align:start position:0%
+matters, you're self-hosting the open
+ 
+
+00:07:53.000 --> 00:07:55.525 align:start position:0%
+matters, you're self-hosting the open
+weights<00:07:53.520><c> or</c><00:07:53.960><c> renting</c><00:07:54.400><c> it</c><00:07:54.560><c> from</c><00:07:54.800><c> a</c><00:07:54.880><c> US</c><00:07:55.280><c> provider</c>
+
+00:07:55.525 --> 00:07:55.535 align:start position:0%
+weights or renting it from a US provider
+ 
+
+00:07:55.535 --> 00:07:58.310 align:start position:0%
+weights or renting it from a US provider
+[music]<00:07:55.880><c> with</c><00:07:56.080><c> a</c><00:07:56.160><c> no</c><00:07:56.440><c> retention</c><00:07:57.040><c> policy.</c><00:07:58.040><c> Not</c>
+
+00:07:58.310 --> 00:07:58.320 align:start position:0%
+[music] with a no retention policy. Not
+ 
+
+00:07:58.320 --> 00:08:02.070 align:start position:0%
+[music] with a no retention policy. Not
+going<00:07:58.640><c> through</c><00:07:58.920><c> ZAI</c><00:07:59.680><c> directly.</c><00:08:00.920><c> So,</c><00:08:01.800><c> switch</c>
+
+00:08:02.070 --> 00:08:02.080 align:start position:0%
+going through ZAI directly. So, switch
+ 
+
+00:08:02.080 --> 00:08:04.550 align:start position:0%
+going through ZAI directly. So, switch
+to<00:08:02.200><c> the</c><00:08:02.320><c> free</c><00:08:02.560><c> model</c><00:08:03.000><c> or</c><00:08:03.160><c> not.</c><00:08:04.000><c> The</c><00:08:04.040><c> developers</c>
+
+00:08:04.550 --> 00:08:04.560 align:start position:0%
+to the free model or not. The developers
+ 
+
+00:08:04.560 --> 00:08:06.830 align:start position:0%
+to the free model or not. The developers
+getting<00:08:04.800><c> the</c><00:08:04.920><c> most</c><00:08:05.280><c> out</c><00:08:05.400><c> of</c><00:08:05.520><c> this</c><00:08:05.800><c> are</c><00:08:06.040><c> routing</c>
+
+00:08:06.830 --> 00:08:06.840 align:start position:0%
+getting the most out of this are routing
+ 
+
+00:08:06.840 --> 00:08:08.750 align:start position:0%
+getting the most out of this are routing
+that<00:08:06.960><c> the</c><00:08:07.080><c> frontier</c><00:08:07.560><c> model</c><00:08:07.880><c> plan</c><00:08:08.240><c> and</c><00:08:08.400><c> review</c>
+
+00:08:08.750 --> 00:08:08.760 align:start position:0%
+that the frontier model plan and review
+ 
+
+00:08:08.760 --> 00:08:12.270 align:start position:0%
+that the frontier model plan and review
+the<00:08:08.920><c> hard</c><00:08:09.280><c> 10</c><00:08:09.480><c> to</c><00:08:09.600><c> 20%.</c><00:08:11.000><c> Let</c><00:08:11.200><c> GLM</c><00:08:11.800><c> grind</c><00:08:12.160><c> the</c>
+
+00:08:12.270 --> 00:08:12.280 align:start position:0%
+the hard 10 to 20%. Let GLM grind the
+ 
+
+00:08:12.280 --> 00:08:14.310 align:start position:0%
+the hard 10 to 20%. Let GLM grind the
+cheap<00:08:12.600><c> bulk,</c><00:08:13.280><c> the</c><00:08:13.400><c> boilerplate,</c><00:08:14.200><c> the</c>
+
+00:08:14.310 --> 00:08:14.320 align:start position:0%
+cheap bulk, the boilerplate, the
+ 
+
+00:08:14.320 --> 00:08:16.630 align:start position:0%
+cheap bulk, the boilerplate, the
+refactors,<00:08:15.160><c> the</c><00:08:15.280><c> high-volume</c><00:08:16.040><c> adjunctive</c>
+
+00:08:16.630 --> 00:08:16.640 align:start position:0%
+refactors, the high-volume adjunctive
+ 
+
+00:08:16.640 --> 00:08:18.909 align:start position:0%
+refactors, the high-volume adjunctive
+work<00:08:16.960><c> where</c><00:08:17.160><c> five</c><00:08:17.560><c> times</c><00:08:17.960><c> cheaper</c><00:08:18.440><c> actually</c>
+
+00:08:18.909 --> 00:08:18.919 align:start position:0%
+work where five times cheaper actually
+ 
+
+00:08:18.919 --> 00:08:21.150 align:start position:0%
+work where five times cheaper actually
+compounds.<00:08:19.960><c> As</c><00:08:20.200><c> other</c><00:08:20.480><c> reviewers</c><00:08:21.000><c> have</c>
+
+00:08:21.150 --> 00:08:21.160 align:start position:0%
+compounds. As other reviewers have
+ 
+
+00:08:21.160 --> 00:08:23.909 align:start position:0%
+compounds. As other reviewers have
+mentioned,<00:08:22.040><c> keep</c><00:08:22.360><c> GLM</c><00:08:22.919><c> 5.2</c><00:08:23.700><c> [music]</c><00:08:23.760><c> in</c>
+
+00:08:23.909 --> 00:08:23.919 align:start position:0%
+mentioned, keep GLM 5.2 [music] in
+ 
+
+00:08:23.919 --> 00:08:26.470 align:start position:0%
+mentioned, keep GLM 5.2 [music] in
+rotation,<00:08:24.800><c> not</c><00:08:25.120><c> in</c><00:08:25.240><c> the</c><00:08:25.320><c> spotlight.</c><00:08:26.400><c> A</c>
+
+00:08:26.470 --> 00:08:26.480 align:start position:0%
+rotation, not in the spotlight. A
+ 
+
+00:08:26.480 --> 00:08:28.590 align:start position:0%
+rotation, not in the spotlight. A
+routing<00:08:26.840><c> setup</c><00:08:27.240><c> like</c><00:08:27.440><c> that</c><00:08:27.720><c> can</c><00:08:27.919><c> cut</c><00:08:28.120><c> a</c><00:08:28.200><c> team's</c>
+
+00:08:28.590 --> 00:08:28.600 align:start position:0%
+routing setup like that can cut a team's
+ 
+
+00:08:28.600 --> 00:08:31.270 align:start position:0%
+routing setup like that can cut a team's
+spend<00:08:28.960><c> by</c><00:08:29.120><c> roughly</c><00:08:29.600><c> half</c><00:08:30.320><c> with</c><00:08:30.560><c> no</c><00:08:30.800><c> drop</c><00:08:31.160><c> in</c>
+
+00:08:31.270 --> 00:08:31.280 align:start position:0%
+spend by roughly half with no drop in
+ 
+
+00:08:31.280 --> 00:08:33.630 align:start position:0%
+spend by roughly half with no drop in
+quality.<00:08:32.400><c> And</c><00:08:32.440><c> the</c><00:08:32.520><c> general</c><00:08:32.919><c> takeaway</c><00:08:33.400><c> from</c>
+
+00:08:33.630 --> 00:08:33.640 align:start position:0%
+quality. And the general takeaway from
+ 
+
+00:08:33.640 --> 00:08:34.825 align:start position:0%
+quality. And the general takeaway from
+model<00:08:34.000><c> releases,</c>
+
+00:08:34.825 --> 00:08:34.835 align:start position:0%
+model releases,
+ 
+
+00:08:34.835 --> 00:08:34.909 align:start position:0%
+model releases,
+&gt;&gt; [music]
+
+00:08:34.909 --> 00:08:34.919 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:08:34.919 --> 00:08:37.469 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; don't<00:08:35.240><c> trust</c><00:08:35.599><c> the</c><00:08:35.719><c> leaderboard.</c><00:08:36.840><c> Take</c><00:08:37.120><c> two</c><00:08:37.320><c> or</c>
+
+00:08:37.469 --> 00:08:37.479 align:start position:0%
+&gt;&gt; don't trust the leaderboard. Take two or
+ 
+
+00:08:37.479 --> 00:08:40.110 align:start position:0%
+&gt;&gt; don't trust the leaderboard. Take two or
+three<00:08:37.840><c> of</c><00:08:37.960><c> your</c><00:08:38.240><c> own</c><00:08:38.560><c> real</c><00:08:38.840><c> tickets,</c><00:08:39.680><c> run</c><00:08:39.960><c> them</c>
+
+00:08:40.110 --> 00:08:40.120 align:start position:0%
+three of your own real tickets, run them
+ 
+
+00:08:40.120 --> 00:08:42.270 align:start position:0%
+three of your own real tickets, run them
+on<00:08:40.240><c> a</c><00:08:40.320><c> branch</c><00:08:40.840><c> through</c><00:08:41.120><c> each</c><00:08:41.400><c> model,</c><00:08:41.880><c> and</c><00:08:42.080><c> look</c>
+
+00:08:42.270 --> 00:08:42.280 align:start position:0%
+on a branch through each model, and look
+ 
+
+00:08:42.280 --> 00:08:44.710 align:start position:0%
+on a branch through each model, and look
+at<00:08:42.400><c> the</c><00:08:42.520><c> diffs.</c><00:08:43.280><c> Your</c><00:08:43.479><c> code</c><00:08:43.800><c> base</c><00:08:44.039><c> is</c><00:08:44.160><c> the</c><00:08:44.400><c> only</c>
+
+00:08:44.710 --> 00:08:44.720 align:start position:0%
+at the diffs. Your code base is the only
+ 
+
+00:08:44.720 --> 00:08:47.710 align:start position:0%
+at the diffs. Your code base is the only
+benchmark<00:08:45.360><c> that</c><00:08:45.600><c> counts.</c><00:08:46.680><c> Claude</c><00:08:47.000><c> and</c><00:08:47.120><c> GPT</c>
+
+00:08:47.710 --> 00:08:47.720 align:start position:0%
+benchmark that counts. Claude and GPT
+ 
+
+00:08:47.720 --> 00:08:49.350 align:start position:0%
+benchmark that counts. Claude and GPT
+aren't<00:08:48.040><c> finished.</c><00:08:48.591><c> [music]</c><00:08:48.680><c> The</c><00:08:48.839><c> independent</c>
+
+00:08:49.350 --> 00:08:49.360 align:start position:0%
+aren't finished. [music] The independent
+ 
+
+00:08:49.360 --> 00:08:51.030 align:start position:0%
+aren't finished. [music] The independent
+numbers<00:08:49.800><c> still</c><00:08:50.120><c> hand</c><00:08:50.360><c> them</c><00:08:50.520><c> the</c><00:08:50.680><c> hard</c>
+
+00:08:51.030 --> 00:08:51.040 align:start position:0%
+numbers still hand them the hard
+ 
+
+00:08:51.040 --> 00:08:53.550 align:start position:0%
+numbers still hand them the hard
+autonomous<00:08:51.920><c> see-the-screen</c><00:08:52.720><c> work.</c><00:08:53.440><c> The</c>
+
+00:08:53.550 --> 00:08:53.560 align:start position:0%
+autonomous see-the-screen work. The
+ 
+
+00:08:53.560 --> 00:08:55.710 align:start position:0%
+autonomous see-the-screen work. The
+thing<00:08:53.800><c> that</c><00:08:54.000><c> moved</c><00:08:54.320><c> is</c><00:08:54.480><c> the</c><00:08:54.600><c> floor.</c><00:08:55.360><c> A</c><00:08:55.440><c> free</c>
+
+00:08:55.710 --> 00:08:55.720 align:start position:0%
+thing that moved is the floor. A free
+ 
+
+00:08:55.720 --> 00:08:57.990 align:start position:0%
+thing that moved is the floor. A free
+download<00:08:56.200><c> is</c><00:08:56.320><c> now</c><00:08:56.600><c> four</c><00:08:56.960><c> months,</c><00:08:57.480><c> not</c><00:08:57.760><c> two</c>
+
+00:08:57.990 --> 00:08:58.000 align:start position:0%
+download is now four months, not two
+ 
+
+00:08:58.000 --> 00:09:00.630 align:start position:0%
+download is now four months, not two
+years,<00:08:58.520><c> behind</c><00:08:59.040><c> the</c><00:08:59.160><c> best</c><00:08:59.520><c> money</c><00:08:59.800><c> can</c><00:09:00.000><c> buy,</c>
+
+00:09:00.630 --> 00:09:00.640 align:start position:0%
+years, behind the best money can buy,
+ 
+
+00:09:00.640 --> 00:09:02.150 align:start position:0%
+years, behind the best money can buy,
+and<00:09:00.800><c> good</c><00:09:01.000><c> enough</c><00:09:01.036><c> [music]</c><00:09:01.360><c> that</c><00:09:01.520><c> a</c><00:09:01.560><c> Vercel</c>
+
+00:09:02.150 --> 00:09:02.160 align:start position:0%
+and good enough [music] that a Vercel
+ 
+
+00:09:02.160 --> 00:09:05.630 align:start position:0%
+and good enough [music] that a Vercel
+CEO<00:09:02.839><c> says</c><00:09:03.360><c> it</c><00:09:03.560><c> changes</c><00:09:04.080><c> things.</c><00:09:04.920><c> The</c><00:09:05.040><c> frontier</c>
+
+00:09:05.630 --> 00:09:05.640 align:start position:0%
+CEO says it changes things. The frontier
+ 
+
+00:09:05.640 --> 00:09:07.990 align:start position:0%
+CEO says it changes things. The frontier
+didn't<00:09:06.120><c> fall,</c><00:09:06.640><c> but</c><00:09:06.800><c> developers</c><00:09:07.480><c> are</c><00:09:07.640><c> now</c>
+
+00:09:07.990 --> 00:09:08.000 align:start position:0%
+didn't fall, but developers are now
+ 
+
+00:09:08.000 --> 00:09:10.670 align:start position:0%
+didn't fall, but developers are now
+starting<00:09:08.480><c> to</c><00:09:08.600><c> see</c><00:09:08.920><c> reliable</c><00:09:09.839><c> alternatives</c>
+
+00:09:10.670 --> 00:09:10.680 align:start position:0%
+starting to see reliable alternatives
+ 
+
+00:09:10.680 --> 00:09:27.881 align:start position:0%
+starting to see reliable alternatives
+for<00:09:10.839><c> their</c><00:09:11.080><c> work.</c>
+
+00:09:27.881 --> 00:09:27.891 align:start position:0%
+ 
+ 
+
+00:09:27.891 --> 00:09:29.911 align:start position:0%
+ 
+&gt;&gt; [music]
+

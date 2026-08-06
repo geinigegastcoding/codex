@@ -1,0 +1,1481 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.03,
+      "text": "The best local agent harness in 2026 is"
+    },
+    {
+      "start": 3.04,
+      "end": 5.35,
+      "text": "not the one with the most GitHub stars."
+    },
+    {
+      "start": 5.36,
+      "end": 7.03,
+      "text": "It is the one that developers running"
+    },
+    {
+      "start": 7.04,
+      "end": 9.71,
+      "text": "agents all day keep coming back to. And"
+    },
+    {
+      "start": 9.72,
+      "end": 12.47,
+      "text": "that answer has changed. A year ago, the"
+    },
+    {
+      "start": 12.48,
+      "end": 15.51,
+      "text": "question barely existed. Today, it is"
+    },
+    {
+      "start": 15.52,
+      "end": 17.51,
+      "text": "the only question that matters because"
+    },
+    {
+      "start": 17.52,
+      "end": 19.71,
+      "text": "the models have largely converged and"
+    },
+    {
+      "start": 19.72,
+      "end": 21.79,
+      "text": "the wrapper around the model now decides"
+    },
+    {
+      "start": 21.8,
+      "end": 23.79,
+      "text": "your entire experience. One word will"
+    },
+    {
+      "start": 23.8,
+      "end": 25.71,
+      "text": "keep coming back in this video."
+    },
+    {
+      "start": 25.72,
+      "end": 28.27,
+      "text": "Reliable. Hold on to it."
+    },
+    {
+      "start": 28.28,
+      "end": 30.35,
+      "text": "Past the feature screenshots, past the"
+    },
+    {
+      "start": 30.36,
+      "end": 32.51,
+      "text": "star counts, reliability is what"
+    },
+    {
+      "start": 32.52,
+      "end": 34.27,
+      "text": "actually separates these harnesses on"
+    },
+    {
+      "start": 34.28,
+      "end": 36.59,
+      "text": "real work. Keep four things in your head"
+    },
+    {
+      "start": 36.6,
+      "end": 39.23,
+      "text": "as we go. The harness itself, the model"
+    },
+    {
+      "start": 39.24,
+      "end": 41.55,
+      "text": "you point at it, where that model lives,"
+    },
+    {
+      "start": 41.56,
+      "end": 42.99,
+      "text": "and what you are actually asking the"
+    },
+    {
+      "start": 43,
+      "end": 45.15,
+      "text": "agent to do. Every pick in this video is"
+    },
+    {
+      "start": 45.16,
+      "end": 47.27,
+      "text": "really about matching those four. Get"
+    },
+    {
+      "start": 47.28,
+      "end": 48.95,
+      "text": "one wrong and the other three don't"
+    },
+    {
+      "start": 48.96,
+      "end": 51.15,
+      "text": "matter. Start with the headline. The"
+    },
+    {
+      "start": 51.16,
+      "end": 53.99,
+      "text": "model race is over. It ended in a tie."
+    },
+    {
+      "start": 54,
+      "end": 58.55,
+      "text": "Claude Opus 4.8 hits 88.6% on SWE-bench,"
+    },
+    {
+      "start": 58.56,
+      "end": 60.67,
+      "text": "verified, the highest published number"
+    },
+    {
+      "start": 60.68,
+      "end": 63.79,
+      "text": "in this category right now. GPT-5.5 in"
+    },
+    {
+      "start": 63.8,
+      "end": 65.55,
+      "text": "the Codex harness leads Terminal bench"
+    },
+    {
+      "start": 65.56,
+      "end": 68.51,
+      "text": "2.1 at 83.4%."
+    },
+    {
+      "start": 68.52,
+      "end": 72.51,
+      "text": "Gemini 3.5 Flash is right there at 76.2."
+    },
+    {
+      "start": 72.52,
+      "end": 73.99,
+      "text": "The differences are real, but they are"
+    },
+    {
+      "start": 74,
+      "end": 76.27,
+      "text": "shrinking every month. What is not"
+    },
+    {
+      "start": 76.28,
+      "end": 78.83,
+      "text": "converging is the harness. The same"
+    },
+    {
+      "start": 78.84,
+      "end": 80.55,
+      "text": "model in two different harnesses gives"
+    },
+    {
+      "start": 80.56,
+      "end": 82.63,
+      "text": "you two very different outcomes. A"
+    },
+    {
+      "start": 82.64,
+      "end": 84.27,
+      "text": "researcher put this question directly"
+    },
+    {
+      "start": 84.28,
+      "end": 86.23,
+      "text": "into a public post this year. Why does"
+    },
+    {
+      "start": 86.24,
+      "end": 88.11,
+      "text": "Claude Code feel so much more effective"
+    },
+    {
+      "start": 88.12,
+      "end": 89.71000000000001,
+      "text": "than running the same Claude model"
+    },
+    {
+      "start": 89.72,
+      "end": 92.15,
+      "text": "inside a different tool? The answer is"
+    },
+    {
+      "start": 92.16,
+      "end": 94.59,
+      "text": "the harness. That is the whole point of"
+    },
+    {
+      "start": 94.6,
+      "end": 96.63,
+      "text": "this video. So, which harness do you"
+    },
+    {
+      "start": 96.64,
+      "end": 98.99000000000001,
+      "text": "actually start with? If you have never"
+    },
+    {
+      "start": 99,
+      "end": 100.78999999999999,
+      "text": "run a local agent before or you have"
+    },
+    {
+      "start": 100.8,
+      "end": 103.03,
+      "text": "tried one and given up because the setup"
+    },
+    {
+      "start": 103.03999999999999,
+      "end": 105.71000000000001,
+      "text": "was a nightmare, the answer is the same."
+    },
+    {
+      "start": 105.72,
+      "end": 107.35,
+      "text": "There is one name the community keeps"
+    },
+    {
+      "start": 107.36,
+      "end": 109.50999999999999,
+      "text": "pointing newcomers toward and it is not"
+    },
+    {
+      "start": 109.52000000000001,
+      "end": 112.11,
+      "text": "even close. Open Code is the default"
+    },
+    {
+      "start": 112.12,
+      "end": 115.75,
+      "text": "open source pick of 2026, no qualifier."
+    },
+    {
+      "start": 115.75999999999999,
+      "end": 117.19,
+      "text": "If you want a single safe starting"
+    },
+    {
+      "start": 117.2,
+      "end": 119.63,
+      "text": "point, this is it. It has crossed"
+    },
+    {
+      "start": 119.64,
+      "end": 121.15,
+      "text": "172,000"
+    },
+    {
+      "start": 121.16,
+      "end": 123.35,
+      "text": "GitHub stars, the most starred open"
+    },
+    {
+      "start": 123.36,
+      "end": 126.07,
+      "text": "source coding agent on GitHub with 1.68"
+    },
+    {
+      "start": 126.08,
+      "end": 128.31,
+      "text": "million weekly NPM installs as of June"
+    },
+    {
+      "start": 128.32,
+      "end": 132.23,
+      "text": "2026. It is MIT-licensed, model-agnostic"
+    },
+    {
+      "start": 132.24,
+      "end": 134.91,
+      "text": "across 75 plus providers, and it runs"
+    },
+    {
+      "start": 134.92,
+      "end": 136.91,
+      "text": "local models through Ollama and any"
+    },
+    {
+      "start": 136.92000000000002,
+      "end": 139.59,
+      "text": "OpenAI compatible endpoint. No code"
+    },
+    {
+      "start": 139.6,
+      "end": 140.949,
+      "text": "leaves your machine unless you tell it"
+    },
+    {
+      "start": 140.959,
+      "end": 143.75,
+      "text": "to. The harness is genuinely deep. You"
+    },
+    {
+      "start": 143.76,
+      "end": 145.91,
+      "text": "get custom primary agents and sub-agents"
+    },
+    {
+      "start": 145.92000000000002,
+      "end": 148.35,
+      "text": "defined in JSON or markdown, each with"
+    },
+    {
+      "start": 148.36,
+      "end": 150.47,
+      "text": "its own model and its own permissions."
+    },
+    {
+      "start": 150.48,
+      "end": 153.79,
+      "text": "It supports MCP, agents, MD context"
+    },
+    {
+      "start": 153.8,
+      "end": 156.35,
+      "text": "files, and LSP integration across 20"
+    },
+    {
+      "start": 156.36,
+      "end": 158.43,
+      "text": "plus languages, which means the harness"
+    },
+    {
+      "start": 158.44,
+      "end": 159.87,
+      "text": "loads language-aware context"
+    },
+    {
+      "start": 159.88,
+      "end": 161.43,
+      "text": "automatically rather than making you"
+    },
+    {
+      "start": 161.44,
+      "end": 162.87,
+      "text": "manage it."
+    },
+    {
+      "start": 162.88,
+      "end": 165.15,
+      "text": "The architecture is client-server. Run"
+    },
+    {
+      "start": 165.16,
+      "end": 167.03,
+      "text": "open code serve and you get a headless"
+    },
+    {
+      "start": 167.04,
+      "end": 169.11,
+      "text": "open API server for async and remote"
+    },
+    {
+      "start": 169.12,
+      "end": 171.39,
+      "text": "use. Install the whole thing with one"
+    },
+    {
+      "start": 171.4,
+      "end": 173.19,
+      "text": "curl command. The community sentiment"
+    },
+    {
+      "start": 173.2,
+      "end": 175.51,
+      "text": "around it is unusually clean."
+    },
+    {
+      "start": 175.52,
+      "end": 177.79,
+      "text": "People post, unprompted, that its"
+    },
+    {
+      "start": 177.8,
+      "end": 179.47,
+      "text": "terminal interface is better than the"
+    },
+    {
+      "start": 179.48,
+      "end": 181.83,
+      "text": "bigger, better-funded names."
+    },
+    {
+      "start": 181.84,
+      "end": 183.75,
+      "text": "One caveat worth knowing up front:"
+    },
+    {
+      "start": 183.76,
+      "end": 185.75,
+      "text": "Anthropic prohibits Claude Pro and Max"
+    },
+    {
+      "start": 185.76,
+      "end": 187.79,
+      "text": "subscriptions in open code. So, if you"
+    },
+    {
+      "start": 187.8,
+      "end": 190.03,
+      "text": "want Claude underneath, you need an API"
+    },
+    {
+      "start": 190.04,
+      "end": 192.15,
+      "text": "key, not a subscription. That is not a"
+    },
+    {
+      "start": 192.16,
+      "end": 193.949,
+      "text": "deal-breaker. It just means you pay per"
+    },
+    {
+      "start": 193.959,
+      "end": 196.07,
+      "text": "token rather than per month."
+    },
+    {
+      "start": 196.07999999999998,
+      "end": 197.39,
+      "text": "Open code is the pick when you want"
+    },
+    {
+      "start": 197.4,
+      "end": 199.82999999999998,
+      "text": "maximum provider flexibility, a deep"
+    },
+    {
+      "start": 199.84,
+      "end": 202.11,
+      "text": "harness, and the ability to run entirely"
+    },
+    {
+      "start": 202.12,
+      "end": 203.59,
+      "text": "on local hardware."
+    },
+    {
+      "start": 203.6,
+      "end": 205.22899999999998,
+      "text": "But, flexibility is not always what you"
+    },
+    {
+      "start": 205.239,
+      "end": 207.75,
+      "text": "need. Sometimes you need control."
+    },
+    {
+      "start": 207.76,
+      "end": 210.87,
+      "text": "Surgical, precise, reviewable control"
+    },
+    {
+      "start": 210.88,
+      "end": 212.39,
+      "text": "over every single line the agent"
+    },
+    {
+      "start": 212.4,
+      "end": 214.91,
+      "text": "touches. And for that, the community has"
+    },
+    {
+      "start": 214.92000000000002,
+      "end": 216.79,
+      "text": "a completely different answer, one that"
+    },
+    {
+      "start": 216.8,
+      "end": 218.99,
+      "text": "has been quietly winning for 3 years and"
+    },
+    {
+      "start": 219,
+      "end": 220.82999999999998,
+      "text": "nobody talks about enough."
+    },
+    {
+      "start": 220.84,
+      "end": 222.949,
+      "text": "Aider is the original. It has been doing"
+    },
+    {
+      "start": 222.959,
+      "end": 225.35,
+      "text": "this since 2023, and it is still the"
+    },
+    {
+      "start": 225.36,
+      "end": 228.19,
+      "text": "best at one specific thing: disciplined,"
+    },
+    {
+      "start": 228.2,
+      "end": 230.19,
+      "text": "Git-native editing. That is not a"
+    },
+    {
+      "start": 230.2,
+      "end": 232.51,
+      "text": "consolation prize. For a huge portion of"
+    },
+    {
+      "start": 232.52,
+      "end": 234.67000000000002,
+      "text": "real coding work, it is exactly what you"
+    },
+    {
+      "start": 234.68,
+      "end": 236.71,
+      "text": "want. What makes Aider different is how"
+    },
+    {
+      "start": 236.72,
+      "end": 239.59,
+      "text": "it treats Git. Every AI edit becomes one"
+    },
+    {
+      "start": 239.6,
+      "end": 241.15,
+      "text": "atomic commit with a written by the"
+    },
+    {
+      "start": 241.16,
+      "end": 243.31,
+      "text": "model commit message. Your Git log reads"
+    },
+    {
+      "start": 243.32,
+      "end": 245.51,
+      "text": "like a change log. If the agent wanders"
+    },
+    {
+      "start": 245.52,
+      "end": 247.87,
+      "text": "off or makes a bad call, you revert one"
+    },
+    {
+      "start": 247.88,
+      "end": 250.07,
+      "text": "commit and you are back. No hunting"
+    },
+    {
+      "start": 250.08,
+      "end": 252.11,
+      "text": "through a tangled history. No bundled"
+    },
+    {
+      "start": 252.12,
+      "end": 254.11,
+      "text": "whip a bunch of stuff. The repo map it"
+    },
+    {
+      "start": 254.12,
+      "end": 255.99,
+      "text": "builds from your Git repository gives it"
+    },
+    {
+      "start": 256,
+      "end": 257.789,
+      "text": "a structural understanding of your code"
+    },
+    {
+      "start": 257.799,
+      "end": 260.027,
+      "text": "base, not just the files you hand it."
+    },
+    {
+      "start": 260.037,
+      "end": 260.229,
+      "text": "&gt;&gt; [snorts]"
+    },
+    {
+      "start": 260.239,
+      "end": 261.949,
+      "text": "&gt;&gt; It is also the most model flexible"
+    },
+    {
+      "start": 261.959,
+      "end": 264.07,
+      "text": "terminal harness available today. The"
+    },
+    {
+      "start": 264.08,
+      "end": 266.59,
+      "text": "Aider leaderboard tracks 70 plus models."
+    },
+    {
+      "start": 266.6,
+      "end": 268.67,
+      "text": "You can run GPT-5 for the hardest"
+    },
+    {
+      "start": 268.68,
+      "end": 270.79,
+      "text": "refactors, switch mid-session to a"
+    },
+    {
+      "start": 270.8,
+      "end": 272.47,
+      "text": "cheaper model with a single {slash}"
+    },
+    {
+      "start": 272.48,
+      "end": 274.51,
+      "text": "command, or point everything at a local"
+    },
+    {
+      "start": 274.52,
+      "end": 276.75,
+      "text": "deep seek or Qwen model via Ollama for"
+    },
+    {
+      "start": 276.76,
+      "end": 278.67,
+      "text": "fully offline work."
+    },
+    {
+      "start": 278.68,
+      "end": 280.71,
+      "text": "Mid-session model swaps are one command"
+    },
+    {
+      "start": 280.72,
+      "end": 282.75,
+      "text": "away. No other harness makes that as"
+    },
+    {
+      "start": 282.76,
+      "end": 285.23,
+      "text": "seamless. The honest catch, Aider does"
+    },
+    {
+      "start": 285.24,
+      "end": 288.71,
+      "text": "not natively support MCP as of mid-2026."
+    },
+    {
+      "start": 288.72,
+      "end": 290.59000000000003,
+      "text": "There is an open RFC and third-party"
+    },
+    {
+      "start": 290.6,
+      "end": 293.19,
+      "text": "workarounds exist, but if MCP is a hard"
+    },
+    {
+      "start": 293.2,
+      "end": 295.11,
+      "text": "requirement for your workflow, this is a"
+    },
+    {
+      "start": 295.12,
+      "end": 297.59000000000003,
+      "text": "real gap. It also does not pretend to be"
+    },
+    {
+      "start": 297.6,
+      "end": 300.07,
+      "text": "an autonomous overnight runner. Aider is"
+    },
+    {
+      "start": 300.08,
+      "end": 301.87,
+      "text": "a pair programmer. You are sitting"
+    },
+    {
+      "start": 301.88,
+      "end": 303.67,
+      "text": "there, reviewing each change as it"
+    },
+    {
+      "start": 303.68,
+      "end": 306.23,
+      "text": "lands. For surgical, commit-by-commit"
+    },
+    {
+      "start": 306.24,
+      "end": 308.23,
+      "text": "editing with full model freedom and Git"
+    },
+    {
+      "start": 308.24,
+      "end": 310.27,
+      "text": "as your safety net, nothing beats it."
+    },
+    {
+      "start": 310.28,
+      "end": 312.59,
+      "text": "Now, both of those harnesses, OpenCode"
+    },
+    {
+      "start": 312.6,
+      "end": 314.51,
+      "text": "and Aider, are tools you run. You"
+    },
+    {
+      "start": 314.52,
+      "end": 316.19,
+      "text": "configure them, you point them at a"
+    },
+    {
+      "start": 316.2,
+      "end": 318.67,
+      "text": "model, you stay in control."
+    },
+    {
+      "start": 318.68,
+      "end": 320.27,
+      "text": "But some people do not want a tool they"
+    },
+    {
+      "start": 320.28,
+      "end": 322.19,
+      "text": "run. They want a foundation they build"
+    },
+    {
+      "start": 322.2,
+      "end": 324.31,
+      "text": "on. They want to look inside the loop,"
+    },
+    {
+      "start": 324.32,
+      "end": 326.35,
+      "text": "rewire it, strip out what they do not"
+    },
+    {
+      "start": 326.36,
+      "end": 328.19,
+      "text": "need, and add what no one else has"
+    },
+    {
+      "start": 328.2,
+      "end": 330.07,
+      "text": "thought of yet. For those people, there"
+    },
+    {
+      "start": 330.08,
+      "end": 331.59,
+      "text": "is a third name, and it comes from"
+    },
+    {
+      "start": 331.6,
+      "end": 334.07,
+      "text": "someone you probably already trust."
+    },
+    {
+      "start": 334.08,
+      "end": 335.87,
+      "text": "Pie is the breakout newcomer and the"
+    },
+    {
+      "start": 335.88,
+      "end": 337.67,
+      "text": "most intellectually interesting harness"
+    },
+    {
+      "start": 337.68,
+      "end": 339.55,
+      "text": "in this list. It comes from Armin"
+    },
+    {
+      "start": 339.56,
+      "end": 341.51,
+      "text": "Ronacher, the person who created Flask"
+    },
+    {
+      "start": 341.52,
+      "end": 343.99,
+      "text": "and Jinja, and it shows. Pie is built"
+    },
+    {
+      "start": 344,
+      "end": 346.23,
+      "text": "around one idea. A A should be small"
+    },
+    {
+      "start": 346.24,
+      "end": 348.19,
+      "text": "enough to understand and hackable enough"
+    },
+    {
+      "start": 348.2,
+      "end": 350.11,
+      "text": "to make your own. Its core runs on a"
+    },
+    {
+      "start": 350.12,
+      "end": 352.51,
+      "text": "sub-1000 token system prompt using what"
+    },
+    {
+      "start": 352.52,
+      "end": 354.31,
+      "text": "it calls lazy skills, modular"
+    },
+    {
+      "start": 354.32,
+      "end": 355.99,
+      "text": "instruction blocks that only load into"
+    },
+    {
+      "start": 356,
+      "end": 357.90999999999997,
+      "text": "context when the task actually needs"
+    },
+    {
+      "start": 357.92,
+      "end": 358.79,
+      "text": "them."
+    },
+    {
+      "start": 358.8,
+      "end": 360.75,
+      "text": "A standard coding task does not load the"
+    },
+    {
+      "start": 360.76,
+      "end": 363.11,
+      "text": "deployment skill. A browser task does"
+    },
+    {
+      "start": 363.12,
+      "end": 365.31,
+      "text": "not load the get skill. The result is a"
+    },
+    {
+      "start": 365.32,
+      "end": 367.43,
+      "text": "harness that stays lean and sharp even"
+    },
+    {
+      "start": 367.44,
+      "end": 369.79,
+      "text": "on large contexts. Because it never"
+    },
+    {
+      "start": 369.8,
+      "end": 371.91,
+      "text": "blows itself with instructions it is not"
+    },
+    {
+      "start": 371.92,
+      "end": 373.55,
+      "text": "using that session."
+    },
+    {
+      "start": 373.56,
+      "end": 375.51,
+      "text": "This architecture is the reason Pi keeps"
+    },
+    {
+      "start": 375.52,
+      "end": 377.27,
+      "text": "coming up as a foundation for custom"
+    },
+    {
+      "start": 377.28,
+      "end": 380.19,
+      "text": "agents. People are not just running Pi,"
+    },
+    {
+      "start": 380.2,
+      "end": 382.55,
+      "text": "they are building on it. Open Claw, one"
+    },
+    {
+      "start": 382.56,
+      "end": 384.23,
+      "text": "of the most discussed personal agent"
+    },
+    {
+      "start": 384.24,
+      "end": 387.27,
+      "text": "projects of 2026, was directly inspired"
+    },
+    {
+      "start": 387.28,
+      "end": 389.909,
+      "text": "by Pi's design philosophy. A powerful"
+    },
+    {
+      "start": 389.919,
+      "end": 392.39,
+      "text": "agent living on a minimal surface."
+    },
+    {
+      "start": 392.4,
+      "end": 393.95,
+      "text": "If your goal is to understand and"
+    },
+    {
+      "start": 393.96,
+      "end": 395.55,
+      "text": "control what your agent is actually"
+    },
+    {
+      "start": 395.56,
+      "end": 397.79,
+      "text": "doing at every step, Pi is built for"
+    },
+    {
+      "start": 397.8,
+      "end": 399.83,
+      "text": "that from the ground up. The trade-off"
+    },
+    {
+      "start": 399.84000000000003,
+      "end": 401.83,
+      "text": "is that Pi is less polished out of the"
+    },
+    {
+      "start": 401.84000000000003,
+      "end": 404.31,
+      "text": "box than Open Code. You get more control"
+    },
+    {
+      "start": 404.32,
+      "end": 406.07,
+      "text": "and less hand-holding."
+    },
+    {
+      "start": 406.08,
+      "end": 407.59000000000003,
+      "text": "For someone who wants to wire their own"
+    },
+    {
+      "start": 407.6,
+      "end": 410.03,
+      "text": "tools and own their own loop, that is a"
+    },
+    {
+      "start": 410.04,
+      "end": 411.11,
+      "text": "feature."
+    },
+    {
+      "start": 411.12,
+      "end": 412.67,
+      "text": "For someone who wants a running agent in"
+    },
+    {
+      "start": 412.68,
+      "end": 415.23,
+      "text": "20 minutes, start with Open Code. But"
+    },
+    {
+      "start": 415.24,
+      "end": 417.23,
+      "text": "here's where it gets interesting. A"
+    },
+    {
+      "start": 417.24,
+      "end": 419.43,
+      "text": "harness is only half the setup. Every"
+    },
+    {
+      "start": 419.44,
+      "end": 421.15,
+      "text": "one of these tools is only as good as"
+    },
+    {
+      "start": 421.16,
+      "end": 422.79,
+      "text": "the model you put underneath it and"
+    },
+    {
+      "start": 422.8,
+      "end": 424.39,
+      "text": "getting that pairing wrong is the most"
+    },
+    {
+      "start": 424.4,
+      "end": 426.51,
+      "text": "common mistake people make."
+    },
+    {
+      "start": 426.52,
+      "end": 428.43,
+      "text": "For most local setups, the model"
+    },
+    {
+      "start": 428.44,
+      "end": 430.35,
+      "text": "community keeps circling back to Qwen"
+    },
+    {
+      "start": 430.36,
+      "end": 433.95,
+      "text": "327B dense, reliable, fits on a single"
+    },
+    {
+      "start": 433.96,
+      "end": 438.03,
+      "text": "24 GB card, and runs on a used 3090 most"
+    },
+    {
+      "start": 438.04,
+      "end": 439.99,
+      "text": "people can actually afford. Four-bit"
+    },
+    {
+      "start": 440,
+      "end": 441.87,
+      "text": "quantized builds from Unsloth are on"
+    },
+    {
+      "start": 441.88,
+      "end": 444.23,
+      "text": "Hugging Face and ready to drop in. For"
+    },
+    {
+      "start": 444.24,
+      "end": 446.47,
+      "text": "bigger jobs that need more memory, Qwen"
+    },
+    {
+      "start": 446.48,
+      "end": 449.71,
+      "text": "3.5A 3B is the mixture of experts"
+    },
+    {
+      "start": 449.72,
+      "end": 451.99,
+      "text": "alternative, where idle experts sit in"
+    },
+    {
+      "start": 452,
+      "end": 453.909,
+      "text": "system RAM and only the active slice"
+    },
+    {
+      "start": 453.919,
+      "end": 456.19,
+      "text": "needs to live on the GPU. Speed will"
+    },
+    {
+      "start": 456.2,
+      "end": 459.55,
+      "text": "come up. Local is not instant. On a 3090"
+    },
+    {
+      "start": 459.56,
+      "end": 462.03,
+      "text": "you are looking at 37 tokens a second."
+    },
+    {
+      "start": 462.04,
+      "end": 463.87,
+      "text": "The pros stop fighting that and run"
+    },
+    {
+      "start": 463.88,
+      "end": 466.55,
+      "text": "parallel agents instead through Volm as"
+    },
+    {
+      "start": 466.56,
+      "end": 468.43,
+      "text": "the serving layer so the card is busy"
+    },
+    {
+      "start": 468.44,
+      "end": 470.15,
+      "text": "the whole time rather than idling"
+    },
+    {
+      "start": 470.15999999999997,
+      "end": 472.75,
+      "text": "between tokens. Volm is not a harness"
+    },
+    {
+      "start": 472.76,
+      "end": 475.07,
+      "text": "for one deep refactor. It is what you"
+    },
+    {
+      "start": 475.08,
+      "end": 476.83,
+      "text": "reach for when the answer to slowness is"
+    },
+    {
+      "start": 476.84000000000003,
+      "end": 479.27,
+      "text": "more agents, not a faster one. The"
+    },
+    {
+      "start": 479.28,
+      "end": 481.15,
+      "text": "privacy case for local is now the"
+    },
+    {
+      "start": 481.16,
+      "end": 483.11,
+      "text": "obvious one. For client work under an"
+    },
+    {
+      "start": 483.12,
+      "end": 485.47,
+      "text": "NDA, your prompts and your code never"
+    },
+    {
+      "start": 485.48,
+      "end": 488.27,
+      "text": "leave the machine. No repo uploaded, no"
+    },
+    {
+      "start": 488.28,
+      "end": 489.91,
+      "text": "tool call sitting in a log on someone"
+    },
+    {
+      "start": 489.92,
+      "end": 492.15,
+      "text": "else's server, no policy email next"
+    },
+    {
+      "start": 492.16,
+      "end": 494.75,
+      "text": "month. A used GPU paid once against a"
+    },
+    {
+      "start": 494.76,
+      "end": 496.27,
+      "text": "monthly subscription that compounds"
+    },
+    {
+      "start": 496.28,
+      "end": 498.19,
+      "text": "forever. Within a couple of years, the"
+    },
+    {
+      "start": 498.2,
+      "end": 500.39,
+      "text": "local box is simply cheaper and it never"
+    },
+    {
+      "start": 500.4,
+      "end": 502.55,
+      "text": "changes its terms. One name worth a"
+    },
+    {
+      "start": 502.56,
+      "end": 504.63,
+      "text": "separate mention, Claude Code from"
+    },
+    {
+      "start": 504.64,
+      "end": 506.909,
+      "text": "Anthropic is the deepest proprietary"
+    },
+    {
+      "start": 506.919,
+      "end": 509.51,
+      "text": "harness in the field by most measures."
+    },
+    {
+      "start": 509.52,
+      "end": 511.55,
+      "text": "It has 30 life cycle hook events,"
+    },
+    {
+      "start": 511.56,
+      "end": 513.19,
+      "text": "dynamic workflows for orchestrating"
+    },
+    {
+      "start": 513.2,
+      "end": 516.149,
+      "text": "parallel sub-agents, and leads SWE-Bench"
+    },
+    {
+      "start": 516.159,
+      "end": 519.469,
+      "text": "verified at 88.6% with Opus 4.8"
+    },
+    {
+      "start": 519.479,
+      "end": 521.67,
+      "text": "underneath. The community call on it is"
+    },
+    {
+      "start": 521.68,
+      "end": 523.909,
+      "text": "unusually one-sided, the best coding"
+    },
+    {
+      "start": 523.919,
+      "end": 526.35,
+      "text": "agent in the market and it's not close"
+    },
+    {
+      "start": 526.36,
+      "end": 528.35,
+      "text": "is how the top upvoted thread describes"
+    },
+    {
+      "start": 528.36,
+      "end": 530.79,
+      "text": "it. It is not free and it is the"
+    },
+    {
+      "start": 530.8,
+      "end": 533.19,
+      "text": "heaviest token spender in the category,"
+    },
+    {
+      "start": 533.2,
+      "end": 534.95,
+      "text": "roughly three to four times heavier than"
+    },
+    {
+      "start": 534.96,
+      "end": 537.71,
+      "text": "Codex on the same task. For programmable"
+    },
+    {
+      "start": 537.72,
+      "end": 539.63,
+      "text": "terminal depth, nothing else matches it"
+    },
+    {
+      "start": 539.64,
+      "end": 541.99,
+      "text": "right now, but it is not local and it is"
+    },
+    {
+      "start": 542,
+      "end": 543.87,
+      "text": "not open, which is the whole reason this"
+    },
+    {
+      "start": 543.88,
+      "end": 546.27,
+      "text": "video exists. So, line the whole field"
+    },
+    {
+      "start": 546.28,
+      "end": 548.27,
+      "text": "up and it gets clean. Want the open"
+    },
+    {
+      "start": 548.28,
+      "end": 550.07,
+      "text": "source default with maximum provider"
+    },
+    {
+      "start": 550.08,
+      "end": 552.03,
+      "text": "support and a deep harness?"
+    },
+    {
+      "start": 552.04,
+      "end": 553.23,
+      "text": "Open Code."
+    },
+    {
+      "start": 553.24,
+      "end": 555.11,
+      "text": "Want disciplined, commit by commit"
+    },
+    {
+      "start": 555.12,
+      "end": 556.99,
+      "text": "editing with total model freedom and Git"
+    },
+    {
+      "start": 557,
+      "end": 558.55,
+      "text": "as your safety net?"
+    },
+    {
+      "start": 558.56,
+      "end": 560.63,
+      "text": "Aider. Want a hackable base to build"
+    },
+    {
+      "start": 560.64,
+      "end": 563.03,
+      "text": "your own agent on top of? Py. Want"
+    },
+    {
+      "start": 563.04,
+      "end": 565.47,
+      "text": "autonomous, unattended runs in CI or"
+    },
+    {
+      "start": 565.48,
+      "end": 567.79,
+      "text": "self-hosted infrastructure?"
+    },
+    {
+      "start": 567.8,
+      "end": 569.95,
+      "text": "Open Hands. Want the agent loop inside"
+    },
+    {
+      "start": 569.96,
+      "end": 571.19,
+      "text": "your editor?"
+    },
+    {
+      "start": 571.2,
+      "end": 572.23,
+      "text": "Kline."
+    },
+    {
+      "start": 572.24,
+      "end": 573.79,
+      "text": "Want a general agent that goes beyond"
+    },
+    {
+      "start": 573.8,
+      "end": 574.829,
+      "text": "code?"
+    },
+    {
+      "start": 574.8389999999999,
+      "end": 576.11,
+      "text": "Goose."
+    },
+    {
+      "start": 576.12,
+      "end": 577.99,
+      "text": "Most heavy users end up running two."
+    },
+    {
+      "start": 578,
+      "end": 579.95,
+      "text": "They route surgical edits to Aider,"
+    },
+    {
+      "start": 579.96,
+      "end": 582.11,
+      "text": "autonomous longer tasks to Open Hands or"
+    },
+    {
+      "start": 582.12,
+      "end": 584.19,
+      "text": "Open Code, and swap models freely"
+    },
+    {
+      "start": 584.2,
+      "end": 586.67,
+      "text": "underneath based on what the task needs."
+    },
+    {
+      "start": 586.68,
+      "end": 588.83,
+      "text": "The honest caveat, this list has a shelf"
+    },
+    {
+      "start": 588.84,
+      "end": 590.95,
+      "text": "life measured in weeks. Rue Code was"
+    },
+    {
+      "start": 590.96,
+      "end": 594.35,
+      "text": "archived in May 2026. Gemini CLI stopped"
+    },
+    {
+      "start": 594.36,
+      "end": 596.63,
+      "text": "serving individual users in June. The"
+    },
+    {
+      "start": 596.64,
+      "end": 598.55,
+      "text": "projects that looked stable 6 months ago"
+    },
+    {
+      "start": 598.56,
+      "end": 600.59,
+      "text": "are not all still here. Before you"
+    },
+    {
+      "start": 600.6,
+      "end": 602.55,
+      "text": "standardize a team on any of these,"
+    },
+    {
+      "start": 602.56,
+      "end": 605.23,
+      "text": "check two things: the actual license and"
+    },
+    {
+      "start": 605.24,
+      "end": 607.47,
+      "text": "the date of the last commit. Stars show"
+    },
+    {
+      "start": 607.48,
+      "end": 609.47,
+      "text": "popularity. Recent commits show whether"
+    },
+    {
+      "start": 609.48,
+      "end": 611.11,
+      "text": "the project will still be running in 6"
+    },
+    {
+      "start": 611.12,
+      "end": 613.79,
+      "text": "months. But, the direction is clear. The"
+    },
+    {
+      "start": 613.8,
+      "end": 615.59,
+      "text": "model race ended in a near tie at the"
+    },
+    {
+      "start": 615.6,
+      "end": 617.67,
+      "text": "top. What is still moving is the"
+    },
+    {
+      "start": 617.68,
+      "end": 619.91,
+      "text": "harness. Pick the wrapper that fits how"
+    },
+    {
+      "start": 619.92,
+      "end": 621.95,
+      "text": "you actually work, point it at the model"
+    },
+    {
+      "start": 621.96,
+      "end": 623.75,
+      "text": "your hardware can run, and the local"
+    },
+    {
+      "start": 623.76,
+      "end": 625.55,
+      "text": "stack stops being a compromise and"
+    },
+    {
+      "start": 625.56,
+      "end": 627.83,
+      "text": "starts being the obvious choice. If this"
+    },
+    {
+      "start": 627.84,
+      "end": 629.47,
+      "text": "saved you a weekend of testing,"
+    },
+    {
+      "start": 629.48,
+      "end": 631.43,
+      "text": "subscribe, and I will see you in next"
+    },
+    {
+      "start": 631.44,
+      "end": 633.76,
+      "text": "one."
+    }
+  ]
+}

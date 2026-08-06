@@ -1,0 +1,1456 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.47,
+      "text": "2.8 trillion parameters, open weights,"
+    },
+    {
+      "start": 3.48,
+      "end": 4.99,
+      "text": "sitting on a public download page right"
+    },
+    {
+      "start": 5,
+      "end": 7.55,
+      "text": "now for free. That is the largest open"
+    },
+    {
+      "start": 7.56,
+      "end": 9.23,
+      "text": "weight model anyone has ever shipped,"
+    },
+    {
+      "start": 9.24,
+      "end": 11.75,
+      "text": "and it landed 3 days ago. 48 hours"
+    },
+    {
+      "start": 11.76,
+      "end": 13.71,
+      "text": "later, somebody had it writing tokens on"
+    },
+    {
+      "start": 13.72,
+      "end": 18.71,
+      "text": "a laptop. A 2021 M1 Max, 64 gigs of RAM."
+    },
+    {
+      "start": 18.72,
+      "end": 21.35,
+      "text": "The measured speed was 14.6 seconds per"
+    },
+    {
+      "start": 21.36,
+      "end": 24.03,
+      "text": "token, not tokens per second, seconds"
+    },
+    {
+      "start": 24.04,
+      "end": 26.31,
+      "text": "per token. One word is roughly a minute"
+    },
+    {
+      "start": 26.32,
+      "end": 28.63,
+      "text": "of waiting. A short paragraph is most of"
+    },
+    {
+      "start": 28.64,
+      "end": 30.59,
+      "text": "an afternoon, and the hacker news thread"
+    },
+    {
+      "start": 30.6,
+      "end": 32.35,
+      "text": "went straight to war over whether that"
+    },
+    {
+      "start": 32.36,
+      "end": 34.71,
+      "text": "is impressive or completely pointless."
+    },
+    {
+      "start": 34.72,
+      "end": 36.75,
+      "text": "Here is why the speed is what it is."
+    },
+    {
+      "start": 36.76,
+      "end": 39.55,
+      "text": "Kimiko 3 is a mixture of experts model."
+    },
+    {
+      "start": 39.56,
+      "end": 41.39,
+      "text": "It only touches a sliver of itself per"
+    },
+    {
+      "start": 41.4,
+      "end": 44.63,
+      "text": "token. Kimiko carries 896 experts per"
+    },
+    {
+      "start": 44.64,
+      "end": 48.59,
+      "text": "layer, 16 fire on any given pass. But 16"
+    },
+    {
+      "start": 48.6,
+      "end": 50.95,
+      "text": "experts across 92 layers still means"
+    },
+    {
+      "start": 50.96,
+      "end": 54.47,
+      "text": "25.8 GB of RAMs per token. So, three"
+    },
+    {
+      "start": 54.48,
+      "end": 56.99,
+      "text": "things to settle: what actually shipped,"
+    },
+    {
+      "start": 57,
+      "end": 59.11,
+      "text": "what it cost to hold it, and whether any"
+    },
+    {
+      "start": 59.12,
+      "end": 61.55,
+      "text": "of it is useful. Start with the file,"
+    },
+    {
+      "start": 61.56,
+      "end": 64.549,
+      "text": "because the file is the story. 1.56"
+    },
+    {
+      "start": 64.559,
+      "end": 65.95,
+      "text": "terabytes of weights publicly"
+    },
+    {
+      "start": 65.96,
+      "end": 68.78999999999999,
+      "text": "downloadable. Kimiko 3 is from Moonshot"
+    },
+    {
+      "start": 68.8,
+      "end": 71.78999999999999,
+      "text": "AI in Beijing. 2.8 trillion parameters"
+    },
+    {
+      "start": 71.8,
+      "end": 74.95,
+      "text": "total. 104 billion active on any given"
+    },
+    {
+      "start": 74.96000000000001,
+      "end": 78.27,
+      "text": "token. 93 layers. A vision encoder on"
+    },
+    {
+      "start": 78.28,
+      "end": 80.83,
+      "text": "the front and a context window of 1"
+    },
+    {
+      "start": 80.84,
+      "end": 84.11,
+      "text": "million tokens. 69 of those 93 layers"
+    },
+    {
+      "start": 84.12,
+      "end": 85.67,
+      "text": "run something called Kimiko Delta"
+    },
+    {
+      "start": 85.68,
+      "end": 88.11,
+      "text": "attention. Instead of a key-value cache"
+    },
+    {
+      "start": 88.12,
+      "end": 90.11,
+      "text": "that grows with every token you feed it,"
+    },
+    {
+      "start": 90.12,
+      "end": 92.03,
+      "text": "it holds a fixed size recurrent state"
+    },
+    {
+      "start": 92.03999999999999,
+      "end": 94.27000000000001,
+      "text": "with per channel forget gates. The other"
+    },
+    {
+      "start": 94.28,
+      "end": 96.63,
+      "text": "24 layers are gated latent attention."
+    },
+    {
+      "start": 96.64,
+      "end": 98.87,
+      "text": "That mix is why a million token window"
+    },
+    {
+      "start": 98.88,
+      "end": 101.35,
+      "text": "is even on the table at this size. Three"
+    },
+    {
+      "start": 101.36,
+      "end": 103.27000000000001,
+      "text": "out of every four attention layers stop"
+    },
+    {
+      "start": 103.28,
+      "end": 105.43,
+      "text": "the cache from exploding. So, the memory"
+    },
+    {
+      "start": 105.44,
+      "end": 107.22999999999999,
+      "text": "wall moves off the cache and onto the"
+    },
+    {
+      "start": 107.24000000000001,
+      "end": 109.67,
+      "text": "weights themselves. Hold onto that. It"
+    },
+    {
+      "start": 109.68,
+      "end": 111.59,
+      "text": "decides everything later. On the front"
+    },
+    {
+      "start": 111.6,
+      "end": 113.43,
+      "text": "end code arena, real people voting on"
+    },
+    {
+      "start": 113.44,
+      "end": 115.03,
+      "text": "which model built the better interface,"
+    },
+    {
+      "start": 115.03999999999999,
+      "end": 119.31,
+      "text": "K3 sits at the top. LO of 1,679."
+    },
+    {
+      "start": 119.32,
+      "end": 123.23,
+      "text": "Claude Sonnet 5 is second at 1,631."
+    },
+    {
+      "start": 123.24,
+      "end": 127.27,
+      "text": "GPT-4.5 is third at 1,618."
+    },
+    {
+      "start": 127.28,
+      "end": 128.95,
+      "text": "It took first place in six of the seven"
+    },
+    {
+      "start": 128.96,
+      "end": 131.31,
+      "text": "categories they score. Brand work,"
+    },
+    {
+      "start": 131.32,
+      "end": 133.23,
+      "text": "reference based design, data and"
+    },
+    {
+      "start": 133.24,
+      "end": 135.83,
+      "text": "analytics, consumer product simulations,"
+    },
+    {
+      "start": 135.84,
+      "end": 137.949,
+      "text": "and content tools. The one it lost was"
+    },
+    {
+      "start": 137.959,
+      "end": 140.07,
+      "text": "gaming, where Sonnet 5 still holds the"
+    },
+    {
+      "start": 140.07999999999998,
+      "end": 141.99,
+      "text": "edge. On the harder benchmarks, it is"
+    },
+    {
+      "start": 142,
+      "end": 145.07,
+      "text": "closer to a coin flip. GPQA Diamond, the"
+    },
+    {
+      "start": 145.07999999999998,
+      "end": 149.11,
+      "text": "graduate level science set, 93.5 for K3,"
+    },
+    {
+      "start": 149.12,
+      "end": 152.03,
+      "text": "94.1 for GPT-4.5."
+    },
+    {
+      "start": 152.04,
+      "end": 154.82999999999998,
+      "text": "Terminal Bench 2.1, agents doing real"
+    },
+    {
+      "start": 154.84,
+      "end": 158.87,
+      "text": "shell work, 88.3 against 88.8. But on"
+    },
+    {
+      "start": 158.88,
+      "end": 160.949,
+      "text": "BrowseComp, where the model has to find"
+    },
+    {
+      "start": 160.959,
+      "end": 163.19,
+      "text": "things on the live web, K3 takes it"
+    },
+    {
+      "start": 163.2,
+      "end": 165.55,
+      "text": "outright. 91.2"
+    },
+    {
+      "start": 165.56,
+      "end": 168.63,
+      "text": "to 90.4. The license is not MIT, and"
+    },
+    {
+      "start": 168.64,
+      "end": 170.15,
+      "text": "that is worth reading before you build a"
+    },
+    {
+      "start": 170.16,
+      "end": 172.19,
+      "text": "company on it. Moonshot wrote their own"
+    },
+    {
+      "start": 172.2,
+      "end": 175.03,
+      "text": "document. You can download it, run it,"
+    },
+    {
+      "start": 175.04,
+      "end": 177.15,
+      "text": "fine-tune it. But commercial inference"
+    },
+    {
+      "start": 177.16,
+      "end": 179.11,
+      "text": "above 20 million dollars annual revenue"
+    },
+    {
+      "start": 179.12,
+      "end": 180.63,
+      "text": "triggers a separate arrangement with"
+    },
+    {
+      "start": 180.64,
+      "end": 182.87,
+      "text": "them. 99,000"
+    },
+    {
+      "start": 182.88,
+      "end": 184.75,
+      "text": "downloads in a month. 8,000 likes on the"
+    },
+    {
+      "start": 184.76,
+      "end": 187.15,
+      "text": "model page for a file the overwhelming"
+    },
+    {
+      "start": 187.16,
+      "end": 188.67,
+      "text": "majority of those people cannot"
+    },
+    {
+      "start": 188.68,
+      "end": 190.91,
+      "text": "physically store. And for scale, the"
+    },
+    {
+      "start": 190.92,
+      "end": 192.63,
+      "text": "previous Kimi was around a trillion"
+    },
+    {
+      "start": 192.64,
+      "end": 194.75,
+      "text": "parameters. This is the steepest single"
+    },
+    {
+      "start": 194.76,
+      "end": 196.50900000000001,
+      "text": "generation jump the open weight chart"
+    },
+    {
+      "start": 196.519,
+      "end": 199.07,
+      "text": "has seen. So why is a 2.8 trillion"
+    },
+    {
+      "start": 199.07999999999998,
+      "end": 202.07,
+      "text": "parameter model only 1.56 terabytes on"
+    },
+    {
+      "start": 202.07999999999998,
+      "end": 205.75,
+      "text": "disk? In BF16, 2 bytes a parameter, it"
+    },
+    {
+      "start": 205.76,
+      "end": 208.11,
+      "text": "would be around 5.6 terabytes. The"
+    },
+    {
+      "start": 208.12,
+      "end": 211.22899999999998,
+      "text": "format is MXFP4. Four-bit block floating"
+    },
+    {
+      "start": 211.239,
+      "end": 213.07,
+      "text": "point, where a group of weights shares"
+    },
+    {
+      "start": 213.07999999999998,
+      "end": 215.43,
+      "text": "one scale factor, and each weight keeps"
+    },
+    {
+      "start": 215.44,
+      "end": 217.35,
+      "text": "four bits of its own. Native on"
+    },
+    {
+      "start": 217.36,
+      "end": 219.67000000000002,
+      "text": "Blackwell and MI355"
+    },
+    {
+      "start": 219.68,
+      "end": 221.59,
+      "text": "class silicon, and it is applied"
+    },
+    {
+      "start": 221.6,
+      "end": 224.11,
+      "text": "selectively. The expert weights, which"
+    },
+    {
+      "start": 224.12,
+      "end": 225.99,
+      "text": "are the bulk of the model, go to four"
+    },
+    {
+      "start": 226,
+      "end": 227.87,
+      "text": "bits. The routers and attention"
+    },
+    {
+      "start": 227.88,
+      "end": 229.82999999999998,
+      "text": "projections stay higher, because those"
+    },
+    {
+      "start": 229.84,
+      "end": 231.19,
+      "text": "are the parts where a rounding error"
+    },
+    {
+      "start": 231.2,
+      "end": 233.11,
+      "text": "turns into a wrong answer instead of a"
+    },
+    {
+      "start": 233.12,
+      "end": 235.27,
+      "text": "slightly worse one. Here is the part"
+    },
+    {
+      "start": 235.28,
+      "end": 237.55,
+      "text": "that matters most. Moonshot did not"
+    },
+    {
+      "start": 237.56,
+      "end": 239.82999999999998,
+      "text": "quantize this afterwards. They trained"
+    },
+    {
+      "start": 239.84,
+      "end": 241.99,
+      "text": "it that way. Quantization aware training"
+    },
+    {
+      "start": 242,
+      "end": 243.75,
+      "text": "running through supervised fine-tuning"
+    },
+    {
+      "start": 243.76,
+      "end": 245.75,
+      "text": "and reinforcement learning both. So, the"
+    },
+    {
+      "start": 245.76,
+      "end": 247.63,
+      "text": "model learned to live at 4-bits rather"
+    },
+    {
+      "start": 247.64,
+      "end": 249.07,
+      "text": "than getting squeezed into them at the"
+    },
+    {
+      "start": 249.08,
+      "end": 251.15,
+      "text": "end, which means the 4-bit file you"
+    },
+    {
+      "start": 251.16,
+      "end": 253.31,
+      "text": "download is the same precision the paid"
+    },
+    {
+      "start": 253.32,
+      "end": 255.35,
+      "text": "API serves you. Their co-founders"
+    },
+    {
+      "start": 255.36,
+      "end": 257.67,
+      "text": "confirmed exactly that in an AMA the day"
+    },
+    {
+      "start": 257.68,
+      "end": 259.509,
+      "text": "the weights went up. Then, Unsloth"
+    },
+    {
+      "start": 259.519,
+      "end": 261.39,
+      "text": "shipped a quant ladder on top of it,"
+    },
+    {
+      "start": 261.4,
+      "end": 262.71,
+      "text": "which is the thing that turns a data"
+    },
+    {
+      "start": 262.72,
+      "end": 264.39,
+      "text": "center artifact into something a very"
+    },
+    {
+      "start": 264.4,
+      "end": 266.47,
+      "text": "determined person can attempt at home."
+    },
+    {
+      "start": 266.48,
+      "end": 270.99,
+      "text": "The smallest build is UDiQ1S at 594 GB."
+    },
+    {
+      "start": 271,
+      "end": 273.71,
+      "text": "1-bit M is 649."
+    },
+    {
+      "start": 273.72,
+      "end": 276.47,
+      "text": "2-bit XXS is 711."
+    },
+    {
+      "start": 276.48,
+      "end": 279.03,
+      "text": "2-bit XL is 861."
+    },
+    {
+      "start": 279.04,
+      "end": 282.39,
+      "text": "4-bit lands at 1.51 TB and 8-bit at"
+    },
+    {
+      "start": 282.4,
+      "end": 285.83,
+      "text": "1.56, same size as the original. And you"
+    },
+    {
+      "start": 285.84000000000003,
+      "end": 288.03,
+      "text": "pay for every step down that ladder. The"
+    },
+    {
+      "start": 288.04,
+      "end": 290.19,
+      "text": "1-bit S build agrees with the full model"
+    },
+    {
+      "start": 290.2,
+      "end": 291.909,
+      "text": "on 78.9%"
+    },
+    {
+      "start": 291.919,
+      "end": 294.63,
+      "text": "of next token picks. 2-bit XL gets that"
+    },
+    {
+      "start": 294.64,
+      "end": 297.55,
+      "text": "to 90.4. 4-bit is effectively the"
+    },
+    {
+      "start": 297.56,
+      "end": 299.71,
+      "text": "original. One correction while we are"
+    },
+    {
+      "start": 299.72,
+      "end": 302.83,
+      "text": "here. You will see 555 GB quoted for the"
+    },
+    {
+      "start": 302.84,
+      "end": 304.99,
+      "text": "1-bit build in a few places. I went"
+    },
+    {
+      "start": 305,
+      "end": 306.47,
+      "text": "looking and could not find it on the"
+    },
+    {
+      "start": 306.48,
+      "end": 308.55,
+      "text": "published table. The number today is"
+    },
+    {
+      "start": 308.56,
+      "end": 310.07,
+      "text": "594."
+    },
+    {
+      "start": 310.08,
+      "end": 312.11,
+      "text": "Boring beats wrong, which brings us back"
+    },
+    {
+      "start": 312.12,
+      "end": 313.87,
+      "text": "to the laptop. The project is called"
+    },
+    {
+      "start": 313.88,
+      "end": 316.15,
+      "text": "Deltafin. It went up 2 days ago from a"
+    },
+    {
+      "start": 316.16,
+      "end": 318.95,
+      "text": "developer publishing as GAA media, MIT"
+    },
+    {
+      "start": 318.96,
+      "end": 321.95,
+      "text": "licensed. Sitting at 274 stars as I"
+    },
+    {
+      "start": 321.96,
+      "end": 324.39,
+      "text": "record this. It splits the model in half"
+    },
+    {
+      "start": 324.4,
+      "end": 327.03,
+      "text": "conceptually. There is a resident spine,"
+    },
+    {
+      "start": 327.04,
+      "end": 328.75,
+      "text": "the attention layers, the shared"
+    },
+    {
+      "start": 328.76,
+      "end": 331.23,
+      "text": "experts, the latent projections, the"
+    },
+    {
+      "start": 331.24,
+      "end": 334.55,
+      "text": "embeddings. About 114 GB quantized down"
+    },
+    {
+      "start": 334.56,
+      "end": 337.95,
+      "text": "to 60 in INT8, read layer by layer off"
+    },
+    {
+      "start": 337.96,
+      "end": 340.07,
+      "text": "local storage for every token. And then"
+    },
+    {
+      "start": 340.08,
+      "end": 343.79,
+      "text": "there is everything else. 80 2,432"
+    },
+    {
+      "start": 343.8,
+      "end": 347.87,
+      "text": "routed experts, roughly 1.45 TB of them."
+    },
+    {
+      "start": 347.88,
+      "end": 350.07,
+      "text": "So, Deltafin does not load them. For"
+    },
+    {
+      "start": 350.08,
+      "end": 352.71,
+      "text": "each token, the router names 16 experts"
+    },
+    {
+      "start": 352.72,
+      "end": 355.63,
+      "text": "per layer. It reads exactly those, one"
+    },
+    {
+      "start": 355.64,
+      "end": 358.35,
+      "text": "HTTP range request per expert, 17"
+    },
+    {
+      "start": 358.36,
+      "end": 360.75,
+      "text": "megabytes at a time, into a disk cache"
+    },
+    {
+      "start": 360.76,
+      "end": 362.51,
+      "text": "that grows as you use it. Do that"
+    },
+    {
+      "start": 362.52,
+      "end": 364.19,
+      "text": "arithmetic and you get the number this"
+    },
+    {
+      "start": 364.2,
+      "end": 366.71,
+      "text": "whole project lives or dies on. 16"
+    },
+    {
+      "start": 366.72,
+      "end": 370.75,
+      "text": "experts, 92 layers, 25.8 GB of reading"
+    },
+    {
+      "start": 370.76,
+      "end": 373.23,
+      "text": "for one token. Off a local SSD that is"
+    },
+    {
+      "start": 373.24,
+      "end": 375.15,
+      "text": "about 4 seconds. Streamed over a"
+    },
+    {
+      "start": 375.16,
+      "end": 377.83,
+      "text": "network, it is 3 minutes. Now the part"
+    },
+    {
+      "start": 377.84,
+      "end": 379.67,
+      "text": "that made me stop scrolling. The first"
+    },
+    {
+      "start": 379.68,
+      "end": 382.39,
+      "text": "working version took 24,429"
+    },
+    {
+      "start": 382.4,
+      "end": 384.67,
+      "text": "seconds to produce a first token, 40"
+    },
+    {
+      "start": 384.68,
+      "end": 386.95,
+      "text": "minutes for one token. The current"
+    },
+    {
+      "start": 386.96,
+      "end": 388.95,
+      "text": "benchmark on the same machine is 28"
+    },
+    {
+      "start": 388.96,
+      "end": 391.15,
+      "text": "seconds. Steady decode went the same"
+    },
+    {
+      "start": 391.16,
+      "end": 393.51,
+      "text": "way. Roughly 20 minutes a token down to"
+    },
+    {
+      "start": 393.52,
+      "end": 397.23,
+      "text": "14.6 seconds. That is about 82 times"
+    },
+    {
+      "start": 397.24,
+      "end": 399.47,
+      "text": "faster. And this is version one of a"
+    },
+    {
+      "start": 399.48,
+      "end": 401.55,
+      "text": "project that is two days old. The"
+    },
+    {
+      "start": 401.56,
+      "end": 403.99,
+      "text": "speedups are unglamorous and specific,"
+    },
+    {
+      "start": 404,
+      "end": 405.63,
+      "text": "which is exactly how you know they are"
+    },
+    {
+      "start": 405.64,
+      "end": 408.39,
+      "text": "real. A fused kernel that dequantizes"
+    },
+    {
+      "start": 408.4,
+      "end": 411.07,
+      "text": "MXFP4 and runs the matrix vector"
+    },
+    {
+      "start": 411.08,
+      "end": 414.03,
+      "text": "multiply in one pass. Neon on Apple"
+    },
+    {
+      "start": 414.04,
+      "end": 418.47,
+      "text": "Silicon, AVX2 on X86, and int8 spine"
+    },
+    {
+      "start": 418.48,
+      "end": 420.99,
+      "text": "that halves per token IO. A packed"
+    },
+    {
+      "start": 421,
+      "end": 423.63,
+      "text": "output head worth 17% on its own. And it"
+    },
+    {
+      "start": 423.64,
+      "end": 426.55,
+      "text": "stays exact. Greedy decoding, lossless"
+    },
+    {
+      "start": 426.56,
+      "end": 429.47,
+      "text": "n-gram speculation. Same prompt produces"
+    },
+    {
+      "start": 429.48,
+      "end": 432.51,
+      "text": "the same tokens, run after run. The"
+    },
+    {
+      "start": 432.52,
+      "end": 434.19,
+      "text": "limitations are stated plainly in the"
+    },
+    {
+      "start": 434.2,
+      "end": 437.27,
+      "text": "readme, which I appreciate. Greedy only."
+    },
+    {
+      "start": 437.28,
+      "end": 438.67,
+      "text": "Temperature and top P are ignored"
+    },
+    {
+      "start": 438.68,
+      "end": 440.99,
+      "text": "entirely. One request at a time. A"
+    },
+    {
+      "start": 441,
+      "end": 443.63,
+      "text": "second concurrent request gets a 429."
+    },
+    {
+      "start": 443.64,
+      "end": 445.35,
+      "text": "And long prompts are expensive because"
+    },
+    {
+      "start": 445.36,
+      "end": 447.31,
+      "text": "prefill has to touch far more experts"
+    },
+    {
+      "start": 447.32,
+      "end": 449.15,
+      "text": "than decode does. You also need the"
+    },
+    {
+      "start": 449.16,
+      "end": 451.99,
+      "text": "disk. 1.7 terabytes for a full local"
+    },
+    {
+      "start": 452,
+      "end": 454.75,
+      "text": "install, 5 to 10 hours to pull it down,"
+    },
+    {
+      "start": 454.76,
+      "end": 457.909,
+      "text": "or 215 GB if you keep the cache small"
+    },
+    {
+      "start": 457.919,
+      "end": 459.75,
+      "text": "and stream the rest on demand at 3"
+    },
+    {
+      "start": 459.76,
+      "end": 461.43,
+      "text": "minutes a token. Somebody in the"
+    },
+    {
+      "start": 461.44,
+      "end": 463.67,
+      "text": "community ran the same code on an Nvidia"
+    },
+    {
+      "start": 463.68,
+      "end": 468.19,
+      "text": "DGX Spark instead. BF16 on CPU took 865"
+    },
+    {
+      "start": 468.2,
+      "end": 471.79,
+      "text": "seconds. And eight on CUDA took 221."
+    },
+    {
+      "start": 471.8,
+      "end": 476.23,
+      "text": "So, back to that thread, 136 points, 90"
+    },
+    {
+      "start": 476.24,
+      "end": 478.43,
+      "text": "comments. Almost all of it is one"
+    },
+    {
+      "start": 478.44,
+      "end": 480.95,
+      "text": "argument having itself over and over. A"
+    },
+    {
+      "start": 480.96,
+      "end": 482.99,
+      "text": "commenter called Secrelist put the case"
+    },
+    {
+      "start": 483,
+      "end": 485.27,
+      "text": "against it as bluntly as it can be put."
+    },
+    {
+      "start": 485.28,
+      "end": 487.11,
+      "text": "No one will ever drive any utility from"
+    },
+    {
+      "start": 487.12,
+      "end": 488.83,
+      "text": "running models at this speed. Give me"
+    },
+    {
+      "start": 488.84,
+      "end": 490.99,
+      "text": "the use case. Give me the token counts."
+    },
+    {
+      "start": 491,
+      "end": 493.35,
+      "text": "And the arithmetic is on his side. 1,000"
+    },
+    {
+      "start": 493.36,
+      "end": 496.43,
+      "text": "output tokens at 14.6 seconds each is 4"
+    },
+    {
+      "start": 496.44,
+      "end": 497.99,
+      "text": "hours of your machine doing nothing"
+    },
+    {
+      "start": 498,
+      "end": 500.03,
+      "text": "else. The same thousand tokens through"
+    },
+    {
+      "start": 500.04,
+      "end": 502.67,
+      "text": "Moonshot's API cost about 1.5 cents and"
+    },
+    {
+      "start": 502.68,
+      "end": 504.43,
+      "text": "arrive before you finish reading this"
+    },
+    {
+      "start": 504.44,
+      "end": 506.43,
+      "text": "sentence. The author's answer is the"
+    },
+    {
+      "start": 506.44,
+      "end": 508.27,
+      "text": "line I keep turning over. He said the"
+    },
+    {
+      "start": 508.28,
+      "end": 509.75,
+      "text": "interface matters more than the raw"
+    },
+    {
+      "start": 509.76,
+      "end": 511.51,
+      "text": "rate, and then added that he can"
+    },
+    {
+      "start": 511.52,
+      "end": 513.43,
+      "text": "probably only write about a thousand"
+    },
+    {
+      "start": 513.44,
+      "end": 515.63,
+      "text": "good tokens in a day himself, which is"
+    },
+    {
+      "start": 515.64,
+      "end": 517.35,
+      "text": "either a dodge or the most useful"
+    },
+    {
+      "start": 517.36,
+      "end": 519.11,
+      "text": "sentence in the thread. A third"
+    },
+    {
+      "start": 519.12,
+      "end": 521.469,
+      "text": "commenter re- framed it completely. It's"
+    },
+    {
+      "start": 521.479,
+      "end": 523.469,
+      "text": "fun. And it answers the question of what"
+    },
+    {
+      "start": 523.479,
+      "end": 525.27,
+      "text": "happens if you wake up tomorrow and the"
+    },
+    {
+      "start": 525.28,
+      "end": 527.23,
+      "text": "data centers are gone. Weights on your"
+    },
+    {
+      "start": 527.24,
+      "end": 529.11,
+      "text": "own desk are the one version of a model"
+    },
+    {
+      "start": 529.12,
+      "end": 530.47,
+      "text": "that cannot be switched off from"
+    },
+    {
+      "start": 530.48,
+      "end": 532.71,
+      "text": "somewhere else. The maintainer refuses"
+    },
+    {
+      "start": 532.72,
+      "end": 535.03,
+      "text": "to oversell it. The readme says in plain"
+    },
+    {
+      "start": 535.04,
+      "end": 537.15,
+      "text": "words that this is a research artifact"
+    },
+    {
+      "start": 537.16,
+      "end": 539.47,
+      "text": "and not a practical chat setup. He calls"
+    },
+    {
+      "start": 539.48,
+      "end": 541.47,
+      "text": "it an existence proof and a test bed for"
+    },
+    {
+      "start": 541.48,
+      "end": 543.59,
+      "text": "streaming inference. That is the correct"
+    },
+    {
+      "start": 543.6,
+      "end": 545.91,
+      "text": "claim to make. Meanwhile, on the model"
+    },
+    {
+      "start": 545.92,
+      "end": 547.99,
+      "text": "page, somebody asked the obvious"
+    },
+    {
+      "start": 548,
+      "end": 550.63,
+      "text": "question. Can I run this on my MacBook?"
+    },
+    {
+      "start": 550.64,
+      "end": 552.51,
+      "text": "The first replies were a stack of maybe"
+    },
+    {
+      "start": 552.52,
+      "end": 557.79,
+      "text": "eight H200, then 12 H200 or nine B200."
+    },
+    {
+      "start": 557.8,
+      "end": 559.43,
+      "text": "The third reply pointed straight at"
+    },
+    {
+      "start": 559.44,
+      "end": 561.27,
+      "text": "Deltafin and noted the author had made a"
+    },
+    {
+      "start": 561.28,
+      "end": 563.79,
+      "text": "lot of progress in about 12 hours. If"
+    },
+    {
+      "start": 563.8,
+      "end": 565.75,
+      "text": "you want to serve it properly, one"
+    },
+    {
+      "start": 565.76,
+      "end": 568.95,
+      "text": "eight-way B300 node gives you around 2.3"
+    },
+    {
+      "start": 568.96,
+      "end": 570.99,
+      "text": "terabytes of memory, which fits the"
+    },
+    {
+      "start": 571,
+      "end": 573.07,
+      "text": "weights plus the KV cache at a million"
+    },
+    {
+      "start": 573.08,
+      "end": 575.47,
+      "text": "tokens of context on a single machine."
+    },
+    {
+      "start": 575.48,
+      "end": 577.55,
+      "text": "Even the smallest one-bit quant asks for"
+    },
+    {
+      "start": 577.56,
+      "end": 580.67,
+      "text": "610 GB of RAM and VRAM combined before"
+    },
+    {
+      "start": 580.68,
+      "end": 584.15,
+      "text": "it will load. Two-bit XL wants 880. And"
+    },
+    {
+      "start": 584.16,
+      "end": 586.15,
+      "text": "here's the awkward bit of timing. Back"
+    },
+    {
+      "start": 586.16,
+      "end": 589.27,
+      "text": "in March, Apple pulled the 512 GB option"
+    },
+    {
+      "start": 589.28,
+      "end": 591.95,
+      "text": "off the Mac Studio configurator entirely"
+    },
+    {
+      "start": 591.96,
+      "end": 594.55,
+      "text": "and raised the price of the 256 upgrade"
+    },
+    {
+      "start": 594.56,
+      "end": 598.03,
+      "text": "by $400. Memory shortage. The consumer"
+    },
+    {
+      "start": 598.04,
+      "end": 601.39,
+      "text": "ceiling is 256 now. So, the one machine"
+    },
+    {
+      "start": 601.4,
+      "end": 603.07,
+      "text": "a person could reasonably own that"
+    },
+    {
+      "start": 603.08,
+      "end": 605.03,
+      "text": "almost held this model stopped being"
+    },
+    {
+      "start": 605.04,
+      "end": 606.35,
+      "text": "affordable in the same year the model"
+    },
+    {
+      "start": 606.36,
+      "end": 607.67,
+      "text": "shipped. The frontier became"
+    },
+    {
+      "start": 607.68,
+      "end": 609.51,
+      "text": "downloadable and the hardware to run it"
+    },
+    {
+      "start": 609.52,
+      "end": 611.31,
+      "text": "got harder to buy. Both of those are"
+    },
+    {
+      "start": 611.32,
+      "end": 613.91,
+      "text": "true at the same time. K3 was not the"
+    },
+    {
+      "start": 613.92,
+      "end": 617.15,
+      "text": "only drop this week. SK Telecom put AXK2"
+    },
+    {
+      "start": 617.16,
+      "end": 620.79,
+      "text": "on Hugging Face. 688 billion parameters,"
+    },
+    {
+      "start": 620.8,
+      "end": 623.27,
+      "text": "open weights, built in Korea, aimed"
+    },
+    {
+      "start": 623.28,
+      "end": 625.99,
+      "text": "squarely at manufacturing, defense, and"
+    },
+    {
+      "start": 626,
+      "end": 628.59,
+      "text": "biotech. Across 14 benchmarks, it"
+    },
+    {
+      "start": 628.6,
+      "end": 630.83,
+      "text": "averages 32 points above the model it"
+    },
+    {
+      "start": 630.84,
+      "end": 633.31,
+      "text": "replaces. Long context and agent scores"
+    },
+    {
+      "start": 633.32,
+      "end": 635.63,
+      "text": "moved by roughly 84. They have said the"
+    },
+    {
+      "start": 635.64,
+      "end": 637.63,
+      "text": "next one is aiming at the trillion mark."
+    },
+    {
+      "start": 637.64,
+      "end": 639.31,
+      "text": "Line the shelf up and it looks nothing"
+    },
+    {
+      "start": 639.32,
+      "end": 642.43,
+      "text": "like it did in spring. Kim K3 at 2.8"
+    },
+    {
+      "start": 642.44,
+      "end": 645.47,
+      "text": "trillion, Deep Seek V4 Pro at 1.6"
+    },
+    {
+      "start": 645.48,
+      "end": 649.95,
+      "text": "trillion, GLM 5.2 at 744 billion with 40"
+    },
+    {
+      "start": 649.96,
+      "end": 652.35,
+      "text": "billion active, smaller than K3 and"
+    },
+    {
+      "start": 652.36,
+      "end": 654.07,
+      "text": "still scoring above it on the aggregate"
+    },
+    {
+      "start": 654.08,
+      "end": 656.03,
+      "text": "intelligence index. Parameter count"
+    },
+    {
+      "start": 656.04,
+      "end": 658.15,
+      "text": "stopped being the score a while ago, but"
+    },
+    {
+      "start": 658.16,
+      "end": 660.31,
+      "text": "the bottleneck did move. Getting hold of"
+    },
+    {
+      "start": 660.32,
+      "end": 662.03,
+      "text": "frontier weights used to be the hard"
+    },
+    {
+      "start": 662.04,
+      "end": 664.59,
+      "text": "part. Now, it is a download link. The"
+    },
+    {
+      "start": 664.6,
+      "end": 666.79,
+      "text": "hard part is having somewhere to put 1.5"
+    },
+    {
+      "start": 666.8,
+      "end": 668.91,
+      "text": "terabytes and enough read bandwidth to"
+    },
+    {
+      "start": 668.92,
+      "end": 672.35,
+      "text": "pull 26 GB per token. 14.6 seconds a"
+    },
+    {
+      "start": 672.36,
+      "end": 675.11,
+      "text": "token is not a product. It is a receipt."
+    },
+    {
+      "start": 675.12,
+      "end": 677.47,
+      "text": "It says the model is a file, the file is"
+    },
+    {
+      "start": 677.48,
+      "end": 679.31,
+      "text": "on your disk, and everything between"
+    },
+    {
+      "start": 679.32,
+      "end": 681.03,
+      "text": "that and a usable assistant is"
+    },
+    {
+      "start": 681.04,
+      "end": 683.15,
+      "text": "engineering rather than permission. And"
+    },
+    {
+      "start": 683.16,
+      "end": 685.07,
+      "text": "engineering is the thing that went 82"
+    },
+    {
+      "start": 685.08,
+      "end": 687.71,
+      "text": "times faster in a fortnight. Deltafin,"
+    },
+    {
+      "start": 687.72,
+      "end": 689.829,
+      "text": "the unsought quants, and the model card"
+    },
+    {
+      "start": 689.8389999999999,
+      "end": 691.87,
+      "text": "are all linked below. If you have got"
+    },
+    {
+      "start": 691.88,
+      "end": 694.31,
+      "text": "the disk, the readme is a good hour."
+    },
+    {
+      "start": 694.32,
+      "end": 697.16,
+      "text": "Thanks for watching."
+    }
+  ]
+}

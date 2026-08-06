@@ -1,0 +1,17 @@
+{
+  "lines": [
+    "Data data!",
+    "Python, data."
+  ],
+  "limit": 2,
+  "expected": [
+    [
+      "data",
+      3
+    ],
+    [
+      "python",
+      1
+    ]
+  ]
+}

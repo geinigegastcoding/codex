@@ -1,0 +1,16 @@
+node_modules/
+dist/
+out/
+.DS_Store
+.env
+.env.local
+.cache/
+research/temp/
+research/**/*.mp4
+research/**/*.webm
+research/**/*.mkv
+research/**/*.m4a
+research/**/*.part
+content/videos/*/renders/*
+!content/videos/*/renders/.gitkeep
+*.log

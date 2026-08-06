@@ -1,0 +1,1271 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.63,
+      "text": "You decided to build your own simple"
+    },
+    {
+      "start": 2.64,
+      "end": 5.79,
+      "text": "agent loop, just 100 lines, no need for"
+    },
+    {
+      "start": 5.8,
+      "end": 8.19,
+      "text": "LangGraph. Six weeks later, you're"
+    },
+    {
+      "start": 8.2,
+      "end": 11.47,
+      "text": "staring at 2,000 lines of retry logic,"
+    },
+    {
+      "start": 11.48,
+      "end": 13.67,
+      "text": "state handling, and approval gates you"
+    },
+    {
+      "start": 13.68,
+      "end": 16.23,
+      "text": "didn't plan to write. Congrats, you've"
+    },
+    {
+      "start": 16.24,
+      "end": 18.27,
+      "text": "just built a shittier version of the"
+    },
+    {
+      "start": 18.28,
+      "end": 20.59,
+      "text": "exact [music] framework you swore off,"
+    },
+    {
+      "start": 20.6,
+      "end": 22.23,
+      "text": "and now you're the only person that"
+    },
+    {
+      "start": 22.24,
+      "end": 23.57,
+      "text": "understands it."
+    },
+    {
+      "start": 23.58,
+      "end": 23.63,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 23.64,
+      "end": 25.75,
+      "text": "&gt;&gt; Most often, a small loop is the answer"
+    },
+    {
+      "start": 25.76,
+      "end": 28.23,
+      "text": "for what you need. Sometimes, it's good"
+    },
+    {
+      "start": 28.24,
+      "end": 31.07,
+      "text": "to reach for the framework after all."
+    },
+    {
+      "start": 31.08,
+      "end": 32.67,
+      "text": "Here's what you're building, stripped to"
+    },
+    {
+      "start": 32.68,
+      "end": 34.91,
+      "text": "the metal. You send the model two"
+    },
+    {
+      "start": 34.92,
+      "end": 37.99,
+      "text": "things: the user's request and a list of"
+    },
+    {
+      "start": 38,
+      "end": 40.55,
+      "text": "tools it's allowed to call. Each one"
+    },
+    {
+      "start": 40.56,
+      "end": 42.35,
+      "text": "just a name and the arguments [music] it"
+    },
+    {
+      "start": 42.36,
+      "end": 45.19,
+      "text": "takes. The model replies. If it's a"
+    },
+    {
+      "start": 45.2,
+      "end": 47.63,
+      "text": "normal answer, you're done. If it's a"
+    },
+    {
+      "start": 47.64,
+      "end": 50.15,
+      "text": "request to use a tool, your code runs"
+    },
+    {
+      "start": 50.16,
+      "end": 52.15,
+      "text": "that tool, takes [music] whatever comes"
+    },
+    {
+      "start": 52.16,
+      "end": 54.75,
+      "text": "back, and pastes it onto the end of the"
+    },
+    {
+      "start": 54.76,
+      "end": 57.03,
+      "text": "conversation. Then you send the whole"
+    },
+    {
+      "start": 57.04,
+      "end": 59.595,
+      "text": "thing again. Call the model, run a tool,"
+    },
+    {
+      "start": 59.605,
+      "end": 62.27,
+      "text": "[music] append the result, repeat until"
+    },
+    {
+      "start": 62.28,
+      "end": 64.835,
+      "text": "it stops asking or you make it stop."
+    },
+    {
+      "start": 64.845,
+      "end": 65.11,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 65.12,
+      "end": 68.43,
+      "text": "&gt;&gt; It's maybe 100 lines without a library."
+    },
+    {
+      "start": 68.44,
+      "end": 70.71000000000001,
+      "text": "You've heard the line, \"An agent is just"
+    },
+    {
+      "start": 70.72,
+      "end": 73.47,
+      "text": "a while loop,\" 100 times by [music] now."
+    },
+    {
+      "start": 73.48,
+      "end": 75.59,
+      "text": "What's more interesting is how it holds"
+    },
+    {
+      "start": 75.6,
+      "end": 77.23,
+      "text": "up in production."
+    },
+    {
+      "start": 77.24,
+      "end": 79.43,
+      "text": "So, what does a framework like LangGraph"
+    },
+    {
+      "start": 79.44,
+      "end": 82.39,
+      "text": "or Crew AI do for you on top of that?"
+    },
+    {
+      "start": 82.4,
+      "end": 84.75,
+      "text": "Strip the marketing and it's four jobs."
+    },
+    {
+      "start": 84.76,
+      "end": 87.11,
+      "text": "It writes your boilerplate, defining and"
+    },
+    {
+      "start": 87.12,
+      "end": 89.95,
+      "text": "parsing tools. It manages state, your"
+    },
+    {
+      "start": 89.96000000000001,
+      "end": 92.55,
+      "text": "history, your memory, your checkpoints."
+    },
+    {
+      "start": 92.56,
+      "end": 94.71000000000001,
+      "text": "It handles orchestration, the routing"
+    },
+    {
+      "start": 94.72,
+      "end": 97.43,
+      "text": "between steps. And it runs operations,"
+    },
+    {
+      "start": 97.44,
+      "end": 98.95,
+      "text": "the retries, the logging, the"
+    },
+    {
+      "start": 98.96000000000001,
+      "end": 101.03,
+      "text": "guardrails. There's no hidden"
+    },
+    {
+      "start": 101.03999999999999,
+      "end": 102.87,
+      "text": "intelligence in there that your loop"
+    },
+    {
+      "start": 102.88,
+      "end": 105.27000000000001,
+      "text": "doesn't have. Every one of those four"
+    },
+    {
+      "start": 105.28,
+      "end": 107.95,
+      "text": "jobs is code you could write yourself."
+    },
+    {
+      "start": 107.96000000000001,
+      "end": 109.83,
+      "text": "The question is whether you should hand"
+    },
+    {
+      "start": 109.84,
+      "end": 111.34100000000001,
+      "text": "that part over."
+    },
+    {
+      "start": 111.351,
+      "end": 111.43,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 111.44,
+      "end": 113.35,
+      "text": "&gt;&gt; Hand it over and you get speed, a"
+    },
+    {
+      "start": 113.36,
+      "end": 116.19,
+      "text": "working agent on day one with a stack of"
+    },
+    {
+      "start": 116.2,
+      "end": 119.43,
+      "text": "nasty problems pre-solved. The cost is"
+    },
+    {
+      "start": 119.44,
+      "end": 121.99,
+      "text": "visibility. Your prompts, your tool"
+    },
+    {
+      "start": 122,
+      "end": 124.51,
+      "text": "calls, the exact text the model sees,"
+    },
+    {
+      "start": 124.52,
+      "end": 126.99,
+      "text": "all of it slides one layer back behind"
+    },
+    {
+      "start": 127,
+      "end": 128.371,
+      "text": "the framework's code,"
+    },
+    {
+      "start": 128.381,
+      "end": 128.59,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 128.6,
+      "end": 131.15,
+      "text": "&gt;&gt; where you can't watch it as closely. And"
+    },
+    {
+      "start": 131.16,
+      "end": 133.19,
+      "text": "this isn't a hot take from a forum."
+    },
+    {
+      "start": 133.2,
+      "end": 135.59,
+      "text": "Anthropic's own guide on building agents"
+    },
+    {
+      "start": 135.6,
+      "end": 137.59,
+      "text": "warns that frameworks can hide the"
+    },
+    {
+      "start": 137.6,
+      "end": 139.99,
+      "text": "prompts and responses [music] underneath"
+    },
+    {
+      "start": 140,
+      "end": 142.23,
+      "text": "and make the thing harder to debug. The"
+    },
+    {
+      "start": 142.24,
+      "end": 144.091,
+      "text": "company that makes the models is telling"
+    },
+    {
+      "start": 144.101,
+      "end": 145.47,
+      "text": "[music] you to go easy on the"
+    },
+    {
+      "start": 145.48,
+      "end": 147.949,
+      "text": "abstractions. The framework people"
+    },
+    {
+      "start": 147.959,
+      "end": 150.31,
+      "text": "weren't wrong to build these. Back in"
+    },
+    {
+      "start": 150.32,
+      "end": 153.261,
+      "text": "2023, they were fixing a real problem."
+    },
+    {
+      "start": 153.27100000000002,
+      "end": 153.47,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 153.48,
+      "end": 156.23,
+      "text": "&gt;&gt; The models were bad at this. Ask one for"
+    },
+    {
+      "start": 156.24,
+      "end": 158.27,
+      "text": "a clean block of JSON to trigger [music]"
+    },
+    {
+      "start": 158.28,
+      "end": 160.82999999999998,
+      "text": "a tool and it might wrap it in chatter,"
+    },
+    {
+      "start": 160.84,
+      "end": 163.31,
+      "text": "misspell a key, forget an argument, or"
+    },
+    {
+      "start": 163.32,
+      "end": 165.27,
+      "text": "smother it in markdown that broke your"
+    },
+    {
+      "start": 165.28,
+      "end": 166.23,
+      "text": "parser. [music]"
+    },
+    {
+      "start": 166.24,
+      "end": 167.99,
+      "text": "So, the early frameworks became"
+    },
+    {
+      "start": 168,
+      "end": 170.63,
+      "text": "scaffolding. They forced the output into"
+    },
+    {
+      "start": 170.64,
+      "end": 172.79,
+      "text": "shape, retried it when it came back"
+    },
+    {
+      "start": 172.8,
+      "end": 174.79,
+      "text": "malformed, and covered for everything"
+    },
+    {
+      "start": 174.8,
+      "end": 176.99,
+      "text": "the model couldn't do alone."
+    },
+    {
+      "start": 177,
+      "end": 179.27,
+      "text": "But then, the models got good."
+    },
+    {
+      "start": 179.28,
+      "end": 180.99,
+      "text": "Tool calling went from a prompt"
+    },
+    {
+      "start": 181,
+      "end": 183.229,
+      "text": "engineering trick to a native feature"
+    },
+    {
+      "start": 183.239,
+      "end": 186.03,
+      "text": "the providers built in. Context windows"
+    },
+    {
+      "start": 186.04,
+      "end": 188.27,
+      "text": "grew big enough to hold a long task"
+    },
+    {
+      "start": 188.28,
+      "end": 190.50900000000001,
+      "text": "without clever memory hacks, and the"
+    },
+    {
+      "start": 190.519,
+      "end": 192.59,
+      "text": "models got better at planning several"
+    },
+    {
+      "start": 192.6,
+      "end": 195.35,
+      "text": "steps ahead on their own. A lot of what"
+    },
+    {
+      "start": 195.36,
+      "end": 197.19,
+      "text": "those frameworks did for a living the"
+    },
+    {
+      "start": 197.2,
+      "end": 200.15,
+      "text": "model now just does. One of Anthropic's"
+    },
+    {
+      "start": 200.16,
+      "end": 202.43,
+      "text": "own agents used a trick that reset the"
+    },
+    {
+      "start": 202.44,
+      "end": 204.55,
+      "text": "context at a certain point. It [music]"
+    },
+    {
+      "start": 204.56,
+      "end": 206.55,
+      "text": "clearly helped an older model stay on"
+    },
+    {
+      "start": 206.56,
+      "end": 209.59,
+      "text": "track. Move to a newer, stronger model"
+    },
+    {
+      "start": 209.6,
+      "end": 211.50900000000001,
+      "text": "and that same trick became, in their"
+    },
+    {
+      "start": 211.519,
+      "end": 214.11,
+      "text": "words, dead weight. The help had turned"
+    },
+    {
+      "start": 214.12,
+      "end": 216.47,
+      "text": "into a drag. The scaffolding you built"
+    },
+    {
+      "start": 216.48,
+      "end": 218.31,
+      "text": "for last year's model can become the"
+    },
+    {
+      "start": 218.32,
+      "end": 220.79,
+      "text": "thing holding this year's model back."
+    },
+    {
+      "start": 220.8,
+      "end": 222.67000000000002,
+      "text": "So, you start simple, the way everyone"
+    },
+    {
+      "start": 222.68,
+      "end": 225.35,
+      "text": "says to. A working while loop with a few"
+    },
+    {
+      "start": 225.36,
+      "end": 227.71,
+      "text": "tool calls, you bring it to production."
+    },
+    {
+      "start": 227.72,
+      "end": 229.27,
+      "text": "First, it crashes. [music]"
+    },
+    {
+      "start": 229.28,
+      "end": 232.67000000000002,
+      "text": "45 steps into a 50-step job, the network"
+    },
+    {
+      "start": 232.68,
+      "end": 235.07,
+      "text": "flips. The process dies and your agent"
+    },
+    {
+      "start": 235.07999999999998,
+      "end": 237.35,
+      "text": "has total amnesia because the entire"
+    },
+    {
+      "start": 237.36,
+      "end": 239.31,
+      "text": "history was sitting in memory that just"
+    },
+    {
+      "start": 239.32,
+      "end": 240.377,
+      "text": "evaporated."
+    },
+    {
+      "start": 240.387,
+      "end": 240.63,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 240.64,
+      "end": 243.31,
+      "text": "&gt;&gt; So, you add a way to save state to disk"
+    },
+    {
+      "start": 243.32,
+      "end": 245.83,
+      "text": "after every step. Then, it starts"
+    },
+    {
+      "start": 245.84,
+      "end": 248.11,
+      "text": "burning money. It gets stuck hunting for"
+    },
+    {
+      "start": 248.12,
+      "end": 250.07,
+      "text": "something that isn't there, runs the"
+    },
+    {
+      "start": 250.08,
+      "end": 252.23,
+      "text": "same dead end 20 [music] times, and you"
+    },
+    {
+      "start": 252.24,
+      "end": 254.23,
+      "text": "find out from the bill. So, you add a"
+    },
+    {
+      "start": 254.24,
+      "end": 256.752,
+      "text": "spend cap and a hard limit on steps."
+    },
+    {
+      "start": 256.762,
+      "end": 256.91,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 256.92,
+      "end": 258.789,
+      "text": "&gt;&gt; Then, a second user shows up and their"
+    },
+    {
+      "start": 258.799,
+      "end": 261.069,
+      "text": "conversation bleeds into the first one's"
+    },
+    {
+      "start": 261.079,
+      "end": 263.23,
+      "text": "because your one history array assumed"
+    },
+    {
+      "start": 263.24,
+      "end": 264.613,
+      "text": "one person at a time."
+    },
+    {
+      "start": 264.623,
+      "end": 264.75,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 264.76,
+      "end": 267.07,
+      "text": "&gt;&gt; So, you add sessions. Then, you give it"
+    },
+    {
+      "start": 267.08,
+      "end": 268.99,
+      "text": "a tool that can delete things and you"
+    },
+    {
+      "start": 269,
+      "end": 270.71,
+      "text": "really don't want the model deciding by"
+    },
+    {
+      "start": 270.72,
+      "end": 273.07,
+      "text": "itself when to pull that trigger. So,"
+    },
+    {
+      "start": 273.08,
+      "end": 274.87,
+      "text": "you [music] add an approval gate. A"
+    },
+    {
+      "start": 274.88,
+      "end": 277.59000000000003,
+      "text": "human signs off before it runs."
+    },
+    {
+      "start": 277.6,
+      "end": 279.35,
+      "text": "Look at what you're holding now. State"
+    },
+    {
+      "start": 279.36,
+      "end": 281.79,
+      "text": "persistence, budget control, sessions,"
+    },
+    {
+      "start": 281.8,
+      "end": 284.35,
+      "text": "an approval gate, routing. It's the"
+    },
+    {
+      "start": 284.36,
+      "end": 286.83,
+      "text": "accidental framework. Nearly every team"
+    },
+    {
+      "start": 286.84000000000003,
+      "end": 288.83,
+      "text": "that swears off frameworks ends up"
+    },
+    {
+      "start": 288.84000000000003,
+      "end": 290.59000000000003,
+      "text": "writing a worse one."
+    },
+    {
+      "start": 290.6,
+      "end": 292.47,
+      "text": "Now, look back at the very first wall"
+    },
+    {
+      "start": 292.48,
+      "end": 295.07,
+      "text": "you hit, the crash. It had nothing to do"
+    },
+    {
+      "start": 295.08,
+      "end": 297.75,
+      "text": "with the model being smart or dumb. It"
+    },
+    {
+      "start": 297.76,
+      "end": 300.23,
+      "text": "was about whether your run could survive"
+    },
+    {
+      "start": 300.24,
+      "end": 302.03,
+      "text": "being interrupted. [music]"
+    },
+    {
+      "start": 302.04,
+      "end": 304.43,
+      "text": "And surviving a crash, then picking up"
+    },
+    {
+      "start": 304.44,
+      "end": 306.43,
+      "text": "where you left off without redoing"
+    },
+    {
+      "start": 306.44,
+      "end": 308.75,
+      "text": "expensive work, is one of the oldest"
+    },
+    {
+      "start": 308.76,
+      "end": 310.55,
+      "text": "problems in plain distributed [music]"
+    },
+    {
+      "start": 310.56,
+      "end": 313.95,
+      "text": "systems. It predates AI by decades. So,"
+    },
+    {
+      "start": 313.96,
+      "end": 315.87,
+      "text": "to fix it, you don't reach up for an"
+    },
+    {
+      "start": 315.88,
+      "end": 318.55,
+      "text": "agent framework, you reach down for a"
+    },
+    {
+      "start": 318.56,
+      "end": 321.55,
+      "text": "durable runtime underneath your loop."
+    },
+    {
+      "start": 321.56,
+      "end": 324.99,
+      "text": "Temporal, D Bosch, Ingest. You keep your"
+    },
+    {
+      "start": 325,
+      "end": 327.55,
+      "text": "plain loop exactly as it is, run it on"
+    },
+    {
+      "start": 327.56,
+      "end": 329.55,
+      "text": "one of these, and when the server"
+    },
+    {
+      "start": 329.56,
+      "end": 331.99,
+      "text": "reboots mid-task, it resumes from the"
+    },
+    {
+      "start": 332,
+      "end": 334.35,
+      "text": "line where it died with every variable"
+    },
+    {
+      "start": 334.36,
+      "end": 336.909,
+      "text": "intact. Anthropic hit the same wall"
+    },
+    {
+      "start": 336.919,
+      "end": 339.03,
+      "text": "building their research agents and set"
+    },
+    {
+      "start": 339.04,
+      "end": 341.248,
+      "text": "it straight. Agents are stateful,"
+    },
+    {
+      "start": 341.258,
+      "end": 343.59000000000003,
+      "text": "[music] errors pile up, and restarting"
+    },
+    {
+      "start": 343.6,
+      "end": 346.35,
+      "text": "from scratch is brutally expensive. So,"
+    },
+    {
+      "start": 346.36,
+      "end": 348.07,
+      "text": "they built systems to resume [music]"
+    },
+    {
+      "start": 348.08,
+      "end": 350.59000000000003,
+      "text": "instead. This is why loop versus"
+    },
+    {
+      "start": 350.6,
+      "end": 352.47,
+      "text": "framework is a little bit the wrong"
+    },
+    {
+      "start": 352.48,
+      "end": 354.63,
+      "text": "fight. For a lot of teams, the real"
+    },
+    {
+      "start": 354.64,
+      "end": 357.51,
+      "text": "first upgrade lives underneath the loop"
+    },
+    {
+      "start": 357.52,
+      "end": 360.27,
+      "text": "in a durable runtime, not in a framework"
+    },
+    {
+      "start": 360.28,
+      "end": 364.67,
+      "text": "bolted on top. Temporal raised $300"
+    },
+    {
+      "start": 364.68,
+      "end": 366.47,
+      "text": "betting that's where the real pain"
+    },
+    {
+      "start": 366.48,
+      "end": 367.63,
+      "text": "lives."
+    },
+    {
+      "start": 367.64,
+      "end": 369.63,
+      "text": "There's one more upgrade people grab way"
+    },
+    {
+      "start": 369.64,
+      "end": 372.689,
+      "text": "too early, the multi-agent swarm. A team"
+    },
+    {
+      "start": 372.699,
+      "end": 374.71,
+      "text": "[music] of specialist agents, a"
+    },
+    {
+      "start": 374.72,
+      "end": 377.03,
+      "text": "researcher handing to a writer handing"
+    },
+    {
+      "start": 377.04,
+      "end": 379.47,
+      "text": "to an editor, all chattering [music] at"
+    },
+    {
+      "start": 379.48,
+      "end": 382.03,
+      "text": "each other. It sounds great, it mostly"
+    },
+    {
+      "start": 382.04,
+      "end": 385.19,
+      "text": "isn't. Even AI swarm vendors warn you"
+    },
+    {
+      "start": 385.2,
+      "end": 387.63,
+      "text": "about it. Cognition, a company whose"
+    },
+    {
+      "start": 387.64,
+      "end": 389.87,
+      "text": "whole product is a multi-agent AI"
+    },
+    {
+      "start": 389.88,
+      "end": 392.11,
+      "text": "engineer, wrote one of the most cited"
+    },
+    {
+      "start": 392.12,
+      "end": 394.43,
+      "text": "essays in the space, and the gist of the"
+    },
+    {
+      "start": 394.44,
+      "end": 397.27,
+      "text": "title is, \"Don't build multi-agents.\""
+    },
+    {
+      "start": 397.28,
+      "end": 399.07,
+      "text": "Anthropic, who published a glowing"
+    },
+    {
+      "start": 399.08,
+      "end": 401.71,
+      "text": "success story about a multi-agent system"
+    },
+    {
+      "start": 401.72,
+      "end": 403.474,
+      "text": "of their own, lands in the same spot."
+    },
+    {
+      "start": 403.484,
+      "end": 404.15,
+      "text": "[music]"
+    },
+    {
+      "start": 404.15999999999997,
+      "end": 406.07,
+      "text": "They both trace the problem back to"
+    },
+    {
+      "start": 406.08,
+      "end": 409.07,
+      "text": "context, not to the number of agents."
+    },
+    {
+      "start": 409.08,
+      "end": 411.59000000000003,
+      "text": "Split a job across a researcher, writer,"
+    },
+    {
+      "start": 411.6,
+      "end": 413.67,
+      "text": "and an editor, and every handoff is a"
+    },
+    {
+      "start": 413.68,
+      "end": 416.31,
+      "text": "chance to drop information. Agent one"
+    },
+    {
+      "start": 416.32,
+      "end": 418.95,
+      "text": "summarizes its work a little badly."
+    },
+    {
+      "start": 418.96,
+      "end": 420.71,
+      "text": "Agent [music] two builds on the gap, and"
+    },
+    {
+      "start": 420.72,
+      "end": 423.03,
+      "text": "the mistakes compound down the line like"
+    },
+    {
+      "start": 423.04,
+      "end": 425.67,
+      "text": "a game of telephone. Add more agents,"
+    },
+    {
+      "start": 425.68,
+      "end": 428.39,
+      "text": "mostly you add more telephone. The swarm"
+    },
+    {
+      "start": 428.4,
+      "end": 430.35,
+      "text": "is what you use for work that's truly"
+    },
+    {
+      "start": 430.36,
+      "end": 432.909,
+      "text": "parallel and mostly reading rather than"
+    },
+    {
+      "start": 432.919,
+      "end": 433.604,
+      "text": "writing."
+    },
+    {
+      "start": 433.614,
+      "end": 434.07,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 434.08,
+      "end": 436.55,
+      "text": "&gt;&gt; Where you fan out, gather a lot at once,"
+    },
+    {
+      "start": 436.56,
+      "end": 438.67,
+      "text": "and pull it back together. The second"
+    },
+    {
+      "start": 438.68,
+      "end": 440.83,
+      "text": "your agents have to share context or"
+    },
+    {
+      "start": 440.84,
+      "end": 443.19,
+      "text": "make decisions that lean on each other,"
+    },
+    {
+      "start": 443.2,
+      "end": 445.47,
+      "text": "one capable agent with a big context"
+    },
+    {
+      "start": 445.48,
+      "end": 446.99,
+      "text": "window tends to beat the whole"
+    },
+    {
+      "start": 447,
+      "end": 449.23,
+      "text": "committee. So, where does this leave you"
+    },
+    {
+      "start": 449.24,
+      "end": 451.29,
+      "text": "building your first real agent? The"
+    },
+    {
+      "start": 451.3,
+      "end": 453.03,
+      "text": "[music] honest path is boring, and it"
+    },
+    {
+      "start": 453.04,
+      "end": 455.71,
+      "text": "runs in order. Start with the loop, one"
+    },
+    {
+      "start": 455.72,
+      "end": 457.79,
+      "text": "model, [music] a couple of tools, a cap"
+    },
+    {
+      "start": 457.8,
+      "end": 460.31,
+      "text": "on steps so it can't spin forever. Get"
+    },
+    {
+      "start": 460.32,
+      "end": 462.55,
+      "text": "it working on real tasks before [music]"
+    },
+    {
+      "start": 462.56,
+      "end": 464.95,
+      "text": "you add anything. You'll learn more"
+    },
+    {
+      "start": 464.96,
+      "end": 467.19,
+      "text": "about how your agent really breaks in 1"
+    },
+    {
+      "start": 467.2,
+      "end": 469.19,
+      "text": "week of that [music] than in a month of"
+    },
+    {
+      "start": 469.2,
+      "end": 471.11,
+      "text": "framework tutorials."
+    },
+    {
+      "start": 471.12,
+      "end": 473.35,
+      "text": "Then add structure only when you smack"
+    },
+    {
+      "start": 473.36,
+      "end": 475.71,
+      "text": "into a specific wall and fit [music] the"
+    },
+    {
+      "start": 475.72,
+      "end": 478.63,
+      "text": "fix to the wall. Bury it in boilerplate"
+    },
+    {
+      "start": 478.64,
+      "end": 481.07,
+      "text": "for type tools, pull in a small library"
+    },
+    {
+      "start": 481.08,
+      "end": 483.15,
+      "text": "like by dentic AI, not a whole"
+    },
+    {
+      "start": 483.16,
+      "end": 485.55,
+      "text": "framework. Need strict auditable"
+    },
+    {
+      "start": 485.56,
+      "end": 487.51,
+      "text": "branching where this step must always"
+    },
+    {
+      "start": 487.52,
+      "end": 489.47,
+      "text": "run before that one. That's where a"
+    },
+    {
+      "start": 489.48,
+      "end": 491.71,
+      "text": "graph framework like LangGraph is worth"
+    },
+    {
+      "start": 491.72,
+      "end": 492.43,
+      "text": "it. [music]"
+    },
+    {
+      "start": 492.44,
+      "end": 495.47,
+      "text": "Crashes losing work, runs lasting hours,"
+    },
+    {
+      "start": 495.48,
+      "end": 498.27,
+      "text": "that's a durable runtime, temporal or"
+    },
+    {
+      "start": 498.28,
+      "end": 501.59,
+      "text": "Dboss. Multi-agent comes dead last and"
+    },
+    {
+      "start": 501.6,
+      "end": 504.31,
+      "text": "only for that narrow parallel read heavy"
+    },
+    {
+      "start": 504.32,
+      "end": 506.71,
+      "text": "case. There's a clean signal for when"
+    },
+    {
+      "start": 506.72,
+      "end": 508.67,
+      "text": "you've outgrown the loop. The day"
+    },
+    {
+      "start": 508.68,
+      "end": 511.11,
+      "text": "debugging a failed run takes longer than"
+    },
+    {
+      "start": 511.12,
+      "end": 513.11,
+      "text": "just shipping the feature would have,"
+    },
+    {
+      "start": 513.12,
+      "end": 515.11,
+      "text": "your hand-rolled loop has turned into"
+    },
+    {
+      "start": 515.12,
+      "end": 516.79,
+      "text": "its own little platform"
+    },
+    {
+      "start": 516.8,
+      "end": 516.87,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 516.88,
+      "end": 518.99,
+      "text": "&gt;&gt; and a real framework is probably cheaper"
+    },
+    {
+      "start": 519,
+      "end": 522.23,
+      "text": "than babysitting it. Remember, almost"
+    },
+    {
+      "start": 522.24,
+      "end": 524.35,
+      "text": "everyone shouting in this debate has"
+    },
+    {
+      "start": 524.36,
+      "end": 526.75,
+      "text": "something to sell. The framework company"
+    },
+    {
+      "start": 526.76,
+      "end": 528.581,
+      "text": "has a course and a cloud plan."
+    },
+    {
+      "start": 528.591,
+      "end": 528.829,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 528.8389999999999,
+      "end": 531.67,
+      "text": "&gt;&gt; The runtime startup has a $300 million"
+    },
+    {
+      "start": 531.68,
+      "end": 534.27,
+      "text": "round to earn out. Half the loudest"
+    },
+    {
+      "start": 534.28,
+      "end": 536.59,
+      "text": "anti-framework voices are shipping an"
+    },
+    {
+      "start": 536.6,
+      "end": 539.19,
+      "text": "SDK with their own name on it. This"
+    },
+    {
+      "start": 539.2,
+      "end": 541.829,
+      "text": "video has nothing for you to buy except"
+    },
+    {
+      "start": 541.839,
+      "end": 544.03,
+      "text": "for a free subscribe. Start with the"
+    },
+    {
+      "start": 544.04,
+      "end": 546.19,
+      "text": "loop, build the accidental framework"
+    },
+    {
+      "start": 546.2,
+      "end": 548.19,
+      "text": "just far enough to feel which wall you"
+    },
+    {
+      "start": 548.2,
+      "end": 550.59,
+      "text": "hit first, then go get the one piece"
+    },
+    {
+      "start": 550.6,
+      "end": 552.75,
+      "text": "that fixes [music] the wall and not a"
+    },
+    {
+      "start": 552.76,
+      "end": 558.056,
+      "text": "piece more."
+    },
+    {
+      "start": 558.066,
+      "end": 560.086,
+      "text": "&gt;&gt; [music]"
+    }
+  ]
+}

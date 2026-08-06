@@ -1,0 +1,90 @@
+{
+  "title": "Qwen3.8-Max Just Dropped: What 2.4T Really Means",
+  "slug": "qwen38-max-release",
+  "template": "ai-news",
+  "targetDurationSeconds": 180,
+  "scenes": [
+    {
+      "id": "hook",
+      "section": "hook",
+      "narration": "[yells] Qwen three point eight Max just appeared in QwenCloud's official model release log, dated August third, twenty twenty-six. [pause] It is a native vision-language model with two point four trillion total parameters, a one-million-token context window, and hybrid thinking enabled by default. The headline is huge. The useful question is simple: what changes for your AI workflow?",
+      "onScreenText": "QWEN3.8-MAX JUST DROPPED",
+      "visual": {"type": "kinetic-text", "emphasis": ["QWEN3.8-MAX", "DROPPED"]},
+      "sources": [{"url": "https://docs.qwencloud.com/changelog/models", "claim": "August 3, 2026 model release entry"}],
+      "targetSeconds": 18
+    },
+    {
+      "id": "release",
+      "section": "change",
+      "narration": "[enthusiastic] What shipped is qwen3.8-max, a hosted Max-series model. QwenCloud calls it its most capable flagship so far. [pause] It says it improves on the three point seven series. Treat that as a vendor claim, not an independent benchmark. The official release shape is clear: multimodal input, long context, tools, and controllable reasoning.",
+      "visual": {"type": "comparison", "data": {"columns": ["Current release"], "rows": [{"label": "Model ID", "values": ["qwen3.8-max"]}, {"label": "Input", "values": ["Native vision-language"]}, {"label": "Context", "values": ["1M tokens"]}, {"label": "Reasoning", "values": ["Hybrid / default on"]}]}},
+      "sources": [{"url": "https://docs.qwencloud.com/changelog/models", "claim": "Official qwen3.8-max release description"}],
+      "targetSeconds": 20
+    },
+    {
+      "id": "mixture-of-experts",
+      "section": "mechanism",
+      "narration": "[clear] Translate the two point four trillion number. [whispering] Here is the trick: Qwen three point eight Max is a Mixture-of-Experts model. Total parameters describe the full expert pool; every token does not activate every parameter. A router selects experts per token. So the model can offer enormous capacity without behaving like a dense two point four trillion model on every step.",
+      "visual": {"type": "diagram", "template": "how moe scales", "data": {"nodes": [{"id": "pool", "label": "2.4T total", "detail": "Full expert pool"}, {"id": "router", "label": "Router", "detail": "Selects experts per token"}, {"id": "path", "label": "Active path", "detail": "Conditional compute"}]}},
+      "sources": [{"url": "https://docs.qwencloud.com/changelog/models", "claim": "2.4T and Mixture-of-Experts architecture"}],
+      "targetSeconds": 18
+    },
+    {
+      "id": "context",
+      "section": "impact",
+      "narration": "[thoughtful] The one-million-token window is the other big deal. [pause] It can hold long documents, large codebases, or a serious video-analysis task. But context length is a ceiling, not perfect recall. You still need clear prompts and retrieval tests. QwenCloud's vision guide also lists up to two hours of video support for qwen3.8-max.",
+      "visual": {"type": "comparison", "data": {"columns": ["What it enables"], "rows": [{"label": "Context", "values": ["1M-token working set"]}, {"label": "Video", "values": ["Up to 2 hours"]}, {"label": "Caveat", "values": ["Test recall, cost, latency"]}]}},
+      "sources": [{"url": "https://docs.qwencloud.com/developer-guides/getting-started/vision-models", "claim": "1M context and two-hour video guidance"}],
+      "targetSeconds": 20
+    },
+    {
+      "id": "thinking",
+      "section": "mechanism",
+      "narration": "[enthusiastic] Hybrid thinking is a control knob. QwenCloud lets you enable or disable reasoning per request. Disable it for extraction or fast drafting. Enable it for planning, code, tool orchestration, or hard math. The guide lists low, medium, and x-high reasoning effort, with x-high as the default. More thinking means more budget, not automatically more value. [laughing] Big model, same old caveat.",
+      "visual": {"type": "comparison", "data": {"columns": ["Thinking off", "Thinking on"], "rows": [{"label": "Best for", "values": ["Fast extraction", "Planning and tools"]}, {"label": "Request", "values": ["enable_thinking=false", "enable_thinking=true"]}, {"label": "Effort", "values": ["Minimal", "Low / medium / x-high"]}]}},
+      "sources": [{"url": "https://docs.qwencloud.com/developer-guides/text-generation/thinking", "claim": "Hybrid thinking and reasoning-effort controls"}],
+      "targetSeconds": 21
+    },
+    {
+      "id": "api",
+      "section": "impact",
+      "narration": "[instructional] The immediate way to try it is through the QwenCloud API. [pause] The model ID is qwen3.8-max. Important caveat: today's changelog establishes an API model and documented capabilities. It does not, by itself, establish a downloadable open-weight checkpoint. Do not mistake a hosted model name for a local model file.",
+      "visual": {"type": "code", "language": "python", "code": "client = OpenAI(\n  api_key=os.getenv('DASHSCOPE_API_KEY'),\n  base_url='https://dashscope-intl.aliyuncs.com/compatible-mode/v1',\n)\nresponse = client.responses.create(\n  model='qwen3.8-max',\n  input='Run the same task twice.'\n)"},
+      "sources": [{"url": "https://docs.qwencloud.com/developer-guides/text-generation/quickstart", "claim": "Official API request structure"}, {"url": "https://docs.qwencloud.com/developer-guides/getting-started/text-generation-models", "claim": "qwen3.8-max model ID and flagship guidance"}],
+      "targetSeconds": 18
+    },
+    {
+      "id": "test",
+      "section": "impact",
+      "narration": "[clear] Before switching production traffic, run one real text task and one image or video task. Test both thinking states. Record quality, latency, token use, tool calls, and failures. Repeat the same prompts on your current model. [thoughtful] That creates a decision artifact, not a screenshot of a leaderboard.",
+      "visual": {"type": "diagram", "template": "decision test", "data": {"nodes": [{"id": "input", "label": "Same task", "detail": "Text plus image or video"}, {"id": "modes", "label": "Two modes", "detail": "Thinking off and on"}, {"id": "evidence", "label": "Saved evidence", "detail": "Quality, cost, latency, failures"}]}},
+      "targetSeconds": 18
+    },
+    {
+      "id": "limits",
+      "section": "limits",
+      "narration": "[serious] The limits matter. A million-token window can raise cost and latency. Multimodal inputs add new failure points, where the image or video pipeline can fail before language quality does. And significant improvement still needs independent tests on your workload. The honest status today is promising release, incomplete public evidence.",
+      "visual": {"type": "comparison", "data": {"columns": ["Release promise", "What to test"], "rows": [{"label": "1M context", "values": ["Large working set", "Recall and cost"]}, {"label": "Vision-language", "values": ["Text plus media", "Pipeline failures"]}, {"label": "Best so far", "values": ["Vendor positioning", "Independent results"]}]}},
+      "sources": [{"url": "https://docs.qwencloud.com/changelog/models", "claim": "Vendor release positioning"}, {"url": "https://docs.qwencloud.com/developer-guides/getting-started/vision-models", "claim": "Documented vision capabilities"}],
+      "targetSeconds": 18
+    },
+    {
+      "id": "verdict",
+      "section": "verdict",
+      "narration": "[yells] [pause] My early verdict: qwen3.8-max is worth testing if you need long context, images, video, tools, and difficult reasoning behind one API. It is not an automatic replacement for cheaper models. Start with the task that costs you the most time, measure it twice, and decide from the evidence.",
+      "onScreenText": "TEST THE TASK, NOT THE HYPE",
+      "visual": {"type": "kinetic-text", "emphasis": ["TEST", "TASK", "HYPE"]},
+      "sources": [{"url": "https://docs.qwencloud.com/developer-guides/getting-started/text-generation-models", "claim": "Flagship and higher-cost positioning"}],
+      "targetSeconds": 18
+    },
+    {
+      "id": "close",
+      "section": "verdict",
+      "narration": "[warm] That is the Qwen three point eight story. [pause] Multimodality, a million-token context, and controllable reasoning, delivered as a new QwenCloud top tier. Try the exact model ID, log the tradeoffs, and keep the evidence. Subscribe for the deeper test as public results arrive.",
+      "onScreenText": "MODEL ID. TEST. EVIDENCE.",
+      "visual": {"type": "kinetic-text", "emphasis": ["MODEL", "TEST", "EVIDENCE."]},
+      "sources": [{"url": "https://docs.qwencloud.com/changelog/models", "claim": "Qwen3.8-Max release entry"}],
+      "targetSeconds": 12
+    }
+  ]
+}

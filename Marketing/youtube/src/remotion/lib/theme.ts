@@ -1,0 +1,22 @@
+export const theme = {
+  colors: {
+    background: "#050807",
+    surface: "#0B1012",
+    ink: "#F4F7F6",
+    muted: "#6C777D",
+    accent: "#2F80FF",
+    accentSoft: "#10264A",
+    evidence: "#20D760",
+    warning: "#F04B4B",
+    border: "#25343A",
+    code: "#070A0C",
+    header: "#111D25",
+  },
+  fonts: {body: "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif", mono: "Consolas, SFMono-Regular, monospace"},
+  type: {hero: 104, title: 78, subtitle: 44, body: 36, label: 28, caption: 46, code: 31},
+  spacing: {safeX: 112, safeY: 92, xs: 12, sm: 20, md: 32, lg: 52, xl: 80},
+  radius: {sm: 12, md: 22, lg: 36},
+  shadow: "0 28px 80px rgba(0,0,0,0.52)",
+  motion: {fast: 8, normal: 16, slow: 28},
+  captions: {maxWidth: 1440, bottom: 88, lineHeight: 1.18, background: "rgba(5,8,7,0.94)"},
+} as const;

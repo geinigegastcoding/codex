@@ -1,0 +1,1701 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.47,
+      "text": "Stop asking what's the best local AI"
+    },
+    {
+      "start": 2.48,
+      "end": 4.79,
+      "text": "model. And honestly, that's the wrong"
+    },
+    {
+      "start": 4.8,
+      "end": 6.83,
+      "text": "question. The question that decides what"
+    },
+    {
+      "start": 6.84,
+      "end": 8.63,
+      "text": "you can actually run at home is simpler"
+    },
+    {
+      "start": 8.64,
+      "end": 10.67,
+      "text": "than that. How much memory does your"
+    },
+    {
+      "start": 10.68,
+      "end": 12.79,
+      "text": "graphics card have? That one number"
+    },
+    {
+      "start": 12.8,
+      "end": 14.91,
+      "text": "picks your model for you. So, by the end"
+    },
+    {
+      "start": 14.92,
+      "end": 16.75,
+      "text": "of this video, you'll know exactly which"
+    },
+    {
+      "start": 16.76,
+      "end": 18.35,
+      "text": "model to install based on what you"
+    },
+    {
+      "start": 18.36,
+      "end": 20.31,
+      "text": "already own. Whether you're on an RTX"
+    },
+    {
+      "start": 20.32,
+      "end": 23.91,
+      "text": "4090, an old 3060, a MacBook, or even"
+    },
+    {
+      "start": 23.92,
+      "end": 25.59,
+      "text": "integrated graphics, I'll give you the"
+    },
+    {
+      "start": 25.6,
+      "end": 27.75,
+      "text": "model name, the honest caveats most"
+    },
+    {
+      "start": 27.76,
+      "end": 29.95,
+      "text": "coverage skips, and the exact command to"
+    },
+    {
+      "start": 29.96,
+      "end": 32.87,
+      "text": "get started. One more thing up front."
+    },
+    {
+      "start": 32.88,
+      "end": 35.19,
+      "text": "Forget parameter counts for a minute. A"
+    },
+    {
+      "start": 35.2,
+      "end": 37.35,
+      "text": "compressed 27 billion parameter model"
+    },
+    {
+      "start": 37.36,
+      "end": 39.99,
+      "text": "can now fit into less memory than some 3"
+    },
+    {
+      "start": 40,
+      "end": 41.95,
+      "text": "billion models from last year. That's"
+    },
+    {
+      "start": 41.96,
+      "end": 44.63,
+      "text": "how fast the floor has moved. So, find"
+    },
+    {
+      "start": 44.64,
+      "end": 46.55,
+      "text": "your number, look up how much VRAM your"
+    },
+    {
+      "start": 46.56,
+      "end": 48.59,
+      "text": "GPU has, and follow along to your"
+    },
+    {
+      "start": 48.6,
+      "end": 50.95,
+      "text": "hardware. We start at the very bottom,"
+    },
+    {
+      "start": 50.96,
+      "end": 53.35,
+      "text": "the tier almost all of you already own,"
+    },
+    {
+      "start": 53.36,
+      "end": 57.07,
+      "text": "4 to 8 GB. Think a used gaming card, RTX"
+    },
+    {
+      "start": 57.08,
+      "end": 64.59,
+      "text": "3050, GTX 1660, RTX 2060, RTX 4060 8 GB,"
+    },
+    {
+      "start": 64.6,
+      "end": 67.27,
+      "text": "AMD RX 7600,"
+    },
+    {
+      "start": 67.28,
+      "end": 68.78999999999999,
+      "text": "or you're on integrated graphics with"
+    },
+    {
+      "start": 68.8,
+      "end": 70.11,
+      "text": "enough shared memory, this is your"
+    },
+    {
+      "start": 70.12,
+      "end": 72.35,
+      "text": "bracket. And if you're thinking, I guess"
+    },
+    {
+      "start": 72.36,
+      "end": 74.11,
+      "text": "I settle for something dim, that's"
+    },
+    {
+      "start": 74.12,
+      "end": 76.59,
+      "text": "outdated. The best pick here is a 3"
+    },
+    {
+      "start": 76.6,
+      "end": 78.35,
+      "text": "billion parameter model from a Chinese"
+    },
+    {
+      "start": 78.36,
+      "end": 81.07,
+      "text": "lab called Nanbeige. Their 4.2 release"
+    },
+    {
+      "start": 81.08,
+      "end": 83.67,
+      "text": "is tiny, but it does something its size"
+    },
+    {
+      "start": 83.68,
+      "end": 86.27,
+      "text": "should flatly not allow. Its trick is a"
+    },
+    {
+      "start": 86.28,
+      "end": 88.78999999999999,
+      "text": "looped transformer. Instead of stacking"
+    },
+    {
+      "start": 88.8,
+      "end": 91.15,
+      "text": "more layers, it runs the layers it has"
+    },
+    {
+      "start": 91.16,
+      "end": 94.07,
+      "text": "more than once. So, it thinks like a"
+    },
+    {
+      "start": 94.08,
+      "end": 95.83,
+      "text": "bigger model without storing a bigger"
+    },
+    {
+      "start": 95.84,
+      "end": 98.75,
+      "text": "model. You get the capacity, you skip"
+    },
+    {
+      "start": 98.75999999999999,
+      "end": 101.50999999999999,
+      "text": "the memory bill, and it lands. On agent"
+    },
+    {
+      "start": 101.52000000000001,
+      "end": 104.63,
+      "text": "tasks, coding, and reasoning, this 3"
+    },
+    {
+      "start": 104.64,
+      "end": 107.39,
+      "text": "billion model beats Qwen 3.5 at 9"
+    },
+    {
+      "start": 107.4,
+      "end": 110.55,
+      "text": "billion and Gemma 4 at 12. It is"
+    },
+    {
+      "start": 110.56,
+      "end": 112.71000000000001,
+      "text": "outscoring models three and four times"
+    },
+    {
+      "start": 112.72,
+      "end": 113.99000000000001,
+      "text": "its size."
+    },
+    {
+      "start": 114,
+      "end": 116.63,
+      "text": "Look at coding specifically. On SWE"
+    },
+    {
+      "start": 116.64,
+      "end": 118.59,
+      "text": "bench verified real"
+    },
+    {
+      "start": 118.6,
+      "end": 121.83,
+      "text": "GitHub agent, it resolves 63%, roughly"
+    },
+    {
+      "start": 121.84,
+      "end": 124.63,
+      "text": "double what the same size Quen manages."
+    },
+    {
+      "start": 124.64,
+      "end": 126.83,
+      "text": "For a model this small, that number is a"
+    },
+    {
+      "start": 126.84,
+      "end": 129.99,
+      "text": "little indecent. And on GPQA Diamond, a"
+    },
+    {
+      "start": 130,
+      "end": 132.31,
+      "text": "brutal graduate-level science exam, it"
+    },
+    {
+      "start": 132.32,
+      "end": 135.31,
+      "text": "scores 87. That is a figure the flagship"
+    },
+    {
+      "start": 135.32,
+      "end": 137.31,
+      "text": "models were bragging about a year ago,"
+    },
+    {
+      "start": 137.32,
+      "end": 139.07,
+      "text": "now running in about 2 GB on your"
+    },
+    {
+      "start": 139.07999999999998,
+      "end": 141.949,
+      "text": "laptop. So, what is it for?"
+    },
+    {
+      "start": 141.959,
+      "end": 144.19,
+      "text": "Local grunt work. Tagging and sorting"
+    },
+    {
+      "start": 144.2,
+      "end": 146.82999999999998,
+      "text": "your files, classifying support tickets,"
+    },
+    {
+      "start": 146.84,
+      "end": 149.11,
+      "text": "labeling data, the high-volume jobs"
+    },
+    {
+      "start": 149.12,
+      "end": 151.23,
+      "text": "where you want speed and privacy, not a"
+    },
+    {
+      "start": 151.24,
+      "end": 153.59,
+      "text": "giant brain that costs money every call."
+    },
+    {
+      "start": 153.6,
+      "end": 156.11,
+      "text": "It is also a real assistant. Pointed at"
+    },
+    {
+      "start": 156.12,
+      "end": 158.03,
+      "text": "a scaffold like Open Claw, and it will"
+    },
+    {
+      "start": 158.04,
+      "end": 160.31,
+      "text": "handle multi-step office tasks and deep"
+    },
+    {
+      "start": 160.32,
+      "end": 162.43,
+      "text": "research fully offline, and it beats"
+    },
+    {
+      "start": 162.44,
+      "end": 165.11,
+      "text": "that 9 billion model at those, too."
+    },
+    {
+      "start": 165.12,
+      "end": 167.82999999999998,
+      "text": "It carries a 256,000"
+    },
+    {
+      "start": 167.84,
+      "end": 169.91,
+      "text": "token context, so it can hold a whole"
+    },
+    {
+      "start": 169.92000000000002,
+      "end": 172.11,
+      "text": "code base or a stack of documents in its"
+    },
+    {
+      "start": 172.12,
+      "end": 175.43,
+      "text": "head at once. On 2 GB, no internet, no"
+    },
+    {
+      "start": 175.44,
+      "end": 177.35,
+      "text": "bill, and it out reasons last year's"
+    },
+    {
+      "start": 177.36,
+      "end": 180.27,
+      "text": "mid-size models. That is the new floor."
+    },
+    {
+      "start": 180.28,
+      "end": 182.15,
+      "text": "It only climbs from here."
+    },
+    {
+      "start": 182.16,
+      "end": 185.55,
+      "text": "Second-tier 8 to 24 GB, if you own RTX"
+    },
+    {
+      "start": 185.56,
+      "end": 191.949,
+      "text": "3060 12 GB, RTX 3070, RTX 4060 Ti, RTX"
+    },
+    {
+      "start": 191.959,
+      "end": 196.99,
+      "text": "4070, AMD 7900 GRE, or a MacBook Pro"
+    },
+    {
+      "start": 197,
+      "end": 199.35,
+      "text": "with 16 GB unified memory, this is the"
+    },
+    {
+      "start": 199.36,
+      "end": 201.59,
+      "text": "most interesting bracket right now. Now"
+    },
+    {
+      "start": 201.6,
+      "end": 203.31,
+      "text": "we can get greedy, and this is where"
+    },
+    {
+      "start": 203.32,
+      "end": 205.79,
+      "text": "things get a little unreal. Normally, a"
+    },
+    {
+      "start": 205.8,
+      "end": 208.35,
+      "text": "27 billion model is flatly out of reach"
+    },
+    {
+      "start": 208.36,
+      "end": 211.03,
+      "text": "here. In full precision, it needs about"
+    },
+    {
+      "start": 211.04,
+      "end": 212.949,
+      "text": "54 GB."
+    },
+    {
+      "start": 212.959,
+      "end": 215.82999999999998,
+      "text": "Even a careful 4-bit build is 18, too"
+    },
+    {
+      "start": 215.84,
+      "end": 217.55,
+      "text": "big for this card and nowhere near a"
+    },
+    {
+      "start": 217.56,
+      "end": 220.82999999999998,
+      "text": "phone. A startup called Prism ML, a team"
+    },
+    {
+      "start": 220.84,
+      "end": 223.39,
+      "text": "out of Caltech, fixed that. They took"
+    },
+    {
+      "start": 223.4,
+      "end": 226.03,
+      "text": "Quen's 27 billion model and crushed it"
+    },
+    {
+      "start": 226.04,
+      "end": 228.07,
+      "text": "down to almost nothing, and they call"
+    },
+    {
+      "start": 228.07999999999998,
+      "end": 230.75,
+      "text": "the result bonsai. Here is the trick,"
+    },
+    {
+      "start": 230.76,
+      "end": 233.51,
+      "text": "and it is not normal quantization. They"
+    },
+    {
+      "start": 233.52,
+      "end": 235.43,
+      "text": "retrained every single weight to be one"
+    },
+    {
+      "start": 235.44,
+      "end": 241.71,
+      "text": "of three values, -1, 0, or +1 ternary."
+    },
+    {
+      "start": 241.72,
+      "end": 243.67,
+      "text": "Under two bits per weight, top to"
+    },
+    {
+      "start": 243.68,
+      "end": 246.11,
+      "text": "bottom, no full precision escape hatch"
+    },
+    {
+      "start": 246.12,
+      "end": 248.31,
+      "text": "anywhere in the network. The payoff is"
+    },
+    {
+      "start": 248.32,
+      "end": 252.51,
+      "text": "absurd. The quality build is 5.9 GB. The"
+    },
+    {
+      "start": 252.52,
+      "end": 255.67,
+      "text": "tiny build is 3.9. A 27 billion"
+    },
+    {
+      "start": 255.68,
+      "end": 257.55,
+      "text": "parameter model that is smaller on disk"
+    },
+    {
+      "start": 257.56,
+      "end": 260.11,
+      "text": "than a full precision 2 billion model."
+    },
+    {
+      "start": 260.12,
+      "end": 262.27,
+      "text": "And that 3.9 GB version fits on an"
+    },
+    {
+      "start": 262.28,
+      "end": 265.19,
+      "text": "iPhone, an actual phone. It is the first"
+    },
+    {
+      "start": 265.2,
+      "end": 267.63,
+      "text": "27B class model to run on the device in"
+    },
+    {
+      "start": 267.64,
+      "end": 270.63,
+      "text": "your pocket, reasoning, tool calls, even"
+    },
+    {
+      "start": 270.64,
+      "end": 273.11,
+      "text": "reading images. Your gut says they must"
+    },
+    {
+      "start": 273.12,
+      "end": 274.95,
+      "text": "have crushed the brains out of it. They"
+    },
+    {
+      "start": 274.96,
+      "end": 277.31,
+      "text": "mostly did not. The ternary build keeps"
+    },
+    {
+      "start": 277.32,
+      "end": 280.07,
+      "text": "95% of the original score. The one-bit"
+    },
+    {
+      "start": 280.08,
+      "end": 282.71,
+      "text": "phone build keeps 90. Math and coding"
+    },
+    {
+      "start": 282.72,
+      "end": 285.15,
+      "text": "barely move at all. And here's the part"
+    },
+    {
+      "start": 285.15999999999997,
+      "end": 287.03,
+      "text": "that makes it more than a party trick."
+    },
+    {
+      "start": 287.04,
+      "end": 288.99,
+      "text": "Take the most aggressive normal 4-bit"
+    },
+    {
+      "start": 289,
+      "end": 290.909,
+      "text": "build of this same model."
+    },
+    {
+      "start": 290.919,
+      "end": 292.83,
+      "text": "Bon Sai's one-bit version scores higher"
+    },
+    {
+      "start": 292.84000000000003,
+      "end": 294.59000000000003,
+      "text": "than it while using two and one half"
+    },
+    {
+      "start": 294.6,
+      "end": 296.63,
+      "text": "times less memory. It is a strictly"
+    },
+    {
+      "start": 296.64,
+      "end": 298.07,
+      "text": "better trade than the quantization"
+    },
+    {
+      "start": 298.08,
+      "end": 300.59,
+      "text": "everyone already trusts. It is not slow,"
+    },
+    {
+      "start": 300.6,
+      "end": 303.95,
+      "text": "either. On an RTX 5090, it runs at over"
+    },
+    {
+      "start": 303.96,
+      "end": 306.79,
+      "text": "160 tokens a second."
+    },
+    {
+      "start": 306.8,
+      "end": 309.31,
+      "text": "On a MacBook's M5 chip, still fast"
+    },
+    {
+      "start": 309.32,
+      "end": 311.79,
+      "text": "enough to feel instant. This is a usable"
+    },
+    {
+      "start": 311.8,
+      "end": 314.83,
+      "text": "daily driver, not a lab demo. And it is"
+    },
+    {
+      "start": 314.84,
+      "end": 317.23,
+      "text": "free and painless to grab, Apache 2"
+    },
+    {
+      "start": 317.24,
+      "end": 319.71,
+      "text": "licensed, running natively through MLX"
+    },
+    {
+      "start": 319.72,
+      "end": 321.909,
+      "text": "on any modern Mac and CUDA on Nvidia"
+    },
+    {
+      "start": 321.919,
+      "end": 326.03,
+      "text": "cards with a full 262,000 token context."
+    },
+    {
+      "start": 326.04,
+      "end": 328.63,
+      "text": "Download it, point a llama at it, done."
+    },
+    {
+      "start": 328.64,
+      "end": 330.43,
+      "text": "Prism ML calls this intelligence"
+    },
+    {
+      "start": 330.44,
+      "end": 332.39,
+      "text": "density, and I think it is the real"
+    },
+    {
+      "start": 332.4,
+      "end": 334.87,
+      "text": "story of the year. A model this smart"
+    },
+    {
+      "start": 334.88,
+      "end": 337.71,
+      "text": "used to demand a real GPU. Now it lives"
+    },
+    {
+      "start": 337.72,
+      "end": 339.27,
+      "text": "on your everyday card with room to"
+    },
+    {
+      "start": 339.28,
+      "end": 341.87,
+      "text": "spare, and every step it runs costs you"
+    },
+    {
+      "start": 341.88,
+      "end": 343.67,
+      "text": "exactly nothing."
+    },
+    {
+      "start": 343.68,
+      "end": 347.43,
+      "text": "Third tier, 24 to 96 GB. Now you have"
+    },
+    {
+      "start": 347.44,
+      "end": 350.83,
+      "text": "real room. A 32 gig 5090,"
+    },
+    {
+      "start": 350.84000000000003,
+      "end": 353.19,
+      "text": "a pair of cards, or a Mac with a big"
+    },
+    {
+      "start": 353.2,
+      "end": 355.27,
+      "text": "pool of unified memory. So, here you"
+    },
+    {
+      "start": 355.28,
+      "end": 357.03,
+      "text": "stop compressing and just run the good"
+    },
+    {
+      "start": 357.04,
+      "end": 359.11,
+      "text": "model at full quality. And the good"
+    },
+    {
+      "start": 359.12,
+      "end": 361.07,
+      "text": "model is the one Bonsai was carved from"
+    },
+    {
+      "start": 361.08,
+      "end": 364.47,
+      "text": "in the first place. Qwen 3.6 27 billion"
+    },
+    {
+      "start": 364.48,
+      "end": 366.59,
+      "text": "dents. Qwen calls it flagship level"
+    },
+    {
+      "start": 366.6,
+      "end": 368.63,
+      "text": "coding in a small model, and the scores"
+    },
+    {
+      "start": 368.64,
+      "end": 372.03,
+      "text": "back the brag. It posts 87.8 on GPQA"
+    },
+    {
+      "start": 372.04,
+      "end": 374.19,
+      "text": "Diamond and trades blows with models"
+    },
+    {
+      "start": 374.2,
+      "end": 375.95,
+      "text": "several times its size. At full"
+    },
+    {
+      "start": 375.96,
+      "end": 379.23,
+      "text": "precision, it wants about 54 GB, which"
+    },
+    {
+      "start": 379.24,
+      "end": 380.95,
+      "text": "finally fits here with headroom for a"
+    },
+    {
+      "start": 380.96,
+      "end": 382.67,
+      "text": "long context."
+    },
+    {
+      "start": 382.68,
+      "end": 384.19,
+      "text": "But, there is a hidden tax on these"
+    },
+    {
+      "start": 384.2,
+      "end": 386.11,
+      "text": "reasoning models. And if you run them"
+    },
+    {
+      "start": 386.12,
+      "end": 388.79,
+      "text": "locally, you feel it in your bones. They"
+    },
+    {
+      "start": 388.8,
+      "end": 390.79,
+      "text": "think out loud before answering,"
+    },
+    {
+      "start": 390.8,
+      "end": 393.19,
+      "text": "sometimes for thousands of tokens. And"
+    },
+    {
+      "start": 393.2,
+      "end": 395.07,
+      "text": "every one of those tokens is time you"
+    },
+    {
+      "start": 395.08,
+      "end": 397.23,
+      "text": "sit there and wait. So, a small European"
+    },
+    {
+      "start": 397.24,
+      "end": 398.95,
+      "text": "team called Bottlecap AI shipped a"
+    },
+    {
+      "start": 398.96,
+      "end": 401.35,
+      "text": "fine-tune to fix exactly that. And the"
+    },
+    {
+      "start": 401.36,
+      "end": 404.03,
+      "text": "co-founder is not a random name."
+    },
+    {
+      "start": 404.04,
+      "end": 406.31,
+      "text": "It is Tomas Mikolov, the researcher who"
+    },
+    {
+      "start": 406.32,
+      "end": 408.83,
+      "text": "invented Word2Vec. They call it Thinking"
+    },
+    {
+      "start": 408.84000000000003,
+      "end": 411.99,
+      "text": "Cap. Same model, same answers, but it"
+    },
+    {
+      "start": 412,
+      "end": 414.27,
+      "text": "learned to stop overthinking. About half"
+    },
+    {
+      "start": 414.28,
+      "end": 415.99,
+      "text": "the reasoning tokens on average for the"
+    },
+    {
+      "start": 416,
+      "end": 418.11,
+      "text": "same quality output. And on some"
+    },
+    {
+      "start": 418.12,
+      "end": 420.83,
+      "text": "prompts, it wraps up as much as 10 times"
+    },
+    {
+      "start": 420.84,
+      "end": 422.03,
+      "text": "faster."
+    },
+    {
+      "start": 422.04,
+      "end": 423.83,
+      "text": "I want to be precise here because the"
+    },
+    {
+      "start": 423.84,
+      "end": 426.23,
+      "text": "internet garbled this one. The model is"
+    },
+    {
+      "start": 426.24,
+      "end": 428.71,
+      "text": "no smarter. It reaches the same score"
+    },
+    {
+      "start": 428.72,
+      "end": 431.59,
+      "text": "with far less rambling, which, when you"
+    },
+    {
+      "start": 431.6,
+      "end": 433.23,
+      "text": "are the one waiting on it, is the"
+    },
+    {
+      "start": 433.24,
+      "end": 435.47,
+      "text": "upgrade you actually feel. So, on this"
+    },
+    {
+      "start": 435.48,
+      "end": 439.07,
+      "text": "rung, the move is a pair. Run Qwen 3.6"
+    },
+    {
+      "start": 439.08,
+      "end": 441.39,
+      "text": "at full quality, drop the Thinking Cap"
+    },
+    {
+      "start": 441.4,
+      "end": 443.71,
+      "text": "fine-tune on top, and you get flagship"
+    },
+    {
+      "start": 443.72,
+      "end": 445.59,
+      "text": "coding that answers in roughly half the"
+    },
+    {
+      "start": 445.6,
+      "end": 446.59,
+      "text": "time."
+    },
+    {
+      "start": 446.6,
+      "end": 448.67,
+      "text": "Who is this bracket for? The person who"
+    },
+    {
+      "start": 448.68,
+      "end": 450.67,
+      "text": "codes against a local model all day and"
+    },
+    {
+      "start": 450.68,
+      "end": 452.99,
+      "text": "is tired of watching it think. Same"
+    },
+    {
+      "start": 453,
+      "end": 454.79,
+      "text": "brains as the cloud sitting on your desk"
+    },
+    {
+      "start": 454.8,
+      "end": 456.71,
+      "text": "now without the long, awkward pause"
+    },
+    {
+      "start": 456.72,
+      "end": 459.43,
+      "text": "before every single answer. Fourth tier,"
+    },
+    {
+      "start": 459.44,
+      "end": 460.909,
+      "text": "and now we leave gaming cards behind"
+    },
+    {
+      "start": 460.919,
+      "end": 465.67,
+      "text": "entirely. 96 to 192 GB. This is"
+    },
+    {
+      "start": 465.68,
+      "end": 467.90999999999997,
+      "text": "workstation territory and it is defined"
+    },
+    {
+      "start": 467.92,
+      "end": 470.15,
+      "text": "by one specific little box that rewrote"
+    },
+    {
+      "start": 470.15999999999997,
+      "end": 472.31,
+      "text": "the math for the whole tier. Nvidia's"
+    },
+    {
+      "start": 472.32,
+      "end": 476.11,
+      "text": "DGX Spark, a 1.2 kg box that sits under"
+    },
+    {
+      "start": 476.12,
+      "end": 478.99,
+      "text": "your monitor with 128 GB of unified"
+    },
+    {
+      "start": 479,
+      "end": 481.63,
+      "text": "memory for around $4,000. It holds"
+    },
+    {
+      "start": 481.64,
+      "end": 484.43,
+      "text": "models a $4,000 graphics card cannot"
+    },
+    {
+      "start": 484.44,
+      "end": 486.35,
+      "text": "even load. And the model built for"
+    },
+    {
+      "start": 486.36,
+      "end": 489.43,
+      "text": "exactly this box landed on July 21st,"
+    },
+    {
+      "start": 489.44,
+      "end": 492.27,
+      "text": "Laguna S2.1 from a San Francisco startup"
+    },
+    {
+      "start": 492.28,
+      "end": 494.55,
+      "text": "called Poolside. An open weight coding"
+    },
+    {
+      "start": 494.56,
+      "end": 497.47,
+      "text": "model and a genuinely surprising one. It"
+    },
+    {
+      "start": 497.48,
+      "end": 500.51,
+      "text": "is 118 billion parameters, but only"
+    },
+    {
+      "start": 500.52,
+      "end": 502.63,
+      "text": "eight are active at any one time. That"
+    },
+    {
+      "start": 502.64,
+      "end": 504.83,
+      "text": "is a mixture of experts. Most of the"
+    },
+    {
+      "start": 504.84,
+      "end": 507.15,
+      "text": "model sits dormant on each token and"
+    },
+    {
+      "start": 507.16,
+      "end": 509.19,
+      "text": "that sparsity is exactly why it drops"
+    },
+    {
+      "start": 509.2,
+      "end": 512.43,
+      "text": "onto a single spark and still runs fast."
+    },
+    {
+      "start": 512.44,
+      "end": 514.23,
+      "text": "Here is the surprise."
+    },
+    {
+      "start": 514.24,
+      "end": 516.67,
+      "text": "On terminal bench, a long horizon coding"
+    },
+    {
+      "start": 516.68,
+      "end": 518.19,
+      "text": "test where an agent drives a real"
+    },
+    {
+      "start": 518.2,
+      "end": 521.5889999999999,
+      "text": "terminal, Laguna scores 70% and beats"
+    },
+    {
+      "start": 521.599,
+      "end": 524.27,
+      "text": "DeepSeek's flagship at 1.6 trillion"
+    },
+    {
+      "start": 524.28,
+      "end": 526.31,
+      "text": "parameters. It is beating a model"
+    },
+    {
+      "start": 526.32,
+      "end": 529.11,
+      "text": "roughly 14 times its size. Poolside is"
+    },
+    {
+      "start": 529.12,
+      "end": 531.11,
+      "text": "calling it the West's most capable open"
+    },
+    {
+      "start": 531.12,
+      "end": 533.51,
+      "text": "weight model and on its size class, the"
+    },
+    {
+      "start": 533.52,
+      "end": 535.35,
+      "text": "claim mostly holds up."
+    },
+    {
+      "start": 535.36,
+      "end": 538.19,
+      "text": "40% on Deep Sue, a harder test where"
+    },
+    {
+      "start": 538.2,
+      "end": 540.27,
+      "text": "trillion parameter open models routinely"
+    },
+    {
+      "start": 540.28,
+      "end": 542.67,
+      "text": "score under 10. And it is not just a"
+    },
+    {
+      "start": 542.68,
+      "end": 544.71,
+      "text": "number on a chart. In one unbroken"
+    },
+    {
+      "start": 544.72,
+      "end": 547.71,
+      "text": "50-minute run, no human help, Laguna"
+    },
+    {
+      "start": 547.72,
+      "end": 549.35,
+      "text": "built a working browser engine from an"
+    },
+    {
+      "start": 549.36,
+      "end": 551.63,
+      "text": "empty folder. Then proved it works by"
+    },
+    {
+      "start": 551.64,
+      "end": 553.91,
+      "text": "rendering pages against real Chromium"
+    },
+    {
+      "start": 553.92,
+      "end": 556.67,
+      "text": "and comparing pixel for pixel. It is not"
+    },
+    {
+      "start": 556.68,
+      "end": 559.71,
+      "text": "flawless and Poolside says so out loud."
+    },
+    {
+      "start": 559.72,
+      "end": 562.15,
+      "text": "It can overthink a simple task for ages"
+    },
+    {
+      "start": 562.16,
+      "end": 563.99,
+      "text": "and it sometimes fumbles an unfamiliar"
+    },
+    {
+      "start": 564,
+      "end": 566.15,
+      "text": "tool format. But an open model that"
+    },
+    {
+      "start": 566.16,
+      "end": 567.75,
+      "text": "argues with itself until the test"
+    },
+    {
+      "start": 567.76,
+      "end": 570.47,
+      "text": "actually pass is a genuinely new kind of"
+    },
+    {
+      "start": 570.48,
+      "end": 572.55,
+      "text": "thing to own. It ships with up to a"
+    },
+    {
+      "start": 572.56,
+      "end": 574.71,
+      "text": "million tokens of context and an open"
+    },
+    {
+      "start": 574.72,
+      "end": 576.63,
+      "text": "license and it went from the first day"
+    },
+    {
+      "start": 576.64,
+      "end": 579.51,
+      "text": "of training to launch in under 9 weeks."
+    },
+    {
+      "start": 579.52,
+      "end": 581.35,
+      "text": "That release cadence is its own kind of"
+    },
+    {
+      "start": 581.36,
+      "end": 584.47,
+      "text": "warning shot and getting it is easy. The"
+    },
+    {
+      "start": 584.48,
+      "end": 586.79,
+      "text": "weights are on hugging face from day one"
+    },
+    {
+      "start": 586.8,
+      "end": 590.75,
+      "text": "and vllm sglang and a llama all run it"
+    },
+    {
+      "start": 590.76,
+      "end": 592.51,
+      "text": "locally out of the box."
+    },
+    {
+      "start": 592.52,
+      "end": 594.39,
+      "text": "Nvidia even tuned it to serve on a"
+    },
+    {
+      "start": 594.4,
+      "end": 597.15,
+      "text": "single spark. This is built to be used,"
+    },
+    {
+      "start": 597.16,
+      "end": 599.55,
+      "text": "not admired. Frontier grade agentic"
+    },
+    {
+      "start": 599.56,
+      "end": 601.51,
+      "text": "coding, the kind that was locked inside"
+    },
+    {
+      "start": 601.52,
+      "end": 604.15,
+      "text": "a cloud API 6 months ago, now running on"
+    },
+    {
+      "start": 604.16,
+      "end": 606.67,
+      "text": "a box that fits in your backpack. Top"
+    },
+    {
+      "start": 606.68,
+      "end": 608.95,
+      "text": "rung 192"
+    },
+    {
+      "start": 608.96,
+      "end": 612.11,
+      "text": "to 384 GB. Two of those sparks lashed"
+    },
+    {
+      "start": 612.12,
+      "end": 614.67,
+      "text": "together or a proper server."
+    },
+    {
+      "start": 614.68,
+      "end": 616.75,
+      "text": "Very few people are up here, but if you"
+    },
+    {
+      "start": 616.76,
+      "end": 619.27,
+      "text": "are, the reward is the best open model"
+    },
+    {
+      "start": 619.28,
+      "end": 621.55,
+      "text": "on earth that is not from America or"
+    },
+    {
+      "start": 621.56,
+      "end": 622.67,
+      "text": "China."
+    },
+    {
+      "start": 622.68,
+      "end": 624.99,
+      "text": "It is called Motif 3 and it comes from a"
+    },
+    {
+      "start": 625,
+      "end": 628.91,
+      "text": "Korean startup, Motif Technologies. 314"
+    },
+    {
+      "start": 628.92,
+      "end": 630.91,
+      "text": "billion parameters, a mixture of"
+    },
+    {
+      "start": 630.92,
+      "end": 632.87,
+      "text": "experts, and this is the part one"
+    },
+    {
+      "start": 632.88,
+      "end": 635.27,
+      "text": "respect, built from scratch, not a"
+    },
+    {
+      "start": 635.28,
+      "end": 637.27,
+      "text": "fine-tune of somebody else's model."
+    },
+    {
+      "start": 637.28,
+      "end": 640.27,
+      "text": "Under the hood, it is a sparse design."
+    },
+    {
+      "start": 640.28,
+      "end": 643.35,
+      "text": "384 expert networks and only a handful"
+    },
+    {
+      "start": 643.36,
+      "end": 645.99,
+      "text": "fire on any given token. So, about 13"
+    },
+    {
+      "start": 646,
+      "end": 647.51,
+      "text": "billion parameters are doing the work at"
+    },
+    {
+      "start": 647.52,
+      "end": 650.79,
+      "text": "a time. Big brain, cheap to run, and"
+    },
+    {
+      "start": 650.8,
+      "end": 652.63,
+      "text": "here is where it sits."
+    },
+    {
+      "start": 652.64,
+      "end": 654.87,
+      "text": "On artificial analysis, the industry's"
+    },
+    {
+      "start": 654.88,
+      "end": 657.79,
+      "text": "main intelligence ranking, Motif 3 is"
+    },
+    {
+      "start": 657.8,
+      "end": 659.87,
+      "text": "the third best open weight model in the"
+    },
+    {
+      "start": 659.88,
+      "end": 661.63,
+      "text": "entire world."
+    },
+    {
+      "start": 661.64,
+      "end": 664.63,
+      "text": "Only Chimney K 3 and GLM 5.2 are ahead"
+    },
+    {
+      "start": 664.64,
+      "end": 666.63,
+      "text": "of it. If artificial analysis is new to"
+    },
+    {
+      "start": 666.64,
+      "end": 668.67,
+      "text": "you, it is the closest thing this field"
+    },
+    {
+      "start": 668.68,
+      "end": 670.75,
+      "text": "has to a neutral scoreboard."
+    },
+    {
+      "start": 670.76,
+      "end": 672.51,
+      "text": "One index that folds a batch of hard"
+    },
+    {
+      "start": 672.52,
+      "end": 674.35,
+      "text": "reasoning and a genetic test into a"
+    },
+    {
+      "start": 674.36,
+      "end": 675.87,
+      "text": "single number."
+    },
+    {
+      "start": 675.88,
+      "end": 677.43,
+      "text": "Third place on it as a model you can"
+    },
+    {
+      "start": 677.44,
+      "end": 679.91,
+      "text": "host yourself is a very big deal. And"
+    },
+    {
+      "start": 679.92,
+      "end": 681.91,
+      "text": "sit with the company it is keeping. The"
+    },
+    {
+      "start": 681.92,
+      "end": 684.35,
+      "text": "two models above it are Chinese giants."
+    },
+    {
+      "start": 684.36,
+      "end": 686.95,
+      "text": "Chimney K 3 alone is 2.8 trillion"
+    },
+    {
+      "start": 686.96,
+      "end": 689.19,
+      "text": "parameters. MoE is a fraction of that"
+    },
+    {
+      "start": 689.2,
+      "end": 690.91,
+      "text": "size from a firm most people have never"
+    },
+    {
+      "start": 690.92,
+      "end": 693.43,
+      "text": "heard of and it is right on their heels."
+    },
+    {
+      "start": 693.44,
+      "end": 696.35,
+      "text": "314 billion is a lot, but sparse and"
+    },
+    {
+      "start": 696.36,
+      "end": 699.23,
+      "text": "quantized to 8-bit, it lands around 300"
+    },
+    {
+      "start": 699.24,
+      "end": 700.87,
+      "text": "GB, and less if you push the"
+    },
+    {
+      "start": 700.88,
+      "end": 703.51,
+      "text": "quantization squarely inside a two spark"
+    },
+    {
+      "start": 703.52,
+      "end": 705.75,
+      "text": "or a single server budget. Why does a"
+    },
+    {
+      "start": 705.76,
+      "end": 707.39,
+      "text": "top three open model matter to you"
+    },
+    {
+      "start": 707.4,
+      "end": 709.63,
+      "text": "specifically? Because open weight means"
+    },
+    {
+      "start": 709.64,
+      "end": 711.59,
+      "text": "you can download it, run it behind your"
+    },
+    {
+      "start": 711.6,
+      "end": 713.75,
+      "text": "own walls, and nobody can rate limit"
+    },
+    {
+      "start": 713.76,
+      "end": 716.15,
+      "text": "you, price hike you, or take it away in"
+    },
+    {
+      "start": 716.16,
+      "end": 718.35,
+      "text": "a product update. That is the whole"
+    },
+    {
+      "start": 718.36,
+      "end": 721.59,
+      "text": "ladder, five brackets, five models, and"
+    },
+    {
+      "start": 721.6,
+      "end": 723.11,
+      "text": "every one of them ran on hardware you"
+    },
+    {
+      "start": 723.12,
+      "end": 725.63,
+      "text": "can sit on a desk. So, let's line them"
+    },
+    {
+      "start": 725.64,
+      "end": 729.07,
+      "text": "up one more time. 4 to 8 gigs, Nambeage."
+    },
+    {
+      "start": 729.08,
+      "end": 733.59,
+      "text": "8 to 24, Bonsai. 24 to 96, Qwen with a"
+    },
+    {
+      "start": 733.6,
+      "end": 736.91,
+      "text": "thinking cap. 96 to 192,"
+    },
+    {
+      "start": 736.92,
+      "end": 740.59,
+      "text": "Laguna on a spark. And above that, MoE."
+    },
+    {
+      "start": 740.6,
+      "end": 743.03,
+      "text": "Now, the honest catch, because I'm not"
+    },
+    {
+      "start": 743.04,
+      "end": 744.79,
+      "text": "going to oversell it, none of these are"
+    },
+    {
+      "start": 744.8,
+      "end": 747.67,
+      "text": "GPT-5.6 or Claude Fable."
+    },
+    {
+      "start": 747.68,
+      "end": 749.51,
+      "text": "The closed frontier still sits around 90"
+    },
+    {
+      "start": 749.52,
+      "end": 751.43,
+      "text": "on these coding tests, and local still"
+    },
+    {
+      "start": 751.44,
+      "end": 753.95,
+      "text": "trails it. This is the best you can own,"
+    },
+    {
+      "start": 753.96,
+      "end": 756.47,
+      "text": "not the best that exists. So, how do you"
+    },
+    {
+      "start": 756.48,
+      "end": 758.829,
+      "text": "choose? Simplest rule I can give you,"
+    },
+    {
+      "start": 758.8389999999999,
+      "end": 760.31,
+      "text": "find the biggest model that fits your"
+    },
+    {
+      "start": 760.32,
+      "end": 761.99,
+      "text": "memory with a little room left over for"
+    },
+    {
+      "start": 762,
+      "end": 764.35,
+      "text": "context, and run that one."
+    },
+    {
+      "start": 764.36,
+      "end": 767.19,
+      "text": "When it fits, bigger still wins. It is"
+    },
+    {
+      "start": 767.2,
+      "end": 769.03,
+      "text": "almost that boring, but the real"
+    },
+    {
+      "start": 769.04,
+      "end": 771.19,
+      "text": "headline is not any single model on this"
+    },
+    {
+      "start": 771.2,
+      "end": 773.31,
+      "text": "list. It is that the one that fits your"
+    },
+    {
+      "start": 773.32,
+      "end": 775.51,
+      "text": "box today is dramatically better than"
+    },
+    {
+      "start": 775.52,
+      "end": 777.47,
+      "text": "the one that fit it six months ago. The"
+    },
+    {
+      "start": 777.48,
+      "end": 780.51,
+      "text": "floor is rising, and it is rising fast."
+    },
+    {
+      "start": 780.52,
+      "end": 782.59,
+      "text": "And if you have never done this, do not"
+    },
+    {
+      "start": 782.6,
+      "end": 784.15,
+      "text": "overthink it."
+    },
+    {
+      "start": 784.16,
+      "end": 786.95,
+      "text": "A llama is one install and one command,"
+    },
+    {
+      "start": 786.96,
+      "end": 790.07,
+      "text": "a llama run, then the model name."
+    },
+    {
+      "start": 790.08,
+      "end": 791.91,
+      "text": "LM Studio is the same idea with a"
+    },
+    {
+      "start": 791.92,
+      "end": 794.55,
+      "text": "friendly window and a download button."
+    },
+    {
+      "start": 794.56,
+      "end": 796.39,
+      "text": "You are about 10 minutes from a private"
+    },
+    {
+      "start": 796.4,
+      "end": 798.75,
+      "text": "model, not a weekend, because every"
+    },
+    {
+      "start": 798.76,
+      "end": 801.15,
+      "text": "model here is a free download on Hugging"
+    },
+    {
+      "start": 801.16,
+      "end": 803.47,
+      "text": "Face. Pull the one for your bracket,"
+    },
+    {
+      "start": 803.48,
+      "end": 805.39,
+      "text": "load it up tonight, and go find out what"
+    },
+    {
+      "start": 805.4,
+      "end": 807.59,
+      "text": "your own hardware can actually do."
+    },
+    {
+      "start": 807.6,
+      "end": 809.19,
+      "text": "I really think it is going to surprise"
+    },
+    {
+      "start": 809.2,
+      "end": 811.31,
+      "text": "you. If this saved you a week of trial"
+    },
+    {
+      "start": 811.32,
+      "end": 813.79,
+      "text": "and error, subscribe. I break down the"
+    },
+    {
+      "start": 813.8,
+      "end": 816.11,
+      "text": "local AI stack here every week. I will"
+    },
+    {
+      "start": 816.12,
+      "end": 819.08,
+      "text": "see you on the next."
+    }
+  ]
+}

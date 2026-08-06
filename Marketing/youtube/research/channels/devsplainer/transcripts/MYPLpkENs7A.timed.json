@@ -1,0 +1,1431 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.47,
+      "text": "The most important piece of your AI"
+    },
+    {
+      "start": 2.48,
+      "end": 4.67,
+      "text": "stack might be one you never wrote a"
+    },
+    {
+      "start": 4.68,
+      "end": 7.39,
+      "text": "line off. It sits between your app and"
+    },
+    {
+      "start": 7.4,
+      "end": 9.51,
+      "text": "every model you call, and the day it"
+    },
+    {
+      "start": 9.52,
+      "end": 12.15,
+      "text": "goes down, every AI feature you have"
+    },
+    {
+      "start": 12.16,
+      "end": 14.75,
+      "text": "goes down with [music] it. Teams are all"
+    },
+    {
+      "start": 14.76,
+      "end": 17.03,
+      "text": "adding this when their AI stack grows"
+    },
+    {
+      "start": 17.04,
+      "end": 20.11,
+      "text": "mature. It's the AI gateway, and by the"
+    },
+    {
+      "start": 20.12,
+      "end": 22.31,
+      "text": "end of this video, you'll know exactly"
+    },
+    {
+      "start": 22.32,
+      "end": 24.23,
+      "text": "what it does, when [music] you actually"
+    },
+    {
+      "start": 24.24,
+      "end": 26.63,
+      "text": "need one, and the one trade-off that can"
+    },
+    {
+      "start": 26.64,
+      "end": 28.95,
+      "text": "make a cheaper setup cost you [music]"
+    },
+    {
+      "start": 28.96,
+      "end": 29.95,
+      "text": "more."
+    },
+    {
+      "start": 29.96,
+      "end": 32.55,
+      "text": "You usually get a gateway by accident."
+    },
+    {
+      "start": 32.56,
+      "end": 34.91,
+      "text": "On day one, your app just calls a single"
+    },
+    {
+      "start": 34.92,
+      "end": 38.39,
+      "text": "model with an API key. Then, it grows."
+    },
+    {
+      "start": 38.4,
+      "end": 40.27,
+      "text": "You add a second provider because the"
+    },
+    {
+      "start": 40.28,
+      "end": 42.55,
+      "text": "first one is getting rate limited. A"
+    },
+    {
+      "start": 42.56,
+      "end": 44.79,
+      "text": "teammate wires the model into a second"
+    },
+    {
+      "start": 44.8,
+      "end": 47.83,
+      "text": "service. Someone hardcodes an API key"
+    },
+    {
+      "start": 47.84,
+      "end": 50.51,
+      "text": "into a repo, then copies it into three"
+    },
+    {
+      "start": 50.52,
+      "end": 53.11,
+      "text": "more. Retry logic gets written from"
+    },
+    {
+      "start": 53.12,
+      "end": 55.95,
+      "text": "scratch four separate times, slightly"
+    },
+    {
+      "start": 55.96,
+      "end": 58.23,
+      "text": "wrong each time. And when the invoice"
+    },
+    {
+      "start": 58.24,
+      "end": 60.31,
+      "text": "comes in, nobody can tell you which"
+    },
+    {
+      "start": 60.32,
+      "end": 63.11,
+      "text": "feature spent the money. About 3 months"
+    },
+    {
+      "start": 63.12,
+      "end": 66.19,
+      "text": "in, every team hits the same wall. Five"
+    },
+    {
+      "start": 66.2,
+      "end": 68.31,
+      "text": "different services all talking to the"
+    },
+    {
+      "start": 68.32,
+      "end": 71.75,
+      "text": "model directly without any shared logic."
+    },
+    {
+      "start": 71.76,
+      "end": 73.99,
+      "text": "One provider gets its model pulled by"
+    },
+    {
+      "start": 74,
+      "end": 76.15,
+      "text": "the government, and half your product"
+    },
+    {
+      "start": 76.16,
+      "end": 78.91,
+      "text": "goes dark with it. Lucky thing for you,"
+    },
+    {
+      "start": 78.92,
+      "end": 80.78999999999999,
+      "text": "these are all plumbing problems that"
+    },
+    {
+      "start": 80.8,
+      "end": 82.52,
+      "text": "were there before AI."
+    },
+    {
+      "start": 82.53,
+      "end": 82.78999999999999,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 82.8,
+      "end": 85.51,
+      "text": "&gt;&gt; Regular web APIs ran into this mess a"
+    },
+    {
+      "start": 85.52,
+      "end": 88.11,
+      "text": "decade ago, back when auth and rate"
+    },
+    {
+      "start": 88.12,
+      "end": 90.47,
+      "text": "limiting and logging got copied, pasted"
+    },
+    {
+      "start": 90.48,
+      "end": 92.95,
+      "text": "into every service until someone finally"
+    },
+    {
+      "start": 92.96000000000001,
+      "end": 95.71000000000001,
+      "text": "pulled them out into one shared layer."
+    },
+    {
+      "start": 95.72,
+      "end": 98.99000000000001,
+      "text": "That layer was the API gateway. The AI"
+    },
+    {
+      "start": 99,
+      "end": 101.39,
+      "text": "gateway is the same idea, but pointed at"
+    },
+    {
+      "start": 101.4,
+      "end": 104.39,
+      "text": "models. What does this shared layer do?"
+    },
+    {
+      "start": 104.4,
+      "end": 106.07,
+      "text": "Strip away the marketing, and there are"
+    },
+    {
+      "start": 106.08,
+      "end": 108.78999999999999,
+      "text": "five jobs it's really there for. Most"
+    },
+    {
+      "start": 108.8,
+      "end": 111.63,
+      "text": "importantly, it's a single standard way"
+    },
+    {
+      "start": 111.64,
+      "end": 114.67,
+      "text": "to talk to every model. Normally, every"
+    },
+    {
+      "start": 114.68,
+      "end": 116.99000000000001,
+      "text": "provider has a different request format"
+    },
+    {
+      "start": 117,
+      "end": 119.63,
+      "text": "and its own quirks and failure modes."
+    },
+    {
+      "start": 119.64,
+      "end": 122.19,
+      "text": "The gateway hides all of that behind one"
+    },
+    {
+      "start": 122.2,
+      "end": 124.75,
+      "text": "interface. Almost everyone copied the"
+    },
+    {
+      "start": 124.76,
+      "end": 127.71,
+      "text": "format OpenAI shipped first. So, in"
+    },
+    {
+      "start": 127.72,
+      "end": 129.51,
+      "text": "practice, you point your code at the"
+    },
+    {
+      "start": 129.52,
+      "end": 132.35,
+      "text": "gateway, change one line, and swap from"
+    },
+    {
+      "start": 132.36,
+      "end": 134.35,
+      "text": "one model to another by editing a"
+    },
+    {
+      "start": 134.36,
+      "end": 135.47,
+      "text": "string."
+    },
+    {
+      "start": 135.48,
+      "end": 137.51,
+      "text": "Second, it [music] holds the keys."
+    },
+    {
+      "start": 137.52,
+      "end": 139.23,
+      "text": "Instead of the real provider keys"
+    },
+    {
+      "start": 139.24,
+      "end": 141.39,
+      "text": "floating around your code base, they"
+    },
+    {
+      "start": 141.4,
+      "end": 144.27,
+      "text": "live in the gateway. Each app gets its"
+    },
+    {
+      "start": 144.28,
+      "end": 146.47,
+      "text": "own throwaway key that the gateway"
+    },
+    {
+      "start": 146.48,
+      "end": 148.47,
+      "text": "trades for the real [music] one. Lose"
+    },
+    {
+      "start": 148.48,
+      "end": 151.63,
+      "text": "one, revoke it, nobody else notices."
+    },
+    {
+      "start": 151.64,
+      "end": 153.47,
+      "text": "Third, it retries [music] and fails"
+    },
+    {
+      "start": 153.48,
+      "end": 156.11,
+      "text": "over. When a provider throws an error or"
+    },
+    {
+      "start": 156.12,
+      "end": 158.43,
+      "text": "starts rate limiting, the gateway can"
+    },
+    {
+      "start": 158.44,
+      "end": 161.15,
+      "text": "retry on its own or reroute the request"
+    },
+    {
+      "start": 161.16,
+      "end": 163.55,
+      "text": "to a backup model before you bother your"
+    },
+    {
+      "start": 163.56,
+      "end": 165.51,
+      "text": "users with anything."
+    },
+    {
+      "start": 165.52,
+      "end": 167.59,
+      "text": "Fourth, it keeps track of everything"
+    },
+    {
+      "start": 167.6,
+      "end": 170.35,
+      "text": "passing it. Every token in, every token"
+    },
+    {
+      "start": 170.36,
+      "end": 172.67000000000002,
+      "text": "out, tagged by team, by app, [music] by"
+    },
+    {
+      "start": 172.68,
+      "end": 175.03,
+      "text": "model. That's how you set a budget and"
+    },
+    {
+      "start": 175.04,
+      "end": 177.11,
+      "text": "enforce it instead of finding out at the"
+    },
+    {
+      "start": 177.12,
+      "end": 179.79,
+      "text": "end of the month. And fifth, because"
+    },
+    {
+      "start": 179.8,
+      "end": 182.07,
+      "text": "every request flows through it, it's the"
+    },
+    {
+      "start": 182.08,
+      "end": 184.229,
+      "text": "natural place to watch everything at"
+    },
+    {
+      "start": 184.239,
+      "end": 187.79,
+      "text": "once. Latency, errors, and spend on one"
+    },
+    {
+      "start": 187.8,
+      "end": 189.15,
+      "text": "dashboard."
+    },
+    {
+      "start": 189.16,
+      "end": 191.63,
+      "text": "Think of it less like a smart assistant"
+    },
+    {
+      "start": 191.64,
+      "end": 193.22899999999998,
+      "text": "and more like the front desk of a"
+    },
+    {
+      "start": 193.239,
+      "end": 195.67,
+      "text": "building. Everything checks in there,"
+    },
+    {
+      "start": 195.68,
+      "end": 197.47,
+      "text": "gets logged, and gets pointed to the"
+    },
+    {
+      "start": 197.48,
+      "end": 200.79,
+      "text": "right room. Boring and load-bearing."
+    },
+    {
+      "start": 200.8,
+      "end": 202.99,
+      "text": "Now for the confusing part, because this"
+    },
+    {
+      "start": 203,
+      "end": 204.79,
+      "text": "corner of the industry has a naming"
+    },
+    {
+      "start": 204.8,
+      "end": 208.50900000000001,
+      "text": "problem. You'll see AI gateway and LLM"
+    },
+    {
+      "start": 208.519,
+      "end": 211.19,
+      "text": "gateway used for the same thing. If you"
+    },
+    {
+      "start": 211.2,
+      "end": 214.15,
+      "text": "want to get specific, LLM gateway leans"
+    },
+    {
+      "start": 214.16,
+      "end": 217.63,
+      "text": "developer and routing, while AI gateway"
+    },
+    {
+      "start": 217.64,
+      "end": 220.072,
+      "text": "leans enterprise and governance, and now"
+    },
+    {
+      "start": 220.082,
+      "end": 222.11,
+      "text": "[music] stretches to cover images,"
+    },
+    {
+      "start": 222.12,
+      "end": 224.39,
+      "text": "audio, and agents. It's fine to"
+    },
+    {
+      "start": 224.4,
+      "end": 226.622,
+      "text": "interchange them in most cases."
+    },
+    {
+      "start": 226.632,
+      "end": 226.87,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 226.88,
+      "end": 229.39,
+      "text": "&gt;&gt; Then, there's the plain API gateway, the"
+    },
+    {
+      "start": 229.4,
+      "end": 232.47,
+      "text": "decade-old ancestor I mentioned. An AI"
+    },
+    {
+      "start": 232.48,
+      "end": 234.87,
+      "text": "gateway is that pattern specialized for"
+    },
+    {
+      "start": 234.88,
+      "end": 237.27,
+      "text": "model traffic. Some products are"
+    },
+    {
+      "start": 237.28,
+      "end": 240.19,
+      "text": "literally an old API gateway with AI"
+    },
+    {
+      "start": 240.2,
+      "end": 242.59,
+      "text": "plugins bolted on. The difference is"
+    },
+    {
+      "start": 242.6,
+      "end": 245.31,
+      "text": "that the AI version reads the prompt. It"
+    },
+    {
+      "start": 245.32,
+      "end": 247.39,
+      "text": "understands tokens [music] and streaming"
+    },
+    {
+      "start": 247.4,
+      "end": 249.43,
+      "text": "and model names where the old one just"
+    },
+    {
+      "start": 249.44,
+      "end": 251.71,
+      "text": "saw web requests go by."
+    },
+    {
+      "start": 251.72,
+      "end": 254.19,
+      "text": "Two more you'll bump into. An MCP"
+    },
+    {
+      "start": 254.2,
+      "end": 256.71,
+      "text": "gateway governs what an agent is allowed"
+    },
+    {
+      "start": 256.72,
+      "end": 259.27,
+      "text": "to do, meaning the tools it calls, not"
+    },
+    {
+      "start": 259.28,
+      "end": 261.87,
+      "text": "the model it talks to. And an inference"
+    },
+    {
+      "start": 261.88,
+      "end": 263.95,
+      "text": "gateway is a lower level thing that"
+    },
+    {
+      "start": 263.96,
+      "end": 267.27,
+      "text": "spreads traffic across your own GPUs."
+    },
+    {
+      "start": 267.28,
+      "end": 268.79,
+      "text": "Are you still with me?"
+    },
+    {
+      "start": 268.8,
+      "end": 271.47,
+      "text": "Underneath all that, the term AI gateway"
+    },
+    {
+      "start": 271.48,
+      "end": 274.35,
+      "text": "is doing two jobs at once. Half the time"
+    },
+    {
+      "start": 274.36,
+      "end": 276.27,
+      "text": "it means a unified proxy that"
+    },
+    {
+      "start": 276.28,
+      "end": 279.75,
+      "text": "centralizes keys, cost, and logging. The"
+    },
+    {
+      "start": 279.76,
+      "end": 282.31,
+      "text": "other half it means something smarter, a"
+    },
+    {
+      "start": 282.32,
+      "end": 284.75,
+      "text": "router that picks the best model for"
+    },
+    {
+      "start": 284.76,
+      "end": 287.11,
+      "text": "each request. Those are two different"
+    },
+    {
+      "start": 287.12,
+      "end": 289.11,
+      "text": "products wearing one name, which is"
+    },
+    {
+      "start": 289.12,
+      "end": 291.79,
+      "text": "where most of the confusion comes from."
+    },
+    {
+      "start": 291.8,
+      "end": 293.75,
+      "text": "That second job, routing, is where the"
+    },
+    {
+      "start": 293.76,
+      "end": 295.87,
+      "text": "real fight is. It comes [music] in two"
+    },
+    {
+      "start": 295.88,
+      "end": 298.95,
+      "text": "flavors. The first is dumb on purpose"
+    },
+    {
+      "start": 298.96,
+      "end": 301.59,
+      "text": "and what most production systems run."
+    },
+    {
+      "start": 301.6,
+      "end": 304.03,
+      "text": "You write the rules, send cheap requests"
+    },
+    {
+      "start": 304.04,
+      "end": 306.19,
+      "text": "here, send this customer's traffic"
+    },
+    {
+      "start": 306.2,
+      "end": 308.35,
+      "text": "there, and if the main model is down,"
+    },
+    {
+      "start": 308.36,
+      "end": 310.909,
+      "text": "fall back to that one. It's predictable"
+    },
+    {
+      "start": 310.919,
+      "end": 313.909,
+      "text": "and easy to debug. The second flavor is"
+    },
+    {
+      "start": 313.919,
+      "end": 316.15,
+      "text": "smart routing, where the gateway tries"
+    },
+    {
+      "start": 316.16,
+      "end": 318.95,
+      "text": "to read each prompt, guess how hard it"
+    },
+    {
+      "start": 318.96,
+      "end": 321.31,
+      "text": "is, then send the easy questions to a"
+    },
+    {
+      "start": 321.32,
+      "end": 323.83,
+      "text": "cheap model, and save the expensive one"
+    },
+    {
+      "start": 323.84,
+      "end": 326.27,
+      "text": "for the tricky stuff. This routing is"
+    },
+    {
+      "start": 326.28,
+      "end": 328.23,
+      "text": "also increasingly happening in your"
+    },
+    {
+      "start": 328.24,
+      "end": 330.95,
+      "text": "favorite frontier coding harness. When"
+    },
+    {
+      "start": 330.96,
+      "end": 334.07,
+      "text": "it works, the savings are real. An open"
+    },
+    {
+      "start": 334.08,
+      "end": 337.31,
+      "text": "research project called Route LLM showed"
+    },
+    {
+      "start": 337.32,
+      "end": 339.99,
+      "text": "you could hold around 95% of a"
+    },
+    {
+      "start": 340,
+      "end": 342.95,
+      "text": "frontier's model's quality while sending"
+    },
+    {
+      "start": 342.96,
+      "end": 344.95,
+      "text": "only a quarter of the requests [music]"
+    },
+    {
+      "start": 344.96,
+      "end": 347.47,
+      "text": "its way. Everything else went to a model"
+    },
+    {
+      "start": 347.48,
+      "end": 349.67,
+      "text": "a fraction of the price, and most people"
+    },
+    {
+      "start": 349.68,
+      "end": 351.67,
+      "text": "couldn't tell the difference. And when"
+    },
+    {
+      "start": 351.68,
+      "end": 353.43,
+      "text": "the researchers later swapped in"
+    },
+    {
+      "start": 353.44,
+      "end": 355.659,
+      "text": "different models on both ends, the"
+    },
+    {
+      "start": 355.669,
+      "end": 357.55,
+      "text": "[music] routing still held up, which is"
+    },
+    {
+      "start": 357.56,
+      "end": 359.75,
+      "text": "a big part of why the idea gets taken"
+    },
+    {
+      "start": 359.76,
+      "end": 361.15,
+      "text": "seriously."
+    },
+    {
+      "start": 361.16,
+      "end": 364.07,
+      "text": "You arrive at a catch-22. To reliably"
+    },
+    {
+      "start": 364.08,
+      "end": 366.19,
+      "text": "know a prompt is too hard for the cheap"
+    },
+    {
+      "start": 366.2,
+      "end": 368.23,
+      "text": "model, your little router has to"
+    },
+    {
+      "start": 368.24,
+      "end": 370.51,
+      "text": "understand that prompt about as well as"
+    },
+    {
+      "start": 370.52,
+      "end": 372.71,
+      "text": "the expensive model would. And if it"
+    },
+    {
+      "start": 372.72,
+      "end": 374.27,
+      "text": "could do that, you wouldn't [music] need"
+    },
+    {
+      "start": 374.28,
+      "end": 376.51,
+      "text": "the expensive model. The smarter the"
+    },
+    {
+      "start": 376.52,
+      "end": 378.51,
+      "text": "routing gets, the closer it creeps to"
+    },
+    {
+      "start": 378.52,
+      "end": 380.83,
+      "text": "being just another big model sitting in"
+    },
+    {
+      "start": 380.84,
+      "end": 383.03,
+      "text": "front of your big model. It's still"
+    },
+    {
+      "start": 383.04,
+      "end": 385.27,
+      "text": "useful to have since a lot of traffic is"
+    },
+    {
+      "start": 385.28,
+      "end": 387.59,
+      "text": "obviously easy, and a cheap check"
+    },
+    {
+      "start": 387.6,
+      "end": 390.15,
+      "text": "catches it. Just don't expect the free"
+    },
+    {
+      "start": 390.16,
+      "end": 392.51,
+      "text": "lunch the pitch decks imply."
+    },
+    {
+      "start": 392.52,
+      "end": 393.87,
+      "text": "Which brings us to the trade-off I"
+    },
+    {
+      "start": 393.88,
+      "end": 395.75,
+      "text": "promised, the one that turns cheaper"
+    },
+    {
+      "start": 395.76,
+      "end": 397.909,
+      "text": "model into a bigger bill."
+    },
+    {
+      "start": 397.919,
+      "end": 400.51,
+      "text": "Modern AI tools lean hard on a warm"
+    },
+    {
+      "start": 400.52,
+      "end": 402.59000000000003,
+      "text": "cache. When you're deep in a session"
+    },
+    {
+      "start": 402.6,
+      "end": 404.15,
+      "text": "with one model, a lot of your"
+    },
+    {
+      "start": 404.15999999999997,
+      "end": 406.51,
+      "text": "conversation is already sitting in fast"
+    },
+    {
+      "start": 406.52,
+      "end": 409.03,
+      "text": "memory on the provider's side, ready to"
+    },
+    {
+      "start": 409.04,
+      "end": 411.07,
+      "text": "reuse. So, you're not paying full"
+    },
+    {
+      "start": 411.08,
+      "end": 413.71,
+      "text": "freight to reprocess it every turn."
+    },
+    {
+      "start": 413.72,
+      "end": 415.11,
+      "text": "There's another video for that if you"
+    },
+    {
+      "start": 415.12,
+      "end": 417.39,
+      "text": "want to know more. Now, let a smart"
+    },
+    {
+      "start": 417.4,
+      "end": 419.11,
+      "text": "router switch you to a different model"
+    },
+    {
+      "start": 419.12,
+      "end": 421.79,
+      "text": "mid-conversation to save a few cents,"
+    },
+    {
+      "start": 421.8,
+      "end": 423.779,
+      "text": "that new model has no warm cache for"
+    },
+    {
+      "start": 423.789,
+      "end": 425.55,
+      "text": "[music] you. It has to read the entire"
+    },
+    {
+      "start": 425.56,
+      "end": 428.23,
+      "text": "conversation again, cold. The one-time"
+    },
+    {
+      "start": 428.24,
+      "end": 430.15,
+      "text": "cost of that reload can swallow the"
+    },
+    {
+      "start": 430.16,
+      "end": 431.95,
+      "text": "savings from the cheaper model [music]"
+    },
+    {
+      "start": 431.96,
+      "end": 434.31,
+      "text": "and then some. You optimized the price"
+    },
+    {
+      "start": 434.32,
+      "end": 436.51,
+      "text": "per token and blew up the token count"
+    },
+    {
+      "start": 436.52,
+      "end": 437.51,
+      "text": "instead. [music]"
+    },
+    {
+      "start": 437.52,
+      "end": 439.75,
+      "text": "The fix is to make the router aware of"
+    },
+    {
+      "start": 439.76,
+      "end": 442.55,
+      "text": "the cache. Once a model is warm, raise"
+    },
+    {
+      "start": 442.56,
+      "end": 444.71,
+      "text": "the bar for switching away from it, so"
+    },
+    {
+      "start": 444.72,
+      "end": 446.75,
+      "text": "you only jump ship when the savings"
+    },
+    {
+      "start": 446.76,
+      "end": 449.59,
+      "text": "clearly beat the cost of going cold."
+    },
+    {
+      "start": 449.6,
+      "end": 451.83,
+      "text": "It's a small idea that plenty of naive"
+    },
+    {
+      "start": 451.84,
+      "end": 454.51,
+      "text": "routers miss, and it's exactly why just"
+    },
+    {
+      "start": 454.52,
+      "end": 456.53,
+      "text": "route to whatever's cheapest is worse"
+    },
+    {
+      "start": 456.54,
+      "end": 458.83,
+      "text": "[music] advice than it sounds. Caching"
+    },
+    {
+      "start": 458.84000000000003,
+      "end": 460.99,
+      "text": "shows up one more place. It's called"
+    },
+    {
+      "start": 461,
+      "end": 463.95,
+      "text": "semantic caching. A normal cache only"
+    },
+    {
+      "start": 463.96,
+      "end": 466.51,
+      "text": "reuses an answer if the new question is"
+    },
+    {
+      "start": 466.52,
+      "end": 469.19,
+      "text": "character-for-character identical."
+    },
+    {
+      "start": 469.2,
+      "end": 472.07,
+      "text": "Semantic caching goes further. It turns"
+    },
+    {
+      "start": 472.08,
+      "end": 474.11,
+      "text": "each prompt into a string of numbers"
+    },
+    {
+      "start": 474.12,
+      "end": 476.63,
+      "text": "that captures its meaning, then checks"
+    },
+    {
+      "start": 476.64,
+      "end": 479.03,
+      "text": "whether any past question means roughly"
+    },
+    {
+      "start": 479.04,
+      "end": 481.43,
+      "text": "the same thing. Ask, [music] \"What's the"
+    },
+    {
+      "start": 481.44,
+      "end": 484.23,
+      "text": "capital of France?\" and \"France capital"
+    },
+    {
+      "start": 484.24,
+      "end": 486.005,
+      "text": "city, please.\" and it can serve the"
+    },
+    {
+      "start": 486.015,
+      "end": 488.59,
+      "text": "[music] same cached answer to both. When"
+    },
+    {
+      "start": 488.6,
+      "end": 491.11,
+      "text": "it hits, you skip the model entirely."
+    },
+    {
+      "start": 491.12,
+      "end": 493.99,
+      "text": "Near zero cost, [music] instant reply."
+    },
+    {
+      "start": 494,
+      "end": 496.35,
+      "text": "The danger hides in the word roughly."
+    },
+    {
+      "start": 496.36,
+      "end": 498.63,
+      "text": "Set the similarity bar too loose and it"
+    },
+    {
+      "start": 498.64,
+      "end": 500.47,
+      "text": "starts matching questions that look"
+    },
+    {
+      "start": 500.48,
+      "end": 503.15,
+      "text": "alike but mean opposite things. Sort"
+    },
+    {
+      "start": 503.16,
+      "end": 505.55,
+      "text": "ascending and sort descending land"
+    },
+    {
+      "start": 505.56,
+      "end": 507.19,
+      "text": "almost on top of each other in that"
+    },
+    {
+      "start": 507.2,
+      "end": 509.79,
+      "text": "number space. Match them and the gateway"
+    },
+    {
+      "start": 509.8,
+      "end": 512.51,
+      "text": "hands someone the wrong answer. Pylon's"
+    },
+    {
+      "start": 512.52,
+      "end": 514.51,
+      "text": "stale data where a price changed [music]"
+    },
+    {
+      "start": 514.52,
+      "end": 517.029,
+      "text": "but the cache didn't, plus the fact that"
+    },
+    {
+      "start": 517.039,
+      "end": 519.11,
+      "text": "upgrading your embedding model can wipe"
+    },
+    {
+      "start": 519.12,
+      "end": 521.39,
+      "text": "out the whole cache without warning, and"
+    },
+    {
+      "start": 521.4,
+      "end": 523.149,
+      "text": "you've got a feature that dazzles in a"
+    },
+    {
+      "start": 523.159,
+      "end": 525.91,
+      "text": "demo and frays nerves in production."
+    },
+    {
+      "start": 525.92,
+      "end": 528.63,
+      "text": "Useful, but a knob to turn carefully."
+    },
+    {
+      "start": 528.64,
+      "end": 530.79,
+      "text": "Not a switch to leave on."
+    },
+    {
+      "start": 530.8,
+      "end": 532.51,
+      "text": "For all that you get out of it, the"
+    },
+    {
+      "start": 532.52,
+      "end": 534.51,
+      "text": "layer costs you something, [music] too."
+    },
+    {
+      "start": 534.52,
+      "end": 537.79,
+      "text": "It adds a hop. Every request now detours"
+    },
+    {
+      "start": 537.8,
+      "end": 539.47,
+      "text": "through the gateway before it reaches"
+    },
+    {
+      "start": 539.48,
+      "end": 542.03,
+      "text": "the model. In practice, that overhead is"
+    },
+    {
+      "start": 542.04,
+      "end": 544.07,
+      "text": "tiny next to the seconds the model"
+    },
+    {
+      "start": 544.08,
+      "end": 546.63,
+      "text": "itself takes, and a well-run gateway at"
+    },
+    {
+      "start": 546.64,
+      "end": 548.79,
+      "text": "the edge can even come back faster"
+    },
+    {
+      "start": 548.8,
+      "end": 550.31,
+      "text": "thanks [music] to better pipes to the"
+    },
+    {
+      "start": 550.32,
+      "end": 552.31,
+      "text": "providers. But on a truly"
+    },
+    {
+      "start": 552.32,
+      "end": 554.87,
+      "text": "latency-critical path, measure it"
+    },
+    {
+      "start": 554.88,
+      "end": 557.11,
+      "text": "yourself. The bigger issue is that"
+    },
+    {
+      "start": 557.12,
+      "end": 559.47,
+      "text": "you've built a single point of failure."
+    },
+    {
+      "start": 559.48,
+      "end": 561.03,
+      "text": "Everything routes through this one"
+    },
+    {
+      "start": 561.04,
+      "end": 564.47,
+      "text": "layer, so if it all falls over, every AI"
+    },
+    {
+      "start": 564.48,
+      "end": 566.91,
+      "text": "feature you have falls over with it. The"
+    },
+    {
+      "start": 566.92,
+      "end": 569.31,
+      "text": "thing you added for reliability becomes"
+    },
+    {
+      "start": 569.32,
+      "end": 571.51,
+      "text": "the thing that can take you down. You"
+    },
+    {
+      "start": 571.52,
+      "end": 574.27,
+      "text": "plan for that with backups and ideally a"
+    },
+    {
+      "start": 574.28,
+      "end": 576.55,
+      "text": "code path that can skip the gateway and"
+    },
+    {
+      "start": 576.56,
+      "end": 579.15,
+      "text": "call the provider directly in a pinch."
+    },
+    {
+      "start": 579.16,
+      "end": 581.55,
+      "text": "Talk about gateway-ception."
+    },
+    {
+      "start": 581.56,
+      "end": 583.71,
+      "text": "There's a trust cost, too. This layer"
+    },
+    {
+      "start": 583.72,
+      "end": 586.27,
+      "text": "holds every one of your API keys in one"
+    },
+    {
+      "start": 586.28,
+      "end": 588.75,
+      "text": "place. Last year, the most popular"
+    },
+    {
+      "start": 588.76,
+      "end": 591.79,
+      "text": "open-source gateway, LightLLM, got hit"
+    },
+    {
+      "start": 591.8,
+      "end": 593.47,
+      "text": "by a supply chain [music] attack where"
+    },
+    {
+      "start": 593.48,
+      "end": 595.63,
+      "text": "compromised code went straight after"
+    },
+    {
+      "start": 595.64,
+      "end": 598.15,
+      "text": "those keys. A blunt reminder that the"
+    },
+    {
+      "start": 598.16,
+      "end": 600.55,
+      "text": "box holding every key is the box"
+    },
+    {
+      "start": 600.56,
+      "end": 603.15,
+      "text": "attackers most want to crack. So, when"
+    },
+    {
+      "start": 603.16,
+      "end": 605.59,
+      "text": "do you need an AI gateway? Plenty of"
+    },
+    {
+      "start": 605.6,
+      "end": 608.19,
+      "text": "teams really don't. If all you call is"
+    },
+    {
+      "start": 608.2,
+      "end": 610.55,
+      "text": "one provider from one app, call the"
+    },
+    {
+      "start": 610.56,
+      "end": 612.95,
+      "text": "model directly and skip all of this. A"
+    },
+    {
+      "start": 612.96,
+      "end": 614.47,
+      "text": "gateway's what you add when your"
+    },
+    {
+      "start": 614.48,
+      "end": 616.99,
+      "text": "situation turns plural. A second"
+    },
+    {
+      "start": 617,
+      "end": 619.07,
+      "text": "provider, a second service calling"
+    },
+    {
+      "start": 619.08,
+      "end": 621.75,
+      "text": "models, the first surprise invoice, or"
+    },
+    {
+      "start": 621.76,
+      "end": 623.557,
+      "text": "the first time someone asked which"
+    },
+    {
+      "start": 623.567,
+      "end": 625.91,
+      "text": "[music] team spent all the money. The"
+    },
+    {
+      "start": 625.92,
+      "end": 628.11,
+      "text": "demo everyone leads with, one key for"
+    },
+    {
+      "start": 628.12,
+      "end": 630.107,
+      "text": "many models, is the least interesting"
+    },
+    {
+      "start": 630.117,
+      "end": 632.11,
+      "text": "[music] reason this layer exists."
+    },
+    {
+      "start": 632.12,
+      "end": 634.35,
+      "text": "Calling a model stopped being something"
+    },
+    {
+      "start": 634.36,
+      "end": 636.51,
+      "text": "one app does on its own and turned into"
+    },
+    {
+      "start": 636.52,
+      "end": 638.79,
+      "text": "shared infrastructure the whole company"
+    },
+    {
+      "start": 638.8,
+      "end": 640.99,
+      "text": "leans on. Once you've got multiple"
+    },
+    {
+      "start": 641,
+      "end": 642.99,
+      "text": "models, real money on the line, and"
+    },
+    {
+      "start": 643,
+      "end": 644.75,
+      "text": "rules about what's allowed, [music]"
+    },
+    {
+      "start": 644.76,
+      "end": 646.87,
+      "text": "those concerns stop belonging in every"
+    },
+    {
+      "start": 646.88,
+      "end": 648.99,
+      "text": "service and start belonging in one"
+    },
+    {
+      "start": 649,
+      "end": 651.11,
+      "text": "place. Whether we keep calling that"
+    },
+    {
+      "start": 651.12,
+      "end": 653.687,
+      "text": "place an AI gateway or it gets swallowed"
+    },
+    {
+      "start": 653.697,
+      "end": 655.75,
+      "text": "[music] into the tools you already run,"
+    },
+    {
+      "start": 655.76,
+      "end": 658.59,
+      "text": "nobody knows yet. It's all really young."
+    },
+    {
+      "start": 658.6,
+      "end": 660.59,
+      "text": "The job it does isn't going anywhere"
+    },
+    {
+      "start": 660.6,
+      "end": 662.43,
+      "text": "because the mess it cleans up is what"
+    },
+    {
+      "start": 662.44,
+      "end": 664.67,
+      "text": "you get when AI grows up inside your"
+    },
+    {
+      "start": 664.68,
+      "end": 667.4,
+      "text": "code base."
+    }
+  ]
+}

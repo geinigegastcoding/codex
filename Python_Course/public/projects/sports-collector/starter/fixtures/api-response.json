@@ -1,0 +1,10 @@
+{
+  "source": "authorized-fixture",
+  "matches": [
+    {
+      "id": "m1",
+      "home": "A",
+      "away": "B"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "matches": [
+    {
+      "team": "A",
+      "points": 3
+    },
+    {
+      "team": "A",
+      "points": 1
+    },
+    {
+      "team": "B",
+      "points": 0
+    }
+  ]
+}

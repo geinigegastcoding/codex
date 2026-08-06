@@ -1,0 +1,25 @@
+{
+  "title": "Qwen3.8-Max Just Dropped: What 2.4T Really Means",
+  "description": "Qwen3.8-Max appeared in QwenCloud's official model changelog on August 3, 2026. This 3-minute explainer breaks down the 2.4T Mixture-of-Experts architecture, native vision-language input, 1M-token context, hybrid thinking controls, the API-first release status, and the test I would run before trusting the launch claims.",
+  "chapters": [
+    {"time":"00:00","title":"Qwen3.8-Max is here"},
+    {"time":"00:18","title":"What actually shipped"},
+    {"time":"00:38","title":"What 2.4T means"},
+    {"time":"00:56","title":"1M context and video"},
+    {"time":"01:16","title":"Hybrid thinking"},
+    {"time":"01:37","title":"The API-first caveat"},
+    {"time":"01:55","title":"How to test it"},
+    {"time":"02:13","title":"Limits and evidence"},
+    {"time":"02:31","title":"Early verdict"}
+  ],
+  "sources": [
+    {"url":"https://docs.qwencloud.com/changelog/models","claim":"Official QwenCloud Qwen3.8-Max release entry"},
+    {"url":"https://docs.qwencloud.com/developer-guides/getting-started/text-generation-models","claim":"Model ID and flagship positioning"},
+    {"url":"https://docs.qwencloud.com/developer-guides/getting-started/vision-models","claim":"Vision, 1M context, and video guidance"},
+    {"url":"https://docs.qwencloud.com/developer-guides/text-generation/thinking","claim":"Thinking controls and reasoning effort"},
+    {"url":"https://docs.qwencloud.com/developer-guides/text-generation/quickstart","claim":"Official API quickstart"}
+  ],
+  "thumbnailBrief": "Original light evidence card: giant indigo 2.4T number, smaller labels 'MoE', '1M context', and 'vision-language', with a caution tag 'test the claim'. No copied channel identity or product screenshot.",
+  "aiDisclosureRequired": true,
+  "aiDisclosureReason": "The narration uses an authorized Fish Audio reference voice configured locally; decide the YouTube altered/synthetic-content disclosure during upload according to the voice permission record. Visuals are original programmatic diagrams and code cards."
+}

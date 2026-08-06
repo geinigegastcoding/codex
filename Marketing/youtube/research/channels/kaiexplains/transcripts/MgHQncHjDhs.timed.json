@@ -1,0 +1,961 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.23,
+      "text": "Open AI recently made it crystal clear"
+    },
+    {
+      "start": 2.24,
+      "end": 3.79,
+      "text": "they reserve the right to change what"
+    },
+    {
+      "start": 3.8,
+      "end": 6.47,
+      "text": "you get, throttle your access, and raise"
+    },
+    {
+      "start": 6.48,
+      "end": 8.55,
+      "text": "your prices whenever they feel like it."
+    },
+    {
+      "start": 8.56,
+      "end": 10.31,
+      "text": "And they're not alone. That's the moment"
+    },
+    {
+      "start": 10.32,
+      "end": 12.35,
+      "text": "I realized I don't actually own anything"
+    },
+    {
+      "start": 12.36,
+      "end": 14.59,
+      "text": "that I'm paying for in AI. So, I spent a"
+    },
+    {
+      "start": 14.6,
+      "end": 17.39,
+      "text": "week replacing the $120 a month I was"
+    },
+    {
+      "start": 17.4,
+      "end": 19.35,
+      "text": "spending on AI subscriptions with things"
+    },
+    {
+      "start": 19.36,
+      "end": 21.11,
+      "text": "actually in my control. You could do"
+    },
+    {
+      "start": 21.12,
+      "end": 22.99,
+      "text": "this, too, for less than the cost of 1"
+    },
+    {
+      "start": 23,
+      "end": 24.63,
+      "text": "month you're already paying to have some"
+    },
+    {
+      "start": 24.64,
+      "end": 26.55,
+      "text": "tech company read all your prompts and"
+    },
+    {
+      "start": 26.56,
+      "end": 28.63,
+      "text": "sell the data. And the secret is this"
+    },
+    {
+      "start": 28.64,
+      "end": 30.59,
+      "text": "little baby right here. This is a"
+    },
+    {
+      "start": 30.6,
+      "end": 33.91,
+      "text": "Raspberry Pi. Now, don't be intimidated."
+    },
+    {
+      "start": 33.92,
+      "end": 35.75,
+      "text": "I know it looks a little scary, but this"
+    },
+    {
+      "start": 35.76,
+      "end": 37.71,
+      "text": "is basically just a mini computer that's"
+    },
+    {
+      "start": 37.72,
+      "end": 39.71,
+      "text": "super low power and perfect for running"
+    },
+    {
+      "start": 39.72,
+      "end": 41.35,
+      "text": "your own home server. You could either"
+    },
+    {
+      "start": 41.36,
+      "end": 43.35,
+      "text": "buy a Raspberry Pi, or if you're cheap"
+    },
+    {
+      "start": 43.36,
+      "end": 45.31,
+      "text": "like me, don't want to fork any moolah"
+    },
+    {
+      "start": 45.32,
+      "end": 47.55,
+      "text": "over, any old laptop you have sitting at"
+    },
+    {
+      "start": 47.56,
+      "end": 49.15,
+      "text": "the bottom of your closet will work,"
+    },
+    {
+      "start": 49.16,
+      "end": 51.27,
+      "text": "too. Don't worry about the specs unless"
+    },
+    {
+      "start": 51.28,
+      "end": 52.71,
+      "text": "you have one running off a hamster"
+    },
+    {
+      "start": 52.72,
+      "end": 54.79,
+      "text": "wheel. You'll be good. And the cost"
+    },
+    {
+      "start": 54.8,
+      "end": 56.79,
+      "text": "after that is basically only pennies of"
+    },
+    {
+      "start": 56.8,
+      "end": 59.27,
+      "text": "electricity to power it. Now, let me ask"
+    },
+    {
+      "start": 59.28,
+      "end": 60.87,
+      "text": "if you've ever been in the same position"
+    },
+    {
+      "start": 60.88,
+      "end": 62.59,
+      "text": "as me. You're in the middle of something"
+    },
+    {
+      "start": 62.6,
+      "end": 64.829,
+      "text": "important. You've got a workflow, a"
+    },
+    {
+      "start": 64.839,
+      "end": 66.91,
+      "text": "rhythm, you're getting stuff done, and"
+    },
+    {
+      "start": 66.92,
+      "end": 68.99,
+      "text": "poof, ChatGPT hits you with a rate"
+    },
+    {
+      "start": 69,
+      "end": 70.87,
+      "text": "limit. Or the model you were using gets"
+    },
+    {
+      "start": 70.88,
+      "end": 72.95,
+      "text": "downgraded on your tier without notice."
+    },
+    {
+      "start": 72.96000000000001,
+      "end": 75.43,
+      "text": "Or you're paying $20 a month for Claude,"
+    },
+    {
+      "start": 75.44,
+      "end": 79.23,
+      "text": "another $20 for ChatGPT, another $20 for"
+    },
+    {
+      "start": 79.24,
+      "end": 81.47,
+      "text": "Perplexity, and suddenly you're doing"
+    },
+    {
+      "start": 81.48,
+      "end": 82.91,
+      "text": "the math and you realize you're"
+    },
+    {
+      "start": 82.92,
+      "end": 86.03,
+      "text": "hemorrhaging $120 a month to AI"
+    },
+    {
+      "start": 86.03999999999999,
+      "end": 88.15,
+      "text": "companies who truly do not care about"
+    },
+    {
+      "start": 88.16,
+      "end": 89.75,
+      "text": "you. Are you really going to keep"
+    },
+    {
+      "start": 89.76,
+      "end": 91.63,
+      "text": "forking over another 20 bucks a month"
+    },
+    {
+      "start": 91.64,
+      "end": 93.22999999999999,
+      "text": "every time a new model drops and they"
+    },
+    {
+      "start": 93.24000000000001,
+      "end": 94.75,
+      "text": "decide your old tier doesn't cut it"
+    },
+    {
+      "start": 94.75999999999999,
+      "end": 97.50999999999999,
+      "text": "anymore? Hell no, we're done with that."
+    },
+    {
+      "start": 97.52000000000001,
+      "end": 99.27000000000001,
+      "text": "You can buy one of these pies like I"
+    },
+    {
+      "start": 99.28,
+      "end": 101.22999999999999,
+      "text": "have right here, or with just a little"
+    },
+    {
+      "start": 101.24000000000001,
+      "end": 103.43,
+      "text": "configuration to your old laptop, you"
+    },
+    {
+      "start": 103.44,
+      "end": 105.50999999999999,
+      "text": "can run your own personal ChatGPT"
+    },
+    {
+      "start": 105.52000000000001,
+      "end": 107.83,
+      "text": "completely for free and completely open"
+    },
+    {
+      "start": 107.84,
+      "end": 110.31,
+      "text": "source with two programs, Ollama and"
+    },
+    {
+      "start": 110.32,
+      "end": 112.71000000000001,
+      "text": "Open Web UI. And open source just means"
+    },
+    {
+      "start": 112.72,
+      "end": 113.91,
+      "text": "that the code of the program is"
+    },
+    {
+      "start": 113.92,
+      "end": 116.35,
+      "text": "completely public and maintained by the"
+    },
+    {
+      "start": 116.36,
+      "end": 118.35,
+      "text": "public rather than one tech company."
+    },
+    {
+      "start": 118.36,
+      "end": 120.71,
+      "text": "Ollama is basically the engine. It lets"
+    },
+    {
+      "start": 120.72,
+      "end": 122.87,
+      "text": "you download and run powerful AI models."
+    },
+    {
+      "start": 122.88,
+      "end": 125.63,
+      "text": "We're talking Llama 4, Deep Seek,"
+    },
+    {
+      "start": 125.64,
+      "end": 128.029,
+      "text": "Mistral, Qwen, all directly on your own"
+    },
+    {
+      "start": 128.039,
+      "end": 131.11,
+      "text": "machine. No cloud, no subscription, no"
+    },
+    {
+      "start": 131.12,
+      "end": 133.19,
+      "text": "one reading your prompts. And Open Web"
+    },
+    {
+      "start": 133.2,
+      "end": 135.43,
+      "text": "UI is the beautiful interface that sits"
+    },
+    {
+      "start": 135.44,
+      "end": 137.31,
+      "text": "on top of it. It gives you that familiar"
+    },
+    {
+      "start": 137.32,
+      "end": 139.71,
+      "text": "ChatGPT style chat window, dark mode,"
+    },
+    {
+      "start": 139.72,
+      "end": 141.67000000000002,
+      "text": "conversation history, multimodal"
+    },
+    {
+      "start": 141.68,
+      "end": 143.87,
+      "text": "switching, but it's 100% running on your"
+    },
+    {
+      "start": 143.88,
+      "end": 145.87,
+      "text": "own hardware. This isn't some dinky"
+    },
+    {
+      "start": 145.88,
+      "end": 147.15,
+      "text": "little terminal where you're typing"
+    },
+    {
+      "start": 147.16,
+      "end": 149.23,
+      "text": "commands into a black box. This is a"
+    },
+    {
+      "start": 149.24,
+      "end": 151.51,
+      "text": "full end-to-end AI chat experience that"
+    },
+    {
+      "start": 151.52,
+      "end": 153.63,
+      "text": "honestly rivals ChatGPT and Claude"
+    },
+    {
+      "start": 153.64,
+      "end": 156.27,
+      "text": "completely for free. But Tucker, what if"
+    },
+    {
+      "start": 156.28,
+      "end": 158.43,
+      "text": "my computer isn't powerful enough? What"
+    },
+    {
+      "start": 158.44,
+      "end": 160.949,
+      "text": "if I can't run the big models? Buddy,"
+    },
+    {
+      "start": 160.959,
+      "end": 162.82999999999998,
+      "text": "it's 2026."
+    },
+    {
+      "start": 162.84,
+      "end": 164.91,
+      "text": "There are so many ways around this. I"
+    },
+    {
+      "start": 164.92000000000002,
+      "end": 167.19,
+      "text": "got you. Don't worry. For lighter"
+    },
+    {
+      "start": 167.2,
+      "end": 169.23,
+      "text": "hardware, your old laptop, your"
+    },
+    {
+      "start": 169.24,
+      "end": 172.35,
+      "text": "Raspberry Pi models like Llama 3.18B or"
+    },
+    {
+      "start": 172.36,
+      "end": 175.19,
+      "text": "Mistral 7B run beautifully and are"
+    },
+    {
+      "start": 175.2,
+      "end": 177.19,
+      "text": "incredibly capable for most day-to-day"
+    },
+    {
+      "start": 177.2,
+      "end": 179.82999999999998,
+      "text": "tasks. Writing, summarizing,"
+    },
+    {
+      "start": 179.84,
+      "end": 182.35,
+      "text": "brainstorming, answering questions done."
+    },
+    {
+      "start": 182.36,
+      "end": 184.229,
+      "text": "You won't notice the difference for 90%"
+    },
+    {
+      "start": 184.239,
+      "end": 186.35,
+      "text": "of what you use AI for. And if you want"
+    },
+    {
+      "start": 186.36,
+      "end": 188.43,
+      "text": "to be extra resourceful, something I've"
+    },
+    {
+      "start": 188.44,
+      "end": 190.99,
+      "text": "heard about that I would never, never,"
+    },
+    {
+      "start": 191,
+      "end": 193.22899999999998,
+      "text": "ever do myself, there are certain API"
+    },
+    {
+      "start": 193.239,
+      "end": 194.50900000000001,
+      "text": "providers out there where you can get"
+    },
+    {
+      "start": 194.519,
+      "end": 195.949,
+      "text": "access to frontier models for"
+    },
+    {
+      "start": 195.959,
+      "end": 197.949,
+      "text": "essentially free or nearly nothing"
+    },
+    {
+      "start": 197.959,
+      "end": 200.03,
+      "text": "through free tier API keys. All"
+    },
+    {
+      "start": 200.04,
+      "end": 202.43,
+      "text": "completely above board, of course. So"
+    },
+    {
+      "start": 202.44,
+      "end": 204.35,
+      "text": "now you've got your AI chat sorted. But"
+    },
+    {
+      "start": 204.36,
+      "end": 206.15,
+      "text": "that is just the tip of the iceberg."
+    },
+    {
+      "start": 206.16,
+      "end": 207.99,
+      "text": "These tech companies, their whole"
+    },
+    {
+      "start": 208,
+      "end": 209.71,
+      "text": "business model is to get you hooked for"
+    },
+    {
+      "start": 209.72,
+      "end": 211.75,
+      "text": "life on subscriptions. They want you to"
+    },
+    {
+      "start": 211.76,
+      "end": 213.949,
+      "text": "never cancel. Are you tired of paying"
+    },
+    {
+      "start": 213.959,
+      "end": 216.22899999999998,
+      "text": "$20 a month for Perplexity just to have"
+    },
+    {
+      "start": 216.239,
+      "end": 218.31,
+      "text": "an AI that can search the web for you?"
+    },
+    {
+      "start": 218.32,
+      "end": 220.43,
+      "text": "There's a self-hosted, open-source"
+    },
+    {
+      "start": 220.44,
+      "end": 222.43,
+      "text": "alternative called Perplexica. It"
+    },
+    {
+      "start": 222.44,
+      "end": 224.47,
+      "text": "replicates the exact same experience,"
+    },
+    {
+      "start": 224.48,
+      "end": 226.19,
+      "text": "AI-powered web search with cited"
+    },
+    {
+      "start": 226.2,
+      "end": 228.35,
+      "text": "sources, but it runs on your own machine"
+    },
+    {
+      "start": 228.36,
+      "end": 229.91,
+      "text": "using your own local models through"
+    },
+    {
+      "start": 229.92000000000002,
+      "end": 232.23,
+      "text": "Ollama. Your search queries never go to"
+    },
+    {
+      "start": 232.24,
+      "end": 234.82999999999998,
+      "text": "anyone's servers. Perplexity even uses"
+    },
+    {
+      "start": 234.84,
+      "end": 237.51,
+      "text": "SearXNG under the hood, which is itself"
+    },
+    {
+      "start": 237.52,
+      "end": 239.31,
+      "text": "a privacy-first, open-source search"
+    },
+    {
+      "start": 239.32,
+      "end": 242.95,
+      "text": "engine. Two birds, one stone, $0 a"
+    },
+    {
+      "start": 242.96,
+      "end": 244.71,
+      "text": "month. Are you tired of paying for"
+    },
+    {
+      "start": 244.72,
+      "end": 249.03,
+      "text": "Midjourney $10, $30, $60 a month just to"
+    },
+    {
+      "start": 249.04,
+      "end": 251.03,
+      "text": "generate images and have every single"
+    },
+    {
+      "start": 251.04,
+      "end": 252.83,
+      "text": "one of them owned by their servers,"
+    },
+    {
+      "start": 252.84,
+      "end": 255.31,
+      "text": "their terms, their rules? There's an"
+    },
+    {
+      "start": 255.32,
+      "end": 257.15,
+      "text": "open-source image generation stack"
+    },
+    {
+      "start": 257.16,
+      "end": 258.67,
+      "text": "called Stable Diffusion with a"
+    },
+    {
+      "start": 258.68,
+      "end": 260.99,
+      "text": "powerhouse interface called ComfyUI."
+    },
+    {
+      "start": 261,
+      "end": 262.99,
+      "text": "This is a local Midjourney. You run it"
+    },
+    {
+      "start": 263,
+      "end": 264.83,
+      "text": "on your own machine. It pulls from"
+    },
+    {
+      "start": 264.84,
+      "end": 267.71,
+      "text": "models like Efflux, which in 2026"
+    },
+    {
+      "start": 267.72,
+      "end": 270.27,
+      "text": "genuinely rivals Midjourney quality, and"
+    },
+    {
+      "start": 270.28,
+      "end": 272.51,
+      "text": "every image you generate is private,"
+    },
+    {
+      "start": 272.52,
+      "end": 275.39,
+      "text": "unlimited, and completely free. You own"
+    },
+    {
+      "start": 275.4,
+      "end": 277.71,
+      "text": "it. No one can take it down. No one can"
+    },
+    {
+      "start": 277.72,
+      "end": 279.51,
+      "text": "ban your account and make your entire"
+    },
+    {
+      "start": 279.52,
+      "end": 281.55,
+      "text": "library disappear. And it goes even"
+    },
+    {
+      "start": 281.56,
+      "end": 283.27,
+      "text": "deeper. One of my personal favorite"
+    },
+    {
+      "start": 283.28,
+      "end": 285.15,
+      "text": "things I love to use is this. And don't"
+    },
+    {
+      "start": 285.15999999999997,
+      "end": 286.83,
+      "text": "get me started on how much I hate paying"
+    },
+    {
+      "start": 286.84000000000003,
+      "end": 288.909,
+      "text": "for these AI writing assistants. You"
+    },
+    {
+      "start": 288.919,
+      "end": 291.87,
+      "text": "know the ones. Grammarly at $30 a month,"
+    },
+    {
+      "start": 291.88,
+      "end": 295.11,
+      "text": "Jasper at $49 a month. For what? To have"
+    },
+    {
+      "start": 295.12,
+      "end": 296.87,
+      "text": "an AI polish your sentences on some"
+    },
+    {
+      "start": 296.88,
+      "end": 298.15,
+      "text": "company's server where they log"
+    },
+    {
+      "start": 298.15999999999997,
+      "end": 299.55,
+      "text": "everything you write? There are"
+    },
+    {
+      "start": 299.56,
+      "end": 301.31,
+      "text": "open-source, self-hosted writing"
+    },
+    {
+      "start": 301.32,
+      "end": 302.909,
+      "text": "assistants you can plug directly into"
+    },
+    {
+      "start": 302.919,
+      "end": 304.79,
+      "text": "your browser and text editor using your"
+    },
+    {
+      "start": 304.8,
+      "end": 306.909,
+      "text": "own local Llama models. You can set up a"
+    },
+    {
+      "start": 306.919,
+      "end": 308.31,
+      "text": "browser extension that talks to your"
+    },
+    {
+      "start": 308.32,
+      "end": 310.83,
+      "text": "local AI and gives you grammar, tone,"
+    },
+    {
+      "start": 310.84,
+      "end": 312.75,
+      "text": "and rewriting suggestions for free"
+    },
+    {
+      "start": 312.76,
+      "end": 314.15,
+      "text": "without a single word you type ever"
+    },
+    {
+      "start": 314.16,
+      "end": 315.909,
+      "text": "leaving your device. These are just the"
+    },
+    {
+      "start": 315.919,
+      "end": 317.79,
+      "text": "start. I'm giving you these examples to"
+    },
+    {
+      "start": 317.8,
+      "end": 319.03,
+      "text": "show you that there's a free and"
+    },
+    {
+      "start": 319.04,
+      "end": 320.63,
+      "text": "open-source version of everything you"
+    },
+    {
+      "start": 320.64,
+      "end": 322.67,
+      "text": "already pay for in AI. I know it's a"
+    },
+    {
+      "start": 322.68,
+      "end": 324.47,
+      "text": "little intimidating, and I am by no"
+    },
+    {
+      "start": 324.48,
+      "end": 326.27,
+      "text": "means an expert in home servers or"
+    },
+    {
+      "start": 326.28,
+      "end": 328.15,
+      "text": "setting any of this up, but I am one"
+    },
+    {
+      "start": 328.16,
+      "end": 330.47,
+      "text": "thing: cheap as hell and determined."
+    },
+    {
+      "start": 330.48,
+      "end": 332.15,
+      "text": "When I did the math and I figured out"
+    },
+    {
+      "start": 332.15999999999997,
+      "end": 335.03,
+      "text": "how much I was spending $20 here, $20"
+    },
+    {
+      "start": 335.04,
+      "end": 337.59000000000003,
+      "text": "there, $30 somewhere else, I knew there"
+    },
+    {
+      "start": 337.6,
+      "end": 339.67,
+      "text": "had to be better alternatives out there."
+    },
+    {
+      "start": 339.68,
+      "end": 342.07,
+      "text": "And now even my AI coding assistant runs"
+    },
+    {
+      "start": 342.08,
+      "end": 344.47,
+      "text": "fully locally, so none of my code or"
+    },
+    {
+      "start": 344.48,
+      "end": 346.27,
+      "text": "proprietary logic is going out to the"
+    },
+    {
+      "start": 346.28,
+      "end": 348.55,
+      "text": "cloud at all. And I can access it from"
+    },
+    {
+      "start": 348.56,
+      "end": 350.43,
+      "text": "anywhere on my home network. The good"
+    },
+    {
+      "start": 350.44,
+      "end": 352.47,
+      "text": "news is there's so much information out"
+    },
+    {
+      "start": 352.48,
+      "end": 354.03,
+      "text": "there to help you set this up,"
+    },
+    {
+      "start": 354.04,
+      "end": 356.19,
+      "text": "especially with AI itself, ironically"
+    },
+    {
+      "start": 356.2,
+      "end": 358.03,
+      "text": "helping you do it. This could honestly"
+    },
+    {
+      "start": 358.04,
+      "end": 359.87,
+      "text": "take you one afternoon to set up once"
+    },
+    {
+      "start": 359.88,
+      "end": 361.39,
+      "text": "you have all the required equipment,"
+    },
+    {
+      "start": 361.4,
+      "end": 363.47,
+      "text": "which you probably do. I know you have"
+    },
+    {
+      "start": 363.48,
+      "end": 365.35,
+      "text": "an old laptop sitting around. So,"
+    },
+    {
+      "start": 365.36,
+      "end": 367.99,
+      "text": "please, please, please, if you take away"
+    },
+    {
+      "start": 368,
+      "end": 370.27,
+      "text": "anything from this video, I just implore"
+    },
+    {
+      "start": 370.28,
+      "end": 371.99,
+      "text": "you to start taking ownership of your"
+    },
+    {
+      "start": 372,
+      "end": 374.03,
+      "text": "own AI life. It will not only give you"
+    },
+    {
+      "start": 374.04,
+      "end": 376.63,
+      "text": "unlimited uncapped access to powerful"
+    },
+    {
+      "start": 376.64,
+      "end": 378.59,
+      "text": "models, but it will also keep your most"
+    },
+    {
+      "start": 378.6,
+      "end": 380.51,
+      "text": "sensitive conversations, your business"
+    },
+    {
+      "start": 380.52,
+      "end": 382.71,
+      "text": "ideas, your personal writing, all of it"
+    },
+    {
+      "start": 382.72,
+      "end": 384.909,
+      "text": "completely safe and private. But, I know"
+    },
+    {
+      "start": 384.919,
+      "end": 386.909,
+      "text": "what tracks in this day and age, and it"
+    },
+    {
+      "start": 386.919,
+      "end": 389.19,
+      "text": "is cheddar. So, start today, and I"
+    },
+    {
+      "start": 389.2,
+      "end": 391.23,
+      "text": "promise you a year from now your bank"
+    },
+    {
+      "start": 391.24,
+      "end": 392.95,
+      "text": "account will thank you when you've got"
+    },
+    {
+      "start": 392.96,
+      "end": 395.03,
+      "text": "an extra $1,400"
+    },
+    {
+      "start": 395.04,
+      "end": 396.75,
+      "text": "back in your pocket that you used to"
+    },
+    {
+      "start": 396.76,
+      "end": 398.39,
+      "text": "hand to tech companies every single"
+    },
+    {
+      "start": 398.4,
+      "end": 400.84000000000003,
+      "text": "year."
+    }
+  ]
+}

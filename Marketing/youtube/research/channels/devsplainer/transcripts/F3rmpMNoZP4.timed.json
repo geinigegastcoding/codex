@@ -1,0 +1,1076 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.954,
+      "text": "$19.27."
+    },
+    {
+      "start": 1.964,
+      "end": 3.11,
+      "text": "[music]"
+    },
+    {
+      "start": 3.12,
+      "end": 6.11,
+      "text": "That's the 12-day API bill one developer"
+    },
+    {
+      "start": 6.12,
+      "end": 9.11,
+      "text": "posted [music] after pushing 2.1 billion"
+    },
+    {
+      "start": 9.12,
+      "end": 11.59,
+      "text": "tokens through Deep Seek's newest model"
+    },
+    {
+      "start": 11.6,
+      "end": 13.91,
+      "text": "V4 Flash. Tokens are [music] the"
+    },
+    {
+      "start": 13.92,
+      "end": 17.07,
+      "text": "word-size chunks AI companies bill by,"
+    },
+    {
+      "start": 17.08,
+      "end": 19.91,
+      "text": "and at Claude Opus' rates, 2 billion of"
+    },
+    {
+      "start": 19.92,
+      "end": 22.47,
+      "text": "them would have cost four figures. The"
+    },
+    {
+      "start": 22.48,
+      "end": 24.71,
+      "text": "same week this model shipped on July"
+    },
+    {
+      "start": 24.72,
+      "end": 28.155,
+      "text": "31st, OpenAI cut its own API prices"
+    },
+    {
+      "start": 28.165,
+      "end": 31.27,
+      "text": "[music] by 80%. Deep Seek is dragging"
+    },
+    {
+      "start": 31.28,
+      "end": 33.03,
+      "text": "the price of intelligence through the"
+    },
+    {
+      "start": 33.04,
+      "end": 35.15,
+      "text": "floor, and we'll tell you how they're"
+    },
+    {
+      "start": 35.16,
+      "end": 36.67,
+      "text": "pulling it off."
+    },
+    {
+      "start": 36.68,
+      "end": 38.91,
+      "text": "Every time a model writes a word, it"
+    },
+    {
+      "start": 38.92,
+      "end": 40.43,
+      "text": "looks back at everything [music] in the"
+    },
+    {
+      "start": 40.44,
+      "end": 43.07,
+      "text": "conversation and scores every earlier"
+    },
+    {
+      "start": 43.08,
+      "end": 45.31,
+      "text": "word for how much it should matter right"
+    },
+    {
+      "start": 45.32,
+      "end": 48.35,
+      "text": "now. That lookup is called attention,"
+    },
+    {
+      "start": 48.36,
+      "end": 50.79,
+      "text": "and there are ugly costs involved."
+    },
+    {
+      "start": 50.8,
+      "end": 52.31,
+      "text": "Double the prompt, and the work"
+    },
+    {
+      "start": 52.32,
+      "end": 54.91,
+      "text": "quadruples because every word gets"
+    },
+    {
+      "start": 54.92,
+      "end": 57.55,
+      "text": "compared against every other word."
+    },
+    {
+      "start": 57.56,
+      "end": 59.79,
+      "text": "Reading a million token prompt means"
+    },
+    {
+      "start": 59.8,
+      "end": 61.91,
+      "text": "roughly half a trillion word pair"
+    },
+    {
+      "start": 61.92,
+      "end": 62.79,
+      "text": "comparisons [music]"
+    },
+    {
+      "start": 62.8,
+      "end": 64.95,
+      "text": "before the first word of the answer"
+    },
+    {
+      "start": 64.96,
+      "end": 67.11,
+      "text": "appears, and the model repeats that"
+    },
+    {
+      "start": 67.12,
+      "end": 68.91,
+      "text": "exercise [music] dozens of times"
+    },
+    {
+      "start": 68.92,
+      "end": 71.63,
+      "text": "internally. Then, every word it writes"
+    },
+    {
+      "start": 71.64,
+      "end": 73.78999999999999,
+      "text": "back means consulting that entire"
+    },
+    {
+      "start": 73.8,
+      "end": 76.31,
+      "text": "history again. There's a memory bill on"
+    },
+    {
+      "start": 76.32,
+      "end": 78.15,
+      "text": "top. To avoid rereading [music] from"
+    },
+    {
+      "start": 78.16,
+      "end": 80.51,
+      "text": "scratch, the model keeps working notes"
+    },
+    {
+      "start": 80.52,
+      "end": 82.87,
+      "text": "on every word it has seen, and at a"
+    },
+    {
+      "start": 82.88,
+      "end": 85.27,
+      "text": "million tokens, those notes outgrow the"
+    },
+    {
+      "start": 85.28,
+      "end": 88.59,
+      "text": "memory of a top-end server GPU. Fewer"
+    },
+    {
+      "start": 88.6,
+      "end": 91.27,
+      "text": "customers fit on each machine, so every"
+    },
+    {
+      "start": 91.28,
+      "end": 94.15,
+      "text": "customer costs more. Providers pass that"
+    },
+    {
+      "start": 94.16,
+      "end": 96.99000000000001,
+      "text": "straight through. Gemini 3.1 Pro [music]"
+    },
+    {
+      "start": 97,
+      "end": 100.27000000000001,
+      "text": "charges $2 per million input tokens"
+    },
+    {
+      "start": 100.28,
+      "end": 103.43,
+      "text": "until your prompt crosses 200,000,"
+    },
+    {
+      "start": 103.44,
+      "end": 106.67,
+      "text": "then four, with output jumping from $12"
+    },
+    {
+      "start": 106.68,
+      "end": 109.50999999999999,
+      "text": "to 18. Most of that work returns"
+    },
+    {
+      "start": 109.52000000000001,
+      "end": 111.99600000000001,
+      "text": "nothing. Measure where attention lands"
+    },
+    {
+      "start": 112.006,
+      "end": 113.87,
+      "text": "[music] in a real model, and a handful"
+    },
+    {
+      "start": 113.88,
+      "end": 116.71000000000001,
+      "text": "of earlier words soak up nearly all the"
+    },
+    {
+      "start": 116.72,
+      "end": 119.201,
+      "text": "weight while the rest sit near zero."
+    },
+    {
+      "start": 119.211,
+      "end": 119.35,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 119.36,
+      "end": 122.11,
+      "text": "&gt;&gt; The model does a stadium's worth of math"
+    },
+    {
+      "start": 122.12,
+      "end": 123.786,
+      "text": "to find the three rows that matter."
+    },
+    {
+      "start": 123.796,
+      "end": 124.51,
+      "text": "[music]"
+    },
+    {
+      "start": 124.52,
+      "end": 126.55,
+      "text": "Sparse attention is a bet that you can"
+    },
+    {
+      "start": 126.56,
+      "end": 128.87,
+      "text": "predict those rows cheaply and spend the"
+    },
+    {
+      "start": 128.88,
+      "end": 131.39,
+      "text": "expensive math only there."
+    },
+    {
+      "start": 131.4,
+      "end": 133.07,
+      "text": "Two things kill the bet. If the"
+    },
+    {
+      "start": 133.08,
+      "end": 135.07,
+      "text": "predictor is costly, you burn the"
+    },
+    {
+      "start": 135.08,
+      "end": 137.39,
+      "text": "savings deciding [music] what to skip."
+    },
+    {
+      "start": 137.4,
+      "end": 139.55,
+      "text": "If it's wrong, the model misses the one"
+    },
+    {
+      "start": 139.56,
+      "end": 141.31,
+      "text": "line that mattered and [music] answers"
+    },
+    {
+      "start": 141.32,
+      "end": 144.23,
+      "text": "without it as if nothing were missing."
+    },
+    {
+      "start": 144.24,
+      "end": 146.59,
+      "text": "Older short cuts dodge the first problem"
+    },
+    {
+      "start": 146.6,
+      "end": 148.949,
+      "text": "with fixed rules, like only reading the"
+    },
+    {
+      "start": 148.959,
+      "end": 151.87,
+      "text": "recent past, which is cheap and blind."
+    },
+    {
+      "start": 151.88,
+      "end": 153.71,
+      "text": "The function you defined at the top of"
+    },
+    {
+      "start": 153.72,
+      "end": 157.07,
+      "text": "the file stops existing. Pruning bolted"
+    },
+    {
+      "start": 157.07999999999998,
+      "end": 159.19,
+      "text": "onto a finished model failed, too,"
+    },
+    {
+      "start": 159.2,
+      "end": 161.11,
+      "text": "because a model that grew up seeing"
+    },
+    {
+      "start": 161.12,
+      "end": 163.086,
+      "text": "everything falls over when you take"
+    },
+    {
+      "start": 163.096,
+      "end": 165.55,
+      "text": "[music] most of it away. The unlock, and"
+    },
+    {
+      "start": 165.56,
+      "end": 167.71,
+      "text": "the reason this works at frontier scale"
+    },
+    {
+      "start": 167.72,
+      "end": 169.59,
+      "text": "now, is training the model with the"
+    },
+    {
+      "start": 169.6,
+      "end": 172.23,
+      "text": "skipping from day one, so it learns to"
+    },
+    {
+      "start": 172.24,
+      "end": 175.11,
+      "text": "leave behind notes it can skim later."
+    },
+    {
+      "start": 175.12,
+      "end": 176.841,
+      "text": "The design DeepSeek published in its"
+    },
+    {
+      "start": 176.851,
+      "end": 179.67000000000002,
+      "text": "[music] V4 paper in April runs three"
+    },
+    {
+      "start": 179.68,
+      "end": 182.83,
+      "text": "views of your prompt at once. View one"
+    },
+    {
+      "start": 182.84,
+      "end": 185.31,
+      "text": "is summaries. Every four tokens of"
+    },
+    {
+      "start": 185.32,
+      "end": 187.75,
+      "text": "history gets squashed into one learned"
+    },
+    {
+      "start": 187.76,
+      "end": 190.27,
+      "text": "summary entry, like keeping a one-line"
+    },
+    {
+      "start": 190.28,
+      "end": 192.19,
+      "text": "description [music] of every function in"
+    },
+    {
+      "start": 192.2,
+      "end": 195.50900000000001,
+      "text": "a code base. View two is selection. A"
+    },
+    {
+      "start": 195.519,
+      "end": 197.59,
+      "text": "tiny scorer called the lightning"
+    },
+    {
+      "start": 197.6,
+      "end": 199.55,
+      "text": "indexer, cheap enough to sweep the"
+    },
+    {
+      "start": 199.56,
+      "end": 202.15,
+      "text": "entire history, ranks those summaries"
+    },
+    {
+      "start": 202.16,
+      "end": 204.39,
+      "text": "against the words [music] being written."
+    },
+    {
+      "start": 204.4,
+      "end": 207.55,
+      "text": "And the 512 best get the full expensive"
+    },
+    {
+      "start": 207.56,
+      "end": 209.31,
+      "text": "attention treatment. [music]"
+    },
+    {
+      "start": 209.32,
+      "end": 212.03,
+      "text": "View three is the safety net. A second"
+    },
+    {
+      "start": 212.04,
+      "end": 215.67000000000002,
+      "text": "set of summaries squashes 128 tokens"
+    },
+    {
+      "start": 215.68,
+      "end": 217.99,
+      "text": "into one [music] entry each. And the"
+    },
+    {
+      "start": 218,
+      "end": 220.79,
+      "text": "model reads all of those every time, a"
+    },
+    {
+      "start": 220.8,
+      "end": 222.692,
+      "text": "rough table of contents of the whole"
+    },
+    {
+      "start": 222.702,
+      "end": 224.949,
+      "text": "[music] prompt, so nothing is ever"
+    },
+    {
+      "start": 224.959,
+      "end": 227.71,
+      "text": "completely invisible. The most recent"
+    },
+    {
+      "start": 227.72,
+      "end": 231.27,
+      "text": "128 tokens stay uncompressed because the"
+    },
+    {
+      "start": 231.28,
+      "end": 233.51,
+      "text": "sentence being finished needs exact"
+    },
+    {
+      "start": 233.52,
+      "end": 235.91,
+      "text": "detail. DeepSeek calls the first two"
+    },
+    {
+      "start": 235.92000000000002,
+      "end": 237.67000000000002,
+      "text": "views compressed [music] sparse"
+    },
+    {
+      "start": 237.68,
+      "end": 240.39,
+      "text": "attention, and the skim lane heavily"
+    },
+    {
+      "start": 240.4,
+      "end": 243.83,
+      "text": "compressed attention. Send 10,000 tokens"
+    },
+    {
+      "start": 243.84,
+      "end": 245.99,
+      "text": "or send a million, and the expensive"
+    },
+    {
+      "start": 246,
+      "end": 248.31,
+      "text": "part of attention now reads roughly the"
+    },
+    {
+      "start": 248.32,
+      "end": 251.11,
+      "text": "same small pile. At a million tokens,"
+    },
+    {
+      "start": 251.12,
+      "end": 253.35,
+      "text": "DeepSeek's paper claims a tenth of the"
+    },
+    {
+      "start": 253.36,
+      "end": 256.069,
+      "text": "attention math and 7% of the attention"
+    },
+    {
+      "start": 256.079,
+      "end": 257.75,
+      "text": "memory of its own previous [music]"
+    },
+    {
+      "start": 257.76,
+      "end": 259.99,
+      "text": "generation. Those are DeepSeek's"
+    },
+    {
+      "start": 260,
+      "end": 262.63,
+      "text": "numbers, but the design is public, and"
+    },
+    {
+      "start": 262.64,
+      "end": 264.613,
+      "text": "outside teams have already rebuilt"
+    },
+    {
+      "start": 264.623,
+      "end": 266.67,
+      "text": "[music] it in the major open-source"
+    },
+    {
+      "start": 266.68,
+      "end": 269.07,
+      "text": "serving engines. The research behind"
+    },
+    {
+      "start": 269.08,
+      "end": 272.55,
+      "text": "this went public in February 2025 as a"
+    },
+    {
+      "start": 272.56,
+      "end": 275.093,
+      "text": "paper called Native Sparse Attention,"
+    },
+    {
+      "start": 275.103,
+      "end": 277.31,
+      "text": "[music] which went on to win a best"
+    },
+    {
+      "start": 277.32,
+      "end": 279.63,
+      "text": "paper award. The reception was"
+    },
+    {
+      "start": 279.64,
+      "end": 281.99,
+      "text": "suspicion. One commenter called an"
+    },
+    {
+      "start": 282,
+      "end": 284.75,
+      "text": "11-time speedup with no quality loss"
+    },
+    {
+      "start": 284.76,
+      "end": 287.03,
+      "text": "almost [music] too good to be true, and"
+    },
+    {
+      "start": 287.04,
+      "end": 289.47,
+      "text": "said adoption in the next 6 months would"
+    },
+    {
+      "start": 289.48,
+      "end": 291.75,
+      "text": "tell the truth. We're well past this"
+    },
+    {
+      "start": 291.76,
+      "end": 293.63,
+      "text": "deadline. [music] The verdict came back"
+    },
+    {
+      "start": 293.64,
+      "end": 296.19,
+      "text": "as seven straight weeks as the most used"
+    },
+    {
+      "start": 296.2,
+      "end": 299.23,
+      "text": "model on openrouter. Developers posting"
+    },
+    {
+      "start": 299.24,
+      "end": 301.47,
+      "text": "invoices like our opener, and [music] a"
+    },
+    {
+      "start": 301.48,
+      "end": 303.15,
+      "text": "team running production voice"
+    },
+    {
+      "start": 303.16,
+      "end": 306.63,
+      "text": "transcription QA on it at 2 to 5% of"
+    },
+    {
+      "start": 306.64,
+      "end": 308.87,
+      "text": "frontier cost. It did take [music] some"
+    },
+    {
+      "start": 308.88,
+      "end": 310.67,
+      "text": "tinkering to get to those numbers,"
+    },
+    {
+      "start": 310.68,
+      "end": 311.63,
+      "text": "though."
+    },
+    {
+      "start": 311.64,
+      "end": 313.83,
+      "text": "Skipping is what makes each additional"
+    },
+    {
+      "start": 313.84,
+      "end": 316.75,
+      "text": "token cheap. Each token starts out cheap"
+    },
+    {
+      "start": 316.76,
+      "end": 318.909,
+      "text": "because [music] of the stack underneath."
+    },
+    {
+      "start": 318.919,
+      "end": 323.43,
+      "text": "V4 Flash carries 284 billion parameters,"
+    },
+    {
+      "start": 323.44,
+      "end": 326.63,
+      "text": "but wakes about 13 billion per token."
+    },
+    {
+      "start": 326.64,
+      "end": 328.47,
+      "text": "The mixture of experts set [music] up"
+    },
+    {
+      "start": 328.48,
+      "end": 331.11,
+      "text": "we're covering in its own video. Much of"
+    },
+    {
+      "start": 331.12,
+      "end": 333.35,
+      "text": "the model ships in 4-bit numbers, a"
+    },
+    {
+      "start": 333.36,
+      "end": 336.03,
+      "text": "fraction of the usual size, and a small"
+    },
+    {
+      "start": 336.04,
+      "end": 337.75,
+      "text": "draft model [music] guesses several"
+    },
+    {
+      "start": 337.76,
+      "end": 340.03,
+      "text": "tokens ahead, so the big one can check"
+    },
+    {
+      "start": 340.04,
+      "end": 342.47,
+      "text": "instead of write. Stack it up, and"
+    },
+    {
+      "start": 342.48,
+      "end": 345.55,
+      "text": "there's your economic gains. 14 cents"
+    },
+    {
+      "start": 345.56,
+      "end": 349.03,
+      "text": "per million input tokens, 28 cents per"
+    },
+    {
+      "start": 349.04,
+      "end": 350.99,
+      "text": "million out. And if the [music] servers"
+    },
+    {
+      "start": 351,
+      "end": 352.55,
+      "text": "have seen the start of your prompt"
+    },
+    {
+      "start": 352.56,
+      "end": 355.59000000000003,
+      "text": "before, cached input drops to a fraction"
+    },
+    {
+      "start": 355.6,
+      "end": 358.47,
+      "text": "of a cent. A full million token request"
+    },
+    {
+      "start": 358.48,
+      "end": 361.67,
+      "text": "runs about 14 cents. The same request"
+    },
+    {
+      "start": 361.68,
+      "end": 365.75,
+      "text": "costs 40 [music] cents on GPT 5.6 Luna's"
+    },
+    {
+      "start": 365.76,
+      "end": 369.07,
+      "text": "long context tier, about $2 on Claude"
+    },
+    {
+      "start": 369.08,
+      "end": 373.95,
+      "text": "Sonnet 5, over 4 on Gemini 3.1 Pro."
+    },
+    {
+      "start": 373.96,
+      "end": 377.11,
+      "text": "OpenAI's 80% cut [music] landed the day"
+    },
+    {
+      "start": 377.12,
+      "end": 379.67,
+      "text": "before this release, and DeepSeek had"
+    },
+    {
+      "start": 379.68,
+      "end": 383.39,
+      "text": "already cut its own Pro model by 75% in"
+    },
+    {
+      "start": 383.4,
+      "end": 386.19,
+      "text": "May without giving a reason. Prices in"
+    },
+    {
+      "start": 386.2,
+      "end": 388.39,
+      "text": "this market are falling faster than the"
+    },
+    {
+      "start": 388.4,
+      "end": 391.35,
+      "text": "hardware underneath them got cheaper."
+    },
+    {
+      "start": 391.36,
+      "end": 394.07,
+      "text": "When a scorer misses, nothing crashes."
+    },
+    {
+      "start": 394.08,
+      "end": 396.59000000000003,
+      "text": "If the indexer never surfaces a line,"
+    },
+    {
+      "start": 396.6,
+      "end": 398.63,
+      "text": "the model doesn't know it existed and"
+    },
+    {
+      "start": 398.64,
+      "end": 401.07,
+      "text": "answers fluently from what it did see."
+    },
+    {
+      "start": 401.08,
+      "end": 403.87,
+      "text": "And independent testing finds this model"
+    },
+    {
+      "start": 403.88,
+      "end": 406.27,
+      "text": "rarely admits it doesn't know. The"
+    },
+    {
+      "start": 406.28,
+      "end": 408.23,
+      "text": "workloads [music] at risk are the ones"
+    },
+    {
+      "start": 408.24,
+      "end": 409.99,
+      "text": "where the answer is spread across"
+    },
+    {
+      "start": 410,
+      "end": 411.47,
+      "text": "everything instead of sitting [music]"
+    },
+    {
+      "start": 411.48,
+      "end": 414.39,
+      "text": "somewhere findable. Total every invoice"
+    },
+    {
+      "start": 414.4,
+      "end": 417.83,
+      "text": "in a 500-page bundle. Find every clause"
+    },
+    {
+      "start": 417.84000000000003,
+      "end": 420.79,
+      "text": "that conflicts with a policy. Skip three"
+    },
+    {
+      "start": 420.8,
+      "end": 423.124,
+      "text": "entries and the sum arrives wrong"
+    },
+    {
+      "start": 423.134,
+      "end": 423.27,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 423.28,
+      "end": 425.39,
+      "text": "&gt;&gt; with confidence. Compression adds a"
+    },
+    {
+      "start": 425.4,
+      "end": 427.99,
+      "text": "second tax. A summary can blur exact"
+    },
+    {
+      "start": 428,
+      "end": 430.43,
+      "text": "strings, and [music] code, IDs, and"
+    },
+    {
+      "start": 430.44,
+      "end": 433.39,
+      "text": "legal text live on exact strings. Two"
+    },
+    {
+      "start": 433.4,
+      "end": 435.909,
+      "text": "more honest numbers. Under roughly 10 to"
+    },
+    {
+      "start": 435.919,
+      "end": 438.67,
+      "text": "20,000 tokens, the scorer is pure"
+    },
+    {
+      "start": 438.68,
+      "end": 441.11,
+      "text": "overhead. Independent profiling of the"
+    },
+    {
+      "start": 441.12,
+      "end": 443.67,
+      "text": "previous generation found it slower than"
+    },
+    {
+      "start": 443.68,
+      "end": 445.99,
+      "text": "plain attention there. So, the trade"
+    },
+    {
+      "start": 446,
+      "end": 448.67,
+      "text": "only pays at length. And on DeepSeek's"
+    },
+    {
+      "start": 448.68,
+      "end": 450.99,
+      "text": "own million token retrieval tests,"
+    },
+    {
+      "start": 451,
+      "end": 453.83,
+      "text": "Claude Opus still wins comfortably with"
+    },
+    {
+      "start": 453.84000000000003,
+      "end": 457.07,
+      "text": "accuracy holding to around 128,000"
+    },
+    {
+      "start": 457.08,
+      "end": 458.51,
+      "text": "tokens before it starts [music]"
+    },
+    {
+      "start": 458.52,
+      "end": 461.11,
+      "text": "degrading. It's definitely cheap, but"
+    },
+    {
+      "start": 461.12,
+      "end": 463.43,
+      "text": "pick the right battles for it."
+    },
+    {
+      "start": 463.44,
+      "end": 465.99,
+      "text": "Long context stops being a luxury good."
+    },
+    {
+      "start": 466,
+      "end": 468.33,
+      "text": "Keeping a whole repo, its dogs, and"
+    },
+    {
+      "start": 468.34000000000003,
+      "end": 470.15,
+      "text": "[music] a week of logs attached to a"
+    },
+    {
+      "start": 470.15999999999997,
+      "end": 473.35,
+      "text": "session was a $200 habit at Big Lab"
+    },
+    {
+      "start": 473.36,
+      "end": 474.21500000000003,
+      "text": "prices."
+    },
+    {
+      "start": 474.225,
+      "end": 474.35,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 474.36,
+      "end": 477.39,
+      "text": "&gt;&gt; Over a stable cached corpus, Deep Seek's"
+    },
+    {
+      "start": 477.4,
+      "end": 480.23,
+      "text": "arithmetic works out near 40 cents for"
+    },
+    {
+      "start": 480.24,
+      "end": 481.42,
+      "text": "100 turns."
+    },
+    {
+      "start": 481.43,
+      "end": 481.59,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 481.6,
+      "end": 484.15,
+      "text": "&gt;&gt; Retrieval pipeline survived, demoted"
+    },
+    {
+      "start": 484.16,
+      "end": 486.43,
+      "text": "from cost necessity to a speed and"
+    },
+    {
+      "start": 486.44,
+      "end": 488.35,
+      "text": "accuracy tool. [music] And watch what"
+    },
+    {
+      "start": 488.36,
+      "end": 490.83,
+      "text": "the price does to people. The developer"
+    },
+    {
+      "start": 490.84,
+      "end": 493.59,
+      "text": "with $19 bill admits most of his 2"
+    },
+    {
+      "start": 493.6,
+      "end": 495.43,
+      "text": "billion [music] tokens were throwaway"
+    },
+    {
+      "start": 495.44,
+      "end": 497.99,
+      "text": "experimental loops left running because"
+    },
+    {
+      "start": 498,
+      "end": 499.99,
+      "text": "the waste cost nothing. When"
+    },
+    {
+      "start": 500,
+      "end": 502.43,
+      "text": "intelligence gets too cheap to meter,"
+    },
+    {
+      "start": 502.44,
+      "end": 504.67,
+      "text": "you stop rationing it. You leave the"
+    },
+    {
+      "start": 504.68,
+      "end": 506.71,
+      "text": "whole code base in context and let the"
+    },
+    {
+      "start": 506.72,
+      "end": 509.39,
+      "text": "loop run overnight. Every provider you"
+    },
+    {
+      "start": 509.4,
+      "end": 511.63,
+      "text": "pay is now pricing its next rate card"
+    },
+    {
+      "start": 511.64,
+      "end": 513.55,
+      "text": "against that. I'm looking at you [music]"
+    },
+    {
+      "start": 513.56,
+      "end": 516.76,
+      "text": "next, Anthropic."
+    }
+  ]
+}

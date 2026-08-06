@@ -1,0 +1,1026 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.83,
+      "text": "This is a button. You click it, the page"
+    },
+    {
+      "start": 2.84,
+      "end": 5.03,
+      "text": "updates, fresh data straight from the"
+    },
+    {
+      "start": 5.04,
+      "end": 7.35,
+      "text": "server, no reload."
+    },
+    {
+      "start": 7.36,
+      "end": 9.27,
+      "text": "Now, here's the strange part. There is"
+    },
+    {
+      "start": 9.28,
+      "end": 12.07,
+      "text": "no JavaScript here. None that you wrote."
+    },
+    {
+      "start": 12.08,
+      "end": 14.71,
+      "text": "The whole thing is one HTML attribute."
+    },
+    {
+      "start": 14.72,
+      "end": 16.79,
+      "text": "To do that same little update the modern"
+    },
+    {
+      "start": 16.8,
+      "end": 19.83,
+      "text": "way, you'd reach for React, a component,"
+    },
+    {
+      "start": 19.84,
+      "end": 22.67,
+      "text": "a piece of state, a fetch call, a JSON"
+    },
+    {
+      "start": 22.68,
+      "end": 24.83,
+      "text": "endpoint on the server, and a re-render"
+    },
+    {
+      "start": 24.84,
+      "end": 27.11,
+      "text": "to stitch it all back together. That is"
+    },
+    {
+      "start": 27.12,
+      "end": 29.27,
+      "text": "a lot of moving parts for one number on"
+    },
+    {
+      "start": 29.28,
+      "end": 32.79,
+      "text": "a screen. HTMX throws all of it out. And"
+    },
+    {
+      "start": 32.8,
+      "end": 35.35,
+      "text": "the secret is almost insultingly simple."
+    },
+    {
+      "start": 35.36,
+      "end": 37.19,
+      "text": "Let plain HTML talk to the server"
+    },
+    {
+      "start": 37.2,
+      "end": 39.75,
+      "text": "directly and swap in whatever HTML comes"
+    },
+    {
+      "start": 39.76,
+      "end": 43.39,
+      "text": "back. Dumb, and it works. So, here's the"
+    },
+    {
+      "start": 43.4,
+      "end": 46.35,
+      "text": "plan. First, the one idea underneath it"
+    },
+    {
+      "start": 46.36,
+      "end": 47.99,
+      "text": "and why the way we've been doing this is"
+    },
+    {
+      "start": 48,
+      "end": 50.23,
+      "text": "stranger than it looks. Then the whole"
+    },
+    {
+      "start": 50.24,
+      "end": 52.35,
+      "text": "thing in four attributes, because that's"
+    },
+    {
+      "start": 52.36,
+      "end": 54.71,
+      "text": "genuinely all there is. And then the"
+    },
+    {
+      "start": 54.72,
+      "end": 56.75,
+      "text": "honest catch, because there's always"
+    },
+    {
+      "start": 56.76,
+      "end": 59.35,
+      "text": "one, and HTMX fans are terrible at"
+    },
+    {
+      "start": 59.36,
+      "end": 61.63,
+      "text": "admitting it. Start with a restaurant,"
+    },
+    {
+      "start": 61.64,
+      "end": 63.47,
+      "text": "because this whole argument is a kitchen"
+    },
+    {
+      "start": 63.48,
+      "end": 65.87,
+      "text": "argument. You order a dish. The kitchen"
+    },
+    {
+      "start": 65.88,
+      "end": 68.27,
+      "text": "cooks it, plates it, and a runner brings"
+    },
+    {
+      "start": 68.28,
+      "end": 70.39,
+      "text": "it to your table. That's the web"
+    },
+    {
+      "start": 70.4,
+      "end": 72.55,
+      "text": "originally. The server assembled a"
+    },
+    {
+      "start": 72.56,
+      "end": 75.03,
+      "text": "finished page and handed it over. Now,"
+    },
+    {
+      "start": 75.03999999999999,
+      "end": 76.87,
+      "text": "here's what a modern single-page app"
+    },
+    {
+      "start": 76.88,
+      "end": 79.67,
+      "text": "does instead. You order, and the kitchen"
+    },
+    {
+      "start": 79.68,
+      "end": 81.43,
+      "text": "sends out raw ingredients in labeled"
+    },
+    {
+      "start": 81.44,
+      "end": 83.71000000000001,
+      "text": "containers. That's your JSON. Then you"
+    },
+    {
+      "start": 83.72,
+      "end": 86.15,
+      "text": "assemble the dish yourself at your table"
+    },
+    {
+      "start": 86.16,
+      "end": 87.91,
+      "text": "with your own equipment, which you had"
+    },
+    {
+      "start": 87.92,
+      "end": 90.83,
+      "text": "to install first. That's React. So, now"
+    },
+    {
+      "start": 90.84,
+      "end": 92.91,
+      "text": "there are two kitchens. One on the"
+    },
+    {
+      "start": 92.92,
+      "end": 95.03,
+      "text": "server that knows what a dish is, and"
+    },
+    {
+      "start": 95.03999999999999,
+      "end": 96.78999999999999,
+      "text": "one in the browser that has to be told"
+    },
+    {
+      "start": 96.8,
+      "end": 97.78999999999999,
+      "text": "again."
+    },
+    {
+      "start": 97.8,
+      "end": 99.75,
+      "text": "And you keep a copy of the menu in both"
+    },
+    {
+      "start": 99.75999999999999,
+      "end": 102.22999999999999,
+      "text": "places, and you write an API forever"
+    },
+    {
+      "start": 102.24000000000001,
+      "end": 104.15,
+      "text": "just to keep the two copies agreeing."
+    },
+    {
+      "start": 104.16,
+      "end": 106.55,
+      "text": "HTMX looks at that and asks the obvious"
+    },
+    {
+      "start": 106.56,
+      "end": 107.75,
+      "text": "question."
+    },
+    {
+      "start": 107.75999999999999,
+      "end": 109.67,
+      "text": "Why don't we just send the plate?"
+    },
+    {
+      "start": 109.68,
+      "end": 112.19,
+      "text": "That's it. That's the whole product."
+    },
+    {
+      "start": 112.2,
+      "end": 114.50999999999999,
+      "text": "It's about 16 kilobytes, zero"
+    },
+    {
+      "start": 114.52000000000001,
+      "end": 116.31,
+      "text": "dependencies, written in plain"
+    },
+    {
+      "start": 116.32,
+      "end": 118.47,
+      "text": "JavaScript you never touch. And it was"
+    },
+    {
+      "start": 118.47999999999999,
+      "end": 120.95,
+      "text": "made by Carson Gross, a computer science"
+    },
+    {
+      "start": 120.96,
+      "end": 122.87,
+      "text": "professor in Montana, not a"
+    },
+    {
+      "start": 122.88,
+      "end": 125.19,
+      "text": "trillion-dollar framework team. Here's"
+    },
+    {
+      "start": 125.2,
+      "end": 128.07,
+      "text": "the loop. You add HX get to an element."
+    },
+    {
+      "start": 128.08,
+      "end": 130.87,
+      "text": "Click it, HTMX fires an HTTP request for"
+    },
+    {
+      "start": 130.88,
+      "end": 132.75,
+      "text": "you. The server sends back a chunk of"
+    },
+    {
+      "start": 132.76,
+      "end": 135.83,
+      "text": "HTML. HTMX drops that HTML into the"
+    },
+    {
+      "start": 135.84,
+      "end": 139.99,
+      "text": "page. Request, response, swap, done. And"
+    },
+    {
+      "start": 140,
+      "end": 141.43,
+      "text": "four attributes cover essentially"
+    },
+    {
+      "start": 141.44,
+      "end": 143.71,
+      "text": "everything. HX post says where to send"
+    },
+    {
+      "start": 143.72,
+      "end": 145.99,
+      "text": "it. HX target says which element on the"
+    },
+    {
+      "start": 146,
+      "end": 149.03,
+      "text": "page should change. HX swap says how,"
+    },
+    {
+      "start": 149.04,
+      "end": 151.51,
+      "text": "replace the insides, the whole element,"
+    },
+    {
+      "start": 151.52,
+      "end": 153.91,
+      "text": "or just append. And HX trigger says"
+    },
+    {
+      "start": 153.92000000000002,
+      "end": 157.43,
+      "text": "when, a click, a form change, a key"
+    },
+    {
+      "start": 157.44,
+      "end": 160.15,
+      "text": "press, a debounce, so it waits until you"
+    },
+    {
+      "start": 160.16,
+      "end": 162.71,
+      "text": "stop typing, or a timer that fires every"
+    },
+    {
+      "start": 162.72,
+      "end": 165.07,
+      "text": "couple of seconds for a live dashboard."
+    },
+    {
+      "start": 165.07999999999998,
+      "end": 168.35,
+      "text": "That's four attributes, not 400 lines."
+    },
+    {
+      "start": 168.36,
+      "end": 170.03,
+      "text": "And notice what just got unlocked,"
+    },
+    {
+      "start": 170.04,
+      "end": 171.79,
+      "text": "because HTML never let you do any of"
+    },
+    {
+      "start": 171.8,
+      "end": 174.19,
+      "text": "this. Any element can make a request,"
+    },
+    {
+      "start": 174.2,
+      "end": 177.43,
+      "text": "not just links and forms, a div, a table"
+    },
+    {
+      "start": 177.44,
+      "end": 180.07,
+      "text": "row, an input. Any event can trigger it,"
+    },
+    {
+      "start": 180.08,
+      "end": 183.19,
+      "text": "not just clicks. Every HTTP verb works,"
+    },
+    {
+      "start": 183.2,
+      "end": 185.39,
+      "text": "not just the two that forms gave you. So"
+    },
+    {
+      "start": 185.4,
+      "end": 187.50900000000001,
+      "text": "a delete button sends an actual HTTP"
+    },
+    {
+      "start": 187.519,
+      "end": 189.79,
+      "text": "delete. The server removes the record,"
+    },
+    {
+      "start": 189.8,
+      "end": 192.63,
+      "text": "returns nothing, and HTMX swaps that row"
+    },
+    {
+      "start": 192.64,
+      "end": 195.47,
+      "text": "out of existence. No state to reconcile,"
+    },
+    {
+      "start": 195.48,
+      "end": 198.50900000000001,
+      "text": "nothing to sync. The row is just gone."
+    },
+    {
+      "start": 198.519,
+      "end": 200.03,
+      "text": "Here's the demo that sold a whole"
+    },
+    {
+      "start": 200.04,
+      "end": 202.75,
+      "text": "generation, an input with HX get firing"
+    },
+    {
+      "start": 202.76,
+      "end": 205.31,
+      "text": "on key up. You type HTMX queries the"
+    },
+    {
+      "start": 205.32,
+      "end": 207.87,
+      "text": "server. The server returns table rows as"
+    },
+    {
+      "start": 207.88,
+      "end": 210.87,
+      "text": "HTML, and they swap into the results."
+    },
+    {
+      "start": 210.88,
+      "end": 213.50900000000001,
+      "text": "Live search, three lines, no API to"
+    },
+    {
+      "start": 213.519,
+      "end": 215.87,
+      "text": "build. And that phrase no API to build"
+    },
+    {
+      "start": 215.88,
+      "end": 217.75,
+      "text": "is the part that should stop you. Your"
+    },
+    {
+      "start": 217.76,
+      "end": 219.91,
+      "text": "back end isn't returning data anymore,"
+    },
+    {
+      "start": 219.92000000000002,
+      "end": 221.71,
+      "text": "it's returning finished plates, which"
+    },
+    {
+      "start": 221.72,
+      "end": 223.75,
+      "text": "means it can be literally anything."
+    },
+    {
+      "start": 223.76,
+      "end": 228.27,
+      "text": "Python, Ruby, Go, PHP, Node. If it can"
+    },
+    {
+      "start": 228.28,
+      "end": 231.47,
+      "text": "return HTML, it speaks HTMX. The"
+    },
+    {
+      "start": 231.48,
+      "end": 233.71,
+      "text": "community even has a name for the stack,"
+    },
+    {
+      "start": 233.72,
+      "end": 234.87,
+      "text": "HAL,"
+    },
+    {
+      "start": 234.88,
+      "end": 236.91,
+      "text": "hypermedia on whatever you'd like. It"
+    },
+    {
+      "start": 236.92000000000002,
+      "end": 239.15,
+      "text": "handles the fiddly parts, too."
+    },
+    {
+      "start": 239.16,
+      "end": 240.83,
+      "text": "An out-of-band swap lets one response"
+    },
+    {
+      "start": 240.84,
+      "end": 242.79,
+      "text": "patch two places at once, the thing you"
+    },
+    {
+      "start": 242.8,
+      "end": 244.23,
+      "text": "clicked and the cart count up in the"
+    },
+    {
+      "start": 244.24,
+      "end": 247.43,
+      "text": "corner. One request, two updates, zero"
+    },
+    {
+      "start": 247.44,
+      "end": 250.23,
+      "text": "glue code. HX E boost quietly upgrades"
+    },
+    {
+      "start": 250.24,
+      "end": 252.11,
+      "text": "ordinary links and forms into background"
+    },
+    {
+      "start": 252.12,
+      "end": 254.51,
+      "text": "requests, so you get that smooth, no"
+    },
+    {
+      "start": 254.52,
+      "end": 256.83,
+      "text": "flash, single-page feel on a site that's"
+    },
+    {
+      "start": 256.84,
+      "end": 259.99,
+      "text": "really just plain HTML pages underneath."
+    },
+    {
+      "start": 260,
+      "end": 261.39,
+      "text": "And a loading spinner while the request"
+    },
+    {
+      "start": 261.4,
+      "end": 263.75,
+      "text": "is in flight is one attribute, not a"
+    },
+    {
+      "start": 263.76,
+      "end": 265.75,
+      "text": "piece of state you hand-wire. Now, the"
+    },
+    {
+      "start": 265.76,
+      "end": 267.59,
+      "text": "receipts, because this isn't a thought"
+    },
+    {
+      "start": 267.6,
+      "end": 271.19,
+      "text": "experiment. HTMX is around 16 KB."
+    },
+    {
+      "start": 271.2,
+      "end": 274.07,
+      "text": "React plus React DOM, just the core,"
+    },
+    {
+      "start": 274.08,
+      "end": 277.63,
+      "text": "before your app exists, is roughly 45."
+    },
+    {
+      "start": 277.64,
+      "end": 279.79,
+      "text": "A real single-page app ships hundreds of"
+    },
+    {
+      "start": 279.8,
+      "end": 282.31,
+      "text": "kilobytes before it shows you anything."
+    },
+    {
+      "start": 282.32,
+      "end": 284.67,
+      "text": "And a company called Context rewrote"
+    },
+    {
+      "start": 284.68,
+      "end": 288.31,
+      "text": "their React app in HTMX and reported 67%"
+    },
+    {
+      "start": 288.32,
+      "end": 290.63,
+      "text": "less code, JavaScript dependencies down"
+    },
+    {
+      "start": 290.64,
+      "end": 293.63,
+      "text": "from 255 to 9, and build times down"
+    },
+    {
+      "start": 293.64,
+      "end": 296.51,
+      "text": "nearly 90%. That's not a benchmark."
+    },
+    {
+      "start": 296.52,
+      "end": 298.47,
+      "text": "That's a team deleting a second kitchen."
+    },
+    {
+      "start": 298.48,
+      "end": 300.39,
+      "text": "Underneath all of this is an old idea"
+    },
+    {
+      "start": 300.4,
+      "end": 303.03,
+      "text": "with a fancy name, hypermedia. The"
+    },
+    {
+      "start": 303.04,
+      "end": 305.23,
+      "text": "server doesn't just send data, it sends"
+    },
+    {
+      "start": 305.24,
+      "end": 307.11,
+      "text": "the next available actions baked into"
+    },
+    {
+      "start": 307.12,
+      "end": 308.59,
+      "text": "the HTML."
+    },
+    {
+      "start": 308.6,
+      "end": 309.95,
+      "text": "The page carries the state of your"
+    },
+    {
+      "start": 309.96,
+      "end": 311.99,
+      "text": "application, and here's the part that"
+    },
+    {
+      "start": 312,
+      "end": 314.79,
+      "text": "breaks people. This is REST, the real"
+    },
+    {
+      "start": 314.8,
+      "end": 316.95,
+      "text": "REST, the way Roy Fielding actually"
+    },
+    {
+      "start": 316.96,
+      "end": 319.19,
+      "text": "defined it. Somewhere along the line,"
+    },
+    {
+      "start": 319.2,
+      "end": 321.47,
+      "text": "the word got hijacked to mean a JSON"
+    },
+    {
+      "start": 321.48,
+      "end": 324.95,
+      "text": "API. HTMX is quietly just going back. It"
+    },
+    {
+      "start": 324.96,
+      "end": 326.59,
+      "text": "also restores something we lost without"
+    },
+    {
+      "start": 326.6,
+      "end": 327.75,
+      "text": "noticing,"
+    },
+    {
+      "start": 327.76,
+      "end": 329.67,
+      "text": "locality of behavior."
+    },
+    {
+      "start": 329.68,
+      "end": 330.95,
+      "text": "Look at the element and you can see"
+    },
+    {
+      "start": 330.96,
+      "end": 333.19,
+      "text": "exactly what it does right there in the"
+    },
+    {
+      "start": 333.2,
+      "end": 335.79,
+      "text": "markup. No hunting through a dozen files"
+    },
+    {
+      "start": 335.8,
+      "end": 338.07,
+      "text": "to trace one click. Now, the honest"
+    },
+    {
+      "start": 338.08,
+      "end": 339.99,
+      "text": "catch, and let me be fair to React"
+    },
+    {
+      "start": 340,
+      "end": 342.19,
+      "text": "first, because HTMX people usually"
+    },
+    {
+      "start": 342.2,
+      "end": 344.99,
+      "text": "aren't. React is not a mistake, and it"
+    },
+    {
+      "start": 345,
+      "end": 347.27,
+      "text": "didn't win by accident. There is a real"
+    },
+    {
+      "start": 347.28,
+      "end": 348.79,
+      "text": "category of application where you"
+    },
+    {
+      "start": 348.8,
+      "end": 350.59000000000003,
+      "text": "genuinely do need a kitchen at your"
+    },
+    {
+      "start": 350.6,
+      "end": 353.67,
+      "text": "table. A spreadsheet like Google Sheets"
+    },
+    {
+      "start": 353.68,
+      "end": 355.63,
+      "text": "where 1,000 cells recalculate the"
+    },
+    {
+      "start": 355.64,
+      "end": 358.23,
+      "text": "instant you type, a map you drag in real"
+    },
+    {
+      "start": 358.24,
+      "end": 361.03,
+      "text": "time, anything that has to work offline,"
+    },
+    {
+      "start": 361.04,
+      "end": 362.27,
+      "text": "anything with thousands of"
+    },
+    {
+      "start": 362.28,
+      "end": 364.07,
+      "text": "interdependent widgets that must react"
+    },
+    {
+      "start": 364.08,
+      "end": 367.07,
+      "text": "instantly, locally, with no round trip."
+    },
+    {
+      "start": 367.08,
+      "end": 368.75,
+      "text": "Send a request to the server for each of"
+    },
+    {
+      "start": 368.76,
+      "end": 370.47,
+      "text": "those interactions and your app feels"
+    },
+    {
+      "start": 370.48,
+      "end": 372.99,
+      "text": "broken because it is. That's React's"
+    },
+    {
+      "start": 373,
+      "end": 375.71,
+      "text": "home turf and it isn't close. If you're"
+    },
+    {
+      "start": 375.72,
+      "end": 377.39,
+      "text": "building a deeply interactive client"
+    },
+    {
+      "start": 377.4,
+      "end": 380.55,
+      "text": "application, use React. That's the thing"
+    },
+    {
+      "start": 380.56,
+      "end": 383.27,
+      "text": "it's brilliant at. So, no, this isn't"
+    },
+    {
+      "start": 383.28,
+      "end": 385.43,
+      "text": "React's funeral. The honest line is"
+    },
+    {
+      "start": 385.44,
+      "end": 387.95,
+      "text": "narrower and more useful than the hype."
+    },
+    {
+      "start": 387.96,
+      "end": 391.03,
+      "text": "HTMX is for the other 90% of the web."
+    },
+    {
+      "start": 391.04,
+      "end": 394.83,
+      "text": "Forms, dashboards, content, CRUD. The"
+    },
+    {
+      "start": 394.84000000000003,
+      "end": 396.55,
+      "text": "boring stuff that is secretly almost"
+    },
+    {
+      "start": 396.56,
+      "end": 398.51,
+      "text": "everything. And be clear-eyed about the"
+    },
+    {
+      "start": 398.52,
+      "end": 400.67,
+      "text": "trade you're making. Every interaction"
+    },
+    {
+      "start": 400.68,
+      "end": 402.55,
+      "text": "is a network round trip, so a flaky"
+    },
+    {
+      "start": 402.56,
+      "end": 404.11,
+      "text": "connection feels worse than it would in"
+    },
+    {
+      "start": 404.12,
+      "end": 406.27,
+      "text": "a client-side app. Your server does more"
+    },
+    {
+      "start": 406.28,
+      "end": 409.15,
+      "text": "work on every click. And no JavaScript"
+    },
+    {
+      "start": 409.15999999999997,
+      "end": 410.83,
+      "text": "is a little bit of marketing the moment"
+    },
+    {
+      "start": 410.84000000000003,
+      "end": 413.07,
+      "text": "you want a drop-down, a toggle, or an"
+    },
+    {
+      "start": 413.08,
+      "end": 415.23,
+      "text": "animation. You reach for a small partner"
+    },
+    {
+      "start": 415.24,
+      "end": 418.75,
+      "text": "like alpine.js or hyperscript. Small"
+    },
+    {
+      "start": 418.76,
+      "end": 420.47,
+      "text": "tools sprinkled where you need them"
+    },
+    {
+      "start": 420.48,
+      "end": 422.39,
+      "text": "instead of one giant framework running"
+    },
+    {
+      "start": 422.4,
+      "end": 424.39,
+      "text": "everything. That's still a much better"
+    },
+    {
+      "start": 424.4,
+      "end": 426.909,
+      "text": "deal. It's just not zero. Four numbers"
+    },
+    {
+      "start": 426.919,
+      "end": 429.47,
+      "text": "to walk away with. 16 KB against React's"
+    },
+    {
+      "start": 429.48,
+      "end": 432.71,
+      "text": "45 before your app even starts. Four"
+    },
+    {
+      "start": 432.72,
+      "end": 434.19,
+      "text": "attributes that cover nearly the whole"
+    },
+    {
+      "start": 434.2,
+      "end": 435.63,
+      "text": "surface area."
+    },
+    {
+      "start": 435.64,
+      "end": 438.95,
+      "text": "255 dependencies down to nine in one"
+    },
+    {
+      "start": 438.96,
+      "end": 441.59,
+      "text": "real rewrite. And one copy of your state"
+    },
+    {
+      "start": 441.6,
+      "end": 443.63,
+      "text": "instead of two, which is where a whole"
+    },
+    {
+      "start": 443.64,
+      "end": 446.31,
+      "text": "category of bug quietly disappears. Back"
+    },
+    {
+      "start": 446.32,
+      "end": 447.99,
+      "text": "to the kitchen. For years, the"
+    },
+    {
+      "start": 448,
+      "end": 450.59,
+      "text": "industry's answer to a slow, clunky web"
+    },
+    {
+      "start": 450.6,
+      "end": 452.03,
+      "text": "was to build a second kitchen in the"
+    },
+    {
+      "start": 452.04,
+      "end": 454.67,
+      "text": "browser. Staff it, ship it to every"
+    },
+    {
+      "start": 454.68,
+      "end": 457.03,
+      "text": "visitor, and then write an API forever"
+    },
+    {
+      "start": 457.04,
+      "end": 459.23,
+      "text": "to keep the two menus in sync."
+    },
+    {
+      "start": 459.24,
+      "end": 461.75,
+      "text": "HTMX's radical suggestion is that most"
+    },
+    {
+      "start": 461.76,
+      "end": 463.95,
+      "text": "restaurants only ever needed the one and"
+    },
+    {
+      "start": 463.96,
+      "end": 466.11,
+      "text": "a runner who brings out the plate. Maybe"
+    },
+    {
+      "start": 466.12,
+      "end": 468.19,
+      "text": "the website was the framework all along."
+    },
+    {
+      "start": 468.2,
+      "end": 469.55,
+      "text": "If this made the modern web feel a"
+    },
+    {
+      "start": 469.56,
+      "end": 472.31,
+      "text": "little less insane, subscribe. That's"
+    },
+    {
+      "start": 472.32,
+      "end": 474.03,
+      "text": "the only thing I'm selling here. I'll"
+    },
+    {
+      "start": 474.04,
+      "end": 477.12,
+      "text": "see you in the next one."
+    }
+  ]
+}

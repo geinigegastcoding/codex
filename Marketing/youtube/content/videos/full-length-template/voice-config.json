@@ -1,0 +1,1 @@
+{"provider":"fish-audio","model":"s2.1-pro","format":"wav","prosody":{"speed":1,"volume":0,"normalize_loudness":true},"temperature":0.7,"topP":0.7,"pauseMs":280,"useTimestamps":true}

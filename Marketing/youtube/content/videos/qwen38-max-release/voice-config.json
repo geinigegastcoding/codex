@@ -1,0 +1,11 @@
+{
+  "provider": "fish-audio",
+  "model": "s2.1-pro-free",
+  "format": "mp3",
+  "prosody": {"speed": 1.55, "volume": 0, "normalize_loudness": true},
+  "temperature": 0.7,
+  "topP": 0.7,
+  "pauseMs": 280,
+  "chunkSeconds": 10,
+  "useTimestamps": false
+}

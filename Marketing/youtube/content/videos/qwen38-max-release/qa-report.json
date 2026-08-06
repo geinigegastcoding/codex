@@ -1,0 +1,16 @@
+{
+  "slug": "qwen38-max-release",
+  "checkedAt": "2026-08-04T07:49:38.711Z",
+  "passed": true,
+  "findings": [],
+  "manualChecks": [
+    "Hook communicates a useful reason to continue",
+    "Promise is paid off",
+    "Every material claim is sourced",
+    "Uncertainty is marked",
+    "Visuals prove or explain narration",
+    "No generic filler or copied identity",
+    "Voice owner is not implied to endorse the channel",
+    "YouTube altered-content disclosure decision is documented"
+  ]
+}

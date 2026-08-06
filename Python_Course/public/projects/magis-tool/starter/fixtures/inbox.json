@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "name": "report.csv",
+      "category": "data"
+    },
+    {
+      "name": "notes.md",
+      "category": "notes"
+    }
+  ]
+}

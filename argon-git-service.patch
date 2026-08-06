@@ -1,0 +1,15 @@
+﻿*** Begin Patch
+*** Update File: src/main/git-service.ts
+@@
+     const safeBranch = this.sanitizeBranch(branch);
+     const target = this.managed(worktree);
++    if (!(await this.status()).clean) throw new Error("Cannot create worktree from a dirty source");
+     await fs.mkdir(path.dirname(target), { recursive: true });
+@@
+   async removeWorktree(worktree: string): Promise<string> {
+-    return this.run(["worktree", "remove", "--force", this.managed(worktree)], this.root);
++    const target = this.managed(worktree);
++    if (!(await this.status(target)).clean) throw new Error("Cannot remove a dirty worktree");
++    return this.run(["worktree", "remove", target], this.root);
+   }
+*** End Patch

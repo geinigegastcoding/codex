@@ -35,6 +35,7 @@ sources: []
 - [[personal/inbox/README]] — uncategorized captures.
 - [[personal/areas/habits]] — habit definitions and trends.
 - [[personal/areas/ideas]] — personal ideas.
+- [[personal/areas/profile]] — dated personal and learning profile.
 - [[personal/ideas/2026-07-27-memo-voor-toooo]] — captured memo with three personal ideas.
 - [[personal/resources/books/README]] — books and reading status.
 - [[personal/resources/places/README]] — places and recommendations.

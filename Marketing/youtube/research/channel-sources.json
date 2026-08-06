@@ -1,0 +1,52 @@
+{
+  "dateChecked": "2026-08-03",
+  "resolutionNotes": [
+    "https://www.youtube.com/@devsplainer returned HTTP 404 on 2026-08-03.",
+    "An exact YouTube search for Devsplainer returned the AI/software channel Devsplainers. This is recorded as a likely match, not a certain identity match.",
+    "https://www.youtube.com/@kaiexplainsYT resolved successfully to the channel displayed as Kai."
+  ],
+  "channels": [
+    {
+      "key": "devsplainer",
+      "requestedName": "Devsplainer",
+      "resolvedName": "Devsplainers",
+      "requestedUrl": "https://www.youtube.com/@devsplainer",
+      "channelUrl": "https://www.youtube.com/channel/UCf4sXk66VuWGlg4Nh0tuCdA",
+      "channelId": "UCf4sXk66VuWGlg4Nh0tuCdA",
+      "confidence": "likely-inference",
+      "selectedVideoUrls": [
+        "https://www.youtube.com/watch?v=19xCOJxWU0A",
+        "https://www.youtube.com/watch?v=Ez4siJMzLX8",
+        "https://www.youtube.com/watch?v=F3rmpMNoZP4",
+        "https://www.youtube.com/watch?v=pI9uZGoIchA",
+        "https://www.youtube.com/watch?v=EfuLE8jKhU4",
+        "https://www.youtube.com/watch?v=kIotDKOpfV4",
+        "https://www.youtube.com/watch?v=3DhgRoP54H8",
+        "https://www.youtube.com/watch?v=MYPLpkENs7A",
+        "https://www.youtube.com/watch?v=VMcGuTg30gQ",
+        "https://www.youtube.com/watch?v=jgYktxRm9oI"
+      ]
+    },
+    {
+      "key": "kaiexplains",
+      "requestedName": "kaiexplainsYT",
+      "resolvedName": "Kai",
+      "requestedUrl": "https://www.youtube.com/@kaiexplainsYT",
+      "channelUrl": "https://www.youtube.com/channel/UCgUfJoPtkt7-RiiuYh4vmGA",
+      "channelId": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "confidence": "observed",
+      "selectedVideoUrls": [
+        "https://www.youtube.com/watch?v=MgHQncHjDhs",
+        "https://www.youtube.com/watch?v=5E3qTmQPmP8",
+        "https://www.youtube.com/watch?v=Y_34JZmZElg",
+        "https://www.youtube.com/watch?v=tjdCBCr4qhQ",
+        "https://www.youtube.com/watch?v=cGhT8G408lA",
+        "https://www.youtube.com/watch?v=k26fT4athQs",
+        "https://www.youtube.com/watch?v=-UxcljWN49I",
+        "https://www.youtube.com/watch?v=HPAh1uiE2z0",
+        "https://www.youtube.com/watch?v=mtk8p8czzDU",
+        "https://www.youtube.com/watch?v=YgyyWDGeQWM"
+      ]
+    }
+  ]
+}

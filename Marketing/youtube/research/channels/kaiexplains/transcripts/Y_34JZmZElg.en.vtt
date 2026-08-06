@@ -1,0 +1,2256 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.510 align:start position:0%
+ 
+Two<00:00:00.200><c> graphics</c><00:00:00.640><c> cards.</c><00:00:01.480><c> One</c><00:00:01.680><c> is</c><00:00:01.840><c> 5</c><00:00:02.040><c> years</c><00:00:02.320><c> old</c>
+
+00:00:02.510 --> 00:00:02.520 align:start position:0%
+Two graphics cards. One is 5 years old
+ 
+
+00:00:02.520 --> 00:00:04.790 align:start position:0%
+Two graphics cards. One is 5 years old
+and<00:00:02.640><c> has</c><00:00:02.800><c> 12</c><00:00:03.160><c> GB</c><00:00:03.480><c> of</c><00:00:03.600><c> memory.</c><00:00:04.320><c> The</c><00:00:04.480><c> other</c><00:00:04.680><c> is</c>
+
+00:00:04.790 --> 00:00:04.800 align:start position:0%
+and has 12 GB of memory. The other is
+ 
+
+00:00:04.800 --> 00:00:08.510 align:start position:0%
+and has 12 GB of memory. The other is
+newer,<00:00:05.400><c> has</c><00:00:05.600><c> 16</c><00:00:06.080><c> GB,</c><00:00:06.680><c> and</c><00:00:06.800><c> costs</c><00:00:07.080><c> 60%</c><00:00:07.760><c> more.</c><00:00:08.400><c> On</c>
+
+00:00:08.510 --> 00:00:08.520 align:start position:0%
+newer, has 16 GB, and costs 60% more. On
+ 
+
+00:00:08.520 --> 00:00:11.030 align:start position:0%
+newer, has 16 GB, and costs 60% more. On
+the<00:00:08.640><c> same</c><00:00:08.880><c> model,</c><00:00:09.560><c> the</c><00:00:09.680><c> same</c><00:00:09.960><c> test,</c><00:00:10.640><c> the</c><00:00:10.760><c> same</c>
+
+00:00:11.030 --> 00:00:11.040 align:start position:0%
+the same model, the same test, the same
+ 
+
+00:00:11.040 --> 00:00:13.190 align:start position:0%
+the same model, the same test, the same
+settings,<00:00:11.920><c> the</c><00:00:12.080><c> old</c><00:00:12.280><c> cheap</c><00:00:12.520><c> one</c><00:00:12.680><c> writes</c><00:00:12.920><c> text</c>
+
+00:00:13.190 --> 00:00:13.200 align:start position:0%
+settings, the old cheap one writes text
+ 
+
+00:00:13.200 --> 00:00:16.470 align:start position:0%
+settings, the old cheap one writes text
+faster,<00:00:14.000><c> 42</c><00:00:14.480><c> tokens</c><00:00:14.800><c> a</c><00:00:14.880><c> second</c><00:00:15.240><c> against</c><00:00:15.520><c> 34.</c>
+
+00:00:16.470 --> 00:00:16.480 align:start position:0%
+faster, 42 tokens a second against 34.
+ 
+
+00:00:16.480 --> 00:00:18.630 align:start position:0%
+faster, 42 tokens a second against 34.
+The<00:00:16.600><c> newer</c><00:00:16.840><c> card</c><00:00:17.120><c> has</c><00:00:17.240><c> more</c><00:00:17.440><c> computing</c><00:00:17.920><c> power.</c>
+
+00:00:18.630 --> 00:00:18.640 align:start position:0%
+The newer card has more computing power.
+ 
+
+00:00:18.640 --> 00:00:21.630 align:start position:0%
+The newer card has more computing power.
+It<00:00:18.760><c> just</c><00:00:19.000><c> has</c><00:00:19.200><c> less</c><00:00:19.520><c> memory</c><00:00:19.800><c> bandwidth,</c><00:00:20.640><c> 288</c>
+
+00:00:21.630 --> 00:00:21.640 align:start position:0%
+It just has less memory bandwidth, 288
+ 
+
+00:00:21.640 --> 00:00:24.150 align:start position:0%
+It just has less memory bandwidth, 288
+GB<00:00:21.920><c> a</c><00:00:22.000><c> second</c><00:00:22.360><c> against</c><00:00:22.600><c> 360.</c><00:00:23.760><c> That</c><00:00:23.960><c> is</c><00:00:24.080><c> the</c>
+
+00:00:24.150 --> 00:00:24.160 align:start position:0%
+GB a second against 360. That is the
+ 
+
+00:00:24.160 --> 00:00:25.950 align:start position:0%
+GB a second against 360. That is the
+whole<00:00:24.320><c> trick.</c><00:00:25.000><c> When</c><00:00:25.120><c> a</c><00:00:25.200><c> model</c><00:00:25.560><c> writes</c><00:00:25.800><c> you</c><00:00:25.920><c> a</c>
+
+00:00:25.950 --> 00:00:25.960 align:start position:0%
+whole trick. When a model writes you a
+ 
+
+00:00:25.960 --> 00:00:28.950 align:start position:0%
+whole trick. When a model writes you a
+sentence,<00:00:26.880><c> it</c><00:00:27.000><c> is</c><00:00:27.200><c> barely</c><00:00:27.680><c> doing</c><00:00:28.000><c> arithmetic.</c>
+
+00:00:28.950 --> 00:00:28.960 align:start position:0%
+sentence, it is barely doing arithmetic.
+ 
+
+00:00:28.960 --> 00:00:31.550 align:start position:0%
+sentence, it is barely doing arithmetic.
+It<00:00:29.080><c> is</c><00:00:29.280><c> reading.</c><00:00:30.120><c> And</c><00:00:30.320><c> reading</c><00:00:30.800><c> is</c><00:00:31.000><c> bounded</c><00:00:31.400><c> by</c>
+
+00:00:31.550 --> 00:00:31.560 align:start position:0%
+It is reading. And reading is bounded by
+ 
+
+00:00:31.560 --> 00:00:33.950 align:start position:0%
+It is reading. And reading is bounded by
+memory.<00:00:32.360><c> Five</c><00:00:32.680><c> things</c><00:00:32.960><c> decide</c><00:00:33.400><c> whether</c><00:00:33.600><c> local</c>
+
+00:00:33.950 --> 00:00:33.960 align:start position:0%
+memory. Five things decide whether local
+ 
+
+00:00:33.960 --> 00:00:36.070 align:start position:0%
+memory. Five things decide whether local
+AI<00:00:34.240><c> works</c><00:00:34.560><c> on</c><00:00:34.680><c> your</c><00:00:34.760><c> machine.</c><00:00:35.560><c> Four</c><00:00:35.800><c> of</c><00:00:35.920><c> them</c>
+
+00:00:36.070 --> 00:00:36.080 align:start position:0%
+AI works on your machine. Four of them
+ 
+
+00:00:36.080 --> 00:00:37.710 align:start position:0%
+AI works on your machine. Four of them
+are<00:00:36.200><c> not</c><00:00:36.520><c> printed</c><00:00:36.840><c> on</c><00:00:36.960><c> the</c><00:00:37.040><c> box</c><00:00:37.400><c> you</c><00:00:37.480><c> have</c><00:00:37.600><c> been</c>
+
+00:00:37.710 --> 00:00:37.720 align:start position:0%
+are not printed on the box you have been
+ 
+
+00:00:37.720 --> 00:00:40.590 align:start position:0%
+are not printed on the box you have been
+comparing.<00:00:38.640><c> How</c><00:00:38.880><c> fast</c><00:00:39.280><c> your</c><00:00:39.400><c> memory</c><00:00:39.760><c> is.</c><00:00:40.440><c> How</c>
+
+00:00:40.590 --> 00:00:40.600 align:start position:0%
+comparing. How fast your memory is. How
+ 
+
+00:00:40.600 --> 00:00:42.750 align:start position:0%
+comparing. How fast your memory is. How
+many<00:00:40.840><c> bytes</c><00:00:41.160><c> get</c><00:00:41.360><c> read</c><00:00:41.520><c> per</c><00:00:41.680><c> token.</c><00:00:42.480><c> Whether</c>
+
+00:00:42.750 --> 00:00:42.760 align:start position:0%
+many bytes get read per token. Whether
+ 
+
+00:00:42.760 --> 00:00:45.110 align:start position:0%
+many bytes get read per token. Whether
+the<00:00:42.840><c> thing</c><00:00:43.080><c> fits.</c><00:00:43.880><c> How</c><00:00:44.000><c> much</c><00:00:44.160><c> context</c><00:00:44.720><c> you</c><00:00:44.840><c> ask</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+the thing fits. How much context you ask
+ 
+
+00:00:45.120 --> 00:00:46.910 align:start position:0%
+the thing fits. How much context you ask
+for.<00:00:45.720><c> And</c><00:00:45.840><c> what</c><00:00:45.960><c> you</c><00:00:46.040><c> are</c><00:00:46.240><c> actually</c><00:00:46.640><c> running</c>
+
+00:00:46.910 --> 00:00:46.920 align:start position:0%
+for. And what you are actually running
+ 
+
+00:00:46.920 --> 00:00:50.150 align:start position:0%
+for. And what you are actually running
+it<00:00:47.040><c> for.</c><00:00:47.600><c> Get</c><00:00:47.760><c> those</c><00:00:48.000><c> right</c><00:00:48.640><c> and</c><00:00:48.760><c> a</c><00:00:48.840><c> $250</c><00:00:49.880><c> card</c>
+
+00:00:50.150 --> 00:00:50.160 align:start position:0%
+it for. Get those right and a $250 card
+ 
+
+00:00:50.160 --> 00:00:52.950 align:start position:0%
+it for. Get those right and a $250 card
+beats<00:00:50.400><c> a</c><00:00:50.480><c> $4,000</c><00:00:51.480><c> one</c><00:00:51.680><c> at</c><00:00:51.760><c> your</c><00:00:51.880><c> job.</c><00:00:52.600><c> Get</c><00:00:52.800><c> them</c>
+
+00:00:52.950 --> 00:00:52.960 align:start position:0%
+beats a $4,000 one at your job. Get them
+ 
+
+00:00:52.960 --> 00:00:55.270 align:start position:0%
+beats a $4,000 one at your job. Get them
+wrong<00:00:53.640><c> and</c><00:00:53.760><c> you</c><00:00:53.880><c> spend</c><00:00:54.280><c> two</c><00:00:54.520><c> grand</c><00:00:54.920><c> to</c><00:00:55.080><c> run</c>
+
+00:00:55.270 --> 00:00:55.280 align:start position:0%
+wrong and you spend two grand to run
+ 
+
+00:00:55.280 --> 00:00:58.070 align:start position:0%
+wrong and you spend two grand to run
+something<00:00:55.760><c> worse</c><00:00:56.080><c> than</c><00:00:56.240><c> a</c><00:00:56.320><c> free</c><00:00:56.560><c> API.</c><00:00:57.400><c> So,</c>
+
+00:00:58.070 --> 00:00:58.080 align:start position:0%
+something worse than a free API. So,
+ 
+
+00:00:58.080 --> 00:01:00.510 align:start position:0%
+something worse than a free API. So,
+number<00:00:58.320><c> one,</c><00:00:58.960><c> memory</c><00:00:59.320><c> bandwidth.</c><00:01:00.160><c> And</c><00:01:00.360><c> why</c>
+
+00:01:00.510 --> 00:01:00.520 align:start position:0%
+number one, memory bandwidth. And why
+ 
+
+00:01:00.520 --> 00:01:02.350 align:start position:0%
+number one, memory bandwidth. And why
+the<00:01:00.640><c> number</c><00:01:00.920><c> on</c><00:01:01.120><c> every</c><00:01:01.400><c> spec</c><00:01:01.760><c> sheet</c><00:01:01.960><c> turns</c><00:01:02.240><c> out</c>
+
+00:01:02.350 --> 00:01:02.360 align:start position:0%
+the number on every spec sheet turns out
+ 
+
+00:01:02.360 --> 00:01:03.990 align:start position:0%
+the number on every spec sheet turns out
+to<00:01:02.440><c> be</c><00:01:02.520><c> the</c><00:01:02.640><c> wrong</c><00:01:02.920><c> one.</c><00:01:03.480><c> Here</c><00:01:03.720><c> is</c><00:01:03.840><c> what</c>
+
+00:01:03.990 --> 00:01:04.000 align:start position:0%
+to be the wrong one. Here is what
+ 
+
+00:01:04.000 --> 00:01:06.510 align:start position:0%
+to be the wrong one. Here is what
+generation<00:01:04.519><c> physically</c><00:01:05.000><c> is.</c><00:01:05.760><c> To</c><00:01:05.880><c> produce</c><00:01:06.200><c> one</c>
+
+00:01:06.510 --> 00:01:06.520 align:start position:0%
+generation physically is. To produce one
+ 
+
+00:01:06.520 --> 00:01:08.710 align:start position:0%
+generation physically is. To produce one
+token,<00:01:07.280><c> the</c><00:01:07.360><c> machine</c><00:01:07.760><c> reads</c><00:01:08.080><c> every</c><00:01:08.400><c> weight</c><00:01:08.640><c> in</c>
+
+00:01:08.710 --> 00:01:08.720 align:start position:0%
+token, the machine reads every weight in
+ 
+
+00:01:08.720 --> 00:01:10.190 align:start position:0%
+token, the machine reads every weight in
+the<00:01:08.800><c> model</c><00:01:09.160><c> out</c><00:01:09.280><c> of</c><00:01:09.360><c> memory</c><00:01:09.840><c> and</c><00:01:10.000><c> does</c><00:01:10.160><c> a</c>
+
+00:01:10.190 --> 00:01:10.200 align:start position:0%
+the model out of memory and does a
+ 
+
+00:01:10.200 --> 00:01:12.390 align:start position:0%
+the model out of memory and does a
+single<00:01:10.600><c> pass.</c><00:01:11.280><c> Then</c><00:01:11.440><c> it</c><00:01:11.520><c> throws</c><00:01:11.760><c> that</c><00:01:11.920><c> away</c>
+
+00:01:12.390 --> 00:01:12.400 align:start position:0%
+single pass. Then it throws that away
+ 
+
+00:01:12.400 --> 00:01:14.550 align:start position:0%
+single pass. Then it throws that away
+and<00:01:12.600><c> does</c><00:01:12.800><c> it</c><00:01:12.880><c> again</c><00:01:13.320><c> for</c><00:01:13.440><c> the</c><00:01:13.520><c> next</c><00:01:13.800><c> token.</c>
+
+00:01:14.550 --> 00:01:14.560 align:start position:0%
+and does it again for the next token.
+ 
+
+00:01:14.560 --> 00:01:16.190 align:start position:0%
+and does it again for the next token.
+So,<00:01:14.680><c> the</c><00:01:14.800><c> ceiling</c><00:01:15.120><c> is</c><00:01:15.240><c> arithmetic</c><00:01:15.840><c> you</c><00:01:15.920><c> can</c><00:01:16.080><c> do</c>
+
+00:01:16.190 --> 00:01:16.200 align:start position:0%
+So, the ceiling is arithmetic you can do
+ 
+
+00:01:16.200 --> 00:01:18.110 align:start position:0%
+So, the ceiling is arithmetic you can do
+in<00:01:16.280><c> your</c><00:01:16.400><c> head.</c><00:01:17.120><c> Tokens</c><00:01:17.480><c> per</c><00:01:17.600><c> second</c><00:01:17.920><c> is</c>
+
+00:01:18.110 --> 00:01:18.120 align:start position:0%
+in your head. Tokens per second is
+ 
+
+00:01:18.120 --> 00:01:20.070 align:start position:0%
+in your head. Tokens per second is
+roughly<00:01:18.480><c> your</c><00:01:18.640><c> memory</c><00:01:18.960><c> bandwidth</c><00:01:19.480><c> divided</c><00:01:19.960><c> by</c>
+
+00:01:20.070 --> 00:01:20.080 align:start position:0%
+roughly your memory bandwidth divided by
+ 
+
+00:01:20.080 --> 00:01:22.110 align:start position:0%
+roughly your memory bandwidth divided by
+the<00:01:20.200><c> bytes</c><00:01:20.520><c> you</c><00:01:20.600><c> read</c><00:01:20.800><c> per</c><00:01:20.960><c> token.</c><00:01:21.800><c> Real</c>
+
+00:01:22.110 --> 00:01:22.120 align:start position:0%
+the bytes you read per token. Real
+ 
+
+00:01:22.120 --> 00:01:23.750 align:start position:0%
+the bytes you read per token. Real
+engines<00:01:22.520><c> land</c><00:01:22.760><c> between</c><00:01:23.080><c> half</c><00:01:23.440><c> and</c><00:01:23.560><c> three</c>
+
+00:01:23.750 --> 00:01:23.760 align:start position:0%
+engines land between half and three
+ 
+
+00:01:23.760 --> 00:01:26.110 align:start position:0%
+engines land between half and three
+quarters<00:01:24.120><c> of</c><00:01:24.240><c> that.</c><00:01:24.880><c> An</c><00:01:25.160><c> 8</c><00:01:25.360><c> billion</c><00:01:25.680><c> parameter</c>
+
+00:01:26.110 --> 00:01:26.120 align:start position:0%
+quarters of that. An 8 billion parameter
+ 
+
+00:01:26.120 --> 00:01:29.030 align:start position:0%
+quarters of that. An 8 billion parameter
+model<00:01:26.400><c> at</c><00:01:26.520><c> 4-bit</c><00:01:27.000><c> is</c><00:01:27.080><c> about</c><00:01:27.360><c> 5</c><00:01:27.760><c> GB.</c><00:01:28.600><c> On</c><00:01:28.800><c> that</c>
+
+00:01:29.030 --> 00:01:29.040 align:start position:0%
+model at 4-bit is about 5 GB. On that
+ 
+
+00:01:29.040 --> 00:01:33.230 align:start position:0%
+model at 4-bit is about 5 GB. On that
+old<00:01:29.240><c> card,</c><00:01:30.000><c> 360</c><00:01:30.920><c> divided</c><00:01:31.320><c> by</c><00:01:31.440><c> 5</c><00:01:31.960><c> is</c><00:01:32.120><c> 72.</c>
+
+00:01:33.230 --> 00:01:33.240 align:start position:0%
+old card, 360 divided by 5 is 72.
+ 
+
+00:01:33.240 --> 00:01:36.790 align:start position:0%
+old card, 360 divided by 5 is 72.
+Measured,<00:01:34.000><c> it</c><00:01:34.160><c> does</c><00:01:34.480><c> 55,</c><00:01:35.520><c> 77%</c><00:01:36.640><c> of</c><00:01:36.720><c> the</c>
+
+00:01:36.790 --> 00:01:36.800 align:start position:0%
+Measured, it does 55, 77% of the
+ 
+
+00:01:36.800 --> 00:01:38.710 align:start position:0%
+Measured, it does 55, 77% of the
+ceiling.<00:01:37.600><c> Run</c><00:01:37.800><c> the</c><00:01:37.880><c> same</c><00:01:38.160><c> model</c><00:01:38.480><c> up</c><00:01:38.600><c> the</c>
+
+00:01:38.710 --> 00:01:38.720 align:start position:0%
+ceiling. Run the same model up the
+ 
+
+00:01:38.720 --> 00:01:41.110 align:start position:0%
+ceiling. Run the same model up the
+ladder<00:01:39.200><c> and</c><00:01:39.320><c> the</c><00:01:39.440><c> line</c><00:01:39.760><c> stays</c><00:01:40.040><c> straight.</c><00:01:40.840><c> A</c>
+
+00:01:41.110 --> 00:01:41.120 align:start position:0%
+ladder and the line stays straight. A
+ 
+
+00:01:41.120 --> 00:01:42.670 align:start position:0%
+ladder and the line stays straight. A
+3090,
+
+00:01:42.670 --> 00:01:42.680 align:start position:0%
+3090,
+ 
+
+00:01:42.680 --> 00:01:48.870 align:start position:0%
+3090,
+936<00:01:43.960><c> GB</c><00:01:44.280><c> a</c><00:01:44.360><c> second,</c><00:01:45.160><c> 115</c><00:01:46.160><c> tokens.</c><00:01:47.120><c> A</c><00:01:47.400><c> 5090,</c>
+
+00:01:48.870 --> 00:01:48.880 align:start position:0%
+936 GB a second, 115 tokens. A 5090,
+ 
+
+00:01:48.880 --> 00:01:50.510 align:start position:0%
+936 GB a second, 115 tokens. A 5090,
+1792,
+
+00:01:50.510 --> 00:01:50.520 align:start position:0%
+1792,
+ 
+
+00:01:50.520 --> 00:01:52.950 align:start position:0%
+1792,
+200<00:01:51.000><c> tokens.</c><00:01:51.920><c> Now,</c><00:01:52.080><c> take</c><00:01:52.360><c> the</c><00:01:52.480><c> card</c><00:01:52.720><c> away</c>
+
+00:01:52.950 --> 00:01:52.960 align:start position:0%
+200 tokens. Now, take the card away
+ 
+
+00:01:52.960 --> 00:01:55.430 align:start position:0%
+200 tokens. Now, take the card away
+entirely.<00:01:54.040><c> Dual</c><00:01:54.320><c> channel</c><00:01:54.600><c> desktop</c><00:01:55.120><c> memory</c>
+
+00:01:55.430 --> 00:01:55.440 align:start position:0%
+entirely. Dual channel desktop memory
+ 
+
+00:01:55.440 --> 00:01:58.950 align:start position:0%
+entirely. Dual channel desktop memory
+runs<00:01:55.680><c> about</c><00:01:55.960><c> 96</c><00:01:56.600><c> GB</c><00:01:56.920><c> a</c><00:01:57.040><c> second.</c><00:01:57.880><c> 18</c><00:01:58.360><c> times</c><00:01:58.720><c> less</c>
+
+00:01:58.950 --> 00:01:58.960 align:start position:0%
+runs about 96 GB a second. 18 times less
+ 
+
+00:01:58.960 --> 00:02:00.990 align:start position:0%
+runs about 96 GB a second. 18 times less
+than<00:01:59.080><c> the</c><00:01:59.200><c> top</c><00:01:59.440><c> card.</c><00:02:00.160><c> And</c><00:02:00.280><c> that</c><00:02:00.480><c> shows</c><00:02:00.720><c> up</c><00:02:00.840><c> as</c>
+
+00:02:00.990 --> 00:02:01.000 align:start position:0%
+than the top card. And that shows up as
+ 
+
+00:02:01.000 --> 00:02:03.350 align:start position:0%
+than the top card. And that shows up as
+roughly<00:02:01.320><c> 11</c><00:02:01.800><c> tokens</c><00:02:02.120><c> a</c><00:02:02.160><c> second</c><00:02:02.720><c> on</c><00:02:02.840><c> a</c><00:02:02.880><c> 7</c>
+
+00:02:03.350 --> 00:02:03.360 align:start position:0%
+roughly 11 tokens a second on a 7
+ 
+
+00:02:03.360 --> 00:02:05.710 align:start position:0%
+roughly 11 tokens a second on a 7
+billion<00:02:03.760><c> model.</c><00:02:04.360><c> Apple</c><00:02:04.640><c> sidesteps</c><00:02:05.160><c> the</c><00:02:05.280><c> whole</c>
+
+00:02:05.710 --> 00:02:05.720 align:start position:0%
+billion model. Apple sidesteps the whole
+ 
+
+00:02:05.720 --> 00:02:07.710 align:start position:0%
+billion model. Apple sidesteps the whole
+argument<00:02:06.160><c> by</c><00:02:06.280><c> putting</c><00:02:06.600><c> one</c><00:02:06.920><c> pool</c><00:02:07.240><c> of</c><00:02:07.360><c> fast</c>
+
+00:02:07.710 --> 00:02:07.720 align:start position:0%
+argument by putting one pool of fast
+ 
+
+00:02:07.720 --> 00:02:10.350 align:start position:0%
+argument by putting one pool of fast
+memory<00:02:08.000><c> behind</c><00:02:08.360><c> everything.</c><00:02:09.240><c> An</c><00:02:09.479><c> M5</c><00:02:10.000><c> Max</c>
+
+00:02:10.350 --> 00:02:10.360 align:start position:0%
+memory behind everything. An M5 Max
+ 
+
+00:02:10.360 --> 00:02:14.350 align:start position:0%
+memory behind everything. An M5 Max
+moves<00:02:10.679><c> 614</c><00:02:11.640><c> GB</c><00:02:11.920><c> a</c><00:02:12.000><c> second</c><00:02:12.400><c> across</c><00:02:12.760><c> 128</c><00:02:13.880><c> GB</c><00:02:14.240><c> of</c>
+
+00:02:14.350 --> 00:02:14.360 align:start position:0%
+moves 614 GB a second across 128 GB of
+ 
+
+00:02:14.360 --> 00:02:17.430 align:start position:0%
+moves 614 GB a second across 128 GB of
+it,<00:02:14.880><c> which</c><00:02:15.040><c> is</c><00:02:15.120><c> how</c><00:02:15.240><c> a</c><00:02:15.320><c> Mac</c><00:02:15.600><c> Studio</c><00:02:15.959><c> ran</c><00:02:16.160><c> a</c><00:02:16.240><c> 671</c>
+
+00:02:17.430 --> 00:02:17.440 align:start position:0%
+it, which is how a Mac Studio ran a 671
+ 
+
+00:02:17.440 --> 00:02:19.830 align:start position:0%
+it, which is how a Mac Studio ran a 671
+billion<00:02:17.880><c> parameter</c><00:02:18.360><c> Deep</c><00:02:18.640><c> Seek</c><00:02:18.959><c> at</c><00:02:19.040><c> around</c><00:02:19.320><c> 17</c>
+
+00:02:19.830 --> 00:02:19.840 align:start position:0%
+billion parameter Deep Seek at around 17
+ 
+
+00:02:19.840 --> 00:02:22.830 align:start position:0%
+billion parameter Deep Seek at around 17
+tokens<00:02:20.160><c> a</c><00:02:20.200><c> second.</c><00:02:20.959><c> Pulling</c><00:02:21.240><c> under</c><00:02:21.480><c> 200</c><00:02:22.320><c> West,</c>
+
+00:02:22.830 --> 00:02:22.840 align:start position:0%
+tokens a second. Pulling under 200 West,
+ 
+
+00:02:22.840 --> 00:02:25.990 align:start position:0%
+tokens a second. Pulling under 200 West,
+no<00:02:23.080><c> rack,</c><00:02:23.680><c> no</c><00:02:23.920><c> cooling</c><00:02:24.280><c> problem,</c><00:02:25.040><c> no</c><00:02:25.200><c> cloud.</c>
+
+00:02:25.990 --> 00:02:26.000 align:start position:0%
+no rack, no cooling problem, no cloud.
+ 
+
+00:02:26.000 --> 00:02:27.470 align:start position:0%
+no rack, no cooling problem, no cloud.
+But<00:02:26.160><c> bandwidth</c><00:02:26.640><c> only</c><00:02:26.840><c> governs</c><00:02:27.160><c> half</c><00:02:27.400><c> the</c>
+
+00:02:27.470 --> 00:02:27.480 align:start position:0%
+But bandwidth only governs half the
+ 
+
+00:02:27.480 --> 00:02:29.270 align:start position:0%
+But bandwidth only governs half the
+work.<00:02:28.040><c> Reading</c><00:02:28.320><c> your</c><00:02:28.440><c> prompt</c><00:02:28.760><c> is</c><00:02:28.880><c> a</c><00:02:28.920><c> different</c>
+
+00:02:29.270 --> 00:02:29.280 align:start position:0%
+work. Reading your prompt is a different
+ 
+
+00:02:29.280 --> 00:02:31.949 align:start position:0%
+work. Reading your prompt is a different
+job.<00:02:29.920><c> That</c><00:02:30.160><c> part</c><00:02:30.400><c> happens</c><00:02:30.720><c> in</c><00:02:30.840><c> parallel,</c><00:02:31.800><c> so</c>
+
+00:02:31.949 --> 00:02:31.959 align:start position:0%
+job. That part happens in parallel, so
+ 
+
+00:02:31.959 --> 00:02:34.110 align:start position:0%
+job. That part happens in parallel, so
+it<00:02:32.040><c> is</c><00:02:32.200><c> bound</c><00:02:32.520><c> by</c><00:02:32.680><c> compute.</c><00:02:33.520><c> Watch</c><00:02:33.800><c> what</c><00:02:33.920><c> that</c>
+
+00:02:34.110 --> 00:02:34.120 align:start position:0%
+it is bound by compute. Watch what that
+ 
+
+00:02:34.120 --> 00:02:36.310 align:start position:0%
+it is bound by compute. Watch what that
+does<00:02:34.400><c> to</c><00:02:34.520><c> our</c><00:02:34.640><c> two</c><00:02:34.880><c> cards.</c><00:02:35.800><c> At</c><00:02:35.959><c> prompt</c>
+
+00:02:36.310 --> 00:02:36.320 align:start position:0%
+does to our two cards. At prompt
+ 
+
+00:02:36.320 --> 00:02:39.630 align:start position:0%
+does to our two cards. At prompt
+processing,<00:02:37.240><c> the</c><00:02:37.360><c> newer,</c><00:02:38.120><c> weaker</c><00:02:38.520><c> card</c><00:02:38.840><c> wins.</c>
+
+00:02:39.630 --> 00:02:39.640 align:start position:0%
+processing, the newer, weaker card wins.
+ 
+
+00:02:39.640 --> 00:02:41.190 align:start position:0%
+processing, the newer, weaker card wins.
+1,480
+
+00:02:41.190 --> 00:02:41.200 align:start position:0%
+1,480
+ 
+
+00:02:41.200 --> 00:02:45.110 align:start position:0%
+1,480
+tokens<00:02:41.600><c> a</c><00:02:41.640><c> second</c><00:02:42.440><c> against</c><00:02:42.800><c> 1,119.</c>
+
+00:02:45.110 --> 00:02:45.120 align:start position:0%
+tokens a second against 1,119.
+ 
+
+00:02:45.120 --> 00:02:48.150 align:start position:0%
+tokens a second against 1,119.
+Same<00:02:45.520><c> two</c><00:02:45.720><c> cards,</c><00:02:46.600><c> opposite</c><00:02:47.040><c> answer.</c><00:02:47.800><c> Paste</c>
+
+00:02:48.150 --> 00:02:48.160 align:start position:0%
+Same two cards, opposite answer. Paste
+ 
+
+00:02:48.160 --> 00:02:50.830 align:start position:0%
+Same two cards, opposite answer. Paste
+huge<00:02:48.560><c> prompts</c><00:02:49.080><c> and</c><00:02:49.200><c> you</c><00:02:49.320><c> want</c><00:02:49.480><c> compute.</c><00:02:50.320><c> Chat</c>
+
+00:02:50.830 --> 00:02:50.840 align:start position:0%
+huge prompts and you want compute. Chat
+ 
+
+00:02:50.840 --> 00:02:52.670 align:start position:0%
+huge prompts and you want compute. Chat
+and<00:02:50.959><c> you</c><00:02:51.040><c> want</c><00:02:51.280><c> bandwidth,</c><00:02:52.080><c> which</c><00:02:52.320><c> brings</c><00:02:52.560><c> us</c>
+
+00:02:52.670 --> 00:02:52.680 align:start position:0%
+and you want bandwidth, which brings us
+ 
+
+00:02:52.680 --> 00:02:54.990 align:start position:0%
+and you want bandwidth, which brings us
+to<00:02:52.800><c> the</c><00:02:52.880><c> second</c><00:02:53.240><c> thing.</c><00:02:53.880><c> And</c><00:02:54.080><c> to</c><00:02:54.200><c> the</c><00:02:54.280><c> number</c>
+
+00:02:54.990 --> 00:02:55.000 align:start position:0%
+to the second thing. And to the number
+ 
+
+00:02:55.000 --> 00:02:57.430 align:start position:0%
+to the second thing. And to the number
+people<00:02:55.200><c> quote</c><00:02:55.480><c> most,</c><00:02:56.200><c> parameter</c><00:02:56.760><c> count.</c><00:02:57.280><c> On</c>
+
+00:02:57.430 --> 00:02:57.440 align:start position:0%
+people quote most, parameter count. On
+ 
+
+00:02:57.440 --> 00:02:59.590 align:start position:0%
+people quote most, parameter count. On
+its<00:02:57.640><c> own,</c><00:02:58.280><c> it</c><00:02:58.400><c> tells</c><00:02:58.640><c> you</c><00:02:58.720><c> close</c><00:02:59.000><c> to</c><00:02:59.160><c> nothing</c>
+
+00:02:59.590 --> 00:02:59.600 align:start position:0%
+its own, it tells you close to nothing
+ 
+
+00:02:59.600 --> 00:03:03.030 align:start position:0%
+its own, it tells you close to nothing
+about<00:02:59.880><c> speed.</c><00:03:00.560><c> One</c><00:03:00.800><c> graphics</c><00:03:01.200><c> card,</c><00:03:01.920><c> a</c><00:03:02.000><c> 3090.</c>
+
+00:03:03.030 --> 00:03:03.040 align:start position:0%
+about speed. One graphics card, a 3090.
+ 
+
+00:03:03.040 --> 00:03:06.590 align:start position:0%
+about speed. One graphics card, a 3090.
+Qwen<00:03:03.320><c> 3</c><00:03:03.760><c> at</c><00:03:03.959><c> 32</c><00:03:04.440><c> billion</c><00:03:04.720><c> parameters,</c><00:03:05.800><c> dense,</c>
+
+00:03:06.590 --> 00:03:06.600 align:start position:0%
+Qwen 3 at 32 billion parameters, dense,
+ 
+
+00:03:06.600 --> 00:03:09.590 align:start position:0%
+Qwen 3 at 32 billion parameters, dense,
+35<00:03:07.120><c> tokens</c><00:03:07.480><c> a</c><00:03:07.519><c> second.</c><00:03:08.239><c> Qwen</c><00:03:08.519><c> 3</c><00:03:08.920><c> at</c><00:03:09.080><c> 30</c><00:03:09.320><c> billion</c>
+
+00:03:09.590 --> 00:03:09.600 align:start position:0%
+35 tokens a second. Qwen 3 at 30 billion
+ 
+
+00:03:09.600 --> 00:03:13.550 align:start position:0%
+35 tokens a second. Qwen 3 at 30 billion
+parameters,<00:03:10.519><c> mixture</c><00:03:10.920><c> of</c><00:03:11.040><c> experts,</c><00:03:11.959><c> 153.</c>
+
+00:03:13.550 --> 00:03:13.560 align:start position:0%
+parameters, mixture of experts, 153.
+ 
+
+00:03:13.560 --> 00:03:15.229 align:start position:0%
+parameters, mixture of experts, 153.
+Four<00:03:13.760><c> and</c><00:03:13.840><c> a</c><00:03:13.920><c> half</c><00:03:14.120><c> times</c><00:03:14.400><c> faster</c><00:03:14.800><c> on</c><00:03:14.920><c> a</c><00:03:14.959><c> model</c>
+
+00:03:15.229 --> 00:03:15.239 align:start position:0%
+Four and a half times faster on a model
+ 
+
+00:03:15.239 --> 00:03:17.150 align:start position:0%
+Four and a half times faster on a model
+that<00:03:15.400><c> is</c><00:03:15.519><c> very</c><00:03:15.800><c> slightly</c><00:03:16.120><c> smaller.</c><00:03:16.880><c> Because</c><00:03:17.120><c> a</c>
+
+00:03:17.150 --> 00:03:17.160 align:start position:0%
+that is very slightly smaller. Because a
+ 
+
+00:03:17.160 --> 00:03:19.229 align:start position:0%
+that is very slightly smaller. Because a
+mixture<00:03:17.560><c> of</c><00:03:17.720><c> experts</c><00:03:18.160><c> model</c><00:03:18.440><c> does</c><00:03:18.640><c> not</c><00:03:19.000><c> read</c>
+
+00:03:19.229 --> 00:03:19.239 align:start position:0%
+mixture of experts model does not read
+ 
+
+00:03:19.239 --> 00:03:21.470 align:start position:0%
+mixture of experts model does not read
+all<00:03:19.360><c> of</c><00:03:19.440><c> itself.</c><00:03:20.280><c> A</c><00:03:20.400><c> router</c><00:03:20.760><c> wakes</c><00:03:21.000><c> a</c><00:03:21.080><c> handful</c>
+
+00:03:21.470 --> 00:03:21.480 align:start position:0%
+all of itself. A router wakes a handful
+ 
+
+00:03:21.480 --> 00:03:23.670 align:start position:0%
+all of itself. A router wakes a handful
+of<00:03:21.600><c> expert</c><00:03:21.959><c> blocks</c><00:03:22.239><c> per</c><00:03:22.400><c> token,</c><00:03:23.200><c> and</c><00:03:23.320><c> the</c><00:03:23.400><c> rest</c>
+
+00:03:23.670 --> 00:03:23.680 align:start position:0%
+of expert blocks per token, and the rest
+ 
+
+00:03:23.680 --> 00:03:26.390 align:start position:0%
+of expert blocks per token, and the rest
+stays<00:03:23.920><c> asleep.</c><00:03:24.760><c> Alibaba</c><00:03:25.200><c> ships</c><00:03:25.519><c> 35</c><00:03:26.040><c> billion</c>
+
+00:03:26.390 --> 00:03:26.400 align:start position:0%
+stays asleep. Alibaba ships 35 billion
+ 
+
+00:03:26.400 --> 00:03:28.790 align:start position:0%
+stays asleep. Alibaba ships 35 billion
+total<00:03:26.800><c> with</c><00:03:27.000><c> 3</c><00:03:27.320><c> billion</c><00:03:27.640><c> awake.</c><00:03:28.280><c> Google</c><00:03:28.519><c> ships</c>
+
+00:03:28.790 --> 00:03:28.800 align:start position:0%
+total with 3 billion awake. Google ships
+ 
+
+00:03:28.800 --> 00:03:31.750 align:start position:0%
+total with 3 billion awake. Google ships
+26<00:03:29.400><c> billion</c><00:03:29.760><c> with</c><00:03:29.920><c> 3.8</c><00:03:30.560><c> awake,</c><00:03:31.320><c> and</c><00:03:31.480><c> says</c><00:03:31.680><c> on</c>
+
+00:03:31.750 --> 00:03:31.760 align:start position:0%
+26 billion with 3.8 awake, and says on
+ 
+
+00:03:31.760 --> 00:03:33.310 align:start position:0%
+26 billion with 3.8 awake, and says on
+the<00:03:31.840><c> model</c><00:03:32.200><c> card</c><00:03:32.480><c> that</c><00:03:32.600><c> it</c><00:03:32.720><c> runs</c><00:03:32.959><c> about</c><00:03:33.160><c> as</c>
+
+00:03:33.310 --> 00:03:33.320 align:start position:0%
+the model card that it runs about as
+ 
+
+00:03:33.320 --> 00:03:35.949 align:start position:0%
+the model card that it runs about as
+fast<00:03:33.680><c> as</c><00:03:33.800><c> a</c><00:03:33.920><c> 4</c><00:03:34.320><c> billion</c><00:03:34.680><c> model.</c><00:03:35.440><c> The</c><00:03:35.519><c> catch</c><00:03:35.840><c> is</c>
+
+00:03:35.949 --> 00:03:35.959 align:start position:0%
+fast as a 4 billion model. The catch is
+ 
+
+00:03:35.959 --> 00:03:37.470 align:start position:0%
+fast as a 4 billion model. The catch is
+that<00:03:36.160><c> sleeping</c><00:03:36.519><c> weights</c><00:03:36.840><c> still</c><00:03:37.080><c> take</c><00:03:37.320><c> up</c>
+
+00:03:37.470 --> 00:03:37.480 align:start position:0%
+that sleeping weights still take up
+ 
+
+00:03:37.480 --> 00:03:40.470 align:start position:0%
+that sleeping weights still take up
+room.<00:03:38.120><c> That</c><00:03:38.320><c> 35</c><00:03:38.800><c> billion</c><00:03:39.080><c> model</c><00:03:39.360><c> is</c><00:03:39.560><c> 20</c><00:03:40.000><c> GB</c><00:03:40.360><c> on</c>
+
+00:03:40.470 --> 00:03:40.480 align:start position:0%
+room. That 35 billion model is 20 GB on
+ 
+
+00:03:40.480 --> 00:03:42.390 align:start position:0%
+room. That 35 billion model is 20 GB on
+your<00:03:40.600><c> card,</c><00:03:41.200><c> whether</c><00:03:41.440><c> the</c><00:03:41.560><c> experts</c><00:03:42.000><c> fire</c><00:03:42.320><c> or</c>
+
+00:03:42.390 --> 00:03:42.400 align:start position:0%
+your card, whether the experts fire or
+ 
+
+00:03:42.400 --> 00:03:45.030 align:start position:0%
+your card, whether the experts fire or
+not.<00:03:42.920><c> Sparsity</c><00:03:43.440><c> buys</c><00:03:43.760><c> you</c><00:03:43.880><c> speed.</c><00:03:44.760><c> It</c><00:03:44.880><c> does</c>
+
+00:03:45.030 --> 00:03:45.040 align:start position:0%
+not. Sparsity buys you speed. It does
+ 
+
+00:03:45.040 --> 00:03:47.150 align:start position:0%
+not. Sparsity buys you speed. It does
+not<00:03:45.360><c> buy</c><00:03:45.560><c> you</c><00:03:45.680><c> space.</c><00:03:46.600><c> You</c><00:03:46.720><c> can</c><00:03:46.880><c> see</c><00:03:47.040><c> the</c>
+
+00:03:47.150 --> 00:03:47.160 align:start position:0%
+not buy you space. You can see the
+ 
+
+00:03:47.160 --> 00:03:49.390 align:start position:0%
+not buy you space. You can see the
+ceiling<00:03:47.519><c> that</c><00:03:47.640><c> creates.</c><00:03:48.680><c> Moonshot</c><00:03:49.160><c> open</c>
+
+00:03:49.390 --> 00:03:49.400 align:start position:0%
+ceiling that creates. Moonshot open
+ 
+
+00:03:49.400 --> 00:03:52.590 align:start position:0%
+ceiling that creates. Moonshot open
+source<00:03:49.720><c> Kimmy</c><00:03:50.000><c> K3</c><00:03:50.440><c> recently.</c><00:03:51.440><c> 2.8</c><00:03:52.080><c> trillion</c>
+
+00:03:52.590 --> 00:03:52.600 align:start position:0%
+source Kimmy K3 recently. 2.8 trillion
+ 
+
+00:03:52.600 --> 00:03:55.630 align:start position:0%
+source Kimmy K3 recently. 2.8 trillion
+parameters,<00:03:53.520><c> 1.4</c><00:03:54.240><c> terabytes</c><00:03:54.760><c> of</c><00:03:54.880><c> weights,</c>
+
+00:03:55.630 --> 00:03:55.640 align:start position:0%
+parameters, 1.4 terabytes of weights,
+ 
+
+00:03:55.640 --> 00:03:59.710 align:start position:0%
+parameters, 1.4 terabytes of weights,
+6,800<00:03:56.840><c> likes</c><00:03:57.080><c> on</c><00:03:57.200><c> hugging</c><00:03:57.560><c> face,</c><00:03:58.320><c> 2,850</c>
+
+00:03:59.710 --> 00:03:59.720 align:start position:0%
+6,800 likes on hugging face, 2,850
+ 
+
+00:03:59.720 --> 00:04:02.590 align:start position:0%
+6,800 likes on hugging face, 2,850
+downloads.<00:04:00.760><c> The</c><00:04:00.880><c> parameter</c><00:04:01.320><c> count</c><00:04:01.640><c> is</c><00:04:01.840><c> real.</c>
+
+00:04:02.590 --> 00:04:02.600 align:start position:0%
+downloads. The parameter count is real.
+ 
+
+00:04:02.600 --> 00:04:04.870 align:start position:0%
+downloads. The parameter count is real.
+Nobody<00:04:03.000><c> is</c><00:04:03.160><c> running</c><00:04:03.440><c> it.</c><00:04:03.880><c> Third</c><00:04:04.200><c> thing,</c><00:04:04.800><c> and</c>
+
+00:04:04.870 --> 00:04:04.880 align:start position:0%
+Nobody is running it. Third thing, and
+ 
+
+00:04:04.880 --> 00:04:06.949 align:start position:0%
+Nobody is running it. Third thing, and
+the<00:04:04.960><c> one</c><00:04:05.160><c> that</c><00:04:05.320><c> cost</c><00:04:05.600><c> people</c><00:04:05.840><c> the</c><00:04:05.960><c> most</c><00:04:06.320><c> money,</c>
+
+00:04:06.949 --> 00:04:06.959 align:start position:0%
+the one that cost people the most money,
+ 
+
+00:04:06.959 --> 00:04:08.949 align:start position:0%
+the one that cost people the most money,
+does<00:04:07.120><c> it</c><00:04:07.280><c> fit?</c><00:04:07.800><c> Miss</c><00:04:08.040><c> the</c><00:04:08.160><c> size</c><00:04:08.440><c> of</c><00:04:08.520><c> your</c><00:04:08.640><c> card</c>
+
+00:04:08.949 --> 00:04:08.959 align:start position:0%
+does it fit? Miss the size of your card
+ 
+
+00:04:08.959 --> 00:04:11.510 align:start position:0%
+does it fit? Miss the size of your card
+by<00:04:09.120><c> 1</c><00:04:09.440><c> GB</c><00:04:10.040><c> and</c><00:04:10.200><c> you</c><00:04:10.320><c> fall</c><00:04:10.640><c> off</c><00:04:10.800><c> a</c><00:04:10.840><c> cliff.</c>
+
+00:04:11.510 --> 00:04:11.520 align:start position:0%
+by 1 GB and you fall off a cliff.
+ 
+
+00:04:11.520 --> 00:04:13.750 align:start position:0%
+by 1 GB and you fall off a cliff.
+Someone<00:04:11.880><c> benchmarked</c><00:04:12.400><c> it</c><00:04:12.480><c> properly</c><00:04:12.920><c> on</c><00:04:13.000><c> a</c><00:04:13.080><c> 14</c>
+
+00:04:13.750 --> 00:04:13.760 align:start position:0%
+Someone benchmarked it properly on a 14
+ 
+
+00:04:13.760 --> 00:04:15.430 align:start position:0%
+Someone benchmarked it properly on a 14
+billion<00:04:14.160><c> model.</c><00:04:14.920><c> Everything</c><00:04:15.280><c> on</c><00:04:15.360><c> the</c>
+
+00:04:15.430 --> 00:04:15.440 align:start position:0%
+billion model. Everything on the
+ 
+
+00:04:15.440 --> 00:04:18.590 align:start position:0%
+billion model. Everything on the
+processor,<00:04:16.560><c> 2.9</c><00:04:17.320><c> tokens</c><00:04:17.680><c> a</c><00:04:17.760><c> second.</c>
+
+00:04:18.590 --> 00:04:18.600 align:start position:0%
+processor, 2.9 tokens a second.
+ 
+
+00:04:18.600 --> 00:04:21.830 align:start position:0%
+processor, 2.9 tokens a second.
+Everything<00:04:18.959><c> on</c><00:04:19.040><c> the</c><00:04:19.120><c> graphics</c><00:04:19.600><c> card,</c><00:04:20.280><c> 43.</c><00:04:21.280><c> 15</c>
+
+00:04:21.830 --> 00:04:21.840 align:start position:0%
+Everything on the graphics card, 43. 15
+ 
+
+00:04:21.840 --> 00:04:24.590 align:start position:0%
+Everything on the graphics card, 43. 15
+times.<00:04:22.560><c> Now</c><00:04:22.720><c> the</c><00:04:22.840><c> interesting</c><00:04:23.360><c> part,</c><00:04:24.000><c> push</c><00:04:24.280><c> 40</c>
+
+00:04:24.590 --> 00:04:24.600 align:start position:0%
+times. Now the interesting part, push 40
+ 
+
+00:04:24.600 --> 00:04:26.430 align:start position:0%
+times. Now the interesting part, push 40
+of<00:04:24.720><c> the</c><00:04:24.800><c> 48</c><00:04:25.240><c> layers</c><00:04:25.520><c> onto</c><00:04:25.760><c> the</c><00:04:25.840><c> card</c><00:04:26.240><c> and</c><00:04:26.360><c> you</c>
+
+00:04:26.430 --> 00:04:26.440 align:start position:0%
+of the 48 layers onto the card and you
+ 
+
+00:04:26.440 --> 00:04:29.390 align:start position:0%
+of the 48 layers onto the card and you
+get<00:04:26.640><c> 12</c><00:04:26.960><c> and</c><00:04:27.080><c> 1/2.</c><00:04:27.760><c> 83%</c><00:04:28.680><c> of</c><00:04:28.720><c> the</c><00:04:28.840><c> model</c><00:04:29.200><c> on</c><00:04:29.320><c> the</c>
+
+00:04:29.390 --> 00:04:29.400 align:start position:0%
+get 12 and 1/2. 83% of the model on the
+ 
+
+00:04:29.400 --> 00:04:32.750 align:start position:0%
+get 12 and 1/2. 83% of the model on the
+GPU<00:04:29.880><c> buys</c><00:04:30.200><c> you</c><00:04:30.320><c> 29%</c><00:04:31.240><c> of</c><00:04:31.320><c> the</c><00:04:31.400><c> speed.</c><00:04:32.240><c> The</c><00:04:32.360><c> last</c>
+
+00:04:32.750 --> 00:04:32.760 align:start position:0%
+GPU buys you 29% of the speed. The last
+ 
+
+00:04:32.760 --> 00:04:34.670 align:start position:0%
+GPU buys you 29% of the speed. The last
+eight<00:04:32.960><c> layers</c><00:04:33.280><c> do</c><00:04:33.480><c> the</c><00:04:33.560><c> rest,</c><00:04:34.200><c> which</c><00:04:34.360><c> is</c><00:04:34.480><c> why</c>
+
+00:04:34.670 --> 00:04:34.680 align:start position:0%
+eight layers do the rest, which is why
+ 
+
+00:04:34.680 --> 00:04:36.830 align:start position:0%
+eight layers do the rest, which is why
+everybody<00:04:35.160><c> quantizes.</c><00:04:36.000><c> Full</c><00:04:36.360><c> precision</c>
+
+00:04:36.830 --> 00:04:36.840 align:start position:0%
+everybody quantizes. Full precision
+ 
+
+00:04:36.840 --> 00:04:39.550 align:start position:0%
+everybody quantizes. Full precision
+weights<00:04:37.120><c> are</c><00:04:37.280><c> 16</c><00:04:37.960><c> bits</c><00:04:38.240><c> each.</c><00:04:38.919><c> Quantizing</c>
+
+00:04:39.550 --> 00:04:39.560 align:start position:0%
+weights are 16 bits each. Quantizing
+ 
+
+00:04:39.560 --> 00:04:41.510 align:start position:0%
+weights are 16 bits each. Quantizing
+rounds<00:04:39.880><c> them</c><00:04:40.000><c> down</c><00:04:40.200><c> to</c><00:04:40.320><c> four</c><00:04:40.680><c> or</c><00:04:40.800><c> five</c><00:04:41.080><c> bits</c><00:04:41.360><c> in</c>
+
+00:04:41.510 --> 00:04:41.520 align:start position:0%
+rounds them down to four or five bits in
+ 
+
+00:04:41.520 --> 00:04:43.670 align:start position:0%
+rounds them down to four or five bits in
+small<00:04:41.800><c> blocks</c><00:04:42.480><c> with</c><00:04:42.600><c> a</c><00:04:42.680><c> scale</c><00:04:43.040><c> factor</c><00:04:43.360><c> kept</c>
+
+00:04:43.670 --> 00:04:43.680 align:start position:0%
+small blocks with a scale factor kept
+ 
+
+00:04:43.680 --> 00:04:46.590 align:start position:0%
+small blocks with a scale factor kept
+per<00:04:43.919><c> block</c><00:04:44.360><c> so</c><00:04:44.480><c> the</c><00:04:44.600><c> range</c><00:04:44.919><c> survives.</c><00:04:45.919><c> A</c><00:04:46.040><c> 32</c>
+
+00:04:46.590 --> 00:04:46.600 align:start position:0%
+per block so the range survives. A 32
+ 
+
+00:04:46.600 --> 00:04:48.710 align:start position:0%
+per block so the range survives. A 32
+billion<00:04:46.880><c> parameter</c><00:04:47.280><c> model</c><00:04:47.600><c> goes</c><00:04:47.800><c> from</c><00:04:47.960><c> 65</c><00:04:48.640><c> and</c>
+
+00:04:48.710 --> 00:04:48.720 align:start position:0%
+billion parameter model goes from 65 and
+ 
+
+00:04:48.720 --> 00:04:51.030 align:start position:0%
+billion parameter model goes from 65 and
+1/2<00:04:49.000><c> GB</c><00:04:49.400><c> to</c><00:04:49.560><c> under</c><00:04:49.800><c> 20.</c><00:04:50.480><c> That</c><00:04:50.840><c> is</c><00:04:50.960><c> the</c>
+
+00:04:51.030 --> 00:04:51.040 align:start position:0%
+1/2 GB to under 20. That is the
+ 
+
+00:04:51.040 --> 00:04:52.550 align:start position:0%
+1/2 GB to under 20. That is the
+difference<00:04:51.360><c> between</c><00:04:51.720><c> renting</c><00:04:52.040><c> a</c><00:04:52.080><c> data</c><00:04:52.320><c> center</c>
+
+00:04:52.550 --> 00:04:52.560 align:start position:0%
+difference between renting a data center
+ 
+
+00:04:52.560 --> 00:04:54.710 align:start position:0%
+difference between renting a data center
+GPU<00:04:53.400><c> and</c><00:04:53.520><c> using</c><00:04:53.760><c> a</c><00:04:53.800><c> second-hand</c><00:04:54.360><c> card</c><00:04:54.600><c> in</c><00:04:54.640><c> the</c>
+
+00:04:54.710 --> 00:04:54.720 align:start position:0%
+GPU and using a second-hand card in the
+ 
+
+00:04:54.720 --> 00:04:56.590 align:start position:0%
+GPU and using a second-hand card in the
+machine<00:04:55.120><c> you</c><00:04:55.240><c> already</c><00:04:55.600><c> own.</c><00:04:56.040><c> The</c><00:04:56.160><c> cost</c><00:04:56.480><c> is</c>
+
+00:04:56.590 --> 00:04:56.600 align:start position:0%
+machine you already own. The cost is
+ 
+
+00:04:56.600 --> 00:04:59.070 align:start position:0%
+machine you already own. The cost is
+usually<00:04:56.919><c> described</c><00:04:57.440><c> as</c><00:04:57.560><c> a</c><00:04:57.640><c> 1</c><00:04:57.960><c> to</c><00:04:58.080><c> 3%</c><00:04:58.680><c> quality</c>
+
+00:04:59.070 --> 00:04:59.080 align:start position:0%
+usually described as a 1 to 3% quality
+ 
+
+00:04:59.080 --> 00:05:01.630 align:start position:0%
+usually described as a 1 to 3% quality
+loss,<00:04:59.840><c> which</c><00:05:00.000><c> is</c><00:05:00.120><c> a</c><00:05:00.200><c> generous</c><00:05:00.680><c> way</c><00:05:00.800><c> to</c><00:05:00.919><c> put</c><00:05:01.120><c> it.</c>
+
+00:05:01.630 --> 00:05:01.640 align:start position:0%
+loss, which is a generous way to put it.
+ 
+
+00:05:01.640 --> 00:05:03.350 align:start position:0%
+loss, which is a generous way to put it.
+Measured<00:05:02.000><c> against</c><00:05:02.320><c> full</c><00:05:02.520><c> precision</c><00:05:03.120><c> on</c><00:05:03.240><c> the</c>
+
+00:05:03.350 --> 00:05:03.360 align:start position:0%
+Measured against full precision on the
+ 
+
+00:05:03.360 --> 00:05:05.510 align:start position:0%
+Measured against full precision on the
+same<00:05:03.680><c> prompt,</c><00:05:04.400><c> 4-bit</c><00:05:04.840><c> picks</c><00:05:05.080><c> a</c><00:05:05.160><c> different</c>
+
+00:05:05.510 --> 00:05:05.520 align:start position:0%
+same prompt, 4-bit picks a different
+ 
+
+00:05:05.520 --> 00:05:07.990 align:start position:0%
+same prompt, 4-bit picks a different
+next<00:05:05.800><c> word</c><00:05:06.320><c> 8%</c><00:05:06.840><c> of</c><00:05:06.919><c> the</c><00:05:07.040><c> time.</c><00:05:07.680><c> Down</c><00:05:07.919><c> the</c>
+
+00:05:07.990 --> 00:05:08.000 align:start position:0%
+next word 8% of the time. Down the
+ 
+
+00:05:08.000 --> 00:05:11.230 align:start position:0%
+next word 8% of the time. Down the
+ladder,<00:05:08.880><c> 8-bit</c><00:05:09.240><c> is</c><00:05:09.360><c> effectively</c><00:05:10.000><c> free,</c><00:05:10.760><c> 6-bit</c>
+
+00:05:11.230 --> 00:05:11.240 align:start position:0%
+ladder, 8-bit is effectively free, 6-bit
+ 
+
+00:05:11.240 --> 00:05:14.270 align:start position:0%
+ladder, 8-bit is effectively free, 6-bit
+is<00:05:11.400><c> cheap,</c><00:05:12.200><c> 4-bit</c><00:05:12.640><c> is</c><00:05:12.800><c> the</c><00:05:12.880><c> knee,</c><00:05:13.560><c> 3-bit</c><00:05:14.040><c> does</c>
+
+00:05:14.270 --> 00:05:14.280 align:start position:0%
+is cheap, 4-bit is the knee, 3-bit does
+ 
+
+00:05:14.280 --> 00:05:16.830 align:start position:0%
+is cheap, 4-bit is the knee, 3-bit does
+real<00:05:14.560><c> damage.</c><00:05:15.320><c> 1-bit</c><00:05:15.760><c> turns</c><00:05:16.000><c> a</c><00:05:16.080><c> perplexity</c><00:05:16.720><c> of</c>
+
+00:05:16.830 --> 00:05:16.840 align:start position:0%
+real damage. 1-bit turns a perplexity of
+ 
+
+00:05:16.840 --> 00:05:19.990 align:start position:0%
+real damage. 1-bit turns a perplexity of
+six<00:05:17.320><c> into</c><00:05:17.560><c> a</c><00:05:17.600><c> perplexity</c><00:05:18.240><c> of</c><00:05:18.360><c> 60.</c><00:05:19.320><c> It</c><00:05:19.440><c> is</c><00:05:19.600><c> still</c>
+
+00:05:19.990 --> 00:05:20.000 align:start position:0%
+six into a perplexity of 60. It is still
+ 
+
+00:05:20.000 --> 00:05:22.270 align:start position:0%
+six into a perplexity of 60. It is still
+talking.<00:05:20.760><c> It</c><00:05:20.919><c> has</c><00:05:21.080><c> stopped</c><00:05:21.480><c> thinking.</c><00:05:22.200><c> The</c>
+
+00:05:22.270 --> 00:05:22.280 align:start position:0%
+talking. It has stopped thinking. The
+ 
+
+00:05:22.280 --> 00:05:24.470 align:start position:0%
+talking. It has stopped thinking. The
+damage<00:05:22.680><c> is</c><00:05:22.800><c> not</c><00:05:23.040><c> spread</c><00:05:23.360><c> evenly</c><00:05:23.720><c> either.</c>
+
+00:05:24.470 --> 00:05:24.480 align:start position:0%
+damage is not spread evenly either.
+ 
+
+00:05:24.480 --> 00:05:26.510 align:start position:0%
+damage is not spread evenly either.
+Dropping<00:05:24.840><c> to</c><00:05:24.919><c> 3-bit</c><00:05:25.360><c> cost</c><00:05:25.720><c> one</c><00:05:25.960><c> model</c><00:05:26.240><c> nine</c>
+
+00:05:26.510 --> 00:05:26.520 align:start position:0%
+Dropping to 3-bit cost one model nine
+ 
+
+00:05:26.520 --> 00:05:28.830 align:start position:0%
+Dropping to 3-bit cost one model nine
+points<00:05:26.880><c> on</c><00:05:27.040><c> grade</c><00:05:27.280><c> school</c><00:05:27.480><c> maths</c><00:05:27.919><c> and</c><00:05:28.120><c> 6/10</c><00:05:28.760><c> of</c>
+
+00:05:28.830 --> 00:05:28.840 align:start position:0%
+points on grade school maths and 6/10 of
+ 
+
+00:05:28.840 --> 00:05:31.150 align:start position:0%
+points on grade school maths and 6/10 of
+a<00:05:28.919><c> point</c><00:05:29.240><c> on</c><00:05:29.400><c> common</c><00:05:29.760><c> sense.</c><00:05:30.520><c> Quantization</c>
+
+00:05:31.150 --> 00:05:31.160 align:start position:0%
+a point on common sense. Quantization
+ 
+
+00:05:31.160 --> 00:05:33.350 align:start position:0%
+a point on common sense. Quantization
+eats<00:05:31.400><c> reasoning</c><00:05:31.840><c> first,</c><00:05:32.640><c> and</c><00:05:32.800><c> reasoning</c><00:05:33.200><c> is</c>
+
+00:05:33.350 --> 00:05:33.360 align:start position:0%
+eats reasoning first, and reasoning is
+ 
+
+00:05:33.360 --> 00:05:35.390 align:start position:0%
+eats reasoning first, and reasoning is
+usually<00:05:33.760><c> why</c><00:05:33.919><c> you</c><00:05:34.040><c> came.</c><00:05:34.720><c> Google</c><00:05:34.960><c> trains</c><00:05:35.280><c> for</c>
+
+00:05:35.390 --> 00:05:35.400 align:start position:0%
+usually why you came. Google trains for
+ 
+
+00:05:35.400 --> 00:05:37.150 align:start position:0%
+usually why you came. Google trains for
+it<00:05:35.520><c> now.</c><00:05:36.200><c> Their</c><00:05:36.360><c> quantization-aware</c>
+
+00:05:37.150 --> 00:05:37.160 align:start position:0%
+it now. Their quantization-aware
+ 
+
+00:05:37.160 --> 00:05:38.909 align:start position:0%
+it now. Their quantization-aware
+checkpoints<00:05:37.720><c> cut</c><00:05:37.880><c> the</c><00:05:38.000><c> 4-bit</c><00:05:38.400><c> penalty</c><00:05:38.760><c> by</c>
+
+00:05:38.909 --> 00:05:38.919 align:start position:0%
+checkpoints cut the 4-bit penalty by
+ 
+
+00:05:38.919 --> 00:05:41.230 align:start position:0%
+checkpoints cut the 4-bit penalty by
+more<00:05:39.160><c> than</c><00:05:39.320><c> half</c><00:05:39.800><c> and</c><00:05:39.880><c> took</c><00:05:40.040><c> a</c><00:05:40.080><c> 27</c><00:05:40.840><c> billion</c>
+
+00:05:41.230 --> 00:05:41.240 align:start position:0%
+more than half and took a 27 billion
+ 
+
+00:05:41.240 --> 00:05:44.470 align:start position:0%
+more than half and took a 27 billion
+model<00:05:41.640><c> from</c><00:05:41.840><c> 54</c><00:05:42.400><c> GB</c><00:05:42.840><c> to</c><00:05:43.000><c> 14.</c><00:05:43.919><c> The</c><00:05:44.000><c> community</c>
+
+00:05:44.470 --> 00:05:44.480 align:start position:0%
+model from 54 GB to 14. The community
+ 
+
+00:05:44.480 --> 00:05:47.230 align:start position:0%
+model from 54 GB to 14. The community
+rule,<00:05:45.120><c> pick</c><00:05:45.320><c> a</c><00:05:45.360><c> file</c><00:05:45.760><c> 1</c><00:05:46.000><c> to</c><00:05:46.120><c> 2</c><00:05:46.320><c> GB</c><00:05:46.800><c> under</c><00:05:47.000><c> your</c>
+
+00:05:47.230 --> 00:05:47.240 align:start position:0%
+rule, pick a file 1 to 2 GB under your
+ 
+
+00:05:47.240 --> 00:05:50.110 align:start position:0%
+rule, pick a file 1 to 2 GB under your
+VRAM,<00:05:48.200><c> and</c><00:05:48.320><c> that</c><00:05:48.560><c> rule</c><00:05:48.760><c> is</c><00:05:48.840><c> about</c><00:05:49.120><c> to</c><00:05:49.200><c> fail</c><00:05:49.560><c> you</c>
+
+00:05:50.110 --> 00:05:50.120 align:start position:0%
+VRAM, and that rule is about to fail you
+ 
+
+00:05:50.120 --> 00:05:51.670 align:start position:0%
+VRAM, and that rule is about to fail you
+because<00:05:50.400><c> the</c><00:05:50.480><c> model</c><00:05:50.800><c> file</c><00:05:51.080><c> is</c><00:05:51.200><c> not</c><00:05:51.440><c> the</c><00:05:51.520><c> thing</c>
+
+00:05:51.670 --> 00:05:51.680 align:start position:0%
+because the model file is not the thing
+ 
+
+00:05:51.680 --> 00:05:53.790 align:start position:0%
+because the model file is not the thing
+that<00:05:51.840><c> fills</c><00:05:52.040><c> your</c><00:05:52.160><c> card.</c><00:05:52.840><c> Fourth</c><00:05:53.200><c> thing,</c>
+
+00:05:53.790 --> 00:05:53.800 align:start position:0%
+that fills your card. Fourth thing,
+ 
+
+00:05:53.800 --> 00:05:56.310 align:start position:0%
+that fills your card. Fourth thing,
+context,<00:05:54.800><c> which</c><00:05:54.960><c> is</c><00:05:55.120><c> bigger</c><00:05:55.400><c> than</c><00:05:55.520><c> your</c><00:05:55.680><c> model</c>
+
+00:05:56.310 --> 00:05:56.320 align:start position:0%
+context, which is bigger than your model
+ 
+
+00:05:56.320 --> 00:05:57.870 align:start position:0%
+context, which is bigger than your model
+and<00:05:56.440><c> which</c><00:05:56.640><c> almost</c><00:05:56.960><c> nobody</c><00:05:57.320><c> accounts</c><00:05:57.680><c> for</c>
+
+00:05:57.870 --> 00:05:57.880 align:start position:0%
+and which almost nobody accounts for
+ 
+
+00:05:57.880 --> 00:05:59.750 align:start position:0%
+and which almost nobody accounts for
+before<00:05:58.120><c> they</c><00:05:58.240><c> download</c><00:05:58.680><c> anything.</c><00:05:59.480><c> Every</c>
+
+00:05:59.750 --> 00:05:59.760 align:start position:0%
+before they download anything. Every
+ 
+
+00:05:59.760 --> 00:06:01.510 align:start position:0%
+before they download anything. Every
+token<00:06:00.080><c> the</c><00:06:00.160><c> model</c><00:06:00.440><c> has</c><00:06:00.600><c> already</c><00:06:00.920><c> read</c><00:06:01.280><c> leaves</c>
+
+00:06:01.510 --> 00:06:01.520 align:start position:0%
+token the model has already read leaves
+ 
+
+00:06:01.520 --> 00:06:03.630 align:start position:0%
+token the model has already read leaves
+something<00:06:01.800><c> behind.</c><00:06:02.600><c> A</c><00:06:02.680><c> key</c><00:06:02.920><c> and</c><00:06:03.040><c> a</c><00:06:03.120><c> value</c><00:06:03.480><c> per</c>
+
+00:06:03.630 --> 00:06:03.640 align:start position:0%
+something behind. A key and a value per
+ 
+
+00:06:03.640 --> 00:06:05.870 align:start position:0%
+something behind. A key and a value per
+attention<00:06:04.120><c> layer</c><00:06:04.720><c> cached</c><00:06:05.200><c> so</c><00:06:05.360><c> it</c><00:06:05.440><c> never</c><00:06:05.680><c> has</c>
+
+00:06:05.870 --> 00:06:05.880 align:start position:0%
+attention layer cached so it never has
+ 
+
+00:06:05.880 --> 00:06:07.870 align:start position:0%
+attention layer cached so it never has
+to<00:06:05.960><c> recompute</c><00:06:06.480><c> them.</c><00:06:07.040><c> That</c><00:06:07.240><c> cache</c><00:06:07.560><c> sits</c><00:06:07.800><c> in</c>
+
+00:06:07.870 --> 00:06:07.880 align:start position:0%
+to recompute them. That cache sits in
+ 
+
+00:06:07.880 --> 00:06:09.870 align:start position:0%
+to recompute them. That cache sits in
+your<00:06:08.000><c> VRAM</c><00:06:08.560><c> next</c><00:06:08.760><c> to</c><00:06:08.840><c> the</c><00:06:08.920><c> weights</c><00:06:09.360><c> and</c><00:06:09.520><c> grows</c>
+
+00:06:09.870 --> 00:06:09.880 align:start position:0%
+your VRAM next to the weights and grows
+ 
+
+00:06:09.880 --> 00:06:12.710 align:start position:0%
+your VRAM next to the weights and grows
+with<00:06:10.080><c> every</c><00:06:10.360><c> word.</c><00:06:11.080><c> On</c><00:06:11.240><c> an</c><00:06:11.440><c> 8</c><00:06:11.680><c> billion</c><00:06:12.040><c> model,</c>
+
+00:06:12.710 --> 00:06:12.720 align:start position:0%
+with every word. On an 8 billion model,
+ 
+
+00:06:12.720 --> 00:06:16.270 align:start position:0%
+with every word. On an 8 billion model,
+it<00:06:12.840><c> costs</c><00:06:13.160><c> about</c><00:06:13.440><c> 147</c><00:06:14.560><c> KB</c><00:06:15.040><c> per</c><00:06:15.240><c> token.</c><00:06:16.040><c> At</c>
+
+00:06:16.270 --> 00:06:16.280 align:start position:0%
+it costs about 147 KB per token. At
+ 
+
+00:06:16.280 --> 00:06:19.470 align:start position:0%
+it costs about 147 KB per token. At
+4,000<00:06:17.000><c> tokens</c><00:06:17.320><c> of</c><00:06:17.440><c> context,</c><00:06:18.280><c> that</c><00:06:18.440><c> is</c><00:06:18.600><c> 6/10</c><00:06:19.360><c> of</c>
+
+00:06:19.470 --> 00:06:19.480 align:start position:0%
+4,000 tokens of context, that is 6/10 of
+ 
+
+00:06:19.480 --> 00:06:22.030 align:start position:0%
+4,000 tokens of context, that is 6/10 of
+a<00:06:19.520><c> gigabyte,</c><00:06:20.360><c> small</c><00:06:20.720><c> enough</c><00:06:20.919><c> to</c><00:06:21.040><c> ignore.</c><00:06:21.840><c> At</c>
+
+00:06:22.030 --> 00:06:22.040 align:start position:0%
+a gigabyte, small enough to ignore. At
+ 
+
+00:06:22.040 --> 00:06:26.750 align:start position:0%
+a gigabyte, small enough to ignore. At
+128,000<00:06:23.440><c> tokens,</c><00:06:24.160><c> the</c><00:06:24.280><c> same</c><00:06:24.600><c> cache</c><00:06:25.000><c> is</c><00:06:25.160><c> 19</c><00:06:25.800><c> GB.</c>
+
+00:06:26.750 --> 00:06:26.760 align:start position:0%
+128,000 tokens, the same cache is 19 GB.
+ 
+
+00:06:26.760 --> 00:06:29.310 align:start position:0%
+128,000 tokens, the same cache is 19 GB.
+The<00:06:26.840><c> model</c><00:06:27.160><c> file</c><00:06:27.560><c> is</c><00:06:27.760><c> five.</c><00:06:28.520><c> Your</c><00:06:28.680><c> context</c><00:06:29.200><c> is</c>
+
+00:06:29.310 --> 00:06:29.320 align:start position:0%
+The model file is five. Your context is
+ 
+
+00:06:29.320 --> 00:06:31.070 align:start position:0%
+The model file is five. Your context is
+now<00:06:29.480><c> nearly</c><00:06:29.840><c> four</c><00:06:30.200><c> times</c><00:06:30.560><c> bigger</c><00:06:30.800><c> than</c><00:06:30.960><c> your</c>
+
+00:06:31.070 --> 00:06:31.080 align:start position:0%
+now nearly four times bigger than your
+ 
+
+00:06:31.080 --> 00:06:33.030 align:start position:0%
+now nearly four times bigger than your
+model.<00:06:31.800><c> So,</c><00:06:31.919><c> the</c><00:06:32.040><c> calculator</c><00:06:32.640><c> you</c><00:06:32.800><c> used</c>
+
+00:06:33.030 --> 00:06:33.040 align:start position:0%
+model. So, the calculator you used
+ 
+
+00:06:33.040 --> 00:06:34.390 align:start position:0%
+model. So, the calculator you used
+before<00:06:33.360><c> you</c><00:06:33.440><c> downloaded</c><00:06:33.919><c> anything</c><00:06:34.240><c> was</c>
+
+00:06:34.390 --> 00:06:34.400 align:start position:0%
+before you downloaded anything was
+ 
+
+00:06:34.400 --> 00:06:36.630 align:start position:0%
+before you downloaded anything was
+wrong.<00:06:35.080><c> Weights</c><00:06:35.400><c> plus</c><00:06:35.600><c> cache</c><00:06:36.000><c> plus</c><00:06:36.240><c> a</c><00:06:36.320><c> working</c>
+
+00:06:36.630 --> 00:06:36.640 align:start position:0%
+wrong. Weights plus cache plus a working
+ 
+
+00:06:36.640 --> 00:06:38.270 align:start position:0%
+wrong. Weights plus cache plus a working
+buffer<00:06:36.960><c> plus</c><00:06:37.320><c> whatever</c><00:06:37.680><c> your</c><00:06:37.800><c> desktop</c>
+
+00:06:38.270 --> 00:06:38.280 align:start position:0%
+buffer plus whatever your desktop
+ 
+
+00:06:38.280 --> 00:06:40.110 align:start position:0%
+buffer plus whatever your desktop
+already<00:06:38.520><c> has</c><00:06:38.680><c> sitting</c><00:06:38.919><c> on</c><00:06:39.000><c> the</c><00:06:39.080><c> card.</c><00:06:39.800><c> People</c>
+
+00:06:40.110 --> 00:06:40.120 align:start position:0%
+already has sitting on the card. People
+ 
+
+00:06:40.120 --> 00:06:41.590 align:start position:0%
+already has sitting on the card. People
+shrink<00:06:40.480><c> the</c><00:06:40.560><c> cache</c><00:06:40.960><c> the</c><00:06:41.080><c> same</c><00:06:41.400><c> way</c><00:06:41.480><c> they</c>
+
+00:06:41.590 --> 00:06:41.600 align:start position:0%
+shrink the cache the same way they
+ 
+
+00:06:41.600 --> 00:06:43.390 align:start position:0%
+shrink the cache the same way they
+shrink<00:06:41.840><c> the</c><00:06:41.919><c> weights,</c><00:06:42.760><c> but</c><00:06:42.919><c> this</c><00:06:43.160><c> is</c><00:06:43.280><c> where</c>
+
+00:06:43.390 --> 00:06:43.400 align:start position:0%
+shrink the weights, but this is where
+ 
+
+00:06:43.400 --> 00:06:45.590 align:start position:0%
+shrink the weights, but this is where
+the<00:06:43.520><c> tutorials</c><00:06:44.040><c> go</c><00:06:44.200><c> wrong</c><00:06:44.800><c> because</c><00:06:45.080><c> keys</c><00:06:45.480><c> and</c>
+
+00:06:45.590 --> 00:06:45.600 align:start position:0%
+the tutorials go wrong because keys and
+ 
+
+00:06:45.600 --> 00:06:48.150 align:start position:0%
+the tutorials go wrong because keys and
+values<00:06:46.080><c> are</c><00:06:46.200><c> not</c><00:06:46.600><c> equally</c><00:06:46.919><c> fragile.</c><00:06:47.680><c> Quantize</c>
+
+00:06:48.150 --> 00:06:48.160 align:start position:0%
+values are not equally fragile. Quantize
+ 
+
+00:06:48.160 --> 00:06:49.870 align:start position:0%
+values are not equally fragile. Quantize
+the<00:06:48.280><c> values</c><00:06:48.680><c> to</c><00:06:48.800><c> four</c><00:06:49.120><c> bits</c><00:06:49.680><c> and</c><00:06:49.800><c> the</c>
+
+00:06:49.870 --> 00:06:49.880 align:start position:0%
+the values to four bits and the
+ 
+
+00:06:49.880 --> 00:06:52.110 align:start position:0%
+the values to four bits and the
+divergence<00:06:50.520><c> from</c><00:06:50.680><c> full</c><00:06:50.960><c> precision</c><00:06:51.560><c> is</c><00:06:51.720><c> nearly</c>
+
+00:06:52.110 --> 00:06:52.120 align:start position:0%
+divergence from full precision is nearly
+ 
+
+00:06:52.120 --> 00:06:54.710 align:start position:0%
+divergence from full precision is nearly
+nothing.<00:06:52.880><c> Quantize</c><00:06:53.360><c> the</c><00:06:53.440><c> keys</c><00:06:53.760><c> to</c><00:06:53.880><c> four</c><00:06:54.160><c> bits</c>
+
+00:06:54.710 --> 00:06:54.720 align:start position:0%
+nothing. Quantize the keys to four bits
+ 
+
+00:06:54.720 --> 00:06:56.390 align:start position:0%
+nothing. Quantize the keys to four bits
+and<00:06:54.840><c> the</c><00:06:54.919><c> model</c><00:06:55.280><c> now</c><00:06:55.480><c> agrees</c><00:06:55.840><c> with</c><00:06:55.960><c> its</c><00:06:56.160><c> own</c>
+
+00:06:56.390 --> 00:06:56.400 align:start position:0%
+and the model now agrees with its own
+ 
+
+00:06:56.400 --> 00:06:58.750 align:start position:0%
+and the model now agrees with its own
+full<00:06:56.640><c> precision</c><00:06:57.080><c> answers</c><00:06:57.560><c> only</c><00:06:57.760><c> 11%</c><00:06:58.600><c> of</c><00:06:58.680><c> the</c>
+
+00:06:58.750 --> 00:06:58.760 align:start position:0%
+full precision answers only 11% of the
+ 
+
+00:06:58.760 --> 00:07:01.430 align:start position:0%
+full precision answers only 11% of the
+time.<00:06:59.480><c> The</c><00:06:59.600><c> reason</c><00:06:59.919><c> is</c><00:07:00.040><c> mechanical.</c><00:07:01.120><c> Keys</c>
+
+00:07:01.430 --> 00:07:01.440 align:start position:0%
+time. The reason is mechanical. Keys
+ 
+
+00:07:01.440 --> 00:07:03.670 align:start position:0%
+time. The reason is mechanical. Keys
+pass<00:07:01.720><c> through</c><00:07:01.880><c> a</c><00:07:01.919><c> softmax,</c><00:07:02.919><c> so</c><00:07:03.080><c> an</c><00:07:03.240><c> error</c><00:07:03.520><c> at</c>
+
+00:07:03.670 --> 00:07:03.680 align:start position:0%
+pass through a softmax, so an error at
+ 
+
+00:07:03.680 --> 00:07:05.270 align:start position:0%
+pass through a softmax, so an error at
+one<00:07:03.880><c> position</c><00:07:04.360><c> spreads</c><00:07:04.680><c> across</c><00:07:05.040><c> every</c>
+
+00:07:05.270 --> 00:07:05.280 align:start position:0%
+one position spreads across every
+ 
+
+00:07:05.280 --> 00:07:07.950 align:start position:0%
+one position spreads across every
+position.<00:07:06.240><c> Values</c><00:07:06.640><c> just</c><00:07:06.840><c> get</c><00:07:07.080><c> added</c><00:07:07.360><c> up,</c><00:07:07.840><c> so</c>
+
+00:07:07.950 --> 00:07:07.960 align:start position:0%
+position. Values just get added up, so
+ 
+
+00:07:07.960 --> 00:07:10.990 align:start position:0%
+position. Values just get added up, so
+their<00:07:08.200><c> error</c><00:07:08.480><c> stays</c><00:07:08.800><c> put.</c><00:07:09.280><c> 8-bit</c><00:07:09.680><c> keys,</c><00:07:10.480><c> 4-bit</c>
+
+00:07:10.990 --> 00:07:11.000 align:start position:0%
+their error stays put. 8-bit keys, 4-bit
+ 
+
+00:07:11.000 --> 00:07:14.030 align:start position:0%
+their error stays put. 8-bit keys, 4-bit
+values,<00:07:11.880><c> and</c><00:07:12.000><c> you</c><00:07:12.080><c> keep</c><00:07:12.320><c> 60%</c><00:07:13.040><c> of</c><00:07:13.120><c> the</c><00:07:13.200><c> memory.</c>
+
+00:07:14.030 --> 00:07:14.040 align:start position:0%
+values, and you keep 60% of the memory.
+ 
+
+00:07:14.040 --> 00:07:15.790 align:start position:0%
+values, and you keep 60% of the memory.
+Architecture<00:07:14.560><c> fixes</c><00:07:15.000><c> better</c><00:07:15.240><c> than</c><00:07:15.400><c> settings</c>
+
+00:07:15.790 --> 00:07:15.800 align:start position:0%
+Architecture fixes better than settings
+ 
+
+00:07:15.800 --> 00:07:18.470 align:start position:0%
+Architecture fixes better than settings
+do.<00:07:16.440><c> DeepSeek</c><00:07:16.840><c> compresses</c><00:07:17.320><c> the</c><00:07:17.400><c> cache</c><00:07:17.800><c> to</c><00:07:18.000><c> 70</c>
+
+00:07:18.470 --> 00:07:18.480 align:start position:0%
+do. DeepSeek compresses the cache to 70
+ 
+
+00:07:18.480 --> 00:07:21.110 align:start position:0%
+do. DeepSeek compresses the cache to 70
+KB<00:07:18.960><c> a</c><00:07:19.000><c> token</c><00:07:19.360><c> instead</c><00:07:19.640><c> of</c><00:07:19.720><c> 300.</c><00:07:20.760><c> Gemma</c>
+
+00:07:21.110 --> 00:07:21.120 align:start position:0%
+KB a token instead of 300. Gemma
+ 
+
+00:07:21.120 --> 00:07:22.950 align:start position:0%
+KB a token instead of 300. Gemma
+alternates<00:07:21.600><c> local</c><00:07:21.960><c> and</c><00:07:22.080><c> global</c><00:07:22.400><c> attention</c>
+
+00:07:22.950 --> 00:07:22.960 align:start position:0%
+alternates local and global attention
+ 
+
+00:07:22.960 --> 00:07:24.909 align:start position:0%
+alternates local and global attention
+and<00:07:23.120><c> drops</c><00:07:23.440><c> the</c><00:07:23.560><c> cache</c><00:07:23.919><c> from</c><00:07:24.080><c> 60%</c><00:07:24.800><c> of</c>
+
+00:07:24.909 --> 00:07:24.919 align:start position:0%
+and drops the cache from 60% of
+ 
+
+00:07:24.919 --> 00:07:28.030 align:start position:0%
+and drops the cache from 60% of
+inference<00:07:25.320><c> memory</c><00:07:25.919><c> down</c><00:07:26.120><c> to</c><00:07:26.200><c> 15%</c><00:07:27.480><c> and</c><00:07:27.680><c> now</c><00:07:27.919><c> the</c>
+
+00:07:28.030 --> 00:07:28.040 align:start position:0%
+inference memory down to 15% and now the
+ 
+
+00:07:28.040 --> 00:07:29.870 align:start position:0%
+inference memory down to 15% and now the
+part<00:07:28.400><c> that</c><00:07:28.520><c> should</c><00:07:28.720><c> change</c><00:07:29.080><c> what</c><00:07:29.200><c> you</c><00:07:29.320><c> buy.</c>
+
+00:07:29.870 --> 00:07:29.880 align:start position:0%
+part that should change what you buy.
+ 
+
+00:07:29.880 --> 00:07:32.550 align:start position:0%
+part that should change what you buy.
+Somebody<00:07:30.240><c> pushed</c><00:07:30.600><c> 172</c><00:07:31.680><c> billion</c><00:07:32.080><c> tokens</c>
+
+00:07:32.550 --> 00:07:32.560 align:start position:0%
+Somebody pushed 172 billion tokens
+ 
+
+00:07:32.560 --> 00:07:35.909 align:start position:0%
+Somebody pushed 172 billion tokens
+through<00:07:32.760><c> 35</c><00:07:33.480><c> open</c><00:07:33.720><c> models</c><00:07:34.200><c> at</c><00:07:34.400><c> 32,000,</c>
+
+00:07:35.909 --> 00:07:35.919 align:start position:0%
+through 35 open models at 32,000,
+ 
+
+00:07:35.919 --> 00:07:37.830 align:start position:0%
+through 35 open models at 32,000,
+128,000,
+
+00:07:37.830 --> 00:07:37.840 align:start position:0%
+128,000,
+ 
+
+00:07:37.840 --> 00:07:40.790 align:start position:0%
+128,000,
+and<00:07:38.040><c> 200,000</c><00:07:38.880><c> tokens</c><00:07:39.200><c> of</c><00:07:39.320><c> context.</c><00:07:40.360><c> Median</c>
+
+00:07:40.790 --> 00:07:40.800 align:start position:0%
+and 200,000 tokens of context. Median
+ 
+
+00:07:40.800 --> 00:07:45.150 align:start position:0%
+and 200,000 tokens of context. Median
+accuracy<00:07:41.320><c> loss</c><00:07:41.640><c> from</c><00:07:41.880><c> 32</c><00:07:42.720><c> to</c><00:07:42.880><c> 128,000</c><00:07:44.360><c> tokens,</c>
+
+00:07:45.150 --> 00:07:45.160 align:start position:0%
+accuracy loss from 32 to 128,000 tokens,
+ 
+
+00:07:45.160 --> 00:07:47.950 align:start position:0%
+accuracy loss from 32 to 128,000 tokens,
+10<00:07:45.400><c> and</c><00:07:45.520><c> 1/2</c><00:07:45.840><c> points.</c><00:07:46.760><c> One</c><00:07:47.120><c> well-liked</c><00:07:47.640><c> model</c>
+
+00:07:47.950 --> 00:07:47.960 align:start position:0%
+10 and 1/2 points. One well-liked model
+ 
+
+00:07:47.960 --> 00:07:52.550 align:start position:0%
+10 and 1/2 points. One well-liked model
+fell<00:07:48.200><c> from</c><00:07:48.440><c> 93%</c><00:07:49.560><c> to</c><00:07:49.680><c> 37%</c><00:07:50.920><c> at</c><00:07:51.120><c> 200,000.</c><00:07:52.400><c> Its</c>
+
+00:07:52.550 --> 00:07:52.560 align:start position:0%
+fell from 93% to 37% at 200,000. Its
+ 
+
+00:07:52.560 --> 00:07:54.990 align:start position:0%
+fell from 93% to 37% at 200,000. Its
+invented<00:07:53.120><c> answer</c><00:07:53.440><c> rate</c><00:07:53.680><c> went</c><00:07:53.840><c> from</c><00:07:54.000><c> 7%</c><00:07:54.880><c> to</c>
+
+00:07:54.990 --> 00:07:55.000 align:start position:0%
+invented answer rate went from 7% to
+ 
+
+00:07:55.000 --> 00:07:56.550 align:start position:0%
+invented answer rate went from 7% to
+72%.
+
+00:07:56.550 --> 00:07:56.560 align:start position:0%
+72%.
+ 
+
+00:07:56.560 --> 00:07:59.550 align:start position:0%
+72%.
+Same<00:07:56.920><c> study,</c><00:07:57.640><c> same</c><00:07:57.960><c> machines.</c><00:07:58.840><c> 8-bit</c><00:07:59.280><c> weights</c>
+
+00:07:59.550 --> 00:07:59.560 align:start position:0%
+Same study, same machines. 8-bit weights
+ 
+
+00:07:59.560 --> 00:08:02.510 align:start position:0%
+Same study, same machines. 8-bit weights
+cost<00:07:59.880><c> under</c><00:08:00.120><c> two</c><00:08:00.400><c> points.</c><00:08:01.160><c> Context</c><00:08:01.720><c> costs</c><00:08:02.040><c> 20.</c>
+
+00:08:02.510 --> 00:08:02.520 align:start position:0%
+cost under two points. Context costs 20.
+ 
+
+00:08:02.520 --> 00:08:04.230 align:start position:0%
+cost under two points. Context costs 20.
+The<00:08:02.640><c> setting</c><00:08:02.920><c> everyone</c><00:08:03.280><c> argues</c><00:08:03.600><c> about</c><00:08:03.920><c> barely</c>
+
+00:08:04.230 --> 00:08:04.240 align:start position:0%
+The setting everyone argues about barely
+ 
+
+00:08:04.240 --> 00:08:06.270 align:start position:0%
+The setting everyone argues about barely
+matters.<00:08:05.120><c> The</c><00:08:05.240><c> number</c><00:08:05.520><c> in</c><00:08:05.640><c> the</c><00:08:05.720><c> marketing</c><00:08:06.160><c> is</c>
+
+00:08:06.270 --> 00:08:06.280 align:start position:0%
+matters. The number in the marketing is
+ 
+
+00:08:06.280 --> 00:08:08.470 align:start position:0%
+matters. The number in the marketing is
+the<00:08:06.400><c> one</c><00:08:06.560><c> that</c><00:08:06.760><c> does.</c>
+
+00:08:08.470 --> 00:08:08.480 align:start position:0%
+the one that does.
+ 
+
+00:08:08.480 --> 00:08:09.630 align:start position:0%
+the one that does.
+And<00:08:08.560><c> the</c><00:08:08.640><c> one</c><00:08:08.760><c> that</c><00:08:08.920><c> decides</c><00:08:09.320><c> whether</c><00:08:09.520><c> you</c>
+
+00:08:09.630 --> 00:08:09.640 align:start position:0%
+And the one that decides whether you
+ 
+
+00:08:09.640 --> 00:08:11.430 align:start position:0%
+And the one that decides whether you
+should<00:08:09.800><c> do</c><00:08:10.000><c> any</c><00:08:10.200><c> of</c><00:08:10.320><c> this</c><00:08:10.480><c> at</c><00:08:10.640><c> all.</c><00:08:11.240><c> What</c><00:08:11.360><c> are</c>
+
+00:08:11.430 --> 00:08:11.440 align:start position:0%
+should do any of this at all. What are
+ 
+
+00:08:11.440 --> 00:08:13.310 align:start position:0%
+should do any of this at all. What are
+you<00:08:11.560><c> running</c><00:08:11.800><c> it</c><00:08:11.920><c> for?</c><00:08:12.600><c> Start</c><00:08:12.880><c> by</c><00:08:13.000><c> not</c>
+
+00:08:13.310 --> 00:08:13.320 align:start position:0%
+you running it for? Start by not
+ 
+
+00:08:13.320 --> 00:08:15.630 align:start position:0%
+you running it for? Start by not
+agonizing<00:08:13.840><c> over</c><00:08:14.000><c> the</c><00:08:14.160><c> app.</c><00:08:14.680><c> For</c><00:08:14.880><c> one</c><00:08:15.160><c> person</c>
+
+00:08:15.630 --> 00:08:15.640 align:start position:0%
+agonizing over the app. For one person
+ 
+
+00:08:15.640 --> 00:08:18.870 align:start position:0%
+agonizing over the app. For one person
+making<00:08:15.960><c> one</c><00:08:16.160><c> request</c><00:08:16.600><c> at</c><00:08:16.680><c> a</c><00:08:16.760><c> time,</c><00:08:17.440><c> Llama.cpp,</c>
+
+00:08:18.870 --> 00:08:18.880 align:start position:0%
+making one request at a time, Llama.cpp,
+ 
+
+00:08:18.880 --> 00:08:21.430 align:start position:0%
+making one request at a time, Llama.cpp,
+a<00:08:18.960><c> Llama,</c><00:08:19.680><c> and</c><00:08:19.880><c> LM</c><00:08:20.200><c> Studio</c><00:08:20.600><c> land</c><00:08:20.880><c> within</c><00:08:21.080><c> a</c><00:08:21.120><c> few</c>
+
+00:08:21.430 --> 00:08:21.440 align:start position:0%
+a Llama, and LM Studio land within a few
+ 
+
+00:08:21.440 --> 00:08:23.710 align:start position:0%
+a Llama, and LM Studio land within a few
+tokens<00:08:21.800><c> a</c><00:08:21.840><c> second</c><00:08:22.160><c> of</c><00:08:22.280><c> each</c><00:08:22.440><c> other.</c><00:08:22.919><c> vLLM</c><00:08:23.520><c> is</c>
+
+00:08:23.710 --> 00:08:23.720 align:start position:0%
+tokens a second of each other. vLLM is
+ 
+
+00:08:23.720 --> 00:08:25.670 align:start position:0%
+tokens a second of each other. vLLM is
+much<00:08:24.080><c> faster</c><00:08:24.480><c> at</c><00:08:24.600><c> serving</c><00:08:24.919><c> 40</c><00:08:25.280><c> people</c><00:08:25.560><c> at</c>
+
+00:08:25.670 --> 00:08:25.680 align:start position:0%
+much faster at serving 40 people at
+ 
+
+00:08:25.680 --> 00:08:27.990 align:start position:0%
+much faster at serving 40 people at
+once,<00:08:26.360><c> which</c><00:08:26.560><c> you</c><00:08:26.640><c> are</c><00:08:26.760><c> not</c><00:08:27.080><c> doing.</c><00:08:27.800><c> Two</c>
+
+00:08:27.990 --> 00:08:28.000 align:start position:0%
+once, which you are not doing. Two
+ 
+
+00:08:28.000 --> 00:08:29.670 align:start position:0%
+once, which you are not doing. Two
+things<00:08:28.240><c> did</c><00:08:28.440><c> change</c><00:08:28.720><c> this</c><00:08:28.919><c> year.</c><00:08:29.520><c> In</c>
+
+00:08:29.670 --> 00:08:29.680 align:start position:0%
+things did change this year. In
+ 
+
+00:08:29.680 --> 00:08:32.709 align:start position:0%
+things did change this year. In
+February,<00:08:30.600><c> the</c><00:08:30.760><c> team</c><00:08:30.960><c> behind</c><00:08:31.280><c> llama.cpp</c>
+
+00:08:32.709 --> 00:08:32.719 align:start position:0%
+February, the team behind llama.cpp
+ 
+
+00:08:32.719 --> 00:08:35.149 align:start position:0%
+February, the team behind llama.cpp
+joined<00:08:33.120><c> Hugging</c><00:08:33.479><c> Face.</c><00:08:34.320><c> Georgi</c><00:08:34.680><c> Gerganov</c>
+
+00:08:35.149 --> 00:08:35.159 align:start position:0%
+joined Hugging Face. Georgi Gerganov
+ 
+
+00:08:35.159 --> 00:08:36.750 align:start position:0%
+joined Hugging Face. Georgi Gerganov
+wrote<00:08:35.360><c> that</c><00:08:35.520><c> local</c><00:08:35.840><c> inference</c><00:08:36.240><c> is</c><00:08:36.360><c> becoming</c><00:08:36.719><c> a</c>
+
+00:08:36.750 --> 00:08:36.760 align:start position:0%
+wrote that local inference is becoming a
+ 
+
+00:08:36.760 --> 00:08:38.870 align:start position:0%
+wrote that local inference is becoming a
+competitive<00:08:37.360><c> alternative</c><00:08:37.919><c> to</c><00:08:38.000><c> the</c><00:08:38.120><c> cloud,</c>
+
+00:08:38.870 --> 00:08:38.880 align:start position:0%
+competitive alternative to the cloud,
+ 
+
+00:08:38.880 --> 00:08:40.630 align:start position:0%
+competitive alternative to the cloud,
+and<00:08:39.000><c> the</c><00:08:39.039><c> way</c><00:08:39.200><c> people</c><00:08:39.440><c> deploy</c><00:08:39.919><c> it</c><00:08:40.159><c> has</c><00:08:40.400><c> to</c><00:08:40.479><c> get</c>
+
+00:08:40.630 --> 00:08:40.640 align:start position:0%
+and the way people deploy it has to get
+ 
+
+00:08:40.640 --> 00:08:43.029 align:start position:0%
+and the way people deploy it has to get
+simpler.<00:08:41.479><c> In</c><00:08:41.640><c> March,</c><00:08:42.320><c> a</c><00:08:42.400><c> Llama</c><00:08:42.680><c> swapped</c>
+
+00:08:43.029 --> 00:08:43.039 align:start position:0%
+simpler. In March, a Llama swapped
+ 
+
+00:08:43.039 --> 00:08:45.950 align:start position:0%
+simpler. In March, a Llama swapped
+Llama.cpp<00:08:43.840><c> for</c><00:08:44.000><c> Apple's</c><00:08:44.400><c> MLX</c><00:08:44.880><c> on</c><00:08:45.000><c> Mac.</c><00:08:45.640><c> Same</c>
+
+00:08:45.950 --> 00:08:45.960 align:start position:0%
+Llama.cpp for Apple's MLX on Mac. Same
+ 
+
+00:08:45.960 --> 00:08:48.710 align:start position:0%
+Llama.cpp for Apple's MLX on Mac. Same
+machine,<00:08:46.720><c> same</c><00:08:47.080><c> model.</c><00:08:47.720><c> Prompt</c><00:08:48.120><c> processing</c>
+
+00:08:48.710 --> 00:08:48.720 align:start position:0%
+machine, same model. Prompt processing
+ 
+
+00:08:48.720 --> 00:08:52.710 align:start position:0%
+machine, same model. Prompt processing
+up<00:08:48.880><c> 57%,</c><00:08:50.360><c> generation</c><00:08:51.000><c> up</c><00:08:51.160><c> 93%.</c>
+
+00:08:52.710 --> 00:08:52.720 align:start position:0%
+up 57%, generation up 93%.
+ 
+
+00:08:52.720 --> 00:08:54.470 align:start position:0%
+up 57%, generation up 93%.
+A<00:08:52.839><c> bigger</c><00:08:53.160><c> jump</c><00:08:53.440><c> than</c><00:08:53.680><c> any</c><00:08:53.960><c> card</c><00:08:54.240><c> you</c><00:08:54.360><c> could</c>
+
+00:08:54.470 --> 00:08:54.480 align:start position:0%
+A bigger jump than any card you could
+ 
+
+00:08:54.480 --> 00:08:55.910 align:start position:0%
+A bigger jump than any card you could
+have<00:08:54.600><c> bought</c><00:08:54.800><c> that</c><00:08:55.000><c> month.</c><00:08:55.560><c> The</c><00:08:55.680><c> chip</c>
+
+00:08:55.910 --> 00:08:55.920 align:start position:0%
+have bought that month. The chip
+ 
+
+00:08:55.920 --> 00:08:58.030 align:start position:0%
+have bought that month. The chip
+underneath<00:08:56.400><c> barely</c><00:08:56.800><c> touches</c><00:08:57.160><c> quality.</c>
+
+00:08:58.030 --> 00:08:58.040 align:start position:0%
+underneath barely touches quality.
+ 
+
+00:08:58.040 --> 00:09:02.430 align:start position:0%
+underneath barely touches quality.
+Across<00:08:58.440><c> an</c><00:08:58.600><c> H200,</c><00:08:59.880><c> an</c><00:09:00.160><c> MI300X,</c>
+
+00:09:02.430 --> 00:09:02.440 align:start position:0%
+Across an H200, an MI300X,
+ 
+
+00:09:02.440 --> 00:09:05.510 align:start position:0%
+Across an H200, an MI300X,
+and<00:09:02.600><c> a</c><00:09:02.640><c> Gaudi</c><00:09:03.080><c> 2,</c><00:09:03.920><c> accuracy</c><00:09:04.480><c> on</c><00:09:04.600><c> the</c><00:09:04.680><c> same</c><00:09:05.040><c> task</c>
+
+00:09:05.510 --> 00:09:05.520 align:start position:0%
+and a Gaudi 2, accuracy on the same task
+ 
+
+00:09:05.520 --> 00:09:07.430 align:start position:0%
+and a Gaudi 2, accuracy on the same task
+varies<00:09:05.839><c> by</c><00:09:06.000><c> half</c><00:09:06.320><c> a</c><00:09:06.400><c> point.</c><00:09:07.080><c> Temperature</c>
+
+00:09:07.430 --> 00:09:07.440 align:start position:0%
+varies by half a point. Temperature
+ 
+
+00:09:07.440 --> 00:09:09.110 align:start position:0%
+varies by half a point. Temperature
+moved<00:09:07.680><c> it</c><00:09:07.760><c> up</c><00:09:07.880><c> to</c><00:09:08.000><c> nine</c><00:09:08.360><c> times</c><00:09:08.720><c> more</c><00:09:08.880><c> than</c><00:09:09.040><c> the</c>
+
+00:09:09.110 --> 00:09:09.120 align:start position:0%
+moved it up to nine times more than the
+ 
+
+00:09:09.120 --> 00:09:11.430 align:start position:0%
+moved it up to nine times more than the
+hardware<00:09:09.520><c> did.</c><00:09:10.240><c> Then</c><00:09:10.360><c> there</c><00:09:10.520><c> is</c><00:09:10.640><c> the</c><00:09:10.760><c> bill.</c>
+
+00:09:11.430 --> 00:09:11.440 align:start position:0%
+hardware did. Then there is the bill.
+ 
+
+00:09:11.440 --> 00:09:13.230 align:start position:0%
+hardware did. Then there is the bill.
+Open<00:09:11.760><c> AI</c><00:09:12.000><c> will</c><00:09:12.120><c> sell</c><00:09:12.320><c> you</c><00:09:12.440><c> a</c><00:09:12.480><c> million</c><00:09:12.920><c> input</c>
+
+00:09:13.230 --> 00:09:13.240 align:start position:0%
+Open AI will sell you a million input
+ 
+
+00:09:13.240 --> 00:09:15.470 align:start position:0%
+Open AI will sell you a million input
+tokens<00:09:13.560><c> for</c><00:09:13.720><c> 5</c><00:09:14.040><c> cents.</c><00:09:14.680><c> Deep</c><00:09:14.920><c> Seek</c><00:09:15.120><c> will</c><00:09:15.280><c> run</c><00:09:15.400><c> a</c>
+
+00:09:15.470 --> 00:09:15.480 align:start position:0%
+tokens for 5 cents. Deep Seek will run a
+ 
+
+00:09:15.480 --> 00:09:18.190 align:start position:0%
+tokens for 5 cents. Deep Seek will run a
+capable<00:09:15.920><c> model</c><00:09:16.200><c> for</c><00:09:16.360><c> 14.</c><00:09:17.360><c> Meanwhile,</c>
+
+00:09:18.190 --> 00:09:18.200 align:start position:0%
+capable model for 14. Meanwhile,
+ 
+
+00:09:18.200 --> 00:09:20.030 align:start position:0%
+capable model for 14. Meanwhile,
+American<00:09:18.600><c> electricity</c><00:09:19.160><c> hit</c><00:09:19.400><c> 18</c><00:09:19.680><c> and</c><00:09:19.800><c> 1/2</c>
+
+00:09:20.030 --> 00:09:20.040 align:start position:0%
+American electricity hit 18 and 1/2
+ 
+
+00:09:20.040 --> 00:09:23.350 align:start position:0%
+American electricity hit 18 and 1/2
+cents<00:09:20.320><c> a</c><00:09:20.400><c> kilowatt</c><00:09:20.960><c> hour,</c><00:09:21.560><c> up</c><00:09:21.760><c> 6%</c><00:09:22.480><c> in</c><00:09:22.600><c> a</c><00:09:22.640><c> year,</c>
+
+00:09:23.350 --> 00:09:23.360 align:start position:0%
+cents a kilowatt hour, up 6% in a year,
+ 
+
+00:09:23.360 --> 00:09:25.710 align:start position:0%
+cents a kilowatt hour, up 6% in a year,
+and<00:09:23.480><c> the</c><00:09:23.560><c> card</c><00:09:23.880><c> got</c><00:09:24.080><c> worse,</c><00:09:24.680><c> not</c><00:09:24.920><c> better.</c><00:09:25.600><c> The</c>
+
+00:09:25.710 --> 00:09:25.720 align:start position:0%
+and the card got worse, not better. The
+ 
+
+00:09:25.720 --> 00:09:28.910 align:start position:0%
+and the card got worse, not better. The
+5090<00:09:26.680><c> carries</c><00:09:26.960><c> a</c><00:09:27.040><c> $2,000</c><00:09:27.880><c> sticker</c><00:09:28.400><c> and</c><00:09:28.560><c> sells</c>
+
+00:09:28.910 --> 00:09:28.920 align:start position:0%
+5090 carries a $2,000 sticker and sells
+ 
+
+00:09:28.920 --> 00:09:31.110 align:start position:0%
+5090 carries a $2,000 sticker and sells
+for<00:09:29.000><c> about</c><00:09:29.280><c> $4,300</c>
+
+00:09:31.110 --> 00:09:31.120 align:start position:0%
+for about $4,300
+ 
+
+00:09:31.120 --> 00:09:32.510 align:start position:0%
+for about $4,300
+because<00:09:31.360><c> the</c><00:09:31.440><c> memory</c><00:09:31.760><c> makers</c><00:09:32.120><c> moved</c><00:09:32.360><c> their</c>
+
+00:09:32.510 --> 00:09:32.520 align:start position:0%
+because the memory makers moved their
+ 
+
+00:09:32.520 --> 00:09:34.630 align:start position:0%
+because the memory makers moved their
+lines<00:09:32.800><c> to</c><00:09:32.920><c> data</c><00:09:33.200><c> center</c><00:09:33.440><c> parts.</c><00:09:34.280><c> The</c><00:09:34.400><c> break</c>
+
+00:09:34.630 --> 00:09:34.640 align:start position:0%
+lines to data center parts. The break
+ 
+
+00:09:34.640 --> 00:09:37.150 align:start position:0%
+lines to data center parts. The break
+even<00:09:34.839><c> people</c><00:09:35.080><c> keep</c><00:09:35.280><c> landing</c><00:09:35.640><c> on</c><00:09:36.160><c> under</c><00:09:36.400><c> $50</c><00:09:37.040><c> a</c>
+
+00:09:37.150 --> 00:09:37.160 align:start position:0%
+even people keep landing on under $50 a
+ 
+
+00:09:37.160 --> 00:09:40.030 align:start position:0%
+even people keep landing on under $50 a
+month<00:09:37.480><c> of</c><00:09:37.640><c> API</c><00:09:38.000><c> spend,</c><00:09:38.640><c> Cloud</c><00:09:39.000><c> wins</c><00:09:39.320><c> outright.</c>
+
+00:09:40.030 --> 00:09:40.040 align:start position:0%
+month of API spend, Cloud wins outright.
+ 
+
+00:09:40.040 --> 00:09:42.150 align:start position:0%
+month of API spend, Cloud wins outright.
+Above<00:09:40.360><c> a</c><00:09:40.440><c> few</c><00:09:40.640><c> hundred</c><00:09:40.920><c> a</c><00:09:40.960><c> month</c><00:09:41.200><c> sustained,</c>
+
+00:09:42.150 --> 00:09:42.160 align:start position:0%
+Above a few hundred a month sustained,
+ 
+
+00:09:42.160 --> 00:09:44.070 align:start position:0%
+Above a few hundred a month sustained,
+the<00:09:42.240><c> machine</c><00:09:42.600><c> pays</c><00:09:42.880><c> for</c><00:09:43.000><c> itself</c><00:09:43.440><c> inside</c><00:09:43.800><c> half</c>
+
+00:09:44.070 --> 00:09:44.080 align:start position:0%
+the machine pays for itself inside half
+ 
+
+00:09:44.080 --> 00:09:46.910 align:start position:0%
+the machine pays for itself inside half
+a<00:09:44.120><c> year.</c><00:09:44.800><c> The</c><00:09:44.880><c> capability</c><00:09:45.440><c> gap</c><00:09:45.720><c> is</c><00:09:45.880><c> real,</c><00:09:46.160><c> too.</c>
+
+00:09:46.910 --> 00:09:46.920 align:start position:0%
+a year. The capability gap is real, too.
+ 
+
+00:09:46.920 --> 00:09:48.390 align:start position:0%
+a year. The capability gap is real, too.
+On<00:09:47.040><c> the</c><00:09:47.120><c> standard</c><00:09:47.560><c> software</c><00:09:47.960><c> engineering</c>
+
+00:09:48.390 --> 00:09:48.400 align:start position:0%
+On the standard software engineering
+ 
+
+00:09:48.400 --> 00:09:50.750 align:start position:0%
+On the standard software engineering
+benchmark,<00:09:49.280><c> the</c><00:09:49.400><c> best</c><00:09:49.680><c> closed</c><00:09:49.960><c> model</c><00:09:50.280><c> scores</c>
+
+00:09:50.750 --> 00:09:50.760 align:start position:0%
+benchmark, the best closed model scores
+ 
+
+00:09:50.760 --> 00:09:53.310 align:start position:0%
+benchmark, the best closed model scores
+89.<00:09:51.720><c> The</c><00:09:51.800><c> best</c><00:09:52.160><c> open</c><00:09:52.440><c> weights</c><00:09:52.680><c> model</c><00:09:52.960><c> scores</c>
+
+00:09:53.310 --> 00:09:53.320 align:start position:0%
+89. The best open weights model scores
+ 
+
+00:09:53.320 --> 00:09:56.110 align:start position:0%
+89. The best open weights model scores
+79,<00:09:54.400><c> and</c><00:09:54.520><c> that</c><00:09:54.760><c> one</c><00:09:54.880><c> wants</c><00:09:55.120><c> a</c><00:09:55.160><c> server,</c><00:09:55.880><c> not</c><00:09:56.080><c> a</c>
+
+00:09:56.110 --> 00:09:56.120 align:start position:0%
+79, and that one wants a server, not a
+ 
+
+00:09:56.120 --> 00:09:58.070 align:start position:0%
+79, and that one wants a server, not a
+laptop.<00:09:57.000><c> Agents</c><00:09:57.360><c> are</c><00:09:57.440><c> where</c><00:09:57.600><c> you</c><00:09:57.720><c> feel</c><00:09:57.960><c> it</c>
+
+00:09:58.070 --> 00:09:58.080 align:start position:0%
+laptop. Agents are where you feel it
+ 
+
+00:09:58.080 --> 00:10:01.390 align:start position:0%
+laptop. Agents are where you feel it
+most.<00:09:58.840><c> Past</c><00:09:59.160><c> roughly</c><00:09:59.520><c> 25</c><00:10:00.040><c> to</c><00:10:00.160><c> 30</c><00:10:00.440><c> tool</c><00:10:00.680><c> calls,</c>
+
+00:10:01.390 --> 00:10:01.400 align:start position:0%
+most. Past roughly 25 to 30 tool calls,
+ 
+
+00:10:01.400 --> 00:10:02.950 align:start position:0%
+most. Past roughly 25 to 30 tool calls,
+local<00:10:01.680><c> models</c><00:10:02.040><c> lose</c><00:10:02.240><c> the</c><00:10:02.360><c> thread.</c><00:10:02.840><c> They</c>
+
+00:10:02.950 --> 00:10:02.960 align:start position:0%
+local models lose the thread. They
+ 
+
+00:10:02.960 --> 00:10:05.230 align:start position:0%
+local models lose the thread. They
+forget<00:10:03.360><c> early</c><00:10:03.600><c> results,</c><00:10:04.560><c> redo</c><00:10:04.920><c> finished</c>
+
+00:10:05.230 --> 00:10:05.240 align:start position:0%
+forget early results, redo finished
+ 
+
+00:10:05.240 --> 00:10:07.750 align:start position:0%
+forget early results, redo finished
+steps<00:10:05.960><c> with</c><00:10:06.120><c> a</c><00:10:06.160><c> context</c><00:10:06.760><c> window</c><00:10:07.080><c> still</c><00:10:07.440><c> half</c>
+
+00:10:07.750 --> 00:10:07.760 align:start position:0%
+steps with a context window still half
+ 
+
+00:10:07.760 --> 00:10:11.150 align:start position:0%
+steps with a context window still half
+empty.<00:10:08.600><c> So,</c><00:10:08.800><c> here</c><00:10:09.160><c> is</c><00:10:09.320><c> the</c><00:10:09.480><c> yes.</c><00:10:10.360><c> Local</c><00:10:10.720><c> wins</c>
+
+00:10:11.150 --> 00:10:11.160 align:start position:0%
+empty. So, here is the yes. Local wins
+ 
+
+00:10:11.160 --> 00:10:14.510 align:start position:0%
+empty. So, here is the yes. Local wins
+at<00:10:11.360><c> small,</c><00:10:12.320><c> repetitive,</c><00:10:13.440><c> private,</c><00:10:14.360><c> and</c>
+
+00:10:14.510 --> 00:10:14.520 align:start position:0%
+at small, repetitive, private, and
+ 
+
+00:10:14.520 --> 00:10:17.750 align:start position:0%
+at small, repetitive, private, and
+constant.<00:10:15.320><c> Classification,</c><00:10:16.560><c> extraction,</c>
+
+00:10:17.750 --> 00:10:17.760 align:start position:0%
+constant. Classification, extraction,
+ 
+
+00:10:17.760 --> 00:10:19.830 align:start position:0%
+constant. Classification, extraction,
+summarizing<00:10:18.360><c> your</c><00:10:18.480><c> own</c><00:10:18.680><c> files,</c><00:10:19.560><c> auto</c>
+
+00:10:19.830 --> 00:10:19.840 align:start position:0%
+summarizing your own files, auto
+ 
+
+00:10:19.840 --> 00:10:21.910 align:start position:0%
+summarizing your own files, auto
+complete,<00:10:20.800><c> anything</c><00:10:21.240><c> you</c><00:10:21.320><c> would</c><00:10:21.480><c> rather</c><00:10:21.720><c> not</c>
+
+00:10:21.910 --> 00:10:21.920 align:start position:0%
+complete, anything you would rather not
+ 
+
+00:10:21.920 --> 00:10:23.990 align:start position:0%
+complete, anything you would rather not
+paste<00:10:22.280><c> into</c><00:10:22.480><c> someone</c><00:10:22.760><c> else's</c><00:10:23.080><c> server.</c><00:10:23.800><c> And</c><00:10:23.920><c> it</c>
+
+00:10:23.990 --> 00:10:24.000 align:start position:0%
+paste into someone else's server. And it
+ 
+
+00:10:24.000 --> 00:10:26.270 align:start position:0%
+paste into someone else's server. And it
+is<00:10:24.120><c> not</c><00:10:24.440><c> a</c><00:10:24.480><c> hobby</c><00:10:24.760><c> anymore.</c><00:10:25.440><c> Llama</c><00:10:25.760><c> reports</c>
+
+00:10:26.270 --> 00:10:26.280 align:start position:0%
+is not a hobby anymore. Llama reports
+ 
+
+00:10:26.280 --> 00:10:28.870 align:start position:0%
+is not a hobby anymore. Llama reports
+8.9<00:10:27.000><c> million</c><00:10:27.320><c> monthly</c><00:10:27.600><c> developers,</c><00:10:28.600><c> double</c>
+
+00:10:28.870 --> 00:10:28.880 align:start position:0%
+8.9 million monthly developers, double
+ 
+
+00:10:28.880 --> 00:10:31.430 align:start position:0%
+8.9 million monthly developers, double
+January,<00:10:29.760><c> running</c><00:10:30.040><c> inside</c><00:10:30.440><c> 85%</c><00:10:31.280><c> of</c><00:10:31.360><c> the</c>
+
+00:10:31.430 --> 00:10:31.440 align:start position:0%
+January, running inside 85% of the
+ 
+
+00:10:31.440 --> 00:10:34.670 align:start position:0%
+January, running inside 85% of the
+Fortune<00:10:31.800><c> 500</c><00:10:32.440><c> on</c><00:10:32.560><c> a</c><00:10:32.600><c> team</c><00:10:32.960><c> of</c><00:10:33.120><c> 14</c><00:10:33.600><c> people.</c><00:10:34.400><c> Open</c>
+
+00:10:34.670 --> 00:10:34.680 align:start position:0%
+Fortune 500 on a team of 14 people. Open
+ 
+
+00:10:34.680 --> 00:10:36.590 align:start position:0%
+Fortune 500 on a team of 14 people. Open
+weights<00:10:35.000><c> took</c><00:10:35.240><c> 41%</c><00:10:36.000><c> of</c><00:10:36.080><c> Hugging</c><00:10:36.360><c> Face</c>
+
+00:10:36.590 --> 00:10:36.600 align:start position:0%
+weights took 41% of Hugging Face
+ 
+
+00:10:36.600 --> 00:10:39.230 align:start position:0%
+weights took 41% of Hugging Face
+downloads<00:10:37.040><c> this</c><00:10:37.240><c> spring.</c><00:10:38.000><c> On</c><00:10:38.120><c> Vercel,</c><00:10:39.000><c> open</c>
+
+00:10:39.230 --> 00:10:39.240 align:start position:0%
+downloads this spring. On Vercel, open
+ 
+
+00:10:39.240 --> 00:10:41.310 align:start position:0%
+downloads this spring. On Vercel, open
+models<00:10:39.560><c> handle</c><00:10:39.800><c> close</c><00:10:40.120><c> to</c><00:10:40.240><c> a</c><00:10:40.280><c> third</c><00:10:40.720><c> of</c><00:10:40.839><c> all</c><00:10:41.080><c> AI</c>
+
+00:10:41.310 --> 00:10:41.320 align:start position:0%
+models handle close to a third of all AI
+ 
+
+00:10:41.320 --> 00:10:43.270 align:start position:0%
+models handle close to a third of all AI
+requests<00:10:41.760><c> in</c><00:10:41.880><c> June,</c><00:10:42.560><c> and</c><00:10:42.680><c> the</c><00:10:42.760><c> gap</c><00:10:43.080><c> has</c><00:10:43.240><c> a</c>
+
+00:10:43.270 --> 00:10:43.280 align:start position:0%
+requests in June, and the gap has a
+ 
+
+00:10:43.280 --> 00:10:45.550 align:start position:0%
+requests in June, and the gap has a
+measurement<00:10:43.760><c> now.</c><00:10:44.240><c> The</c><00:10:44.360><c> UK</c><00:10:44.839><c> AI</c><00:10:45.120><c> Security</c>
+
+00:10:45.550 --> 00:10:45.560 align:start position:0%
+measurement now. The UK AI Security
+ 
+
+00:10:45.560 --> 00:10:47.790 align:start position:0%
+measurement now. The UK AI Security
+Institute<00:10:46.160><c> put</c><00:10:46.360><c> open</c><00:10:46.640><c> weights</c><00:10:46.960><c> 4</c><00:10:47.160><c> to</c><00:10:47.280><c> 7</c><00:10:47.560><c> months</c>
+
+00:10:47.790 --> 00:10:47.800 align:start position:0%
+Institute put open weights 4 to 7 months
+ 
+
+00:10:47.800 --> 00:10:49.630 align:start position:0%
+Institute put open weights 4 to 7 months
+behind<00:10:48.080><c> the</c><00:10:48.120><c> closed</c><00:10:48.480><c> frontier,</c><00:10:49.320><c> narrowed</c>
+
+00:10:49.630 --> 00:10:49.640 align:start position:0%
+behind the closed frontier, narrowed
+ 
+
+00:10:49.640 --> 00:10:51.590 align:start position:0%
+behind the closed frontier, narrowed
+from<00:10:49.800><c> 6</c><00:10:50.080><c> to</c><00:10:50.200><c> 10</c><00:10:50.440><c> months</c><00:10:50.680><c> a</c><00:10:50.760><c> year</c><00:10:50.920><c> ago.</c>
+
+00:10:51.590 --> 00:10:51.600 align:start position:0%
+from 6 to 10 months a year ago.
+ 
+
+00:10:51.600 --> 00:10:54.510 align:start position:0%
+from 6 to 10 months a year ago.
+Practically,<00:10:52.680><c> 8</c><00:10:52.920><c> GB</c><00:10:53.240><c> runs</c><00:10:53.480><c> a</c><00:10:53.520><c> 9</c><00:10:53.839><c> billion</c><00:10:54.200><c> model</c>
+
+00:10:54.510 --> 00:10:54.520 align:start position:0%
+Practically, 8 GB runs a 9 billion model
+ 
+
+00:10:54.520 --> 00:10:57.990 align:start position:0%
+Practically, 8 GB runs a 9 billion model
+at<00:10:54.720><c> 4-bit</c><00:10:55.240><c> with</c><00:10:55.440><c> real</c><00:10:55.640><c> context.</c><00:10:56.640><c> 16</c><00:10:57.200><c> runs</c><00:10:57.560><c> a</c><00:10:57.640><c> 12</c>
+
+00:10:57.990 --> 00:10:58.000 align:start position:0%
+at 4-bit with real context. 16 runs a 12
+ 
+
+00:10:58.000 --> 00:11:00.990 align:start position:0%
+at 4-bit with real context. 16 runs a 12
+billion<00:10:58.480><c> or</c><00:10:58.640><c> a</c><00:10:58.680><c> 26</c><00:10:59.240><c> billion</c><00:10:59.560><c> sparse</c><00:10:59.960><c> one.</c><00:11:00.520><c> 24</c>
+
+00:11:00.990 --> 00:11:01.000 align:start position:0%
+billion or a 26 billion sparse one. 24
+ 
+
+00:11:01.000 --> 00:11:03.630 align:start position:0%
+billion or a 26 billion sparse one. 24
+runs<00:11:01.280><c> a</c><00:11:01.360><c> 27</c><00:11:01.920><c> billion</c><00:11:02.280><c> coding</c><00:11:02.640><c> model</c><00:11:03.000><c> at</c><00:11:03.120><c> 25</c>
+
+00:11:03.630 --> 00:11:03.640 align:start position:0%
+runs a 27 billion coding model at 25
+ 
+
+00:11:03.640 --> 00:11:05.750 align:start position:0%
+runs a 27 billion coding model at 25
+tokens<00:11:03.960><c> a</c><00:11:04.000><c> second</c><00:11:04.560><c> on</c><00:11:04.560><c> a</c><00:11:04.600><c> laptop.</c><00:11:05.440><c> Five</c>
+
+00:11:05.750 --> 00:11:05.760 align:start position:0%
+tokens a second on a laptop. Five
+ 
+
+00:11:05.760 --> 00:11:08.150 align:start position:0%
+tokens a second on a laptop. Five
+things:<00:11:06.520><c> bandwidth</c><00:11:07.000><c> over</c><00:11:07.200><c> compute,</c><00:11:07.880><c> bytes</c>
+
+00:11:08.150 --> 00:11:08.160 align:start position:0%
+things: bandwidth over compute, bytes
+ 
+
+00:11:08.160 --> 00:11:10.350 align:start position:0%
+things: bandwidth over compute, bytes
+awake<00:11:08.480><c> over</c><00:11:08.680><c> parameters,</c><00:11:09.440><c> fit</c><00:11:09.960><c> with</c><00:11:10.120><c> that</c>
+
+00:11:10.350 --> 00:11:10.360 align:start position:0%
+awake over parameters, fit with that
+ 
+
+00:11:10.360 --> 00:11:12.710 align:start position:0%
+awake over parameters, fit with that
+cliff<00:11:10.600><c> behind</c><00:11:11.000><c> it,</c><00:11:11.520><c> context,</c><00:11:12.440><c> which</c><00:11:12.600><c> is</c>
+
+00:11:12.710 --> 00:11:12.720 align:start position:0%
+cliff behind it, context, which is
+ 
+
+00:11:12.720 --> 00:11:15.110 align:start position:0%
+cliff behind it, context, which is
+bigger<00:11:12.960><c> than</c><00:11:13.120><c> your</c><00:11:13.240><c> model,</c><00:11:14.040><c> and</c><00:11:14.160><c> the</c><00:11:14.280><c> job,</c>
+
+00:11:15.110 --> 00:11:15.120 align:start position:0%
+bigger than your model, and the job,
+ 
+
+00:11:15.120 --> 00:11:17.950 align:start position:0%
+bigger than your model, and the job,
+which<00:11:15.360><c> decides</c><00:11:15.839><c> all</c><00:11:16.040><c> four.</c><00:11:16.800><c> Buy</c><00:11:17.040><c> bandwidth,</c>
+
+00:11:17.950 --> 00:11:17.960 align:start position:0%
+which decides all four. Buy bandwidth,
+ 
+
+00:11:17.960 --> 00:11:19.870 align:start position:0%
+which decides all four. Buy bandwidth,
+count<00:11:18.240><c> what</c><00:11:18.360><c> is</c><00:11:18.480><c> awake,</c><00:11:19.160><c> leave</c><00:11:19.440><c> room</c><00:11:19.640><c> for</c><00:11:19.760><c> the</c>
+
+00:11:19.870 --> 00:11:19.880 align:start position:0%
+count what is awake, leave room for the
+ 
+
+00:11:19.880 --> 00:11:21.750 align:start position:0%
+count what is awake, leave room for the
+cache,<00:11:20.600><c> and</c><00:11:20.760><c> be</c><00:11:20.880><c> straight</c><00:11:21.280><c> with</c><00:11:21.400><c> yourself</c>
+
+00:11:21.750 --> 00:11:21.760 align:start position:0%
+cache, and be straight with yourself
+ 
+
+00:11:21.760 --> 00:11:24.430 align:start position:0%
+cache, and be straight with yourself
+about<00:11:22.000><c> the</c><00:11:22.080><c> work.</c><00:11:22.720><c> That</c><00:11:23.160><c> is</c><00:11:23.320><c> the</c><00:11:23.440><c> checklist.</c>
+
+00:11:24.430 --> 00:11:24.440 align:start position:0%
+about the work. That is the checklist.
+ 
+
+00:11:24.440 --> 00:11:27.839 align:start position:0%
+about the work. That is the checklist.
+Everything<00:11:24.839><c> else</c><00:11:25.080><c> is</c><00:11:25.200><c> a</c><00:11:25.240><c> preference.</c>
+

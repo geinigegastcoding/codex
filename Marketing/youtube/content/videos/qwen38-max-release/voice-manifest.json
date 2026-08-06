@@ -1,0 +1,497 @@
+{
+  "provider": "fish-audio",
+  "model": "s2.1-pro-free",
+  "createdAt": "2026-08-03T19:53:26.065Z",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "hash": "227d48c4dfe0af1724d14f573faf73dc748882f0ff93b879df3bd2b802f2d85f",
+      "sourceText": "[yells] Qwen three point eight Max just appeared in QwenCloud's official model release log, dated August third, twenty twenty-six. [pause] It is a native vision-language model with two point four trillion total parameters, a one-million-token context window, and hybrid thinking enabled by default. The headline is huge. The useful question is simple: what changes for your AI workflow?",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\227d48c4dfe0af1724d14f573faf73dc748882f0ff93b879df3bd2b802f2d85f.mp3",
+      "durationSeconds": 19.905333,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[yells] Qwen three point eight Max just appeared in QwenCloud's official model release log, dated August third, twenty twenty-six.",
+          "hash": "75e9a2446eef9596e4ed65e68f7d482e87d990d9f1d47078fa10f627d77ea1a1",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\75e9a2446eef9596e4ed65e68f7d482e87d990d9f1d47078fa10f627d77ea1a1.mp3",
+          "durationSeconds": 6.713375,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "[pause] It is a native vision-language model with two point four trillion total parameters, a one-million-token context window, and hybrid thinking",
+          "hash": "0128b873720e73340da7d13febf3072009f3a703f87b3116b3485454f181e25d",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\0128b873720e73340da7d13febf3072009f3a703f87b3116b3485454f181e25d.mp3",
+          "durationSeconds": 7.314188,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "enabled by default. The headline is huge. The useful question is simple: what changes for your AI workflow?",
+          "hash": "a9757ccb1ceb1df62aa7414b218614199ce242caa9d9d53929b7c033244c7de3",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\a9757ccb1ceb1df62aa7414b218614199ce242caa9d9d53929b7c033244c7de3.mp3",
+          "durationSeconds": 5.877438,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "release",
+      "hash": "f5751da2a0ff95ca5173353fe908ca61887bddb8574c5c141b747034a1a0e6a9",
+      "sourceText": "[enthusiastic] What shipped is qwen3.8-max, a hosted Max-series model. QwenCloud calls it its most capable flagship so far. [pause] It says it improves on the three point seven series. Treat that as a vendor claim, not an independent benchmark. The official release shape is clear: multimodal input, long context, tools, and controllable reasoning.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\f5751da2a0ff95ca5173353fe908ca61887bddb8574c5c141b747034a1a0e6a9.mp3",
+      "durationSeconds": 17.606563,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[enthusiastic] What shipped is qwen3.8-max, a hosted Max-series model. QwenCloud calls it its most capable flagship so far.",
+          "hash": "8f60dc58184ed7e2872e65463fede4a4b78760a3fd65b4177346a3468fa2b4f7",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\8f60dc58184ed7e2872e65463fede4a4b78760a3fd65b4177346a3468fa2b4f7.mp3",
+          "durationSeconds": 6.426063,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "[pause] It says it improves on the three point seven series. Treat that as a vendor claim, not an independent benchmark.",
+          "hash": "857727c1030dcc22d1ca0f73fe29396ddb2ac301b821ca2f313b0e3ddf128c24",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\857727c1030dcc22d1ca0f73fe29396ddb2ac301b821ca2f313b0e3ddf128c24.mp3",
+          "durationSeconds": 5.537875,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "The official release shape is clear: multimodal input, long context, tools, and controllable reasoning.",
+          "hash": "cc5fbac8483f1e1d4a03b7d552f7e6ff7ae88ae72b018137f1c112ff7f9c9040",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\cc5fbac8483f1e1d4a03b7d552f7e6ff7ae88ae72b018137f1c112ff7f9c9040.mp3",
+          "durationSeconds": 5.642375,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "mixture-of-experts",
+      "hash": "f1c5a86db729c564f23303c6fcad34888bcc09083323004f3086c9266df165f0",
+      "sourceText": "[clear] Translate the two point four trillion number. [whispering] Here is the trick: Qwen three point eight Max is a Mixture-of-Experts model. Total parameters describe the full expert pool; every token does not activate every parameter. A router selects experts per token. So the model can offer enormous capacity without behaving like a dense two point four trillion model on every step.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\f1c5a86db729c564f23303c6fcad34888bcc09083323004f3086c9266df165f0.mp3",
+      "durationSeconds": 18.468604,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[clear] Translate the two point four trillion number. [whispering] Here is the trick: Qwen three point eight Max is a Mixture-of-Experts model.",
+          "hash": "05f38198a92bc839e2864834a6a74d38f3a018d0d80c66a6f42b9d997d0cc5b5",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\05f38198a92bc839e2864834a6a74d38f3a018d0d80c66a6f42b9d997d0cc5b5.mp3",
+          "durationSeconds": 6.164813,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "Total parameters describe the full expert pool; every token does not activate every parameter. A router selects experts per token.",
+          "hash": "df7aa12155afd4ea32f56a8dc76fc2f902b7bfa671c442d62a4a166718fb41e8",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\df7aa12155afd4ea32f56a8dc76fc2f902b7bfa671c442d62a4a166718fb41e8.mp3",
+          "durationSeconds": 6.008063,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "So the model can offer enormous capacity without behaving like a dense two point four trillion model on every step.",
+          "hash": "d53fbc714d3ec50802b753cbb0a467df3505c6ec0b308cd92e81544f38e8470c",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\d53fbc714d3ec50802b753cbb0a467df3505c6ec0b308cd92e81544f38e8470c.mp3",
+          "durationSeconds": 6.295438,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "context",
+      "hash": "349acfb0680f097913d67ad6845214ba92301bce20cafa8392e0e6ce2cbcb8e2",
+      "sourceText": "[thoughtful] The one-million-token window is the other big deal. [pause] It can hold long documents, large codebases, or a serious video-analysis task. But context length is a ceiling, not perfect recall. You still need clear prompts and retrieval tests. QwenCloud's vision guide also lists up to two hours of video support for qwen3.8-max.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\349acfb0680f097913d67ad6845214ba92301bce20cafa8392e0e6ce2cbcb8e2.mp3",
+      "durationSeconds": 18.28575,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[thoughtful] The one-million-token window is the other big deal. [pause] It can hold long documents, large codebases, or a serious video-analysis task.",
+          "hash": "4af9c593befca3e665a57cf071e945e427e447c00f057972ba7aa894e93aadca",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\4af9c593befca3e665a57cf071e945e427e447c00f057972ba7aa894e93aadca.mp3",
+          "durationSeconds": 7.444813,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "But context length is a ceiling, not perfect recall. You still need clear prompts and retrieval tests.",
+          "hash": "69901c361a3262a47535ef6a3d55bc37ec77da9f34abb8956e34692d9c76d1bd",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\69901c361a3262a47535ef6a3d55bc37ec77da9f34abb8956e34692d9c76d1bd.mp3",
+          "durationSeconds": 5.825188,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "QwenCloud's vision guide also lists up to two hours of video support for qwen3.8-max.",
+          "hash": "de7276e07af910895e1c579083f450cbef1621821c44e0067e22010bc01852a9",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\de7276e07af910895e1c579083f450cbef1621821c44e0067e22010bc01852a9.mp3",
+          "durationSeconds": 5.015438,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "thinking",
+      "hash": "6c69913dc6cb7cf8a00b5ca107fefec81922a3042600556fc600abd22b8556da",
+      "sourceText": "[enthusiastic] Hybrid thinking is a control knob. QwenCloud lets you enable or disable reasoning per request. Disable it for extraction or fast drafting. Enable it for planning, code, tool orchestration, or hard math. The guide lists low, medium, and x-high reasoning effort, with x-high as the default. More thinking means more budget, not automatically more value. [laughing] Big model, same old caveat.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\6c69913dc6cb7cf8a00b5ca107fefec81922a3042600556fc600abd22b8556da.mp3",
+      "durationSeconds": 22.0735,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[enthusiastic] Hybrid thinking is a control knob. QwenCloud lets you enable or disable reasoning per request. Disable it for extraction or",
+          "hash": "31111fce807eacf09cd5b399d7a90ea0a3ec99eadabc43136645bea120974a0c",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\31111fce807eacf09cd5b399d7a90ea0a3ec99eadabc43136645bea120974a0c.mp3",
+          "durationSeconds": 6.295438,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "fast drafting. Enable it for planning, code, tool orchestration, or hard math. The guide lists low, medium, and x-high reasoning",
+          "hash": "f019a890c910a7b47bd7e46c377e2c7c183adcfa43fbdfd949e35f61535dcd46",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\f019a890c910a7b47bd7e46c377e2c7c183adcfa43fbdfd949e35f61535dcd46.mp3",
+          "durationSeconds": 7.993375,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "effort, with x-high as the default. More thinking means more budget, not automatically more value. [laughing] Big model, same old caveat.",
+          "hash": "a6423eda1d67f183aa77697b8ba01a626e0041e342e60742d903aecaa862d82d",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\a6423eda1d67f183aa77697b8ba01a626e0041e342e60742d903aecaa862d82d.mp3",
+          "durationSeconds": 7.784375,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "api",
+      "hash": "fd3e003b887f8b54637658e1a704f80a7e1e2777db74279efafd429a293cc87e",
+      "sourceText": "[instructional] The immediate way to try it is through the QwenCloud API. [pause] The model ID is qwen3.8-max. Important caveat: today's changelog establishes an API model and documented capabilities. It does not, by itself, establish a downloadable open-weight checkpoint. Do not mistake a hosted model name for a local model file.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\fd3e003b887f8b54637658e1a704f80a7e1e2777db74279efafd429a293cc87e.mp3",
+      "durationSeconds": 17.345333,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[instructional] The immediate way to try it is through the QwenCloud API. [pause] The model ID is qwen3.8-max.",
+          "hash": "38e82882ff7984f07fe718b932763c980e661fbd3b7b7c6a2c900cb4f8ebc571",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\38e82882ff7984f07fe718b932763c980e661fbd3b7b7c6a2c900cb4f8ebc571.mp3",
+          "durationSeconds": 6.034188,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "Important caveat: today's changelog establishes an API model and documented capabilities. It does not, by itself, establish a downloadable open-weight",
+          "hash": "c45db9ad43bb071cf3d61b9fbf132ab577b782d03a280f3c8060871ad6d93e7f",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\c45db9ad43bb071cf3d61b9fbf132ab577b782d03a280f3c8060871ad6d93e7f.mp3",
+          "durationSeconds": 7.888875,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "checkpoint. Do not mistake a hosted model name for a local model file.",
+          "hash": "4a30da0a62b09e276f7d547851aeb99e0b64bb978df72ddb028d639367016116",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\4a30da0a62b09e276f7d547851aeb99e0b64bb978df72ddb028d639367016116.mp3",
+          "durationSeconds": 3.421938,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "test",
+      "hash": "ae42927bb9ba57b789d6e737e3b6bd86319b002755e761e6d0880eacdc64b415",
+      "sourceText": "[clear] Before switching production traffic, run one real text task and one image or video task. Test both thinking states. Record quality, latency, token use, tool calls, and failures. Repeat the same prompts on your current model. [thoughtful] That creates a decision artifact, not a screenshot of a leaderboard.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\ae42927bb9ba57b789d6e737e3b6bd86319b002755e761e6d0880eacdc64b415.mp3",
+      "durationSeconds": 16.431063,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[clear] Before switching production traffic, run one real text task and one image or video task. Test both thinking states.",
+          "hash": "cb5938cfa97c433529ddc9c49ab743c1bfceb8534fe5b27ff3db546c961ef633",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\cb5938cfa97c433529ddc9c49ab743c1bfceb8534fe5b27ff3db546c961ef633.mp3",
+          "durationSeconds": 6.922375,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "Record quality, latency, token use, tool calls, and failures. Repeat the same prompts on your current model.",
+          "hash": "7e16d225c77b69094cd7662c698e15ee660e846fcffd691082774ae833bfe0ec",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\7e16d225c77b69094cd7662c698e15ee660e846fcffd691082774ae833bfe0ec.mp3",
+          "durationSeconds": 5.72075,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "[thoughtful] That creates a decision artifact, not a screenshot of a leaderboard.",
+          "hash": "761a7b8dbf518c25dcd5ec63185337e703be8649048574102926f4f07d0ffc80",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\761a7b8dbf518c25dcd5ec63185337e703be8649048574102926f4f07d0ffc80.mp3",
+          "durationSeconds": 3.787688,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "limits",
+      "hash": "f0505d70fe3ced07d629bde180cba7b8c394bb05798fa2efb796a5fee60cac96",
+      "sourceText": "[serious] The limits matter. A million-token window can raise cost and latency. Multimodal inputs add new failure points, where the image or video pipeline can fail before language quality does. And significant improvement still needs independent tests on your workload. The honest status today is promising release, incomplete public evidence.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\f0505d70fe3ced07d629bde180cba7b8c394bb05798fa2efb796a5fee60cac96.mp3",
+      "durationSeconds": 17.449854,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[serious] The limits matter. A million-token window can raise cost and latency. Multimodal inputs add new failure points, where the image",
+          "hash": "d5d246aede0e6a25c21827fb3f8e77aaac2b366343c76f357429fbbc848b33db",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\d5d246aede0e6a25c21827fb3f8e77aaac2b366343c76f357429fbbc848b33db.mp3",
+          "durationSeconds": 6.817875,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "or video pipeline can fail before language quality does. And significant improvement still needs independent tests on your workload.",
+          "hash": "a244f96a86060222402e10839c5d32e2ebf15638fdd38fdaabba9ade86675acb",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\a244f96a86060222402e10839c5d32e2ebf15638fdd38fdaabba9ade86675acb.mp3",
+          "durationSeconds": 5.955813,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "The honest status today is promising release, incomplete public evidence.",
+          "hash": "84202e6dc699c1686b6e7e6b5ee87b16f204a714a2d1bf6a81ee0690b4477aee",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\84202e6dc699c1686b6e7e6b5ee87b16f204a714a2d1bf6a81ee0690b4477aee.mp3",
+          "durationSeconds": 4.675813,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "verdict",
+      "hash": "f7943151cb7bc7ad24343cca744a04f45e4c0f04b9b0f1e6e1f9351f8ab38237",
+      "sourceText": "[yells] [pause] My early verdict: qwen3.8-max is worth testing if you need long context, images, video, tools, and difficult reasoning behind one API. It is not an automatic replacement for cheaper models. Start with the task that costs you the most time, measure it twice, and decide from the evidence.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\f7943151cb7bc7ad24343cca744a04f45e4c0f04b9b0f1e6e1f9351f8ab38237.mp3",
+      "durationSeconds": 15.830229,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[yells] [pause] My early verdict: qwen3.8-max is worth testing if you need long context, images, video, tools, and difficult reasoning behind one",
+          "hash": "0afe45edcbd2476cbfc957842b58a91b376b7371d06f0d0521c1011659c581ec",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\0afe45edcbd2476cbfc957842b58a91b376b7371d06f0d0521c1011659c581ec.mp3",
+          "durationSeconds": 7.706063,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "API. It is not an automatic replacement for cheaper models. Start with the task that costs you the most time,",
+          "hash": "b0b0e0e5f5d9d5ca83ca95e8f40bffcd5a485bc46fe969615d9bf81e1ae47919",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\b0b0e0e5f5d9d5ca83ca95e8f40bffcd5a485bc46fe969615d9bf81e1ae47919.mp3",
+          "durationSeconds": 5.6685,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "measure it twice, and decide from the evidence.",
+          "hash": "4ece84620270627e5ad7f4ba5cabf14d40677fc363f0c41137f714990440f1fd",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\4ece84620270627e5ad7f4ba5cabf14d40677fc363f0c41137f714990440f1fd.mp3",
+          "durationSeconds": 2.455438,
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "sceneId": "close",
+      "hash": "e270b64431c164ca7b97af7e9bb215478bb53a0d9371f80297219052e7990c38",
+      "sourceText": "[warm] That is the Qwen three point eight story. [pause] Multimodality, a million-token context, and controllable reasoning, delivered as a new QwenCloud top tier. Try the exact model ID, log the tradeoffs, and keep the evidence. Subscribe for the deeper test as public results arrive.",
+      "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\e270b64431c164ca7b97af7e9bb215478bb53a0d9371f80297219052e7990c38.mp3",
+      "durationSeconds": 14.942063,
+      "settings": {
+        "provider": "fish-audio",
+        "model": "s2.1-pro-free",
+        "format": "mp3",
+        "prosody": {
+          "speed": 1.55,
+          "volume": 0,
+          "normalize_loudness": true
+        },
+        "temperature": 0.7,
+        "topP": 0.7,
+        "pauseMs": 280,
+        "chunkSeconds": 10,
+        "useTimestamps": false
+      },
+      "retryCount": 0,
+      "chunks": [
+        {
+          "index": 0,
+          "text": "[warm] That is the Qwen three point eight story. [pause] Multimodality, a million-token context, and controllable reasoning, delivered as a new QwenCloud",
+          "hash": "92072ba2bf200bac7fe2c60386289e54c68b83b81f20b09b1e470ff22df3e638",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\92072ba2bf200bac7fe2c60386289e54c68b83b81f20b09b1e470ff22df3e638.mp3",
+          "durationSeconds": 7.470938,
+          "retryCount": 0
+        },
+        {
+          "index": 1,
+          "text": "top tier. Try the exact model ID, log the tradeoffs, and keep the evidence. Subscribe for the deeper test as",
+          "hash": "58ec7ac220a1c04fc06dcd537abecd0d02368f908b9bdab21629bb9225605aa0",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\58ec7ac220a1c04fc06dcd537abecd0d02368f908b9bdab21629bb9225605aa0.mp3",
+          "durationSeconds": 6.086438,
+          "retryCount": 0
+        },
+        {
+          "index": 2,
+          "text": "public results arrive.",
+          "hash": "dc1e72ed24e8b2a8f758ebf4ea6e78da88a1202af71017943a53c8e46181dbba",
+          "audioPath": "E:\\MData\\Marketing\\youtube\\.cache\\voice\\dc1e72ed24e8b2a8f758ebf4ea6e78da88a1202af71017943a53c8e46181dbba.mp3",
+          "durationSeconds": 1.384375,
+          "retryCount": 0
+        }
+      ]
+    }
+  ]
+}

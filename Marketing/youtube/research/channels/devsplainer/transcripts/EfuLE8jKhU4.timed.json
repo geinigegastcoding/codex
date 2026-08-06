@@ -1,0 +1,1031 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.63,
+      "text": "Bonsai 27B needs 54 GB of memory to run"
+    },
+    {
+      "start": 4.64,
+      "end": 6.99,
+      "text": "at full precision. [music] This week,"
+    },
+    {
+      "start": 7,
+      "end": 9.91,
+      "text": "the absolute mad lads made it run on an"
+    },
+    {
+      "start": 9.92,
+      "end": 12.95,
+      "text": "iPhone. 27 billion parameters [music] in"
+    },
+    {
+      "start": 12.96,
+      "end": 16.63,
+      "text": "under 4 GB at 11 tokens a second, all"
+    },
+    {
+      "start": 16.64,
+      "end": 18.31,
+      "text": "without touching the internet. [music]"
+    },
+    {
+      "start": 18.32,
+      "end": 21.59,
+      "text": "It fits because Prism ML threw away 15"
+    },
+    {
+      "start": 21.6,
+      "end": 24.63,
+      "text": "of the 16 bits in every single weight."
+    },
+    {
+      "start": 24.64,
+      "end": 26.95,
+      "text": "What's left of each number is a plus or"
+    },
+    {
+      "start": 26.96,
+      "end": 28.155,
+      "text": "a minus sign,"
+    },
+    {
+      "start": 28.165,
+      "end": 28.27,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 28.28,
+      "end": 31.31,
+      "text": "&gt;&gt; and they claim it still keeps 90% of its"
+    },
+    {
+      "start": 31.32,
+      "end": 33.75,
+      "text": "benchmark scores. Is that a legit"
+    },
+    {
+      "start": 33.76,
+      "end": 36.95,
+      "text": "breakthrough or a flat-out lie? First,"
+    },
+    {
+      "start": 36.96,
+      "end": 37.87,
+      "text": "why 54 [music]"
+    },
+    {
+      "start": 37.88,
+      "end": 40.75,
+      "text": "GB? A model's knowledge lives in its"
+    },
+    {
+      "start": 40.76,
+      "end": 43.91,
+      "text": "weights, 27 billion numbers, and by"
+    },
+    {
+      "start": 43.92,
+      "end": 46.71,
+      "text": "default, each one is stored as a 16-bit"
+    },
+    {
+      "start": 46.72,
+      "end": 47.83,
+      "text": "float."
+    },
+    {
+      "start": 47.84,
+      "end": 51.63,
+      "text": "2 bytes, 27 billion times over. Got it?"
+    },
+    {
+      "start": 51.64,
+      "end": 54.23,
+      "text": "Bonsai's base model is dense, meaning"
+    },
+    {
+      "start": 54.24,
+      "end": 56.47,
+      "text": "every single one of those weights works"
+    },
+    {
+      "start": 56.48,
+      "end": 58.71,
+      "text": "on every token it generates without"
+    },
+    {
+      "start": 58.72,
+      "end": 60.11,
+      "text": "shortcuts. [music]"
+    },
+    {
+      "start": 60.12,
+      "end": 62.63,
+      "text": "Phone is a harsher target than the spec"
+    },
+    {
+      "start": 62.64,
+      "end": 65.509,
+      "text": "sheet suggests. The iPhone it ran on has"
+    },
+    {
+      "start": 65.519,
+      "end": 69.23,
+      "text": "12 GB of RAM, but iOS lets a single app"
+    },
+    {
+      "start": 69.24,
+      "end": 71.83,
+      "text": "claim only about six before the system"
+    },
+    {
+      "start": 71.84,
+      "end": 74.67,
+      "text": "kills it. 6 GB for everything, the"
+    },
+    {
+      "start": 74.68,
+      "end": 76.95,
+      "text": "weights, the conversation history, and"
+    },
+    {
+      "start": 76.96000000000001,
+      "end": 80.67,
+      "text": "the runtime. Usual fix is quantization,"
+    },
+    {
+      "start": 80.68,
+      "end": 83.63,
+      "text": "storing each weight with fewer bits. A"
+    },
+    {
+      "start": 83.64,
+      "end": 86.15,
+      "text": "standard 4-bit build of this exact model"
+    },
+    {
+      "start": 86.16,
+      "end": 90.59,
+      "text": "still weighs 17.6 GB, closer, but still"
+    },
+    {
+      "start": 90.6,
+      "end": 93.15,
+      "text": "three times over the ceiling. Getting a"
+    },
+    {
+      "start": 93.16,
+      "end": 95.99000000000001,
+      "text": "dense model this size through a 6 GB"
+    },
+    {
+      "start": 96,
+      "end": 98.63,
+      "text": "gate needed something far past the usual"
+    },
+    {
+      "start": 98.64,
+      "end": 99.67,
+      "text": "trim."
+    },
+    {
+      "start": 99.68,
+      "end": 102.11,
+      "text": "What does one bit per weight even mean?"
+    },
+    {
+      "start": 102.12,
+      "end": 104.03,
+      "text": "The most upvoted confusion when this"
+    },
+    {
+      "start": 104.03999999999999,
+      "end": 106.03,
+      "text": "launched [music] was some version of a"
+    },
+    {
+      "start": 106.03999999999999,
+      "end": 108.91,
+      "text": "bit is a zero or a one. So, how is it"
+    },
+    {
+      "start": 108.92,
+      "end": 110.686,
+      "text": "holding a minus one?"
+    },
+    {
+      "start": 110.696,
+      "end": 111.03,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 111.03999999999999,
+      "end": 113.19,
+      "text": "&gt;&gt; Every weight in the original model is a"
+    },
+    {
+      "start": 113.2,
+      "end": 115.35,
+      "text": "precise number, something like [music]"
+    },
+    {
+      "start": 115.36,
+      "end": 118.15,
+      "text": "0.0173."
+    },
+    {
+      "start": 118.16,
+      "end": 121.31,
+      "text": "Bonsai one thing about it, the sign."
+    },
+    {
+      "start": 121.32,
+      "end": 124.59,
+      "text": "Positive becomes +1, negative becomes"
+    },
+    {
+      "start": 124.6,
+      "end": 127.43,
+      "text": "-1, and the magnitude is gone. [music]"
+    },
+    {
+      "start": 127.44,
+      "end": 129.91,
+      "text": "To stop the math from turning to mush,"
+    },
+    {
+      "start": 129.92,
+      "end": 131.99,
+      "text": "the model stores one full precision"
+    },
+    {
+      "start": 132,
+      "end": 136.07,
+      "text": "scale for every group of 128 weights, a"
+    },
+    {
+      "start": 136.07999999999998,
+      "end": 138.51,
+      "text": "shared volume knob that says how loud"
+    },
+    {
+      "start": 138.52,
+      "end": 140.79,
+      "text": "this whole block of signs plays. [music]"
+    },
+    {
+      "start": 140.8,
+      "end": 142.47,
+      "text": "128"
+    },
+    {
+      "start": 142.48,
+      "end": 145.79,
+      "text": "1-bit signs plus 16-bit knob [music]"
+    },
+    {
+      "start": 145.8,
+      "end": 147.99,
+      "text": "works out to 1.125"
+    },
+    {
+      "start": 148,
+      "end": 150.51,
+      "text": "bits per weight. That's the true number,"
+    },
+    {
+      "start": 150.52,
+      "end": 153.23,
+      "text": "and it matches the label, which is rarer"
+    },
+    {
+      "start": 153.24,
+      "end": 154.949,
+      "text": "than you'd think, [music] because quant"
+    },
+    {
+      "start": 154.959,
+      "end": 157.11,
+      "text": "labels lie. The community's favorite"
+    },
+    {
+      "start": 157.12,
+      "end": 160.19,
+      "text": "4-bit build of this model is really 5.2"
+    },
+    {
+      "start": 160.2,
+      "end": 161.91,
+      "text": "bits [music] per weight once you count"
+    },
+    {
+      "start": 161.92000000000002,
+      "end": 164.11,
+      "text": "the scales and the escape hatches. The"
+    },
+    {
+      "start": 164.12,
+      "end": 167.949,
+      "text": "popular 2-bit one is 2.8. Bonsai also"
+    },
+    {
+      "start": 167.959,
+      "end": 170.949,
+      "text": "ships a turnery sibling, -1, [music]"
+    },
+    {
+      "start": 170.959,
+      "end": 175.55,
+      "text": "0, +1, at 1.71 bits. But the binary"
+    },
+    {
+      "start": 175.56,
+      "end": 177.47,
+      "text": "build is the headline act and the one"
+    },
+    {
+      "start": 177.48,
+      "end": 179.99,
+      "text": "that fits the phone. Round a finished"
+    },
+    {
+      "start": 180,
+      "end": 182.31,
+      "text": "model's weight down to bare signs, and"
+    },
+    {
+      "start": 182.32,
+      "end": 185.19,
+      "text": "it dies on the spot. Below three bits,"
+    },
+    {
+      "start": 185.2,
+      "end": 187.35,
+      "text": "conventional quantization stops"
+    },
+    {
+      "start": 187.36,
+      "end": 190.15,
+      "text": "degrading gracefully and collapses. Half"
+    },
+    {
+      "start": 190.16,
+      "end": 192.59,
+      "text": "the Hacker News thread assumed Prism ML"
+    },
+    {
+      "start": 192.6,
+      "end": 194.99,
+      "text": "dodged this by training a 1-bit model"
+    },
+    {
+      "start": 195,
+      "end": 197.59,
+      "text": "from scratch, the way Microsoft's BitNet"
+    },
+    {
+      "start": 197.6,
+      "end": 199.87,
+      "text": "does. They didn't. They took [music]"
+    },
+    {
+      "start": 199.88,
+      "end": 204.07,
+      "text": "Qwen 3.6 27B, an existing dense model"
+    },
+    {
+      "start": 204.07999999999998,
+      "end": 206.19,
+      "text": "from Alibaba, and retrained [music]"
+    },
+    {
+      "start": 206.2,
+      "end": 208.39,
+      "text": "it with the 1-bit constraint switched on"
+    },
+    {
+      "start": 208.4,
+      "end": 210.31,
+      "text": "inside the training loop, so the"
+    },
+    {
+      "start": 210.32,
+      "end": 212.50900000000001,
+      "text": "optimizer learns to route around the"
+    },
+    {
+      "start": 212.519,
+      "end": 214.59,
+      "text": "missing precision while it can still"
+    },
+    {
+      "start": 214.6,
+      "end": 216.31,
+      "text": "adjust everything else."
+    },
+    {
+      "start": 216.32,
+      "end": 219.07,
+      "text": "Quantization-aware training, the model"
+    },
+    {
+      "start": 219.07999999999998,
+      "end": 222.07,
+      "text": "heals around its own wounds. Two more"
+    },
+    {
+      "start": 222.07999999999998,
+      "end": 223.949,
+      "text": "tricks on top of that. Long"
+    },
+    {
+      "start": 223.959,
+      "end": 225.87,
+      "text": "conversations normally [music] blow the"
+    },
+    {
+      "start": 225.88,
+      "end": 228.11,
+      "text": "memory budget a second time through the"
+    },
+    {
+      "start": 228.12,
+      "end": 230.87,
+      "text": "KV cache, the model's running memory of"
+    },
+    {
+      "start": 230.88,
+      "end": 231.949,
+      "text": "the context. [music]"
+    },
+    {
+      "start": 231.959,
+      "end": 234.31,
+      "text": "So, Bonsai compresses that to four bits"
+    },
+    {
+      "start": 234.32,
+      "end": 237.67000000000002,
+      "text": "as well. The full 262,000"
+    },
+    {
+      "start": 237.68,
+      "end": 241.35,
+      "text": "token window fits in about 9 and 1/2 GB,"
+    },
+    {
+      "start": 241.36,
+      "end": 243.15,
+      "text": "and the runtime never unpacks the"
+    },
+    {
+      "start": 243.16,
+      "end": 245.83,
+      "text": "weights back to full precision. Custom"
+    },
+    {
+      "start": 245.84,
+      "end": 248.51,
+      "text": "kernels run the matrix math directly on"
+    },
+    {
+      "start": 248.52,
+      "end": 249.547,
+      "text": "the packed bits,"
+    },
+    {
+      "start": 249.557,
+      "end": 249.79,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 249.8,
+      "end": 252.47,
+      "text": "&gt;&gt; signs, volume knobs, and all. This last"
+    },
+    {
+      "start": 252.48,
+      "end": 254.55,
+      "text": "bit is important to understand for the"
+    },
+    {
+      "start": 254.56,
+      "end": 257.27,
+      "text": "love and hate of this model. Because the"
+    },
+    {
+      "start": 257.28,
+      "end": 259.75,
+      "text": "reviews are unhinged. One developer on"
+    },
+    {
+      "start": 259.76,
+      "end": 261.59,
+      "text": "Reddit said the one-bit [music] build"
+    },
+    {
+      "start": 261.6,
+      "end": 263.99,
+      "text": "passed his personal edge case tests and"
+    },
+    {
+      "start": 264,
+      "end": 266.75,
+      "text": "felt as good as the full model. Another"
+    },
+    {
+      "start": 266.76,
+      "end": 269.35,
+      "text": "said it couldn't write CSS without"
+    },
+    {
+      "start": 269.36,
+      "end": 272.19,
+      "text": "looping. A third asked it what Signals"
+    },
+    {
+      "start": 272.2,
+      "end": 274.438,
+      "text": "is and got a confident wrong answer."
+    },
+    {
+      "start": 274.448,
+      "end": 276.75,
+      "text": "[music] And someone on Android received"
+    },
+    {
+      "start": 276.76,
+      "end": 279.55,
+      "text": "50 exclamation marks and nothing else."
+    },
+    {
+      "start": 279.56,
+      "end": 281.23,
+      "text": "All of them were describing the real"
+    },
+    {
+      "start": 281.24,
+      "end": 283.87,
+      "text": "model. Three things decide which one you"
+    },
+    {
+      "start": 283.88,
+      "end": 286.51,
+      "text": "get. First, [music] the task. The damage"
+    },
+    {
+      "start": 286.52,
+      "end": 289.43,
+      "text": "from the missing bits is targeted. Math"
+    },
+    {
+      "start": 289.44,
+      "end": 292.909,
+      "text": "barely notices. 92 versus 95 for the"
+    },
+    {
+      "start": 292.919,
+      "end": 296.053,
+      "text": "original. Coding gives up seven points,"
+    },
+    {
+      "start": 296.063,
+      "end": 296.19,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 296.2,
+      "end": 299.31,
+      "text": "&gt;&gt; but agentic tool calling craters from 80"
+    },
+    {
+      "start": 299.32,
+      "end": 302.75,
+      "text": "to 66, and instruction following falls"
+    },
+    {
+      "start": 302.76,
+      "end": 303.913,
+      "text": "13 points."
+    },
+    {
+      "start": 303.923,
+      "end": 304.19,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 304.2,
+      "end": 307.03,
+      "text": "&gt;&gt; Ask it to reason and it holds. Ask it to"
+    },
+    {
+      "start": 307.04,
+      "end": 309.35,
+      "text": "run a multi-step workflow and it walks"
+    },
+    {
+      "start": 309.36,
+      "end": 312.11,
+      "text": "into a doom loop, failing the same step"
+    },
+    {
+      "start": 312.12,
+      "end": 313.738,
+      "text": "the same way forever."
+    },
+    {
+      "start": 313.748,
+      "end": 314.15,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 314.16,
+      "end": 316.75,
+      "text": "&gt;&gt; Second, language. English survives the"
+    },
+    {
+      "start": 316.76,
+      "end": 319.27,
+      "text": "compression best. Push it in German or"
+    },
+    {
+      "start": 319.28,
+      "end": 321.07,
+      "text": "Italian and the grammar starts"
+    },
+    {
+      "start": 321.08,
+      "end": 323.63,
+      "text": "crumbling, sometimes [music] mid-word."
+    },
+    {
+      "start": 323.64,
+      "end": 326.07,
+      "text": "Third, the kernel trap. If your runtime"
+    },
+    {
+      "start": 326.08,
+      "end": 328.07,
+      "text": "lacks the packed [music] one-bit math"
+    },
+    {
+      "start": 328.08,
+      "end": 331.15,
+      "text": "path for your hardware, it unpacks every"
+    },
+    {
+      "start": 331.16,
+      "end": 333.03,
+      "text": "weight back to eight [music] bits before"
+    },
+    {
+      "start": 333.04,
+      "end": 335.87,
+      "text": "multiplying. You pay the full unpack"
+    },
+    {
+      "start": 335.88,
+      "end": 338.27,
+      "text": "cost and receive none of the speed."
+    },
+    {
+      "start": 338.28,
+      "end": 340.47,
+      "text": "That's how people measured a one-bit"
+    },
+    {
+      "start": 340.48,
+      "end": 342.71,
+      "text": "model running slower than a four-bit"
+    },
+    {
+      "start": 342.72,
+      "end": 345.71,
+      "text": "one, and it's why a chunk of the day one"
+    },
+    {
+      "start": 345.72,
+      "end": 348.43,
+      "text": "its broken posts were really, my back"
+    },
+    {
+      "start": 348.44,
+      "end": 350.90999999999997,
+      "text": "end isn't supported [music] yet posts."
+    },
+    {
+      "start": 350.92,
+      "end": 353.95,
+      "text": "About that 11 tokens a second, it's real"
+    },
+    {
+      "start": 353.96,
+      "end": 356.39,
+      "text": "and it's below the 15 to 20 that feels"
+    },
+    {
+      "start": 356.4,
+      "end": 358.99,
+      "text": "conversational. You sent this model off"
+    },
+    {
+      "start": 359,
+      "end": 361.99,
+      "text": "with a job and check back the way you'd"
+    },
+    {
+      "start": 362,
+      "end": 364.79,
+      "text": "treat a slow but capable intern. The"
+    },
+    {
+      "start": 364.8,
+      "end": 366.55,
+      "text": "battery number impressed me more than"
+    },
+    {
+      "start": 366.56,
+      "end": 367.449,
+      "text": "the speed."
+    },
+    {
+      "start": 367.459,
+      "end": 367.47,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 367.48,
+      "end": 369.19,
+      "text": "&gt;&gt; 672"
+    },
+    {
+      "start": 369.2,
+      "end": 373.95,
+      "text": "tokens per 1% of battery. Roughly 67,000"
+    },
+    {
+      "start": 373.96,
+      "end": 376.75,
+      "text": "tokens on a full charge. If you manage"
+    },
+    {
+      "start": 376.76,
+      "end": 379.31,
+      "text": "your expectations, the use cases are"
+    },
+    {
+      "start": 379.32,
+      "end": 382.15,
+      "text": "clear. One commenter stood in a grocery"
+    },
+    {
+      "start": 382.16,
+      "end": 384.909,
+      "text": "store in the Alps, no signal, and had"
+    },
+    {
+      "start": 384.919,
+      "end": 387.15,
+      "text": "the model on his phone plan dinner and"
+    },
+    {
+      "start": 387.16,
+      "end": 389.719,
+      "text": "the shopping list. Offline, private,"
+    },
+    {
+      "start": 389.729,
+      "end": 392.07,
+      "text": "[music] running on hardware you already"
+    },
+    {
+      "start": 392.08,
+      "end": 394.75,
+      "text": "own. Add document analysis or"
+    },
+    {
+      "start": 394.76,
+      "end": 397.19,
+      "text": "translation on a plane and you have the"
+    },
+    {
+      "start": 397.2,
+      "end": 398.234,
+      "text": "honest pitch."
+    },
+    {
+      "start": 398.244,
+      "end": 398.35,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 398.36,
+      "end": 400.27,
+      "text": "&gt;&gt; If you want this to be your next live"
+    },
+    {
+      "start": 400.28,
+      "end": 403.35,
+      "text": "coding assistant, be prepared to cry."
+    },
+    {
+      "start": 403.36,
+      "end": 405.31,
+      "text": "The whole field slid down the precision"
+    },
+    {
+      "start": 405.32,
+      "end": 408.03,
+      "text": "axis [music] in the same week. On Sloth"
+    },
+    {
+      "start": 408.04,
+      "end": 410.99,
+      "text": "shipped NVFP4 quants of the very same"
+    },
+    {
+      "start": 411,
+      "end": 413.07,
+      "text": "quant model. Four bits, [music] two and"
+    },
+    {
+      "start": 413.08,
+      "end": 415.51,
+      "text": "a half times faster, aimed at big"
+    },
+    {
+      "start": 415.52,
+      "end": 418.67,
+      "text": "Blackwell GPUs with memory to spare. On"
+    },
+    {
+      "start": 418.68,
+      "end": 421.27,
+      "text": "a data center GPU, quantization buys you"
+    },
+    {
+      "start": 421.28,
+      "end": 424.67,
+      "text": "speed. On a phone, it buys you control."
+    },
+    {
+      "start": 424.68,
+      "end": 426.51,
+      "text": "It's also a different escape hatch from"
+    },
+    {
+      "start": 426.52,
+      "end": 428.39,
+      "text": "the one we covered at the start of this"
+    },
+    {
+      "start": 428.4,
+      "end": 431.15,
+      "text": "week, where a giant mixture of experts"
+    },
+    {
+      "start": 431.16,
+      "end": 434.55,
+      "text": "model streams its experts off an SSD."
+    },
+    {
+      "start": 434.56,
+      "end": 436.27,
+      "text": "Streaming changes where the weights"
+    },
+    {
+      "start": 436.28,
+      "end": 438.79,
+      "text": "live. Quantization changes what the"
+    },
+    {
+      "start": 438.8,
+      "end": 440.71,
+      "text": "weights are. Streaming [music]"
+    },
+    {
+      "start": 440.72,
+      "end": 442.63,
+      "text": "wins when the model is sparse and the"
+    },
+    {
+      "start": 442.64,
+      "end": 445.79,
+      "text": "disk is fast. Extreme quantization wins"
+    },
+    {
+      "start": 445.8,
+      "end": 447.95,
+      "text": "when the model is dense and the memory"
+    },
+    {
+      "start": 447.96,
+      "end": 450.87,
+      "text": "ceiling is a hard wall. A phone is the"
+    },
+    {
+      "start": 450.88,
+      "end": 452.909,
+      "text": "hardest wall there is."
+    },
+    {
+      "start": 452.919,
+      "end": 455.75,
+      "text": "So, breakthrough or flat-out lie? The"
+    },
+    {
+      "start": 455.76,
+      "end": 457.83,
+      "text": "compression is real and the phone demo"
+    },
+    {
+      "start": 457.84000000000003,
+      "end": 460.03,
+      "text": "is measured on named hardware with"
+    },
+    {
+      "start": 460.04,
+      "end": 463.43,
+      "text": "battery numbers attached. The 90% claim"
+    },
+    {
+      "start": 463.44,
+      "end": 466.19,
+      "text": "is true as an average, and the average"
+    },
+    {
+      "start": 466.2,
+      "end": 468.32,
+      "text": "height is exactly where the missing 10%"
+    },
+    {
+      "start": 468.33,
+      "end": 471.03,
+      "text": "[music] lives in the gigantic workflows"
+    },
+    {
+      "start": 471.04,
+      "end": 474.07,
+      "text": "developers care about most. A year ago,"
+    },
+    {
+      "start": 474.08,
+      "end": 476.63,
+      "text": "one bit quants were a meme on these same"
+    },
+    {
+      "start": 476.64,
+      "end": 479.43,
+      "text": "forums. Today, they run 27 billion"
+    },
+    {
+      "start": 479.44,
+      "end": 481.39,
+      "text": "parameters [music] on a phone, and the"
+    },
+    {
+      "start": 481.4,
+      "end": 483.91,
+      "text": "argument has moved to a harder question."
+    },
+    {
+      "start": 483.92,
+      "end": 486.27,
+      "text": "Once it fits, is it the best model you"
+    },
+    {
+      "start": 486.28,
+      "end": 489.31,
+      "text": "could run in those 4 GB? Smaller model"
+    },
+    {
+      "start": 489.32,
+      "end": 491.245,
+      "text": "at 4-bit sometimes wins that fight,"
+    },
+    {
+      "start": 491.255,
+      "end": 493.59,
+      "text": "[music] and nobody has settled it yet."
+    },
+    {
+      "start": 493.6,
+      "end": 495.71,
+      "text": "It's clear that one bit first started as"
+    },
+    {
+      "start": 495.72,
+      "end": 497.87,
+      "text": "a punchline. [music] After this week,"
+    },
+    {
+      "start": 497.88,
+      "end": 501,
+      "text": "it's a roadmap."
+    }
+  ]
+}

@@ -1,0 +1,1496 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0.32,
+      "end": 2.71,
+      "text": "Five open source repositories, over"
+    },
+    {
+      "start": 2.72,
+      "end": 5.43,
+      "text": "500,000 GitHub stars between them. Put"
+    },
+    {
+      "start": 5.44,
+      "end": 7.43,
+      "text": "together, they are the essential toolkit"
+    },
+    {
+      "start": 7.44,
+      "end": 10.31,
+      "text": "for building an AI agent in 2026. Not"
+    },
+    {
+      "start": 10.32,
+      "end": 13.83,
+      "text": "10, not 20, five. The five doing the"
+    },
+    {
+      "start": 13.84,
+      "end": 15.829,
+      "text": "actual work. Because an agent needs"
+    },
+    {
+      "start": 15.839,
+      "end": 18.23,
+      "text": "exactly four things. A way to read the"
+    },
+    {
+      "start": 18.24,
+      "end": 21.269,
+      "text": "web, a way to act on it, a memory, and a"
+    },
+    {
+      "start": 21.279,
+      "end": 23.67,
+      "text": "brain to plan. These five fill every one"
+    },
+    {
+      "start": 23.68,
+      "end": 26.07,
+      "text": "of those slots, and one of them does two"
+    },
+    {
+      "start": 26.08,
+      "end": 28.31,
+      "text": "jobs at once. Here is the map we are"
+    },
+    {
+      "start": 28.32,
+      "end": 30.39,
+      "text": "going to build piece by piece. First"
+    },
+    {
+      "start": 30.4,
+      "end": 32.63,
+      "text": "surprise, the most starred repo on this"
+    },
+    {
+      "start": 32.64,
+      "end": 34.63,
+      "text": "list is not an agent framework at all."
+    },
+    {
+      "start": 34.64,
+      "end": 37.11,
+      "text": "It is a web scraper. And number four is"
+    },
+    {
+      "start": 37.12,
+      "end": 39.11,
+      "text": "the open- source answer to a coding tool"
+    },
+    {
+      "start": 39.12,
+      "end": 41.75,
+      "text": "that costs $500 a month and went viral"
+    },
+    {
+      "start": 41.76,
+      "end": 43.11,
+      "text": "because a startup thought they could"
+    },
+    {
+      "start": 43.12,
+      "end": 45.35,
+      "text": "charge that forever. We count all five"
+    },
+    {
+      "start": 45.36,
+      "end": 47.35,
+      "text": "in order and every single one is free"
+    },
+    {
+      "start": 47.36,
+      "end": 49.67,
+      "text": "and open. By the end, you will know"
+    },
+    {
+      "start": 49.68,
+      "end": 51.35,
+      "text": "exactly which to reach for and which"
+    },
+    {
+      "start": 51.36,
+      "end": 54.79,
+      "text": "slot it fills. Number five, browser use."
+    },
+    {
+      "start": 54.8,
+      "end": 57.27,
+      "text": "It hands an AI agent a real web browser"
+    },
+    {
+      "start": 57.28,
+      "end": 59.99,
+      "text": "and lets it click, type, and scroll like"
+    },
+    {
+      "start": 60,
+      "end": 61.99,
+      "text": "a person. You give it a goal in plain"
+    },
+    {
+      "start": 62,
+      "end": 64.549,
+      "text": "English, book this flight, pull these"
+    },
+    {
+      "start": 64.559,
+      "end": 67.03,
+      "text": "prices, fill out this form, and it"
+    },
+    {
+      "start": 67.04,
+      "end": 69.27,
+      "text": "drives the page itself, one step at a"
+    },
+    {
+      "start": 69.28,
+      "end": 71.429,
+      "text": "time, reading whatever is on the screen."
+    },
+    {
+      "start": 71.439,
+      "end": 73.67,
+      "text": "The loop is what makes it work. It reads"
+    },
+    {
+      "start": 73.68,
+      "end": 75.83,
+      "text": "the page structure, decides the next"
+    },
+    {
+      "start": 75.84,
+      "end": 78.23,
+      "text": "action, clicks or types, then looks"
+    },
+    {
+      "start": 78.24,
+      "end": 80.31,
+      "text": "again at the new state. No brittle"
+    },
+    {
+      "start": 80.32,
+      "end": 82.789,
+      "text": "recorded script. It adapts when a site"
+    },
+    {
+      "start": 82.799,
+      "end": 84.87,
+      "text": "changes under it. That opens up the"
+    },
+    {
+      "start": 84.88,
+      "end": 87.10900000000001,
+      "text": "whole world of sites that have no API."
+    },
+    {
+      "start": 87.119,
+      "end": 89.27,
+      "text": "Filling long forms, running a checkout"
+    },
+    {
+      "start": 89.28,
+      "end": 91.27,
+      "text": "end to end, pulling a number off a"
+    },
+    {
+      "start": 91.28,
+      "end": 93.19,
+      "text": "dashboard behind a login. If a person"
+    },
+    {
+      "start": 93.2,
+      "end": 94.95,
+      "text": "can do it in a browser, this can"
+    },
+    {
+      "start": 94.96000000000001,
+      "end": 96.95,
+      "text": "automate it. And it holds up under"
+    },
+    {
+      "start": 96.96000000000001,
+      "end": 99.99000000000001,
+      "text": "testing. On Web Voyager, a benchmark of"
+    },
+    {
+      "start": 100,
+      "end": 103.59,
+      "text": "586 real tasks across live websites. The"
+    },
+    {
+      "start": 103.6,
+      "end": 105.91,
+      "text": "team reported finishing about 89% of"
+    },
+    {
+      "start": 105.92,
+      "end": 108.71000000000001,
+      "text": "them. It is model agnostic, so you plug"
+    },
+    {
+      "start": 108.72,
+      "end": 110.789,
+      "text": "in whatever brain you like, and there is"
+    },
+    {
+      "start": 110.799,
+      "end": 112.469,
+      "text": "a hosted cloud version if you would"
+    },
+    {
+      "start": 112.479,
+      "end": 114.38900000000001,
+      "text": "rather not run browsers yourself, but"
+    },
+    {
+      "start": 114.399,
+      "end": 117.27000000000001,
+      "text": "the core is MIT licensed and free. It"
+    },
+    {
+      "start": 117.28,
+      "end": 119.50999999999999,
+      "text": "came out of almost nowhere. The project"
+    },
+    {
+      "start": 119.52000000000001,
+      "end": 122.469,
+      "text": "only opened up in late 2024, and it grew"
+    },
+    {
+      "start": 122.479,
+      "end": 124.389,
+      "text": "fast enough that a startup formed around"
+    },
+    {
+      "start": 124.399,
+      "end": 126.55,
+      "text": "it, and a whole cottage industry of"
+    },
+    {
+      "start": 126.56,
+      "end": 128.869,
+      "text": "browser agents followed in its wake. One"
+    },
+    {
+      "start": 128.879,
+      "end": 131.27,
+      "text": "real limit before we move on. A browser"
+    },
+    {
+      "start": 131.28,
+      "end": 133.589,
+      "text": "agent is slower and pricier than a clean"
+    },
+    {
+      "start": 133.599,
+      "end": 136.22899999999998,
+      "text": "API call. And a strange pop-up can still"
+    },
+    {
+      "start": 136.239,
+      "end": 138.55,
+      "text": "trip it up. Reach for it when no API"
+    },
+    {
+      "start": 138.56,
+      "end": 141.43,
+      "text": "exists. Not for everything. 106,000"
+    },
+    {
+      "start": 141.44,
+      "end": 143.43,
+      "text": "stars on a repo barely a year and a half"
+    },
+    {
+      "start": 143.44,
+      "end": 145.82999999999998,
+      "text": "old. One of the fastest climbs on all of"
+    },
+    {
+      "start": 145.84,
+      "end": 148.39,
+      "text": "GitHub. That is the hands of your agent."
+    },
+    {
+      "start": 148.4,
+      "end": 151.82999999999998,
+      "text": "Slot one filled. Number four. Firecrawl."
+    },
+    {
+      "start": 151.84,
+      "end": 154.309,
+      "text": "If browser uses the hands, firecrawl is"
+    },
+    {
+      "start": 154.31900000000002,
+      "end": 156.63,
+      "text": "the eyes. It turns a messy website into"
+    },
+    {
+      "start": 156.64,
+      "end": 159.35,
+      "text": "clean structured data. Point it at any"
+    },
+    {
+      "start": 159.36,
+      "end": 161.99,
+      "text": "URL and it hands back tidy markdown or"
+    },
+    {
+      "start": 162,
+      "end": 165.43,
+      "text": "JSON. No ads, no cookie banners, no"
+    },
+    {
+      "start": 165.44,
+      "end": 167.43,
+      "text": "navigation clutter, just the content in"
+    },
+    {
+      "start": 167.44,
+      "end": 169.19,
+      "text": "the shape a language model can actually"
+    },
+    {
+      "start": 169.2,
+      "end": 172.63,
+      "text": "read. One API, four verbs, scrape a"
+    },
+    {
+      "start": 172.64,
+      "end": 175.35,
+      "text": "single page, crawl a whole site, search"
+    },
+    {
+      "start": 175.36,
+      "end": 177.67000000000002,
+      "text": "the web, and get the results as data or"
+    },
+    {
+      "start": 177.68,
+      "end": 179.75,
+      "text": "extract the exact fields you describe in"
+    },
+    {
+      "start": 179.76,
+      "end": 182.39,
+      "text": "plain English. And it renders JavaScript"
+    },
+    {
+      "start": 182.4,
+      "end": 184.869,
+      "text": "so single page apps come back whole. It"
+    },
+    {
+      "start": 184.879,
+      "end": 186.949,
+      "text": "also handles the annoying parts for you."
+    },
+    {
+      "start": 186.959,
+      "end": 189.91,
+      "text": "Rotating proxies, anti-bot walls, even"
+    },
+    {
+      "start": 189.92,
+      "end": 191.589,
+      "text": "clicking and scrolling before it grabs"
+    },
+    {
+      "start": 191.599,
+      "end": 193.91,
+      "text": "the page. You send a link, you get back"
+    },
+    {
+      "start": 193.92,
+      "end": 197.19,
+      "text": "clean text. That is the whole pitch. It"
+    },
+    {
+      "start": 197.2,
+      "end": 199.03,
+      "text": "began as a tool inside a company called"
+    },
+    {
+      "start": 199.04,
+      "end": 201.43,
+      "text": "Mendable. Got open- sourced and took off"
+    },
+    {
+      "start": 201.44,
+      "end": 203.50900000000001,
+      "text": "so hard the company reorganized around"
+    },
+    {
+      "start": 203.519,
+      "end": 206.149,
+      "text": "it. Now, the surprise I promised."
+    },
+    {
+      "start": 206.159,
+      "end": 210.07,
+      "text": "Firecrawl sits at over 155,000 stars,"
+    },
+    {
+      "start": 210.07999999999998,
+      "end": 212.71,
+      "text": "the most on this entire list. The single"
+    },
+    {
+      "start": 212.72,
+      "end": 214.869,
+      "text": "most popular repo here is not an agent"
+    },
+    {
+      "start": 214.879,
+      "end": 217.50900000000001,
+      "text": "framework. It is a web scraper. There is"
+    },
+    {
+      "start": 217.519,
+      "end": 219.43,
+      "text": "a reason for that. Almost every"
+    },
+    {
+      "start": 219.44,
+      "end": 221.27,
+      "text": "retrieval pipeline starts by getting the"
+    },
+    {
+      "start": 221.28,
+      "end": 223.82999999999998,
+      "text": "web in and firecrawl makes that first"
+    },
+    {
+      "start": 223.84,
+      "end": 226.149,
+      "text": "ugly step disappear. Feed it in as clean"
+    },
+    {
+      "start": 226.159,
+      "end": 228.149,
+      "text": "markdown and everything downstream gets"
+    },
+    {
+      "start": 228.159,
+      "end": 230.47,
+      "text": "easier. Open source with a hosted option"
+    },
+    {
+      "start": 230.48,
+      "end": 232.71,
+      "text": "on top so you can call the cloud or run"
+    },
+    {
+      "start": 232.72,
+      "end": 235.19,
+      "text": "it yourself. Slot two, reading the"
+    },
+    {
+      "start": 235.2,
+      "end": 239.03,
+      "text": "world. Done. Number three, mem zero"
+    },
+    {
+      "start": 239.04,
+      "end": 241.509,
+      "text": "memory for AI agents. Start with the"
+    },
+    {
+      "start": 241.519,
+      "end": 244.309,
+      "text": "problem it fixes. By default, an agent"
+    },
+    {
+      "start": 244.319,
+      "end": 245.91,
+      "text": "forgets everything the moment a chat"
+    },
+    {
+      "start": 245.92,
+      "end": 248.149,
+      "text": "ends. Every session starts from a blank"
+    },
+    {
+      "start": 248.159,
+      "end": 250.47,
+      "text": "slate. It cannot learn your name, your"
+    },
+    {
+      "start": 250.48,
+      "end": 252.39,
+      "text": "preferences, or what you told it five"
+    },
+    {
+      "start": 252.4,
+      "end": 254.71,
+      "text": "minutes ago. The naive fix is to paste"
+    },
+    {
+      "start": 254.72,
+      "end": 256.87,
+      "text": "the entire chat history back in every"
+    },
+    {
+      "start": 256.88,
+      "end": 258.71,
+      "text": "turn. Do that and you blow through the"
+    },
+    {
+      "start": 258.72,
+      "end": 260.469,
+      "text": "context window and the token bill within"
+    },
+    {
+      "start": 260.479,
+      "end": 263.43,
+      "text": "a day. Mem0 is the smarter middle path."
+    },
+    {
+      "start": 263.44,
+      "end": 265.59,
+      "text": "It works in two phases. It pulls the"
+    },
+    {
+      "start": 265.6,
+      "end": 267.59,
+      "text": "durable facts out of a conversation and"
+    },
+    {
+      "start": 267.6,
+      "end": 269.99,
+      "text": "stores them. Then next time it pulls"
+    },
+    {
+      "start": 270,
+      "end": 272.15,
+      "text": "back only the relevant ones, not the"
+    },
+    {
+      "start": 272.15999999999997,
+      "end": 273.83,
+      "text": "entire transcript crammed into the"
+    },
+    {
+      "start": 273.84000000000003,
+      "end": 275.83,
+      "text": "prompt. Those memories live in a vector"
+    },
+    {
+      "start": 275.84000000000003,
+      "end": 277.51,
+      "text": "store with an optional graph mode that"
+    },
+    {
+      "start": 277.52,
+      "end": 279.749,
+      "text": "tracks how facts connect to each other."
+    },
+    {
+      "start": 279.759,
+      "end": 281.749,
+      "text": "Self-host the whole thing or use their"
+    },
+    {
+      "start": 281.759,
+      "end": 284.39,
+      "text": "cloud. Either way, memory follows the"
+    },
+    {
+      "start": 284.4,
+      "end": 286.79,
+      "text": "user, not the chat window. And it is"
+    },
+    {
+      "start": 286.8,
+      "end": 289.03,
+      "text": "backed by a peer-reviewed paper, which"
+    },
+    {
+      "start": 289.04,
+      "end": 290.87,
+      "text": "is rare on this list. Against the"
+    },
+    {
+      "start": 290.88,
+      "end": 292.79,
+      "text": "model's built-in memory on a long"
+    },
+    {
+      "start": 292.8,
+      "end": 296.39,
+      "text": "conversation benchmark, MEM0 scored 26%"
+    },
+    {
+      "start": 296.4,
+      "end": 298.79,
+      "text": "more accurate, [snorts] used 90% fewer"
+    },
+    {
+      "start": 298.8,
+      "end": 302.469,
+      "text": "tokens, and cut tail latency by 91%."
+    },
+    {
+      "start": 302.479,
+      "end": 304.55,
+      "text": "90% fewer tokens is the line to"
+    },
+    {
+      "start": 304.56,
+      "end": 307.029,
+      "text": "remember. That is real money saved on"
+    },
+    {
+      "start": 307.039,
+      "end": 309.51,
+      "text": "every single call and a faster reply on"
+    },
+    {
+      "start": 309.52,
+      "end": 313.27,
+      "text": "top of it. 61,000 stars. Slot three, the"
+    },
+    {
+      "start": 313.28,
+      "end": 316.15,
+      "text": "memory is in. Number two, open hands."
+    },
+    {
+      "start": 316.16,
+      "end": 318.55,
+      "text": "This is the slot nobody expected and it"
+    },
+    {
+      "start": 318.56,
+      "end": 320.79,
+      "text": "is the fastest growing repo on this list"
+    },
+    {
+      "start": 320.8,
+      "end": 323.029,
+      "text": "right now. Openhand started as a"
+    },
+    {
+      "start": 323.039,
+      "end": 325.35,
+      "text": "community response to Devon, the AI"
+    },
+    {
+      "start": 325.36,
+      "end": 327.51,
+      "text": "software engineer from Cognition AI that"
+    },
+    {
+      "start": 327.52,
+      "end": 330.629,
+      "text": "launched in early 2024 at $500 a month"
+    },
+    {
+      "start": 330.639,
+      "end": 332.71,
+      "text": "and made everyone realized that an agent"
+    },
+    {
+      "start": 332.72,
+      "end": 334.79,
+      "text": "could finally write real code, run"
+    },
+    {
+      "start": 334.8,
+      "end": 337.67,
+      "text": "tests, fix bugs, and open pull requests"
+    },
+    {
+      "start": 337.68,
+      "end": 339.83,
+      "text": "on its own. The open source community's"
+    },
+    {
+      "start": 339.84000000000003,
+      "end": 341.909,
+      "text": "answer was immediate. We can build that"
+    },
+    {
+      "start": 341.919,
+      "end": 344.15,
+      "text": "and it should be free. What OpenHands"
+    },
+    {
+      "start": 344.15999999999997,
+      "end": 346.23,
+      "text": "does is give an AI agent a complete"
+    },
+    {
+      "start": 346.24,
+      "end": 348.79,
+      "text": "sandbox developer environment, a real"
+    },
+    {
+      "start": 348.8,
+      "end": 351.27,
+      "text": "terminal, a code editor, a browser for"
+    },
+    {
+      "start": 351.28,
+      "end": 353.749,
+      "text": "reading documentation, a file system."
+    },
+    {
+      "start": 353.759,
+      "end": 355.67,
+      "text": "You hand it a GitHub issue or a task"
+    },
+    {
+      "start": 355.68,
+      "end": 357.59000000000003,
+      "text": "description in plain English. Write a"
+    },
+    {
+      "start": 357.6,
+      "end": 359.67,
+      "text": "function that does X. Fix the failing"
+    },
+    {
+      "start": 359.68,
+      "end": 362.15,
+      "text": "test. Add this feature to the repo and"
+    },
+    {
+      "start": 362.16,
+      "end": 364.469,
+      "text": "it does what a human developer would do."
+    },
+    {
+      "start": 364.479,
+      "end": 367.029,
+      "text": "It reads the relevant files, plans an"
+    },
+    {
+      "start": 367.039,
+      "end": 369.51,
+      "text": "approach, writes the code, runs the"
+    },
+    {
+      "start": 369.52,
+      "end": 372.15,
+      "text": "tests, sees what broke, and iterates"
+    },
+    {
+      "start": 372.16,
+      "end": 374.629,
+      "text": "until the task is done. That loop is not"
+    },
+    {
+      "start": 374.639,
+      "end": 377.029,
+      "text": "a demo trick. It is benchmarked."
+    },
+    {
+      "start": 377.039,
+      "end": 379.27,
+      "text": "Openhands posts its results publicly on"
+    },
+    {
+      "start": 379.28,
+      "end": 382.15,
+      "text": "swbench, the standard test suite for AI"
+    },
+    {
+      "start": 382.16,
+      "end": 384.469,
+      "text": "coding agents. That kind of transparency"
+    },
+    {
+      "start": 384.479,
+      "end": 386.629,
+      "text": "does not exist for most dollar 500 a"
+    },
+    {
+      "start": 386.639,
+      "end": 387.754,
+      "text": "month alternatives."
+    },
+    {
+      "start": 387.764,
+      "end": 387.83,
+      "text": "&gt;&gt; [snorts]"
+    },
+    {
+      "start": 387.84,
+      "end": 390.55,
+      "text": "&gt;&gt; It supports over 100 model backends, so"
+    },
+    {
+      "start": 390.56,
+      "end": 393.35,
+      "text": "you can run it against Claude, GPT,"
+    },
+    {
+      "start": 393.36,
+      "end": 396.39,
+      "text": "Gemini, or a local model. Self-host the"
+    },
+    {
+      "start": 396.4,
+      "end": 398.30899999999997,
+      "text": "whole thing on your own server for free."
+    },
+    {
+      "start": 398.319,
+      "end": 400.79,
+      "text": "MIT license throughout the story of this"
+    },
+    {
+      "start": 400.8,
+      "end": 403.909,
+      "text": "repo in one line. A $500 closed source"
+    },
+    {
+      "start": 403.919,
+      "end": 405.67,
+      "text": "product launched. The open- source"
+    },
+    {
+      "start": 405.68,
+      "end": 407.749,
+      "text": "community said no and built a better"
+    },
+    {
+      "start": 407.759,
+      "end": 411.27,
+      "text": "one. 82,000 stars in climbing slot four,"
+    },
+    {
+      "start": 411.28,
+      "end": 412.87,
+      "text": "the coding agent that closes real"
+    },
+    {
+      "start": 412.88,
+      "end": 416.629,
+      "text": "tickets. Number one, Defy, the brain."
+    },
+    {
+      "start": 416.639,
+      "end": 418.629,
+      "text": "And on this list, it is also the"
+    },
+    {
+      "start": 418.639,
+      "end": 420.79,
+      "text": "biggest. Defy is the full production"
+    },
+    {
+      "start": 420.8,
+      "end": 423.189,
+      "text": "platform for building, deploying, and"
+    },
+    {
+      "start": 423.199,
+      "end": 425.83,
+      "text": "operating AI applications and agents all"
+    },
+    {
+      "start": 425.84,
+      "end": 428.39,
+      "text": "on a visual canvas. You drag in a model"
+    },
+    {
+      "start": 428.4,
+      "end": 430.71,
+      "text": "node here, a retriever there, a tool"
+    },
+    {
+      "start": 430.72,
+      "end": 432.629,
+      "text": "call over there. Connect them with lines"
+    },
+    {
+      "start": 432.639,
+      "end": 434.15,
+      "text": "and the data flows through while you"
+    },
+    {
+      "start": 434.16,
+      "end": 436.55,
+      "text": "watch. It started where Langlow did as a"
+    },
+    {
+      "start": 436.56,
+      "end": 438.629,
+      "text": "visual way to wire agents together and"
+    },
+    {
+      "start": 438.639,
+      "end": 440.469,
+      "text": "kept going until it became the platform"
+    },
+    {
+      "start": 440.479,
+      "end": 442.39,
+      "text": "you actually ship with, not just a"
+    },
+    {
+      "start": 442.4,
+      "end": 444.55,
+      "text": "prototype tool, a platform for"
+    },
+    {
+      "start": 444.56,
+      "end": 446.79,
+      "text": "production. Here is what separates it."
+    },
+    {
+      "start": 446.8,
+      "end": 448.629,
+      "text": "When a workflow breaks in production on"
+    },
+    {
+      "start": 448.639,
+      "end": 451.029,
+      "text": "most visual builders, you are guessing."
+    },
+    {
+      "start": 451.039,
+      "end": 453.51,
+      "text": "Defi ships with perstep logging, timing"
+    },
+    {
+      "start": 453.52,
+      "end": 455.99,
+      "text": "traces, and open telemetry export, so"
+    },
+    {
+      "start": 456,
+      "end": 457.99,
+      "text": "you can see exactly which step fired,"
+    },
+    {
+      "start": 458,
+      "end": 460.07,
+      "text": "with what input, and where it slowed"
+    },
+    {
+      "start": 460.08,
+      "end": 462.39,
+      "text": "down. It also has a built-in worker ceue"
+    },
+    {
+      "start": 462.4,
+      "end": 464.469,
+      "text": "so longunning flows do not time out on"
+    },
+    {
+      "start": 464.479,
+      "end": 466.30899999999997,
+      "text": "your users. Those are not features you"
+    },
+    {
+      "start": 466.319,
+      "end": 468.23,
+      "text": "bolt on later. They are baked in from"
+    },
+    {
+      "start": 468.24,
+      "end": 469.909,
+      "text": "the start, and it handles the full"
+    },
+    {
+      "start": 469.919,
+      "end": 471.749,
+      "text": "knowledge stack natively. Drop your"
+    },
+    {
+      "start": 471.759,
+      "end": 473.589,
+      "text": "documents in and it builds retrieval"
+    },
+    {
+      "start": 473.599,
+      "end": 476.15,
+      "text": "over them. No separate rag setup, no"
+    },
+    {
+      "start": 476.15999999999997,
+      "end": 478.79,
+      "text": "glue code. Multi-agent orchestration,"
+    },
+    {
+      "start": 478.8,
+      "end": 481.99,
+      "text": "prompt management, A/B testing, user"
+    },
+    {
+      "start": 482,
+      "end": 484.07,
+      "text": "analytics, and app publishing, all on"
+    },
+    {
+      "start": 484.08,
+      "end": 486.15,
+      "text": "the same screen. The same canvas you"
+    },
+    {
+      "start": 486.16,
+      "end": 488.07,
+      "text": "prototyped in is the canvas you deploy"
+    },
+    {
+      "start": 488.08,
+      "end": 490.79,
+      "text": "from. The numbers back it. Defi crossed"
+    },
+    {
+      "start": 490.8,
+      "end": 494.71,
+      "text": "100,000 stars in June 2025 and is passed"
+    },
+    {
+      "start": 494.72,
+      "end": 498.39,
+      "text": "145,000 by mid 2026. It runs on more"
+    },
+    {
+      "start": 498.4,
+      "end": 502.23,
+      "text": "than 1.4 million machines across 175"
+    },
+    {
+      "start": 502.24,
+      "end": 504.309,
+      "text": "countries. Enterprise customers include"
+    },
+    {
+      "start": 504.319,
+      "end": 507.029,
+      "text": "Marisque, Novartis, Deote, and"
+    },
+    {
+      "start": 507.039,
+      "end": 510.39,
+      "text": "Panasonic. In early 2026, the company"
+    },
+    {
+      "start": 510.4,
+      "end": 513.5889999999999,
+      "text": "raised $30 million at a $180 million"
+    },
+    {
+      "start": 513.599,
+      "end": 516.7090000000001,
+      "text": "valuation with Apache 2.0 staying on the"
+    },
+    {
+      "start": 516.719,
+      "end": 520.23,
+      "text": "core the whole time. 145,000 stars and"
+    },
+    {
+      "start": 520.24,
+      "end": 522.55,
+      "text": "the most complete platform on this list,"
+    },
+    {
+      "start": 522.56,
+      "end": 524.87,
+      "text": "the brain, the planner, and the front"
+    },
+    {
+      "start": 524.88,
+      "end": 527.75,
+      "text": "door allin one. Slot five filled and"
+    },
+    {
+      "start": 527.76,
+      "end": 530.63,
+      "text": "then some. And that is all five. Before"
+    },
+    {
+      "start": 530.64,
+      "end": 532.949,
+      "text": "we assemble them, look one more time at"
+    },
+    {
+      "start": 532.9590000000001,
+      "end": 535.269,
+      "text": "what just landed. The most popular repo"
+    },
+    {
+      "start": 535.279,
+      "end": 537.59,
+      "text": "here is a web scraper. The fastest"
+    },
+    {
+      "start": 537.6,
+      "end": 539.91,
+      "text": "growing is an answer to a $500 payw"
+    },
+    {
+      "start": 539.92,
+      "end": 541.99,
+      "text": "wall. And the biggest platform nobody is"
+    },
+    {
+      "start": 542,
+      "end": 543.829,
+      "text": "arguing about on Twitter is quietly"
+    },
+    {
+      "start": 543.839,
+      "end": 546.63,
+      "text": "running on 1.4 million machines. Here is"
+    },
+    {
+      "start": 546.64,
+      "end": 548.55,
+      "text": "where it gets fun. No single one of"
+    },
+    {
+      "start": 548.56,
+      "end": 551.03,
+      "text": "these five is the whole answer. But snap"
+    },
+    {
+      "start": 551.04,
+      "end": 552.79,
+      "text": "them together and you get something that"
+    },
+    {
+      "start": 552.8,
+      "end": 555.35,
+      "text": "starts to feel like an actual employee."
+    },
+    {
+      "start": 555.36,
+      "end": 557.91,
+      "text": "Take a real useful job. Find information"
+    },
+    {
+      "start": 557.92,
+      "end": 560.63,
+      "text": "on the web. Remember what matters. Write"
+    },
+    {
+      "start": 560.64,
+      "end": 562.87,
+      "text": "code that acts on it and run the whole"
+    },
+    {
+      "start": 562.88,
+      "end": 565.03,
+      "text": "thing without anyone watching. Watch"
+    },
+    {
+      "start": 565.04,
+      "end": 567.35,
+      "text": "which repo does each part. Firecrawl"
+    },
+    {
+      "start": 567.36,
+      "end": 569.509,
+      "text": "reads the pages and hands back clean"
+    },
+    {
+      "start": 569.519,
+      "end": 571.35,
+      "text": "data. Browser use clicks through"
+    },
+    {
+      "start": 571.36,
+      "end": 573.509,
+      "text": "anything that needs a real session. Mem"
+    },
+    {
+      "start": 573.519,
+      "end": 574.79,
+      "text": "zero remembers what you care about"
+    },
+    {
+      "start": 574.8,
+      "end": 577.269,
+      "text": "between runs. Openhands writes and runs"
+    },
+    {
+      "start": 577.279,
+      "end": 579.19,
+      "text": "the actual code when the task needs a"
+    },
+    {
+      "start": 579.2,
+      "end": 581.509,
+      "text": "developer. And DFI is the canvas that"
+    },
+    {
+      "start": 581.519,
+      "end": 583.43,
+      "text": "ties all of it together into a workflow"
+    },
+    {
+      "start": 583.44,
+      "end": 585.99,
+      "text": "you can actually ship. Five repos, one"
+    },
+    {
+      "start": 586,
+      "end": 588.07,
+      "text": "working system. And notice what you did"
+    },
+    {
+      "start": 588.08,
+      "end": 590.47,
+      "text": "not do. Write memory from scratch. Build"
+    },
+    {
+      "start": 590.48,
+      "end": 592.79,
+      "text": "a retrieval pipeline from zero. Stand up"
+    },
+    {
+      "start": 592.8,
+      "end": 594.87,
+      "text": "a sandbox coding environment by hand."
+    },
+    {
+      "start": 594.88,
+      "end": 597.269,
+      "text": "You wired five well-worn parts together."
+    },
+    {
+      "start": 597.279,
+      "end": 599.43,
+      "text": "Each doing the one thing it is best at."
+    },
+    {
+      "start": 599.44,
+      "end": 601.91,
+      "text": "Every slot is covered. Eyes on the web."
+    },
+    {
+      "start": 601.92,
+      "end": 603.99,
+      "text": "Hands on the browser. A memory that"
+    },
+    {
+      "start": 604,
+      "end": 606.31,
+      "text": "persists. A coding agent that closes"
+    },
+    {
+      "start": 606.32,
+      "end": 608.15,
+      "text": "tickets. And a production brain that"
+    },
+    {
+      "start": 608.16,
+      "end": 610.47,
+      "text": "runs the whole relay. Keep this cheat"
+    },
+    {
+      "start": 610.48,
+      "end": 613.35,
+      "text": "sheet. Reading the web. Fire crawl."
+    },
+    {
+      "start": 613.36,
+      "end": 616.47,
+      "text": "Acting on the web. Browser use. Memory."
+    },
+    {
+      "start": 616.48,
+      "end": 619.269,
+      "text": "Mem zero coding agent open hands"
+    },
+    {
+      "start": 619.279,
+      "end": 622.23,
+      "text": "orchestration and deployment defy. That"
+    },
+    {
+      "start": 622.24,
+      "end": 624.47,
+      "text": "is the real point of this list. You do"
+    },
+    {
+      "start": 624.48,
+      "end": 626.15,
+      "text": "not build an AI agent from scratch"
+    },
+    {
+      "start": 626.16,
+      "end": 628.71,
+      "text": "anymore. You assemble it from parts. And"
+    },
+    {
+      "start": 628.72,
+      "end": 629.99,
+      "text": "these are the five parts with the"
+    },
+    {
+      "start": 630,
+      "end": 631.75,
+      "text": "biggest communities and the most battle"
+    },
+    {
+      "start": 631.76,
+      "end": 633.829,
+      "text": "testing behind them because everyone is"
+    },
+    {
+      "start": 633.8389999999999,
+      "end": 636.47,
+      "text": "open source. There are no seat licenses,"
+    },
+    {
+      "start": 636.48,
+      "end": 639.43,
+      "text": "no vendor lockin, and no blackbox. You"
+    },
+    {
+      "start": 639.44,
+      "end": 641.35,
+      "text": "can read exactly how your agent thinks"
+    },
+    {
+      "start": 641.36,
+      "end": 643.59,
+      "text": "and change any piece you do not like."
+    },
+    {
+      "start": 643.6,
+      "end": 645.829,
+      "text": "The price of this entire stack, nothing"
+    },
+    {
+      "start": 645.8389999999999,
+      "end": 649.35,
+      "text": "to download, read or run. You pay only"
+    },
+    {
+      "start": 649.36,
+      "end": 651.509,
+      "text": "for the model calls you make, but you do"
+    },
+    {
+      "start": 651.519,
+      "end": 654.069,
+      "text": "not need all five to start. Pick two."
+    },
+    {
+      "start": 654.079,
+      "end": 656.389,
+      "text": "Firecrawl to pull data in and defy to"
+    },
+    {
+      "start": 656.399,
+      "end": 658.55,
+      "text": "run the loop. Get that working first,"
+    },
+    {
+      "start": 658.56,
+      "end": 660.63,
+      "text": "then grow the stack outward from there."
+    },
+    {
+      "start": 660.64,
+      "end": 663.03,
+      "text": "And keep in mind how fast this moves."
+    },
+    {
+      "start": 663.04,
+      "end": 664.87,
+      "text": "Several of these repos did not exist 3"
+    },
+    {
+      "start": 664.88,
+      "end": 666.71,
+      "text": "years ago, and more than a few doubled"
+    },
+    {
+      "start": 666.72,
+      "end": 668.79,
+      "text": "their stars in the last 12 months. The"
+    },
+    {
+      "start": 668.8,
+      "end": 670.31,
+      "text": "map you just learned will keep shifting"
+    },
+    {
+      "start": 670.32,
+      "end": 672.71,
+      "text": "under you. It bends to whoever you are."
+    },
+    {
+      "start": 672.72,
+      "end": 674.55,
+      "text": "A solo dev who wants an agent by the"
+    },
+    {
+      "start": 674.56,
+      "end": 676.71,
+      "text": "weekend. A startup that cannot rebuild"
+    },
+    {
+      "start": 676.72,
+      "end": 678.63,
+      "text": "memory and retrieval from scratch. A"
+    },
+    {
+      "start": 678.64,
+      "end": 680.55,
+      "text": "company that needs every bite on its own"
+    },
+    {
+      "start": 680.56,
+      "end": 682.63,
+      "text": "servers. One fair warning to take with"
+    },
+    {
+      "start": 682.64,
+      "end": 685.269,
+      "text": "you. Stars measure attention, not fit."
+    },
+    {
+      "start": 685.279,
+      "end": 687.59,
+      "text": "Judge each repo by what it solves today,"
+    },
+    {
+      "start": 687.6,
+      "end": 689.91,
+      "text": "not by the size of its badge. All five"
+    },
+    {
+      "start": 689.92,
+      "end": 692.389,
+      "text": "repos, every link in their star counts"
+    },
+    {
+      "start": 692.399,
+      "end": 694.389,
+      "text": "are down in the description. If this"
+    },
+    {
+      "start": 694.399,
+      "end": 696.47,
+      "text": "saved you a week of digging, subscribe"
+    },
+    {
+      "start": 696.48,
+      "end": 698.15,
+      "text": "and go star the ones you are actually"
+    },
+    {
+      "start": 698.16,
+      "end": 700.48,
+      "text": "going to"
+    }
+  ]
+}

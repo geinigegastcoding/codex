@@ -1,0 +1,14 @@
+{
+  "title": "The AI Privacy Switch Most Tools Hide",
+  "slug": "ai-privacy-switch",
+  "template": "technical-concept",
+  "targetDurationSeconds": 75,
+  "scenes": [
+    {"id":"hook","section":"hook","narration":"An AI tool can run locally and still send your data to the cloud. Local is a location. Privacy is a data-flow decision.","onScreenText":"Local does not automatically mean private","visual":{"type":"kinetic-text","emphasis":["not","private"]},"targetSeconds":10},
+    {"id":"ui","section":"problem","narration":"The useful question is not where the interface runs. Ask where the model runs, where files are stored, and whether telemetry leaves the device.","onScreenText":"Trace the data, not the label","visual":{"type":"browser","asset":"assets/local-ai-ui.svg","focus":{"x":940,"y":360}},"targetSeconds":13},
+    {"id":"flow","section":"model","narration":"A practical check has three steps. Input enters the app. The app chooses a model endpoint. Then logs, files, or prompts may be retained somewhere else.","visual":{"type":"diagram","template":"data-flow check","data":{"nodes":[{"id":"input","label":"Your input","detail":"Prompt, file, or code"},{"id":"endpoint","label":"Model endpoint","detail":"Local process or remote API"},{"id":"retention","label":"Retention","detail":"Logs, history, and telemetry"}]}},"targetSeconds":14},
+    {"id":"config","section":"example","narration":"In code, make the endpoint and logging choices explicit. A local URL is evidence. It is not proof that every other service is disabled.","visual":{"type":"code","language":"typescript","code":"const ai = createClient({\n  baseUrl: 'http://127.0.0.1:11434',\n  telemetry: false,\n  retainPrompts: false,\n});"},"targetSeconds":13},
+    {"id":"compare","section":"example","narration":"This creates a more useful comparison. Fully local keeps model calls and files on-device. A hybrid workflow may keep files local but send selected prompts remotely.","visual":{"type":"comparison","data":{"columns":["Fully local","Hybrid"],"rows":[{"label":"Model call stays on-device","values":[true,false]},{"label":"Files can stay local","values":[true,true]},{"label":"Requires network","values":[false,true]}]}},"targetSeconds":14},
+    {"id":"payoff","section":"payoff","narration":"So do not buy the word local. Draw the data flow. Check the endpoint, storage, and telemetry. That is the privacy test you can repeat for any AI tool.","onScreenText":"Endpoint. Storage. Telemetry.","visual":{"type":"kinetic-text","emphasis":["Endpoint.","Storage.","Telemetry."]},"sources":[{"url":"https://www.nist.gov/privacy-framework","claim":"Privacy risk management reference"}],"targetSeconds":11}
+  ]
+}

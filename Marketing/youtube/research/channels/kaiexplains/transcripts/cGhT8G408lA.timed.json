@@ -1,0 +1,1241 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.87,
+      "text": "Two coding models. One costs $25 a"
+    },
+    {
+      "start": 2.88,
+      "end": 4.75,
+      "text": "million output tokens and lies behind an"
+    },
+    {
+      "start": 4.76,
+      "end": 6.99,
+      "text": "API you can never open. The other is"
+    },
+    {
+      "start": 7,
+      "end": 8.91,
+      "text": "free to download, beats it on real"
+    },
+    {
+      "start": 8.92,
+      "end": 10.71,
+      "text": "benchmarks, and a trick that shipped"
+    },
+    {
+      "start": 10.72,
+      "end": 12.39,
+      "text": "this month makes it run three times"
+    },
+    {
+      "start": 12.4,
+      "end": 14.99,
+      "text": "faster. This is Kimi K3 from a lab"
+    },
+    {
+      "start": 15,
+      "end": 17.39,
+      "text": "called Moonshot AI. Hand it a broken"
+    },
+    {
+      "start": 17.4,
+      "end": 19.35,
+      "text": "front end and it rebuilds it. The same"
+    },
+    {
+      "start": 19.36,
+      "end": 21.27,
+      "text": "league as Claude Opus and on blind"
+    },
+    {
+      "start": 21.28,
+      "end": 23.35,
+      "text": "developer voting it actually beats it,"
+    },
+    {
+      "start": 23.36,
+      "end": 25.39,
+      "text": "except the weights are public. You can"
+    },
+    {
+      "start": 25.4,
+      "end": 27.35,
+      "text": "run this one yourself. Then came the"
+    },
+    {
+      "start": 27.36,
+      "end": 29.83,
+      "text": "part nobody expected. A lab called"
+    },
+    {
+      "start": 29.84,
+      "end": 31.99,
+      "text": "Inter- act bolted a trick called D-Spark"
+    },
+    {
+      "start": 32,
+      "end": 34.63,
+      "text": "onto Kimi K3 and on a single request it"
+    },
+    {
+      "start": 34.64,
+      "end": 38.51,
+      "text": "jumps from 118 tokens a second to 370."
+    },
+    {
+      "start": 38.52,
+      "end": 40.59,
+      "text": "Watch the tokens fly. And here's the"
+    },
+    {
+      "start": 40.6,
+      "end": 43.59,
+      "text": "wild part. The output is byte identical."
+    },
+    {
+      "start": 43.6,
+      "end": 46.75,
+      "text": "Not similar, identical. Same weights,"
+    },
+    {
+      "start": 46.76,
+      "end": 49.79,
+      "text": "same answer, same every character, just"
+    },
+    {
+      "start": 49.8,
+      "end": 52.15,
+      "text": "far fewer trips through the GPU. No"
+    },
+    {
+      "start": 52.16,
+      "end": 54.91,
+      "text": "retraining, no fine-tune, no quality"
+    },
+    {
+      "start": 54.92,
+      "end": 57.51,
+      "text": "tax. Start with the model itself. On the"
+    },
+    {
+      "start": 57.52,
+      "end": 59.71,
+      "text": "Artificial Analysis Intelligence Index,"
+    },
+    {
+      "start": 59.72,
+      "end": 63.59,
+      "text": "Kimi K3 scores 57. Claude Opus 4.8"
+    },
+    {
+      "start": 63.6,
+      "end": 66.99,
+      "text": "scores 56. That gap is one point. On the"
+    },
+    {
+      "start": 67,
+      "end": 69.47,
+      "text": "front end code arena, a blind developer"
+    },
+    {
+      "start": 69.48,
+      "end": 71.39,
+      "text": "vote where no one knows which model they"
+    },
+    {
+      "start": 71.4,
+      "end": 74.51,
+      "text": "are rating, K3 entered at number one"
+    },
+    {
+      "start": 74.52,
+      "end": 77.55,
+      "text": "with an Elo of 1,679."
+    },
+    {
+      "start": 77.56,
+      "end": 81.55,
+      "text": "Claude Fable 5 was second at 1,631."
+    },
+    {
+      "start": 81.56,
+      "end": 83.91,
+      "text": "The older Kimi K2.6 was sitting at"
+    },
+    {
+      "start": 83.92,
+      "end": 87.11,
+      "text": "number 18. On Frontier's WE, it posts"
+    },
+    {
+      "start": 87.12,
+      "end": 88.67,
+      "text": "81.2."
+    },
+    {
+      "start": 88.68,
+      "end": 92.71000000000001,
+      "text": "On Terminal Bench 2.1, it posts 88.3."
+    },
+    {
+      "start": 92.72,
+      "end": 96.15,
+      "text": "On SWE Marathon, it scores 42.0 and"
+    },
+    {
+      "start": 96.16,
+      "end": 98.55,
+      "text": "leads the field. This is not a toy. Now"
+    },
+    {
+      "start": 98.56,
+      "end": 101.07,
+      "text": "the money. Claude Opus 4.8 runs about"
+    },
+    {
+      "start": 101.08,
+      "end": 104.67,
+      "text": "$25 per million output tokens. Kimi K3"
+    },
+    {
+      "start": 104.68,
+      "end": 108.03,
+      "text": "runs at $15. And per completed task, the"
+    },
+    {
+      "start": 108.03999999999999,
+      "end": 110.27000000000001,
+      "text": "real cost of a hard job, Artificial"
+    },
+    {
+      "start": 110.28,
+      "end": 112.78999999999999,
+      "text": "Analysis puts K3 at about 94 cents"
+    },
+    {
+      "start": 112.8,
+      "end": 116.87,
+      "text": "against Opus 4.8 at $1.80. Roughly half"
+    },
+    {
+      "start": 116.88,
+      "end": 118.55,
+      "text": "the bill. And the weights ship on"
+    },
+    {
+      "start": 118.56,
+      "end": 120.43,
+      "text": "hugging face under a modified MIT"
+    },
+    {
+      "start": 120.44,
+      "end": 122.67,
+      "text": "license. The leader undercut for half"
+    },
+    {
+      "start": 122.68,
+      "end": 124.75,
+      "text": "price and left the door open. So the"
+    },
+    {
+      "start": 124.76,
+      "end": 127.15,
+      "text": "model is strong and it is cheaper. Deep"
+    },
+    {
+      "start": 127.16,
+      "end": 129.31,
+      "text": "spark is what makes it fast. And these"
+    },
+    {
+      "start": 129.32,
+      "end": 131.03,
+      "text": "two belong together in a way that"
+    },
+    {
+      "start": 131.04,
+      "end": 134.91,
+      "text": "matters. Three parts. First, why Kimi K3"
+    },
+    {
+      "start": 134.92,
+      "end": 137.82999999999998,
+      "text": "is a genuine Claude beater. Second, how"
+    },
+    {
+      "start": 137.84,
+      "end": 139.75,
+      "text": "deep spark actually squeezes out that"
+    },
+    {
+      "start": 139.76,
+      "end": 142.27,
+      "text": "three times speed up. Third, the honest"
+    },
+    {
+      "start": 142.28,
+      "end": 144.91,
+      "text": "catch because there is always a catch."
+    },
+    {
+      "start": 144.92000000000002,
+      "end": 147.59,
+      "text": "Let us get into it. Kimi K3 is a mixture"
+    },
+    {
+      "start": 147.6,
+      "end": 150.19,
+      "text": "of experts model, 2.8 trillion"
+    },
+    {
+      "start": 150.2,
+      "end": 152.43,
+      "text": "parameters in total. But for any single"
+    },
+    {
+      "start": 152.44,
+      "end": 156.27,
+      "text": "token, only 16 of its 896 experts"
+    },
+    {
+      "start": 156.28,
+      "end": 159.43,
+      "text": "actually fire. That is 104 billion"
+    },
+    {
+      "start": 159.44,
+      "end": 161.87,
+      "text": "active parameters per forward pass from"
+    },
+    {
+      "start": 161.88,
+      "end": 163.949,
+      "text": "a pool nearly three times the size of"
+    },
+    {
+      "start": 163.959,
+      "end": 166.67000000000002,
+      "text": "deep seek V4 Pro. Picture a firm with"
+    },
+    {
+      "start": 166.68,
+      "end": 169.11,
+      "text": "almost a thousand specialists and every"
+    },
+    {
+      "start": 169.12,
+      "end": 171.39,
+      "text": "meeting only pulls in the exact 16 who"
+    },
+    {
+      "start": 171.4,
+      "end": 173.63,
+      "text": "know the answer. Full knowledge, a"
+    },
+    {
+      "start": 173.64,
+      "end": 175.82999999999998,
+      "text": "fraction of the work. It holds a full"
+    },
+    {
+      "start": 175.84,
+      "end": 178.51,
+      "text": "million tokens of context, an entire"
+    },
+    {
+      "start": 178.52,
+      "end": 181.99,
+      "text": "code base, every file, every test, every"
+    },
+    {
+      "start": 182,
+      "end": 185.07,
+      "text": "comment in mind at once. It pulls that"
+    },
+    {
+      "start": 185.08,
+      "end": 187.43,
+      "text": "off with Kimi Delta attention, a hybrid"
+    },
+    {
+      "start": 187.44,
+      "end": 189.47,
+      "text": "of linear and full attention that"
+    },
+    {
+      "start": 189.48,
+      "end": 192.19,
+      "text": "Moonshot says delivers 6.3 times faster"
+    },
+    {
+      "start": 192.2,
+      "end": 194.47,
+      "text": "decoding at million token context"
+    },
+    {
+      "start": 194.48,
+      "end": 195.949,
+      "text": "compared to standard quadratic"
+    },
+    {
+      "start": 195.959,
+      "end": 197.91,
+      "text": "attention. And it ships with native"
+    },
+    {
+      "start": 197.92000000000002,
+      "end": 201.31,
+      "text": "vision, not a bolted on adapter, native."
+    },
+    {
+      "start": 201.32,
+      "end": 204.43,
+      "text": "It reads images, screenshots, and video"
+    },
+    {
+      "start": 204.44,
+      "end": 206.50900000000001,
+      "text": "as part of the same model. Line the"
+    },
+    {
+      "start": 206.519,
+      "end": 208.55,
+      "text": "scores up. Artificial analysis"
+    },
+    {
+      "start": 208.56,
+      "end": 212.03,
+      "text": "intelligence index, 57, one point ahead"
+    },
+    {
+      "start": 212.04,
+      "end": 215.31,
+      "text": "of Opus 4.8. Front end code arena, first"
+    },
+    {
+      "start": 215.32,
+      "end": 219.19,
+      "text": "place ahead of fable five, GPT 5.6 saw,"
+    },
+    {
+      "start": 219.2,
+      "end": 223.35,
+      "text": "and everyone else. SWE marathon, 42.0,"
+    },
+    {
+      "start": 223.36,
+      "end": 225.47,
+      "text": "leading the field by seven points."
+    },
+    {
+      "start": 225.48,
+      "end": 229.67000000000002,
+      "text": "Frontier SWE, 81.2. For an open model,"
+    },
+    {
+      "start": 229.68,
+      "end": 231.55,
+      "text": "this was is supposed to happen yet."
+    },
+    {
+      "start": 231.56,
+      "end": 233.95,
+      "text": "Watch it work. Point Claude code at Kimi"
+    },
+    {
+      "start": 233.96,
+      "end": 237.03,
+      "text": "K3, hand it a failing test suite, and it"
+    },
+    {
+      "start": 237.04,
+      "end": 239.31,
+      "text": "reads the stack trace, edits files"
+    },
+    {
+      "start": 239.32,
+      "end": 241.47,
+      "text": "across the repo, and turns the whole"
+    },
+    {
+      "start": 241.48,
+      "end": 243.75,
+      "text": "suite green. The same agent loop you"
+    },
+    {
+      "start": 243.76,
+      "end": 246.27,
+      "text": "would run with Opus on weights you own."
+    },
+    {
+      "start": 246.28,
+      "end": 248.83,
+      "text": "Here's the same job priced two ways."
+    },
+    {
+      "start": 248.84,
+      "end": 252.63,
+      "text": "Claude Opus, $4.8, $25 a million output"
+    },
+    {
+      "start": 252.64,
+      "end": 257.43,
+      "text": "tokens. Kimi K3, $15. Same task, nearly"
+    },
+    {
+      "start": 257.44,
+      "end": 259.39,
+      "text": "half the bill per run, and you are"
+    },
+    {
+      "start": 259.4,
+      "end": 261.509,
+      "text": "allowed to read every last weight."
+    },
+    {
+      "start": 261.519,
+      "end": 263.51,
+      "text": "Because it ships on hugging face, the"
+    },
+    {
+      "start": 263.52,
+      "end": 266.47,
+      "text": "copy you pull keeps working forever. No"
+    },
+    {
+      "start": 266.48,
+      "end": 269.39,
+      "text": "wait list, no per seat fee, no terms"
+    },
+    {
+      "start": 269.4,
+      "end": 271.11,
+      "text": "that can be revoked overnight. If"
+    },
+    {
+      "start": 271.12,
+      "end": 273.19,
+      "text": "Moonshot vanished tomorrow, your local"
+    },
+    {
+      "start": 273.2,
+      "end": 275.67,
+      "text": "copy never stops running, and you do not"
+    },
+    {
+      "start": 275.68,
+      "end": 278.63,
+      "text": "need a new tool. Claude code, cursor,"
+    },
+    {
+      "start": 278.64,
+      "end": 281.63,
+      "text": "Klein, any agent that speaks the OpenAI"
+    },
+    {
+      "start": 281.64,
+      "end": 284.75,
+      "text": "API format. Point its base URL at Kimi"
+    },
+    {
+      "start": 284.76,
+      "end": 287.27,
+      "text": "K3 instead. Keep the harness you already"
+    },
+    {
+      "start": 287.28,
+      "end": 289.55,
+      "text": "know. Swap the brain underneath. The"
+    },
+    {
+      "start": 289.56,
+      "end": 292.39,
+      "text": "agent never notices the difference. So,"
+    },
+    {
+      "start": 292.4,
+      "end": 295.47,
+      "text": "why is Kimi K3, or any large model,"
+    },
+    {
+      "start": 295.48,
+      "end": 297.75,
+      "text": "slow? Because it writes one token at a"
+    },
+    {
+      "start": 297.76,
+      "end": 300.19,
+      "text": "time. To produce a single word, it runs"
+    },
+    {
+      "start": 300.2,
+      "end": 303.11,
+      "text": "the entire network, gets one token back,"
+    },
+    {
+      "start": 303.12,
+      "end": 304.55,
+      "text": "then does it all over again for the"
+    },
+    {
+      "start": 304.56,
+      "end": 307.43,
+      "text": "next. Every word is a full round trip."
+    },
+    {
+      "start": 307.44,
+      "end": 309.87,
+      "text": "Speculative decoding breaks that rule. A"
+    },
+    {
+      "start": 309.88,
+      "end": 312.55,
+      "text": "small, fast draft model sprints ahead"
+    },
+    {
+      "start": 312.56,
+      "end": 314.51,
+      "text": "and guesses the next several tokens."
+    },
+    {
+      "start": 314.52,
+      "end": 316.11,
+      "text": "Then the big model checks all those"
+    },
+    {
+      "start": 316.12,
+      "end": 318.23,
+      "text": "guesses in one pass. The right ones are"
+    },
+    {
+      "start": 318.24,
+      "end": 320.43,
+      "text": "kept for free. It is spell check for the"
+    },
+    {
+      "start": 320.44,
+      "end": 322.71,
+      "text": "future. But classic speculative decoding"
+    },
+    {
+      "start": 322.72,
+      "end": 325.31,
+      "text": "has a weakness. The draft is dumb, so"
+    },
+    {
+      "start": 325.32,
+      "end": 327.63,
+      "text": "the big model rejects a lot of guesses,"
+    },
+    {
+      "start": 327.64,
+      "end": 329.95,
+      "text": "and every rejected guess is wasted work."
+    },
+    {
+      "start": 329.96,
+      "end": 331.59,
+      "text": "Push too hard, and you actually slow"
+    },
+    {
+      "start": 331.6,
+      "end": 334.39,
+      "text": "down. How big is the win with DSpark,"
+    },
+    {
+      "start": 334.4,
+      "end": 337.99,
+      "text": "really? On Kimi K3 and VLM, with DSpark"
+    },
+    {
+      "start": 338,
+      "end": 340.909,
+      "text": "enabled, throughput goes from 118 tokens"
+    },
+    {
+      "start": 340.919,
+      "end": 344.59000000000003,
+      "text": "per second to 370. That is a 3.14 times"
+    },
+    {
+      "start": 344.6,
+      "end": 346.51,
+      "text": "improvement on a single request,"
+    },
+    {
+      "start": 346.52,
+      "end": 349.87,
+      "text": "measured on Nvidia GB300"
+    },
+    {
+      "start": 349.88,
+      "end": 351.95,
+      "text": "hardware. On coding and other low"
+    },
+    {
+      "start": 351.96,
+      "end": 354.07,
+      "text": "entropy tasks, the draft model gets"
+    },
+    {
+      "start": 354.08,
+      "end": 357.43,
+      "text": "accepted about 4.73 tokens per step. On"
+    },
+    {
+      "start": 357.44,
+      "end": 359.27,
+      "text": "creative writing and other high entropy"
+    },
+    {
+      "start": 359.28,
+      "end": 362.51,
+      "text": "tasks, it drops to around 2.61."
+    },
+    {
+      "start": 362.52,
+      "end": 364.35,
+      "text": "The win scales with how predictable the"
+    },
+    {
+      "start": 364.36,
+      "end": 367.27,
+      "text": "work is. Code is predictable. Deep Spark"
+    },
+    {
+      "start": 367.28,
+      "end": 369.15,
+      "text": "rewards that. Deep Spark attacks the"
+    },
+    {
+      "start": 369.16,
+      "end": 371.39,
+      "text": "bottleneck from three angles at once. A"
+    },
+    {
+      "start": 371.4,
+      "end": 373.39,
+      "text": "block diffusion backbone drafts seven"
+    },
+    {
+      "start": 373.4,
+      "end": 375.87,
+      "text": "tokens in a single parallel pass, not"
+    },
+    {
+      "start": 375.88,
+      "end": 378.39,
+      "text": "one by one. A lightweight Markov head"
+    },
+    {
+      "start": 378.4,
+      "end": 380.07,
+      "text": "stitches those tokens together so they"
+    },
+    {
+      "start": 380.08,
+      "end": 382.31,
+      "text": "read like a real sentence, not a random"
+    },
+    {
+      "start": 382.32,
+      "end": 384.83,
+      "text": "bag. And a confidence head scores how"
+    },
+    {
+      "start": 384.84,
+      "end": 387.27,
+      "text": "likely each guest token is to survive,"
+    },
+    {
+      "start": 387.28,
+      "end": 389.15,
+      "text": "so the engine only bothers verifying the"
+    },
+    {
+      "start": 389.16,
+      "end": 390.909,
+      "text": "ones worth checking. It literally"
+    },
+    {
+      "start": 390.919,
+      "end": 393.51,
+      "text": "decides what not to verify. Skip the"
+    },
+    {
+      "start": 393.52,
+      "end": 395.63,
+      "text": "sure things, spend the compute where it"
+    },
+    {
+      "start": 395.64,
+      "end": 398.19,
+      "text": "counts. And remember, none of this"
+    },
+    {
+      "start": 398.2,
+      "end": 400.47,
+      "text": "changes the answer. The verification"
+    },
+    {
+      "start": 400.48,
+      "end": 402.59000000000003,
+      "text": "step guarantees the output is exactly"
+    },
+    {
+      "start": 402.6,
+      "end": 403.95,
+      "text": "what the model would have written token"
+    },
+    {
+      "start": 403.96,
+      "end": 406.35,
+      "text": "by token. You are not trading quality"
+    },
+    {
+      "start": 406.36,
+      "end": 408.71,
+      "text": "for speed. You are getting the speed for"
+    },
+    {
+      "start": 408.72,
+      "end": 410.909,
+      "text": "free. Here's why these two belong"
+    },
+    {
+      "start": 410.919,
+      "end": 413.35,
+      "text": "together. Infra Act built the Kimi K3"
+    },
+    {
+      "start": 413.36,
+      "end": 415.79,
+      "text": "Deep Spark draft model to mirror K3's"
+    },
+    {
+      "start": 415.8,
+      "end": 418.11,
+      "text": "own MLA attention design, which means"
+    },
+    {
+      "start": 418.12,
+      "end": 420.35,
+      "text": "the draft and the target share one KV"
+    },
+    {
+      "start": 420.36,
+      "end": 423.55,
+      "text": "cache layout. That is a compact 576"
+    },
+    {
+      "start": 423.56,
+      "end": 425.87,
+      "text": "element latent per token. So KV"
+    },
+    {
+      "start": 425.88,
+      "end": 427.39,
+      "text": "offloading and prefill decode"
+    },
+    {
+      "start": 427.4,
+      "end": 429.23,
+      "text": "disaggregation work without any separate"
+    },
+    {
+      "start": 429.24,
+      "end": 431.31,
+      "text": "page format. The draft was trained on"
+    },
+    {
+      "start": 431.32,
+      "end": 433.35,
+      "text": "hidden states extracted from VLLM"
+    },
+    {
+      "start": 433.36,
+      "end": 435.83,
+      "text": "itself, the same engine that serves it."
+    },
+    {
+      "start": 435.84,
+      "end": 437.39,
+      "text": "So the numerics it learns from are the"
+    },
+    {
+      "start": 437.4,
+      "end": 439.55,
+      "text": "numerics it meets at inference. One"
+    },
+    {
+      "start": 439.56,
+      "end": 440.95,
+      "text": "afternoon of compute to train the"
+    },
+    {
+      "start": 440.96,
+      "end": 442.95,
+      "text": "drafter, then the speed up is yours to"
+    },
+    {
+      "start": 442.96,
+      "end": 445.43,
+      "text": "keep. The on-ramp is short. The weights"
+    },
+    {
+      "start": 445.44,
+      "end": 447.79,
+      "text": "land on Hugging Face. VLLM loads the"
+    },
+    {
+      "start": 447.8,
+      "end": 449.99,
+      "text": "mixture of experts natively, with full"
+    },
+    {
+      "start": 450,
+      "end": 451.99,
+      "text": "day zero support, and the Deep Spark"
+    },
+    {
+      "start": 452,
+      "end": 454.07,
+      "text": "drafter clips on top with a single flag"
+    },
+    {
+      "start": 454.08,
+      "end": 456.83,
+      "text": "in the serve command. Open model, open"
+    },
+    {
+      "start": 456.84000000000003,
+      "end": 459.43,
+      "text": "server, open speed up. Not a single"
+    },
+    {
+      "start": 459.44,
+      "end": 460.87,
+      "text": "piece of the stack locked behind a"
+    },
+    {
+      "start": 460.88,
+      "end": 463.47,
+      "text": "login. So here's the full picture."
+    },
+    {
+      "start": 463.48,
+      "end": 466.31,
+      "text": "Download Kimiko 3, attach the DSpark"
+    },
+    {
+      "start": 466.32,
+      "end": 468.39,
+      "text": "drafter from Infract. Run the world's"
+    },
+    {
+      "start": 468.4,
+      "end": 470.67,
+      "text": "largest open weight model at over three"
+    },
+    {
+      "start": 470.68,
+      "end": 472.83,
+      "text": "times the base speed on hardware you"
+    },
+    {
+      "start": 472.84000000000003,
+      "end": 475.35,
+      "text": "control with no API bill and no rate"
+    },
+    {
+      "start": 475.36,
+      "end": 477.51,
+      "text": "limit. The model already trades blows"
+    },
+    {
+      "start": 477.52,
+      "end": 480.27,
+      "text": "with Opus. DSpark makes it fly. Step"
+    },
+    {
+      "start": 480.28,
+      "end": 482.51,
+      "text": "back and the pattern is obvious. One"
+    },
+    {
+      "start": 482.52,
+      "end": 484.19,
+      "text": "open lab shipped a model that matches"
+    },
+    {
+      "start": 484.2,
+      "end": 486.31,
+      "text": "the best closed ones. A second team"
+    },
+    {
+      "start": 486.32,
+      "end": 487.55,
+      "text": "shipped a speed up that triples"
+    },
+    {
+      "start": 487.56,
+      "end": 489.15,
+      "text": "throughput without touching the weights."
+    },
+    {
+      "start": 489.16,
+      "end": 490.51,
+      "text": "The frontier used to be a private"
+    },
+    {
+      "start": 490.52,
+      "end": 492.43,
+      "text": "garden. It is starting to look a lot"
+    },
+    {
+      "start": 492.44,
+      "end": 494.51,
+      "text": "more like a public library. Now, the"
+    },
+    {
+      "start": 494.52,
+      "end": 497.71,
+      "text": "honest part. That 3.14 times speed up is"
+    },
+    {
+      "start": 497.72,
+      "end": 500.07,
+      "text": "the ceiling on a single clean request,"
+    },
+    {
+      "start": 500.08,
+      "end": 502.27,
+      "text": "not the promise on a busy server. For"
+    },
+    {
+      "start": 502.28,
+      "end": 504.51,
+      "text": "coding and structured tasks, DSpark"
+    },
+    {
+      "start": 504.52,
+      "end": 506.75,
+      "text": "performs best. For open-ended creative"
+    },
+    {
+      "start": 506.76,
+      "end": 508.87,
+      "text": "work, the acceptance rate drops and the"
+    },
+    {
+      "start": 508.88,
+      "end": 511.03,
+      "text": "gain shrinks toward two tokens per step"
+    },
+    {
+      "start": 511.04,
+      "end": 512.79,
+      "text": "instead of four. You also need the"
+    },
+    {
+      "start": 512.8,
+      "end": 514.31,
+      "text": "DSpark draft checkpoint trained"
+    },
+    {
+      "start": 514.32,
+      "end": 517.11,
+      "text": "specifically for Kimiko 3. Use the wrong"
+    },
+    {
+      "start": 517.12,
+      "end": 518.51,
+      "text": "drafter and the acceptance rate"
+    },
+    {
+      "start": 518.52,
+      "end": 521.19,
+      "text": "collapses. A bad guesser just piles on"
+    },
+    {
+      "start": 521.2,
+      "end": 523.75,
+      "text": "overhead. Then there is the elephant. It"
+    },
+    {
+      "start": 523.76,
+      "end": 526.67,
+      "text": "is still a 2.8 trillion parameter model."
+    },
+    {
+      "start": 526.68,
+      "end": 528.99,
+      "text": "Serving it requires serious memory. The"
+    },
+    {
+      "start": 529,
+      "end": 531.99,
+      "text": "checkpoint in native MXFP4 format comes"
+    },
+    {
+      "start": 532,
+      "end": 535.07,
+      "text": "in at about 1.5 terabytes. The official"
+    },
+    {
+      "start": 535.08,
+      "end": 537.67,
+      "text": "VLLM recipe requires at minimum an eight"
+    },
+    {
+      "start": 537.68,
+      "end": 540.11,
+      "text": "GPU Blackwell node. Free to download is"
+    },
+    {
+      "start": 540.12,
+      "end": 542.15,
+      "text": "not free to run. And on factual"
+    },
+    {
+      "start": 542.16,
+      "end": 544.43,
+      "text": "questions, Artificial Analysis measured"
+    },
+    {
+      "start": 544.44,
+      "end": 547.71,
+      "text": "K3's hallucination rate at 51% up from"
+    },
+    {
+      "start": 547.72,
+      "end": 550.55,
+      "text": "39% on its predecessor. It gets more"
+    },
+    {
+      "start": 550.56,
+      "end": 552.27,
+      "text": "things right overall, but it also"
+    },
+    {
+      "start": 552.28,
+      "end": 554.35,
+      "text": "confidently gets more things wrong. For"
+    },
+    {
+      "start": 554.36,
+      "end": 556.91,
+      "text": "code generation and agentic tasks, that"
+    },
+    {
+      "start": 556.92,
+      "end": 559.23,
+      "text": "trade-off is often fine. For anything"
+    },
+    {
+      "start": 559.24,
+      "end": 561.31,
+      "text": "where a wrong confident answer is worse"
+    },
+    {
+      "start": 561.32,
+      "end": 563.51,
+      "text": "than an honest abstention, verify the"
+    },
+    {
+      "start": 563.52,
+      "end": 566.27,
+      "text": "output. Four numbers to keep: 2.8"
+    },
+    {
+      "start": 566.28,
+      "end": 569.79,
+      "text": "trillion parameters, 104 billion active,"
+    },
+    {
+      "start": 569.8,
+      "end": 571.99,
+      "text": "one point ahead of Opus 4.8 on the"
+    },
+    {
+      "start": 572,
+      "end": 574.43,
+      "text": "intelligence index, half the cost per"
+    },
+    {
+      "start": 574.44,
+      "end": 578.19,
+      "text": "task, and 3.14 times faster for byte"
+    },
+    {
+      "start": 578.2,
+      "end": 580.07,
+      "text": "identical output. The takeaway is"
+    },
+    {
+      "start": 580.08,
+      "end": 582.07,
+      "text": "simple. The best models are no longer"
+    },
+    {
+      "start": 582.08,
+      "end": 584.19,
+      "text": "only the closed ones, and the fastest"
+    },
+    {
+      "start": 584.2,
+      "end": 586.03,
+      "text": "tricks no longer live only inside the"
+    },
+    {
+      "start": 586.04,
+      "end": 588.99,
+      "text": "biggest labs. Kimmy K3 proved open can"
+    },
+    {
+      "start": 589,
+      "end": 591.31,
+      "text": "compete. Deep Spark proved open can be"
+    },
+    {
+      "start": 591.32,
+      "end": 593.39,
+      "text": "quick. Together, they proved you can"
+    },
+    {
+      "start": 593.4,
+      "end": 595.07,
+      "text": "have both. So, here is the real"
+    },
+    {
+      "start": 595.08,
+      "end": 597.15,
+      "text": "question. If a free model can match the"
+    },
+    {
+      "start": 597.16,
+      "end": 599.321,
+      "text": "best and a free trick can make it fly,"
+    },
+    {
+      "start": 599.331,
+      "end": 599.91,
+      "text": "[snorts]"
+    },
+    {
+      "start": 599.92,
+      "end": 601.91,
+      "text": "what exactly are you still paying for?"
+    },
+    {
+      "start": 601.92,
+      "end": 605.28,
+      "text": "That is the one to sit with."
+    }
+  ]
+}

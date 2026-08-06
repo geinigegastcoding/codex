@@ -1,0 +1,68 @@
+import { expect, test } from '@playwright/test'
+
+test('Python checker gives guided feedback and accepts a correct alternative', async ({ page }) => {
+  test.setTimeout(120_000)
+  const consoleErrors: string[] = []
+  page.on('console', (message) => { if (message.type() === 'error') consoleErrors.push(message.text()) })
+  page.on('pageerror', (error) => consoleErrors.push(error.message))
+  await page.goto('/#/lesson/truthiness-slices')
+  await expect(page.getByText('Python ready')).toBeVisible({ timeout: 90_000 })
+  expect(consoleErrors).toEqual([])
+  await expect(page.getByRole('heading', { name: 'Your task' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Function contract' })).toBeVisible()
+  await expect(page.getByText('def count_truthy(values):', { exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Implementation checklist' })).toBeVisible()
+  await expect(page.getByText('mixed values', { exact: true })).toBeVisible()
+  await expect(page.getByText('all false', { exact: true })).toBeVisible()
+  await expect(page.getByText('empty list', { exact: true })).toBeVisible()
+  await expect(page.getByText('count_truthy([0, "", [], None, "Python", 4]) → return 2', { exact: true }).first()).toBeVisible()
+  const editor = page.getByLabel('Python solution')
+  await editor.fill('def count_truthy(values):\n')
+  await editor.press('Tab')
+  await expect(editor).toHaveValue('def count_truthy(values):\n    ')
+  await expect(editor).toBeFocused()
+  await editor.fill('def count_truthy(values):\n    return 99')
+  await page.getByRole('button', { name: 'Run checks' }).click()
+  await expect(page.getByText('One more case needs work')).toBeVisible({ timeout: 15_000 })
+  await expect(page.getByText(/Which assumption/)).toBeVisible()
+  await editor.fill('def count_truthy(values):\n    count = 0\n    for item in values:\n        if item:\n            count += 1\n    return count')
+  await page.getByRole('button', { name: 'Run checks' }).click()
+  await expect(page.getByText('All checks passed')).toBeVisible({ timeout: 15_000 })
+  await page.reload()
+  await expect(editor).toContainText('return count')
+
+  await page.locator('.lesson-pagination').getByRole('link', { name: /Function contracts/ }).click()
+  await expect(page.getByRole('heading', { name: 'Classify a number' })).toBeVisible()
+  await expect(editor).toHaveValue('def describe_number(number):\n    pass')
+})
+
+test('Python checker contains failures and recovers after a timeout', async ({ page }) => {
+  test.setTimeout(120_000)
+  await page.goto('/#/lesson/truthiness-slices')
+  await expect(page.getByText('Python ready')).toBeVisible({ timeout: 90_000 })
+  const editor = page.getByLabel('Python solution')
+  const runChecks = page.getByRole('button', { name: 'Run checks' })
+
+  await editor.fill('def count_truthy(values)\n    return 0')
+  await runChecks.click()
+  await expect(page.getByText(/Syntax problem/)).toBeVisible()
+
+  await editor.fill('import os\n\ndef count_truthy(values):\n    return 0')
+  await runChecks.click()
+  await expect(page.getByText('Import not available here')).toBeVisible()
+
+  await editor.fill('LEAKED_VALUE = 7\n\ndef count_truthy(values):\n    return 0')
+  await runChecks.click()
+  await expect(page.getByText('One more case needs work')).toBeVisible()
+  await editor.fill('def count_truthy(values):\n    return LEAKED_VALUE')
+  await runChecks.click()
+  await expect(page.locator('.feedback').getByText(/NameError/).first()).toBeVisible()
+
+  await editor.fill('while True:\n    pass')
+  await runChecks.click()
+  await expect(page.getByText('Execution timed out')).toBeVisible({ timeout: 10_000 })
+
+  await editor.fill('def count_truthy(values):\n    return sum(bool(value) for value in values)')
+  await runChecks.click()
+  await expect(page.getByText('All checks passed')).toBeVisible({ timeout: 90_000 })
+})

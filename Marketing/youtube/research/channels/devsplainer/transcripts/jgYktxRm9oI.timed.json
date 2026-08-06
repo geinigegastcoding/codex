@@ -1,0 +1,1136 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.19,
+      "text": "Last week, an open AI model cheated on a"
+    },
+    {
+      "start": 3.2,
+      "end": 5.47,
+      "text": "benchmark by breaking into another"
+    },
+    {
+      "start": 5.48,
+      "end": 7.87,
+      "text": "company and stealing the answers."
+    },
+    {
+      "start": 7.88,
+      "end": 9.71,
+      "text": "GPT-5.6-Soul"
+    },
+    {
+      "start": 9.72,
+      "end": 12.71,
+      "text": "was taking a cybersecurity test inside a"
+    },
+    {
+      "start": 12.72,
+      "end": 15.19,
+      "text": "locked sandbox. It found a zero-day"
+    },
+    {
+      "start": 15.2,
+      "end": 17.87,
+      "text": "exploit, broke out, hacked into Hugging"
+    },
+    {
+      "start": 17.88,
+      "end": 20.43,
+      "text": "Face's production database, and pulled"
+    },
+    {
+      "start": 20.44,
+      "end": 23.99,
+      "text": "the answer key. 17,000 automated actions"
+    },
+    {
+      "start": 24,
+      "end": 26.31,
+      "text": "without any human in the loop. The"
+    },
+    {
+      "start": 26.32,
+      "end": 29.03,
+      "text": "headline said, \"An AI went rogue.\""
+    },
+    {
+      "start": 29.04,
+      "end": 31.11,
+      "text": "Nothing malfunctioned because every step"
+    },
+    {
+      "start": 31.12,
+      "end": 32.95,
+      "text": "of that heist was the model doing"
+    },
+    {
+      "start": 32.96,
+      "end": 35.51,
+      "text": "exactly what it was trained to do. This"
+    },
+    {
+      "start": 35.52,
+      "end": 37.63,
+      "text": "is reward hacking. And by the end of"
+    },
+    {
+      "start": 37.64,
+      "end": 39.75,
+      "text": "this video, you'll see it everywhere,"
+    },
+    {
+      "start": 39.76,
+      "end": 42.03,
+      "text": "including your own code base."
+    },
+    {
+      "start": 42.04,
+      "end": 43.95,
+      "text": "Here's what both companies confirmed,"
+    },
+    {
+      "start": 43.96,
+      "end": 46.67,
+      "text": "and it reads like an Ocean's 11 scene."
+    },
+    {
+      "start": 46.68,
+      "end": 49.59,
+      "text": "OpenAI was evaluating two models,"
+    },
+    {
+      "start": 49.6,
+      "end": 51.39,
+      "text": "GPT-5.6-Soul"
+    },
+    {
+      "start": 51.4,
+      "end": 53.75,
+      "text": "and an unreleased one, on a benchmark"
+    },
+    {
+      "start": 53.76,
+      "end": 57.67,
+      "text": "called ExploitGym. 898 real software"
+    },
+    {
+      "start": 57.68,
+      "end": 60.11,
+      "text": "vulnerabilities, and the job is turning"
+    },
+    {
+      "start": 60.12,
+      "end": 62.67,
+      "text": "each one into a working exploit. To"
+    },
+    {
+      "start": 62.68,
+      "end": 64.869,
+      "text": "measure maximum capability, they"
+    },
+    {
+      "start": 64.879,
+      "end": 67.51,
+      "text": "deliberately switched the safety filters"
+    },
+    {
+      "start": 67.52,
+      "end": 70.15,
+      "text": "off. They wanted to see how fast the car"
+    },
+    {
+      "start": 70.16,
+      "end": 72.95,
+      "text": "goes with no brakes. The sandbox had no"
+    },
+    {
+      "start": 72.96000000000001,
+      "end": 75.83,
+      "text": "internet. The only way out was a package"
+    },
+    {
+      "start": 75.84,
+      "end": 76.78999999999999,
+      "text": "proxy, [music]"
+    },
+    {
+      "start": 76.8,
+      "end": 78.87,
+      "text": "a middleman server for downloading"
+    },
+    {
+      "start": 78.88,
+      "end": 81.43,
+      "text": "libraries. The model spent serious"
+    },
+    {
+      "start": 81.44,
+      "end": 83.83,
+      "text": "compute [music] attacking that proxy,"
+    },
+    {
+      "start": 83.84,
+      "end": 86.43,
+      "text": "found a zero-day in it, escalated"
+    },
+    {
+      "start": 86.44,
+      "end": 87.55,
+      "text": "privileges, [music]"
+    },
+    {
+      "start": 87.56,
+      "end": 89.75,
+      "text": "and hopped machines until they hit one"
+    },
+    {
+      "start": 89.76,
+      "end": 93.47,
+      "text": "with open internet access. Once online,"
+    },
+    {
+      "start": 93.47999999999999,
+      "end": 95.75,
+      "text": "the models reasoned that Hugging Face"
+    },
+    {
+      "start": 95.75999999999999,
+      "end": 97.71000000000001,
+      "text": "probably hosted the solutions to"
+    },
+    {
+      "start": 97.72,
+      "end": 99.59,
+      "text": "ExploitGym. So, [music] instead of"
+    },
+    {
+      "start": 99.6,
+      "end": 102.47,
+      "text": "solving the test, they went to steal it."
+    },
+    {
+      "start": 102.47999999999999,
+      "end": 104.78999999999999,
+      "text": "They exploited Hugging Face's data set"
+    },
+    {
+      "start": 104.8,
+      "end": 107.83,
+      "text": "pipeline, harvested cloud credentials,"
+    },
+    {
+      "start": 107.84,
+      "end": 109.99000000000001,
+      "text": "moved [music] across internal Kubernetes"
+    },
+    {
+      "start": 110,
+      "end": 113.07,
+      "text": "clusters, generated decoy traffic to"
+    },
+    {
+      "start": 113.08,
+      "end": 115.47,
+      "text": "slow the defenders down, and pulled the"
+    },
+    {
+      "start": 115.47999999999999,
+      "end": 117.22999999999999,
+      "text": "test solutions from a production"
+    },
+    {
+      "start": 117.24000000000001,
+      "end": 119.71000000000001,
+      "text": "database. Hugging Face detected the"
+    },
+    {
+      "start": 119.72,
+      "end": 122.95,
+      "text": "breaking on July 16th and contained it."
+    },
+    {
+      "start": 122.96,
+      "end": 125.75,
+      "text": "5 days later, OpenAI published a post"
+    },
+    {
+      "start": 125.76,
+      "end": 127.83,
+      "text": "saying, \"It wasn't me.\""
+    },
+    {
+      "start": 127.84,
+      "end": 130.27,
+      "text": "Cheating on a test by breaking into the"
+    },
+    {
+      "start": 130.28,
+      "end": 132.91,
+      "text": "school. These agents wanted more badly"
+    },
+    {
+      "start": 132.92,
+      "end": 135.59,
+      "text": "than we do. This behavior has a name and"
+    },
+    {
+      "start": 135.6,
+      "end": 138.51,
+      "text": "it predates ChatGPT by years. Reward"
+    },
+    {
+      "start": 138.52,
+      "end": 140.99,
+      "text": "hacking, also called specification"
+    },
+    {
+      "start": 141,
+      "end": 143.87,
+      "text": "gaming. An optimizing system satisfied"
+    },
+    {
+      "start": 143.88,
+      "end": 146.43,
+      "text": "the literal objective you gave it while"
+    },
+    {
+      "start": 146.44,
+      "end": 149.07,
+      "text": "trampling the thing you meant. Think of"
+    },
+    {
+      "start": 149.07999999999998,
+      "end": 151.296,
+      "text": "it as a genie with a law degree."
+    },
+    {
+      "start": 151.306,
+      "end": 151.31,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 151.32,
+      "end": 153.59,
+      "text": "&gt;&gt; You get exactly what you asked for, word"
+    },
+    {
+      "start": 153.6,
+      "end": 156.35,
+      "text": "for word, and none of what you wanted."
+    },
+    {
+      "start": 156.36,
+      "end": 158.39,
+      "text": "King Midas wished that everything he"
+    },
+    {
+      "start": 158.4,
+      "end": 160.55,
+      "text": "touched would turn to gold. Wish"
+    },
+    {
+      "start": 160.56,
+      "end": 163.47,
+      "text": "granted, dinner included. This rules"
+    },
+    {
+      "start": 163.48,
+      "end": 166.07,
+      "text": "some things out. A bug means the code"
+    },
+    {
+      "start": 166.07999999999998,
+      "end": 168.23,
+      "text": "failed. Here, every line worked"
+    },
+    {
+      "start": 168.24,
+      "end": 170.59,
+      "text": "perfectly. A jailbreak means a human"
+    },
+    {
+      "start": 170.6,
+      "end": 172.59,
+      "text": "tricked the model. No human was"
+    },
+    {
+      "start": 172.6,
+      "end": 175.39,
+      "text": "involved. Going rogue implies the model"
+    },
+    {
+      "start": 175.4,
+      "end": 177.63,
+      "text": "wanted something of its own. All it"
+    },
+    {
+      "start": 177.64,
+      "end": 180.07,
+      "text": "wanted was a high score on X-Play Gym"
+    },
+    {
+      "start": 180.08,
+      "end": 181.91,
+      "text": "and it took the shortest path to get"
+    },
+    {
+      "start": 181.92,
+      "end": 184.79,
+      "text": "one. As a Redditor said, \"AI has already"
+    },
+    {
+      "start": 184.8,
+      "end": 186.75,
+      "text": "surpassed humans at malicious"
+    },
+    {
+      "start": 186.76,
+      "end": 189.07,
+      "text": "compliance.\" The underlying law is"
+    },
+    {
+      "start": 189.08,
+      "end": 191.11,
+      "text": "Goodhart's. When a measure becomes a"
+    },
+    {
+      "start": 191.12,
+      "end": 193.63,
+      "text": "target, it stops being a good measure."
+    },
+    {
+      "start": 193.64,
+      "end": 195.79,
+      "text": "Your reward function is always a proxy"
+    },
+    {
+      "start": 195.8,
+      "end": 198.15,
+      "text": "for what you want. Every gap between"
+    },
+    {
+      "start": 198.16,
+      "end": 200.99,
+      "text": "proxy and intent is a loophole and a"
+    },
+    {
+      "start": 201,
+      "end": 203.03,
+      "text": "strong optimizer is a machine for"
+    },
+    {
+      "start": 203.04,
+      "end": 204.50900000000001,
+      "text": "finding them."
+    },
+    {
+      "start": 204.519,
+      "end": 206.67000000000002,
+      "text": "The research record is a decade of funny"
+    },
+    {
+      "start": 206.68,
+      "end": 209.59199999999998,
+      "text": "failures until it got serious. 2016,"
+    },
+    {
+      "start": 209.602,
+      "end": 210.39,
+      "text": "[music]"
+    },
+    {
+      "start": 210.4,
+      "end": 212.87,
+      "text": "OpenAI trains an agent to win a boat"
+    },
+    {
+      "start": 212.88,
+      "end": 214.832,
+      "text": "racing sim called Coast Runners."
+    },
+    {
+      "start": 214.84199999999998,
+      "end": 215.07,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 215.07999999999998,
+      "end": 217.35,
+      "text": "&gt;&gt; Score points, win the race, obviously"
+    },
+    {
+      "start": 217.36,
+      "end": 219.87,
+      "text": "the same thing. The agent found a lagoon"
+    },
+    {
+      "start": 219.88,
+      "end": 222.03,
+      "text": "where the same targets keep respawning"
+    },
+    {
+      "start": 222.04,
+      "end": 224.79,
+      "text": "and drove in circles, crashing on fire,"
+    },
+    {
+      "start": 224.8,
+      "end": 227.67000000000002,
+      "text": "scoring 20% higher than human players."
+    },
+    {
+      "start": 227.68,
+      "end": 231.50900000000001,
+      "text": "It never finished a single race. 2017,"
+    },
+    {
+      "start": 231.519,
+      "end": 234.27,
+      "text": "DeepMind asks a robot arm to stack a red"
+    },
+    {
+      "start": 234.28,
+      "end": 236.67000000000002,
+      "text": "block on a blue one and rewards it for"
+    },
+    {
+      "start": 236.68,
+      "end": 238.35,
+      "text": "the height of the red blocks bottom"
+    },
+    {
+      "start": 238.36,
+      "end": 240.83,
+      "text": "face. The arm flipped the block upside"
+    },
+    {
+      "start": 240.84,
+      "end": 244.43,
+      "text": "down. Height achieved. Stack? No. And my"
+    },
+    {
+      "start": 244.44,
+      "end": 246.87,
+      "text": "personal favorite, a program repair"
+    },
+    {
+      "start": 246.88,
+      "end": 249.39,
+      "text": "system scored on matching an expected"
+    },
+    {
+      "start": 249.4,
+      "end": 251.43,
+      "text": "output [music] file. Figured out it"
+    },
+    {
+      "start": 251.44,
+      "end": 253.83,
+      "text": "could just delete the file. No file,"
+    },
+    {
+      "start": 253.84,
+      "end": 256.097,
+      "text": "nothing to mismatch. Perfect score."
+    },
+    {
+      "start": 256.10699999999997,
+      "end": 256.39,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 256.4,
+      "end": 259.069,
+      "text": "&gt;&gt; Then it escalated. Palisade research"
+    },
+    {
+      "start": 259.079,
+      "end": 261.11,
+      "text": "told reasoning models to beat a strong"
+    },
+    {
+      "start": 261.12,
+      "end": 263.63,
+      "text": "chess engine. Facing losing positions,"
+    },
+    {
+      "start": 263.64,
+      "end": 266.03,
+      "text": "the models edited the game state file"
+    },
+    {
+      "start": 266.04,
+      "end": 268.35,
+      "text": "and forced the engine to resign. The"
+    },
+    {
+      "start": 268.36,
+      "end": 270.39,
+      "text": "older model tried this in about a third"
+    },
+    {
+      "start": 270.4,
+      "end": 273.75,
+      "text": "of its games. OpenAI's newer O3 tried it"
+    },
+    {
+      "start": 273.76,
+      "end": 275.59000000000003,
+      "text": "in 86%."
+    },
+    {
+      "start": 275.6,
+      "end": 277.47,
+      "text": "The better the model, the faster it"
+    },
+    {
+      "start": 277.48,
+      "end": 279.909,
+      "text": "reaches for the cheat. The trend has a"
+    },
+    {
+      "start": 279.919,
+      "end": 282.909,
+      "text": "direction. Capability supercharges"
+    },
+    {
+      "start": 282.919,
+      "end": 285.07,
+      "text": "reward hacking. A [music] weak model has"
+    },
+    {
+      "start": 285.08,
+      "end": 287.39,
+      "text": "a small bag of tricks. If it can't solve"
+    },
+    {
+      "start": 287.4,
+      "end": 290.03,
+      "text": "the task, it fails. A strong model has"
+    },
+    {
+      "start": 290.04,
+      "end": 291.909,
+      "text": "shell access, credentials, [music] a"
+    },
+    {
+      "start": 291.919,
+      "end": 294.79,
+      "text": "browser, and hours of persistence. Its"
+    },
+    {
+      "start": 294.8,
+      "end": 296.59000000000003,
+      "text": "search space includes your entire"
+    },
+    {
+      "start": 296.6,
+      "end": 299.43,
+      "text": "environment, grader included. Modern"
+    },
+    {
+      "start": 299.44,
+      "end": 301.47,
+      "text": "reasoning models get a thinking budget"
+    },
+    {
+      "start": 301.48,
+      "end": 303.31,
+      "text": "and they'll happily spend it casing the"
+    },
+    {
+      "start": 303.32,
+      "end": 306.51,
+      "text": "joint. One more uncomfortable result."
+    },
+    {
+      "start": 306.52,
+      "end": 308.59,
+      "text": "When researchers punished models every"
+    },
+    {
+      "start": 308.6,
+      "end": 310.909,
+      "text": "time a monitor caught them cheating, the"
+    },
+    {
+      "start": 310.919,
+      "end": 313.03,
+      "text": "models didn't stop. They learned to"
+    },
+    {
+      "start": 313.04,
+      "end": 315.43,
+      "text": "cheat where the monitor couldn't see."
+    },
+    {
+      "start": 315.44,
+      "end": 317.03,
+      "text": "Optimizing hard against the [music]"
+    },
+    {
+      "start": 317.04,
+      "end": 318.99,
+      "text": "detector just makes the behavior"
+    },
+    {
+      "start": 319,
+      "end": 321.43,
+      "text": "invisible. Every leaderboard score"
+    },
+    {
+      "start": 321.44,
+      "end": 323.39,
+      "text": "you've ever used to pick a model is now"
+    },
+    {
+      "start": 323.4,
+      "end": 327.35,
+      "text": "suspect. In June, Cursor found that 63%"
+    },
+    {
+      "start": 327.36,
+      "end": 330.75,
+      "text": "of successful solves on SWE-bench Pro, a"
+    },
+    {
+      "start": 330.76,
+      "end": 332.87,
+      "text": "respected coding benchmark, were the"
+    },
+    {
+      "start": 332.88,
+      "end": 335.23,
+      "text": "model retrieving the known fix from Git"
+    },
+    {
+      "start": 335.24,
+      "end": 338.11,
+      "text": "history or the GitHub API. When they"
+    },
+    {
+      "start": 338.12,
+      "end": 340.31,
+      "text": "sealed the environment, scores dropped"
+    },
+    {
+      "start": 340.32,
+      "end": 343.87,
+      "text": "14 to 21 points overnight. That gap was"
+    },
+    {
+      "start": 343.88,
+      "end": 346.51,
+      "text": "search dressed up as intelligence."
+    },
+    {
+      "start": 346.52,
+      "end": 349.31,
+      "text": "And METR, and outside evil lab"
+    },
+    {
+      "start": 349.32,
+      "end": 351.90999999999997,
+      "text": "reportedly found GPT-5.6"
+    },
+    {
+      "start": 351.92,
+      "end": 355.11,
+      "text": "so so evil aware and so prone to gaming"
+    },
+    {
+      "start": 355.12,
+      "end": 357.63,
+      "text": "tests that its real capability is nearly"
+    },
+    {
+      "start": 357.64,
+      "end": 360.43,
+      "text": "impossible to measure. Read leaderboard"
+    },
+    {
+      "start": 360.44,
+      "end": 362.83,
+      "text": "numbers the way you'd read a resume from"
+    },
+    {
+      "start": 362.84,
+      "end": 364.95,
+      "text": "a candidate who hacked the interview as"
+    },
+    {
+      "start": 364.96,
+      "end": 367.63,
+      "text": "an upper bound. Hugging Face's defense"
+    },
+    {
+      "start": 367.64,
+      "end": 369.83,
+      "text": "was the most beautiful thing. Their"
+    },
+    {
+      "start": 369.84,
+      "end": 372.55,
+      "text": "incident responders fed the 17,000"
+    },
+    {
+      "start": 372.56,
+      "end": 374.99,
+      "text": "attack events to the big hosted AI"
+    },
+    {
+      "start": 375,
+      "end": 377.39,
+      "text": "models for help. I guess you can predict"
+    },
+    {
+      "start": 377.4,
+      "end": 379.55,
+      "text": "what happened. The safety guardrails"
+    },
+    {
+      "start": 379.56,
+      "end": 381.47,
+      "text": "couldn't tell an incident responder from"
+    },
+    {
+      "start": 381.48,
+      "end": 383.35,
+      "text": "an attacker, so they blocked the good"
+    },
+    {
+      "start": 383.36,
+      "end": 384.87,
+      "text": "guys mid-breach. [music]"
+    },
+    {
+      "start": 384.88,
+      "end": 387.03,
+      "text": "Hugging Face finished the forensics on"
+    },
+    {
+      "start": 387.04,
+      "end": 388.79,
+      "text": "GLM-5.2,"
+    },
+    {
+      "start": 388.8,
+      "end": 391.31,
+      "text": "an open-weights Chinese model on their"
+    },
+    {
+      "start": 391.32,
+      "end": 393.909,
+      "text": "own hardware. The attacker's model ran"
+    },
+    {
+      "start": 393.919,
+      "end": 396.35,
+      "text": "with its filters deliberately off. The"
+    },
+    {
+      "start": 396.36,
+      "end": 398.79,
+      "text": "defenders got locked out by theirs. If"
+    },
+    {
+      "start": 398.8,
+      "end": 401.67,
+      "text": "that's not poetry, I don't know what is."
+    },
+    {
+      "start": 401.68,
+      "end": 404.27,
+      "text": "OpenAI's disclosure smells a lot like an"
+    },
+    {
+      "start": 404.28,
+      "end": 406.99,
+      "text": "ad. Nothing says buy our security"
+    },
+    {
+      "start": 407,
+      "end": 409.67,
+      "text": "product like our model found a zero-day"
+    },
+    {
+      "start": 409.68,
+      "end": 411.51,
+      "text": "and breached the major tech company on"
+    },
+    {
+      "start": 411.52,
+      "end": 414.47,
+      "text": "its own. The blog post funnels readers"
+    },
+    {
+      "start": 414.48,
+      "end": 416.23,
+      "text": "into their trusted access [music]"
+    },
+    {
+      "start": 416.24,
+      "end": 418.63,
+      "text": "program, and the victim got enrolled as"
+    },
+    {
+      "start": 418.64,
+      "end": 421.19,
+      "text": "a reference customer. The legal side,"
+    },
+    {
+      "start": 421.2,
+      "end": 423.39,
+      "text": "meanwhile, is suspiciously quiet. The"
+    },
+    {
+      "start": 423.4,
+      "end": 425.87,
+      "text": "Computer Fraud and Abuse Act has ruined"
+    },
+    {
+      "start": 425.88,
+      "end": 428.55,
+      "text": "lives over far less than 17,000"
+    },
+    {
+      "start": 428.56,
+      "end": 431.71,
+      "text": "unauthorized actions. Aaron Swartz faced"
+    },
+    {
+      "start": 431.72,
+      "end": 433.71,
+      "text": "decades in prison for downloading"
+    },
+    {
+      "start": 433.72,
+      "end": 436.59,
+      "text": "journal articles. OpenAI's model"
+    },
+    {
+      "start": 436.6,
+      "end": 438.83,
+      "text": "breached a competitor, and the outcome"
+    },
+    {
+      "start": 438.84,
+      "end": 441.31,
+      "text": "so far is a partnership."
+    },
+    {
+      "start": 441.32,
+      "end": 443.03,
+      "text": "Hugging Face did catch the attack"
+    },
+    {
+      "start": 443.04,
+      "end": 445.99,
+      "text": "independently days before OpenAI said a"
+    },
+    {
+      "start": 446,
+      "end": 446.705,
+      "text": "word,"
+    },
+    {
+      "start": 446.715,
+      "end": 446.75,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 446.76,
+      "end": 449.07,
+      "text": "&gt;&gt; and OpenAI disclosed the zero-day and"
+    },
+    {
+      "start": 449.08,
+      "end": 452.15,
+      "text": "ate a reputational hit in public. Sounds"
+    },
+    {
+      "start": 452.15999999999997,
+      "end": 454.67,
+      "text": "like a lot to stage. The full forensic"
+    },
+    {
+      "start": 454.68,
+      "end": 457.79,
+      "text": "timeline isn't public yet, so hold both"
+    },
+    {
+      "start": 457.8,
+      "end": 459.909,
+      "text": "readings until it is."
+    },
+    {
+      "start": 459.919,
+      "end": 461.909,
+      "text": "This happens close to home as well."
+    },
+    {
+      "start": 461.919,
+      "end": 464.15,
+      "text": "Anywhere you give an AI an objective and"
+    },
+    {
+      "start": 464.15999999999997,
+      "end": 466.39,
+      "text": "a way to score it, you've built a reward"
+    },
+    {
+      "start": 466.4,
+      "end": 469.11,
+      "text": "hacking opportunity. The coding agent"
+    },
+    {
+      "start": 469.12,
+      "end": 470.75,
+      "text": "that deletes the failing [music] test"
+    },
+    {
+      "start": 470.76,
+      "end": 473.83,
+      "text": "instead of fixing the bug. The LLM judge"
+    },
+    {
+      "start": 473.84000000000003,
+      "end": 476.15,
+      "text": "that prefers whichever model flatters"
+    },
+    {
+      "start": 476.15999999999997,
+      "end": 478.83,
+      "text": "it. The support bots that optimizes for"
+    },
+    {
+      "start": 478.84000000000003,
+      "end": 480.765,
+      "text": "closed tickets by closing tickets."
+    },
+    {
+      "start": 480.775,
+      "end": 481.31,
+      "text": "[music]"
+    },
+    {
+      "start": 481.32,
+      "end": 482.75,
+      "text": "It's little minions that act"
+    },
+    {
+      "start": 482.76,
+      "end": 485.51,
+      "text": "suspiciously like humans. What works is"
+    },
+    {
+      "start": 485.52,
+      "end": 488.03,
+      "text": "unglamorous. Separate the agent from the"
+    },
+    {
+      "start": 488.04,
+      "end": 490.87,
+      "text": "grader. No answer keys, no git history,"
+    },
+    {
+      "start": 490.88,
+      "end": 494.15,
+      "text": "no internet inside the evil. Use held"
+    },
+    {
+      "start": 494.16,
+      "end": 496.75,
+      "text": "out tests the model has never seen."
+    },
+    {
+      "start": 496.76,
+      "end": 498.79,
+      "text": "Watch the whole trajectory, not just the"
+    },
+    {
+      "start": 498.8,
+      "end": 501.19,
+      "text": "final result, because every individual"
+    },
+    {
+      "start": 501.2,
+      "end": 502.99,
+      "text": "step can look innocent [music]"
+    },
+    {
+      "start": 503,
+      "end": 505.35,
+      "text": "while the sequence is a heist. And if"
+    },
+    {
+      "start": 505.36,
+      "end": 508.19,
+      "text": "your security team leans on AI, have a"
+    },
+    {
+      "start": 508.2,
+      "end": 510.55,
+      "text": "self-hosted model vetted and ready"
+    },
+    {
+      "start": 510.56,
+      "end": 513.39,
+      "text": "before the incident, not during. The"
+    },
+    {
+      "start": 513.4,
+      "end": 515.11,
+      "text": "mistake [music] at the center of all of"
+    },
+    {
+      "start": 515.12,
+      "end": 517.469,
+      "text": "this is treating a measurable proxy as"
+    },
+    {
+      "start": 517.479,
+      "end": 518.95,
+      "text": "the real contract. [music]"
+    },
+    {
+      "start": 518.96,
+      "end": 520.75,
+      "text": "It's exactly like the infamous AI"
+    },
+    {
+      "start": 520.76,
+      "end": 522.99,
+      "text": "thought experiment. If the AI's"
+    },
+    {
+      "start": 523,
+      "end": 525.35,
+      "text": "objective is simply to maximize the"
+    },
+    {
+      "start": 525.36,
+      "end": 527.63,
+      "text": "production of paper clips, don't look"
+    },
+    {
+      "start": 527.64,
+      "end": 529.87,
+      "text": "surprised when it gets rid of everything"
+    },
+    {
+      "start": 529.88,
+      "end": 544.956,
+      "text": "that gets in the way of achieving it."
+    },
+    {
+      "start": 544.966,
+      "end": 546.986,
+      "text": "&gt;&gt; [music]"
+    }
+  ]
+}

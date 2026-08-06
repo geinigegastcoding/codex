@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": "p1",
+      "tags": [
+        "python",
+        "data"
+      ]
+    },
+    {
+      "id": "p2",
+      "tags": [
+        "games"
+      ]
+    }
+  ]
+}

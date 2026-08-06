@@ -1,0 +1,42 @@
+[
+  {
+    "projectId": "word-insight",
+    "bundle": "/projects/word-insight/word-insight.zip"
+  },
+  {
+    "projectId": "sports-table",
+    "bundle": "/projects/sports-table/sports-table.zip"
+  },
+  {
+    "projectId": "route-finder",
+    "bundle": "/projects/route-finder/route-finder.zip"
+  },
+  {
+    "projectId": "sports-collector",
+    "bundle": "/projects/sports-collector/sports-collector.zip"
+  },
+  {
+    "projectId": "sports-dashboard",
+    "bundle": "/projects/sports-dashboard/sports-dashboard.zip"
+  },
+  {
+    "projectId": "sports-predictor",
+    "bundle": "/projects/sports-predictor/sports-predictor.zip"
+  },
+  {
+    "projectId": "neural-from-scratch",
+    "bundle": "/projects/neural-from-scratch/neural-from-scratch.zip"
+  },
+  {
+    "projectId": "flappy-ai",
+    "bundle": "/projects/flappy-ai/flappy-ai.zip"
+  },
+  {
+    "projectId": "recommender",
+    "bundle": "/projects/recommender/recommender.zip"
+  },
+  {
+    "projectId": "magis-tool",
+    "bundle": "/projects/magis-tool/magis-tool.zip"
+  }
+]

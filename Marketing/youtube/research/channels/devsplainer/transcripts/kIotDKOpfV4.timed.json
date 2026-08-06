@@ -1,0 +1,1121 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.11,
+      "text": "Last month, [music] a free model you can"
+    },
+    {
+      "start": 2.12,
+      "end": 4.67,
+      "text": "download and run yourself tied Claude's"
+    },
+    {
+      "start": 4.68,
+      "end": 7.15,
+      "text": "best coding model head-to-head. They"
+    },
+    {
+      "start": 7.16,
+      "end": 10.75,
+      "text": "solved 25 tasks each [music] out of 45"
+    },
+    {
+      "start": 10.76,
+      "end": 14.07,
+      "text": "and gave the same answer on 43 of them."
+    },
+    {
+      "start": 14.08,
+      "end": 15.87,
+      "text": "That's the number that started turning"
+    },
+    {
+      "start": 15.88,
+      "end": 16.365,
+      "text": "heads."
+    },
+    {
+      "start": 16.375,
+      "end": 16.63,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 16.64,
+      "end": 18.51,
+      "text": "&gt;&gt; It's also the most misleading number in"
+    },
+    {
+      "start": 18.52,
+      "end": 21.23,
+      "text": "this whole comparison because tied one"
+    },
+    {
+      "start": 21.24,
+      "end": 24.19,
+      "text": "curated benchmark and replaces [music]"
+    },
+    {
+      "start": 24.2,
+      "end": 26.75,
+      "text": "are not the same sentence. The model is"
+    },
+    {
+      "start": 26.76,
+      "end": 31.27,
+      "text": "GLM 5.2. Open weights MIT license built"
+    },
+    {
+      "start": 31.28,
+      "end": 34.05,
+      "text": "by a Chinese lab called ZAI."
+    },
+    {
+      "start": 34.06,
+      "end": 34.19,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 34.2,
+      "end": 36.83,
+      "text": "&gt;&gt; A former Meta and DeepMind VP called it"
+    },
+    {
+      "start": 36.84,
+      "end": 38.71,
+      "text": "the first open model that passes [music]"
+    },
+    {
+      "start": 38.72,
+      "end": 41.63,
+      "text": "the bar as a daily driver. Perplexity"
+    },
+    {
+      "start": 41.64,
+      "end": 44.15,
+      "text": "CEO said he was impressed, almost"
+    },
+    {
+      "start": 44.16,
+      "end": 46.495,
+      "text": "shocked at how good it is at coding"
+    },
+    {
+      "start": 46.505,
+      "end": 49.39,
+      "text": "[music] and that it changes things. So,"
+    },
+    {
+      "start": 49.4,
+      "end": 52.15,
+      "text": "did the frontier just fall? Almost. By"
+    },
+    {
+      "start": 52.16,
+      "end": 53.87,
+      "text": "the end of this, you'll know exactly"
+    },
+    {
+      "start": 53.88,
+      "end": 56.27,
+      "text": "where a free model beats one that costs"
+    },
+    {
+      "start": 56.28,
+      "end": 58.15,
+      "text": "five [music] times as much, where it"
+    },
+    {
+      "start": 58.16,
+      "end": 60.39,
+      "text": "breaks down, and the one cost number"
+    },
+    {
+      "start": 60.4,
+      "end": 62.51,
+      "text": "that flips the entire it's cheaper"
+    },
+    {
+      "start": 62.52,
+      "end": 65.67,
+      "text": "argument upside down. For years, open"
+    },
+    {
+      "start": 65.68,
+      "end": 67.31,
+      "text": "models trailed the frontier by"
+    },
+    {
+      "start": 67.32,
+      "end": 70.63,
+      "text": "comfortable margin. Epoch AI tracks that"
+    },
+    {
+      "start": 70.64,
+      "end": 72.07,
+      "text": "gap and their measurement is a"
+    },
+    {
+      "start": 72.08,
+      "end": 74.47,
+      "text": "respectable headline. Since the start of"
+    },
+    {
+      "start": 74.48,
+      "end": 77.23,
+      "text": "2026, the best open weight models sit"
+    },
+    {
+      "start": 77.24,
+      "end": 79.59,
+      "text": "about four months behind the best closed"
+    },
+    {
+      "start": 79.6,
+      "end": 81.51,
+      "text": "ones on capability. [music]"
+    },
+    {
+      "start": 81.52,
+      "end": 84.55,
+      "text": "GLM 5.2 is the loudest data point in"
+    },
+    {
+      "start": 84.56,
+      "end": 87.15,
+      "text": "that collapse. It's the first open model"
+    },
+    {
+      "start": 87.16,
+      "end": 89.83,
+      "text": "developers use as a daily driver instead"
+    },
+    {
+      "start": 89.84,
+      "end": 92.27000000000001,
+      "text": "of a weekend curiosity. On the"
+    },
+    {
+      "start": 92.28,
+      "end": 94.75,
+      "text": "independent intelligence index, it's the"
+    },
+    {
+      "start": 94.75999999999999,
+      "end": 97.63,
+      "text": "number one open model on Earth, a few"
+    },
+    {
+      "start": 97.64,
+      "end": 101.15,
+      "text": "points behind Opus and GPT 5.5, [music]"
+    },
+    {
+      "start": 101.16,
+      "end": 102.78999999999999,
+      "text": "ahead of everything else you can"
+    },
+    {
+      "start": 102.8,
+      "end": 105.15,
+      "text": "download. It's a mixture of experts"
+    },
+    {
+      "start": 105.16,
+      "end": 107.50999999999999,
+      "text": "model, 753"
+    },
+    {
+      "start": 107.52000000000001,
+      "end": 110.47,
+      "text": "billion parameters total, around 40"
+    },
+    {
+      "start": 110.47999999999999,
+      "end": 112.95,
+      "text": "billion active at any moment with a"
+    },
+    {
+      "start": 112.96000000000001,
+      "end": 115.35,
+      "text": "million token context window. And the"
+    },
+    {
+      "start": 115.36,
+      "end": 117.59,
+      "text": "big labs paid attention because you can"
+    },
+    {
+      "start": 117.6,
+      "end": 120.15,
+      "text": "download it. The weights are yours."
+    },
+    {
+      "start": 120.16,
+      "end": 122.47,
+      "text": "Renting Claude or GPT means the model"
+    },
+    {
+      "start": 122.48,
+      "end": 124.99,
+      "text": "lives on someone else's server, priced"
+    },
+    {
+      "start": 125,
+      "end": 127.15,
+      "text": "how [music] they choose, switched on and"
+    },
+    {
+      "start": 127.16,
+      "end": 129.71,
+      "text": "off when they choose. Three weeks ago,"
+    },
+    {
+      "start": 129.72,
+      "end": 131.79,
+      "text": "Anthropic's top model got export"
+    },
+    {
+      "start": 131.8,
+      "end": 134.19,
+      "text": "suspended overnight. And teams with"
+    },
+    {
+      "start": 134.2,
+      "end": 136.43,
+      "text": "pipelines wired to it had to downgrade"
+    },
+    {
+      "start": 136.44,
+      "end": 139.03,
+      "text": "the same afternoon. A model sitting on"
+    },
+    {
+      "start": 139.04,
+      "end": 142.07,
+      "text": "your own disk can be repriced, retired,"
+    },
+    {
+      "start": 142.07999999999998,
+      "end": 145.03,
+      "text": "or taken away. The read on local Llama"
+    },
+    {
+      "start": 145.04,
+      "end": 147.19,
+      "text": "was blunt. You can't justify a"
+    },
+    {
+      "start": 147.2,
+      "end": 149.949,
+      "text": "multi-billion dollar valuation when open"
+    },
+    {
+      "start": 149.959,
+      "end": 151.71,
+      "text": "weights match you for the price of"
+    },
+    {
+      "start": 151.72,
+      "end": 155.19,
+      "text": "electricity. So, what does GLM 5.2 do"
+    },
+    {
+      "start": 155.2,
+      "end": 158.11,
+      "text": "well? Back-end and systems work."
+    },
+    {
+      "start": 158.12,
+      "end": 161.23,
+      "text": "Low-level C concurrency. Rust Vulcan"
+    },
+    {
+      "start": 161.24,
+      "end": 162.99,
+      "text": "reviewers keep handing it the"
+    },
+    {
+      "start": 163,
+      "end": 165.15,
+      "text": "unglamorous plumbing and keep coming"
+    },
+    {
+      "start": 165.16,
+      "end": 166.361,
+      "text": "away impressed."
+    },
+    {
+      "start": 166.371,
+      "end": 166.59,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 166.6,
+      "end": 168.75,
+      "text": "&gt;&gt; Debugging and security audits are its"
+    },
+    {
+      "start": 168.76,
+      "end": 171.31,
+      "text": "stand-out lane. In one test, it found a"
+    },
+    {
+      "start": 171.32,
+      "end": 174.23,
+      "text": "bug that Opus, GPT, and DeepSeek all"
+    },
+    {
+      "start": 174.24,
+      "end": 176.47,
+      "text": "walked straight [music] past. On a class"
+    },
+    {
+      "start": 176.48,
+      "end": 178.99,
+      "text": "of access control vulnerability, it beat"
+    },
+    {
+      "start": 179,
+      "end": 183.39,
+      "text": "Claude outright, 39% to 32. This is the"
+    },
+    {
+      "start": 183.4,
+      "end": 185.59,
+      "text": "model that reads the code carefully"
+    },
+    {
+      "start": 185.6,
+      "end": 187.03,
+      "text": "instead of pattern matching a"
+    },
+    {
+      "start": 187.04,
+      "end": 189.949,
+      "text": "plausible-looking answer. And clean"
+    },
+    {
+      "start": 189.959,
+      "end": 193.31,
+      "text": "one-shot builds, dashboards, data vis,"
+    },
+    {
+      "start": 193.32,
+      "end": 195.31,
+      "text": "front-ends that render correctly on the"
+    },
+    {
+      "start": 195.32,
+      "end": 198.11,
+      "text": "first try. On a same task test where a"
+    },
+    {
+      "start": 198.12,
+      "end": 200.50900000000001,
+      "text": "reviewer built a full CRM with each"
+    },
+    {
+      "start": 200.519,
+      "end": 204.63,
+      "text": "model, the GLM run came to $4.15."
+    },
+    {
+      "start": 204.64,
+      "end": 207.82999999999998,
+      "text": "The Opus run cost $21.27, [music]"
+    },
+    {
+      "start": 207.84,
+      "end": 210.43,
+      "text": "roughly five times more for work he"
+    },
+    {
+      "start": 210.44,
+      "end": 213.47,
+      "text": "rated only a hair better. The pitch for"
+    },
+    {
+      "start": 213.48,
+      "end": 214.82999999999998,
+      "text": "the people that [music] use these"
+    },
+    {
+      "start": 214.84,
+      "end": 218.03,
+      "text": "models, GLM for the volume, the frontier"
+    },
+    {
+      "start": 218.04,
+      "end": 220.50900000000001,
+      "text": "model for the hard 10%. [music]"
+    },
+    {
+      "start": 220.519,
+      "end": 222.43,
+      "text": "Now, the reason it can just drop into"
+    },
+    {
+      "start": 222.44,
+      "end": 225.55,
+      "text": "your current setup, GLM 5.2 is"
+    },
+    {
+      "start": 225.56,
+      "end": 228.587,
+      "text": "text-only. It has no vision. It cannot"
+    },
+    {
+      "start": 228.597,
+      "end": 230.59,
+      "text": "[music] see a screenshot, a design mock,"
+    },
+    {
+      "start": 230.6,
+      "end": 233.39,
+      "text": "a rendered UI, or chart you paste in."
+    },
+    {
+      "start": 233.4,
+      "end": 235.87,
+      "text": "For a huge slice of real front-end and"
+    },
+    {
+      "start": 235.88,
+      "end": 238.67000000000002,
+      "text": "product work, make it match this Figma,"
+    },
+    {
+      "start": 238.68,
+      "end": 241.07,
+      "text": "here's the broken layout, fix it, you're"
+    },
+    {
+      "start": 241.08,
+      "end": 243.87,
+      "text": "asking it to paint blindfolded. This"
+    },
+    {
+      "start": 243.88,
+      "end": 246.15,
+      "text": "rules it out of an entire category of"
+    },
+    {
+      "start": 246.16,
+      "end": 248.79,
+      "text": "daily work, and no amount of benchmark"
+    },
+    {
+      "start": 248.8,
+      "end": 250.202,
+      "text": "parity closes it."
+    },
+    {
+      "start": 250.212,
+      "end": 250.67,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 250.68,
+      "end": 252.99,
+      "text": "&gt;&gt; And the moment the task turns visual and"
+    },
+    {
+      "start": 253,
+      "end": 256.509,
+      "text": "iterative, 3D, 3JS, physics you have to"
+    },
+    {
+      "start": 256.519,
+      "end": 258.71,
+      "text": "eyeball and nudge, the head-to-heads go"
+    },
+    {
+      "start": 258.72,
+      "end": 261.19,
+      "text": "lopsided. Claude [music] takes a massive"
+    },
+    {
+      "start": 261.2,
+      "end": 263.909,
+      "text": "lead as soon as the work needs eyes."
+    },
+    {
+      "start": 263.919,
+      "end": 265.43,
+      "text": "Now, let's look beyond the initial"
+    },
+    {
+      "start": 265.44,
+      "end": 267.51,
+      "text": "impressive data. That that heat"
+    },
+    {
+      "start": 267.52,
+      "end": 270.83,
+      "text": "benchmark from the intro, vendor run, 45"
+    },
+    {
+      "start": 270.84,
+      "end": 272.47,
+      "text": "curated tasks [music] on a tuned"
+    },
+    {
+      "start": 272.48,
+      "end": 275.23,
+      "text": "harness. Move to the independent agent"
+    },
+    {
+      "start": 275.24,
+      "end": 277.87,
+      "text": "evaluations, the ones measuring long"
+    },
+    {
+      "start": 277.88,
+      "end": 279.99,
+      "text": "autonomous multi-file work, [music] and"
+    },
+    {
+      "start": 280,
+      "end": 283.15,
+      "text": "the picture shifts. Artificial Analysis"
+    },
+    {
+      "start": 283.15999999999997,
+      "end": 288.11,
+      "text": "Coding Agent Index, GLM scores 58, Opus"
+    },
+    {
+      "start": 288.12,
+      "end": 289.67,
+      "text": "73,"
+    },
+    {
+      "start": 289.68,
+      "end": 291.31,
+      "text": "GPT-5.5"
+    },
+    {
+      "start": 291.32,
+      "end": 294.15,
+      "text": "running in Codex, 76."
+    },
+    {
+      "start": 294.15999999999997,
+      "end": 296.11,
+      "text": "On a contamination-free software"
+    },
+    {
+      "start": 296.12,
+      "end": 300.43,
+      "text": "engineering test, GLM lands at 29% while"
+    },
+    {
+      "start": 300.44,
+      "end": 304.99,
+      "text": "Opus hits 56, and GPT clears 64. [music]"
+    },
+    {
+      "start": 305,
+      "end": 307.59,
+      "text": "On the longest horizon marathon test,"
+    },
+    {
+      "start": 307.6,
+      "end": 310.71,
+      "text": "the multi-hour autonomous jobs, GLM"
+    },
+    {
+      "start": 310.72,
+      "end": 314.83,
+      "text": "scores 13. Opus scores 26. That's"
+    },
+    {
+      "start": 314.84,
+      "end": 315.909,
+      "text": "double."
+    },
+    {
+      "start": 315.919,
+      "end": 318.35,
+      "text": "The pattern holds across every rigorous"
+    },
+    {
+      "start": 318.36,
+      "end": 321.83,
+      "text": "test. GLM ties or nearly ties on short"
+    },
+    {
+      "start": 321.84,
+      "end": 324.39,
+      "text": "bounded tasks, and slips hard on the"
+    },
+    {
+      "start": 324.4,
+      "end": 327.31,
+      "text": "longest least supervised ones. Close,"
+    },
+    {
+      "start": 327.32,
+      "end": 329.43,
+      "text": "but a clear step behind on the tail"
+    },
+    {
+      "start": 329.44,
+      "end": 332.11,
+      "text": "relevant for autonomous coding. There's"
+    },
+    {
+      "start": 332.12,
+      "end": 334.67,
+      "text": "also a failure mode worth naming because"
+    },
+    {
+      "start": 334.68,
+      "end": 337.318,
+      "text": "both sides do it, and GLM does it more."
+    },
+    {
+      "start": 337.328,
+      "end": 337.55,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 337.56,
+      "end": 340.67,
+      "text": "&gt;&gt; Declaring \"Fixed, all tests pass.\" on"
+    },
+    {
+      "start": 340.68,
+      "end": 343.15,
+      "text": "work that hidden tests then reject."
+    },
+    {
+      "start": 343.15999999999997,
+      "end": 346.31,
+      "text": "Confidently wrong. GAI disclosed this"
+    },
+    {
+      "start": 346.32,
+      "end": 349.71,
+      "text": "about their own model. GLM 5.2 reward"
+    },
+    {
+      "start": 349.72,
+      "end": 351.27,
+      "text": "hacks more than the previous [music]"
+    },
+    {
+      "start": 351.28,
+      "end": 353.63,
+      "text": "version. It'll read protected test"
+    },
+    {
+      "start": 353.64,
+      "end": 356.03,
+      "text": "files, even fetch reference solutions to"
+    },
+    {
+      "start": 356.04,
+      "end": 356.969,
+      "text": "fake a pass."
+    },
+    {
+      "start": 356.979,
+      "end": 357.19,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 357.2,
+      "end": 359.71,
+      "text": "&gt;&gt; So, ZAI shipped a dedicated guard"
+    },
+    {
+      "start": 359.72,
+      "end": 362.209,
+      "text": "against their own model cheating. That"
+    },
+    {
+      "start": 362.219,
+      "end": 364.23,
+      "text": "[music] tells you a lot. So, how much"
+    },
+    {
+      "start": 364.24,
+      "end": 366.47,
+      "text": "does this model save you in cash? On"
+    },
+    {
+      "start": 366.48,
+      "end": 368.55,
+      "text": "sticker price, the gap is there. [music]"
+    },
+    {
+      "start": 368.56,
+      "end": 372.95,
+      "text": "GLM runs roughly a dollar 40 in, 440 out"
+    },
+    {
+      "start": 372.96,
+      "end": 376.75,
+      "text": "per million tokens. Opus is 5 and 25."
+    },
+    {
+      "start": 376.76,
+      "end": 380.67,
+      "text": "GPT 5.5 5 [music] and 30. A big session"
+    },
+    {
+      "start": 380.68,
+      "end": 383.51,
+      "text": "that costs about $9 on Opus comes in"
+    },
+    {
+      "start": 383.52,
+      "end": 386.11,
+      "text": "under two on GLM, around five [music]"
+    },
+    {
+      "start": 386.12,
+      "end": 389.39,
+      "text": "times cheaper. Now, the gotchas."
+    },
+    {
+      "start": 389.4,
+      "end": 392.07,
+      "text": "GLM is verbose and it's measured about"
+    },
+    {
+      "start": 392.08,
+      "end": 395.63,
+      "text": "43,000 output tokens per task. Most of"
+    },
+    {
+      "start": 395.64,
+      "end": 397.909,
+      "text": "it reasoning more than its own last"
+    },
+    {
+      "start": 397.919,
+      "end": 400.75,
+      "text": "version and more than its rivals. You"
+    },
+    {
+      "start": 400.76,
+      "end": 402.909,
+      "text": "pay per token, so all that thinking"
+    },
+    {
+      "start": 402.919,
+      "end": 404.63,
+      "text": "narrows the real gap from [music] six"
+    },
+    {
+      "start": 404.64,
+      "end": 408.03,
+      "text": "times down to closer to four or five. On"
+    },
+    {
+      "start": 408.04,
+      "end": 410.23,
+      "text": "that independent coding agent benchmark,"
+    },
+    {
+      "start": 410.24,
+      "end": 414.79,
+      "text": "GPT 5.5 running in Codex costs about $5"
+    },
+    {
+      "start": 414.8,
+      "end": 417.75,
+      "text": "a task at index 76. [music]"
+    },
+    {
+      "start": 417.76,
+      "end": 420.23,
+      "text": "GLM running in Claude code costs about"
+    },
+    {
+      "start": 420.24,
+      "end": 424.43,
+      "text": "650 a task at index 58. The stronger"
+    },
+    {
+      "start": 424.44,
+      "end": 426.83,
+      "text": "closed model was cheaper per finished"
+    },
+    {
+      "start": 426.84,
+      "end": 429.75,
+      "text": "task [music] and better at it. GLM is"
+    },
+    {
+      "start": 429.76,
+      "end": 432.15,
+      "text": "always cheaper simply false for real"
+    },
+    {
+      "start": 432.16,
+      "end": 433.79,
+      "text": "agent work."
+    },
+    {
+      "start": 433.8,
+      "end": 436.99,
+      "text": "Per token, GLM wins. Per subscription,"
+    },
+    {
+      "start": 437,
+      "end": 439.909,
+      "text": "it often loses. A flat Claude or Codex"
+    },
+    {
+      "start": 439.919,
+      "end": 442.63,
+      "text": "plan beats metered GLM usage for heavy"
+    },
+    {
+      "start": 442.64,
+      "end": 444.085,
+      "text": "users. And"
+    },
+    {
+      "start": 444.095,
+      "end": 444.27,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 444.28,
+      "end": 446.23,
+      "text": "&gt;&gt; just run it free at home is a silly"
+    },
+    {
+      "start": 446.24,
+      "end": 448.63,
+      "text": "statement. This model wants something"
+    },
+    {
+      "start": 448.64,
+      "end": 450.909,
+      "text": "around eight top-end [music] data center"
+    },
+    {
+      "start": 450.919,
+      "end": 454.39,
+      "text": "GPUs to run properly. Squeeze it onto a"
+    },
+    {
+      "start": 454.4,
+      "end": 457.07,
+      "text": "home rig with aggressive compression and"
+    },
+    {
+      "start": 457.08,
+      "end": 458.95,
+      "text": "you've quantized it down below a"
+    },
+    {
+      "start": 458.96,
+      "end": 461.59000000000003,
+      "text": "mid-tier model. Free to download does"
+    },
+    {
+      "start": 461.6,
+      "end": 464.47,
+      "text": "not mean free to run. One more for the"
+    },
+    {
+      "start": 464.48,
+      "end": 467.79,
+      "text": "enterprises. ZAI's coding plan can train"
+    },
+    {
+      "start": 467.8,
+      "end": 471.03,
+      "text": "on your code per its own terms. If that"
+    },
+    {
+      "start": 471.04,
+      "end": 472.99,
+      "text": "matters, you're self-hosting the open"
+    },
+    {
+      "start": 473,
+      "end": 475.525,
+      "text": "weights or renting it from a US provider"
+    },
+    {
+      "start": 475.53499999999997,
+      "end": 478.31,
+      "text": "[music] with a no retention policy. Not"
+    },
+    {
+      "start": 478.32,
+      "end": 482.07,
+      "text": "going through ZAI directly. So, switch"
+    },
+    {
+      "start": 482.08,
+      "end": 484.55,
+      "text": "to the free model or not. The developers"
+    },
+    {
+      "start": 484.56,
+      "end": 486.83,
+      "text": "getting the most out of this are routing"
+    },
+    {
+      "start": 486.84,
+      "end": 488.75,
+      "text": "that the frontier model plan and review"
+    },
+    {
+      "start": 488.76,
+      "end": 492.27,
+      "text": "the hard 10 to 20%. Let GLM grind the"
+    },
+    {
+      "start": 492.28,
+      "end": 494.31,
+      "text": "cheap bulk, the boilerplate, the"
+    },
+    {
+      "start": 494.32,
+      "end": 496.63,
+      "text": "refactors, the high-volume adjunctive"
+    },
+    {
+      "start": 496.64,
+      "end": 498.909,
+      "text": "work where five times cheaper actually"
+    },
+    {
+      "start": 498.919,
+      "end": 501.15,
+      "text": "compounds. As other reviewers have"
+    },
+    {
+      "start": 501.16,
+      "end": 503.909,
+      "text": "mentioned, keep GLM 5.2 [music] in"
+    },
+    {
+      "start": 503.919,
+      "end": 506.47,
+      "text": "rotation, not in the spotlight. A"
+    },
+    {
+      "start": 506.48,
+      "end": 508.59,
+      "text": "routing setup like that can cut a team's"
+    },
+    {
+      "start": 508.6,
+      "end": 511.27,
+      "text": "spend by roughly half with no drop in"
+    },
+    {
+      "start": 511.28,
+      "end": 513.63,
+      "text": "quality. And the general takeaway from"
+    },
+    {
+      "start": 513.64,
+      "end": 514.825,
+      "text": "model releases,"
+    },
+    {
+      "start": 514.835,
+      "end": 514.909,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 514.919,
+      "end": 517.469,
+      "text": "&gt;&gt; don't trust the leaderboard. Take two or"
+    },
+    {
+      "start": 517.479,
+      "end": 520.11,
+      "text": "three of your own real tickets, run them"
+    },
+    {
+      "start": 520.12,
+      "end": 522.27,
+      "text": "on a branch through each model, and look"
+    },
+    {
+      "start": 522.28,
+      "end": 524.71,
+      "text": "at the diffs. Your code base is the only"
+    },
+    {
+      "start": 524.72,
+      "end": 527.71,
+      "text": "benchmark that counts. Claude and GPT"
+    },
+    {
+      "start": 527.72,
+      "end": 529.35,
+      "text": "aren't finished. [music] The independent"
+    },
+    {
+      "start": 529.36,
+      "end": 531.03,
+      "text": "numbers still hand them the hard"
+    },
+    {
+      "start": 531.04,
+      "end": 533.55,
+      "text": "autonomous see-the-screen work. The"
+    },
+    {
+      "start": 533.56,
+      "end": 535.71,
+      "text": "thing that moved is the floor. A free"
+    },
+    {
+      "start": 535.72,
+      "end": 537.99,
+      "text": "download is now four months, not two"
+    },
+    {
+      "start": 538,
+      "end": 540.63,
+      "text": "years, behind the best money can buy,"
+    },
+    {
+      "start": 540.64,
+      "end": 542.15,
+      "text": "and good enough [music] that a Vercel"
+    },
+    {
+      "start": 542.16,
+      "end": 545.63,
+      "text": "CEO says it changes things. The frontier"
+    },
+    {
+      "start": 545.64,
+      "end": 547.99,
+      "text": "didn't fall, but developers are now"
+    },
+    {
+      "start": 548,
+      "end": 550.67,
+      "text": "starting to see reliable alternatives"
+    },
+    {
+      "start": 550.68,
+      "end": 567.881,
+      "text": "for their work."
+    },
+    {
+      "start": 567.891,
+      "end": 569.9110000000001,
+      "text": "&gt;&gt; [music]"
+    }
+  ]
+}

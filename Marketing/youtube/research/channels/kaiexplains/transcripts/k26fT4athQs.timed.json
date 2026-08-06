@@ -1,0 +1,976 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.03,
+      "text": "I canceled my Claude code subscription"
+    },
+    {
+      "start": 2.04,
+      "end": 4.19,
+      "text": "last month and not because Claude code"
+    },
+    {
+      "start": 4.2,
+      "end": 6.75,
+      "text": "got worse. I canceled it because one"
+    },
+    {
+      "start": 6.76,
+      "end": 8.87,
+      "text": "open source tool now lets me run Claude"
+    },
+    {
+      "start": 8.88,
+      "end": 11.23,
+      "text": "code for almost nothing. The gateway is"
+    },
+    {
+      "start": 11.24,
+      "end": 14.07,
+      "text": "called Omni route. It is a free router,"
+    },
+    {
+      "start": 14.08,
+      "end": 16.67,
+      "text": "one endpoint on your machine, over 200"
+    },
+    {
+      "start": 16.68,
+      "end": 18.91,
+      "text": "providers sitting behind it. 50 of those"
+    },
+    {
+      "start": 18.92,
+      "end": 21.31,
+      "text": "providers ship a free tier. 11 of them"
+    },
+    {
+      "start": 21.32,
+      "end": 23.75,
+      "text": "stay free forever. Wire it into Claude"
+    },
+    {
+      "start": 23.76,
+      "end": 25.63,
+      "text": "code and you get the exact same"
+    },
+    {
+      "start": 25.64,
+      "end": 27.71,
+      "text": "experience you already love. Model"
+    },
+    {
+      "start": 27.72,
+      "end": 30.67,
+      "text": "agnostic routing, no 5-hour timer, and a"
+    },
+    {
+      "start": 30.68,
+      "end": 33.15,
+      "text": "bill that trends towards zero. Let me be"
+    },
+    {
+      "start": 33.16,
+      "end": 35.27,
+      "text": "fair up front. Claude code is one of the"
+    },
+    {
+      "start": 35.28,
+      "end": 37.43,
+      "text": "best coding tools anyone has shipped."
+    },
+    {
+      "start": 37.44,
+      "end": 39.23,
+      "text": "Opus is still what I reach for on the"
+    },
+    {
+      "start": 39.24,
+      "end": 41.51,
+      "text": "hardest problems. So, this is not a"
+    },
+    {
+      "start": 41.52,
+      "end": 43.43,
+      "text": "takedown. This is about the subscription"
+    },
+    {
+      "start": 43.44,
+      "end": 45.47,
+      "text": "cost and the usage ceiling and why the"
+    },
+    {
+      "start": 45.48,
+      "end": 47.35,
+      "text": "thing I was paying to avoid finally has"
+    },
+    {
+      "start": 47.36,
+      "end": 49.47,
+      "text": "a workaround. So, here is the entire"
+    },
+    {
+      "start": 49.48,
+      "end": 51.99,
+      "text": "build, start to finish, plus the honest"
+    },
+    {
+      "start": 52,
+      "end": 54.19,
+      "text": "places where it still has limits. Start"
+    },
+    {
+      "start": 54.2,
+      "end": 56.27,
+      "text": "with the part people skip past. Claude"
+    },
+    {
+      "start": 56.28,
+      "end": 58.27,
+      "text": "code itself is not the problem. The"
+    },
+    {
+      "start": 58.28,
+      "end": 60.39,
+      "text": "problem is the meter underneath it. The"
+    },
+    {
+      "start": 60.4,
+      "end": 63.99,
+      "text": "pro plan is $20 a month. Max runs $100"
+    },
+    {
+      "start": 64,
+      "end": 66.95,
+      "text": "to $200. Your usage refills on a rolling"
+    },
+    {
+      "start": 66.96,
+      "end": 69.55,
+      "text": "5-hour window with a weekly cap stacked"
+    },
+    {
+      "start": 69.56,
+      "end": 71.39,
+      "text": "on top of it. Hit the ceiling in the"
+    },
+    {
+      "start": 71.4,
+      "end": 73.51,
+      "text": "middle of a task and you either wait it"
+    },
+    {
+      "start": 73.52,
+      "end": 76.15,
+      "text": "out or flip to pay as you go and watch"
+    },
+    {
+      "start": 76.16,
+      "end": 78.27,
+      "text": "the tokens tick past your budget."
+    },
+    {
+      "start": 78.28,
+      "end": 80.39,
+      "text": "Anthropic even doubled those limits back"
+    },
+    {
+      "start": 80.4,
+      "end": 82.59,
+      "text": "in May, which tells you how often people"
+    },
+    {
+      "start": 82.6,
+      "end": 85.07,
+      "text": "were slamming into them. Add it all up"
+    },
+    {
+      "start": 85.08,
+      "end": 87.15,
+      "text": "and here is your position. A tool you"
+    },
+    {
+      "start": 87.16,
+      "end": 89.67,
+      "text": "genuinely love on a clock you do not"
+    },
+    {
+      "start": 89.68,
+      "end": 92.11,
+      "text": "control. For occasional work, that is"
+    },
+    {
+      "start": 92.12,
+      "end": 94.03,
+      "text": "completely fine. For someone in the"
+    },
+    {
+      "start": 94.03999999999999,
+      "end": 96.22999999999999,
+      "text": "terminal all day, the ceiling shows up"
+    },
+    {
+      "start": 96.24000000000001,
+      "end": 97.87,
+      "text": "sooner than you would like. What I"
+    },
+    {
+      "start": 97.88,
+      "end": 100.03,
+      "text": "actually wanted was small. The exact"
+    },
+    {
+      "start": 100.03999999999999,
+      "end": 103.11,
+      "text": "same tight loop of read, edit, run, and"
+    },
+    {
+      "start": 103.12,
+      "end": 105.47,
+      "text": "fix. The same Claude code interface I"
+    },
+    {
+      "start": 105.47999999999999,
+      "end": 107.43,
+      "text": "already had muscle memory for, but with"
+    },
+    {
+      "start": 107.44,
+      "end": 110.27000000000001,
+      "text": "my own keys, my own routing, and no"
+    },
+    {
+      "start": 110.28,
+      "end": 112.15,
+      "text": "5-hour timer tapping me on the shoulder"
+    },
+    {
+      "start": 112.16,
+      "end": 113.71000000000001,
+      "text": "halfway through an afternoon of real"
+    },
+    {
+      "start": 113.72,
+      "end": 116.22999999999999,
+      "text": "work. It turns out that precise wish is"
+    },
+    {
+      "start": 116.24000000000001,
+      "end": 118.22999999999999,
+      "text": "what Omni route was built to grant. So,"
+    },
+    {
+      "start": 118.24000000000001,
+      "end": 119.67,
+      "text": "let me walk through what Omni route"
+    },
+    {
+      "start": 119.68,
+      "end": 121.63,
+      "text": "actually is and then show you how it"
+    },
+    {
+      "start": 121.64,
+      "end": 123.99,
+      "text": "snaps into Claude code. Omni route is a"
+    },
+    {
+      "start": 124,
+      "end": 126.469,
+      "text": "free gateway you run yourself. One open"
+    },
+    {
+      "start": 126.479,
+      "end": 128.07,
+      "text": "AI compatible endpoint sitting on"
+    },
+    {
+      "start": 128.08,
+      "end": 130.79,
+      "text": "localhost and behind it every provider"
+    },
+    {
+      "start": 130.8,
+      "end": 133.19,
+      "text": "you own stitched into a single tidy list"
+    },
+    {
+      "start": 133.2,
+      "end": 135.27,
+      "text": "of models Claude code can pick from. The"
+    },
+    {
+      "start": 135.28,
+      "end": 137.27,
+      "text": "headline numbers are the whole pitch."
+    },
+    {
+      "start": 137.28,
+      "end": 139.63,
+      "text": "230 plus providers reachable through one"
+    },
+    {
+      "start": 139.64,
+      "end": 141.91,
+      "text": "address. More than 50 of them carry a"
+    },
+    {
+      "start": 141.92000000000002,
+      "end": 145.19,
+      "text": "free tier. 11 stay permanently free. No"
+    },
+    {
+      "start": 145.2,
+      "end": 147.19,
+      "text": "credit card at all. Claude code only"
+    },
+    {
+      "start": 147.2,
+      "end": 149.51,
+      "text": "ever sees that one localhost endpoint"
+    },
+    {
+      "start": 149.52,
+      "end": 151.39,
+      "text": "and Omni route decides which provider"
+    },
+    {
+      "start": 151.4,
+      "end": 153.55,
+      "text": "actually answers. The feature that earns"
+    },
+    {
+      "start": 153.56,
+      "end": 155.949,
+      "text": "the name is fallback. If a provider goes"
+    },
+    {
+      "start": 155.959,
+      "end": 159.19,
+      "text": "down, gets rate limited, or just drags,"
+    },
+    {
+      "start": 159.2,
+      "end": 161.07,
+      "text": "Omni route reroutes the very same"
+    },
+    {
+      "start": 161.07999999999998,
+      "end": 163.51,
+      "text": "request to a healthy one on its own mid"
+    },
+    {
+      "start": 163.52,
+      "end": 165.91,
+      "text": "request without bothering you. Its"
+    },
+    {
+      "start": 165.92000000000002,
+      "end": 169.35,
+      "text": "tagline is word for word never stop"
+    },
+    {
+      "start": 169.36,
+      "end": 171.27,
+      "text": "coding and that turns out to be the"
+    },
+    {
+      "start": 171.28,
+      "end": 173.63,
+      "text": "entire point of the thing. Then comes"
+    },
+    {
+      "start": 173.64,
+      "end": 175.71,
+      "text": "the compression which is smarter than it"
+    },
+    {
+      "start": 175.72,
+      "end": 178.55,
+      "text": "sounds. Coding agents fire off enormous"
+    },
+    {
+      "start": 178.56,
+      "end": 180.949,
+      "text": "repetitive tool payloads on every turn."
+    },
+    {
+      "start": 180.959,
+      "end": 183.79,
+      "text": "Omni route runs two passes it calls RTK"
+    },
+    {
+      "start": 183.8,
+      "end": 185.949,
+      "text": "and caveman and on that tool heavy"
+    },
+    {
+      "start": 185.959,
+      "end": 189.55,
+      "text": "traffic it strips out 78 to 95% of the"
+    },
+    {
+      "start": 189.56,
+      "end": 191.87,
+      "text": "tokens before they ever hit the model"
+    },
+    {
+      "start": 191.88,
+      "end": 193.87,
+      "text": "and it is careful about exactly the part"
+    },
+    {
+      "start": 193.88,
+      "end": 196.82999999999998,
+      "text": "that scares you. Your code, your URLs,"
+    },
+    {
+      "start": 196.84,
+      "end": 198.47,
+      "text": "and your structured JSON come through"
+    },
+    {
+      "start": 198.48,
+      "end": 200.39,
+      "text": "byte for byte identical. It only"
+    },
+    {
+      "start": 200.4,
+      "end": 202.03,
+      "text": "squeezes the repetitive pros and the"
+    },
+    {
+      "start": 202.04,
+      "end": 204.03,
+      "text": "tool chatter and it leaves the actual"
+    },
+    {
+      "start": 204.04,
+      "end": 205.55,
+      "text": "source you are shipping completely"
+    },
+    {
+      "start": 205.56,
+      "end": 209.07,
+      "text": "untouched. On privacy, it stays home."
+    },
+    {
+      "start": 209.07999999999998,
+      "end": 210.99,
+      "text": "Omni route runs entirely on your own"
+    },
+    {
+      "start": 211,
+      "end": 213.03,
+      "text": "hardware. Your provider keys stay on the"
+    },
+    {
+      "start": 213.04,
+      "end": 215.949,
+      "text": "box and it does not phone out to anyone."
+    },
+    {
+      "start": 215.959,
+      "end": 218.03,
+      "text": "You get all of the routing and none of"
+    },
+    {
+      "start": 218.04,
+      "end": 219.99,
+      "text": "the usual price which is handing some"
+    },
+    {
+      "start": 220,
+      "end": 222.22899999999998,
+      "text": "middleman a full copy of your traffic."
+    },
+    {
+      "start": 222.239,
+      "end": 225.22899999999998,
+      "text": "It is not a thin little proxy either. It"
+    },
+    {
+      "start": 225.239,
+      "end": 227.50900000000001,
+      "text": "ships around 94 built-in tools over the"
+    },
+    {
+      "start": 227.519,
+      "end": 229.99,
+      "text": "model context protocol plus a semantic"
+    },
+    {
+      "start": 230,
+      "end": 231.75,
+      "text": "cache that remembers answers it has"
+    },
+    {
+      "start": 231.76,
+      "end": 233.67000000000002,
+      "text": "already computed. So, a repeated"
+    },
+    {
+      "start": 233.68,
+      "end": 235.95,
+      "text": "question can skip the model entirely and"
+    },
+    {
+      "start": 235.96,
+      "end": 238.39,
+      "text": "come back instantly for free. Underneath"
+    },
+    {
+      "start": 238.4,
+      "end": 240.55,
+      "text": "all of it are 18 routing strategies to"
+    },
+    {
+      "start": 240.56,
+      "end": 242.91,
+      "text": "pick from. Cheapest first, fastest"
+    },
+    {
+      "start": 242.92,
+      "end": 246.07,
+      "text": "first, weighted splits, hard cost caps,"
+    },
+    {
+      "start": 246.08,
+      "end": 248.31,
+      "text": "and a few more. You set the policy one"
+    },
+    {
+      "start": 248.32,
+      "end": 250.43,
+      "text": "time, then forget it, while the gateway"
+    },
+    {
+      "start": 250.44,
+      "end": 252.27,
+      "text": "makes the actual call on every single"
+    },
+    {
+      "start": 252.28,
+      "end": 254.55,
+      "text": "request. Now, watch the two click into"
+    },
+    {
+      "start": 254.56,
+      "end": 256.59,
+      "text": "one thing. Omni route has a button that"
+    },
+    {
+      "start": 256.6,
+      "end": 258.99,
+      "text": "generates a Claude code config for you."
+    },
+    {
+      "start": 259,
+      "end": 260.789,
+      "text": "It spits out a ready file with every"
+    },
+    {
+      "start": 260.799,
+      "end": 262.23,
+      "text": "model it can reach already listed"
+    },
+    {
+      "start": 262.24,
+      "end": 264.79,
+      "text": "inside. You drop that file in place,"
+    },
+    {
+      "start": 264.8,
+      "end": 266.35,
+      "text": "point Claude code at the localhost"
+    },
+    {
+      "start": 266.36,
+      "end": 268.31,
+      "text": "endpoint, and the agent is wired to the"
+    },
+    {
+      "start": 268.32,
+      "end": 271.35,
+      "text": "whole pool. With that, the loop closes."
+    },
+    {
+      "start": 271.36,
+      "end": 273.43,
+      "text": "You type a task into Claude code. It"
+    },
+    {
+      "start": 273.44,
+      "end": 276.19,
+      "text": "plans the change, edits your files, runs"
+    },
+    {
+      "start": 276.2,
+      "end": 278.11,
+      "text": "the tests, reads whatever the compiler"
+    },
+    {
+      "start": 278.12,
+      "end": 280.51,
+      "text": "complained about, and fixes it. Then"
+    },
+    {
+      "start": 280.52,
+      "end": 282.83,
+      "text": "loops again until things pass. It is the"
+    },
+    {
+      "start": 282.84000000000003,
+      "end": 284.83,
+      "text": "exact same agentic rhythm you already"
+    },
+    {
+      "start": 284.84000000000003,
+      "end": 286.23,
+      "text": "know. The whole difference lies"
+    },
+    {
+      "start": 286.24,
+      "end": 288.23,
+      "text": "underneath. The tokens are now flowing"
+    },
+    {
+      "start": 288.24,
+      "end": 290.11,
+      "text": "through 50 free tiers with automatic"
+    },
+    {
+      "start": 290.12,
+      "end": 292.15,
+      "text": "fallbacks standing in front of them."
+    },
+    {
+      "start": 292.15999999999997,
+      "end": 294.59000000000003,
+      "text": "That free pool alone documents around 1"
+    },
+    {
+      "start": 294.6,
+      "end": 296.67,
+      "text": "and 1/2 billion tokens a month, which is"
+    },
+    {
+      "start": 296.68,
+      "end": 298.11,
+      "text": "far more headroom than a single"
+    },
+    {
+      "start": 298.12,
+      "end": 300.23,
+      "text": "developer can burn. So, the money math"
+    },
+    {
+      "start": 300.24,
+      "end": 302.31,
+      "text": "simply flips. The workflow that used to"
+    },
+    {
+      "start": 302.32,
+      "end": 304.43,
+      "text": "mean a subscription plus overage now"
+    },
+    {
+      "start": 304.44,
+      "end": 306.909,
+      "text": "leans on free capacity first and only"
+    },
+    {
+      "start": 306.919,
+      "end": 308.71,
+      "text": "reaches for a paid Anthropic key when"
+    },
+    {
+      "start": 308.72,
+      "end": 310.909,
+      "text": "you genuinely want Opus on one hard"
+    },
+    {
+      "start": 310.919,
+      "end": 314.03,
+      "text": "problem. Most afternoons, honestly, I"
+    },
+    {
+      "start": 314.04,
+      "end": 315.87,
+      "text": "never reach for it at all. And that"
+    },
+    {
+      "start": 315.88,
+      "end": 318.31,
+      "text": "5-hour window, for me, it is simply"
+    },
+    {
+      "start": 318.32,
+      "end": 320.87,
+      "text": "gone. When one provider taps out, the"
+    },
+    {
+      "start": 320.88,
+      "end": 322.55,
+      "text": "next one picks the session up without a"
+    },
+    {
+      "start": 322.56,
+      "end": 324.59,
+      "text": "single pause. I work straight through"
+    },
+    {
+      "start": 324.6,
+      "end": 326.55,
+      "text": "the day, and nothing pops up to tell me"
+    },
+    {
+      "start": 326.56,
+      "end": 328.31,
+      "text": "to come back in a few hours once the"
+    },
+    {
+      "start": 328.32,
+      "end": 330.15,
+      "text": "meter cools off. Here's where the"
+    },
+    {
+      "start": 330.16,
+      "end": 333.11,
+      "text": "compression really pays off. On a long,"
+    },
+    {
+      "start": 333.12,
+      "end": 336.47,
+      "text": "tool-heavy session, cutting 78% to 95%"
+    },
+    {
+      "start": 336.48,
+      "end": 338.55,
+      "text": "of the tokens means the same work that"
+    },
+    {
+      "start": 338.56,
+      "end": 340.35,
+      "text": "used to burn clean through a paid budget"
+    },
+    {
+      "start": 340.36,
+      "end": 342.909,
+      "text": "now barely dents a free one. The savings"
+    },
+    {
+      "start": 342.919,
+      "end": 345.03,
+      "text": "and the fallback compound on each other."
+    },
+    {
+      "start": 345.04,
+      "end": 346.47,
+      "text": "That was the afternoon I canceled the"
+    },
+    {
+      "start": 346.48,
+      "end": 348.59000000000003,
+      "text": "subscription. The same Claude code"
+    },
+    {
+      "start": 348.6,
+      "end": 351.51,
+      "text": "interface, my own routing, and no meter"
+    },
+    {
+      "start": 351.52,
+      "end": 353.39,
+      "text": "running in the corner of the screen."
+    },
+    {
+      "start": 353.4,
+      "end": 355.55,
+      "text": "Now, the honest half, because none of"
+    },
+    {
+      "start": 355.56,
+      "end": 358.23,
+      "text": "this is magic. Free tiers come with real"
+    },
+    {
+      "start": 358.24,
+      "end": 361.11,
+      "text": "strings attached. Slower models, tighter"
+    },
+    {
+      "start": 361.12,
+      "end": 363.27,
+      "text": "rate limits, and quality that swings"
+    },
+    {
+      "start": 363.28,
+      "end": 364.91,
+      "text": "depending on which provider you happen"
+    },
+    {
+      "start": 364.92,
+      "end": 367.27,
+      "text": "to land on. Fallback softens all of"
+    },
+    {
+      "start": 367.28,
+      "end": 369.83,
+      "text": "that. It does not make it disappear. You"
+    },
+    {
+      "start": 369.84,
+      "end": 372.11,
+      "text": "are also the integrator now. The default"
+    },
+    {
+      "start": 372.12,
+      "end": 373.63,
+      "text": "Claude code setup simply works the"
+    },
+    {
+      "start": 373.64,
+      "end": 376.27,
+      "text": "second it installs. No wiring at all."
+    },
+    {
+      "start": 376.28,
+      "end": 377.99,
+      "text": "This setup adds a config file and a"
+    },
+    {
+      "start": 378,
+      "end": 379.75,
+      "text": "handful of provider keys you have to"
+    },
+    {
+      "start": 379.76,
+      "end": 382.07,
+      "text": "manage yourself. More control, but"
+    },
+    {
+      "start": 382.08,
+      "end": 383.95,
+      "text": "genuinely more assembly required on your"
+    },
+    {
+      "start": 383.96,
+      "end": 386.43,
+      "text": "end. And on the truly hard problems,"
+    },
+    {
+      "start": 386.44,
+      "end": 388.19,
+      "text": "Opus still pulls clearly ahead of the"
+    },
+    {
+      "start": 388.2,
+      "end": 390.27,
+      "text": "free pack. If a single task is worth the"
+    },
+    {
+      "start": 390.28,
+      "end": 392.27,
+      "text": "best brain that money can rent, just"
+    },
+    {
+      "start": 392.28,
+      "end": 394.55,
+      "text": "point Claude code at your paid Anthropic"
+    },
+    {
+      "start": 394.56,
+      "end": 396.87,
+      "text": "key for that task. That is simply not"
+    },
+    {
+      "start": 396.88,
+      "end": 398.909,
+      "text": "what most of my day actually looks like."
+    },
+    {
+      "start": 398.919,
+      "end": 400.71,
+      "text": "So, the verdict is not that Claude code"
+    },
+    {
+      "start": 400.72,
+      "end": 403.31,
+      "text": "lost. Keep your paid key for the heavy,"
+    },
+    {
+      "start": 403.32,
+      "end": 404.95,
+      "text": "model-sensitive work where Opus"
+    },
+    {
+      "start": 404.96,
+      "end": 407.39,
+      "text": "genuinely shines. Let Omni route carry"
+    },
+    {
+      "start": 407.4,
+      "end": 409.79,
+      "text": "everything else, which, if your day"
+    },
+    {
+      "start": 409.8,
+      "end": 411.87,
+      "text": "looks anything like mine, ends up being"
+    },
+    {
+      "start": 411.88,
+      "end": 414.27,
+      "text": "most of it. The real shift under all of"
+    },
+    {
+      "start": 414.28,
+      "end": 415.99,
+      "text": "it is that the interface and the billing"
+    },
+    {
+      "start": 416,
+      "end": 418.27,
+      "text": "finally came apart. The loop you love is"
+    },
+    {
+      "start": 418.28,
+      "end": 420.15,
+      "text": "still the loop. The brain is now a"
+    },
+    {
+      "start": 420.16,
+      "end": 422.15,
+      "text": "choice you make per task, and the bill"
+    },
+    {
+      "start": 422.16,
+      "end": 424.03,
+      "text": "turned into something optional. Once you"
+    },
+    {
+      "start": 424.04,
+      "end": 425.63,
+      "text": "have felt what that is like, it is"
+    },
+    {
+      "start": 425.64,
+      "end": 427.83,
+      "text": "genuinely hard to go back. Same Claude"
+    },
+    {
+      "start": 427.84,
+      "end": 431.07,
+      "text": "code, any model, almost no bill. That is"
+    },
+    {
+      "start": 431.08,
+      "end": 434.36,
+      "text": "why I canceled my subscription."
+    }
+  ]
+}

@@ -1,0 +1,931 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.07,
+      "text": "744"
+    },
+    {
+      "start": 2.08,
+      "end": 4.87,
+      "text": "billion parameters running on a machine"
+    },
+    {
+      "start": 4.88,
+      "end": 7.07,
+      "text": "that costs less than one [music] cooling"
+    },
+    {
+      "start": 7.08,
+      "end": 10.87,
+      "text": "fan from an H100 GPU. Not a Temu"
+    },
+    {
+      "start": 10.88,
+      "end": 14.71,
+      "text": "knockoff either. GLM 5.2, an open model"
+    },
+    {
+      "start": 14.72,
+      "end": 17.03,
+      "text": "that sits above Claude Opus in the"
+    },
+    {
+      "start": 17.04,
+      "end": 20.23,
+      "text": "latest LLM Arena benchmarks, answering"
+    },
+    {
+      "start": 20.24,
+      "end": 23.31,
+      "text": "correctly from a laptop with 25 GB of"
+    },
+    {
+      "start": 23.32,
+      "end": 26.15,
+      "text": "RAM. The model is 15 times bigger than"
+    },
+    {
+      "start": 26.16,
+      "end": 28.03,
+      "text": "the memory it's running in. [music]"
+    },
+    {
+      "start": 28.04,
+      "end": 29.75,
+      "text": "The engine pulling this off is called"
+    },
+    {
+      "start": 29.76,
+      "end": 34.19,
+      "text": "Colibri, 1,300 lines of C. No Python, no"
+    },
+    {
+      "start": 34.2,
+      "end": 36.79,
+      "text": "GPU, and the loophole it exploits is"
+    },
+    {
+      "start": 36.8,
+      "end": 39.51,
+      "text": "hiding inside every big AI model you've"
+    },
+    {
+      "start": 39.52,
+      "end": 41.75,
+      "text": "used this year. By the end of this"
+    },
+    {
+      "start": 41.76,
+      "end": 44.27,
+      "text": "video, you'll know exactly how a model"
+    },
+    {
+      "start": 44.28,
+      "end": 46.71,
+      "text": "that can't fit in your computer runs on"
+    },
+    {
+      "start": 46.72,
+      "end": 49.31,
+      "text": "it anyway, and why the number everyone's"
+    },
+    {
+      "start": 49.32,
+      "end": 51.27,
+      "text": "laughing at is the wrong thing to look"
+    },
+    {
+      "start": 51.28,
+      "end": 54.355,
+      "text": "at. Try and wrap your mind around it."
+    },
+    {
+      "start": 54.365,
+      "end": 54.39,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 54.4,
+      "end": 57.71,
+      "text": "&gt;&gt; GLM 5.2's weights, compressed down to 4"
+    },
+    {
+      "start": 57.72,
+      "end": 61.56,
+      "text": "bits per number, take up 370 GB."
+    },
+    {
+      "start": 61.57,
+      "end": 62.27,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 62.28,
+      "end": 64.79,
+      "text": "&gt;&gt; You'd normally need half a data center"
+    },
+    {
+      "start": 64.8,
+      "end": 69.03,
+      "text": "of GPUs lying around. Call it $40,000 or"
+    },
+    {
+      "start": 69.03999999999999,
+      "end": 71.75,
+      "text": "a Mac Studio with 256"
+    },
+    {
+      "start": 71.76,
+      "end": 74.83,
+      "text": "gigs of unified memory. Anything less"
+    },
+    {
+      "start": 74.84,
+      "end": 77.31,
+      "text": "and the model refuses to load. The"
+    },
+    {
+      "start": 77.32,
+      "end": 79.43,
+      "text": "obvious workaround is reading the model"
+    },
+    {
+      "start": 79.44,
+      "end": 82.11,
+      "text": "straight off the SSD instead. For a"
+    },
+    {
+      "start": 82.12,
+      "end": 84.27,
+      "text": "normal model, that idea is dead on"
+    },
+    {
+      "start": 84.28,
+      "end": 87.23,
+      "text": "arrival. Every parameter is needed for"
+    },
+    {
+      "start": 87.24,
+      "end": 89.99,
+      "text": "every single token, so you'd be pulling"
+    },
+    {
+      "start": 90,
+      "end": 93.27000000000001,
+      "text": "all 370 GB off the disk for [music]"
+    },
+    {
+      "start": 93.28,
+      "end": 96.67,
+      "text": "every word. On the fastest consumer SSD"
+    },
+    {
+      "start": 96.68,
+      "end": 98.91,
+      "text": "money can buy, that's almost half a"
+    },
+    {
+      "start": 98.92,
+      "end": 101.59,
+      "text": "minute per word. Good luck writing your"
+    },
+    {
+      "start": 101.6,
+      "end": 103.99000000000001,
+      "text": "code like that. So, why does Colibri"
+    },
+    {
+      "start": 104,
+      "end": 107.39,
+      "text": "work? Because GLM 5.2 is not built like"
+    },
+    {
+      "start": 107.4,
+      "end": 111.31,
+      "text": "a normal model. GLM 5.2 is a mixture of"
+    },
+    {
+      "start": 111.32,
+      "end": 114.19,
+      "text": "experts model. Inside each layer,"
+    },
+    {
+      "start": 114.2,
+      "end": 116.91,
+      "text": "instead of one giant block of neurons,"
+    },
+    {
+      "start": 116.92,
+      "end": 119.03,
+      "text": "there are 256"
+    },
+    {
+      "start": 119.03999999999999,
+      "end": 122.07,
+      "text": "smaller ones called experts. In front of"
+    },
+    {
+      "start": 122.08,
+      "end": 123.75,
+      "text": "them sits a tiny [music] piece of the"
+    },
+    {
+      "start": 123.76,
+      "end": 126.95,
+      "text": "network called the router. Every time a"
+    },
+    {
+      "start": 126.96,
+      "end": 129.63,
+      "text": "token comes through, the router scores"
+    },
+    {
+      "start": 129.64,
+      "end": 133.31,
+      "text": "all 256 experts and picks the eight best"
+    },
+    {
+      "start": 133.32,
+      "end": 136.07,
+      "text": "suited for that exact token at that"
+    },
+    {
+      "start": 136.07999999999998,
+      "end": 140.67000000000002,
+      "text": "exact layer. The other 248 stay asleep."
+    },
+    {
+      "start": 140.68,
+      "end": 143.11,
+      "text": "Now, take experts with a grain of salt."
+    },
+    {
+      "start": 143.12,
+      "end": 145.51,
+      "text": "People picture a math guy, a code guy, a"
+    },
+    {
+      "start": 145.52,
+      "end": 147.47,
+      "text": "poetry guy, and figure you could keep"
+    },
+    {
+      "start": 147.48,
+      "end": 149.67000000000002,
+      "text": "the code guy and delete the rest."
+    },
+    {
+      "start": 149.68,
+      "end": 152.23,
+      "text": "Experts are really unlabelled blobs of"
+    },
+    {
+      "start": 152.24,
+      "end": 154.59,
+      "text": "learned weights with messy, overlapping"
+    },
+    {
+      "start": 154.6,
+      "end": 155.226,
+      "text": "jobs,"
+    },
+    {
+      "start": 155.236,
+      "end": 155.39,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 155.4,
+      "end": 157.79,
+      "text": "&gt;&gt; and the router's choice changes token by"
+    },
+    {
+      "start": 157.8,
+      "end": 160.466,
+      "text": "token, layer by layer. The same word"
+    },
+    {
+      "start": 160.476,
+      "end": 162.31,
+      "text": "[music] gets different experts in a"
+    },
+    {
+      "start": 162.32,
+      "end": 164.63,
+      "text": "different sentence. There is no coding"
+    },
+    {
+      "start": 164.64,
+      "end": 167.35,
+      "text": "subset to keep. Add it up, and out of"
+    },
+    {
+      "start": 167.36,
+      "end": 168.87,
+      "text": "744"
+    },
+    {
+      "start": 168.88,
+      "end": 171.23,
+      "text": "billion parameters, only about 40"
+    },
+    {
+      "start": 171.24,
+      "end": 173.566,
+      "text": "billion do any work per token,"
+    },
+    {
+      "start": 173.576,
+      "end": 173.59,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 173.6,
+      "end": 176.67000000000002,
+      "text": "&gt;&gt; around 5%. The rest of the model is, at"
+    },
+    {
+      "start": 176.68,
+      "end": 179.15,
+      "text": "any given moment, that weight, and that"
+    },
+    {
+      "start": 179.16,
+      "end": 181.63,
+      "text": "weight doesn't need to be in RAM. That's"
+    },
+    {
+      "start": 181.64,
+      "end": 184.43,
+      "text": "the concept Colibri rides on. Split the"
+    },
+    {
+      "start": 184.44,
+      "end": 186.63,
+      "text": "model [music] into the parts every token"
+    },
+    {
+      "start": 186.64,
+      "end": 188.67,
+      "text": "touches, the attention layers, the"
+    },
+    {
+      "start": 188.68,
+      "end": 191.11,
+      "text": "embeddings, one shared [music] expert,"
+    },
+    {
+      "start": 191.12,
+      "end": 194.07,
+      "text": "add up to just under 10 GB at 4-bit"
+    },
+    {
+      "start": 194.08,
+      "end": 196.39,
+      "text": "precision. Those get pinned in RAM"
+    },
+    {
+      "start": 196.4,
+      "end": 199.11,
+      "text": "permanently. The other 21 and 1/2"
+    },
+    {
+      "start": 199.12,
+      "end": 202.59,
+      "text": "thousand experts, 19 MB a piece, sit in"
+    },
+    {
+      "start": 202.6,
+      "end": 203.949,
+      "text": "a 370 [music]"
+    },
+    {
+      "start": 203.959,
+      "end": 207.63,
+      "text": "GB file on the SSD. Then, for every"
+    },
+    {
+      "start": 207.64,
+      "end": 210.07,
+      "text": "token, the dense core in RAM does its"
+    },
+    {
+      "start": 210.07999999999998,
+      "end": 212.55,
+      "text": "work, and the router names its eight"
+    },
+    {
+      "start": 212.56,
+      "end": 215.47,
+      "text": "experts for this layer. Colibri checks a"
+    },
+    {
+      "start": 215.48,
+      "end": 217.99,
+      "text": "cache [music] it keeps in the spare RAM."
+    },
+    {
+      "start": 218,
+      "end": 221.19,
+      "text": "Already loaded, multiply and move on."
+    },
+    {
+      "start": 221.2,
+      "end": 223.87,
+      "text": "Missing, the engine reads that exact"
+    },
+    {
+      "start": 223.88,
+      "end": 226.82999999999998,
+      "text": "expert off the SSD at its exact [music]"
+    },
+    {
+      "start": 226.84,
+      "end": 229.71,
+      "text": "byte offset, multiplies, and evicts"
+    },
+    {
+      "start": 229.72,
+      "end": 231.99,
+      "text": "whichever expert has gone unused"
+    },
+    {
+      "start": 232,
+      "end": 235.79,
+      "text": "longest. Repeated across all 75 layers,"
+    },
+    {
+      "start": 235.8,
+      "end": 237.23,
+      "text": "and [music] the next token starts the"
+    },
+    {
+      "start": 237.24,
+      "end": 240.15,
+      "text": "cycle over. A fully cold token touches"
+    },
+    {
+      "start": 240.16,
+      "end": 242.75,
+      "text": "about 11 GB of disk reads. That's"
+    },
+    {
+      "start": 242.76,
+      "end": 243.652,
+      "text": "insane,"
+    },
+    {
+      "start": 243.662,
+      "end": 243.87,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 243.88,
+      "end": 246.51,
+      "text": "&gt;&gt; but routing is cute. A small crowd of"
+    },
+    {
+      "start": 246.52,
+      "end": 248.59,
+      "text": "favorite experts handles most of the"
+    },
+    {
+      "start": 248.6,
+      "end": 251.83,
+      "text": "traffic, so Colibri keeps a usage log on"
+    },
+    {
+      "start": 251.84,
+      "end": 254.19,
+      "text": "disk. And on the next launch, it pins"
+    },
+    {
+      "start": 254.2,
+      "end": 256.75,
+      "text": "your personal hot experts into whatever"
+    },
+    {
+      "start": 256.76,
+      "end": 259.63,
+      "text": "RAM is left over. The engine measurably"
+    },
+    {
+      "start": 259.64,
+      "end": 262.35,
+      "text": "gets faster the more you use it. Of"
+    },
+    {
+      "start": 262.36,
+      "end": 263.909,
+      "text": "course, there was pushback when this"
+    },
+    {
+      "start": 263.919,
+      "end": 267.03,
+      "text": "released. Llama.cpp can already memory"
+    },
+    {
+      "start": 267.04,
+      "end": 270.35,
+      "text": "map a model bigger than your RAM. True,"
+    },
+    {
+      "start": 270.36,
+      "end": 272.35,
+      "text": "but memory mapping is the operating"
+    },
+    {
+      "start": 272.36,
+      "end": 274.909,
+      "text": "system guessing. It faults pages in"
+    },
+    {
+      "start": 274.919,
+      "end": 277.31,
+      "text": "blind, one small read at a time,"
+    },
+    {
+      "start": 277.32,
+      "end": 278.909,
+      "text": "blocking the whole thread while it"
+    },
+    {
+      "start": 278.919,
+      "end": 281.35,
+      "text": "waits, with no idea which weights are"
+    },
+    {
+      "start": 281.36,
+      "end": 284.71,
+      "text": "important. Colibri knows. The moment the"
+    },
+    {
+      "start": 284.72,
+      "end": 287.23,
+      "text": "router picks its eight experts, [music]"
+    },
+    {
+      "start": 287.24,
+      "end": 289.35,
+      "text": "the engine requests all of them from the"
+    },
+    {
+      "start": 289.36,
+      "end": 292.11,
+      "text": "disk at once, asynchronously, while the"
+    },
+    {
+      "start": 292.12,
+      "end": 293.99,
+      "text": "CPU keeps crunching. [music]"
+    },
+    {
+      "start": 294,
+      "end": 296.39,
+      "text": "It even runs the next layer's router"
+    },
+    {
+      "start": 296.4,
+      "end": 299.43,
+      "text": "early on partial information, so experts"
+    },
+    {
+      "start": 299.44,
+      "end": 301.55,
+      "text": "are loading before they're needed. A"
+    },
+    {
+      "start": 301.56,
+      "end": 303.63,
+      "text": "page fault can't see the future. A"
+    },
+    {
+      "start": 303.64,
+      "end": 305.95,
+      "text": "router [music] can, a little."
+    },
+    {
+      "start": 305.96,
+      "end": 307.55,
+      "text": "You're all waiting on the catch, right?"
+    },
+    {
+      "start": 307.56,
+      "end": 309.87,
+      "text": "On the author's laptop, this runs at a"
+    },
+    {
+      "start": 309.88,
+      "end": 313.71,
+      "text": "tenth of a token per second. A 500 token"
+    },
+    {
+      "start": 313.72,
+      "end": 316.31,
+      "text": "answer [music] takes an hour and a half."
+    },
+    {
+      "start": 316.32,
+      "end": 318.07,
+      "text": "The community benchmarked up the"
+    },
+    {
+      "start": 318.08,
+      "end": 320.943,
+      "text": "hardware ladder. A budget SSD gets"
+    },
+    {
+      "start": 320.953,
+      "end": 323.95,
+      "text": "[music] you .1 tokens per second. A top"
+    },
+    {
+      "start": 323.96,
+      "end": 329.31,
+      "text": "PCIe 5 drive, .28. A 128 gig Framework"
+    },
+    {
+      "start": 329.32,
+      "end": 331.59,
+      "text": "laptop, .37."
+    },
+    {
+      "start": 331.6,
+      "end": 333.87,
+      "text": "And an M5 [music] Max with a monster"
+    },
+    {
+      "start": 333.88,
+      "end": 337.43,
+      "text": "internal SSD tops the chart at one token"
+    },
+    {
+      "start": 337.44,
+      "end": 339.938,
+      "text": "per second. That's the ceiling today."
+    },
+    {
+      "start": 339.948,
+      "end": 340.43,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 340.44,
+      "end": 342.63,
+      "text": "&gt;&gt; And no, this won't kill your SSD."
+    },
+    {
+      "start": 342.64,
+      "end": 345.39,
+      "text": "Streaming is pure reads, and reads don't"
+    },
+    {
+      "start": 345.4,
+      "end": 346.488,
+      "text": "wear out flash."
+    },
+    {
+      "start": 346.498,
+      "end": 346.67,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 346.68,
+      "end": 349.11,
+      "text": "&gt;&gt; Writes do. The real risk is a cheap"
+    },
+    {
+      "start": 349.12,
+      "end": 351.59000000000003,
+      "text": "drive thermally throttling after hours"
+    },
+    {
+      "start": 351.6,
+      "end": 353.83,
+      "text": "of running flat out. So, given the"
+    },
+    {
+      "start": 353.84000000000003,
+      "end": 355.659,
+      "text": "speed, is it useless then?"
+    },
+    {
+      "start": 355.669,
+      "end": 355.83,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 355.84000000000003,
+      "end": 357.90999999999997,
+      "text": "&gt;&gt; Depends what you're counting. A tenth of"
+    },
+    {
+      "start": 357.92,
+      "end": 361.11,
+      "text": "a token per second is also 8,000 tokens"
+    },
+    {
+      "start": 361.12,
+      "end": 364.27,
+      "text": "a day. Several long frontier quality"
+    },
+    {
+      "start": 364.28,
+      "end": 367.55,
+      "text": "answers every day from a laptop with no"
+    },
+    {
+      "start": 367.56,
+      "end": 370.03,
+      "text": "internet connection. Grandpa still"
+    },
+    {
+      "start": 370.04,
+      "end": 372.43,
+      "text": "remembers running a PC overnight to"
+    },
+    {
+      "start": 372.44,
+      "end": 375.19,
+      "text": "download movies. Now, they can generate"
+    },
+    {
+      "start": 375.2,
+      "end": 377.95,
+      "text": "the answers instead. If this were one"
+    },
+    {
+      "start": 377.96,
+      "end": 380.75,
+      "text": "weird repo, it would be a party trick."
+    },
+    {
+      "start": 380.76,
+      "end": 381.79,
+      "text": "There's more. [music]"
+    },
+    {
+      "start": 381.8,
+      "end": 384.59,
+      "text": "The same season, antirez, the guy who"
+    },
+    {
+      "start": 384.6,
+      "end": 388.47,
+      "text": "wrote Redis, shipped DS4, a metal and C"
+    },
+    {
+      "start": 388.48,
+      "end": 391.31,
+      "text": "engine that streams deep six experts off"
+    },
+    {
+      "start": 391.32,
+      "end": 395.03,
+      "text": "a MacBook's SSD. Llama CPP has open"
+    },
+    {
+      "start": 395.04,
+      "end": 397.31,
+      "text": "proposals for exactly this kind of"
+    },
+    {
+      "start": 397.32,
+      "end": 400.55,
+      "text": "expert cash, and vLLM is catching its"
+    },
+    {
+      "start": 400.56,
+      "end": 403.15,
+      "text": "own version. Serious runtimes are"
+    },
+    {
+      "start": 403.15999999999997,
+      "end": 405.83,
+      "text": "starting to treat the SSD as a memory"
+    },
+    {
+      "start": 405.84000000000003,
+      "end": 408.63,
+      "text": "tier instead of a filing cabinet. The"
+    },
+    {
+      "start": 408.64,
+      "end": 410.87,
+      "text": "great unlock everyone's eyeing is"
+    },
+    {
+      "start": 410.88,
+      "end": 413.79,
+      "text": "prediction. Colibri already guesses the"
+    },
+    {
+      "start": 413.8,
+      "end": 416.87,
+      "text": "next layer's experts with 72% [music]"
+    },
+    {
+      "start": 416.88,
+      "end": 419.23,
+      "text": "accuracy. Every point that number"
+    },
+    {
+      "start": 419.24,
+      "end": 421.35,
+      "text": "climbs, more discrete finish in the"
+    },
+    {
+      "start": 421.36,
+      "end": 423.51,
+      "text": "background before anyone's waiting on"
+    },
+    {
+      "start": 423.52,
+      "end": 426.27,
+      "text": "them. If routing turns out to be mostly"
+    },
+    {
+      "start": 426.28,
+      "end": 428.95,
+      "text": "predictable, the disk penalty largely"
+    },
+    {
+      "start": 428.96,
+      "end": 431.47,
+      "text": "evaporates, and streaming starts to feel"
+    },
+    {
+      "start": 431.48,
+      "end": 433.75,
+      "text": "like running the model for real."
+    },
+    {
+      "start": 433.76,
+      "end": 435.63,
+      "text": "Should you run this? Well, not for a"
+    },
+    {
+      "start": 435.64,
+      "end": 437.83,
+      "text": "back and forth on your day job. In that"
+    },
+    {
+      "start": 437.84,
+      "end": 439.59,
+      "text": "case, just grab the biggest model that"
+    },
+    {
+      "start": 439.6,
+      "end": 441.75,
+      "text": "fits in your fast memory and enjoy your"
+    },
+    {
+      "start": 441.76,
+      "end": 444.71,
+      "text": "60 tokens per second. Colibri is for"
+    },
+    {
+      "start": 444.72,
+      "end": 447.63,
+      "text": "jobs where quality outranks the clock."
+    },
+    {
+      "start": 447.64,
+      "end": 449.79,
+      "text": "Overnight refactors, air-gapped"
+    },
+    {
+      "start": 449.8,
+      "end": 452.47,
+      "text": "machines, work that legally can't leave"
+    },
+    {
+      "start": 452.48,
+      "end": 455.03,
+      "text": "the building. The bigger point survives"
+    },
+    {
+      "start": 455.04,
+      "end": 457.31,
+      "text": "either way. For the price of one"
+    },
+    {
+      "start": 457.32,
+      "end": 460.51,
+      "text": "consumer SSD, the floor for touching a"
+    },
+    {
+      "start": 460.52,
+      "end": 463.07,
+      "text": "frontier model dropped out of the data"
+    },
+    {
+      "start": 463.08,
+      "end": 467.36,
+      "text": "center and [music] onto a desk."
+    }
+  ]
+}

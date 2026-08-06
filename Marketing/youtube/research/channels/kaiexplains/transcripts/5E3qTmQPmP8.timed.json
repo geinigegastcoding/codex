@@ -1,0 +1,1226 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.55,
+      "text": "The model file is 160 GB. The graphics"
+    },
+    {
+      "start": 3.56,
+      "end": 5.71,
+      "text": "card has eight, and it still answers at"
+    },
+    {
+      "start": 5.72,
+      "end": 7.43,
+      "text": "half a token a second on a card that"
+    },
+    {
+      "start": 7.44,
+      "end": 10.11,
+      "text": "costs $20 used. That works because of"
+    },
+    {
+      "start": 10.12,
+      "end": 12.39,
+      "text": "one detail in how this tool is built."
+    },
+    {
+      "start": 12.4,
+      "end": 14.79,
+      "text": "The model never fully exists in memory."
+    },
+    {
+      "start": 14.8,
+      "end": 17.95,
+      "text": "One layer loads, runs, gets thrown away,"
+    },
+    {
+      "start": 17.96,
+      "end": 19.79,
+      "text": "and the next one comes off the drive."
+    },
+    {
+      "start": 19.8,
+      "end": 22.39,
+      "text": "So, here's the whole video. What OLM"
+    },
+    {
+      "start": 22.4,
+      "end": 24.71,
+      "text": "actually does, the one job where it is"
+    },
+    {
+      "start": 24.72,
+      "end": 26.55,
+      "text": "the only tool that works, and then the"
+    },
+    {
+      "start": 26.56,
+      "end": 28.03,
+      "text": "three places where the trick stops"
+    },
+    {
+      "start": 28.04,
+      "end": 31.11,
+      "text": "working. The model is Qwen 3 next, 80"
+    },
+    {
+      "start": 31.12,
+      "end": 33.79,
+      "text": "billion parameters. Anwar Sher Pedinov"
+    },
+    {
+      "start": 33.8,
+      "end": 36.03,
+      "text": "shipped it in September 2025 out of a"
+    },
+    {
+      "start": 36.04,
+      "end": 38.95,
+      "text": "hackathon in Astana, Kazakhstan. He had"
+    },
+    {
+      "start": 38.96,
+      "end": 42.67,
+      "text": "8 GB of video memory, 16 GB of RAM, a"
+    },
+    {
+      "start": 42.68,
+      "end": 44.51,
+      "text": "pile of customer conversations he could"
+    },
+    {
+      "start": 44.52,
+      "end": 46.87,
+      "text": "not send to the cloud, and no inference"
+    },
+    {
+      "start": 46.88,
+      "end": 48.27,
+      "text": "engine that would load the model he"
+    },
+    {
+      "start": 48.28,
+      "end": 51.07,
+      "text": "wanted to use. The project is on GitHub,"
+    },
+    {
+      "start": 51.08,
+      "end": 54.83,
+      "text": "2,700 stars, MIT licensed. The table in"
+    },
+    {
+      "start": 54.84,
+      "end": 57.91,
+      "text": "the readme is 80 billion parameters, 160"
+    },
+    {
+      "start": 57.92,
+      "end": 61.03,
+      "text": "GB of weight, 50,000 tokens of context,"
+    },
+    {
+      "start": 61.04,
+      "end": 64.75,
+      "text": "7 and 1/2 GB of video memory, 180 GB of"
+    },
+    {
+      "start": 64.76,
+      "end": 67.11,
+      "text": "disk. Hold that next to a standard local"
+    },
+    {
+      "start": 67.12,
+      "end": 69.47,
+      "text": "AI setup for a second. An 8 billion"
+    },
+    {
+      "start": 69.48,
+      "end": 72.43,
+      "text": "parameter model at 4-bit in Llama.cpp is"
+    },
+    {
+      "start": 72.44,
+      "end": 76.23,
+      "text": "4.9 GB. It loads into VRAM in one shot"
+    },
+    {
+      "start": 76.24,
+      "end": 79.75,
+      "text": "and runs at 64 tokens a second. Qwen 3"
+    },
+    {
+      "start": 79.76,
+      "end": 81.95,
+      "text": "next is 20 times larger than that."
+    },
+    {
+      "start": 81.96000000000001,
+      "end": 84.19,
+      "text": "Llama.cpp does not have a plan B for"
+    },
+    {
+      "start": 84.2,
+      "end": 86.43,
+      "text": "models that do not fit. The file is too"
+    },
+    {
+      "start": 86.44,
+      "end": 88.87,
+      "text": "big, the loader refuses, and you get a"
+    },
+    {
+      "start": 88.88,
+      "end": 91.78999999999999,
+      "text": "wall. OLM ignores the wall. So, the"
+    },
+    {
+      "start": 91.8,
+      "end": 94.27000000000001,
+      "text": "question stops being does the model fit"
+    },
+    {
+      "start": 94.28,
+      "end": 96.39,
+      "text": "and becomes how does anything run at"
+    },
+    {
+      "start": 96.4,
+      "end": 98.99000000000001,
+      "text": "all? OLM is a Python library built on"
+    },
+    {
+      "start": 99,
+      "end": 101.43,
+      "text": "Hugging Face Transformers and PyTorch."
+    },
+    {
+      "start": 101.44,
+      "end": 103.71000000000001,
+      "text": "It loads transformer layers off your SSD"
+    },
+    {
+      "start": 103.72,
+      "end": 106.71000000000001,
+      "text": "one at a time, runs each one on the GPU,"
+    },
+    {
+      "start": 106.72,
+      "end": 108.22999999999999,
+      "text": "and throws it away before loading the"
+    },
+    {
+      "start": 108.24000000000001,
+      "end": 110.55,
+      "text": "next. The model never fully exists in"
+    },
+    {
+      "start": 110.56,
+      "end": 112.67,
+      "text": "memory. The attention cache goes to the"
+    },
+    {
+      "start": 112.68,
+      "end": 115.91,
+      "text": "drive as well, at full 16-bit precision,"
+    },
+    {
+      "start": 115.92,
+      "end": 118.03,
+      "text": "written out as attention runs and read"
+    },
+    {
+      "start": 118.03999999999999,
+      "end": 120.11,
+      "text": "back when it is needed. Big MLP"
+    },
+    {
+      "start": 120.12,
+      "end": 121.91,
+      "text": "projection matrices get chunked into"
+    },
+    {
+      "start": 121.92,
+      "end": 123.95,
+      "text": "passes small enough to fit. Flash"
+    },
+    {
+      "start": 123.96,
+      "end": 125.469,
+      "text": "attention keeps the full attention"
+    },
+    {
+      "start": 125.479,
+      "end": 127.71,
+      "text": "matrix from ever materializing. The"
+    },
+    {
+      "start": 127.72,
+      "end": 129.669,
+      "text": "result is that peak video memory stays"
+    },
+    {
+      "start": 129.679,
+      "end": 132.51,
+      "text": "under 7 and 1/2 GB, no matter how large"
+    },
+    {
+      "start": 132.52,
+      "end": 135.55,
+      "text": "the model is. That is OLM, and it is"
+    },
+    {
+      "start": 135.56,
+      "end": 137.39,
+      "text": "where the tooling gets interesting"
+    },
+    {
+      "start": 137.4,
+      "end": 139.39,
+      "text": "because you can see the design in one"
+    },
+    {
+      "start": 139.4,
+      "end": 142.15,
+      "text": "strange row in that readme table. The 20"
+    },
+    {
+      "start": 142.16,
+      "end": 144.23,
+      "text": "billion parameter GPT- is model runs"
+    },
+    {
+      "start": 144.24,
+      "end": 145.82999999999998,
+      "text": "slower than the 80 billion parameter"
+    },
+    {
+      "start": 145.84,
+      "end": 148.71,
+      "text": "Qwen 3 next. GPT- is loads all its"
+    },
+    {
+      "start": 148.72,
+      "end": 151.47,
+      "text": "experts onto the GPU. Qwen 3 next is a"
+    },
+    {
+      "start": 151.48,
+      "end": 154.15,
+      "text": "mixture of experts model, and OLM only"
+    },
+    {
+      "start": 154.16,
+      "end": 155.79,
+      "text": "streams the experts a given token"
+    },
+    {
+      "start": 155.8,
+      "end": 158.07,
+      "text": "actually routes to. The other experts do"
+    },
+    {
+      "start": 158.07999999999998,
+      "end": 160.63,
+      "text": "not make the trip. Larger model, fewer"
+    },
+    {
+      "start": 160.64,
+      "end": 162.63,
+      "text": "weights moving per token. Sparsity is"
+    },
+    {
+      "start": 162.64,
+      "end": 164.23,
+      "text": "doing the same thing here that it does"
+    },
+    {
+      "start": 164.24,
+      "end": 166.47,
+      "text": "in Llama.cpp, just over a different"
+    },
+    {
+      "start": 166.48,
+      "end": 168.87,
+      "text": "bottleneck. Now, if you have actually"
+    },
+    {
+      "start": 168.88,
+      "end": 170.949,
+      "text": "tried this, you have probably already"
+    },
+    {
+      "start": 170.959,
+      "end": 173.07,
+      "text": "run into the number, half a token a"
+    },
+    {
+      "start": 173.07999999999998,
+      "end": 175.79,
+      "text": "second, maybe one. And before you file a"
+    },
+    {
+      "start": 175.8,
+      "end": 178.51,
+      "text": "bug report, here's what that number is."
+    },
+    {
+      "start": 178.52,
+      "end": 181.509,
+      "text": "The RTX 3060 Ti reads its own VRAM at"
+    },
+    {
+      "start": 181.519,
+      "end": 185.63,
+      "text": "448 GB a second. A fast PCIe 4 NVMe"
+    },
+    {
+      "start": 185.64,
+      "end": 188.07,
+      "text": "drive reads at about five. Ratio of"
+    },
+    {
+      "start": 188.08,
+      "end": 190.43,
+      "text": "roughly 90. Every token has to walk the"
+    },
+    {
+      "start": 190.44,
+      "end": 192.15,
+      "text": "active layers of the model off wherever"
+    },
+    {
+      "start": 192.16,
+      "end": 194.11,
+      "text": "they live. So, whatever ratio your"
+    },
+    {
+      "start": 194.12,
+      "end": 196.35,
+      "text": "storage has, your tokens per second"
+    },
+    {
+      "start": 196.36,
+      "end": 199.55,
+      "text": "inherits it. That 129 times gap against"
+    },
+    {
+      "start": 199.56,
+      "end": 201.63,
+      "text": "Llama.cpp was never really about the"
+    },
+    {
+      "start": 201.64,
+      "end": 203.99,
+      "text": "code. It is a memory bus against a disk"
+    },
+    {
+      "start": 204,
+      "end": 205.50900000000001,
+      "text": "cable showing up as a number you can"
+    },
+    {
+      "start": 205.519,
+      "end": 207.50900000000001,
+      "text": "watch on screen. You can watch it happen"
+    },
+    {
+      "start": 207.519,
+      "end": 210.11,
+      "text": "in the utilization graph. During decode,"
+    },
+    {
+      "start": 210.12,
+      "end": 212.43,
+      "text": "the GPU sits mostly idle waiting for the"
+    },
+    {
+      "start": 212.44,
+      "end": 214.79,
+      "text": "drive to hand it the next layer. Someone"
+    },
+    {
+      "start": 214.8,
+      "end": 216.39,
+      "text": "on the Hacker News thread asked the"
+    },
+    {
+      "start": 216.4,
+      "end": 218.15,
+      "text": "obvious question. If you are"
+    },
+    {
+      "start": 218.16,
+      "end": 220.91,
+      "text": "bottlenecked on SSD bandwidth, why even"
+    },
+    {
+      "start": 220.92000000000002,
+      "end": 223.75,
+      "text": "use the GPU at that point? A CPU would"
+    },
+    {
+      "start": 223.76,
+      "end": 226.27,
+      "text": "be just as fast. The author replied that"
+    },
+    {
+      "start": 226.28,
+      "end": 228.59,
+      "text": "the GPU still does the arithmetic far"
+    },
+    {
+      "start": 228.6,
+      "end": 230.35,
+      "text": "faster than a CPU once the layer"
+    },
+    {
+      "start": 230.36,
+      "end": 232.31,
+      "text": "arrives, and that every tier you can"
+    },
+    {
+      "start": 232.32,
+      "end": 234.27,
+      "text": "pull into the pipeline helps. The"
+    },
+    {
+      "start": 234.28,
+      "end": 237.15,
+      "text": "bottleneck moved. It did not disappear."
+    },
+    {
+      "start": 237.16,
+      "end": 238.71,
+      "text": "The sharpest counter argument in that"
+    },
+    {
+      "start": 238.72,
+      "end": 241.07,
+      "text": "thread came from someone with an M2 Max"
+    },
+    {
+      "start": 241.08,
+      "end": 244.51,
+      "text": "and 64 GB of unified memory. Same model"
+    },
+    {
+      "start": 244.52,
+      "end": 247.67,
+      "text": "class at 4-bit using MLX, 42 tokens a"
+    },
+    {
+      "start": 247.68,
+      "end": 250.71,
+      "text": "second. Same idea, opposite conclusion."
+    },
+    {
+      "start": 250.72,
+      "end": 252.51,
+      "text": "Fit the model into fast memory and you"
+    },
+    {
+      "start": 252.52,
+      "end": 255.43,
+      "text": "win by 80 times. That is the ceiling LLM"
+    },
+    {
+      "start": 255.44,
+      "end": 257.59,
+      "text": "is bumping against and no flag will move"
+    },
+    {
+      "start": 257.6,
+      "end": 259.349,
+      "text": "it. And this is where the tooling gets"
+    },
+    {
+      "start": 259.359,
+      "end": 261.71,
+      "text": "awkward in a different way. LLM does not"
+    },
+    {
+      "start": 261.72,
+      "end": 263.59,
+      "text": "give you a lot of knobs. The behavior"
+    },
+    {
+      "start": 263.6,
+      "end": 265.43,
+      "text": "you want is mostly the default. You"
+    },
+    {
+      "start": 265.44,
+      "end": 267.35,
+      "text": "point it at a hugging face model, you"
+    },
+    {
+      "start": 267.36,
+      "end": 269.51,
+      "text": "get streaming layer offload, flash"
+    },
+    {
+      "start": 269.52,
+      "end": 272.07,
+      "text": "attention, chunked projections, and a"
+    },
+    {
+      "start": 272.08,
+      "end": 273.75,
+      "text": "cache on disk."
+    },
+    {
+      "start": 273.76,
+      "end": 275.63,
+      "text": "The configuration surface is small"
+    },
+    {
+      "start": 275.64,
+      "end": 277.31,
+      "text": "because the design choices are already"
+    },
+    {
+      "start": 277.32,
+      "end": 279.87,
+      "text": "made, which is useful to understand"
+    },
+    {
+      "start": 279.88,
+      "end": 282.23,
+      "text": "because it means when something is slow,"
+    },
+    {
+      "start": 282.24,
+      "end": 285.23,
+      "text": "it is not a misconfiguration. It is the"
+    },
+    {
+      "start": 285.24,
+      "end": 287.87,
+      "text": "bus. There is a second catch underneath"
+    },
+    {
+      "start": 287.88,
+      "end": 290.11,
+      "text": "that one. If your SSD is slow, the"
+    },
+    {
+      "start": 290.12,
+      "end": 291.59000000000003,
+      "text": "numbers get worse faster than you"
+    },
+    {
+      "start": 291.6,
+      "end": 294.99,
+      "text": "expect. A PCIe 3 drive at 3 GB a second"
+    },
+    {
+      "start": 295,
+      "end": 296.909,
+      "text": "instead of 5 cuts tokens per second by"
+    },
+    {
+      "start": 296.919,
+      "end": 300.39,
+      "text": "another 40%. A SATA SSD is another three"
+    },
+    {
+      "start": 300.4,
+      "end": 302.19,
+      "text": "to four times slower than that. The"
+    },
+    {
+      "start": 302.2,
+      "end": 304.909,
+      "text": "README numbers assume a fast NVMe drive."
+    },
+    {
+      "start": 304.919,
+      "end": 307.47,
+      "text": "If yours is not, the gap widens and the"
+    },
+    {
+      "start": 307.48,
+      "end": 310.31,
+      "text": "context fight is separate. Qwen 3 next"
+    },
+    {
+      "start": 310.32,
+      "end": 313.15,
+      "text": "ships with 131,000 tokens of context."
+    },
+    {
+      "start": 313.16,
+      "end": 314.99,
+      "text": "The attention cache at full 16-bit"
+    },
+    {
+      "start": 315,
+      "end": 316.75,
+      "text": "precision grows with every token you"
+    },
+    {
+      "start": 316.76,
+      "end": 319.87,
+      "text": "generate. At 50,000 tokens of context on"
+    },
+    {
+      "start": 319.88,
+      "end": 322.27,
+      "text": "an 8 billion parameter model, the cache"
+    },
+    {
+      "start": 322.28,
+      "end": 325.31,
+      "text": "alone is 52 GB. That cache lives on the"
+    },
+    {
+      "start": 325.32,
+      "end": 328.99,
+      "text": "drive. A fast NVMe can handle it. An SSD"
+    },
+    {
+      "start": 329,
+      "end": 331.27,
+      "text": "with heavy existing right load or one"
+    },
+    {
+      "start": 331.28,
+      "end": 333.03,
+      "text": "nearing the end of its write endurance"
+    },
+    {
+      "start": 333.04,
+      "end": 335.11,
+      "text": "is a different situation. The author was"
+    },
+    {
+      "start": 335.12,
+      "end": 336.95,
+      "text": "asked directly how badly this shortens"
+    },
+    {
+      "start": 336.96,
+      "end": 340.07,
+      "text": "drive life. His reply, \"Good question."
+    },
+    {
+      "start": 340.08,
+      "end": 342.03,
+      "text": "Need to research this one.\" That answer"
+    },
+    {
+      "start": 342.04,
+      "end": 344.03,
+      "text": "has not been updated. A paper from"
+    },
+    {
+      "start": 344.04,
+      "end": 346.59000000000003,
+      "text": "August 2025 made the broader argument."
+    },
+    {
+      "start": 346.6,
+      "end": 349.27,
+      "text": "The title does the work. SSD offloading"
+    },
+    {
+      "start": 349.28,
+      "end": 350.71,
+      "text": "for mixture of experts weights"
+    },
+    {
+      "start": 350.72,
+      "end": 352.27,
+      "text": "considered harmful and energy"
+    },
+    {
+      "start": 352.28,
+      "end": 354.47,
+      "text": "efficiency. Pulling weights off a drive"
+    },
+    {
+      "start": 354.48,
+      "end": 355.95,
+      "text": "burns more jewels than the cheap"
+    },
+    {
+      "start": 355.96,
+      "end": 357.95,
+      "text": "hardware saves you in dollars. That is a"
+    },
+    {
+      "start": 357.96,
+      "end": 359.55,
+      "text": "real number and it belongs in the"
+    },
+    {
+      "start": 359.56,
+      "end": 362.31,
+      "text": "decision. So, that is the speed half."
+    },
+    {
+      "start": 362.32,
+      "end": 364.47,
+      "text": "The context fight is worth finishing."
+    },
+    {
+      "start": 364.48,
+      "end": 367.51,
+      "text": "Llama CPP on 8 GB of VRAM with an 8"
+    },
+    {
+      "start": 367.52,
+      "end": 369.71,
+      "text": "billion parameter model at 4-bit hits a"
+    },
+    {
+      "start": 369.72,
+      "end": 372.35,
+      "text": "ceiling around 32,000 tokens. Two"
+    },
+    {
+      "start": 372.36,
+      "end": 374.11,
+      "text": "independent write-ups this spring reach"
+    },
+    {
+      "start": 374.12,
+      "end": 376.91,
+      "text": "the same number. Push to 64,000 and it"
+    },
+    {
+      "start": 376.92,
+      "end": 380.51,
+      "text": "probably crashes. OLM on that same 8 GB"
+    },
+    {
+      "start": 380.52,
+      "end": 384.03,
+      "text": "runs the same model at 100,000 tokens."
+    },
+    {
+      "start": 384.04,
+      "end": 389.03,
+      "text": "Cash on disk, 6.6 GB of VRAM, 69 GB of"
+    },
+    {
+      "start": 389.04,
+      "end": 390.99,
+      "text": "disk. There is a shape of job where the"
+    },
+    {
+      "start": 391,
+      "end": 392.909,
+      "text": "speed comparison stops working because"
+    },
+    {
+      "start": 392.919,
+      "end": 394.95,
+      "text": "one side does not finish at all. One"
+    },
+    {
+      "start": 394.96,
+      "end": 398.19,
+      "text": "enormous document, full precision, 8 GB"
+    },
+    {
+      "start": 398.2,
+      "end": 400.27,
+      "text": "of video memory, no cloud because the"
+    },
+    {
+      "start": 400.28,
+      "end": 402.31,
+      "text": "document cannot leave the building. A"
+    },
+    {
+      "start": 402.32,
+      "end": 405.43,
+      "text": "contract, a regulatory filing, a patient"
+    },
+    {
+      "start": 405.44,
+      "end": 408.35,
+      "text": "history, a year of log files. Read the"
+    },
+    {
+      "start": 408.36,
+      "end": 410.71,
+      "text": "whole thing in one local pass. The"
+    },
+    {
+      "start": 410.72,
+      "end": 413.03,
+      "text": "author says so himself. This is not a"
+    },
+    {
+      "start": 413.04,
+      "end": 415.55,
+      "text": "chat engine. It is an execution path for"
+    },
+    {
+      "start": 415.56,
+      "end": 418.03,
+      "text": "large context offline passes. One"
+    },
+    {
+      "start": 418.04,
+      "end": 419.87,
+      "text": "question left and it decides whether any"
+    },
+    {
+      "start": 419.88,
+      "end": 422.07,
+      "text": "of this was worth doing. Is the 16-bit"
+    },
+    {
+      "start": 422.08,
+      "end": 423.55,
+      "text": "copy still the model that ran the"
+    },
+    {
+      "start": 423.56,
+      "end": 425.87,
+      "text": "benchmark? Almost every local model you"
+    },
+    {
+      "start": 425.88,
+      "end": 428.35,
+      "text": "have ever run was quantized. 4-bit takes"
+    },
+    {
+      "start": 428.36,
+      "end": 430.63,
+      "text": "a weight stored at 16 bits and rounds it"
+    },
+    {
+      "start": 430.64,
+      "end": 433.31,
+      "text": "down to four. 16 possible values instead"
+    },
+    {
+      "start": 433.32,
+      "end": 436.11,
+      "text": "of 65,000. You give up some accuracy and"
+    },
+    {
+      "start": 436.12,
+      "end": 438.39,
+      "text": "the file gets four times smaller. OLM"
+    },
+    {
+      "start": 438.4,
+      "end": 440.95,
+      "text": "does not do that. It runs 16-bit weights"
+    },
+    {
+      "start": 440.96,
+      "end": 442.83,
+      "text": "and keeps the cash at full precision on"
+    },
+    {
+      "start": 442.84,
+      "end": 445.27,
+      "text": "purpose because rounding is exactly the"
+    },
+    {
+      "start": 445.28,
+      "end": 447.39,
+      "text": "thing it is trying to avoid. Which means"
+    },
+    {
+      "start": 447.4,
+      "end": 449.15,
+      "text": "the model answering your questions is"
+    },
+    {
+      "start": 449.16,
+      "end": 451.39,
+      "text": "the model that scored the benchmark, not"
+    },
+    {
+      "start": 451.4,
+      "end": 453.27,
+      "text": "the compressed copy. That is the one"
+    },
+    {
+      "start": 453.28,
+      "end": 455.79,
+      "text": "place OLM is not making a trade. The"
+    },
+    {
+      "start": 455.8,
+      "end": 457.43,
+      "text": "commit count is the last number worth"
+    },
+    {
+      "start": 457.44,
+      "end": 459.11,
+      "text": "looking at and it is the one I did not"
+    },
+    {
+      "start": 459.12,
+      "end": 461.71,
+      "text": "expect. Llama CPP had five separate"
+    },
+    {
+      "start": 461.72,
+      "end": 463.75,
+      "text": "tagged builds in a single 48-hour"
+    },
+    {
+      "start": 463.76,
+      "end": 465.95,
+      "text": "window. The most recent one landed a few"
+    },
+    {
+      "start": 465.96,
+      "end": 467.90999999999997,
+      "text": "hours before the script was finished."
+    },
+    {
+      "start": 467.92,
+      "end": 470.47,
+      "text": "OLM has had exactly one commit in all of"
+    },
+    {
+      "start": 470.48,
+      "end": 473.51,
+      "text": "2026. One line in the project file"
+    },
+    {
+      "start": 473.52,
+      "end": 475.59000000000003,
+      "text": "pinning a library version. The last"
+    },
+    {
+      "start": 475.6,
+      "end": 477.47,
+      "text": "commit that changed how anything behaves"
+    },
+    {
+      "start": 477.48,
+      "end": 481.19,
+      "text": "was November 29th, 2025. The roadmap the"
+    },
+    {
+      "start": 481.2,
+      "end": 483.67,
+      "text": "author posted at launch. 100,000 token"
+    },
+    {
+      "start": 483.68,
+      "end": 486.43,
+      "text": "context on 12 GB. A better cache"
+    },
+    {
+      "start": 486.44,
+      "end": 488.99,
+      "text": "algorithm for mixture of experts models."
+    },
+    {
+      "start": 489,
+      "end": 492.39,
+      "text": "None of it shipped. 2,700 stars and the"
+    },
+    {
+      "start": 492.4,
+      "end": 494.03,
+      "text": "work stopped. The idea is more"
+    },
+    {
+      "start": 494.04,
+      "end": 495.71,
+      "text": "interesting than the throughput and"
+    },
+    {
+      "start": 495.72,
+      "end": 497.31,
+      "text": "sooner or later somebody will implement"
+    },
+    {
+      "start": 497.32,
+      "end": 500.75,
+      "text": "it properly in C++. So, set the bar"
+    },
+    {
+      "start": 500.76,
+      "end": 502.99,
+      "text": "where it belongs. Half a token a second"
+    },
+    {
+      "start": 503,
+      "end": 505.11,
+      "text": "is far too slow for an agent grinding"
+    },
+    {
+      "start": 505.12,
+      "end": 507.19,
+      "text": "through a codebase unattended. It is"
+    },
+    {
+      "start": 507.2,
+      "end": 509.99,
+      "text": "fine for reading a 50,000 token filing"
+    },
+    {
+      "start": 510,
+      "end": 512.27,
+      "text": "and getting an answer by morning. Here's"
+    },
+    {
+      "start": 512.28,
+      "end": 514.469,
+      "text": "how I would actually decide. If you want"
+    },
+    {
+      "start": 514.479,
+      "end": 517.27,
+      "text": "to talk to a model, install Llama CPP."
+    },
+    {
+      "start": 517.28,
+      "end": 519.67,
+      "text": "Quantize to 4-bit, cap your context at"
+    },
+    {
+      "start": 519.68,
+      "end": 520.7090000000001,
+      "text": "32,000"
+    },
+    {
+      "start": 520.719,
+      "end": 523.55,
+      "text": "tokens on 8 GB of VRAM and stop reading"
+    },
+    {
+      "start": 523.56,
+      "end": 525.71,
+      "text": "benchmark tables. If the model does not"
+    },
+    {
+      "start": 525.72,
+      "end": 528.829,
+      "text": "fit, still Llama CPP. Try first, then"
+    },
+    {
+      "start": 528.8389999999999,
+      "end": 530.87,
+      "text": "let memory mapping page from an NVMe"
+    },
+    {
+      "start": 530.88,
+      "end": 532.829,
+      "text": "drive and make peace with one to two"
+    },
+    {
+      "start": 532.8389999999999,
+      "end": 535.19,
+      "text": "tokens a second. If you need 100,000"
+    },
+    {
+      "start": 535.2,
+      "end": 537.67,
+      "text": "tokens at full precision on 8 GB and you"
+    },
+    {
+      "start": 537.68,
+      "end": 539.87,
+      "text": "can wait, OLM is currently the only"
+    },
+    {
+      "start": 539.88,
+      "end": 542.31,
+      "text": "thing that does it. That group is small."
+    },
+    {
+      "start": 542.32,
+      "end": 545.15,
+      "text": "It is also real. And until llama.cpp"
+    },
+    {
+      "start": 545.16,
+      "end": 546.59,
+      "text": "puts the attention cache on disk"
+    },
+    {
+      "start": 546.6,
+      "end": 548.75,
+      "text": "properly, that group is the entire"
+    },
+    {
+      "start": 548.76,
+      "end": 550.829,
+      "text": "reason this project exists. The thing"
+    },
+    {
+      "start": 550.839,
+      "end": 552.43,
+      "text": "worth keeping is not the setup"
+    },
+    {
+      "start": 552.44,
+      "end": 555.15,
+      "text": "instructions. For 2 years, the rule was"
+    },
+    {
+      "start": 555.16,
+      "end": 557.87,
+      "text": "that VRAM is a wall. The model fits or"
+    },
+    {
+      "start": 557.88,
+      "end": 559.829,
+      "text": "it does not and the only fix is a bigger"
+    },
+    {
+      "start": 559.8389999999999,
+      "end": 562.55,
+      "text": "card or a smaller model. OLM turned that"
+    },
+    {
+      "start": 562.56,
+      "end": 565.27,
+      "text": "wall into a door. A slow door, when you"
+    },
+    {
+      "start": 565.28,
+      "end": 566.63,
+      "text": "have to walk through it half a token a"
+    },
+    {
+      "start": 566.64,
+      "end": 568.91,
+      "text": "second, but a door. 80 billion"
+    },
+    {
+      "start": 568.92,
+      "end": 572.23,
+      "text": "parameters, 8 GB, answers in real time."
+    },
+    {
+      "start": 572.24,
+      "end": 574.11,
+      "text": "Go run it, then tell me your tokens per"
+    },
+    {
+      "start": 574.12,
+      "end": 576.23,
+      "text": "second and your drive speed. Those two"
+    },
+    {
+      "start": 576.24,
+      "end": 578.23,
+      "text": "numbers together are the whole story."
+    },
+    {
+      "start": 578.24,
+      "end": 581.48,
+      "text": "See you in the next one."
+    }
+  ]
+}

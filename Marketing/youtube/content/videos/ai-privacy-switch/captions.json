@@ -1,0 +1,11 @@
+[
+  {"text":"An AI tool can run locally","startMs":200,"endMs":2800,"timestampMs":null,"confidence":null,"sceneId":"hook"},
+  {"text":"and still send your data to the cloud.","startMs":2900,"endMs":5600,"timestampMs":null,"confidence":null,"sceneId":"hook"},
+  {"text":"Local is a location. Privacy is a data-flow decision.","startMs":5800,"endMs":9600,"timestampMs":null,"confidence":null,"sceneId":"hook"},
+  {"text":"Trace the model, files, and telemetry.","startMs":11000,"endMs":15000,"timestampMs":null,"confidence":null,"sceneId":"ui"},
+  {"text":"Input. Endpoint. Retention.","startMs":24000,"endMs":28500,"timestampMs":null,"confidence":null,"sceneId":"flow"},
+  {"text":"Make endpoint and logging choices explicit.","startMs":38500,"endMs":43000,"timestampMs":null,"confidence":null,"sceneId":"config"},
+  {"text":"Fully local and hybrid solve different problems.","startMs":51500,"endMs":56500,"timestampMs":null,"confidence":null,"sceneId":"compare"},
+  {"text":"Endpoint. Storage. Telemetry.","startMs":66000,"endMs":70500,"timestampMs":null,"confidence":null,"sceneId":"payoff"},
+  {"text":"That is the repeatable privacy test.","startMs":70600,"endMs":74600,"timestampMs":null,"confidence":null,"sceneId":"payoff"}
+]

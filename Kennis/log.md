@@ -21,3 +21,8 @@
 
 - Stored the Telegram capture in `personal/ideas/2026-07-27-memo-voor-toooo.md`.
 - Captured the three ideas: browser Spotify script, a YouTube account for papa, and a customized Python course.
+
+## [2026-07-30] capture | Personal Python learning profile
+
+- Stored Daniel's dated age statement and Python learning preferences in `personal/areas/profile.md`.
+- Linked the profile from the personal navigation without inferring a birth date.

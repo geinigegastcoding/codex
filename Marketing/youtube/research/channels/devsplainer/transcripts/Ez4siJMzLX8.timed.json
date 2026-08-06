@@ -1,0 +1,1256 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.83,
+      "text": "Your AI agent doesn't remember a single"
+    },
+    {
+      "start": 2.84,
+      "end": 5.23,
+      "text": "thing you tell it. Every message you"
+    },
+    {
+      "start": 5.24,
+      "end": 7.19,
+      "text": "send, it [music] wakes up with total"
+    },
+    {
+      "start": 7.2,
+      "end": 9.83,
+      "text": "amnesia and some piece of software you"
+    },
+    {
+      "start": 9.84,
+      "end": 11.67,
+      "text": "probably didn't think much about"
+    },
+    {
+      "start": 11.68,
+      "end": 13.87,
+      "text": "scrambles to fake a memory before the"
+    },
+    {
+      "start": 13.88,
+      "end": 16.59,
+      "text": "model can answer. The fake is what"
+    },
+    {
+      "start": 16.6,
+      "end": 19.11,
+      "text": "everyone calls agent memory and right"
+    },
+    {
+      "start": 19.12,
+      "end": 22.27,
+      "text": "now it's the messiest, most argued over"
+    },
+    {
+      "start": 22.28,
+      "end": 25.23,
+      "text": "corner of building with AI. A whole"
+    },
+    {
+      "start": 25.24,
+      "end": 27.23,
+      "text": "industry is selling you ways to make"
+    },
+    {
+      "start": 27.24,
+      "end": 30.03,
+      "text": "your agent remember more. Though the"
+    },
+    {
+      "start": 30.04,
+      "end": 32.429,
+      "text": "thing that separates working memory from"
+    },
+    {
+      "start": 32.439,
+      "end": 35.03,
+      "text": "memory that wrecks your agent is knowing"
+    },
+    {
+      "start": 35.04,
+      "end": 37.59,
+      "text": "what to throw away. By the end of this"
+    },
+    {
+      "start": 37.6,
+      "end": 39.99,
+      "text": "video, you'll know why the model forgets"
+    },
+    {
+      "start": 40,
+      "end": 43.11,
+      "text": "at all, what agent memory is, the one"
+    },
+    {
+      "start": 43.12,
+      "end": 45.35,
+      "text": "reason more memory can make your agent"
+    },
+    {
+      "start": 45.36,
+      "end": 48.11,
+      "text": "worse, and the boring setup that's all"
+    },
+    {
+      "start": 48.12,
+      "end": 50.83,
+      "text": "most agents will [music] ever need. We"
+    },
+    {
+      "start": 50.84,
+      "end": 52.95,
+      "text": "should start with the simple part. Why"
+    },
+    {
+      "start": 52.96,
+      "end": 55.99,
+      "text": "does your agent forget? The model itself"
+    },
+    {
+      "start": 56,
+      "end": 58.91,
+      "text": "is stateless. One request goes in, one"
+    },
+    {
+      "start": 58.92,
+      "end": 61.07,
+      "text": "answer comes out. And the instant it"
+    },
+    {
+      "start": 61.08,
+      "end": 63.35,
+      "text": "finishes, the model throws everything"
+    },
+    {
+      "start": 63.36,
+      "end": 65.39,
+      "text": "away. It doesn't know you, it doesn't"
+    },
+    {
+      "start": 65.4,
+      "end": 67.91,
+      "text": "know the last thing it said. Every turn"
+    },
+    {
+      "start": 67.92,
+      "end": 70.35,
+      "text": "it's meeting you for the first time. So"
+    },
+    {
+      "start": 70.36,
+      "end": 73.47,
+      "text": "how does a chat feel continuous at all?"
+    },
+    {
+      "start": 73.48,
+      "end": 76.15,
+      "text": "Your tool cheats. Before each turn, it"
+    },
+    {
+      "start": 76.16,
+      "end": 78.59,
+      "text": "pastes the whole conversation back in"
+    },
+    {
+      "start": 78.6,
+      "end": 78.67,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 78.68,
+      "end": 81.23,
+      "text": "&gt;&gt; behind the scenes. So the model can read"
+    },
+    {
+      "start": 81.24,
+      "end": 83.31,
+      "text": "what already happened and act like it"
+    },
+    {
+      "start": 83.32,
+      "end": 86.07,
+      "text": "remembered. That repasting is the only"
+    },
+    {
+      "start": 86.08,
+      "end": 89.03,
+      "text": "reason anything sticks and statelessness"
+    },
+    {
+      "start": 89.03999999999999,
+      "end": 91.69,
+      "text": "isn't some bug they forgot to fix. It's"
+    },
+    {
+      "start": 91.7,
+      "end": 93.47,
+      "text": "[music] the thing that lets one model"
+    },
+    {
+      "start": 93.47999999999999,
+      "end": 96.47,
+      "text": "serve millions of people at once without"
+    },
+    {
+      "start": 96.47999999999999,
+      "end": 98.78999999999999,
+      "text": "everyone's conversations bleeding into"
+    },
+    {
+      "start": 98.8,
+      "end": 101.50999999999999,
+      "text": "each other. Memory gets stretched over"
+    },
+    {
+      "start": 101.52000000000001,
+      "end": 103.95,
+      "text": "three different things. The context"
+    },
+    {
+      "start": 103.96000000000001,
+      "end": 106.27000000000001,
+      "text": "window is the model's workspace for a"
+    },
+    {
+      "start": 106.28,
+      "end": 109.19,
+      "text": "single answer, the text it can see right"
+    },
+    {
+      "start": 109.2,
+      "end": 112.71000000000001,
+      "text": "now. Think of it as RAM, fast, small,"
+    },
+    {
+      "start": 112.72,
+      "end": 114.91,
+      "text": "wiped the moment the job's done."
+    },
+    {
+      "start": 114.92,
+      "end": 117.89099999999999,
+      "text": "Retrieval, what most people call RAG, is"
+    },
+    {
+      "start": 117.90100000000001,
+      "end": 119.78999999999999,
+      "text": "[music] a read. You keep a pile of"
+    },
+    {
+      "start": 119.8,
+      "end": 121.91,
+      "text": "documents, and when a question comes in,"
+    },
+    {
+      "start": 121.92,
+      "end": 123.75,
+      "text": "you go fetch the chunks that look"
+    },
+    {
+      "start": 123.76,
+      "end": 126.67,
+      "text": "relevant and drop them in. A library you"
+    },
+    {
+      "start": 126.68,
+      "end": 129.43,
+      "text": "can search. Memory is the part that"
+    },
+    {
+      "start": 129.44,
+      "end": 131.949,
+      "text": "writes. It watches what happens, [music]"
+    },
+    {
+      "start": 131.959,
+      "end": 134.43,
+      "text": "decides something is worth keeping, and"
+    },
+    {
+      "start": 134.44,
+      "end": 137.63,
+      "text": "saves it so a future session can use it."
+    },
+    {
+      "start": 137.64,
+      "end": 139.63,
+      "text": "That last one is where the real work"
+    },
+    {
+      "start": 139.64,
+      "end": 142.39,
+      "text": "lives. Rag reads from a shelf someone"
+    },
+    {
+      "start": 142.4,
+      "end": 144.91,
+      "text": "already stocked. [music] Memory decides"
+    },
+    {
+      "start": 144.92000000000002,
+      "end": 146.91,
+      "text": "what goes on the shelf and what gets"
+    },
+    {
+      "start": 146.92000000000002,
+      "end": 149.03,
+      "text": "pulled back off when it turns out to be"
+    },
+    {
+      "start": 149.04,
+      "end": 150.19,
+      "text": "wrong."
+    },
+    {
+      "start": 150.2,
+      "end": 152.59,
+      "text": "If memory is the writing, something has"
+    },
+    {
+      "start": 152.6,
+      "end": 155.19,
+      "text": "to do the writing. This is where the"
+    },
+    {
+      "start": 155.2,
+      "end": 157.39,
+      "text": "\"It's a database in a costume\" complaint"
+    },
+    {
+      "start": 157.4,
+      "end": 159.79,
+      "text": "comes from, and it's worth being precise"
+    },
+    {
+      "start": 159.8,
+      "end": 162.39,
+      "text": "about. A good memory system isn't a"
+    },
+    {
+      "start": 162.4,
+      "end": 165.31,
+      "text": "place you dump text. It's a loop wrapped"
+    },
+    {
+      "start": 165.32,
+      "end": 167.87,
+      "text": "around the model with two halves. The"
+    },
+    {
+      "start": 167.88,
+      "end": 170.55,
+      "text": "write path is the remembering. After a"
+    },
+    {
+      "start": 170.56,
+      "end": 173.31,
+      "text": "turn, a separate process reads back over"
+    },
+    {
+      "start": 173.32,
+      "end": 175.91,
+      "text": "what just happened and asks one hard"
+    },
+    {
+      "start": 175.92000000000002,
+      "end": 178.43,
+      "text": "question: Is anything here worth"
+    },
+    {
+      "start": 178.44,
+      "end": 181.55,
+      "text": "keeping? Mostly, no. The model's own"
+    },
+    {
+      "start": 181.56,
+      "end": 184.63,
+      "text": "filler, half its reasoning, the 15 tool"
+    },
+    {
+      "start": 184.64,
+      "end": 187.71,
+      "text": "calls that went nowhere, all noise. The"
+    },
+    {
+      "start": 187.72,
+      "end": 190.19,
+      "text": "good systems bin that and keep the few"
+    },
+    {
+      "start": 190.2,
+      "end": 193.07,
+      "text": "durable facts. You switch from Python to"
+    },
+    {
+      "start": 193.08,
+      "end": 196.07,
+      "text": "TypeScript. The deploy failed on an auth"
+    },
+    {
+      "start": 196.07999999999998,
+      "end": 199.59,
+      "text": "step. This user hates early flights."
+    },
+    {
+      "start": 199.6,
+      "end": 201.82999999999998,
+      "text": "Then it reconciles them against what it"
+    },
+    {
+      "start": 201.84,
+      "end": 204.79,
+      "text": "already knew. So a new fact overrides"
+    },
+    {
+      "start": 204.8,
+      "end": 206.972,
+      "text": "the old one instead of piling up beside"
+    },
+    {
+      "start": 206.982,
+      "end": 208.99,
+      "text": "[music] it. The read path is the"
+    },
+    {
+      "start": 209,
+      "end": 211.55,
+      "text": "recalling. A new turn comes in, and"
+    },
+    {
+      "start": 211.56,
+      "end": 214.03,
+      "text": "before the model sees anything, the loop"
+    },
+    {
+      "start": 214.04,
+      "end": 216.949,
+      "text": "decides what's relevant, pulls a handful"
+    },
+    {
+      "start": 216.959,
+      "end": 219.55,
+      "text": "of the right memories, ranks them, and"
+    },
+    {
+      "start": 219.56,
+      "end": 222.19,
+      "text": "pastes only those into the window. Not"
+    },
+    {
+      "start": 222.2,
+      "end": 224.91,
+      "text": "the whole pile, only the best few."
+    },
+    {
+      "start": 224.92000000000002,
+      "end": 228.67000000000002,
+      "text": "Write, store, reconcile, retrieve, rank,"
+    },
+    {
+      "start": 228.68,
+      "end": 231.19,
+      "text": "forget. That's the loop. And notice"
+    },
+    {
+      "start": 231.2,
+      "end": 233.43,
+      "text": "what's doing the work, not the database"
+    },
+    {
+      "start": 233.44,
+      "end": 235.99,
+      "text": "underneath. Swap the vector store for a"
+    },
+    {
+      "start": 236,
+      "end": 238.39,
+      "text": "graph or for a plain text file, and the"
+    },
+    {
+      "start": 238.4,
+      "end": 240.79,
+      "text": "loop is the same. What makes memory"
+    },
+    {
+      "start": 240.8,
+      "end": 242.99,
+      "text": "sharp or useless is the controller"
+    },
+    {
+      "start": 243,
+      "end": 245.95,
+      "text": "making those keep or toss calls. That is"
+    },
+    {
+      "start": 245.96,
+      "end": 248.63,
+      "text": "something that can't be sold in a box."
+    },
+    {
+      "start": 248.64,
+      "end": 250.87,
+      "text": "You would think the fix is obvious."
+    },
+    {
+      "start": 250.88,
+      "end": 253.27,
+      "text": "Models take a million tokens of context"
+    },
+    {
+      "start": 253.28,
+      "end": 255.79,
+      "text": "now, so stop deleting things. Paste the"
+    },
+    {
+      "start": 255.8,
+      "end": 258.27,
+      "text": "entire history in every time and let the"
+    },
+    {
+      "start": 258.28,
+      "end": 261.19,
+      "text": "model sort it out. More memory, fewer"
+    },
+    {
+      "start": 261.2,
+      "end": 263.55,
+      "text": "problems. It runs the [music] other way."
+    },
+    {
+      "start": 263.56,
+      "end": 265.909,
+      "text": "A model with a giant window doesn't read"
+    },
+    {
+      "start": 265.919,
+      "end": 268.87,
+      "text": "across all of it evenly. Researchers at"
+    },
+    {
+      "start": 268.88,
+      "end": 271.31,
+      "text": "Chroma pushed 18 of the top models"
+    },
+    {
+      "start": 271.32,
+      "end": 273.87,
+      "text": "through longer and longer inputs, and"
+    },
+    {
+      "start": 273.88,
+      "end": 276.27,
+      "text": "every single one got less reliable as"
+    },
+    {
+      "start": 276.28,
+      "end": 279.47,
+      "text": "the input grew. Even on easy lookups."
+    },
+    {
+      "start": 279.48,
+      "end": 282.07,
+      "text": "They named it context rot. The window"
+    },
+    {
+      "start": 282.08,
+      "end": 284.71,
+      "text": "fills, the signal drowns, and the model"
+    },
+    {
+      "start": 284.72,
+      "end": 287.23,
+      "text": "starts skimming. You've likely felt this"
+    },
+    {
+      "start": 287.24,
+      "end": 289.99,
+      "text": "as well. Early in a session, an agent"
+    },
+    {
+      "start": 290,
+      "end": 292.03,
+      "text": "follows your instructions almost every"
+    },
+    {
+      "start": 292.04,
+      "end": 294.909,
+      "text": "time. Bury those same instructions under"
+    },
+    {
+      "start": 294.919,
+      "end": 297.63,
+      "text": "a few thousand tokens of chat history,"
+    },
+    {
+      "start": 297.64,
+      "end": 299.35,
+      "text": "and its compliance falls through the"
+    },
+    {
+      "start": 299.36,
+      "end": 301.55,
+      "text": "floor, down to roughly [music] a third"
+    },
+    {
+      "start": 301.56,
+      "end": 304.47,
+      "text": "by the time a conversation's run long."
+    },
+    {
+      "start": 304.48,
+      "end": 306.55,
+      "text": "So, the job flips. A memory [music]"
+    },
+    {
+      "start": 306.56,
+      "end": 309.35,
+      "text": "system proves its worth by how much it"
+    },
+    {
+      "start": 309.36,
+      "end": 311.95,
+      "text": "throws away. Keep the active context"
+    },
+    {
+      "start": 311.96,
+      "end": 314.47,
+      "text": "small, sharp, and mostly empty, and the"
+    },
+    {
+      "start": 314.48,
+      "end": 316.909,
+      "text": "model stays clear-headed, which makes"
+    },
+    {
+      "start": 316.919,
+      "end": 318.87,
+      "text": "the controller's hardest and most"
+    },
+    {
+      "start": 318.88,
+      "end": 322.23,
+      "text": "valuable job forgetting on purpose."
+    },
+    {
+      "start": 322.24,
+      "end": 323.87,
+      "text": "Don't think there's a solution for it,"
+    },
+    {
+      "start": 323.88,
+      "end": 326.31,
+      "text": "by the way. Forgetting on purpose sounds"
+    },
+    {
+      "start": 326.32,
+      "end": 328.59,
+      "text": "clean until you try to write the rule"
+    },
+    {
+      "start": 328.6,
+      "end": 331.83,
+      "text": "for it, knowing what to keep. There's no"
+    },
+    {
+      "start": 331.84,
+      "end": 335.23,
+      "text": "reliable signal for this is important."
+    },
+    {
+      "start": 335.24,
+      "end": 336.83,
+      "text": "Keep too much, and you're back to"
+    },
+    {
+      "start": 336.84000000000003,
+      "end": 339.31,
+      "text": "context rot. Keep too little, and you"
+    },
+    {
+      "start": 339.32,
+      "end": 341.31,
+      "text": "bin the one detail that turns out to"
+    },
+    {
+      "start": 341.32,
+      "end": 344.15,
+      "text": "matter three days later. The model can't"
+    },
+    {
+      "start": 344.15999999999997,
+      "end": 345.95,
+      "text": "tell, and neither can a simple"
+    },
+    {
+      "start": 345.96,
+      "end": 349.31,
+      "text": "heuristic. Then stillness. Yesterday you"
+    },
+    {
+      "start": 349.32,
+      "end": 352.59000000000003,
+      "text": "preferred Python, today it's TypeScript."
+    },
+    {
+      "start": 352.6,
+      "end": 355.39,
+      "text": "A naive system stores both, retrieves"
+    },
+    {
+      "start": 355.4,
+      "end": 357.83,
+      "text": "both, and now the agent holds two facts"
+    },
+    {
+      "start": 357.84000000000003,
+      "end": 359.99,
+      "text": "that contradict each other with no idea"
+    },
+    {
+      "start": 360,
+      "end": 362.39,
+      "text": "which one is true now. Getting the new"
+    },
+    {
+      "start": 362.4,
+      "end": 365.03,
+      "text": "fact to override the old one instead of"
+    },
+    {
+      "start": 365.04,
+      "end": 367.23,
+      "text": "sitting next to it is one of the open"
+    },
+    {
+      "start": 367.24,
+      "end": 370.23,
+      "text": "problems. There's retrieval precision."
+    },
+    {
+      "start": 370.24,
+      "end": 372.51,
+      "text": "Search finds what's similar, not what's"
+    },
+    {
+      "start": 372.52,
+      "end": 375.51,
+      "text": "correct. Ask about your current task and"
+    },
+    {
+      "start": 375.52,
+      "end": 377.95,
+      "text": "it'll happily surface a three-day-old"
+    },
+    {
+      "start": 377.96,
+      "end": 379.909,
+      "text": "log that happens [music] to use the same"
+    },
+    {
+      "start": 379.919,
+      "end": 383.39,
+      "text": "words. Similar is not the same as right."
+    },
+    {
+      "start": 383.4,
+      "end": 385.39,
+      "text": "And the silent one. You often [music]"
+    },
+    {
+      "start": 385.4,
+      "end": 387.83,
+      "text": "can't tell if any of it is working."
+    },
+    {
+      "start": 387.84,
+      "end": 390.63,
+      "text": "Memory failures don't throw errors. The"
+    },
+    {
+      "start": 390.64,
+      "end": 392.71,
+      "text": "agent just gets a little worse and you"
+    },
+    {
+      "start": 392.72,
+      "end": 394.75,
+      "text": "won't notice it until it confidently"
+    },
+    {
+      "start": 394.76,
+      "end": 396.87,
+      "text": "forgets something it shouldn't have."
+    },
+    {
+      "start": 396.88,
+      "end": 399.03,
+      "text": "There are benchmarks for this like long"
+    },
+    {
+      "start": 399.04,
+      "end": 401.59000000000003,
+      "text": "mem eval and they show even strong"
+    },
+    {
+      "start": 401.6,
+      "end": 404.11,
+      "text": "setups dropping around 30% of their"
+    },
+    {
+      "start": 404.12,
+      "end": 407.07,
+      "text": "accuracy over a long multi-session"
+    },
+    {
+      "start": 407.08,
+      "end": 409.95,
+      "text": "chats. The trouble is every vendor posts"
+    },
+    {
+      "start": 409.96,
+      "end": 412.71,
+      "text": "a great score on their own benchmark and"
+    },
+    {
+      "start": 412.72,
+      "end": 415.19,
+      "text": "those scores rarely survive someone else"
+    },
+    {
+      "start": 415.2,
+      "end": 417.63,
+      "text": "running the test. So treat the numbers"
+    },
+    {
+      "start": 417.64,
+      "end": 419.39,
+      "text": "as marketing."
+    },
+    {
+      "start": 419.4,
+      "end": 421.07,
+      "text": "One more thing because it changes how"
+    },
+    {
+      "start": 421.08,
+      "end": 423.15,
+      "text": "you should think about the whole system."
+    },
+    {
+      "start": 423.16,
+      "end": 425.59,
+      "text": "The moment your agent writes things down"
+    },
+    {
+      "start": 425.6,
+      "end": 427.95,
+      "text": "and trusts them later, that memory"
+    },
+    {
+      "start": 427.96,
+      "end": 430.07,
+      "text": "becomes a target. A normal [music]"
+    },
+    {
+      "start": 430.08,
+      "end": 432.87,
+      "text": "prompt injection is a one-shot problem."
+    },
+    {
+      "start": 432.88,
+      "end": 435.23,
+      "text": "Someone slips a bad instruction in, the"
+    },
+    {
+      "start": 435.24,
+      "end": 437.59,
+      "text": "agent does something dumb for one turn,"
+    },
+    {
+      "start": 437.6,
+      "end": 440.07,
+      "text": "the session ends, it's gone. But say"
+    },
+    {
+      "start": 440.08,
+      "end": 442.43,
+      "text": "your agent reads a poisoned line of a"
+    },
+    {
+      "start": 442.44,
+      "end": 445.47,
+      "text": "shared read me or an email, decides it's"
+    },
+    {
+      "start": 445.48,
+      "end": 448.11,
+      "text": "a useful fact and writes it to long-term"
+    },
+    {
+      "start": 448.12,
+      "end": 450.47,
+      "text": "memory. That attack doesn't end with the"
+    },
+    {
+      "start": 450.48,
+      "end": 453.27,
+      "text": "session, it waits. Days later in a"
+    },
+    {
+      "start": 453.28,
+      "end": 454.99,
+      "text": "completely different and maybe"
+    },
+    {
+      "start": 455,
+      "end": 457.71,
+      "text": "privileged session, the agent pulls that"
+    },
+    {
+      "start": 457.72,
+      "end": 460.39,
+      "text": "memory back up and runs it with no clue"
+    },
+    {
+      "start": 460.4,
+      "end": 463.07,
+      "text": "it was planted. Researchers have landed"
+    },
+    {
+      "start": 463.08,
+      "end": 465.23,
+      "text": "these implants more than 90% [music] of"
+    },
+    {
+      "start": 465.24,
+      "end": 467.83,
+      "text": "the time using nothing but ordinary"
+    },
+    {
+      "start": 467.84000000000003,
+      "end": 470.39,
+      "text": "looking messages. Persistent memory"
+    },
+    {
+      "start": 470.4,
+      "end": 473.27,
+      "text": "turns a passing exploit into a sleeper"
+    },
+    {
+      "start": 473.28,
+      "end": 474.51,
+      "text": "agent."
+    },
+    {
+      "start": 474.52,
+      "end": 476.47,
+      "text": "So, what does all this mean for you"
+    },
+    {
+      "start": 476.48,
+      "end": 478.79,
+      "text": "building something this week? Almost"
+    },
+    {
+      "start": 478.8,
+      "end": 480.75,
+      "text": "certainly less than the market wants to"
+    },
+    {
+      "start": 480.76,
+      "end": 483.39,
+      "text": "sell you. Most working developers don't"
+    },
+    {
+      "start": 483.4,
+      "end": 486.03,
+      "text": "run a memory system at all. They write"
+    },
+    {
+      "start": 486.04,
+      "end": 489.35,
+      "text": "things down. A Claude MD or Agents MD"
+    },
+    {
+      "start": 489.36,
+      "end": 492.03,
+      "text": "file with the project standing facts. A"
+    },
+    {
+      "start": 492.04,
+      "end": 494.71,
+      "text": "notes file the agent appends [music] to."
+    },
+    {
+      "start": 494.72,
+      "end": 496.99,
+      "text": "Git history which is already a clean"
+    },
+    {
+      "start": 497,
+      "end": 499.51,
+      "text": "record of what got done and why. When a"
+    },
+    {
+      "start": 499.52,
+      "end": 501.99,
+      "text": "conversation gets long, summarize the"
+    },
+    {
+      "start": 502,
+      "end": 504.345,
+      "text": "old turns and drop the raw transcript."
+    },
+    {
+      "start": 504.355,
+      "end": 504.909,
+      "text": "[music]"
+    },
+    {
+      "start": 504.919,
+      "end": 507.71,
+      "text": "Add one small table of durable facts per"
+    },
+    {
+      "start": 507.72,
+      "end": 510.15,
+      "text": "user looked up exactly and not by"
+    },
+    {
+      "start": 510.16,
+      "end": 511.43,
+      "text": "similarity [music]"
+    },
+    {
+      "start": 511.44,
+      "end": 512.87,
+      "text": "and you've killed the number one"
+    },
+    {
+      "start": 512.88,
+      "end": 515.55,
+      "text": "complaint. It forgot my preference with"
+    },
+    {
+      "start": 515.56,
+      "end": 518.469,
+      "text": "no vector database in sight. The heavy"
+    },
+    {
+      "start": 518.479,
+      "end": 521.99,
+      "text": "tools, Mem Zero, Let A Zap, all of them"
+    },
+    {
+      "start": 522,
+      "end": 523.95,
+      "text": "are worth it the day you can prove you"
+    },
+    {
+      "start": 523.96,
+      "end": 526.31,
+      "text": "need them. Real [music] cross-session"
+    },
+    {
+      "start": 526.32,
+      "end": 527.829,
+      "text": "personalization,"
+    },
+    {
+      "start": 527.8389999999999,
+      "end": 530.55,
+      "text": "a code base too big to summarize, a"
+    },
+    {
+      "start": 530.56,
+      "end": 532.71,
+      "text": "swarm of agents that have to share"
+    },
+    {
+      "start": 532.72,
+      "end": 535.55,
+      "text": "state. Until you hit one of those walls,"
+    },
+    {
+      "start": 535.56,
+      "end": 537.99,
+      "text": "a fancy memory layer mostly buys you"
+    },
+    {
+      "start": 538,
+      "end": 541.27,
+      "text": "more tokens, more latency, and more ways"
+    },
+    {
+      "start": 541.28,
+      "end": 543.99,
+      "text": "to fail. Whatever you do, write the test"
+    },
+    {
+      "start": 544,
+      "end": 547.47,
+      "text": "first. Five questions on your own data."
+    },
+    {
+      "start": 547.48,
+      "end": 550.15,
+      "text": "One about a stable preference. One about"
+    },
+    {
+      "start": 550.16,
+      "end": 552.43,
+      "text": "a fact that changed. One the agent"
+    },
+    {
+      "start": 552.44,
+      "end": 554.67,
+      "text": "should refuse to answer because nobody"
+    },
+    {
+      "start": 554.68,
+      "end": 557.19,
+      "text": "ever told it. If you can't measure"
+    },
+    {
+      "start": 557.2,
+      "end": 559.43,
+      "text": "whether memory helped, you can't tell a"
+    },
+    {
+      "start": 559.44,
+      "end": 561.79,
+      "text": "system that works from one that only"
+    },
+    {
+      "start": 561.8,
+      "end": 563.75,
+      "text": "feels [music] like it does."
+    },
+    {
+      "start": 563.76,
+      "end": 565.87,
+      "text": "Zoom out and the field is settling on"
+    },
+    {
+      "start": 565.88,
+      "end": 568.35,
+      "text": "one shape even while it argues about"
+    },
+    {
+      "start": 568.36,
+      "end": 570.87,
+      "text": "everything else. Nobody has won the"
+    },
+    {
+      "start": 570.88,
+      "end": 574.43,
+      "text": "database. Vector, graph, files, they all"
+    },
+    {
+      "start": 574.44,
+      "end": 576.67,
+      "text": "still have their believers. What people"
+    },
+    {
+      "start": 576.68,
+      "end": 579.63,
+      "text": "are converging on is the loop. Write,"
+    },
+    {
+      "start": 579.64,
+      "end": 582.2909999999999,
+      "text": "store, reconcile, retrieve, rank,"
+    },
+    {
+      "start": 582.301,
+      "end": 584.79,
+      "text": "[music] forget. All of it running under"
+    },
+    {
+      "start": 584.8,
+      "end": 587.15,
+      "text": "a tight budget of what the model can"
+    },
+    {
+      "start": 587.16,
+      "end": 589.87,
+      "text": "actually hold. When your agent forgets"
+    },
+    {
+      "start": 589.88,
+      "end": 591.83,
+      "text": "something it shouldn't, the problem is"
+    },
+    {
+      "start": 591.84,
+      "end": 594.11,
+      "text": "almost never the storage. It's [music]"
+    },
+    {
+      "start": 594.12,
+      "end": 596.31,
+      "text": "the decision about what deserved to be"
+    },
+    {
+      "start": 596.32,
+      "end": 598.31,
+      "text": "stored and what should have been thrown"
+    },
+    {
+      "start": 598.32,
+      "end": 600.79,
+      "text": "out. The controller, not the database"
+    },
+    {
+      "start": 600.8,
+      "end": 603.27,
+      "text": "underneath it. Get that decision right"
+    },
+    {
+      "start": 603.28,
+      "end": 605.87,
+      "text": "and a markdown file goes a long way. Get"
+    },
+    {
+      "start": 605.88,
+      "end": 607.63,
+      "text": "it [music] wrong and the most expensive"
+    },
+    {
+      "start": 607.64,
+      "end": 609.75,
+      "text": "memory stack on the market just helps"
+    },
+    {
+      "start": 609.76,
+      "end": 612.51,
+      "text": "your agent forget faster. For most"
+    },
+    {
+      "start": 612.52,
+      "end": 614.63,
+      "text": "agents you'll ever build, memory is a"
+    },
+    {
+      "start": 614.64,
+      "end": 617.31,
+      "text": "markdown file and a habit. Reach for"
+    },
+    {
+      "start": 617.32,
+      "end": 619.43,
+      "text": "more the day you can prove you need it"
+    },
+    {
+      "start": 619.44,
+      "end": 623.16,
+      "text": "and not a day before."
+    }
+  ]
+}

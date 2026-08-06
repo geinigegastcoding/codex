@@ -1,0 +1,1976 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.870 align:start position:0%
+ 
+Two<00:00:00.320><c> coding</c><00:00:00.600><c> models.</c><00:00:01.400><c> One</c><00:00:01.640><c> costs</c><00:00:02.000><c> $25</c><00:00:02.840><c> a</c>
+
+00:00:02.870 --> 00:00:02.880 align:start position:0%
+Two coding models. One costs $25 a
+ 
+
+00:00:02.880 --> 00:00:04.750 align:start position:0%
+Two coding models. One costs $25 a
+million<00:00:03.200><c> output</c><00:00:03.520><c> tokens</c><00:00:03.920><c> and</c><00:00:04.080><c> lies</c><00:00:04.400><c> behind</c><00:00:04.680><c> an</c>
+
+00:00:04.750 --> 00:00:04.760 align:start position:0%
+million output tokens and lies behind an
+ 
+
+00:00:04.760 --> 00:00:06.990 align:start position:0%
+million output tokens and lies behind an
+API<00:00:05.120><c> you</c><00:00:05.240><c> can</c><00:00:05.360><c> never</c><00:00:05.600><c> open.</c><00:00:06.320><c> The</c><00:00:06.480><c> other</c><00:00:06.800><c> is</c>
+
+00:00:06.990 --> 00:00:07.000 align:start position:0%
+API you can never open. The other is
+ 
+
+00:00:07.000 --> 00:00:08.910 align:start position:0%
+API you can never open. The other is
+free<00:00:07.160><c> to</c><00:00:07.280><c> download,</c><00:00:08.240><c> beats</c><00:00:08.440><c> it</c><00:00:08.560><c> on</c><00:00:08.680><c> real</c>
+
+00:00:08.910 --> 00:00:08.920 align:start position:0%
+free to download, beats it on real
+ 
+
+00:00:08.920 --> 00:00:10.710 align:start position:0%
+free to download, beats it on real
+benchmarks,<00:00:09.840><c> and</c><00:00:09.960><c> a</c><00:00:10.040><c> trick</c><00:00:10.320><c> that</c><00:00:10.480><c> shipped</c>
+
+00:00:10.710 --> 00:00:10.720 align:start position:0%
+benchmarks, and a trick that shipped
+ 
+
+00:00:10.720 --> 00:00:12.390 align:start position:0%
+benchmarks, and a trick that shipped
+this<00:00:10.920><c> month</c><00:00:11.200><c> makes</c><00:00:11.400><c> it</c><00:00:11.520><c> run</c><00:00:11.720><c> three</c><00:00:12.080><c> times</c>
+
+00:00:12.390 --> 00:00:12.400 align:start position:0%
+this month makes it run three times
+ 
+
+00:00:12.400 --> 00:00:14.990 align:start position:0%
+this month makes it run three times
+faster.<00:00:13.280><c> This</c><00:00:13.440><c> is</c><00:00:13.600><c> Kimi</c><00:00:13.920><c> K3</c><00:00:14.480><c> from</c><00:00:14.640><c> a</c><00:00:14.680><c> lab</c>
+
+00:00:14.990 --> 00:00:15.000 align:start position:0%
+faster. This is Kimi K3 from a lab
+ 
+
+00:00:15.000 --> 00:00:17.390 align:start position:0%
+faster. This is Kimi K3 from a lab
+called<00:00:15.280><c> Moonshot</c><00:00:15.880><c> AI.</c><00:00:16.640><c> Hand</c><00:00:16.880><c> it</c><00:00:17.000><c> a</c><00:00:17.040><c> broken</c>
+
+00:00:17.390 --> 00:00:17.400 align:start position:0%
+called Moonshot AI. Hand it a broken
+ 
+
+00:00:17.400 --> 00:00:19.350 align:start position:0%
+called Moonshot AI. Hand it a broken
+front<00:00:17.640><c> end</c><00:00:18.000><c> and</c><00:00:18.120><c> it</c><00:00:18.240><c> rebuilds</c><00:00:18.720><c> it.</c><00:00:19.000><c> The</c><00:00:19.080><c> same</c>
+
+00:00:19.350 --> 00:00:19.360 align:start position:0%
+front end and it rebuilds it. The same
+ 
+
+00:00:19.360 --> 00:00:21.270 align:start position:0%
+front end and it rebuilds it. The same
+league<00:00:19.560><c> as</c><00:00:19.640><c> Claude</c><00:00:19.960><c> Opus</c><00:00:20.640><c> and</c><00:00:20.800><c> on</c><00:00:20.920><c> blind</c>
+
+00:00:21.270 --> 00:00:21.280 align:start position:0%
+league as Claude Opus and on blind
+ 
+
+00:00:21.280 --> 00:00:23.350 align:start position:0%
+league as Claude Opus and on blind
+developer<00:00:21.680><c> voting</c><00:00:22.000><c> it</c><00:00:22.200><c> actually</c><00:00:22.600><c> beats</c><00:00:23.000><c> it,</c>
+
+00:00:23.350 --> 00:00:23.360 align:start position:0%
+developer voting it actually beats it,
+ 
+
+00:00:23.360 --> 00:00:25.390 align:start position:0%
+developer voting it actually beats it,
+except<00:00:23.680><c> the</c><00:00:23.800><c> weights</c><00:00:24.080><c> are</c><00:00:24.160><c> public.</c><00:00:25.040><c> You</c><00:00:25.160><c> can</c>
+
+00:00:25.390 --> 00:00:25.400 align:start position:0%
+except the weights are public. You can
+ 
+
+00:00:25.400 --> 00:00:27.350 align:start position:0%
+except the weights are public. You can
+run<00:00:25.600><c> this</c><00:00:25.800><c> one</c><00:00:25.960><c> yourself.</c><00:00:26.800><c> Then</c><00:00:27.080><c> came</c><00:00:27.280><c> the</c>
+
+00:00:27.350 --> 00:00:27.360 align:start position:0%
+run this one yourself. Then came the
+ 
+
+00:00:27.360 --> 00:00:29.830 align:start position:0%
+run this one yourself. Then came the
+part<00:00:27.680><c> nobody</c><00:00:28.080><c> expected.</c><00:00:29.120><c> A</c><00:00:29.200><c> lab</c><00:00:29.560><c> called</c>
+
+00:00:29.830 --> 00:00:29.840 align:start position:0%
+part nobody expected. A lab called
+ 
+
+00:00:29.840 --> 00:00:31.990 align:start position:0%
+part nobody expected. A lab called
+Inter-<00:00:30.080><c> act</c><00:00:30.480><c> bolted</c><00:00:30.880><c> a</c><00:00:30.920><c> trick</c><00:00:31.240><c> called</c><00:00:31.480><c> D-Spark</c>
+
+00:00:31.990 --> 00:00:32.000 align:start position:0%
+Inter- act bolted a trick called D-Spark
+ 
+
+00:00:32.000 --> 00:00:34.630 align:start position:0%
+Inter- act bolted a trick called D-Spark
+onto<00:00:32.200><c> Kimi</c><00:00:32.439><c> K3</c><00:00:33.360><c> and</c><00:00:33.520><c> on</c><00:00:33.640><c> a</c><00:00:33.680><c> single</c><00:00:34.000><c> request</c><00:00:34.520><c> it</c>
+
+00:00:34.630 --> 00:00:34.640 align:start position:0%
+onto Kimi K3 and on a single request it
+ 
+
+00:00:34.640 --> 00:00:38.510 align:start position:0%
+onto Kimi K3 and on a single request it
+jumps<00:00:34.960><c> from</c><00:00:35.200><c> 118</c><00:00:36.120><c> tokens</c><00:00:36.440><c> a</c><00:00:36.520><c> second</c><00:00:36.960><c> to</c><00:00:37.040><c> 370.</c>
+
+00:00:38.510 --> 00:00:38.520 align:start position:0%
+jumps from 118 tokens a second to 370.
+ 
+
+00:00:38.520 --> 00:00:40.590 align:start position:0%
+jumps from 118 tokens a second to 370.
+Watch<00:00:38.800><c> the</c><00:00:38.920><c> tokens</c><00:00:39.280><c> fly.</c><00:00:40.040><c> And</c><00:00:40.160><c> here's</c><00:00:40.480><c> the</c>
+
+00:00:40.590 --> 00:00:40.600 align:start position:0%
+Watch the tokens fly. And here's the
+ 
+
+00:00:40.600 --> 00:00:43.590 align:start position:0%
+Watch the tokens fly. And here's the
+wild<00:00:40.920><c> part.</c><00:00:41.560><c> The</c><00:00:41.760><c> output</c><00:00:42.240><c> is</c><00:00:42.440><c> byte</c><00:00:42.720><c> identical.</c>
+
+00:00:43.590 --> 00:00:43.600 align:start position:0%
+wild part. The output is byte identical.
+ 
+
+00:00:43.600 --> 00:00:46.750 align:start position:0%
+wild part. The output is byte identical.
+Not<00:00:43.880><c> similar,</c><00:00:44.680><c> identical.</c><00:00:45.720><c> Same</c><00:00:46.080><c> weights,</c>
+
+00:00:46.750 --> 00:00:46.760 align:start position:0%
+Not similar, identical. Same weights,
+ 
+
+00:00:46.760 --> 00:00:49.790 align:start position:0%
+Not similar, identical. Same weights,
+same<00:00:47.160><c> answer,</c><00:00:48.000><c> same</c><00:00:48.400><c> every</c><00:00:48.720><c> character,</c><00:00:49.520><c> just</c>
+
+00:00:49.790 --> 00:00:49.800 align:start position:0%
+same answer, same every character, just
+ 
+
+00:00:49.800 --> 00:00:52.150 align:start position:0%
+same answer, same every character, just
+far<00:00:50.080><c> fewer</c><00:00:50.360><c> trips</c><00:00:50.640><c> through</c><00:00:50.800><c> the</c><00:00:50.880><c> GPU.</c><00:00:51.880><c> No</c>
+
+00:00:52.150 --> 00:00:52.160 align:start position:0%
+far fewer trips through the GPU. No
+ 
+
+00:00:52.160 --> 00:00:54.910 align:start position:0%
+far fewer trips through the GPU. No
+retraining,<00:00:53.160><c> no</c><00:00:53.360><c> fine-tune,</c><00:00:54.400><c> no</c><00:00:54.560><c> quality</c>
+
+00:00:54.910 --> 00:00:54.920 align:start position:0%
+retraining, no fine-tune, no quality
+ 
+
+00:00:54.920 --> 00:00:57.510 align:start position:0%
+retraining, no fine-tune, no quality
+tax.<00:00:55.720><c> Start</c><00:00:56.040><c> with</c><00:00:56.120><c> the</c><00:00:56.200><c> model</c><00:00:56.480><c> itself.</c><00:00:57.280><c> On</c><00:00:57.400><c> the</c>
+
+00:00:57.510 --> 00:00:57.520 align:start position:0%
+tax. Start with the model itself. On the
+ 
+
+00:00:57.520 --> 00:00:59.710 align:start position:0%
+tax. Start with the model itself. On the
+Artificial<00:00:57.960><c> Analysis</c><00:00:58.440><c> Intelligence</c><00:00:59.000><c> Index,</c>
+
+00:00:59.710 --> 00:00:59.720 align:start position:0%
+Artificial Analysis Intelligence Index,
+ 
+
+00:00:59.720 --> 00:01:03.590 align:start position:0%
+Artificial Analysis Intelligence Index,
+Kimi<00:01:00.080><c> K3</c><00:01:00.560><c> scores</c><00:01:00.920><c> 57.</c><00:01:01.880><c> Claude</c><00:01:02.320><c> Opus</c><00:01:02.840><c> 4.8</c>
+
+00:01:03.590 --> 00:01:03.600 align:start position:0%
+Kimi K3 scores 57. Claude Opus 4.8
+ 
+
+00:01:03.600 --> 00:01:06.990 align:start position:0%
+Kimi K3 scores 57. Claude Opus 4.8
+scores<00:01:04.000><c> 56.</c><00:01:05.120><c> That</c><00:01:05.360><c> gap</c><00:01:05.840><c> is</c><00:01:06.040><c> one</c><00:01:06.280><c> point.</c><00:01:06.800><c> On</c><00:01:06.920><c> the</c>
+
+00:01:06.990 --> 00:01:07.000 align:start position:0%
+scores 56. That gap is one point. On the
+ 
+
+00:01:07.000 --> 00:01:09.470 align:start position:0%
+scores 56. That gap is one point. On the
+front<00:01:07.320><c> end</c><00:01:07.480><c> code</c><00:01:07.760><c> arena,</c><00:01:08.520><c> a</c><00:01:08.600><c> blind</c><00:01:09.000><c> developer</c>
+
+00:01:09.470 --> 00:01:09.480 align:start position:0%
+front end code arena, a blind developer
+ 
+
+00:01:09.480 --> 00:01:11.390 align:start position:0%
+front end code arena, a blind developer
+vote<00:01:09.760><c> where</c><00:01:09.880><c> no</c><00:01:10.160><c> one</c><00:01:10.320><c> knows</c><00:01:10.640><c> which</c><00:01:10.920><c> model</c><00:01:11.240><c> they</c>
+
+00:01:11.390 --> 00:01:11.400 align:start position:0%
+vote where no one knows which model they
+ 
+
+00:01:11.400 --> 00:01:14.510 align:start position:0%
+vote where no one knows which model they
+are<00:01:11.520><c> rating,</c><00:01:12.240><c> K3</c><00:01:13.000><c> entered</c><00:01:13.400><c> at</c><00:01:13.480><c> number</c><00:01:13.800><c> one</c>
+
+00:01:14.510 --> 00:01:14.520 align:start position:0%
+are rating, K3 entered at number one
+ 
+
+00:01:14.520 --> 00:01:17.550 align:start position:0%
+are rating, K3 entered at number one
+with<00:01:14.680><c> an</c><00:01:14.840><c> Elo</c><00:01:15.160><c> of</c><00:01:15.360><c> 1,679.</c>
+
+00:01:17.550 --> 00:01:17.560 align:start position:0%
+with an Elo of 1,679.
+ 
+
+00:01:17.560 --> 00:01:21.550 align:start position:0%
+with an Elo of 1,679.
+Claude<00:01:17.920><c> Fable</c><00:01:18.240><c> 5</c><00:01:18.680><c> was</c><00:01:18.920><c> second</c><00:01:19.360><c> at</c><00:01:19.520><c> 1,631.</c>
+
+00:01:21.550 --> 00:01:21.560 align:start position:0%
+Claude Fable 5 was second at 1,631.
+ 
+
+00:01:21.560 --> 00:01:23.910 align:start position:0%
+Claude Fable 5 was second at 1,631.
+The<00:01:21.800><c> older</c><00:01:22.080><c> Kimi</c><00:01:22.400><c> K2.6</c><00:01:23.400><c> was</c><00:01:23.560><c> sitting</c><00:01:23.800><c> at</c>
+
+00:01:23.910 --> 00:01:23.920 align:start position:0%
+The older Kimi K2.6 was sitting at
+ 
+
+00:01:23.920 --> 00:01:27.110 align:start position:0%
+The older Kimi K2.6 was sitting at
+number<00:01:24.240><c> 18.</c><00:01:25.080><c> On</c><00:01:25.240><c> Frontier's</c><00:01:25.880><c> WE,</c><00:01:26.520><c> it</c><00:01:26.680><c> posts</c>
+
+00:01:27.110 --> 00:01:27.120 align:start position:0%
+number 18. On Frontier's WE, it posts
+ 
+
+00:01:27.120 --> 00:01:28.670 align:start position:0%
+number 18. On Frontier's WE, it posts
+81.2.
+
+00:01:28.670 --> 00:01:28.680 align:start position:0%
+81.2.
+ 
+
+00:01:28.680 --> 00:01:32.710 align:start position:0%
+81.2.
+On<00:01:28.840><c> Terminal</c><00:01:29.240><c> Bench</c><00:01:29.600><c> 2.1,</c><00:01:30.640><c> it</c><00:01:30.800><c> posts</c><00:01:31.200><c> 88.3.</c>
+
+00:01:32.710 --> 00:01:32.720 align:start position:0%
+On Terminal Bench 2.1, it posts 88.3.
+ 
+
+00:01:32.720 --> 00:01:36.150 align:start position:0%
+On Terminal Bench 2.1, it posts 88.3.
+On<00:01:32.920><c> SWE</c><00:01:33.480><c> Marathon,</c><00:01:34.360><c> it</c><00:01:34.480><c> scores</c><00:01:34.840><c> 42.0</c><00:01:36.000><c> and</c>
+
+00:01:36.150 --> 00:01:36.160 align:start position:0%
+On SWE Marathon, it scores 42.0 and
+ 
+
+00:01:36.160 --> 00:01:38.550 align:start position:0%
+On SWE Marathon, it scores 42.0 and
+leads<00:01:36.400><c> the</c><00:01:36.520><c> field.</c><00:01:37.240><c> This</c><00:01:37.400><c> is</c><00:01:37.520><c> not</c><00:01:37.720><c> a</c><00:01:37.800><c> toy.</c><00:01:38.400><c> Now</c>
+
+00:01:38.550 --> 00:01:38.560 align:start position:0%
+leads the field. This is not a toy. Now
+ 
+
+00:01:38.560 --> 00:01:41.070 align:start position:0%
+leads the field. This is not a toy. Now
+the<00:01:38.680><c> money.</c><00:01:39.120><c> Claude</c><00:01:39.440><c> Opus</c><00:01:39.840><c> 4.8</c><00:01:40.640><c> runs</c><00:01:40.840><c> about</c>
+
+00:01:41.070 --> 00:01:41.080 align:start position:0%
+the money. Claude Opus 4.8 runs about
+ 
+
+00:01:41.080 --> 00:01:44.670 align:start position:0%
+the money. Claude Opus 4.8 runs about
+$25<00:01:41.960><c> per</c><00:01:42.120><c> million</c><00:01:42.600><c> output</c><00:01:42.920><c> tokens.</c><00:01:43.800><c> Kimi</c><00:01:44.120><c> K3</c>
+
+00:01:44.670 --> 00:01:44.680 align:start position:0%
+$25 per million output tokens. Kimi K3
+ 
+
+00:01:44.680 --> 00:01:48.030 align:start position:0%
+$25 per million output tokens. Kimi K3
+runs<00:01:44.960><c> at</c><00:01:45.080><c> $15.</c><00:01:46.400><c> And</c><00:01:46.560><c> per</c><00:01:46.720><c> completed</c><00:01:47.200><c> task,</c><00:01:47.880><c> the</c>
+
+00:01:48.030 --> 00:01:48.040 align:start position:0%
+runs at $15. And per completed task, the
+ 
+
+00:01:48.040 --> 00:01:50.270 align:start position:0%
+runs at $15. And per completed task, the
+real<00:01:48.280><c> cost</c><00:01:48.600><c> of</c><00:01:48.680><c> a</c><00:01:48.760><c> hard</c><00:01:49.040><c> job,</c><00:01:49.800><c> Artificial</c>
+
+00:01:50.270 --> 00:01:50.280 align:start position:0%
+real cost of a hard job, Artificial
+ 
+
+00:01:50.280 --> 00:01:52.790 align:start position:0%
+real cost of a hard job, Artificial
+Analysis<00:01:50.720><c> puts</c><00:01:50.960><c> K3</c><00:01:51.560><c> at</c><00:01:51.640><c> about</c><00:01:51.880><c> 94</c><00:01:52.440><c> cents</c>
+
+00:01:52.790 --> 00:01:52.800 align:start position:0%
+Analysis puts K3 at about 94 cents
+ 
+
+00:01:52.800 --> 00:01:56.870 align:start position:0%
+Analysis puts K3 at about 94 cents
+against<00:01:53.160><c> Opus</c><00:01:53.640><c> 4.8</c><00:01:54.520><c> at</c><00:01:54.680><c> $1.80.</c><00:01:56.160><c> Roughly</c><00:01:56.600><c> half</c>
+
+00:01:56.870 --> 00:01:56.880 align:start position:0%
+against Opus 4.8 at $1.80. Roughly half
+ 
+
+00:01:56.880 --> 00:01:58.550 align:start position:0%
+against Opus 4.8 at $1.80. Roughly half
+the<00:01:57.000><c> bill.</c><00:01:57.680><c> And</c><00:01:57.840><c> the</c><00:01:57.920><c> weights</c><00:01:58.240><c> ship</c><00:01:58.440><c> on</c>
+
+00:01:58.550 --> 00:01:58.560 align:start position:0%
+the bill. And the weights ship on
+ 
+
+00:01:58.560 --> 00:02:00.430 align:start position:0%
+the bill. And the weights ship on
+hugging<00:01:58.880><c> face</c><00:01:59.200><c> under</c><00:01:59.400><c> a</c><00:01:59.480><c> modified</c><00:02:00.000><c> MIT</c>
+
+00:02:00.430 --> 00:02:00.440 align:start position:0%
+hugging face under a modified MIT
+ 
+
+00:02:00.440 --> 00:02:02.670 align:start position:0%
+hugging face under a modified MIT
+license.<00:02:01.360><c> The</c><00:02:01.480><c> leader</c><00:02:01.800><c> undercut</c><00:02:02.200><c> for</c><00:02:02.360><c> half</c>
+
+00:02:02.670 --> 00:02:02.680 align:start position:0%
+license. The leader undercut for half
+ 
+
+00:02:02.680 --> 00:02:04.750 align:start position:0%
+license. The leader undercut for half
+price<00:02:03.120><c> and</c><00:02:03.280><c> left</c><00:02:03.520><c> the</c><00:02:03.600><c> door</c><00:02:03.880><c> open.</c><00:02:04.479><c> So</c><00:02:04.640><c> the</c>
+
+00:02:04.750 --> 00:02:04.760 align:start position:0%
+price and left the door open. So the
+ 
+
+00:02:04.760 --> 00:02:07.150 align:start position:0%
+price and left the door open. So the
+model<00:02:05.120><c> is</c><00:02:05.240><c> strong</c><00:02:05.800><c> and</c><00:02:05.960><c> it</c><00:02:06.040><c> is</c><00:02:06.160><c> cheaper.</c><00:02:06.960><c> Deep</c>
+
+00:02:07.150 --> 00:02:07.160 align:start position:0%
+model is strong and it is cheaper. Deep
+ 
+
+00:02:07.160 --> 00:02:09.310 align:start position:0%
+model is strong and it is cheaper. Deep
+spark<00:02:07.520><c> is</c><00:02:07.640><c> what</c><00:02:07.800><c> makes</c><00:02:08.039><c> it</c><00:02:08.160><c> fast.</c><00:02:08.920><c> And</c><00:02:09.119><c> these</c>
+
+00:02:09.310 --> 00:02:09.320 align:start position:0%
+spark is what makes it fast. And these
+ 
+
+00:02:09.320 --> 00:02:11.030 align:start position:0%
+spark is what makes it fast. And these
+two<00:02:09.479><c> belong</c><00:02:09.840><c> together</c><00:02:10.440><c> in</c><00:02:10.600><c> a</c><00:02:10.640><c> way</c><00:02:10.840><c> that</c>
+
+00:02:11.030 --> 00:02:11.040 align:start position:0%
+two belong together in a way that
+ 
+
+00:02:11.040 --> 00:02:14.910 align:start position:0%
+two belong together in a way that
+matters.<00:02:11.920><c> Three</c><00:02:12.160><c> parts.</c><00:02:13.000><c> First,</c><00:02:13.840><c> why</c><00:02:14.040><c> Kimi</c><00:02:14.360><c> K3</c>
+
+00:02:14.910 --> 00:02:14.920 align:start position:0%
+matters. Three parts. First, why Kimi K3
+ 
+
+00:02:14.920 --> 00:02:17.830 align:start position:0%
+matters. Three parts. First, why Kimi K3
+is<00:02:15.080><c> a</c><00:02:15.200><c> genuine</c><00:02:15.800><c> Claude</c><00:02:16.120><c> beater.</c><00:02:16.840><c> Second,</c><00:02:17.680><c> how</c>
+
+00:02:17.830 --> 00:02:17.840 align:start position:0%
+is a genuine Claude beater. Second, how
+ 
+
+00:02:17.840 --> 00:02:19.750 align:start position:0%
+is a genuine Claude beater. Second, how
+deep<00:02:18.120><c> spark</c><00:02:18.520><c> actually</c><00:02:18.959><c> squeezes</c><00:02:19.440><c> out</c><00:02:19.600><c> that</c>
+
+00:02:19.750 --> 00:02:19.760 align:start position:0%
+deep spark actually squeezes out that
+ 
+
+00:02:19.760 --> 00:02:22.270 align:start position:0%
+deep spark actually squeezes out that
+three<00:02:20.040><c> times</c><00:02:20.360><c> speed</c><00:02:20.640><c> up.</c><00:02:21.080><c> Third,</c><00:02:21.720><c> the</c><00:02:21.920><c> honest</c>
+
+00:02:22.270 --> 00:02:22.280 align:start position:0%
+three times speed up. Third, the honest
+ 
+
+00:02:22.280 --> 00:02:24.910 align:start position:0%
+three times speed up. Third, the honest
+catch<00:02:22.959><c> because</c><00:02:23.240><c> there</c><00:02:23.400><c> is</c><00:02:23.640><c> always</c><00:02:24.000><c> a</c><00:02:24.040><c> catch.</c>
+
+00:02:24.910 --> 00:02:24.920 align:start position:0%
+catch because there is always a catch.
+ 
+
+00:02:24.920 --> 00:02:27.590 align:start position:0%
+catch because there is always a catch.
+Let<00:02:25.040><c> us</c><00:02:25.160><c> get</c><00:02:25.320><c> into</c><00:02:25.640><c> it.</c><00:02:26.160><c> Kimi</c><00:02:26.400><c> K3</c><00:02:26.959><c> is</c><00:02:27.120><c> a</c><00:02:27.200><c> mixture</c>
+
+00:02:27.590 --> 00:02:27.600 align:start position:0%
+Let us get into it. Kimi K3 is a mixture
+ 
+
+00:02:27.600 --> 00:02:30.190 align:start position:0%
+Let us get into it. Kimi K3 is a mixture
+of<00:02:27.720><c> experts</c><00:02:28.160><c> model,</c><00:02:28.880><c> 2.8</c><00:02:29.640><c> trillion</c>
+
+00:02:30.190 --> 00:02:30.200 align:start position:0%
+of experts model, 2.8 trillion
+ 
+
+00:02:30.200 --> 00:02:32.430 align:start position:0%
+of experts model, 2.8 trillion
+parameters<00:02:30.760><c> in</c><00:02:30.880><c> total.</c><00:02:31.600><c> But</c><00:02:31.760><c> for</c><00:02:31.920><c> any</c><00:02:32.120><c> single</c>
+
+00:02:32.430 --> 00:02:32.440 align:start position:0%
+parameters in total. But for any single
+ 
+
+00:02:32.440 --> 00:02:36.270 align:start position:0%
+parameters in total. But for any single
+token,<00:02:33.280><c> only</c><00:02:33.560><c> 16</c><00:02:34.320><c> of</c><00:02:34.400><c> its</c><00:02:34.600><c> 896</c><00:02:35.720><c> experts</c>
+
+00:02:36.270 --> 00:02:36.280 align:start position:0%
+token, only 16 of its 896 experts
+ 
+
+00:02:36.280 --> 00:02:39.430 align:start position:0%
+token, only 16 of its 896 experts
+actually<00:02:36.760><c> fire.</c><00:02:37.600><c> That</c><00:02:37.800><c> is</c><00:02:37.959><c> 104</c><00:02:38.840><c> billion</c>
+
+00:02:39.430 --> 00:02:39.440 align:start position:0%
+actually fire. That is 104 billion
+ 
+
+00:02:39.440 --> 00:02:41.870 align:start position:0%
+actually fire. That is 104 billion
+active<00:02:39.800><c> parameters</c><00:02:40.320><c> per</c><00:02:40.560><c> forward</c><00:02:40.959><c> pass</c><00:02:41.680><c> from</c>
+
+00:02:41.870 --> 00:02:41.880 align:start position:0%
+active parameters per forward pass from
+ 
+
+00:02:41.880 --> 00:02:43.949 align:start position:0%
+active parameters per forward pass from
+a<00:02:41.959><c> pool</c><00:02:42.240><c> nearly</c><00:02:42.560><c> three</c><00:02:42.959><c> times</c><00:02:43.320><c> the</c><00:02:43.440><c> size</c><00:02:43.800><c> of</c>
+
+00:02:43.949 --> 00:02:43.959 align:start position:0%
+a pool nearly three times the size of
+ 
+
+00:02:43.959 --> 00:02:46.670 align:start position:0%
+a pool nearly three times the size of
+deep<00:02:44.240><c> seek</c><00:02:44.600><c> V4</c><00:02:45.120><c> Pro.</c><00:02:45.880><c> Picture</c><00:02:46.200><c> a</c><00:02:46.240><c> firm</c><00:02:46.520><c> with</c>
+
+00:02:46.670 --> 00:02:46.680 align:start position:0%
+deep seek V4 Pro. Picture a firm with
+ 
+
+00:02:46.680 --> 00:02:49.110 align:start position:0%
+deep seek V4 Pro. Picture a firm with
+almost<00:02:46.959><c> a</c><00:02:47.040><c> thousand</c><00:02:47.600><c> specialists</c><00:02:48.640><c> and</c><00:02:48.880><c> every</c>
+
+00:02:49.110 --> 00:02:49.120 align:start position:0%
+almost a thousand specialists and every
+ 
+
+00:02:49.120 --> 00:02:51.390 align:start position:0%
+almost a thousand specialists and every
+meeting<00:02:49.480><c> only</c><00:02:49.680><c> pulls</c><00:02:49.920><c> in</c><00:02:50.000><c> the</c><00:02:50.120><c> exact</c><00:02:50.680><c> 16</c><00:02:51.280><c> who</c>
+
+00:02:51.390 --> 00:02:51.400 align:start position:0%
+meeting only pulls in the exact 16 who
+ 
+
+00:02:51.400 --> 00:02:53.630 align:start position:0%
+meeting only pulls in the exact 16 who
+know<00:02:51.600><c> the</c><00:02:51.800><c> answer.</c><00:02:52.520><c> Full</c><00:02:52.800><c> knowledge,</c><00:02:53.520><c> a</c>
+
+00:02:53.630 --> 00:02:53.640 align:start position:0%
+know the answer. Full knowledge, a
+ 
+
+00:02:53.640 --> 00:02:55.830 align:start position:0%
+know the answer. Full knowledge, a
+fraction<00:02:54.160><c> of</c><00:02:54.280><c> the</c><00:02:54.360><c> work.</c><00:02:55.080><c> It</c><00:02:55.160><c> holds</c><00:02:55.360><c> a</c><00:02:55.440><c> full</c>
+
+00:02:55.830 --> 00:02:55.840 align:start position:0%
+fraction of the work. It holds a full
+ 
+
+00:02:55.840 --> 00:02:58.510 align:start position:0%
+fraction of the work. It holds a full
+million<00:02:56.280><c> tokens</c><00:02:56.680><c> of</c><00:02:56.760><c> context,</c><00:02:57.800><c> an</c><00:02:57.920><c> entire</c>
+
+00:02:58.510 --> 00:02:58.520 align:start position:0%
+million tokens of context, an entire
+ 
+
+00:02:58.520 --> 00:03:01.990 align:start position:0%
+million tokens of context, an entire
+code<00:02:58.800><c> base,</c><00:02:59.480><c> every</c><00:02:59.800><c> file,</c><00:03:00.640><c> every</c><00:03:00.920><c> test,</c><00:03:01.720><c> every</c>
+
+00:03:01.990 --> 00:03:02.000 align:start position:0%
+code base, every file, every test, every
+ 
+
+00:03:02.000 --> 00:03:05.070 align:start position:0%
+code base, every file, every test, every
+comment<00:03:03.000><c> in</c><00:03:03.160><c> mind</c><00:03:03.440><c> at</c><00:03:03.560><c> once.</c><00:03:04.400><c> It</c><00:03:04.560><c> pulls</c><00:03:04.880><c> that</c>
+
+00:03:05.070 --> 00:03:05.080 align:start position:0%
+comment in mind at once. It pulls that
+ 
+
+00:03:05.080 --> 00:03:07.430 align:start position:0%
+comment in mind at once. It pulls that
+off<00:03:05.280><c> with</c><00:03:05.440><c> Kimi</c><00:03:05.720><c> Delta</c><00:03:06.040><c> attention,</c><00:03:06.880><c> a</c><00:03:07.000><c> hybrid</c>
+
+00:03:07.430 --> 00:03:07.440 align:start position:0%
+off with Kimi Delta attention, a hybrid
+ 
+
+00:03:07.440 --> 00:03:09.470 align:start position:0%
+off with Kimi Delta attention, a hybrid
+of<00:03:07.600><c> linear</c><00:03:08.000><c> and</c><00:03:08.200><c> full</c><00:03:08.440><c> attention</c><00:03:09.280><c> that</c>
+
+00:03:09.470 --> 00:03:09.480 align:start position:0%
+of linear and full attention that
+ 
+
+00:03:09.480 --> 00:03:12.190 align:start position:0%
+of linear and full attention that
+Moonshot<00:03:09.959><c> says</c><00:03:10.200><c> delivers</c><00:03:10.680><c> 6.3</c><00:03:11.480><c> times</c><00:03:11.800><c> faster</c>
+
+00:03:12.190 --> 00:03:12.200 align:start position:0%
+Moonshot says delivers 6.3 times faster
+ 
+
+00:03:12.200 --> 00:03:14.470 align:start position:0%
+Moonshot says delivers 6.3 times faster
+decoding<00:03:12.720><c> at</c><00:03:12.880><c> million</c><00:03:13.280><c> token</c><00:03:13.600><c> context</c>
+
+00:03:14.470 --> 00:03:14.480 align:start position:0%
+decoding at million token context
+ 
+
+00:03:14.480 --> 00:03:15.949 align:start position:0%
+decoding at million token context
+compared<00:03:14.800><c> to</c><00:03:14.880><c> standard</c><00:03:15.440><c> quadratic</c>
+
+00:03:15.949 --> 00:03:15.959 align:start position:0%
+compared to standard quadratic
+ 
+
+00:03:15.959 --> 00:03:17.910 align:start position:0%
+compared to standard quadratic
+attention.<00:03:16.840><c> And</c><00:03:16.959><c> it</c><00:03:17.080><c> ships</c><00:03:17.400><c> with</c><00:03:17.560><c> native</c>
+
+00:03:17.910 --> 00:03:17.920 align:start position:0%
+attention. And it ships with native
+ 
+
+00:03:17.920 --> 00:03:21.310 align:start position:0%
+attention. And it ships with native
+vision,<00:03:18.720><c> not</c><00:03:19.040><c> a</c><00:03:19.120><c> bolted</c><00:03:19.560><c> on</c><00:03:19.680><c> adapter,</c><00:03:20.560><c> native.</c>
+
+00:03:21.310 --> 00:03:21.320 align:start position:0%
+vision, not a bolted on adapter, native.
+ 
+
+00:03:21.320 --> 00:03:24.430 align:start position:0%
+vision, not a bolted on adapter, native.
+It<00:03:21.480><c> reads</c><00:03:21.800><c> images,</c><00:03:22.680><c> screenshots,</c><00:03:23.800><c> and</c><00:03:24.000><c> video</c>
+
+00:03:24.430 --> 00:03:24.440 align:start position:0%
+It reads images, screenshots, and video
+ 
+
+00:03:24.440 --> 00:03:26.509 align:start position:0%
+It reads images, screenshots, and video
+as<00:03:24.600><c> part</c><00:03:24.840><c> of</c><00:03:25.000><c> the</c><00:03:25.040><c> same</c><00:03:25.360><c> model.</c><00:03:26.160><c> Line</c><00:03:26.440><c> the</c>
+
+00:03:26.509 --> 00:03:26.519 align:start position:0%
+as part of the same model. Line the
+ 
+
+00:03:26.519 --> 00:03:28.550 align:start position:0%
+as part of the same model. Line the
+scores<00:03:26.920><c> up.</c><00:03:27.480><c> Artificial</c><00:03:28.000><c> analysis</c>
+
+00:03:28.550 --> 00:03:28.560 align:start position:0%
+scores up. Artificial analysis
+ 
+
+00:03:28.560 --> 00:03:32.030 align:start position:0%
+scores up. Artificial analysis
+intelligence<00:03:29.160><c> index,</c><00:03:29.959><c> 57,</c><00:03:31.080><c> one</c><00:03:31.400><c> point</c><00:03:31.680><c> ahead</c>
+
+00:03:32.030 --> 00:03:32.040 align:start position:0%
+intelligence index, 57, one point ahead
+ 
+
+00:03:32.040 --> 00:03:35.310 align:start position:0%
+intelligence index, 57, one point ahead
+of<00:03:32.200><c> Opus</c><00:03:32.560><c> 4.8.</c><00:03:33.640><c> Front</c><00:03:33.920><c> end</c><00:03:34.080><c> code</c><00:03:34.320><c> arena,</c><00:03:35.000><c> first</c>
+
+00:03:35.310 --> 00:03:35.320 align:start position:0%
+of Opus 4.8. Front end code arena, first
+ 
+
+00:03:35.320 --> 00:03:39.190 align:start position:0%
+of Opus 4.8. Front end code arena, first
+place<00:03:35.959><c> ahead</c><00:03:36.280><c> of</c><00:03:36.360><c> fable</c><00:03:36.680><c> five,</c><00:03:37.320><c> GPT</c><00:03:37.800><c> 5.6</c><00:03:38.600><c> saw,</c>
+
+00:03:39.190 --> 00:03:39.200 align:start position:0%
+place ahead of fable five, GPT 5.6 saw,
+ 
+
+00:03:39.200 --> 00:03:43.350 align:start position:0%
+place ahead of fable five, GPT 5.6 saw,
+and<00:03:39.440><c> everyone</c><00:03:39.800><c> else.</c><00:03:40.480><c> SWE</c><00:03:40.959><c> marathon,</c><00:03:41.840><c> 42.0,</c>
+
+00:03:43.350 --> 00:03:43.360 align:start position:0%
+and everyone else. SWE marathon, 42.0,
+ 
+
+00:03:43.360 --> 00:03:45.470 align:start position:0%
+and everyone else. SWE marathon, 42.0,
+leading<00:03:43.680><c> the</c><00:03:43.760><c> field</c><00:03:44.120><c> by</c><00:03:44.280><c> seven</c><00:03:44.680><c> points.</c>
+
+00:03:45.470 --> 00:03:45.480 align:start position:0%
+leading the field by seven points.
+ 
+
+00:03:45.480 --> 00:03:49.670 align:start position:0%
+leading the field by seven points.
+Frontier<00:03:45.959><c> SWE,</c><00:03:47.000><c> 81.2.</c><00:03:48.480><c> For</c><00:03:48.640><c> an</c><00:03:48.760><c> open</c><00:03:49.040><c> model,</c>
+
+00:03:49.670 --> 00:03:49.680 align:start position:0%
+Frontier SWE, 81.2. For an open model,
+ 
+
+00:03:49.680 --> 00:03:51.550 align:start position:0%
+Frontier SWE, 81.2. For an open model,
+this<00:03:49.840><c> was</c><00:03:50.000><c> is</c><00:03:50.280><c> supposed</c><00:03:50.600><c> to</c><00:03:50.680><c> happen</c><00:03:50.959><c> yet.</c>
+
+00:03:51.550 --> 00:03:51.560 align:start position:0%
+this was is supposed to happen yet.
+ 
+
+00:03:51.560 --> 00:03:53.950 align:start position:0%
+this was is supposed to happen yet.
+Watch<00:03:51.880><c> it</c><00:03:52.000><c> work.</c><00:03:52.400><c> Point</c><00:03:52.680><c> Claude</c><00:03:53.040><c> code</c><00:03:53.440><c> at</c><00:03:53.640><c> Kimi</c>
+
+00:03:53.950 --> 00:03:53.960 align:start position:0%
+Watch it work. Point Claude code at Kimi
+ 
+
+00:03:53.960 --> 00:03:57.030 align:start position:0%
+Watch it work. Point Claude code at Kimi
+K3,<00:03:54.960><c> hand</c><00:03:55.240><c> it</c><00:03:55.360><c> a</c><00:03:55.400><c> failing</c><00:03:55.840><c> test</c><00:03:56.160><c> suite,</c><00:03:56.760><c> and</c><00:03:56.880><c> it</c>
+
+00:03:57.030 --> 00:03:57.040 align:start position:0%
+K3, hand it a failing test suite, and it
+ 
+
+00:03:57.040 --> 00:03:59.310 align:start position:0%
+K3, hand it a failing test suite, and it
+reads<00:03:57.360><c> the</c><00:03:57.480><c> stack</c><00:03:57.840><c> trace,</c><00:03:58.600><c> edits</c><00:03:58.960><c> files</c>
+
+00:03:59.310 --> 00:03:59.320 align:start position:0%
+reads the stack trace, edits files
+ 
+
+00:03:59.320 --> 00:04:01.470 align:start position:0%
+reads the stack trace, edits files
+across<00:03:59.680><c> the</c><00:03:59.800><c> repo,</c><00:04:00.520><c> and</c><00:04:00.680><c> turns</c><00:04:01.000><c> the</c><00:04:01.120><c> whole</c>
+
+00:04:01.470 --> 00:04:01.480 align:start position:0%
+across the repo, and turns the whole
+ 
+
+00:04:01.480 --> 00:04:03.750 align:start position:0%
+across the repo, and turns the whole
+suite<00:04:01.800><c> green.</c><00:04:02.520><c> The</c><00:04:02.640><c> same</c><00:04:03.080><c> agent</c><00:04:03.440><c> loop</c><00:04:03.640><c> you</c>
+
+00:04:03.750 --> 00:04:03.760 align:start position:0%
+suite green. The same agent loop you
+ 
+
+00:04:03.760 --> 00:04:06.270 align:start position:0%
+suite green. The same agent loop you
+would<00:04:03.880><c> run</c><00:04:04.080><c> with</c><00:04:04.320><c> Opus</c><00:04:04.920><c> on</c><00:04:05.160><c> weights</c><00:04:05.480><c> you</c><00:04:05.680><c> own.</c>
+
+00:04:06.270 --> 00:04:06.280 align:start position:0%
+would run with Opus on weights you own.
+ 
+
+00:04:06.280 --> 00:04:08.830 align:start position:0%
+would run with Opus on weights you own.
+Here's<00:04:06.600><c> the</c><00:04:06.720><c> same</c><00:04:07.120><c> job</c><00:04:07.440><c> priced</c><00:04:07.800><c> two</c><00:04:08.000><c> ways.</c>
+
+00:04:08.830 --> 00:04:08.840 align:start position:0%
+Here's the same job priced two ways.
+ 
+
+00:04:08.840 --> 00:04:12.630 align:start position:0%
+Here's the same job priced two ways.
+Claude<00:04:09.240><c> Opus,</c><00:04:09.840><c> $4.8,</c><00:04:11.000><c> $25</c><00:04:11.920><c> a</c><00:04:11.959><c> million</c><00:04:12.320><c> output</c>
+
+00:04:12.630 --> 00:04:12.640 align:start position:0%
+Claude Opus, $4.8, $25 a million output
+ 
+
+00:04:12.640 --> 00:04:17.430 align:start position:0%
+Claude Opus, $4.8, $25 a million output
+tokens.<00:04:13.440><c> Kimi</c><00:04:13.760><c> K3,</c><00:04:14.640><c> $15.</c><00:04:15.880><c> Same</c><00:04:16.200><c> task,</c><00:04:17.040><c> nearly</c>
+
+00:04:17.430 --> 00:04:17.440 align:start position:0%
+tokens. Kimi K3, $15. Same task, nearly
+ 
+
+00:04:17.440 --> 00:04:19.390 align:start position:0%
+tokens. Kimi K3, $15. Same task, nearly
+half<00:04:17.760><c> the</c><00:04:17.880><c> bill</c><00:04:18.120><c> per</c><00:04:18.320><c> run,</c><00:04:19.000><c> and</c><00:04:19.160><c> you</c><00:04:19.280><c> are</c>
+
+00:04:19.390 --> 00:04:19.400 align:start position:0%
+half the bill per run, and you are
+ 
+
+00:04:19.400 --> 00:04:21.509 align:start position:0%
+half the bill per run, and you are
+allowed<00:04:19.720><c> to</c><00:04:19.840><c> read</c><00:04:20.200><c> every</c><00:04:20.560><c> last</c><00:04:20.920><c> weight.</c>
+
+00:04:21.509 --> 00:04:21.519 align:start position:0%
+allowed to read every last weight.
+ 
+
+00:04:21.519 --> 00:04:23.510 align:start position:0%
+allowed to read every last weight.
+Because<00:04:21.760><c> it</c><00:04:21.880><c> ships</c><00:04:22.240><c> on</c><00:04:22.320><c> hugging</c><00:04:22.640><c> face,</c><00:04:23.400><c> the</c>
+
+00:04:23.510 --> 00:04:23.520 align:start position:0%
+Because it ships on hugging face, the
+ 
+
+00:04:23.520 --> 00:04:26.470 align:start position:0%
+Because it ships on hugging face, the
+copy<00:04:23.880><c> you</c><00:04:24.000><c> pull</c><00:04:24.640><c> keeps</c><00:04:24.919><c> working</c><00:04:25.280><c> forever.</c><00:04:26.200><c> No</c>
+
+00:04:26.470 --> 00:04:26.480 align:start position:0%
+copy you pull keeps working forever. No
+ 
+
+00:04:26.480 --> 00:04:29.390 align:start position:0%
+copy you pull keeps working forever. No
+wait<00:04:26.720><c> list,</c><00:04:27.400><c> no</c><00:04:27.640><c> per</c><00:04:27.800><c> seat</c><00:04:28.080><c> fee,</c><00:04:28.800><c> no</c><00:04:29.040><c> terms</c>
+
+00:04:29.390 --> 00:04:29.400 align:start position:0%
+wait list, no per seat fee, no terms
+ 
+
+00:04:29.400 --> 00:04:31.110 align:start position:0%
+wait list, no per seat fee, no terms
+that<00:04:29.520><c> can</c><00:04:29.640><c> be</c><00:04:29.760><c> revoked</c><00:04:30.160><c> overnight.</c><00:04:30.960><c> If</c>
+
+00:04:31.110 --> 00:04:31.120 align:start position:0%
+that can be revoked overnight. If
+ 
+
+00:04:31.120 --> 00:04:33.190 align:start position:0%
+that can be revoked overnight. If
+Moonshot<00:04:31.600><c> vanished</c><00:04:31.960><c> tomorrow,</c><00:04:32.760><c> your</c><00:04:32.919><c> local</c>
+
+00:04:33.190 --> 00:04:33.200 align:start position:0%
+Moonshot vanished tomorrow, your local
+ 
+
+00:04:33.200 --> 00:04:35.670 align:start position:0%
+Moonshot vanished tomorrow, your local
+copy<00:04:33.560><c> never</c><00:04:33.919><c> stops</c><00:04:34.280><c> running,</c><00:04:34.919><c> and</c><00:04:35.080><c> you</c><00:04:35.200><c> do</c><00:04:35.440><c> not</c>
+
+00:04:35.670 --> 00:04:35.680 align:start position:0%
+copy never stops running, and you do not
+ 
+
+00:04:35.680 --> 00:04:38.630 align:start position:0%
+copy never stops running, and you do not
+need<00:04:35.840><c> a</c><00:04:35.880><c> new</c><00:04:36.080><c> tool.</c><00:04:36.600><c> Claude</c><00:04:36.960><c> code,</c><00:04:37.760><c> cursor,</c>
+
+00:04:38.630 --> 00:04:38.640 align:start position:0%
+need a new tool. Claude code, cursor,
+ 
+
+00:04:38.640 --> 00:04:41.630 align:start position:0%
+need a new tool. Claude code, cursor,
+Klein,<00:04:39.600><c> any</c><00:04:39.880><c> agent</c><00:04:40.240><c> that</c><00:04:40.400><c> speaks</c><00:04:40.720><c> the</c><00:04:40.919><c> OpenAI</c>
+
+00:04:41.630 --> 00:04:41.640 align:start position:0%
+Klein, any agent that speaks the OpenAI
+ 
+
+00:04:41.640 --> 00:04:44.750 align:start position:0%
+Klein, any agent that speaks the OpenAI
+API<00:04:42.080><c> format.</c><00:04:42.880><c> Point</c><00:04:43.160><c> its</c><00:04:43.320><c> base</c><00:04:43.640><c> URL</c><00:04:44.280><c> at</c><00:04:44.440><c> Kimi</c>
+
+00:04:44.750 --> 00:04:44.760 align:start position:0%
+API format. Point its base URL at Kimi
+ 
+
+00:04:44.760 --> 00:04:47.270 align:start position:0%
+API format. Point its base URL at Kimi
+K3<00:04:45.240><c> instead.</c><00:04:46.160><c> Keep</c><00:04:46.400><c> the</c><00:04:46.520><c> harness</c><00:04:46.840><c> you</c><00:04:46.960><c> already</c>
+
+00:04:47.270 --> 00:04:47.280 align:start position:0%
+K3 instead. Keep the harness you already
+ 
+
+00:04:47.280 --> 00:04:49.550 align:start position:0%
+K3 instead. Keep the harness you already
+know.<00:04:47.919><c> Swap</c><00:04:48.240><c> the</c><00:04:48.320><c> brain</c><00:04:48.560><c> underneath.</c><00:04:49.440><c> The</c>
+
+00:04:49.550 --> 00:04:49.560 align:start position:0%
+know. Swap the brain underneath. The
+ 
+
+00:04:49.560 --> 00:04:52.390 align:start position:0%
+know. Swap the brain underneath. The
+agent<00:04:49.919><c> never</c><00:04:50.320><c> notices</c><00:04:50.760><c> the</c><00:04:50.840><c> difference.</c><00:04:51.760><c> So,</c>
+
+00:04:52.390 --> 00:04:52.400 align:start position:0%
+agent never notices the difference. So,
+ 
+
+00:04:52.400 --> 00:04:55.470 align:start position:0%
+agent never notices the difference. So,
+why<00:04:52.720><c> is</c><00:04:52.880><c> Kimi</c><00:04:53.200><c> K3,</c><00:04:54.120><c> or</c><00:04:54.360><c> any</c><00:04:54.560><c> large</c><00:04:54.880><c> model,</c>
+
+00:04:55.470 --> 00:04:55.480 align:start position:0%
+why is Kimi K3, or any large model,
+ 
+
+00:04:55.480 --> 00:04:57.750 align:start position:0%
+why is Kimi K3, or any large model,
+slow?<00:04:56.360><c> Because</c><00:04:56.600><c> it</c><00:04:56.720><c> writes</c><00:04:57.000><c> one</c><00:04:57.240><c> token</c><00:04:57.600><c> at</c><00:04:57.720><c> a</c>
+
+00:04:57.750 --> 00:04:57.760 align:start position:0%
+slow? Because it writes one token at a
+ 
+
+00:04:57.760 --> 00:05:00.190 align:start position:0%
+slow? Because it writes one token at a
+time.<00:04:58.320><c> To</c><00:04:58.400><c> produce</c><00:04:58.720><c> a</c><00:04:58.760><c> single</c><00:04:59.120><c> word,</c><00:04:59.800><c> it</c><00:04:59.960><c> runs</c>
+
+00:05:00.190 --> 00:05:00.200 align:start position:0%
+time. To produce a single word, it runs
+ 
+
+00:05:00.200 --> 00:05:03.110 align:start position:0%
+time. To produce a single word, it runs
+the<00:05:00.320><c> entire</c><00:05:00.880><c> network,</c><00:05:01.600><c> gets</c><00:05:01.840><c> one</c><00:05:02.120><c> token</c><00:05:02.440><c> back,</c>
+
+00:05:03.110 --> 00:05:03.120 align:start position:0%
+the entire network, gets one token back,
+ 
+
+00:05:03.120 --> 00:05:04.550 align:start position:0%
+the entire network, gets one token back,
+then<00:05:03.240><c> does</c><00:05:03.400><c> it</c><00:05:03.560><c> all</c><00:05:03.800><c> over</c><00:05:04.040><c> again</c><00:05:04.320><c> for</c><00:05:04.440><c> the</c>
+
+00:05:04.550 --> 00:05:04.560 align:start position:0%
+then does it all over again for the
+ 
+
+00:05:04.560 --> 00:05:07.430 align:start position:0%
+then does it all over again for the
+next.<00:05:05.160><c> Every</c><00:05:05.520><c> word</c><00:05:05.880><c> is</c><00:05:06.000><c> a</c><00:05:06.080><c> full</c><00:05:06.480><c> round</c><00:05:06.760><c> trip.</c>
+
+00:05:07.430 --> 00:05:07.440 align:start position:0%
+next. Every word is a full round trip.
+ 
+
+00:05:07.440 --> 00:05:09.870 align:start position:0%
+next. Every word is a full round trip.
+Speculative<00:05:08.080><c> decoding</c><00:05:08.560><c> breaks</c><00:05:08.880><c> that</c><00:05:09.120><c> rule.</c><00:05:09.800><c> A</c>
+
+00:05:09.870 --> 00:05:09.880 align:start position:0%
+Speculative decoding breaks that rule. A
+ 
+
+00:05:09.880 --> 00:05:12.550 align:start position:0%
+Speculative decoding breaks that rule. A
+small,<00:05:10.680><c> fast</c><00:05:11.080><c> draft</c><00:05:11.440><c> model</c><00:05:11.720><c> sprints</c><00:05:12.040><c> ahead</c>
+
+00:05:12.550 --> 00:05:12.560 align:start position:0%
+small, fast draft model sprints ahead
+ 
+
+00:05:12.560 --> 00:05:14.510 align:start position:0%
+small, fast draft model sprints ahead
+and<00:05:12.720><c> guesses</c><00:05:13.120><c> the</c><00:05:13.200><c> next</c><00:05:13.480><c> several</c><00:05:13.800><c> tokens.</c>
+
+00:05:14.510 --> 00:05:14.520 align:start position:0%
+and guesses the next several tokens.
+ 
+
+00:05:14.520 --> 00:05:16.110 align:start position:0%
+and guesses the next several tokens.
+Then<00:05:14.680><c> the</c><00:05:14.760><c> big</c><00:05:15.040><c> model</c><00:05:15.320><c> checks</c><00:05:15.720><c> all</c><00:05:15.919><c> those</c>
+
+00:05:16.110 --> 00:05:16.120 align:start position:0%
+Then the big model checks all those
+ 
+
+00:05:16.120 --> 00:05:18.230 align:start position:0%
+Then the big model checks all those
+guesses<00:05:16.520><c> in</c><00:05:16.640><c> one</c><00:05:16.880><c> pass.</c><00:05:17.640><c> The</c><00:05:17.760><c> right</c><00:05:17.960><c> ones</c><00:05:18.160><c> are</c>
+
+00:05:18.230 --> 00:05:18.240 align:start position:0%
+guesses in one pass. The right ones are
+ 
+
+00:05:18.240 --> 00:05:20.430 align:start position:0%
+guesses in one pass. The right ones are
+kept<00:05:18.480><c> for</c><00:05:18.600><c> free.</c><00:05:19.360><c> It</c><00:05:19.400><c> is</c><00:05:19.560><c> spell</c><00:05:19.919><c> check</c><00:05:20.200><c> for</c><00:05:20.320><c> the</c>
+
+00:05:20.430 --> 00:05:20.440 align:start position:0%
+kept for free. It is spell check for the
+ 
+
+00:05:20.440 --> 00:05:22.710 align:start position:0%
+kept for free. It is spell check for the
+future.<00:05:21.160><c> But</c><00:05:21.320><c> classic</c><00:05:21.720><c> speculative</c><00:05:22.280><c> decoding</c>
+
+00:05:22.710 --> 00:05:22.720 align:start position:0%
+future. But classic speculative decoding
+ 
+
+00:05:22.720 --> 00:05:25.310 align:start position:0%
+future. But classic speculative decoding
+has<00:05:22.880><c> a</c><00:05:22.919><c> weakness.</c><00:05:23.800><c> The</c><00:05:23.919><c> draft</c><00:05:24.280><c> is</c><00:05:24.480><c> dumb,</c><00:05:25.200><c> so</c>
+
+00:05:25.310 --> 00:05:25.320 align:start position:0%
+has a weakness. The draft is dumb, so
+ 
+
+00:05:25.320 --> 00:05:27.630 align:start position:0%
+has a weakness. The draft is dumb, so
+the<00:05:25.440><c> big</c><00:05:25.680><c> model</c><00:05:26.080><c> rejects</c><00:05:26.480><c> a</c><00:05:26.520><c> lot</c><00:05:26.800><c> of</c><00:05:26.919><c> guesses,</c>
+
+00:05:27.630 --> 00:05:27.640 align:start position:0%
+the big model rejects a lot of guesses,
+ 
+
+00:05:27.640 --> 00:05:29.950 align:start position:0%
+the big model rejects a lot of guesses,
+and<00:05:27.880><c> every</c><00:05:28.120><c> rejected</c><00:05:28.560><c> guess</c><00:05:28.800><c> is</c><00:05:28.960><c> wasted</c><00:05:29.360><c> work.</c>
+
+00:05:29.950 --> 00:05:29.960 align:start position:0%
+and every rejected guess is wasted work.
+ 
+
+00:05:29.960 --> 00:05:31.590 align:start position:0%
+and every rejected guess is wasted work.
+Push<00:05:30.160><c> too</c><00:05:30.360><c> hard,</c><00:05:30.760><c> and</c><00:05:30.880><c> you</c><00:05:31.000><c> actually</c><00:05:31.400><c> slow</c>
+
+00:05:31.590 --> 00:05:31.600 align:start position:0%
+Push too hard, and you actually slow
+ 
+
+00:05:31.600 --> 00:05:34.390 align:start position:0%
+Push too hard, and you actually slow
+down.<00:05:32.400><c> How</c><00:05:32.640><c> big</c><00:05:32.919><c> is</c><00:05:33.040><c> the</c><00:05:33.160><c> win</c><00:05:33.400><c> with</c><00:05:33.560><c> DSpark,</c>
+
+00:05:34.390 --> 00:05:34.400 align:start position:0%
+down. How big is the win with DSpark,
+ 
+
+00:05:34.400 --> 00:05:37.990 align:start position:0%
+down. How big is the win with DSpark,
+really?<00:05:35.200><c> On</c><00:05:35.400><c> Kimi</c><00:05:35.760><c> K3</c><00:05:36.360><c> and</c><00:05:36.480><c> VLM,</c><00:05:37.400><c> with</c><00:05:37.560><c> DSpark</c>
+
+00:05:37.990 --> 00:05:38.000 align:start position:0%
+really? On Kimi K3 and VLM, with DSpark
+ 
+
+00:05:38.000 --> 00:05:40.909 align:start position:0%
+really? On Kimi K3 and VLM, with DSpark
+enabled,<00:05:38.800><c> throughput</c><00:05:39.240><c> goes</c><00:05:39.480><c> from</c><00:05:39.640><c> 118</c><00:05:40.560><c> tokens</c>
+
+00:05:40.909 --> 00:05:40.919 align:start position:0%
+enabled, throughput goes from 118 tokens
+ 
+
+00:05:40.919 --> 00:05:44.590 align:start position:0%
+enabled, throughput goes from 118 tokens
+per<00:05:41.040><c> second</c><00:05:41.440><c> to</c><00:05:41.560><c> 370.</c><00:05:42.960><c> That</c><00:05:43.160><c> is</c><00:05:43.280><c> a</c><00:05:43.360><c> 3.14</c><00:05:44.320><c> times</c>
+
+00:05:44.590 --> 00:05:44.600 align:start position:0%
+per second to 370. That is a 3.14 times
+ 
+
+00:05:44.600 --> 00:05:46.510 align:start position:0%
+per second to 370. That is a 3.14 times
+improvement<00:05:45.120><c> on</c><00:05:45.240><c> a</c><00:05:45.320><c> single</c><00:05:45.640><c> request,</c>
+
+00:05:46.510 --> 00:05:46.520 align:start position:0%
+improvement on a single request,
+ 
+
+00:05:46.520 --> 00:05:49.870 align:start position:0%
+improvement on a single request,
+measured<00:05:46.920><c> on</c><00:05:47.120><c> Nvidia</c><00:05:47.880><c> GB300</c>
+
+00:05:49.870 --> 00:05:49.880 align:start position:0%
+measured on Nvidia GB300
+ 
+
+00:05:49.880 --> 00:05:51.950 align:start position:0%
+measured on Nvidia GB300
+hardware.<00:05:50.800><c> On</c><00:05:50.960><c> coding</c><00:05:51.400><c> and</c><00:05:51.560><c> other</c><00:05:51.800><c> low</c>
+
+00:05:51.950 --> 00:05:51.960 align:start position:0%
+hardware. On coding and other low
+ 
+
+00:05:51.960 --> 00:05:54.070 align:start position:0%
+hardware. On coding and other low
+entropy<00:05:52.320><c> tasks,</c><00:05:53.120><c> the</c><00:05:53.200><c> draft</c><00:05:53.600><c> model</c><00:05:53.840><c> gets</c>
+
+00:05:54.070 --> 00:05:54.080 align:start position:0%
+entropy tasks, the draft model gets
+ 
+
+00:05:54.080 --> 00:05:57.430 align:start position:0%
+entropy tasks, the draft model gets
+accepted<00:05:54.600><c> about</c><00:05:54.880><c> 4.73</c><00:05:56.000><c> tokens</c><00:05:56.400><c> per</c><00:05:56.560><c> step.</c><00:05:57.280><c> On</c>
+
+00:05:57.430 --> 00:05:57.440 align:start position:0%
+accepted about 4.73 tokens per step. On
+ 
+
+00:05:57.440 --> 00:05:59.270 align:start position:0%
+accepted about 4.73 tokens per step. On
+creative<00:05:57.880><c> writing</c><00:05:58.240><c> and</c><00:05:58.440><c> other</c><00:05:58.680><c> high</c><00:05:58.880><c> entropy</c>
+
+00:05:59.270 --> 00:05:59.280 align:start position:0%
+creative writing and other high entropy
+ 
+
+00:05:59.280 --> 00:06:02.510 align:start position:0%
+creative writing and other high entropy
+tasks,<00:06:00.040><c> it</c><00:06:00.160><c> drops</c><00:06:00.520><c> to</c><00:06:00.640><c> around</c><00:06:01.000><c> 2.61.</c>
+
+00:06:02.510 --> 00:06:02.520 align:start position:0%
+tasks, it drops to around 2.61.
+ 
+
+00:06:02.520 --> 00:06:04.350 align:start position:0%
+tasks, it drops to around 2.61.
+The<00:06:02.640><c> win</c><00:06:02.920><c> scales</c><00:06:03.280><c> with</c><00:06:03.440><c> how</c><00:06:03.640><c> predictable</c><00:06:04.240><c> the</c>
+
+00:06:04.350 --> 00:06:04.360 align:start position:0%
+The win scales with how predictable the
+ 
+
+00:06:04.360 --> 00:06:07.270 align:start position:0%
+The win scales with how predictable the
+work<00:06:04.600><c> is.</c><00:06:05.200><c> Code</c><00:06:05.640><c> is</c><00:06:05.800><c> predictable.</c><00:06:06.760><c> Deep</c><00:06:07.000><c> Spark</c>
+
+00:06:07.270 --> 00:06:07.280 align:start position:0%
+work is. Code is predictable. Deep Spark
+ 
+
+00:06:07.280 --> 00:06:09.150 align:start position:0%
+work is. Code is predictable. Deep Spark
+rewards<00:06:07.720><c> that.</c><00:06:08.160><c> Deep</c><00:06:08.360><c> Spark</c><00:06:08.640><c> attacks</c><00:06:09.040><c> the</c>
+
+00:06:09.150 --> 00:06:09.160 align:start position:0%
+rewards that. Deep Spark attacks the
+ 
+
+00:06:09.160 --> 00:06:11.390 align:start position:0%
+rewards that. Deep Spark attacks the
+bottleneck<00:06:09.720><c> from</c><00:06:09.880><c> three</c><00:06:10.200><c> angles</c><00:06:10.560><c> at</c><00:06:10.680><c> once.</c><00:06:11.320><c> A</c>
+
+00:06:11.390 --> 00:06:11.400 align:start position:0%
+bottleneck from three angles at once. A
+ 
+
+00:06:11.400 --> 00:06:13.390 align:start position:0%
+bottleneck from three angles at once. A
+block<00:06:11.680><c> diffusion</c><00:06:12.120><c> backbone</c><00:06:12.600><c> drafts</c><00:06:13.040><c> seven</c>
+
+00:06:13.390 --> 00:06:13.400 align:start position:0%
+block diffusion backbone drafts seven
+ 
+
+00:06:13.400 --> 00:06:15.870 align:start position:0%
+block diffusion backbone drafts seven
+tokens<00:06:13.880><c> in</c><00:06:14.000><c> a</c><00:06:14.040><c> single</c><00:06:14.520><c> parallel</c><00:06:15.040><c> pass,</c><00:06:15.600><c> not</c>
+
+00:06:15.870 --> 00:06:15.880 align:start position:0%
+tokens in a single parallel pass, not
+ 
+
+00:06:15.880 --> 00:06:18.390 align:start position:0%
+tokens in a single parallel pass, not
+one<00:06:16.120><c> by</c><00:06:16.280><c> one.</c><00:06:16.960><c> A</c><00:06:17.080><c> lightweight</c><00:06:17.560><c> Markov</c><00:06:18.040><c> head</c>
+
+00:06:18.390 --> 00:06:18.400 align:start position:0%
+one by one. A lightweight Markov head
+ 
+
+00:06:18.400 --> 00:06:20.070 align:start position:0%
+one by one. A lightweight Markov head
+stitches<00:06:18.800><c> those</c><00:06:19.000><c> tokens</c><00:06:19.360><c> together</c><00:06:19.800><c> so</c><00:06:19.919><c> they</c>
+
+00:06:20.070 --> 00:06:20.080 align:start position:0%
+stitches those tokens together so they
+ 
+
+00:06:20.080 --> 00:06:22.310 align:start position:0%
+stitches those tokens together so they
+read<00:06:20.360><c> like</c><00:06:20.520><c> a</c><00:06:20.600><c> real</c><00:06:20.880><c> sentence,</c><00:06:21.640><c> not</c><00:06:21.840><c> a</c><00:06:21.919><c> random</c>
+
+00:06:22.310 --> 00:06:22.320 align:start position:0%
+read like a real sentence, not a random
+ 
+
+00:06:22.320 --> 00:06:24.830 align:start position:0%
+read like a real sentence, not a random
+bag.<00:06:23.280><c> And</c><00:06:23.400><c> a</c><00:06:23.440><c> confidence</c><00:06:24.040><c> head</c><00:06:24.240><c> scores</c><00:06:24.600><c> how</c>
+
+00:06:24.830 --> 00:06:24.840 align:start position:0%
+bag. And a confidence head scores how
+ 
+
+00:06:24.840 --> 00:06:27.270 align:start position:0%
+bag. And a confidence head scores how
+likely<00:06:25.320><c> each</c><00:06:25.560><c> guest</c><00:06:25.880><c> token</c><00:06:26.200><c> is</c><00:06:26.320><c> to</c><00:06:26.440><c> survive,</c>
+
+00:06:27.270 --> 00:06:27.280 align:start position:0%
+likely each guest token is to survive,
+ 
+
+00:06:27.280 --> 00:06:29.150 align:start position:0%
+likely each guest token is to survive,
+so<00:06:27.400><c> the</c><00:06:27.560><c> engine</c><00:06:27.960><c> only</c><00:06:28.200><c> bothers</c><00:06:28.600><c> verifying</c><00:06:29.080><c> the</c>
+
+00:06:29.150 --> 00:06:29.160 align:start position:0%
+so the engine only bothers verifying the
+ 
+
+00:06:29.160 --> 00:06:30.909 align:start position:0%
+so the engine only bothers verifying the
+ones<00:06:29.440><c> worth</c><00:06:29.640><c> checking.</c><00:06:30.280><c> It</c><00:06:30.480><c> literally</c>
+
+00:06:30.909 --> 00:06:30.919 align:start position:0%
+ones worth checking. It literally
+ 
+
+00:06:30.919 --> 00:06:33.510 align:start position:0%
+ones worth checking. It literally
+decides<00:06:31.440><c> what</c><00:06:31.640><c> not</c><00:06:31.919><c> to</c><00:06:32.040><c> verify.</c><00:06:33.040><c> Skip</c><00:06:33.400><c> the</c>
+
+00:06:33.510 --> 00:06:33.520 align:start position:0%
+decides what not to verify. Skip the
+ 
+
+00:06:33.520 --> 00:06:35.630 align:start position:0%
+decides what not to verify. Skip the
+sure<00:06:33.760><c> things,</c><00:06:34.520><c> spend</c><00:06:34.880><c> the</c><00:06:34.960><c> compute</c><00:06:35.400><c> where</c><00:06:35.520><c> it</c>
+
+00:06:35.630 --> 00:06:35.640 align:start position:0%
+sure things, spend the compute where it
+ 
+
+00:06:35.640 --> 00:06:38.190 align:start position:0%
+sure things, spend the compute where it
+counts.<00:06:36.480><c> And</c><00:06:36.600><c> remember,</c><00:06:37.480><c> none</c><00:06:37.880><c> of</c><00:06:38.000><c> this</c>
+
+00:06:38.190 --> 00:06:38.200 align:start position:0%
+counts. And remember, none of this
+ 
+
+00:06:38.200 --> 00:06:40.470 align:start position:0%
+counts. And remember, none of this
+changes<00:06:38.640><c> the</c><00:06:38.760><c> answer.</c><00:06:39.640><c> The</c><00:06:39.760><c> verification</c>
+
+00:06:40.470 --> 00:06:40.480 align:start position:0%
+changes the answer. The verification
+ 
+
+00:06:40.480 --> 00:06:42.590 align:start position:0%
+changes the answer. The verification
+step<00:06:40.760><c> guarantees</c><00:06:41.280><c> the</c><00:06:41.440><c> output</c><00:06:41.800><c> is</c><00:06:41.919><c> exactly</c>
+
+00:06:42.590 --> 00:06:42.600 align:start position:0%
+step guarantees the output is exactly
+ 
+
+00:06:42.600 --> 00:06:43.950 align:start position:0%
+step guarantees the output is exactly
+what<00:06:42.720><c> the</c><00:06:42.800><c> model</c><00:06:43.120><c> would</c><00:06:43.240><c> have</c><00:06:43.360><c> written</c><00:06:43.640><c> token</c>
+
+00:06:43.950 --> 00:06:43.960 align:start position:0%
+what the model would have written token
+ 
+
+00:06:43.960 --> 00:06:46.350 align:start position:0%
+what the model would have written token
+by<00:06:44.080><c> token.</c><00:06:45.000><c> You</c><00:06:45.120><c> are</c><00:06:45.240><c> not</c><00:06:45.680><c> trading</c><00:06:45.960><c> quality</c>
+
+00:06:46.350 --> 00:06:46.360 align:start position:0%
+by token. You are not trading quality
+ 
+
+00:06:46.360 --> 00:06:48.710 align:start position:0%
+by token. You are not trading quality
+for<00:06:46.520><c> speed.</c><00:06:47.320><c> You</c><00:06:47.640><c> are</c><00:06:47.800><c> getting</c><00:06:48.080><c> the</c><00:06:48.160><c> speed</c><00:06:48.520><c> for</c>
+
+00:06:48.710 --> 00:06:48.720 align:start position:0%
+for speed. You are getting the speed for
+ 
+
+00:06:48.720 --> 00:06:50.909 align:start position:0%
+for speed. You are getting the speed for
+free.<00:06:49.440><c> Here's</c><00:06:49.919><c> why</c><00:06:50.080><c> these</c><00:06:50.360><c> two</c><00:06:50.560><c> belong</c>
+
+00:06:50.909 --> 00:06:50.919 align:start position:0%
+free. Here's why these two belong
+ 
+
+00:06:50.919 --> 00:06:53.350 align:start position:0%
+free. Here's why these two belong
+together.<00:06:51.680><c> Infra</c><00:06:52.000><c> Act</c><00:06:52.200><c> built</c><00:06:52.440><c> the</c><00:06:52.520><c> Kimi</c><00:06:52.840><c> K3</c>
+
+00:06:53.350 --> 00:06:53.360 align:start position:0%
+together. Infra Act built the Kimi K3
+ 
+
+00:06:53.360 --> 00:06:55.790 align:start position:0%
+together. Infra Act built the Kimi K3
+Deep<00:06:53.600><c> Spark</c><00:06:53.919><c> draft</c><00:06:54.280><c> model</c><00:06:54.640><c> to</c><00:06:54.800><c> mirror</c><00:06:55.120><c> K3's</c>
+
+00:06:55.790 --> 00:06:55.800 align:start position:0%
+Deep Spark draft model to mirror K3's
+ 
+
+00:06:55.800 --> 00:06:58.110 align:start position:0%
+Deep Spark draft model to mirror K3's
+own<00:06:56.120><c> MLA</c><00:06:56.560><c> attention</c><00:06:57.000><c> design,</c><00:06:57.720><c> which</c><00:06:57.919><c> means</c>
+
+00:06:58.110 --> 00:06:58.120 align:start position:0%
+own MLA attention design, which means
+ 
+
+00:06:58.120 --> 00:07:00.350 align:start position:0%
+own MLA attention design, which means
+the<00:06:58.200><c> draft</c><00:06:58.760><c> and</c><00:06:58.840><c> the</c><00:06:58.960><c> target</c><00:06:59.360><c> share</c><00:06:59.640><c> one</c><00:06:59.960><c> KV</c>
+
+00:07:00.350 --> 00:07:00.360 align:start position:0%
+the draft and the target share one KV
+ 
+
+00:07:00.360 --> 00:07:03.550 align:start position:0%
+the draft and the target share one KV
+cache<00:07:00.760><c> layout.</c><00:07:01.480><c> That</c><00:07:01.640><c> is</c><00:07:01.720><c> a</c><00:07:01.760><c> compact</c><00:07:02.360><c> 576</c>
+
+00:07:03.550 --> 00:07:03.560 align:start position:0%
+cache layout. That is a compact 576
+ 
+
+00:07:03.560 --> 00:07:05.870 align:start position:0%
+cache layout. That is a compact 576
+element<00:07:03.919><c> latent</c><00:07:04.240><c> per</c><00:07:04.400><c> token.</c><00:07:05.280><c> So</c><00:07:05.440><c> KV</c>
+
+00:07:05.870 --> 00:07:05.880 align:start position:0%
+element latent per token. So KV
+ 
+
+00:07:05.880 --> 00:07:07.390 align:start position:0%
+element latent per token. So KV
+offloading<00:07:06.480><c> and</c><00:07:06.640><c> prefill</c><00:07:07.040><c> decode</c>
+
+00:07:07.390 --> 00:07:07.400 align:start position:0%
+offloading and prefill decode
+ 
+
+00:07:07.400 --> 00:07:09.230 align:start position:0%
+offloading and prefill decode
+disaggregation<00:07:08.160><c> work</c><00:07:08.360><c> without</c><00:07:08.680><c> any</c><00:07:08.880><c> separate</c>
+
+00:07:09.230 --> 00:07:09.240 align:start position:0%
+disaggregation work without any separate
+ 
+
+00:07:09.240 --> 00:07:11.310 align:start position:0%
+disaggregation work without any separate
+page<00:07:09.520><c> format.</c><00:07:10.080><c> The</c><00:07:10.160><c> draft</c><00:07:10.520><c> was</c><00:07:10.640><c> trained</c><00:07:11.160><c> on</c>
+
+00:07:11.310 --> 00:07:11.320 align:start position:0%
+page format. The draft was trained on
+ 
+
+00:07:11.320 --> 00:07:13.350 align:start position:0%
+page format. The draft was trained on
+hidden<00:07:11.640><c> states</c><00:07:12.120><c> extracted</c><00:07:12.680><c> from</c><00:07:12.840><c> VLLM</c>
+
+00:07:13.350 --> 00:07:13.360 align:start position:0%
+hidden states extracted from VLLM
+ 
+
+00:07:13.360 --> 00:07:15.830 align:start position:0%
+hidden states extracted from VLLM
+itself,<00:07:14.200><c> the</c><00:07:14.320><c> same</c><00:07:14.600><c> engine</c><00:07:15.000><c> that</c><00:07:15.080><c> serves</c><00:07:15.440><c> it.</c>
+
+00:07:15.830 --> 00:07:15.840 align:start position:0%
+itself, the same engine that serves it.
+ 
+
+00:07:15.840 --> 00:07:17.390 align:start position:0%
+itself, the same engine that serves it.
+So<00:07:15.960><c> the</c><00:07:16.040><c> numerics</c><00:07:16.520><c> it</c><00:07:16.600><c> learns</c><00:07:16.840><c> from</c><00:07:17.160><c> are</c><00:07:17.280><c> the</c>
+
+00:07:17.390 --> 00:07:17.400 align:start position:0%
+So the numerics it learns from are the
+ 
+
+00:07:17.400 --> 00:07:19.550 align:start position:0%
+So the numerics it learns from are the
+numerics<00:07:17.880><c> it</c><00:07:17.960><c> meets</c><00:07:18.200><c> at</c><00:07:18.320><c> inference.</c><00:07:19.320><c> One</c>
+
+00:07:19.550 --> 00:07:19.560 align:start position:0%
+numerics it meets at inference. One
+ 
+
+00:07:19.560 --> 00:07:20.950 align:start position:0%
+numerics it meets at inference. One
+afternoon<00:07:19.960><c> of</c><00:07:20.040><c> compute</c><00:07:20.520><c> to</c><00:07:20.640><c> train</c><00:07:20.880><c> the</c>
+
+00:07:20.950 --> 00:07:20.960 align:start position:0%
+afternoon of compute to train the
+ 
+
+00:07:20.960 --> 00:07:22.950 align:start position:0%
+afternoon of compute to train the
+drafter,<00:07:21.840><c> then</c><00:07:22.000><c> the</c><00:07:22.080><c> speed</c><00:07:22.320><c> up</c><00:07:22.440><c> is</c><00:07:22.560><c> yours</c><00:07:22.840><c> to</c>
+
+00:07:22.950 --> 00:07:22.960 align:start position:0%
+drafter, then the speed up is yours to
+ 
+
+00:07:22.960 --> 00:07:25.430 align:start position:0%
+drafter, then the speed up is yours to
+keep.<00:07:23.520><c> The</c><00:07:23.720><c> on-ramp</c><00:07:24.160><c> is</c><00:07:24.280><c> short.</c><00:07:24.960><c> The</c><00:07:25.080><c> weights</c>
+
+00:07:25.430 --> 00:07:25.440 align:start position:0%
+keep. The on-ramp is short. The weights
+ 
+
+00:07:25.440 --> 00:07:27.790 align:start position:0%
+keep. The on-ramp is short. The weights
+land<00:07:25.720><c> on</c><00:07:25.840><c> Hugging</c><00:07:26.160><c> Face.</c><00:07:26.840><c> VLLM</c><00:07:27.480><c> loads</c><00:07:27.720><c> the</c>
+
+00:07:27.790 --> 00:07:27.800 align:start position:0%
+land on Hugging Face. VLLM loads the
+ 
+
+00:07:27.800 --> 00:07:29.990 align:start position:0%
+land on Hugging Face. VLLM loads the
+mixture<00:07:28.120><c> of</c><00:07:28.240><c> experts</c><00:07:28.640><c> natively,</c><00:07:29.520><c> with</c><00:07:29.720><c> full</c>
+
+00:07:29.990 --> 00:07:30.000 align:start position:0%
+mixture of experts natively, with full
+ 
+
+00:07:30.000 --> 00:07:31.990 align:start position:0%
+mixture of experts natively, with full
+day<00:07:30.200><c> zero</c><00:07:30.480><c> support,</c><00:07:31.280><c> and</c><00:07:31.400><c> the</c><00:07:31.480><c> Deep</c><00:07:31.720><c> Spark</c>
+
+00:07:31.990 --> 00:07:32.000 align:start position:0%
+day zero support, and the Deep Spark
+ 
+
+00:07:32.000 --> 00:07:34.070 align:start position:0%
+day zero support, and the Deep Spark
+drafter<00:07:32.400><c> clips</c><00:07:32.680><c> on</c><00:07:32.840><c> top</c><00:07:33.120><c> with</c><00:07:33.240><c> a</c><00:07:33.320><c> single</c><00:07:33.720><c> flag</c>
+
+00:07:34.070 --> 00:07:34.080 align:start position:0%
+drafter clips on top with a single flag
+ 
+
+00:07:34.080 --> 00:07:36.830 align:start position:0%
+drafter clips on top with a single flag
+in<00:07:34.160><c> the</c><00:07:34.240><c> serve</c><00:07:34.520><c> command.</c><00:07:35.440><c> Open</c><00:07:35.720><c> model,</c><00:07:36.520><c> open</c>
+
+00:07:36.830 --> 00:07:36.840 align:start position:0%
+in the serve command. Open model, open
+ 
+
+00:07:36.840 --> 00:07:39.430 align:start position:0%
+in the serve command. Open model, open
+server,<00:07:37.560><c> open</c><00:07:37.880><c> speed</c><00:07:38.200><c> up.</c><00:07:38.760><c> Not</c><00:07:38.960><c> a</c><00:07:39.000><c> single</c>
+
+00:07:39.430 --> 00:07:39.440 align:start position:0%
+server, open speed up. Not a single
+ 
+
+00:07:39.440 --> 00:07:40.870 align:start position:0%
+server, open speed up. Not a single
+piece<00:07:39.720><c> of</c><00:07:39.800><c> the</c><00:07:39.880><c> stack</c><00:07:40.280><c> locked</c><00:07:40.520><c> behind</c><00:07:40.840><c> a</c>
+
+00:07:40.870 --> 00:07:40.880 align:start position:0%
+piece of the stack locked behind a
+ 
+
+00:07:40.880 --> 00:07:43.470 align:start position:0%
+piece of the stack locked behind a
+login.<00:07:41.720><c> So</c><00:07:41.920><c> here's</c><00:07:42.320><c> the</c><00:07:42.440><c> full</c><00:07:42.640><c> picture.</c>
+
+00:07:43.470 --> 00:07:43.480 align:start position:0%
+login. So here's the full picture.
+ 
+
+00:07:43.480 --> 00:07:46.310 align:start position:0%
+login. So here's the full picture.
+Download<00:07:43.960><c> Kimiko</c><00:07:44.520><c> 3,</c><00:07:45.280><c> attach</c><00:07:45.720><c> the</c><00:07:45.840><c> DSpark</c>
+
+00:07:46.310 --> 00:07:46.320 align:start position:0%
+Download Kimiko 3, attach the DSpark
+ 
+
+00:07:46.320 --> 00:07:48.390 align:start position:0%
+Download Kimiko 3, attach the DSpark
+drafter<00:07:46.760><c> from</c><00:07:46.960><c> Infract.</c><00:07:47.760><c> Run</c><00:07:47.960><c> the</c><00:07:48.040><c> world's</c>
+
+00:07:48.390 --> 00:07:48.400 align:start position:0%
+drafter from Infract. Run the world's
+ 
+
+00:07:48.400 --> 00:07:50.670 align:start position:0%
+drafter from Infract. Run the world's
+largest<00:07:48.920><c> open</c><00:07:49.160><c> weight</c><00:07:49.360><c> model</c><00:07:49.720><c> at</c><00:07:49.920><c> over</c><00:07:50.160><c> three</c>
+
+00:07:50.670 --> 00:07:50.680 align:start position:0%
+largest open weight model at over three
+ 
+
+00:07:50.680 --> 00:07:52.830 align:start position:0%
+largest open weight model at over three
+times<00:07:51.120><c> the</c><00:07:51.240><c> base</c><00:07:51.480><c> speed</c><00:07:52.080><c> on</c><00:07:52.280><c> hardware</c><00:07:52.720><c> you</c>
+
+00:07:52.830 --> 00:07:52.840 align:start position:0%
+times the base speed on hardware you
+ 
+
+00:07:52.840 --> 00:07:55.350 align:start position:0%
+times the base speed on hardware you
+control<00:07:53.560><c> with</c><00:07:53.760><c> no</c><00:07:54.000><c> API</c><00:07:54.440><c> bill</c><00:07:54.800><c> and</c><00:07:54.960><c> no</c><00:07:55.120><c> rate</c>
+
+00:07:55.350 --> 00:07:55.360 align:start position:0%
+control with no API bill and no rate
+ 
+
+00:07:55.360 --> 00:07:57.510 align:start position:0%
+control with no API bill and no rate
+limit.<00:07:56.040><c> The</c><00:07:56.160><c> model</c><00:07:56.520><c> already</c><00:07:56.840><c> trades</c><00:07:57.200><c> blows</c>
+
+00:07:57.510 --> 00:07:57.520 align:start position:0%
+limit. The model already trades blows
+ 
+
+00:07:57.520 --> 00:08:00.270 align:start position:0%
+limit. The model already trades blows
+with<00:07:57.680><c> Opus.</c><00:07:58.440><c> DSpark</c><00:07:58.920><c> makes</c><00:07:59.160><c> it</c><00:07:59.280><c> fly.</c><00:07:59.960><c> Step</c>
+
+00:08:00.270 --> 00:08:00.280 align:start position:0%
+with Opus. DSpark makes it fly. Step
+ 
+
+00:08:00.280 --> 00:08:02.510 align:start position:0%
+with Opus. DSpark makes it fly. Step
+back<00:08:00.600><c> and</c><00:08:00.720><c> the</c><00:08:00.800><c> pattern</c><00:08:01.200><c> is</c><00:08:01.360><c> obvious.</c><00:08:02.240><c> One</c>
+
+00:08:02.510 --> 00:08:02.520 align:start position:0%
+back and the pattern is obvious. One
+ 
+
+00:08:02.520 --> 00:08:04.190 align:start position:0%
+back and the pattern is obvious. One
+open<00:08:02.800><c> lab</c><00:08:03.080><c> shipped</c><00:08:03.320><c> a</c><00:08:03.400><c> model</c><00:08:03.720><c> that</c><00:08:03.840><c> matches</c>
+
+00:08:04.190 --> 00:08:04.200 align:start position:0%
+open lab shipped a model that matches
+ 
+
+00:08:04.200 --> 00:08:06.310 align:start position:0%
+open lab shipped a model that matches
+the<00:08:04.320><c> best</c><00:08:04.640><c> closed</c><00:08:05.000><c> ones.</c><00:08:05.680><c> A</c><00:08:05.760><c> second</c><00:08:06.080><c> team</c>
+
+00:08:06.310 --> 00:08:06.320 align:start position:0%
+the best closed ones. A second team
+ 
+
+00:08:06.320 --> 00:08:07.550 align:start position:0%
+the best closed ones. A second team
+shipped<00:08:06.560><c> a</c><00:08:06.600><c> speed</c><00:08:06.920><c> up</c><00:08:07.000><c> that</c><00:08:07.160><c> triples</c>
+
+00:08:07.550 --> 00:08:07.560 align:start position:0%
+shipped a speed up that triples
+ 
+
+00:08:07.560 --> 00:08:09.150 align:start position:0%
+shipped a speed up that triples
+throughput<00:08:07.920><c> without</c><00:08:08.200><c> touching</c><00:08:08.520><c> the</c><00:08:08.560><c> weights.</c>
+
+00:08:09.150 --> 00:08:09.160 align:start position:0%
+throughput without touching the weights.
+ 
+
+00:08:09.160 --> 00:08:10.510 align:start position:0%
+throughput without touching the weights.
+The<00:08:09.240><c> frontier</c><00:08:09.680><c> used</c><00:08:09.880><c> to</c><00:08:09.960><c> be</c><00:08:10.040><c> a</c><00:08:10.120><c> private</c>
+
+00:08:10.510 --> 00:08:10.520 align:start position:0%
+The frontier used to be a private
+ 
+
+00:08:10.520 --> 00:08:12.430 align:start position:0%
+The frontier used to be a private
+garden.<00:08:11.360><c> It</c><00:08:11.480><c> is</c><00:08:11.560><c> starting</c><00:08:11.880><c> to</c><00:08:11.960><c> look</c><00:08:12.080><c> a</c><00:08:12.160><c> lot</c>
+
+00:08:12.430 --> 00:08:12.440 align:start position:0%
+garden. It is starting to look a lot
+ 
+
+00:08:12.440 --> 00:08:14.510 align:start position:0%
+garden. It is starting to look a lot
+more<00:08:12.600><c> like</c><00:08:12.760><c> a</c><00:08:12.800><c> public</c><00:08:13.160><c> library.</c><00:08:14.160><c> Now,</c><00:08:14.360><c> the</c>
+
+00:08:14.510 --> 00:08:14.520 align:start position:0%
+more like a public library. Now, the
+ 
+
+00:08:14.520 --> 00:08:17.710 align:start position:0%
+more like a public library. Now, the
+honest<00:08:14.800><c> part.</c><00:08:15.480><c> That</c><00:08:15.720><c> 3.14</c><00:08:16.800><c> times</c><00:08:17.120><c> speed</c><00:08:17.400><c> up</c><00:08:17.600><c> is</c>
+
+00:08:17.710 --> 00:08:17.720 align:start position:0%
+honest part. That 3.14 times speed up is
+ 
+
+00:08:17.720 --> 00:08:20.070 align:start position:0%
+honest part. That 3.14 times speed up is
+the<00:08:17.840><c> ceiling</c><00:08:18.280><c> on</c><00:08:18.400><c> a</c><00:08:18.440><c> single</c><00:08:18.919><c> clean</c><00:08:19.240><c> request,</c>
+
+00:08:20.070 --> 00:08:20.080 align:start position:0%
+the ceiling on a single clean request,
+ 
+
+00:08:20.080 --> 00:08:22.270 align:start position:0%
+the ceiling on a single clean request,
+not<00:08:20.320><c> the</c><00:08:20.440><c> promise</c><00:08:20.840><c> on</c><00:08:20.960><c> a</c><00:08:21.000><c> busy</c><00:08:21.280><c> server.</c><00:08:22.120><c> For</c>
+
+00:08:22.270 --> 00:08:22.280 align:start position:0%
+not the promise on a busy server. For
+ 
+
+00:08:22.280 --> 00:08:24.510 align:start position:0%
+not the promise on a busy server. For
+coding<00:08:22.640><c> and</c><00:08:22.800><c> structured</c><00:08:23.240><c> tasks,</c><00:08:24.040><c> DSpark</c>
+
+00:08:24.510 --> 00:08:24.520 align:start position:0%
+coding and structured tasks, DSpark
+ 
+
+00:08:24.520 --> 00:08:26.750 align:start position:0%
+coding and structured tasks, DSpark
+performs<00:08:25.000><c> best.</c><00:08:25.720><c> For</c><00:08:25.919><c> open-ended</c><00:08:26.400><c> creative</c>
+
+00:08:26.750 --> 00:08:26.760 align:start position:0%
+performs best. For open-ended creative
+ 
+
+00:08:26.760 --> 00:08:28.870 align:start position:0%
+performs best. For open-ended creative
+work,<00:08:27.320><c> the</c><00:08:27.440><c> acceptance</c><00:08:28.000><c> rate</c><00:08:28.160><c> drops</c><00:08:28.640><c> and</c><00:08:28.800><c> the</c>
+
+00:08:28.870 --> 00:08:28.880 align:start position:0%
+work, the acceptance rate drops and the
+ 
+
+00:08:28.880 --> 00:08:31.030 align:start position:0%
+work, the acceptance rate drops and the
+gain<00:08:29.240><c> shrinks</c><00:08:29.600><c> toward</c><00:08:29.880><c> two</c><00:08:30.120><c> tokens</c><00:08:30.520><c> per</c><00:08:30.640><c> step</c>
+
+00:08:31.030 --> 00:08:31.040 align:start position:0%
+gain shrinks toward two tokens per step
+ 
+
+00:08:31.040 --> 00:08:32.790 align:start position:0%
+gain shrinks toward two tokens per step
+instead<00:08:31.360><c> of</c><00:08:31.480><c> four.</c><00:08:32.159><c> You</c><00:08:32.320><c> also</c><00:08:32.560><c> need</c><00:08:32.719><c> the</c>
+
+00:08:32.790 --> 00:08:32.800 align:start position:0%
+instead of four. You also need the
+ 
+
+00:08:32.800 --> 00:08:34.310 align:start position:0%
+instead of four. You also need the
+DSpark<00:08:33.280><c> draft</c><00:08:33.560><c> checkpoint</c><00:08:34.039><c> trained</c>
+
+00:08:34.310 --> 00:08:34.320 align:start position:0%
+DSpark draft checkpoint trained
+ 
+
+00:08:34.320 --> 00:08:37.110 align:start position:0%
+DSpark draft checkpoint trained
+specifically<00:08:35.000><c> for</c><00:08:35.159><c> Kimiko</c><00:08:35.640><c> 3.</c><00:08:36.440><c> Use</c><00:08:36.640><c> the</c><00:08:36.760><c> wrong</c>
+
+00:08:37.110 --> 00:08:37.120 align:start position:0%
+specifically for Kimiko 3. Use the wrong
+ 
+
+00:08:37.120 --> 00:08:38.510 align:start position:0%
+specifically for Kimiko 3. Use the wrong
+drafter<00:08:37.640><c> and</c><00:08:37.760><c> the</c><00:08:37.840><c> acceptance</c><00:08:38.320><c> rate</c>
+
+00:08:38.510 --> 00:08:38.520 align:start position:0%
+drafter and the acceptance rate
+ 
+
+00:08:38.520 --> 00:08:41.190 align:start position:0%
+drafter and the acceptance rate
+collapses.<00:08:39.680><c> A</c><00:08:39.719><c> bad</c><00:08:40.039><c> guesser</c><00:08:40.360><c> just</c><00:08:40.599><c> piles</c><00:08:41.039><c> on</c>
+
+00:08:41.190 --> 00:08:41.200 align:start position:0%
+collapses. A bad guesser just piles on
+ 
+
+00:08:41.200 --> 00:08:43.750 align:start position:0%
+collapses. A bad guesser just piles on
+overhead.<00:08:42.039><c> Then</c><00:08:42.320><c> there</c><00:08:42.479><c> is</c><00:08:42.599><c> the</c><00:08:42.719><c> elephant.</c><00:08:43.640><c> It</c>
+
+00:08:43.750 --> 00:08:43.760 align:start position:0%
+overhead. Then there is the elephant. It
+ 
+
+00:08:43.760 --> 00:08:46.670 align:start position:0%
+overhead. Then there is the elephant. It
+is<00:08:43.880><c> still</c><00:08:44.080><c> a</c><00:08:44.160><c> 2.8</c><00:08:44.880><c> trillion</c><00:08:45.440><c> parameter</c><00:08:45.880><c> model.</c>
+
+00:08:46.670 --> 00:08:46.680 align:start position:0%
+is still a 2.8 trillion parameter model.
+ 
+
+00:08:46.680 --> 00:08:48.990 align:start position:0%
+is still a 2.8 trillion parameter model.
+Serving<00:08:47.040><c> it</c><00:08:47.160><c> requires</c><00:08:47.640><c> serious</c><00:08:48.080><c> memory.</c><00:08:48.880><c> The</c>
+
+00:08:48.990 --> 00:08:49.000 align:start position:0%
+Serving it requires serious memory. The
+ 
+
+00:08:49.000 --> 00:08:51.990 align:start position:0%
+Serving it requires serious memory. The
+checkpoint<00:08:49.520><c> in</c><00:08:49.640><c> native</c><00:08:50.080><c> MXFP4</c><00:08:51.280><c> format</c><00:08:51.720><c> comes</c>
+
+00:08:51.990 --> 00:08:52.000 align:start position:0%
+checkpoint in native MXFP4 format comes
+ 
+
+00:08:52.000 --> 00:08:55.070 align:start position:0%
+checkpoint in native MXFP4 format comes
+in<00:08:52.200><c> at</c><00:08:52.320><c> about</c><00:08:52.680><c> 1.5</c><00:08:53.560><c> terabytes.</c><00:08:54.520><c> The</c><00:08:54.640><c> official</c>
+
+00:08:55.070 --> 00:08:55.080 align:start position:0%
+in at about 1.5 terabytes. The official
+ 
+
+00:08:55.080 --> 00:08:57.670 align:start position:0%
+in at about 1.5 terabytes. The official
+VLLM<00:08:55.640><c> recipe</c><00:08:56.080><c> requires</c><00:08:56.520><c> at</c><00:08:56.680><c> minimum</c><00:08:57.240><c> an</c><00:08:57.440><c> eight</c>
+
+00:08:57.670 --> 00:08:57.680 align:start position:0%
+VLLM recipe requires at minimum an eight
+ 
+
+00:08:57.680 --> 00:09:00.110 align:start position:0%
+VLLM recipe requires at minimum an eight
+GPU<00:08:58.120><c> Blackwell</c><00:08:58.600><c> node.</c><00:08:59.280><c> Free</c><00:08:59.480><c> to</c><00:08:59.600><c> download</c><00:09:00.000><c> is</c>
+
+00:09:00.110 --> 00:09:00.120 align:start position:0%
+GPU Blackwell node. Free to download is
+ 
+
+00:09:00.120 --> 00:09:02.150 align:start position:0%
+GPU Blackwell node. Free to download is
+not<00:09:00.400><c> free</c><00:09:00.560><c> to</c><00:09:00.680><c> run.</c><00:09:01.440><c> And</c><00:09:01.600><c> on</c><00:09:01.720><c> factual</c>
+
+00:09:02.150 --> 00:09:02.160 align:start position:0%
+not free to run. And on factual
+ 
+
+00:09:02.160 --> 00:09:04.430 align:start position:0%
+not free to run. And on factual
+questions,<00:09:03.080><c> Artificial</c><00:09:03.560><c> Analysis</c><00:09:04.040><c> measured</c>
+
+00:09:04.430 --> 00:09:04.440 align:start position:0%
+questions, Artificial Analysis measured
+ 
+
+00:09:04.440 --> 00:09:07.710 align:start position:0%
+questions, Artificial Analysis measured
+K3's<00:09:05.040><c> hallucination</c><00:09:05.680><c> rate</c><00:09:05.880><c> at</c><00:09:06.040><c> 51%</c><00:09:07.400><c> up</c><00:09:07.560><c> from</c>
+
+00:09:07.710 --> 00:09:07.720 align:start position:0%
+K3's hallucination rate at 51% up from
+ 
+
+00:09:07.720 --> 00:09:10.550 align:start position:0%
+K3's hallucination rate at 51% up from
+39%<00:09:08.720><c> on</c><00:09:08.839><c> its</c><00:09:08.960><c> predecessor.</c><00:09:10.080><c> It</c><00:09:10.160><c> gets</c><00:09:10.360><c> more</c>
+
+00:09:10.550 --> 00:09:10.560 align:start position:0%
+39% on its predecessor. It gets more
+ 
+
+00:09:10.560 --> 00:09:12.270 align:start position:0%
+39% on its predecessor. It gets more
+things<00:09:10.800><c> right</c><00:09:11.000><c> overall,</c><00:09:11.800><c> but</c><00:09:11.960><c> it</c><00:09:12.040><c> also</c>
+
+00:09:12.270 --> 00:09:12.280 align:start position:0%
+things right overall, but it also
+ 
+
+00:09:12.280 --> 00:09:14.350 align:start position:0%
+things right overall, but it also
+confidently<00:09:12.839><c> gets</c><00:09:13.040><c> more</c><00:09:13.240><c> things</c><00:09:13.520><c> wrong.</c><00:09:14.200><c> For</c>
+
+00:09:14.350 --> 00:09:14.360 align:start position:0%
+confidently gets more things wrong. For
+ 
+
+00:09:14.360 --> 00:09:16.910 align:start position:0%
+confidently gets more things wrong. For
+code<00:09:14.640><c> generation</c><00:09:15.320><c> and</c><00:09:15.480><c> agentic</c><00:09:16.000><c> tasks,</c><00:09:16.720><c> that</c>
+
+00:09:16.910 --> 00:09:16.920 align:start position:0%
+code generation and agentic tasks, that
+ 
+
+00:09:16.920 --> 00:09:19.230 align:start position:0%
+code generation and agentic tasks, that
+trade-off<00:09:17.400><c> is</c><00:09:17.600><c> often</c><00:09:18.000><c> fine.</c><00:09:18.600><c> For</c><00:09:18.839><c> anything</c>
+
+00:09:19.230 --> 00:09:19.240 align:start position:0%
+trade-off is often fine. For anything
+ 
+
+00:09:19.240 --> 00:09:21.310 align:start position:0%
+trade-off is often fine. For anything
+where<00:09:19.360><c> a</c><00:09:19.440><c> wrong</c><00:09:19.920><c> confident</c><00:09:20.400><c> answer</c><00:09:20.760><c> is</c><00:09:21.000><c> worse</c>
+
+00:09:21.310 --> 00:09:21.320 align:start position:0%
+where a wrong confident answer is worse
+ 
+
+00:09:21.320 --> 00:09:23.510 align:start position:0%
+where a wrong confident answer is worse
+than<00:09:21.480><c> an</c><00:09:21.640><c> honest</c><00:09:21.960><c> abstention,</c><00:09:22.920><c> verify</c><00:09:23.360><c> the</c>
+
+00:09:23.510 --> 00:09:23.520 align:start position:0%
+than an honest abstention, verify the
+ 
+
+00:09:23.520 --> 00:09:26.270 align:start position:0%
+than an honest abstention, verify the
+output.<00:09:24.240><c> Four</c><00:09:24.520><c> numbers</c><00:09:24.839><c> to</c><00:09:24.960><c> keep:</c><00:09:25.600><c> 2.8</c>
+
+00:09:26.270 --> 00:09:26.280 align:start position:0%
+output. Four numbers to keep: 2.8
+ 
+
+00:09:26.280 --> 00:09:29.790 align:start position:0%
+output. Four numbers to keep: 2.8
+trillion<00:09:26.839><c> parameters,</c><00:09:27.880><c> 104</c><00:09:28.600><c> billion</c><00:09:29.000><c> active,</c>
+
+00:09:29.790 --> 00:09:29.800 align:start position:0%
+trillion parameters, 104 billion active,
+ 
+
+00:09:29.800 --> 00:09:31.990 align:start position:0%
+trillion parameters, 104 billion active,
+one<00:09:30.040><c> point</c><00:09:30.240><c> ahead</c><00:09:30.520><c> of</c><00:09:30.720><c> Opus</c><00:09:31.040><c> 4.8</c><00:09:31.800><c> on</c><00:09:31.920><c> the</c>
+
+00:09:31.990 --> 00:09:32.000 align:start position:0%
+one point ahead of Opus 4.8 on the
+ 
+
+00:09:32.000 --> 00:09:34.430 align:start position:0%
+one point ahead of Opus 4.8 on the
+intelligence<00:09:32.600><c> index,</c><00:09:33.480><c> half</c><00:09:33.800><c> the</c><00:09:33.920><c> cost</c><00:09:34.280><c> per</c>
+
+00:09:34.430 --> 00:09:34.440 align:start position:0%
+intelligence index, half the cost per
+ 
+
+00:09:34.440 --> 00:09:38.190 align:start position:0%
+intelligence index, half the cost per
+task,<00:09:35.280><c> and</c><00:09:35.480><c> 3.14</c><00:09:36.839><c> times</c><00:09:37.240><c> faster</c><00:09:37.760><c> for</c><00:09:37.920><c> byte</c>
+
+00:09:38.190 --> 00:09:38.200 align:start position:0%
+task, and 3.14 times faster for byte
+ 
+
+00:09:38.200 --> 00:09:40.070 align:start position:0%
+task, and 3.14 times faster for byte
+identical<00:09:38.640><c> output.</c><00:09:39.400><c> The</c><00:09:39.520><c> takeaway</c><00:09:39.920><c> is</c>
+
+00:09:40.070 --> 00:09:40.080 align:start position:0%
+identical output. The takeaway is
+ 
+
+00:09:40.080 --> 00:09:42.070 align:start position:0%
+identical output. The takeaway is
+simple.<00:09:40.760><c> The</c><00:09:40.880><c> best</c><00:09:41.160><c> models</c><00:09:41.480><c> are</c><00:09:41.560><c> no</c><00:09:41.760><c> longer</c>
+
+00:09:42.070 --> 00:09:42.080 align:start position:0%
+simple. The best models are no longer
+ 
+
+00:09:42.080 --> 00:09:44.190 align:start position:0%
+simple. The best models are no longer
+only<00:09:42.280><c> the</c><00:09:42.400><c> closed</c><00:09:42.840><c> ones,</c><00:09:43.440><c> and</c><00:09:43.560><c> the</c><00:09:43.640><c> fastest</c>
+
+00:09:44.190 --> 00:09:44.200 align:start position:0%
+only the closed ones, and the fastest
+ 
+
+00:09:44.200 --> 00:09:46.030 align:start position:0%
+only the closed ones, and the fastest
+tricks<00:09:44.480><c> no</c><00:09:44.640><c> longer</c><00:09:44.960><c> live</c><00:09:45.320><c> only</c><00:09:45.560><c> inside</c><00:09:45.960><c> the</c>
+
+00:09:46.030 --> 00:09:46.040 align:start position:0%
+tricks no longer live only inside the
+ 
+
+00:09:46.040 --> 00:09:48.990 align:start position:0%
+tricks no longer live only inside the
+biggest<00:09:46.400><c> labs.</c><00:09:47.280><c> Kimmy</c><00:09:47.560><c> K3</c><00:09:48.080><c> proved</c><00:09:48.480><c> open</c><00:09:48.800><c> can</c>
+
+00:09:48.990 --> 00:09:49.000 align:start position:0%
+biggest labs. Kimmy K3 proved open can
+ 
+
+00:09:49.000 --> 00:09:51.310 align:start position:0%
+biggest labs. Kimmy K3 proved open can
+compete.<00:09:49.800><c> Deep</c><00:09:50.000><c> Spark</c><00:09:50.320><c> proved</c><00:09:50.680><c> open</c><00:09:51.040><c> can</c><00:09:51.200><c> be</c>
+
+00:09:51.310 --> 00:09:51.320 align:start position:0%
+compete. Deep Spark proved open can be
+ 
+
+00:09:51.320 --> 00:09:53.390 align:start position:0%
+compete. Deep Spark proved open can be
+quick.<00:09:52.120><c> Together,</c><00:09:52.600><c> they</c><00:09:52.760><c> proved</c><00:09:53.160><c> you</c><00:09:53.240><c> can</c>
+
+00:09:53.390 --> 00:09:53.400 align:start position:0%
+quick. Together, they proved you can
+ 
+
+00:09:53.400 --> 00:09:55.070 align:start position:0%
+quick. Together, they proved you can
+have<00:09:53.640><c> both.</c><00:09:54.240><c> So,</c><00:09:54.400><c> here</c><00:09:54.600><c> is</c><00:09:54.720><c> the</c><00:09:54.840><c> real</c>
+
+00:09:55.070 --> 00:09:55.080 align:start position:0%
+have both. So, here is the real
+ 
+
+00:09:55.080 --> 00:09:57.150 align:start position:0%
+have both. So, here is the real
+question.<00:09:55.920><c> If</c><00:09:56.080><c> a</c><00:09:56.120><c> free</c><00:09:56.400><c> model</c><00:09:56.680><c> can</c><00:09:56.840><c> match</c><00:09:57.080><c> the</c>
+
+00:09:57.150 --> 00:09:57.160 align:start position:0%
+question. If a free model can match the
+ 
+
+00:09:57.160 --> 00:09:59.321 align:start position:0%
+question. If a free model can match the
+best<00:09:57.920><c> and</c><00:09:58.040><c> a</c><00:09:58.120><c> free</c><00:09:58.400><c> trick</c><00:09:58.720><c> can</c><00:09:58.840><c> make</c><00:09:59.040><c> it</c><00:09:59.160><c> fly,</c>
+
+00:09:59.321 --> 00:09:59.331 align:start position:0%
+best and a free trick can make it fly,
+ 
+
+00:09:59.331 --> 00:09:59.910 align:start position:0%
+best and a free trick can make it fly,
+[snorts]
+
+00:09:59.910 --> 00:09:59.920 align:start position:0%
+[snorts]
+ 
+
+00:09:59.920 --> 00:10:01.910 align:start position:0%
+[snorts]
+what<00:10:00.040><c> exactly</c><00:10:00.520><c> are</c><00:10:00.640><c> you</c><00:10:00.760><c> still</c><00:10:01.000><c> paying</c><00:10:01.280><c> for?</c>
+
+00:10:01.910 --> 00:10:01.920 align:start position:0%
+what exactly are you still paying for?
+ 
+
+00:10:01.920 --> 00:10:05.280 align:start position:0%
+what exactly are you still paying for?
+That<00:10:02.120><c> is</c><00:10:02.240><c> the</c><00:10:02.320><c> one</c><00:10:02.520><c> to</c><00:10:02.600><c> sit</c><00:10:02.840><c> with.</c>
+

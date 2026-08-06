@@ -1,0 +1,9 @@
+{
+  "title":"Local AI Is Not Automatically Private",
+  "description":"A 75-second method for checking an AI tool's real data flow: model endpoint, storage and telemetry. The interface is an original mockup; no specific product behavior is claimed.",
+  "chapters":[{"time":"00:00","title":"Local versus private"},{"time":"00:10","title":"Trace the data"},{"time":"00:23","title":"Three-part check"},{"time":"00:50","title":"Fully local versus hybrid"}],
+  "sources":[{"url":"https://www.nist.gov/privacy-framework","claim":"General privacy risk-management reference"}],
+  "thumbnailBrief":"Original light-background data-flow visual with three labels: endpoint, storage, telemetry. No reference-channel styling or copied composition.",
+  "aiDisclosureRequired":false,
+  "aiDisclosureReason":"The current fallback has no cloned voice and the UI is a clearly described illustrative mockup. Reassess if realistic synthetic media or a third-party cloned voice is added."
+}

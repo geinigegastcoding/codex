@@ -1,0 +1,1416 @@
+{
+  "captionKind": "auto",
+  "uncertainCorrections": [],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.51,
+      "text": "Two graphics cards. One is 5 years old"
+    },
+    {
+      "start": 2.52,
+      "end": 4.79,
+      "text": "and has 12 GB of memory. The other is"
+    },
+    {
+      "start": 4.8,
+      "end": 8.51,
+      "text": "newer, has 16 GB, and costs 60% more. On"
+    },
+    {
+      "start": 8.52,
+      "end": 11.03,
+      "text": "the same model, the same test, the same"
+    },
+    {
+      "start": 11.04,
+      "end": 13.19,
+      "text": "settings, the old cheap one writes text"
+    },
+    {
+      "start": 13.2,
+      "end": 16.47,
+      "text": "faster, 42 tokens a second against 34."
+    },
+    {
+      "start": 16.48,
+      "end": 18.63,
+      "text": "The newer card has more computing power."
+    },
+    {
+      "start": 18.64,
+      "end": 21.63,
+      "text": "It just has less memory bandwidth, 288"
+    },
+    {
+      "start": 21.64,
+      "end": 24.15,
+      "text": "GB a second against 360. That is the"
+    },
+    {
+      "start": 24.16,
+      "end": 25.95,
+      "text": "whole trick. When a model writes you a"
+    },
+    {
+      "start": 25.96,
+      "end": 28.95,
+      "text": "sentence, it is barely doing arithmetic."
+    },
+    {
+      "start": 28.96,
+      "end": 31.55,
+      "text": "It is reading. And reading is bounded by"
+    },
+    {
+      "start": 31.56,
+      "end": 33.95,
+      "text": "memory. Five things decide whether local"
+    },
+    {
+      "start": 33.96,
+      "end": 36.07,
+      "text": "AI works on your machine. Four of them"
+    },
+    {
+      "start": 36.08,
+      "end": 37.71,
+      "text": "are not printed on the box you have been"
+    },
+    {
+      "start": 37.72,
+      "end": 40.59,
+      "text": "comparing. How fast your memory is. How"
+    },
+    {
+      "start": 40.6,
+      "end": 42.75,
+      "text": "many bytes get read per token. Whether"
+    },
+    {
+      "start": 42.76,
+      "end": 45.11,
+      "text": "the thing fits. How much context you ask"
+    },
+    {
+      "start": 45.12,
+      "end": 46.91,
+      "text": "for. And what you are actually running"
+    },
+    {
+      "start": 46.92,
+      "end": 50.15,
+      "text": "it for. Get those right and a $250 card"
+    },
+    {
+      "start": 50.16,
+      "end": 52.95,
+      "text": "beats a $4,000 one at your job. Get them"
+    },
+    {
+      "start": 52.96,
+      "end": 55.27,
+      "text": "wrong and you spend two grand to run"
+    },
+    {
+      "start": 55.28,
+      "end": 58.07,
+      "text": "something worse than a free API. So,"
+    },
+    {
+      "start": 58.08,
+      "end": 60.51,
+      "text": "number one, memory bandwidth. And why"
+    },
+    {
+      "start": 60.52,
+      "end": 62.35,
+      "text": "the number on every spec sheet turns out"
+    },
+    {
+      "start": 62.36,
+      "end": 63.99,
+      "text": "to be the wrong one. Here is what"
+    },
+    {
+      "start": 64,
+      "end": 66.51,
+      "text": "generation physically is. To produce one"
+    },
+    {
+      "start": 66.52,
+      "end": 68.71000000000001,
+      "text": "token, the machine reads every weight in"
+    },
+    {
+      "start": 68.72,
+      "end": 70.19,
+      "text": "the model out of memory and does a"
+    },
+    {
+      "start": 70.2,
+      "end": 72.39,
+      "text": "single pass. Then it throws that away"
+    },
+    {
+      "start": 72.4,
+      "end": 74.55,
+      "text": "and does it again for the next token."
+    },
+    {
+      "start": 74.56,
+      "end": 76.19,
+      "text": "So, the ceiling is arithmetic you can do"
+    },
+    {
+      "start": 76.2,
+      "end": 78.11,
+      "text": "in your head. Tokens per second is"
+    },
+    {
+      "start": 78.12,
+      "end": 80.07,
+      "text": "roughly your memory bandwidth divided by"
+    },
+    {
+      "start": 80.08,
+      "end": 82.11,
+      "text": "the bytes you read per token. Real"
+    },
+    {
+      "start": 82.12,
+      "end": 83.75,
+      "text": "engines land between half and three"
+    },
+    {
+      "start": 83.76,
+      "end": 86.11,
+      "text": "quarters of that. An 8 billion parameter"
+    },
+    {
+      "start": 86.12,
+      "end": 89.03,
+      "text": "model at 4-bit is about 5 GB. On that"
+    },
+    {
+      "start": 89.03999999999999,
+      "end": 93.22999999999999,
+      "text": "old card, 360 divided by 5 is 72."
+    },
+    {
+      "start": 93.24000000000001,
+      "end": 96.78999999999999,
+      "text": "Measured, it does 55, 77% of the"
+    },
+    {
+      "start": 96.8,
+      "end": 98.71000000000001,
+      "text": "ceiling. Run the same model up the"
+    },
+    {
+      "start": 98.72,
+      "end": 101.11,
+      "text": "ladder and the line stays straight. A"
+    },
+    {
+      "start": 101.12,
+      "end": 102.67,
+      "text": "3090,"
+    },
+    {
+      "start": 102.68,
+      "end": 108.87,
+      "text": "936 GB a second, 115 tokens. A 5090,"
+    },
+    {
+      "start": 108.88,
+      "end": 110.50999999999999,
+      "text": "1792,"
+    },
+    {
+      "start": 110.52000000000001,
+      "end": 112.95,
+      "text": "200 tokens. Now, take the card away"
+    },
+    {
+      "start": 112.96000000000001,
+      "end": 115.43,
+      "text": "entirely. Dual channel desktop memory"
+    },
+    {
+      "start": 115.44,
+      "end": 118.95,
+      "text": "runs about 96 GB a second. 18 times less"
+    },
+    {
+      "start": 118.96000000000001,
+      "end": 120.99,
+      "text": "than the top card. And that shows up as"
+    },
+    {
+      "start": 121,
+      "end": 123.35,
+      "text": "roughly 11 tokens a second on a 7"
+    },
+    {
+      "start": 123.36,
+      "end": 125.71,
+      "text": "billion model. Apple sidesteps the whole"
+    },
+    {
+      "start": 125.72,
+      "end": 127.71,
+      "text": "argument by putting one pool of fast"
+    },
+    {
+      "start": 127.72,
+      "end": 130.35,
+      "text": "memory behind everything. An M5 Max"
+    },
+    {
+      "start": 130.36,
+      "end": 134.35,
+      "text": "moves 614 GB a second across 128 GB of"
+    },
+    {
+      "start": 134.36,
+      "end": 137.43,
+      "text": "it, which is how a Mac Studio ran a 671"
+    },
+    {
+      "start": 137.44,
+      "end": 139.82999999999998,
+      "text": "billion parameter Deep Seek at around 17"
+    },
+    {
+      "start": 139.84,
+      "end": 142.82999999999998,
+      "text": "tokens a second. Pulling under 200 West,"
+    },
+    {
+      "start": 142.84,
+      "end": 145.99,
+      "text": "no rack, no cooling problem, no cloud."
+    },
+    {
+      "start": 146,
+      "end": 147.47,
+      "text": "But bandwidth only governs half the"
+    },
+    {
+      "start": 147.48,
+      "end": 149.27,
+      "text": "work. Reading your prompt is a different"
+    },
+    {
+      "start": 149.28,
+      "end": 151.949,
+      "text": "job. That part happens in parallel, so"
+    },
+    {
+      "start": 151.959,
+      "end": 154.11,
+      "text": "it is bound by compute. Watch what that"
+    },
+    {
+      "start": 154.12,
+      "end": 156.31,
+      "text": "does to our two cards. At prompt"
+    },
+    {
+      "start": 156.32,
+      "end": 159.63,
+      "text": "processing, the newer, weaker card wins."
+    },
+    {
+      "start": 159.64,
+      "end": 161.19,
+      "text": "1,480"
+    },
+    {
+      "start": 161.2,
+      "end": 165.11,
+      "text": "tokens a second against 1,119."
+    },
+    {
+      "start": 165.12,
+      "end": 168.15,
+      "text": "Same two cards, opposite answer. Paste"
+    },
+    {
+      "start": 168.16,
+      "end": 170.82999999999998,
+      "text": "huge prompts and you want compute. Chat"
+    },
+    {
+      "start": 170.84,
+      "end": 172.67000000000002,
+      "text": "and you want bandwidth, which brings us"
+    },
+    {
+      "start": 172.68,
+      "end": 174.99,
+      "text": "to the second thing. And to the number"
+    },
+    {
+      "start": 175,
+      "end": 177.43,
+      "text": "people quote most, parameter count. On"
+    },
+    {
+      "start": 177.44,
+      "end": 179.59,
+      "text": "its own, it tells you close to nothing"
+    },
+    {
+      "start": 179.6,
+      "end": 183.03,
+      "text": "about speed. One graphics card, a 3090."
+    },
+    {
+      "start": 183.04,
+      "end": 186.59,
+      "text": "Qwen 3 at 32 billion parameters, dense,"
+    },
+    {
+      "start": 186.6,
+      "end": 189.59,
+      "text": "35 tokens a second. Qwen 3 at 30 billion"
+    },
+    {
+      "start": 189.6,
+      "end": 193.55,
+      "text": "parameters, mixture of experts, 153."
+    },
+    {
+      "start": 193.56,
+      "end": 195.22899999999998,
+      "text": "Four and a half times faster on a model"
+    },
+    {
+      "start": 195.239,
+      "end": 197.15,
+      "text": "that is very slightly smaller. Because a"
+    },
+    {
+      "start": 197.16,
+      "end": 199.22899999999998,
+      "text": "mixture of experts model does not read"
+    },
+    {
+      "start": 199.239,
+      "end": 201.47,
+      "text": "all of itself. A router wakes a handful"
+    },
+    {
+      "start": 201.48,
+      "end": 203.67000000000002,
+      "text": "of expert blocks per token, and the rest"
+    },
+    {
+      "start": 203.68,
+      "end": 206.39,
+      "text": "stays asleep. Alibaba ships 35 billion"
+    },
+    {
+      "start": 206.4,
+      "end": 208.79,
+      "text": "total with 3 billion awake. Google ships"
+    },
+    {
+      "start": 208.8,
+      "end": 211.75,
+      "text": "26 billion with 3.8 awake, and says on"
+    },
+    {
+      "start": 211.76,
+      "end": 213.31,
+      "text": "the model card that it runs about as"
+    },
+    {
+      "start": 213.32,
+      "end": 215.949,
+      "text": "fast as a 4 billion model. The catch is"
+    },
+    {
+      "start": 215.959,
+      "end": 217.47,
+      "text": "that sleeping weights still take up"
+    },
+    {
+      "start": 217.48,
+      "end": 220.47,
+      "text": "room. That 35 billion model is 20 GB on"
+    },
+    {
+      "start": 220.48,
+      "end": 222.39,
+      "text": "your card, whether the experts fire or"
+    },
+    {
+      "start": 222.4,
+      "end": 225.03,
+      "text": "not. Sparsity buys you speed. It does"
+    },
+    {
+      "start": 225.04,
+      "end": 227.15,
+      "text": "not buy you space. You can see the"
+    },
+    {
+      "start": 227.16,
+      "end": 229.39,
+      "text": "ceiling that creates. Moonshot open"
+    },
+    {
+      "start": 229.4,
+      "end": 232.59,
+      "text": "source Kimmy K3 recently. 2.8 trillion"
+    },
+    {
+      "start": 232.6,
+      "end": 235.63,
+      "text": "parameters, 1.4 terabytes of weights,"
+    },
+    {
+      "start": 235.64,
+      "end": 239.71,
+      "text": "6,800 likes on hugging face, 2,850"
+    },
+    {
+      "start": 239.72,
+      "end": 242.59,
+      "text": "downloads. The parameter count is real."
+    },
+    {
+      "start": 242.6,
+      "end": 244.87,
+      "text": "Nobody is running it. Third thing, and"
+    },
+    {
+      "start": 244.88,
+      "end": 246.949,
+      "text": "the one that cost people the most money,"
+    },
+    {
+      "start": 246.959,
+      "end": 248.949,
+      "text": "does it fit? Miss the size of your card"
+    },
+    {
+      "start": 248.959,
+      "end": 251.51,
+      "text": "by 1 GB and you fall off a cliff."
+    },
+    {
+      "start": 251.52,
+      "end": 253.75,
+      "text": "Someone benchmarked it properly on a 14"
+    },
+    {
+      "start": 253.76,
+      "end": 255.43,
+      "text": "billion model. Everything on the"
+    },
+    {
+      "start": 255.44,
+      "end": 258.59,
+      "text": "processor, 2.9 tokens a second."
+    },
+    {
+      "start": 258.6,
+      "end": 261.83,
+      "text": "Everything on the graphics card, 43. 15"
+    },
+    {
+      "start": 261.84,
+      "end": 264.59,
+      "text": "times. Now the interesting part, push 40"
+    },
+    {
+      "start": 264.6,
+      "end": 266.43,
+      "text": "of the 48 layers onto the card and you"
+    },
+    {
+      "start": 266.44,
+      "end": 269.39,
+      "text": "get 12 and 1/2. 83% of the model on the"
+    },
+    {
+      "start": 269.4,
+      "end": 272.75,
+      "text": "GPU buys you 29% of the speed. The last"
+    },
+    {
+      "start": 272.76,
+      "end": 274.67,
+      "text": "eight layers do the rest, which is why"
+    },
+    {
+      "start": 274.68,
+      "end": 276.83,
+      "text": "everybody quantizes. Full precision"
+    },
+    {
+      "start": 276.84000000000003,
+      "end": 279.55,
+      "text": "weights are 16 bits each. Quantizing"
+    },
+    {
+      "start": 279.56,
+      "end": 281.51,
+      "text": "rounds them down to four or five bits in"
+    },
+    {
+      "start": 281.52,
+      "end": 283.67,
+      "text": "small blocks with a scale factor kept"
+    },
+    {
+      "start": 283.68,
+      "end": 286.59000000000003,
+      "text": "per block so the range survives. A 32"
+    },
+    {
+      "start": 286.6,
+      "end": 288.71,
+      "text": "billion parameter model goes from 65 and"
+    },
+    {
+      "start": 288.72,
+      "end": 291.03,
+      "text": "1/2 GB to under 20. That is the"
+    },
+    {
+      "start": 291.04,
+      "end": 292.55,
+      "text": "difference between renting a data center"
+    },
+    {
+      "start": 292.56,
+      "end": 294.71,
+      "text": "GPU and using a second-hand card in the"
+    },
+    {
+      "start": 294.72,
+      "end": 296.59000000000003,
+      "text": "machine you already own. The cost is"
+    },
+    {
+      "start": 296.6,
+      "end": 299.07,
+      "text": "usually described as a 1 to 3% quality"
+    },
+    {
+      "start": 299.08,
+      "end": 301.63,
+      "text": "loss, which is a generous way to put it."
+    },
+    {
+      "start": 301.64,
+      "end": 303.35,
+      "text": "Measured against full precision on the"
+    },
+    {
+      "start": 303.36,
+      "end": 305.51,
+      "text": "same prompt, 4-bit picks a different"
+    },
+    {
+      "start": 305.52,
+      "end": 307.99,
+      "text": "next word 8% of the time. Down the"
+    },
+    {
+      "start": 308,
+      "end": 311.23,
+      "text": "ladder, 8-bit is effectively free, 6-bit"
+    },
+    {
+      "start": 311.24,
+      "end": 314.27,
+      "text": "is cheap, 4-bit is the knee, 3-bit does"
+    },
+    {
+      "start": 314.28,
+      "end": 316.83,
+      "text": "real damage. 1-bit turns a perplexity of"
+    },
+    {
+      "start": 316.84,
+      "end": 319.99,
+      "text": "six into a perplexity of 60. It is still"
+    },
+    {
+      "start": 320,
+      "end": 322.27,
+      "text": "talking. It has stopped thinking. The"
+    },
+    {
+      "start": 322.28,
+      "end": 324.47,
+      "text": "damage is not spread evenly either."
+    },
+    {
+      "start": 324.48,
+      "end": 326.51,
+      "text": "Dropping to 3-bit cost one model nine"
+    },
+    {
+      "start": 326.52,
+      "end": 328.83,
+      "text": "points on grade school maths and 6/10 of"
+    },
+    {
+      "start": 328.84,
+      "end": 331.15,
+      "text": "a point on common sense. Quantization"
+    },
+    {
+      "start": 331.16,
+      "end": 333.35,
+      "text": "eats reasoning first, and reasoning is"
+    },
+    {
+      "start": 333.36,
+      "end": 335.39,
+      "text": "usually why you came. Google trains for"
+    },
+    {
+      "start": 335.4,
+      "end": 337.15,
+      "text": "it now. Their quantization-aware"
+    },
+    {
+      "start": 337.15999999999997,
+      "end": 338.909,
+      "text": "checkpoints cut the 4-bit penalty by"
+    },
+    {
+      "start": 338.919,
+      "end": 341.23,
+      "text": "more than half and took a 27 billion"
+    },
+    {
+      "start": 341.24,
+      "end": 344.47,
+      "text": "model from 54 GB to 14. The community"
+    },
+    {
+      "start": 344.48,
+      "end": 347.23,
+      "text": "rule, pick a file 1 to 2 GB under your"
+    },
+    {
+      "start": 347.24,
+      "end": 350.11,
+      "text": "VRAM, and that rule is about to fail you"
+    },
+    {
+      "start": 350.12,
+      "end": 351.67,
+      "text": "because the model file is not the thing"
+    },
+    {
+      "start": 351.68,
+      "end": 353.79,
+      "text": "that fills your card. Fourth thing,"
+    },
+    {
+      "start": 353.8,
+      "end": 356.31,
+      "text": "context, which is bigger than your model"
+    },
+    {
+      "start": 356.32,
+      "end": 357.87,
+      "text": "and which almost nobody accounts for"
+    },
+    {
+      "start": 357.88,
+      "end": 359.75,
+      "text": "before they download anything. Every"
+    },
+    {
+      "start": 359.76,
+      "end": 361.51,
+      "text": "token the model has already read leaves"
+    },
+    {
+      "start": 361.52,
+      "end": 363.63,
+      "text": "something behind. A key and a value per"
+    },
+    {
+      "start": 363.64,
+      "end": 365.87,
+      "text": "attention layer cached so it never has"
+    },
+    {
+      "start": 365.88,
+      "end": 367.87,
+      "text": "to recompute them. That cache sits in"
+    },
+    {
+      "start": 367.88,
+      "end": 369.87,
+      "text": "your VRAM next to the weights and grows"
+    },
+    {
+      "start": 369.88,
+      "end": 372.71,
+      "text": "with every word. On an 8 billion model,"
+    },
+    {
+      "start": 372.72,
+      "end": 376.27,
+      "text": "it costs about 147 KB per token. At"
+    },
+    {
+      "start": 376.28,
+      "end": 379.47,
+      "text": "4,000 tokens of context, that is 6/10 of"
+    },
+    {
+      "start": 379.48,
+      "end": 382.03,
+      "text": "a gigabyte, small enough to ignore. At"
+    },
+    {
+      "start": 382.04,
+      "end": 386.75,
+      "text": "128,000 tokens, the same cache is 19 GB."
+    },
+    {
+      "start": 386.76,
+      "end": 389.31,
+      "text": "The model file is five. Your context is"
+    },
+    {
+      "start": 389.32,
+      "end": 391.07,
+      "text": "now nearly four times bigger than your"
+    },
+    {
+      "start": 391.08,
+      "end": 393.03,
+      "text": "model. So, the calculator you used"
+    },
+    {
+      "start": 393.04,
+      "end": 394.39,
+      "text": "before you downloaded anything was"
+    },
+    {
+      "start": 394.4,
+      "end": 396.63,
+      "text": "wrong. Weights plus cache plus a working"
+    },
+    {
+      "start": 396.64,
+      "end": 398.27,
+      "text": "buffer plus whatever your desktop"
+    },
+    {
+      "start": 398.28,
+      "end": 400.11,
+      "text": "already has sitting on the card. People"
+    },
+    {
+      "start": 400.12,
+      "end": 401.59000000000003,
+      "text": "shrink the cache the same way they"
+    },
+    {
+      "start": 401.6,
+      "end": 403.39,
+      "text": "shrink the weights, but this is where"
+    },
+    {
+      "start": 403.4,
+      "end": 405.59000000000003,
+      "text": "the tutorials go wrong because keys and"
+    },
+    {
+      "start": 405.6,
+      "end": 408.15,
+      "text": "values are not equally fragile. Quantize"
+    },
+    {
+      "start": 408.15999999999997,
+      "end": 409.87,
+      "text": "the values to four bits and the"
+    },
+    {
+      "start": 409.88,
+      "end": 412.11,
+      "text": "divergence from full precision is nearly"
+    },
+    {
+      "start": 412.12,
+      "end": 414.71,
+      "text": "nothing. Quantize the keys to four bits"
+    },
+    {
+      "start": 414.72,
+      "end": 416.39,
+      "text": "and the model now agrees with its own"
+    },
+    {
+      "start": 416.4,
+      "end": 418.75,
+      "text": "full precision answers only 11% of the"
+    },
+    {
+      "start": 418.76,
+      "end": 421.43,
+      "text": "time. The reason is mechanical. Keys"
+    },
+    {
+      "start": 421.44,
+      "end": 423.67,
+      "text": "pass through a softmax, so an error at"
+    },
+    {
+      "start": 423.68,
+      "end": 425.27,
+      "text": "one position spreads across every"
+    },
+    {
+      "start": 425.28,
+      "end": 427.95,
+      "text": "position. Values just get added up, so"
+    },
+    {
+      "start": 427.96,
+      "end": 430.99,
+      "text": "their error stays put. 8-bit keys, 4-bit"
+    },
+    {
+      "start": 431,
+      "end": 434.03,
+      "text": "values, and you keep 60% of the memory."
+    },
+    {
+      "start": 434.04,
+      "end": 435.79,
+      "text": "Architecture fixes better than settings"
+    },
+    {
+      "start": 435.8,
+      "end": 438.47,
+      "text": "do. DeepSeek compresses the cache to 70"
+    },
+    {
+      "start": 438.48,
+      "end": 441.11,
+      "text": "KB a token instead of 300. Gemma"
+    },
+    {
+      "start": 441.12,
+      "end": 442.95,
+      "text": "alternates local and global attention"
+    },
+    {
+      "start": 442.96,
+      "end": 444.909,
+      "text": "and drops the cache from 60% of"
+    },
+    {
+      "start": 444.919,
+      "end": 448.03,
+      "text": "inference memory down to 15% and now the"
+    },
+    {
+      "start": 448.04,
+      "end": 449.87,
+      "text": "part that should change what you buy."
+    },
+    {
+      "start": 449.88,
+      "end": 452.55,
+      "text": "Somebody pushed 172 billion tokens"
+    },
+    {
+      "start": 452.56,
+      "end": 455.909,
+      "text": "through 35 open models at 32,000,"
+    },
+    {
+      "start": 455.919,
+      "end": 457.83,
+      "text": "128,000,"
+    },
+    {
+      "start": 457.84000000000003,
+      "end": 460.79,
+      "text": "and 200,000 tokens of context. Median"
+    },
+    {
+      "start": 460.8,
+      "end": 465.15,
+      "text": "accuracy loss from 32 to 128,000 tokens,"
+    },
+    {
+      "start": 465.15999999999997,
+      "end": 467.95,
+      "text": "10 and 1/2 points. One well-liked model"
+    },
+    {
+      "start": 467.96,
+      "end": 472.55,
+      "text": "fell from 93% to 37% at 200,000. Its"
+    },
+    {
+      "start": 472.56,
+      "end": 474.99,
+      "text": "invented answer rate went from 7% to"
+    },
+    {
+      "start": 475,
+      "end": 476.55,
+      "text": "72%."
+    },
+    {
+      "start": 476.56,
+      "end": 479.55,
+      "text": "Same study, same machines. 8-bit weights"
+    },
+    {
+      "start": 479.56,
+      "end": 482.51,
+      "text": "cost under two points. Context costs 20."
+    },
+    {
+      "start": 482.52,
+      "end": 484.23,
+      "text": "The setting everyone argues about barely"
+    },
+    {
+      "start": 484.24,
+      "end": 486.27,
+      "text": "matters. The number in the marketing is"
+    },
+    {
+      "start": 486.28,
+      "end": 488.47,
+      "text": "the one that does."
+    },
+    {
+      "start": 488.48,
+      "end": 489.63,
+      "text": "And the one that decides whether you"
+    },
+    {
+      "start": 489.64,
+      "end": 491.43,
+      "text": "should do any of this at all. What are"
+    },
+    {
+      "start": 491.44,
+      "end": 493.31,
+      "text": "you running it for? Start by not"
+    },
+    {
+      "start": 493.32,
+      "end": 495.63,
+      "text": "agonizing over the app. For one person"
+    },
+    {
+      "start": 495.64,
+      "end": 498.87,
+      "text": "making one request at a time, Llama.cpp,"
+    },
+    {
+      "start": 498.88,
+      "end": 501.43,
+      "text": "a Llama, and LM Studio land within a few"
+    },
+    {
+      "start": 501.44,
+      "end": 503.71,
+      "text": "tokens a second of each other. vLLM is"
+    },
+    {
+      "start": 503.72,
+      "end": 505.67,
+      "text": "much faster at serving 40 people at"
+    },
+    {
+      "start": 505.68,
+      "end": 507.99,
+      "text": "once, which you are not doing. Two"
+    },
+    {
+      "start": 508,
+      "end": 509.67,
+      "text": "things did change this year. In"
+    },
+    {
+      "start": 509.68,
+      "end": 512.7090000000001,
+      "text": "February, the team behind llama.cpp"
+    },
+    {
+      "start": 512.719,
+      "end": 515.149,
+      "text": "joined Hugging Face. Georgi Gerganov"
+    },
+    {
+      "start": 515.159,
+      "end": 516.75,
+      "text": "wrote that local inference is becoming a"
+    },
+    {
+      "start": 516.76,
+      "end": 518.87,
+      "text": "competitive alternative to the cloud,"
+    },
+    {
+      "start": 518.88,
+      "end": 520.63,
+      "text": "and the way people deploy it has to get"
+    },
+    {
+      "start": 520.64,
+      "end": 523.029,
+      "text": "simpler. In March, a Llama swapped"
+    },
+    {
+      "start": 523.039,
+      "end": 525.95,
+      "text": "Llama.cpp for Apple's MLX on Mac. Same"
+    },
+    {
+      "start": 525.96,
+      "end": 528.71,
+      "text": "machine, same model. Prompt processing"
+    },
+    {
+      "start": 528.72,
+      "end": 532.71,
+      "text": "up 57%, generation up 93%."
+    },
+    {
+      "start": 532.72,
+      "end": 534.47,
+      "text": "A bigger jump than any card you could"
+    },
+    {
+      "start": 534.48,
+      "end": 535.91,
+      "text": "have bought that month. The chip"
+    },
+    {
+      "start": 535.92,
+      "end": 538.03,
+      "text": "underneath barely touches quality."
+    },
+    {
+      "start": 538.04,
+      "end": 542.43,
+      "text": "Across an H200, an MI300X,"
+    },
+    {
+      "start": 542.44,
+      "end": 545.51,
+      "text": "and a Gaudi 2, accuracy on the same task"
+    },
+    {
+      "start": 545.52,
+      "end": 547.43,
+      "text": "varies by half a point. Temperature"
+    },
+    {
+      "start": 547.44,
+      "end": 549.11,
+      "text": "moved it up to nine times more than the"
+    },
+    {
+      "start": 549.12,
+      "end": 551.43,
+      "text": "hardware did. Then there is the bill."
+    },
+    {
+      "start": 551.44,
+      "end": 553.23,
+      "text": "Open AI will sell you a million input"
+    },
+    {
+      "start": 553.24,
+      "end": 555.47,
+      "text": "tokens for 5 cents. Deep Seek will run a"
+    },
+    {
+      "start": 555.48,
+      "end": 558.19,
+      "text": "capable model for 14. Meanwhile,"
+    },
+    {
+      "start": 558.2,
+      "end": 560.03,
+      "text": "American electricity hit 18 and 1/2"
+    },
+    {
+      "start": 560.04,
+      "end": 563.35,
+      "text": "cents a kilowatt hour, up 6% in a year,"
+    },
+    {
+      "start": 563.36,
+      "end": 565.71,
+      "text": "and the card got worse, not better. The"
+    },
+    {
+      "start": 565.72,
+      "end": 568.91,
+      "text": "5090 carries a $2,000 sticker and sells"
+    },
+    {
+      "start": 568.92,
+      "end": 571.11,
+      "text": "for about $4,300"
+    },
+    {
+      "start": 571.12,
+      "end": 572.51,
+      "text": "because the memory makers moved their"
+    },
+    {
+      "start": 572.52,
+      "end": 574.63,
+      "text": "lines to data center parts. The break"
+    },
+    {
+      "start": 574.64,
+      "end": 577.15,
+      "text": "even people keep landing on under $50 a"
+    },
+    {
+      "start": 577.16,
+      "end": 580.03,
+      "text": "month of API spend, Cloud wins outright."
+    },
+    {
+      "start": 580.04,
+      "end": 582.15,
+      "text": "Above a few hundred a month sustained,"
+    },
+    {
+      "start": 582.16,
+      "end": 584.07,
+      "text": "the machine pays for itself inside half"
+    },
+    {
+      "start": 584.08,
+      "end": 586.91,
+      "text": "a year. The capability gap is real, too."
+    },
+    {
+      "start": 586.92,
+      "end": 588.39,
+      "text": "On the standard software engineering"
+    },
+    {
+      "start": 588.4,
+      "end": 590.75,
+      "text": "benchmark, the best closed model scores"
+    },
+    {
+      "start": 590.76,
+      "end": 593.31,
+      "text": "89. The best open weights model scores"
+    },
+    {
+      "start": 593.32,
+      "end": 596.11,
+      "text": "79, and that one wants a server, not a"
+    },
+    {
+      "start": 596.12,
+      "end": 598.07,
+      "text": "laptop. Agents are where you feel it"
+    },
+    {
+      "start": 598.08,
+      "end": 601.39,
+      "text": "most. Past roughly 25 to 30 tool calls,"
+    },
+    {
+      "start": 601.4,
+      "end": 602.95,
+      "text": "local models lose the thread. They"
+    },
+    {
+      "start": 602.96,
+      "end": 605.23,
+      "text": "forget early results, redo finished"
+    },
+    {
+      "start": 605.24,
+      "end": 607.75,
+      "text": "steps with a context window still half"
+    },
+    {
+      "start": 607.76,
+      "end": 611.15,
+      "text": "empty. So, here is the yes. Local wins"
+    },
+    {
+      "start": 611.16,
+      "end": 614.51,
+      "text": "at small, repetitive, private, and"
+    },
+    {
+      "start": 614.52,
+      "end": 617.75,
+      "text": "constant. Classification, extraction,"
+    },
+    {
+      "start": 617.76,
+      "end": 619.83,
+      "text": "summarizing your own files, auto"
+    },
+    {
+      "start": 619.84,
+      "end": 621.91,
+      "text": "complete, anything you would rather not"
+    },
+    {
+      "start": 621.92,
+      "end": 623.99,
+      "text": "paste into someone else's server. And it"
+    },
+    {
+      "start": 624,
+      "end": 626.27,
+      "text": "is not a hobby anymore. Llama reports"
+    },
+    {
+      "start": 626.28,
+      "end": 628.87,
+      "text": "8.9 million monthly developers, double"
+    },
+    {
+      "start": 628.88,
+      "end": 631.43,
+      "text": "January, running inside 85% of the"
+    },
+    {
+      "start": 631.44,
+      "end": 634.67,
+      "text": "Fortune 500 on a team of 14 people. Open"
+    },
+    {
+      "start": 634.68,
+      "end": 636.59,
+      "text": "weights took 41% of Hugging Face"
+    },
+    {
+      "start": 636.6,
+      "end": 639.23,
+      "text": "downloads this spring. On Vercel, open"
+    },
+    {
+      "start": 639.24,
+      "end": 641.31,
+      "text": "models handle close to a third of all AI"
+    },
+    {
+      "start": 641.32,
+      "end": 643.27,
+      "text": "requests in June, and the gap has a"
+    },
+    {
+      "start": 643.28,
+      "end": 645.55,
+      "text": "measurement now. The UK AI Security"
+    },
+    {
+      "start": 645.56,
+      "end": 647.79,
+      "text": "Institute put open weights 4 to 7 months"
+    },
+    {
+      "start": 647.8,
+      "end": 649.63,
+      "text": "behind the closed frontier, narrowed"
+    },
+    {
+      "start": 649.64,
+      "end": 651.59,
+      "text": "from 6 to 10 months a year ago."
+    },
+    {
+      "start": 651.6,
+      "end": 654.51,
+      "text": "Practically, 8 GB runs a 9 billion model"
+    },
+    {
+      "start": 654.52,
+      "end": 657.99,
+      "text": "at 4-bit with real context. 16 runs a 12"
+    },
+    {
+      "start": 658,
+      "end": 660.99,
+      "text": "billion or a 26 billion sparse one. 24"
+    },
+    {
+      "start": 661,
+      "end": 663.63,
+      "text": "runs a 27 billion coding model at 25"
+    },
+    {
+      "start": 663.64,
+      "end": 665.75,
+      "text": "tokens a second on a laptop. Five"
+    },
+    {
+      "start": 665.76,
+      "end": 668.15,
+      "text": "things: bandwidth over compute, bytes"
+    },
+    {
+      "start": 668.16,
+      "end": 670.35,
+      "text": "awake over parameters, fit with that"
+    },
+    {
+      "start": 670.36,
+      "end": 672.71,
+      "text": "cliff behind it, context, which is"
+    },
+    {
+      "start": 672.72,
+      "end": 675.11,
+      "text": "bigger than your model, and the job,"
+    },
+    {
+      "start": 675.12,
+      "end": 677.95,
+      "text": "which decides all four. Buy bandwidth,"
+    },
+    {
+      "start": 677.96,
+      "end": 679.87,
+      "text": "count what is awake, leave room for the"
+    },
+    {
+      "start": 679.88,
+      "end": 681.75,
+      "text": "cache, and be straight with yourself"
+    },
+    {
+      "start": 681.76,
+      "end": 684.43,
+      "text": "about the work. That is the checklist."
+    },
+    {
+      "start": 684.44,
+      "end": 687.8389999999999,
+      "text": "Everything else is a preference."
+    }
+  ]
+}
