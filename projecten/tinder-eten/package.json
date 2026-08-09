@@ -1,0 +1,32 @@
+{
+  "name": "hap",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "node server.mjs",
+    "screenshots": "node scripts/capture-screenshots.mjs",
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "generate:recipes": "node scripts/generate-recipes.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "check:bundle": "node scripts/check-bundle.mjs",
+    "test:pwa": "npm run build && node scripts/check-pwa.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4"
+  }
+}

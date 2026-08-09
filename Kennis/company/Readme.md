@@ -5,7 +5,7 @@ Welcome to the Magisdata Knowledge Base (Kennis). This Obsidian vault stores the
 **Vault snapshot reviewed:** 24 July 2026.
 
 ## What it is
-Magisdata is a Dutch website and SEO partner for small local service businesses (such as plumbers and barbers), offering AI-ready structures (SEO, AEO, GEO, and AI-vindbaarheid) and conversion-focused websites. The vault is used to maintain project context, founder goals, and strategic decisions.
+MagisData is pivoting to a complete AI company. The core offers are an agent-ready folder/directory and skill system inspired by Het Mainframe, a course for using that system, and AI audits for companies. Pricing is not established yet. Website and SEO work are supporting capabilities, not the primary positioning.
 
 ## Why it matters
 As a sole proprietorship, Magisdata is closely tied to its founder, [[Daniel Magis]]. This vault ensures that both the founder and AI assistants have a single source of truth for the business's identity, strategic direction, and daily progress.

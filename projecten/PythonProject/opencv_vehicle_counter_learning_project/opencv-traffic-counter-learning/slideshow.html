@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenCV Vehicle Counter — Learning Roadmap</title>
+<style>
+:root{--bg:#f5f6f7;--card:#fff;--ink:#101214;--muted:#68707a;--line:#dfe3e6;--accent:#ff5a1f;--soft:#fff0e9}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+body{overflow:hidden}.slide{display:none;height:100vh;padding:7vh 8vw 10vh;overflow:auto}.slide.active{display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:850;margin-bottom:20px}
+h1{font-size:clamp(48px,7vw,92px);line-height:.94;letter-spacing:-.06em;margin:0 0 26px;max-width:1100px}
+h2{font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-.045em;margin:0 0 27px;max-width:1100px}
+p{font-size:clamp(18px,2vw,26px);line-height:1.45;color:var(--muted);max-width:980px}
+.flow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;max-width:1200px}.pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:14px 18px;font-size:18px;font-weight:750}.arrow{font-size:25px;color:var(--accent);font-weight:900}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1200px;width:100%}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;min-height:175px}.card b{display:block;font-size:22px;margin-bottom:10px}.card span{font-size:17px;line-height:1.45;color:var(--muted)}
+.stage{display:flex;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);max-width:1060px}.num{width:46px;height:46px;display:grid;place-items:center;background:var(--soft);color:var(--accent);border-radius:14px;font-weight:900;flex:0 0 auto}.stage b{display:block;font-size:20px}.stage span{color:var(--muted)}
+.quote{font-size:clamp(30px,4.5vw,58px);line-height:1.12;letter-spacing:-.04em;max-width:1050px}.controls{position:fixed;right:28px;bottom:23px;display:flex;gap:8px}.controls button{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 15px;font-size:16px;cursor:pointer}.counter{position:fixed;left:28px;bottom:25px;color:var(--muted);font-size:14px}.progress{position:fixed;left:0;right:0;bottom:0;height:4px;background:#e3e6e8}.progress i{display:block;height:100%;background:var(--accent)}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.slide{padding:7vh 7vw 13vh}.card{min-height:auto}}
+</style>
+</head>
+<body>
+<section class="slide active"><div class="eyebrow">OpenCV learning project</div><h1>Count vehicles without an object detector</h1><p>Fixed traffic video → motion → blobs → tracks → line crossing. Small enough to finish, deep enough to teach actual computer vision.</p></section>
+<section class="slide"><div class="eyebrow">Strict scope</div><h2>The finished project does one thing</h2><div class="flow"><span class="pill">Video</span><span class="arrow">→</span><span class="pill">Foreground</span><span class="arrow">→</span><span class="pill">Clean mask</span><span class="arrow">→</span><span class="pill">Candidates</span><span class="arrow">→</span><span class="pill">Track</span><span class="arrow">→</span><span class="pill">Cross line</span><span class="arrow">→</span><span class="pill">+1</span></div></section>
+<section class="slide"><div class="eyebrow">Phase 1</div><h2>Learn video as data</h2><div class="stage"><div class="num">1</div><div><b>VideoCapture</b><span>Read frames, display them and exit correctly.</span></div></div><div class="stage"><div class="num">2</div><div><b>Frames + ROI</b><span>Coordinates, dimensions, crop to the road and place the count line.</span></div></div></section>
+<section class="slide"><div class="eyebrow">Phase 2</div><h2>Turn motion into vehicle candidates</h2><div class="stage"><div class="num">3</div><div><b>Background subtraction</b><span>Learn the static scene and expose changing foreground.</span></div></div><div class="stage"><div class="num">4</div><div><b>Morphology</b><span>Clean noise and fragmented blobs.</span></div></div><div class="stage"><div class="num">5</div><div><b>Contours</b><span>Group white blobs and reject implausible sizes.</span></div></div><div class="stage"><div class="num">6</div><div><b>Centers</b><span>Represent each candidate with a simple point.</span></div></div></section>
+<section class="slide"><div class="eyebrow">The important jump</div><div class="quote"><strong>A detection is not a vehicle.</strong> The same vehicle is detected again in every frame. Tracking is what gives detections an identity across time.</div></section>
+<section class="slide"><div class="eyebrow">Phase 3</div><h2>Turn detections into tracks</h2><div class="grid"><div class="card"><b>Nearest-center matching</b><span>Associate a new point with a nearby old track.</span></div><div class="card"><b>Track lifetime</b><span>Survive short missed detections, but eventually forget departed cars.</span></div><div class="card"><b>Debug IDs</b><span>Draw IDs and centers so identity swaps are visible rather than mysterious.</span></div></div></section>
+<section class="slide"><div class="eyebrow">Phase 4</div><h2>Count a transition, not proximity</h2><div class="flow"><span class="pill">Previous center above line</span><span class="arrow">→</span><span class="pill">Current center below line</span><span class="arrow">→</span><span class="pill">Track not counted</span><span class="arrow">→</span><span class="pill">COUNT +1</span></div></section>
+<section class="slide"><div class="eyebrow">Debug order</div><h2>When the count is wrong, find the first broken layer</h2><div class="grid"><div class="card"><b>Detection</b><span>Was the vehicle represented by a useful blob/box?</span></div><div class="card"><b>Tracking</b><span>Did that box keep the right identity across frames?</span></div><div class="card"><b>Counting</b><span>Did that track genuinely transition across the line once?</span></div></div></section>
+<section class="slide"><div class="eyebrow">Practice clip</div><h2>You have a controlled test before the real video</h2><p>The included synthetic clip has a known expected result of <strong>6 crossings</strong>, plus distractors. That lets you diagnose your logic before fighting real-world noise.</p></section>
+<section class="slide"><div class="eyebrow">Finish</div><h2>Then move to the real traffic footage</h2><p>Calibrate ROI → line → mask → candidate filters → tracker. Do not rewrite the entire algorithm because real footage is messier. The failures are part of what the project is supposed to teach.</p></section>
+<section class="slide"><div class="eyebrow">Learning rule</div><div class="quote">There is <strong>no final solution file</strong> in the pack. Attempt → inspect → diagnose → Hint A → Hint B → Hint C.</div></section>
+
+<div class="counter" id="counter"></div>
+<div class="controls"><button id="prev">←</button><button id="next">→</button></div>
+<div class="progress"><i id="bar"></i></div>
+<script>
+const s=[...document.querySelectorAll('.slide')];let i=0;
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((x,k)=>x.classList.toggle('active',k===i));counter.textContent=`${i+1} / ${s.length}`;bar.style.width=`${(i+1)/s.length*100}%`}
+prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key))show(i+1);if(['ArrowLeft','PageUp'].includes(e.key))show(i-1)});
+show(0);
+</script>
+</body>
+</html>

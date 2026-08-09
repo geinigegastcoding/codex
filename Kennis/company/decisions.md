@@ -2,9 +2,15 @@
 
 Decisions made during the development of Magisdata, including their rationale and when to revisit them.
 
-**Last consolidated:** 24 July 2026. A proposal or council verdict is not a decision unless explicitly adopted and reflected in active work.
+**Last consolidated:** 8 August 2026. A proposal or council verdict is not a decision unless explicitly adopted and reflected in active work.
 
 ## Log of Decisions
+
+### 2026-08-08: MagisData AI-Systems Rehaul
+- **Decision**: Reposition the public MagisData website around auditing, building and enabling practical AI systems that remove recurring work from entrepreneurs' workflows; make the centered image hero the real homepage hero.
+- **Rationale**: The service is repeatable systems work rather than isolated freelance tasks. The homepage must communicate that value immediately and show concrete proof through savings, workflows, logos, second-brain/skills content and a clear CTA.
+- **Current H1**: “Haal terugkerend werk uit je bedrijf met AI.”
+- **Revisit**: When the offer, audience or primary conversion action changes.
 
 ### 2026-07-24: Evidence-Based Knowledge Vault
 - **Decision**: Mark unknown metrics as unknown, separate concepts from implementations, and use repository-relative paths because the repository moves between machines.
@@ -41,7 +47,7 @@ Decisions made during the development of Magisdata, including their rationale an
 - **Rationale**: Automates log creation, saving time and ensuring consistent formatting (`YYYY-MM-DD - [Brief Topic].md`) in the `Kennis/logs/` folder.
 - **Revisit**: Re-evaluate if logging needs change or new metadata is required.
 
-### 2026-06-26: Leiden-First SEO Strategy (Plumbers & Barbers Focus)
+### 2026-06-26: Leiden-First SEO Strategy (Plumbers & Barbers Focus; superseded)
 - **Decision**: Focus SEO efforts on Leiden-region commercial intent first, targeting small local businesses like plumbers and barbers.
 - **Rationale**: Plumbers and barbers have high local search intent and clear, straightforward conversion goals, making them excellent initial clients to prove Magisdata's value and generate revenue quickly.
 - **Revisit**: Once first 1-2 local clients are acquired.
@@ -61,12 +67,12 @@ Decisions made during the development of Magisdata, including their rationale an
 - **Rationale**: Daniel provides the strategic direction and product decisions, while the AI executes the technical coding, build checks, and implementations. This leverages the unique strengths of both parties.
 - **Revisit**: Continuous evaluation of teamwork efficiency.
 
-### 2026-06-26: Standardized Product Packages and Pricing Models
+### 2026-06-26: Standardized Product Packages and Pricing Models (superseded)
 - **Decision**: Document and align all plans with the active yearly prices maintained in `Website/app/diensten/pricing-data.tsx` (Website plans, Visibility plans, AI Automation, and Growth Consulting).
 - **Rationale**: Ensures the knowledge base is synchronized with the live website products and commercial offerings.
 - **Revisit**: Whenever pricing or product features are updated.
 
-### 2026-06-26: Optimized Website Sales Client Template
+### 2026-06-26: Optimized Website Sales Client Template (superseded)
 - **Decision**: Refocused and optimized the `Client Template.md` note specifically for website package sales (Start/Groei/Autoriteit), assets gathering, design vibe, and technical launch checklists.
 - **Rationale**: Directly aligns the template structure with Magisdata's primary revenue driver (selling websites to small local businesses).
 - **Revisit**: After the first 3 website launches.

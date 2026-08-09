@@ -1,6 +1,6 @@
 # Business Data
 
-This file is the dashboard's manual data contract. **Last repository review: 24 July 2026.** Values below are not connected to a verified live GA4, Stripe, Search Console, or CRM sync in this checkout. Unknown values are marked accordingly; do not present them as business facts.
+This file is the dashboard's manual data contract. **Last repository review: 8 August 2026.** MagisData is pivoting to a complete AI company. Values are not connected to verified analytics or CRM sync; unknown values must not be presented as business facts.
 
 ## Financials
 - Monthly Revenue: Unknown
@@ -27,8 +27,11 @@ This file is the dashboard's manual data contract. **Last repository review: 24 
 ## Projects
 | Project | Client | Status | Progress |
 | --- | --- | --- | --- |
-| First customer acquisition | MagisData | Active focus | Unknown |
-| MagisData public website SEO | Internal | Active; website source unavailable in this checkout | Unknown |
+| AI-company offer validation | MagisData | Active focus | Unknown |
+| AI operating system / Mainframe-style system | Internal | Concept; scope and pricing undecided | Unknown |
+| AI-use course | Internal | Concept; curriculum and pricing undecided | Unknown |
+| Company AI audit | Internal | Planned service; scope and pricing undecided | Unknown |
+| MagisData public website | Internal | AI positioning present; production metrics unverified | Unknown |
 | Sales OS MVP | Internal | Implemented locally in `CRM/` | MVP |
 | Akal Bakkerij landing page | Akal Bakkerij | Demo implemented in `customers/Akal Bakkerij/` | Demo complete |
 

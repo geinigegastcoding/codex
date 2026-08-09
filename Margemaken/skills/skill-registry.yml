@@ -1,0 +1,22 @@
+version: 1
+language: nl
+mirrors:
+  - .agents/skills
+  - .claude/skills
+skills:
+  - name: email-checker
+    risk: medium
+    human_approval: send-delete-pay
+  - name: youtube-transcriber
+    risk: low
+    human_approval: rights-publish
+  - name: kennis-navigator
+    risk: medium
+    human_approval: sensitive-context
+  - name: content-humanizer
+    risk: low
+    human_approval: brand-claims
+  - name: system-builder
+    risk: medium
+    human_approval: scope-livegang
+

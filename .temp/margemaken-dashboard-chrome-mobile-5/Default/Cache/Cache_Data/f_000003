@@ -1,0 +1,1518 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/App.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8517d952"; const Fragment = __vite__cjsImport0_react_jsxDevRuntime["Fragment"]; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("E:/MData/Margemaken/dashboard/src/App.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=8517d952"; const useMemo = __vite__cjsImport3_react["useMemo"]; const useState = __vite__cjsImport3_react["useState"];
+const navigation = [
+  { id: "overzicht", label: "Overzicht", icon: "grid" },
+  { id: "kennis", label: "Kennis", icon: "book" },
+  { id: "cursus", label: "Cursus", icon: "play" },
+  { id: "skills", label: "Skills", icon: "spark" },
+  { id: "community", label: "Community", icon: "users" }
+];
+const modules = [
+  { number: "01", title: "Je werkruimte klaarzetten", text: "Mappen, regels en een veilige start.", status: "Klaar", progress: 100 },
+  { number: "02", title: "Kennis die de agent begrijpt", text: "Context verzamelen zonder een rommelig archief.", status: "Bezig", progress: 68 },
+  { number: "03", title: "Je eerste skill bouwen", text: "Een terugkerende taak vastleggen als workflow.", status: "Open", progress: 0 },
+  { number: "04", title: "Van taak naar systeem", text: "Review, foutafhandeling en onderhoud.", status: "Open", progress: 0 }
+];
+const skills = [
+  { name: "E-mail checker", description: "Inbox triage met menselijke goedkeuring.", tag: "Communicatie" },
+  { name: "Kennis navigator", description: "Leest, schrijft en onderhoudt je vault.", tag: "Context" },
+  { name: "YouTube transcriber", description: "Maakt bronnotities van toegestane video's.", tag: "Research" },
+  { name: "System builder", description: "Zet herhaalbaar werk om in een workflow.", tag: "Bouwen" }
+];
+const activities = [
+  { icon: "book", title: "Kennisstructuur geopend", detail: "Je navigatie en bronregels staan klaar.", time: "Vandaag, 09:42" },
+  { icon: "spark", title: "Skill bekeken", detail: "E-mail checker staat klaar voor een eerste test.", time: "Gisteren, 16:10" },
+  { icon: "check", title: "Module 01 afgerond", detail: "De werkruimte heeft een vaste startplek.", time: "Gisteren, 15:48" }
+];
+function Icon({ name, size = 18 }) {
+  const paths = {
+    grid: "M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z",
+    book: "M5 4.5A2.5 2.5 0 0 1 7.5 2H20v16H7.5A2.5 2.5 0 0 0 5 20.5zm0 0v16M8 6h8M8 10h7",
+    play: "M8 5.5v13l10-6.5z",
+    spark: "m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6zm7 12 .7 2.3L22 18l-2.3.7L19 21l-.7-2.3L16 18l2.3-.7z",
+    users: "M16 20v-1.5a4.5 4.5 0 0 0-4.5-4.5h-3A4.5 4.5 0 0 0 4 18.5V20m6-10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m5.5-6.5a3 3 0 0 1 0 5.8M17 14.5a4.5 4.5 0 0 1 4 4V20",
+    search: "m20 20-4.8-4.8m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0",
+    arrow: "M5 12h13m-5-5 5 5-5 5",
+    check: "m5 12 4 4L19 6",
+    clock: "M12 7v5l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0",
+    folder: "M3 7.5h7l1.6 2H21v9.5H3zM3 7.5V5h6l2 2.5",
+    plus: "M12 5v14M5 12h14",
+    menu: "M4 7h16M4 12h16M4 17h16"
+  };
+  return /* @__PURE__ */ jsxDEV("svg", { "aria-hidden": "true", className: "icon", fill: "none", height: size, viewBox: "0 0 24 24", width: size, children: /* @__PURE__ */ jsxDEV("path", { d: paths[name], stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.8" }, void 0, false, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 71,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 70,
+    columnNumber: 5
+  }, this);
+}
+_c = Icon;
+function SectionHeading({ eyebrow, title, text }) {
+  return /* @__PURE__ */ jsxDEV("div", { className: "section-heading", children: [
+    /* @__PURE__ */ jsxDEV("div", { children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: eyebrow }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 80,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("h2", { children: title }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 81,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 79,
+      columnNumber: 7
+    }, this),
+    text ? /* @__PURE__ */ jsxDEV("p", { children: text }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 83,
+      columnNumber: 15
+    }, this) : null
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 78,
+    columnNumber: 5
+  }, this);
+}
+_c2 = SectionHeading;
+function ProgressBar({ value }) {
+  return /* @__PURE__ */ jsxDEV("div", { "aria-label": `${value}% voortgang`, className: "progress-track", children: /* @__PURE__ */ jsxDEV("span", { style: { width: `${value}%` } }, void 0, false, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 89,
+    columnNumber: 77
+  }, this) }, void 0, false, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 89,
+    columnNumber: 10
+  }, this);
+}
+_c3 = ProgressBar;
+function DashboardHome({ onNavigate }) {
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("section", { className: "welcome-grid", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "welcome-copy", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: "AI-systeem academy" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 97,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("h1", { children: "Goedemorgen, ondernemer." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 98,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Je werkruimte staat klaar. Kies een kleine workflow en bouw vandaag iets dat je morgen opnieuw kunt gebruiken." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 99,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "button-row", children: [
+          /* @__PURE__ */ jsxDEV("button", { className: "button button-primary", onClick: () => onNavigate("cursus"), children: [
+            "Ga verder met de cursus ",
+            /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 101,
+              columnNumber: 116
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 101,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV("button", { className: "button button-secondary", onClick: () => onNavigate("kennis"), children: "Open Kennis" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 102,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 100,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 96,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "welcome-diagram", "aria-label": "Diagram van Kennis naar skill en output", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "diagram-line line-one" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 106,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "diagram-line line-two" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 107,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "diagram-node node-source", children: [
+          /* @__PURE__ */ jsxDEV(Icon, { name: "book", size: 17 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 108,
+            columnNumber: 53
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Kennis" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 108,
+            columnNumber: 83
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 108,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "diagram-node node-skill", children: [
+          /* @__PURE__ */ jsxDEV(Icon, { name: "spark", size: 19 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 109,
+            columnNumber: 52
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: "Skill" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 109,
+            columnNumber: 83
+          }, this),
+          /* @__PURE__ */ jsxDEV("small", { children: "herhaalbaar werk" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 109,
+            columnNumber: 105
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 109,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "diagram-node node-output", children: [
+          /* @__PURE__ */ jsxDEV(Icon, { name: "check", size: 17 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 110,
+            columnNumber: 53
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Output" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 110,
+            columnNumber: 84
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 110,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { className: "diagram-caption", children: "Een kleine route die klopt" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 111,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 105,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 95,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "demo-note", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "status-dot" }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 115,
+        columnNumber: 34
+      }, this),
+      " Demo-data. Vervang de voorbeelden door je eigen context en metingen."
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 115,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "metric-grid", "aria-label": "Voortgang", children: [
+      /* @__PURE__ */ jsxDEV("article", { className: "metric-card", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "metric-label", children: "Cursusvoortgang" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 118,
+          columnNumber: 42
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: "22%" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 118,
+          columnNumber: 95
+        }, this),
+        /* @__PURE__ */ jsxDEV(ProgressBar, { value: 22 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 118,
+          columnNumber: 115
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { children: "2 van 8 modules bekeken" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 118,
+          columnNumber: 141
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 118,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("article", { className: "metric-card", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "metric-label", children: "Kennisnotities" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 119,
+          columnNumber: 42
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: "12" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 119,
+          columnNumber: 94
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { children: "Voorbeeldnotities klaar voor vervanging" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 119,
+          columnNumber: 113
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "text-link", onClick: () => onNavigate("kennis"), children: [
+          "Bekijk Kennis ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 119,
+            columnNumber: 248
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 119,
+          columnNumber: 167
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 119,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("article", { className: "metric-card", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "metric-label", children: "Premade skills" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 120,
+          columnNumber: 42
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: "5" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 120,
+          columnNumber: 94
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { children: "Gesynchroniseerd in twee skillmappen" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 120,
+          columnNumber: 112
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "text-link", onClick: () => onNavigate("skills"), children: [
+          "Bekijk skills ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 120,
+            columnNumber: 244
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 120,
+          columnNumber: 163
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 120,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("article", { className: "metric-card metric-card-accent", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "metric-label", children: "Volgende stap" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 121,
+          columnNumber: 61
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: "01" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 121,
+          columnNumber: 112
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { children: "Maak je eerste echte workflow" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 121,
+          columnNumber: 131
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "text-link", onClick: () => onNavigate("cursus"), children: [
+          "Open module ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 121,
+            columnNumber: 254
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 121,
+          columnNumber: 175
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 121,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 117,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "content-grid content-grid-main", children: [
+      /* @__PURE__ */ jsxDEV("section", { className: "panel module-panel", children: [
+        /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "01 / leren", title: "Bouw je eerste systeem", text: "Korte modules. Elke module eindigt met een bestand of een werkende test." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 126,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "module-list", children: modules.map(
+          (module) => /* @__PURE__ */ jsxDEV("button", { className: "module-row", onClick: () => onNavigate("cursus"), children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "module-number", children: module.number }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 130,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { className: "module-copy", children: [
+              /* @__PURE__ */ jsxDEV("strong", { children: module.title }, void 0, false, {
+                fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+                lineNumber: 131,
+                columnNumber: 47
+              }, this),
+              /* @__PURE__ */ jsxDEV("small", { children: module.text }, void 0, false, {
+                fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+                lineNumber: 131,
+                columnNumber: 78
+              }, this),
+              /* @__PURE__ */ jsxDEV(ProgressBar, { value: module.progress }, void 0, false, {
+                fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+                lineNumber: 131,
+                columnNumber: 106
+              }, this)
+            ] }, void 0, true, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 131,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { className: `status status-${module.status.toLowerCase()}`, children: module.status }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 132,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 133,
+              columnNumber: 17
+            }, this)
+          ] }, module.number, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 129,
+            columnNumber: 13
+          }, this)
+        ) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 127,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 125,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("aside", { className: "panel side-panel", children: [
+        /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "volgende actie", title: "Kies klein" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 140,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "side-lede", children: "Schrijf een taak op die deze week minstens drie keer terugkomt. Dat is je eerste kandidaat voor een skill." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 141,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "focus-box", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "focus-label", children: "Voorbeeld" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 142,
+            columnNumber: 38
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: "Nieuwe klantmails samenvatten" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 142,
+            columnNumber: 84
+          }, this),
+          /* @__PURE__ */ jsxDEV("small", { children: "Input: inbox-label. Output: drie regels in `output/`." }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 142,
+            columnNumber: 130
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 142,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "button button-secondary full-button", onClick: () => onNavigate("skills"), children: [
+          "Bekijk de skill-opbouw ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 143,
+            columnNumber: 127
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 143,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 139,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 124,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "content-grid content-grid-bottom", children: [
+      /* @__PURE__ */ jsxDEV("section", { className: "panel activity-panel", children: [
+        /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "logboek", title: "Recente activiteit" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 149,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "activity-list", children: activities.map((activity) => /* @__PURE__ */ jsxDEV("div", { className: "activity-row", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "activity-icon", children: /* @__PURE__ */ jsxDEV(Icon, { name: activity.icon, size: 16 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 151,
+            columnNumber: 126
+          }, this) }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 151,
+            columnNumber: 94
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("strong", { children: activity.title }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 151,
+              columnNumber: 177
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: activity.detail }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 151,
+              columnNumber: 210
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 151,
+            columnNumber: 172
+          }, this),
+          /* @__PURE__ */ jsxDEV("time", { children: activity.time }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 151,
+            columnNumber: 248
+          }, this)
+        ] }, activity.title, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 151,
+          columnNumber: 43
+        }, this)) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 150,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 148,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("section", { className: "panel health-panel", children: [
+        /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "systeemcheck", title: "Klaar voor gebruik" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 155,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "health-row", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: [
+            /* @__PURE__ */ jsxDEV(Icon, { name: "check", size: 16 }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 156,
+              columnNumber: 45
+            }, this),
+            " Kennisstructuur"
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 156,
+            columnNumber: 39
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: "Goed" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 156,
+            columnNumber: 99
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 156,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "health-row", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: [
+            /* @__PURE__ */ jsxDEV(Icon, { name: "check", size: 16 }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 157,
+              columnNumber: 45
+            }, this),
+            " Skills gespiegeld"
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 157,
+            columnNumber: 39
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: "Goed" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 157,
+            columnNumber: 101
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 157,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "health-row", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: [
+            /* @__PURE__ */ jsxDEV(Icon, { name: "clock", size: 16 }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 158,
+              columnNumber: 45
+            }, this),
+            " Eerste onderhoud"
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 158,
+            columnNumber: 39
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: "Plan na week 1" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 158,
+            columnNumber: 100
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 158,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 154,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 147,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 94,
+    columnNumber: 5
+  }, this);
+}
+_c4 = DashboardHome;
+function KennisView() {
+  const folders = ["company", "personal", "sources", "queries", "logs", "_archive"];
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "contextlaag", title: "Kennis", text: "Een kleine, controleerbare vault geeft de agent houvast." }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 168,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "content-grid content-grid-main", children: [
+      /* @__PURE__ */ jsxDEV("section", { className: "panel folder-panel", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "panel-top", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: "vault" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 170,
+              columnNumber: 79
+            }, this),
+            /* @__PURE__ */ jsxDEV("h3", { children: "Mapstructuur" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 170,
+              columnNumber: 117
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 74
+          }, this),
+          /* @__PURE__ */ jsxDEV("button", { className: "icon-button", "aria-label": "Nieuwe map", children: /* @__PURE__ */ jsxDEV(Icon, { name: "plus", size: 17 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 200
+          }, this) }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 144
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 170,
+          columnNumber: 47
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "folder-list", children: folders.map((folder) => /* @__PURE__ */ jsxDEV("button", { className: "folder-row", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "folder-icon", children: /* @__PURE__ */ jsxDEV(Icon, { name: "folder", size: 17 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 373
+          }, this) }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 343
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: [
+            /* @__PURE__ */ jsxDEV("strong", { children: [
+              folder,
+              "/"
+            ] }, void 0, true, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 170,
+              columnNumber: 418
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: folder === "company" ? "Bedrijfscontext en projecten" : folder === "personal" ? "Persoonlijke context" : "Lege template-map" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 170,
+              columnNumber: 444
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 412
+          }, this),
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 15 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 170,
+            columnNumber: 592
+          }, this)
+        ] }, folder, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 170,
+          columnNumber: 299
+        }, this)) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 170,
+          columnNumber: 245
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 170,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("aside", { className: "panel capture-panel", children: [
+        /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "snel vastleggen", title: "Nieuwe capture" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 171,
+          columnNumber: 46
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Schrijf eerst ruw. De agent helpt later met classificeren, linken en opslaan." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 171,
+          columnNumber: 113
+        }, this),
+        /* @__PURE__ */ jsxDEV("label", { htmlFor: "capture", children: "Notitie" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 171,
+          columnNumber: 197
+        }, this),
+        /* @__PURE__ */ jsxDEV("textarea", { id: "capture", placeholder: "Bijvoorbeeld: elke vrijdag maak ik een klantupdate..." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 171,
+          columnNumber: 237
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "button button-primary full-button", children: [
+          "Opslaan in inbox ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 171,
+            columnNumber: 410
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 171,
+          columnNumber: 339
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { className: "form-help", children: "De demo slaat nog niets extern op." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 171,
+          columnNumber: 450
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 171,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 169,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "panel rules-panel", children: [
+      /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "bronregels", title: "Zo blijft Kennis betrouwbaar" }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 173,
+        columnNumber: 44
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "rule-grid", children: [
+        /* @__PURE__ */ jsxDEV("div", { children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: "1. Zoek eerst" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 173,
+            columnNumber: 152
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: "Lees bestaande notities voordat je een nieuwe pagina maakt." }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 173,
+            columnNumber: 182
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 173,
+          columnNumber: 147
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: "2. Label status" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 173,
+            columnNumber: 259
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: "Maak verschil tussen gecontroleerd, gemeld en afgeleid." }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 173,
+            columnNumber: 291
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 173,
+          columnNumber: 254
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: "3. Log wijzigingen" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 173,
+            columnNumber: 364
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: "Een onderhoudsregel maakt later zichtbaar wat er gebeurde." }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 173,
+            columnNumber: 399
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 173,
+          columnNumber: 359
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 173,
+        columnNumber: 120
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 173,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 167,
+    columnNumber: 10
+  }, this);
+}
+_c5 = KennisView;
+function CursusView() {
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "leerpad", title: "Cursus", text: "Van lege map naar een systeem dat een echte taak aankan." }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 178,
+      columnNumber: 12
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "course-summary", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: "voortgang" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 164
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: "22%" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 206
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Je hebt de werkruimte en de basisregels gezien." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 226
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 159
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "course-progress", children: [
+        /* @__PURE__ */ jsxDEV(ProgressBar, { value: 22 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 319
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { children: "2 / 8 modules" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 345
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 286
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { className: "button button-primary", children: [
+        "Ga door ",
+        /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 429
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 379
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 178,
+      columnNumber: 127
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "course-grid", children: modules.map((module) => /* @__PURE__ */ jsxDEV("article", { className: "course-card", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "module-number", children: module.number }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 586
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { className: `status status-${module.status.toLowerCase()}`, children: module.status }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 640
+      }, this),
+      /* @__PURE__ */ jsxDEV("h3", { children: module.title }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 727
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { children: module.text }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 750
+      }, this),
+      /* @__PURE__ */ jsxDEV(ProgressBar, { value: module.progress }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 770
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { className: "text-link", children: [
+        "Module openen ",
+        /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 178,
+          columnNumber: 853
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 178,
+        columnNumber: 809
+      }, this)
+    ] }, module.number, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 178,
+      columnNumber: 533
+    }, this)) }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 178,
+      columnNumber: 475
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 178,
+    columnNumber: 10
+  }, this);
+}
+_c6 = CursusView;
+function SkillsView() {
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "gereedschap", title: "Skills", text: "Een skill bewaart werkwijze, beslisregels en controlepunten op een vaste plek." }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 182,
+      columnNumber: 12
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "skill-grid", children: skills.map((skill) => /* @__PURE__ */ jsxDEV("article", { className: "skill-card", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "skill-card-top", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "skill-icon", children: /* @__PURE__ */ jsxDEV(Icon, { name: "spark", size: 18 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 314
+        }, this) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 285
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { className: "tag", children: skill.tag }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 352
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 182,
+        columnNumber: 253
+      }, this),
+      /* @__PURE__ */ jsxDEV("h3", { children: skill.name }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 182,
+        columnNumber: 398
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { children: skill.description }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 182,
+        columnNumber: 419
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "skill-card-footer", children: [
+        /* @__PURE__ */ jsxDEV("span", { children: "Spiegel actief" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 480
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "text-link", children: [
+          "Open ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 182,
+            columnNumber: 542
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 507
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 182,
+        columnNumber: 445
+      }, this)
+    ] }, skill.name, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 182,
+      columnNumber: 204
+    }, this)) }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 182,
+      columnNumber: 153
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "panel build-skill", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: "volgende stap" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 650
+        }, this),
+        /* @__PURE__ */ jsxDEV("h2", { children: "Maak een skill van je eigen taak" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 696
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Gebruik de system-builder. Begin met een concreet probleem en drie echte voorbeelden." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 737
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 182,
+        columnNumber: 645
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { className: "button button-primary", children: [
+        "Skill ontwerpen ",
+        /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 182,
+          columnNumber: 893
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 182,
+        columnNumber: 835
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 182,
+      columnNumber: 606
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 182,
+    columnNumber: 10
+  }, this);
+}
+_c7 = SkillsView;
+function CommunityView() {
+  const items = [{ title: "Start hier", text: "Volg de eerste test en deel een screenshot van je structuur." }, { title: "Vragen stellen", text: "Gebruik context, doel, input, poging en gewenste uitkomst." }, { title: "Showcase", text: "Deel een workflow met de reviewstap en het leerpunt." }];
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV(SectionHeading, { eyebrow: "samen leren", title: "Community", text: "Een werkende workflow wordt beter wanneer anderen hem kunnen volgen en bevragen." }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 187,
+      columnNumber: 12
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { className: "community-hero", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: "weekritme" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 199
+        }, this),
+        /* @__PURE__ */ jsxDEV("h2", { children: "Een kleine test per week" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 241
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Kies een taak, maak de context zichtbaar, draai de workflow en schrijf op waar de agent nog hulp nodig had." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 274
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "button button-primary", children: [
+          "Open weekplan ",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 187,
+            columnNumber: 444
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 388
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 187,
+        columnNumber: 194
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "week-list", children: [
+        /* @__PURE__ */ jsxDEV("span", { children: [
+          /* @__PURE__ */ jsxDEV("b", { children: "01" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 187,
+            columnNumber: 523
+          }, this),
+          " Kies een echte taak"
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 517
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: [
+          /* @__PURE__ */ jsxDEV("b", { children: "02" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 187,
+            columnNumber: 565
+          }, this),
+          " Maak de input schoon"
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 559
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: [
+          /* @__PURE__ */ jsxDEV("b", { children: "03" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 187,
+            columnNumber: 608
+          }, this),
+          " Review de output"
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 602
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 187,
+        columnNumber: 490
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 187,
+      columnNumber: 158
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "community-grid", children: items.map((item) => /* @__PURE__ */ jsxDEV("article", { className: "panel community-card", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: "community" }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 187,
+        columnNumber: 769
+      }, this),
+      /* @__PURE__ */ jsxDEV("h3", { children: item.title }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 187,
+        columnNumber: 811
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { children: item.text }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 187,
+        columnNumber: 832
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { className: "text-link", children: [
+        "Open pagina ",
+        /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 187,
+          columnNumber: 892
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 187,
+        columnNumber: 850
+      }, this)
+    ] }, item.title, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 187,
+      columnNumber: 710
+    }, this)) }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 187,
+      columnNumber: 657
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 187,
+    columnNumber: 10
+  }, this);
+}
+_c8 = CommunityView;
+function App() {
+  _s();
+  const [view, setView] = useState("overzicht");
+  const [mobileNav, setMobileNav] = useState(false);
+  const activeLabel = useMemo(() => navigation.find((item) => item.id === view)?.label ?? "Overzicht", [view]);
+  const navigate = (nextView) => {
+    setView(nextView);
+    setMobileNav(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  return /* @__PURE__ */ jsxDEV("div", { className: "app-shell", children: [
+    /* @__PURE__ */ jsxDEV("a", { className: "skip-link", href: "#main", children: "Ga naar inhoud" }, void 0, false, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 202,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("aside", { className: `sidebar ${mobileNav ? "sidebar-open" : ""}`, children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "brand", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "brand-mark", children: /* @__PURE__ */ jsxDEV(Icon, { name: "spark", size: 18 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 204,
+          columnNumber: 59
+        }, this) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 204,
+          columnNumber: 30
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: "AI-systeem" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 204,
+            columnNumber: 103
+          }, this),
+          /* @__PURE__ */ jsxDEV("small", { children: "werkruimte" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 204,
+            columnNumber: 130
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 204,
+          columnNumber: 97
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 204,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("nav", { "aria-label": "Hoofdnavigatie", children: navigation.map((item) => /* @__PURE__ */ jsxDEV("button", { className: view === item.id ? "nav-item active" : "nav-item", onClick: () => navigate(item.id), children: [
+        /* @__PURE__ */ jsxDEV(Icon, { name: item.icon, size: 17 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 205,
+          columnNumber: 184
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: item.label }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 205,
+          columnNumber: 219
+        }, this)
+      ] }, item.id, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 205,
+        columnNumber: 66
+      }, this)) }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 205,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "sidebar-bottom", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "sidebar-note", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "status-dot" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 206,
+            columnNumber: 69
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: [
+            /* @__PURE__ */ jsxDEV("strong", { children: "Template actief" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 206,
+              columnNumber: 106
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: "Demo-omgeving" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 206,
+              columnNumber: 138
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 206,
+            columnNumber: 100
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 206,
+          columnNumber: 39
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "profile", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "avatar", children: "DM" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 206,
+            columnNumber: 204
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: [
+            /* @__PURE__ */ jsxDEV("strong", { children: "Jouw naam" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 206,
+              columnNumber: 244
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: "Eigen werkruimte" }, void 0, false, {
+              fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+              lineNumber: 206,
+              columnNumber: 270
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 206,
+            columnNumber: 238
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 206,
+          columnNumber: 179
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 206,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 203,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("main", { id: "main", children: [
+      /* @__PURE__ */ jsxDEV("header", { className: "topbar", children: [
+        /* @__PURE__ */ jsxDEV("button", { className: "mobile-menu", "aria-label": "Navigatie openen", onClick: () => setMobileNav((open) => !open), children: /* @__PURE__ */ jsxDEV(Icon, { name: "menu", size: 20 }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 209,
+          columnNumber: 142
+        }, this) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 209,
+          columnNumber: 34
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "breadcrumb", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Werkruimte" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 209
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "/" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 232
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: activeLabel }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 246
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 209,
+          columnNumber: 181
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "topbar-actions", children: [
+          /* @__PURE__ */ jsxDEV("button", { className: "search-button", "aria-label": "Zoeken", children: /* @__PURE__ */ jsxDEV(Icon, { name: "search", size: 17 }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 368
+          }, this) }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 314
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "topbar-date", children: "Template v1" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 409
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "topbar-avatar", children: "DM" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 209,
+            columnNumber: 457
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 209,
+          columnNumber: 282
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 209,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "page-header", children: [
+        /* @__PURE__ */ jsxDEV("div", { children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "eyebrow", children: activeLabel }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 210,
+            columnNumber: 41
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "page-date", children: "Donderdag 8 augustus 2026" }, void 0, false, {
+            fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+            lineNumber: 210,
+            columnNumber: 87
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 210,
+          columnNumber: 36
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "page-actions", children: /* @__PURE__ */ jsxDEV("button", { className: "button button-secondary", children: "Hulp nodig?" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 210,
+          columnNumber: 177
+        }, this) }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 210,
+          columnNumber: 147
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 210,
+        columnNumber: 7
+      }, this),
+      view === "overzicht" ? /* @__PURE__ */ jsxDEV(DashboardHome, { onNavigate: navigate }, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 211,
+        columnNumber: 31
+      }, this) : null,
+      view === "kennis" ? /* @__PURE__ */ jsxDEV(KennisView, {}, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 212,
+        columnNumber: 28
+      }, this) : null,
+      view === "cursus" ? /* @__PURE__ */ jsxDEV(CursusView, {}, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 213,
+        columnNumber: 28
+      }, this) : null,
+      view === "skills" ? /* @__PURE__ */ jsxDEV(SkillsView, {}, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 214,
+        columnNumber: 28
+      }, this) : null,
+      view === "community" ? /* @__PURE__ */ jsxDEV(CommunityView, {}, void 0, false, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 215,
+        columnNumber: 31
+      }, this) : null,
+      /* @__PURE__ */ jsxDEV("footer", { className: "footer", children: [
+        /* @__PURE__ */ jsxDEV("span", { children: "AI-systeem template" }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 216,
+          columnNumber: 34
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: "Kennis-first. Controleerbaar. Uitbreidbaar." }, void 0, false, {
+          fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+          lineNumber: 216,
+          columnNumber: 66
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+        lineNumber: 216,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+      lineNumber: 208,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/MData/Margemaken/dashboard/src/App.tsx",
+    lineNumber: 201,
+    columnNumber: 10
+  }, this);
+}
+_s(App, "80sE0N5XIyZyYxX0WHJAe3YCLN0=");
+_c9 = App;
+export default App;
+var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
+$RefreshReg$(_c, "Icon");
+$RefreshReg$(_c2, "SectionHeading");
+$RefreshReg$(_c3, "ProgressBar");
+$RefreshReg$(_c4, "DashboardHome");
+$RefreshReg$(_c5, "KennisView");
+$RefreshReg$(_c6, "CursusView");
+$RefreshReg$(_c7, "SkillsView");
+$RefreshReg$(_c8, "CommunityView");
+$RefreshReg$(_c9, "App");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("E:/MData/Margemaken/dashboard/src/App.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("E:/MData/Margemaken/dashboard/src/App.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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Vyx1QkFBQyxnQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQVcsSUFBTTtBQUFBLE1BQ3JDQSxTQUFTLFdBQVcsdUJBQUMsZ0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFXLElBQU07QUFBQSxNQUNyQ0EsU0FBUyxjQUFjLHVCQUFDLG1CQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBYyxJQUFNO0FBQUEsTUFDNUMsdUJBQUMsWUFBTyxXQUFVLFVBQVM7QUFBQSwrQkFBQyxVQUFLLG1DQUFOO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBeUI7QUFBQSxRQUFPLHVCQUFDLFVBQUssMkRBQU47QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUFpRDtBQUFBLFdBQTVHO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBbUg7QUFBQSxTQVJySDtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBU0E7QUFBQSxPQWhCSztBQUFBO0FBQUE7QUFBQTtBQUFBLFNBaUJQO0FBQ0Y7QUFBQ0QsR0E3QlFELEtBQUc7QUFBQSxNQUFIQTtBQStCVCxlQUFlQTtBQUFHLElBQUEzQixJQUFBRyxLQUFBSSxLQUFBTyxLQUFBRyxLQUFBRSxLQUFBRyxLQUFBSSxLQUFBZ0I7QUFBQSxhQUFBMUMsSUFBQTtBQUFBLGFBQUFHLEtBQUE7QUFBQSxhQUFBSSxLQUFBO0FBQUEsYUFBQU8sS0FBQTtBQUFBLGFBQUFHLEtBQUE7QUFBQSxhQUFBRSxLQUFBO0FBQUEsYUFBQUcsS0FBQTtBQUFBLGFBQUFJLEtBQUE7QUFBQSxhQUFBZ0IsS0FBQSIsIm5hbWVzIjpbInVzZU1lbW8iLCJ1c2VTdGF0ZSIsIm5hdmlnYXRpb24iLCJpZCIsImxhYmVsIiwiaWNvbiIsIm1vZHVsZXMiLCJudW1iZXIiLCJ0aXRsZSIsInRleHQiLCJzdGF0dXMiLCJwcm9ncmVzcyIsInNraWxscyIsIm5hbWUiLCJkZXNjcmlwdGlvbiIsInRhZyIsImFjdGl2aXRpZXMiLCJkZXRhaWwiLCJ0aW1lIiwiSWNvbiIsInNpemUiLCJwYXRocyIsImdyaWQiLCJib29rIiwicGxheSIsInNwYXJrIiwidXNlcnMiLCJzZWFyY2giLCJhcnJvdyIsImNoZWNrIiwiY2xvY2siLCJmb2xkZXIiLCJwbHVzIiwibWVudSIsIl9jIiwiU2VjdGlvbkhlYWRpbmciLCJleWVicm93IiwiX2MyIiwiUHJvZ3Jlc3NCYXIiLCJ2YWx1ZSIsIndpZHRoIiwiX2MzIiwiRGFzaGJvYXJkSG9tZSIsIm9uTmF2aWdhdGUiLCJtYXAiLCJtb2R1bGUiLCJ0b0xvd2VyQ2FzZSIsImFjdGl2aXR5IiwiX2M0IiwiS2VubmlzVmlldyIsImZvbGRlcnMiLCJfYzUiLCJDdXJzdXNWaWV3IiwiX2M2IiwiU2tpbGxzVmlldyIsInNraWxsIiwiX2M3IiwiQ29tbXVuaXR5VmlldyIsIml0ZW1zIiwiaXRlbSIsIl9jOCIsIkFwcCIsIl9zIiwidmlldyIsInNldFZpZXciLCJtb2JpbGVOYXYiLCJzZXRNb2JpbGVOYXYiLCJhY3RpdmVMYWJlbCIsImZpbmQiLCJuYXZpZ2F0ZSIsIm5leHRWaWV3Iiwid2luZG93Iiwic2Nyb2xsVG8iLCJ0b3AiLCJiZWhhdmlvciIsIm9wZW4iLCJfYzkiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiQXBwLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0J1xuXG50eXBlIFZpZXcgPSAnb3ZlcnppY2h0JyB8ICdrZW5uaXMnIHwgJ2N1cnN1cycgfCAnc2tpbGxzJyB8ICdjb21tdW5pdHknXG50eXBlIEljb25OYW1lID0gJ2dyaWQnIHwgJ2Jvb2snIHwgJ3BsYXknIHwgJ3NwYXJrJyB8ICd1c2VycycgfCAnc2VhcmNoJyB8ICdhcnJvdycgfCAnY2hlY2snIHwgJ2Nsb2NrJyB8ICdmb2xkZXInIHwgJ3BsdXMnIHwgJ21lbnUnXG5cbmNvbnN0IG5hdmlnYXRpb246IHsgaWQ6IFZpZXc7IGxhYmVsOiBzdHJpbmc7IGljb246IEljb25OYW1lIH1bXSA9IFtcbiAgeyBpZDogJ292ZXJ6aWNodCcsIGxhYmVsOiAnT3ZlcnppY2h0JywgaWNvbjogJ2dyaWQnIH0sXG4gIHsgaWQ6ICdrZW5uaXMnLCBsYWJlbDogJ0tlbm5pcycsIGljb246ICdib29rJyB9LFxuICB7IGlkOiAnY3Vyc3VzJywgbGFiZWw6ICdDdXJzdXMnLCBpY29uOiAncGxheScgfSxcbiAgeyBpZDogJ3NraWxscycsIGxhYmVsOiAnU2tpbGxzJywgaWNvbjogJ3NwYXJrJyB9LFxuICB7IGlkOiAnY29tbXVuaXR5JywgbGFiZWw6ICdDb21tdW5pdHknLCBpY29uOiAndXNlcnMnIH0sXG5dXG5cbmNvbnN0IG1vZHVsZXMgPSBbXG4gIHsgbnVtYmVyOiAnMDEnLCB0aXRsZTogJ0plIHdlcmtydWltdGUga2xhYXJ6ZXR0ZW4nLCB0ZXh0OiAnTWFwcGVuLCByZWdlbHMgZW4gZWVuIHZlaWxpZ2Ugc3RhcnQuJywgc3RhdHVzOiAnS2xhYXInLCBwcm9ncmVzczogMTAwIH0sXG4gIHsgbnVtYmVyOiAnMDInLCB0aXRsZTogJ0tlbm5pcyBkaWUgZGUgYWdlbnQgYmVncmlqcHQnLCB0ZXh0OiAnQ29udGV4dCB2ZXJ6YW1lbGVuIHpvbmRlciBlZW4gcm9tbWVsaWcgYXJjaGllZi4nLCBzdGF0dXM6ICdCZXppZycsIHByb2dyZXNzOiA2OCB9LFxuICB7IG51bWJlcjogJzAzJywgdGl0bGU6ICdKZSBlZXJzdGUgc2tpbGwgYm91d2VuJywgdGV4dDogJ0VlbiB0ZXJ1Z2tlcmVuZGUgdGFhayB2YXN0bGVnZ2VuIGFscyB3b3JrZmxvdy4nLCBzdGF0dXM6ICdPcGVuJywgcHJvZ3Jlc3M6IDAgfSxcbiAgeyBudW1iZXI6ICcwNCcsIHRpdGxlOiAnVmFuIHRhYWsgbmFhciBzeXN0ZWVtJywgdGV4dDogJ1JldmlldywgZm91dGFmaGFuZGVsaW5nIGVuIG9uZGVyaG91ZC4nLCBzdGF0dXM6ICdPcGVuJywgcHJvZ3Jlc3M6IDAgfSxcbl1cblxuY29uc3Qgc2tpbGxzID0gW1xuICB7IG5hbWU6ICdFLW1haWwgY2hlY2tlcicsIGRlc2NyaXB0aW9uOiAnSW5ib3ggdHJpYWdlIG1ldCBtZW5zZWxpamtlIGdvZWRrZXVyaW5nLicsIHRhZzogJ0NvbW11bmljYXRpZScgfSxcbiAgeyBuYW1lOiAnS2VubmlzIG5hdmlnYXRvcicsIGRlc2NyaXB0aW9uOiAnTGVlc3QsIHNjaHJpamZ0IGVuIG9uZGVyaG91ZHQgamUgdmF1bHQuJywgdGFnOiAnQ29udGV4dCcgfSxcbiAgeyBuYW1lOiAnWW91VHViZSB0cmFuc2NyaWJlcicsIGRlc2NyaXB0aW9uOiAnTWFha3QgYnJvbm5vdGl0aWVzIHZhbiB0b2VnZXN0YW5lIHZpZGVvXFwncy4nLCB0YWc6ICdSZXNlYXJjaCcgfSxcbiAgeyBuYW1lOiAnU3lzdGVtIGJ1aWxkZXInLCBkZXNjcmlwdGlvbjogJ1pldCBoZXJoYWFsYmFhciB3ZXJrIG9tIGluIGVlbiB3b3JrZmxvdy4nLCB0YWc6ICdCb3V3ZW4nIH0sXG5dXG5cbmNvbnN0IGFjdGl2aXRpZXMgPSBbXG4gIHsgaWNvbjogJ2Jvb2snIGFzIEljb25OYW1lLCB0aXRsZTogJ0tlbm5pc3N0cnVjdHV1ciBnZW9wZW5kJywgZGV0YWlsOiAnSmUgbmF2aWdhdGllIGVuIGJyb25yZWdlbHMgc3RhYW4ga2xhYXIuJywgdGltZTogJ1ZhbmRhYWcsIDA5OjQyJyB9LFxuICB7IGljb246ICdzcGFyaycgYXMgSWNvbk5hbWUsIHRpdGxlOiAnU2tpbGwgYmVrZWtlbicsIGRldGFpbDogJ0UtbWFpbCBjaGVja2VyIHN0YWF0IGtsYWFyIHZvb3IgZWVuIGVlcnN0ZSB0ZXN0LicsIHRpbWU6ICdHaXN0ZXJlbiwgMTY6MTAnIH0sXG4gIHsgaWNvbjogJ2NoZWNrJyBhcyBJY29uTmFtZSwgdGl0bGU6ICdNb2R1bGUgMDEgYWZnZXJvbmQnLCBkZXRhaWw6ICdEZSB3ZXJrcnVpbXRlIGhlZWZ0IGVlbiB2YXN0ZSBzdGFydHBsZWsuJywgdGltZTogJ0dpc3RlcmVuLCAxNTo0OCcgfSxcbl1cblxuZnVuY3Rpb24gSWNvbih7IG5hbWUsIHNpemUgPSAxOCB9OiB7IG5hbWU6IEljb25OYW1lOyBzaXplPzogbnVtYmVyIH0pIHtcbiAgY29uc3QgcGF0aHM6IFJlY29yZDxJY29uTmFtZSwgc3RyaW5nPiA9IHtcbiAgICBncmlkOiAnTTQgNGg2djZINHpNMTQgNGg2djZoLTZ6TTQgMTRoNnY2SDR6TTE0IDE0aDZ2NmgtNnonLFxuICAgIGJvb2s6ICdNNSA0LjVBMi41IDIuNSAwIDAgMSA3LjUgMkgyMHYxNkg3LjVBMi41IDIuNSAwIDAgMCA1IDIwLjV6bTAgMHYxNk04IDZoOE04IDEwaDcnLFxuICAgIHBsYXk6ICdNOCA1LjV2MTNsMTAtNi41eicsXG4gICAgc3Bhcms6ICdtMTIgMyAxLjYgNS40TDE5IDEwbC01LjQgMS42TDEyIDE3bC0xLjYtNS40TDUgMTBsNS40LTEuNnptNyAxMiAuNyAyLjNMMjIgMThsLTIuMy43TDE5IDIxbC0uNy0yLjNMMTYgMThsMi4zLS43eicsXG4gICAgdXNlcnM6ICdNMTYgMjB2LTEuNWE0LjUgNC41IDAgMCAwLTQuNS00LjVoLTNBNC41IDQuNSAwIDAgMCA0IDE4LjVWMjBtNi0xMGEzLjUgMy41IDAgMSAwIDAtNyAzLjUgMy41IDAgMCAwIDAgN201LjUtNi41YTMgMyAwIDAgMSAwIDUuOE0xNyAxNC41YTQuNSA0LjUgMCAwIDEgNCA0VjIwJyxcbiAgICBzZWFyY2g6ICdtMjAgMjAtNC44LTQuOG0yLjMtNS4yYTcuNSA3LjUgMCAxIDEtMTUgMCA3LjUgNy41IDAgMCAxIDE1IDAnLFxuICAgIGFycm93OiAnTTUgMTJoMTNtLTUtNSA1IDUtNSA1JyxcbiAgICBjaGVjazogJ201IDEyIDQgNEwxOSA2JyxcbiAgICBjbG9jazogJ00xMiA3djVsMyAybTYtMmE5IDkgMCAxIDEtMTggMCA5IDkgMCAwIDEgMTggMCcsXG4gICAgZm9sZGVyOiAnTTMgNy41aDdsMS42IDJIMjF2OS41SDN6TTMgNy41VjVoNmwyIDIuNScsXG4gICAgcGx1czogJ00xMiA1djE0TTUgMTJoMTQnLFxuICAgIG1lbnU6ICdNNCA3aDE2TTQgMTJoMTZNNCAxN2gxNicsXG4gIH1cblxuICByZXR1cm4gKFxuICAgIDxzdmcgYXJpYS1oaWRkZW49XCJ0cnVlXCIgY2xhc3NOYW1lPVwiaWNvblwiIGZpbGw9XCJub25lXCIgaGVpZ2h0PXtzaXplfSB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgd2lkdGg9e3NpemV9PlxuICAgICAgPHBhdGggZD17cGF0aHNbbmFtZV19IHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZUxpbmVjYXA9XCJyb3VuZFwiIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIiBzdHJva2VXaWR0aD1cIjEuOFwiIC8+XG4gICAgPC9zdmc+XG4gIClcbn1cblxuZnVuY3Rpb24gU2VjdGlvbkhlYWRpbmcoeyBleWVicm93LCB0aXRsZSwgdGV4dCB9OiB7IGV5ZWJyb3c6IHN0cmluZzsgdGl0bGU6IHN0cmluZzsgdGV4dD86IHN0cmluZyB9KSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJzZWN0aW9uLWhlYWRpbmdcIj5cbiAgICAgIDxkaXY+XG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj57ZXllYnJvd308L3NwYW4+XG4gICAgICAgIDxoMj57dGl0bGV9PC9oMj5cbiAgICAgIDwvZGl2PlxuICAgICAge3RleHQgPyA8cD57dGV4dH08L3A+IDogbnVsbH1cbiAgICA8L2Rpdj5cbiAgKVxufVxuXG5mdW5jdGlvbiBQcm9ncmVzc0Jhcih7IHZhbHVlIH06IHsgdmFsdWU6IG51bWJlciB9KSB7XG4gIHJldHVybiA8ZGl2IGFyaWEtbGFiZWw9e2Ake3ZhbHVlfSUgdm9vcnRnYW5nYH0gY2xhc3NOYW1lPVwicHJvZ3Jlc3MtdHJhY2tcIj48c3BhbiBzdHlsZT17eyB3aWR0aDogYCR7dmFsdWV9JWAgfX0gLz48L2Rpdj5cbn1cblxuZnVuY3Rpb24gRGFzaGJvYXJkSG9tZSh7IG9uTmF2aWdhdGUgfTogeyBvbk5hdmlnYXRlOiAodmlldzogVmlldykgPT4gdm9pZCB9KSB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cIndlbGNvbWUtZ3JpZFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIndlbGNvbWUtY29weVwiPlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj5BSS1zeXN0ZWVtIGFjYWRlbXk8L3NwYW4+XG4gICAgICAgICAgPGgxPkdvZWRlbW9yZ2VuLCBvbmRlcm5lbWVyLjwvaDE+XG4gICAgICAgICAgPHA+SmUgd2Vya3J1aW10ZSBzdGFhdCBrbGFhci4gS2llcyBlZW4ga2xlaW5lIHdvcmtmbG93IGVuIGJvdXcgdmFuZGFhZyBpZXRzIGRhdCBqZSBtb3JnZW4gb3BuaWV1dyBrdW50IGdlYnJ1aWtlbi48L3A+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJidXR0b24tcm93XCI+XG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tcHJpbWFyeVwiIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ2N1cnN1cycpfT5HYSB2ZXJkZXIgbWV0IGRlIGN1cnN1cyA8SWNvbiBuYW1lPVwiYXJyb3dcIiBzaXplPXsxNn0gLz48L2J1dHRvbj5cbiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnV0dG9uIGJ1dHRvbi1zZWNvbmRhcnlcIiBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdrZW5uaXMnKX0+T3BlbiBLZW5uaXM8L2J1dHRvbj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwid2VsY29tZS1kaWFncmFtXCIgYXJpYS1sYWJlbD1cIkRpYWdyYW0gdmFuIEtlbm5pcyBuYWFyIHNraWxsIGVuIG91dHB1dFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZGlhZ3JhbS1saW5lIGxpbmUtb25lXCIgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImRpYWdyYW0tbGluZSBsaW5lLXR3b1wiIC8+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJkaWFncmFtLW5vZGUgbm9kZS1zb3VyY2VcIj48SWNvbiBuYW1lPVwiYm9va1wiIHNpemU9ezE3fSAvPjxzcGFuPktlbm5pczwvc3Bhbj48L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImRpYWdyYW0tbm9kZSBub2RlLXNraWxsXCI+PEljb24gbmFtZT1cInNwYXJrXCIgc2l6ZT17MTl9IC8+PHN0cm9uZz5Ta2lsbDwvc3Ryb25nPjxzbWFsbD5oZXJoYWFsYmFhciB3ZXJrPC9zbWFsbD48L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImRpYWdyYW0tbm9kZSBub2RlLW91dHB1dFwiPjxJY29uIG5hbWU9XCJjaGVja1wiIHNpemU9ezE3fSAvPjxzcGFuPk91dHB1dDwvc3Bhbj48L2Rpdj5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJkaWFncmFtLWNhcHRpb25cIj5FZW4ga2xlaW5lIHJvdXRlIGRpZSBrbG9wdDwvc3Bhbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZGVtby1ub3RlXCI+PHNwYW4gY2xhc3NOYW1lPVwic3RhdHVzLWRvdFwiIC8+IERlbW8tZGF0YS4gVmVydmFuZyBkZSB2b29yYmVlbGRlbiBkb29yIGplIGVpZ2VuIGNvbnRleHQgZW4gbWV0aW5nZW4uPC9kaXY+XG5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cIm1ldHJpYy1ncmlkXCIgYXJpYS1sYWJlbD1cIlZvb3J0Z2FuZ1wiPlxuICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJtZXRyaWMtY2FyZFwiPjxzcGFuIGNsYXNzTmFtZT1cIm1ldHJpYy1sYWJlbFwiPkN1cnN1c3Zvb3J0Z2FuZzwvc3Bhbj48c3Ryb25nPjIyJTwvc3Ryb25nPjxQcm9ncmVzc0JhciB2YWx1ZT17MjJ9IC8+PHNtYWxsPjIgdmFuIDggbW9kdWxlcyBiZWtla2VuPC9zbWFsbD48L2FydGljbGU+XG4gICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT1cIm1ldHJpYy1jYXJkXCI+PHNwYW4gY2xhc3NOYW1lPVwibWV0cmljLWxhYmVsXCI+S2Vubmlzbm90aXRpZXM8L3NwYW4+PHN0cm9uZz4xMjwvc3Ryb25nPjxzbWFsbD5Wb29yYmVlbGRub3RpdGllcyBrbGFhciB2b29yIHZlcnZhbmdpbmc8L3NtYWxsPjxidXR0b24gY2xhc3NOYW1lPVwidGV4dC1saW5rXCIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgna2VubmlzJyl9PkJla2lqayBLZW5uaXMgPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTR9IC8+PC9idXR0b24+PC9hcnRpY2xlPlxuICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJtZXRyaWMtY2FyZFwiPjxzcGFuIGNsYXNzTmFtZT1cIm1ldHJpYy1sYWJlbFwiPlByZW1hZGUgc2tpbGxzPC9zcGFuPjxzdHJvbmc+NTwvc3Ryb25nPjxzbWFsbD5HZXN5bmNocm9uaXNlZXJkIGluIHR3ZWUgc2tpbGxtYXBwZW48L3NtYWxsPjxidXR0b24gY2xhc3NOYW1lPVwidGV4dC1saW5rXCIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnc2tpbGxzJyl9PkJla2lqayBza2lsbHMgPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTR9IC8+PC9idXR0b24+PC9hcnRpY2xlPlxuICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJtZXRyaWMtY2FyZCBtZXRyaWMtY2FyZC1hY2NlbnRcIj48c3BhbiBjbGFzc05hbWU9XCJtZXRyaWMtbGFiZWxcIj5Wb2xnZW5kZSBzdGFwPC9zcGFuPjxzdHJvbmc+MDE8L3N0cm9uZz48c21hbGw+TWFhayBqZSBlZXJzdGUgZWNodGUgd29ya2Zsb3c8L3NtYWxsPjxidXR0b24gY2xhc3NOYW1lPVwidGV4dC1saW5rXCIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnY3Vyc3VzJyl9Pk9wZW4gbW9kdWxlIDxJY29uIG5hbWU9XCJhcnJvd1wiIHNpemU9ezE0fSAvPjwvYnV0dG9uPjwvYXJ0aWNsZT5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50LWdyaWQgY29udGVudC1ncmlkLW1haW5cIj5cbiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicGFuZWwgbW9kdWxlLXBhbmVsXCI+XG4gICAgICAgICAgPFNlY3Rpb25IZWFkaW5nIGV5ZWJyb3c9XCIwMSAvIGxlcmVuXCIgdGl0bGU9XCJCb3V3IGplIGVlcnN0ZSBzeXN0ZWVtXCIgdGV4dD1cIktvcnRlIG1vZHVsZXMuIEVsa2UgbW9kdWxlIGVpbmRpZ3QgbWV0IGVlbiBiZXN0YW5kIG9mIGVlbiB3ZXJrZW5kZSB0ZXN0LlwiIC8+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2R1bGUtbGlzdFwiPlxuICAgICAgICAgICAge21vZHVsZXMubWFwKChtb2R1bGUpID0+IChcbiAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJtb2R1bGUtcm93XCIga2V5PXttb2R1bGUubnVtYmVyfSBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdjdXJzdXMnKX0+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibW9kdWxlLW51bWJlclwiPnttb2R1bGUubnVtYmVyfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJtb2R1bGUtY29weVwiPjxzdHJvbmc+e21vZHVsZS50aXRsZX08L3N0cm9uZz48c21hbGw+e21vZHVsZS50ZXh0fTwvc21hbGw+PFByb2dyZXNzQmFyIHZhbHVlPXttb2R1bGUucHJvZ3Jlc3N9IC8+PC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17YHN0YXR1cyBzdGF0dXMtJHttb2R1bGUuc3RhdHVzLnRvTG93ZXJDYXNlKCl9YH0+e21vZHVsZS5zdGF0dXN9PC9zcGFuPlxuICAgICAgICAgICAgICAgIDxJY29uIG5hbWU9XCJhcnJvd1wiIHNpemU9ezE2fSAvPlxuICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L3NlY3Rpb24+XG5cbiAgICAgICAgPGFzaWRlIGNsYXNzTmFtZT1cInBhbmVsIHNpZGUtcGFuZWxcIj5cbiAgICAgICAgICA8U2VjdGlvbkhlYWRpbmcgZXllYnJvdz1cInZvbGdlbmRlIGFjdGllXCIgdGl0bGU9XCJLaWVzIGtsZWluXCIgLz5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJzaWRlLWxlZGVcIj5TY2hyaWpmIGVlbiB0YWFrIG9wIGRpZSBkZXplIHdlZWsgbWluc3RlbnMgZHJpZSBrZWVyIHRlcnVna29tdC4gRGF0IGlzIGplIGVlcnN0ZSBrYW5kaWRhYXQgdm9vciBlZW4gc2tpbGwuPC9wPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9jdXMtYm94XCI+PHNwYW4gY2xhc3NOYW1lPVwiZm9jdXMtbGFiZWxcIj5Wb29yYmVlbGQ8L3NwYW4+PHN0cm9uZz5OaWV1d2Uga2xhbnRtYWlscyBzYW1lbnZhdHRlbjwvc3Ryb25nPjxzbWFsbD5JbnB1dDogaW5ib3gtbGFiZWwuIE91dHB1dDogZHJpZSByZWdlbHMgaW4gYG91dHB1dC9gLjwvc21hbGw+PC9kaXY+XG4gICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidXR0b24gYnV0dG9uLXNlY29uZGFyeSBmdWxsLWJ1dHRvblwiIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ3NraWxscycpfT5CZWtpamsgZGUgc2tpbGwtb3Bib3V3IDxJY29uIG5hbWU9XCJhcnJvd1wiIHNpemU9ezE2fSAvPjwvYnV0dG9uPlxuICAgICAgICA8L2FzaWRlPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC1ncmlkIGNvbnRlbnQtZ3JpZC1ib3R0b21cIj5cbiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicGFuZWwgYWN0aXZpdHktcGFuZWxcIj5cbiAgICAgICAgICA8U2VjdGlvbkhlYWRpbmcgZXllYnJvdz1cImxvZ2JvZWtcIiB0aXRsZT1cIlJlY2VudGUgYWN0aXZpdGVpdFwiIC8+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhY3Rpdml0eS1saXN0XCI+XG4gICAgICAgICAgICB7YWN0aXZpdGllcy5tYXAoKGFjdGl2aXR5KSA9PiA8ZGl2IGNsYXNzTmFtZT1cImFjdGl2aXR5LXJvd1wiIGtleT17YWN0aXZpdHkudGl0bGV9PjxzcGFuIGNsYXNzTmFtZT1cImFjdGl2aXR5LWljb25cIj48SWNvbiBuYW1lPXthY3Rpdml0eS5pY29ufSBzaXplPXsxNn0gLz48L3NwYW4+PGRpdj48c3Ryb25nPnthY3Rpdml0eS50aXRsZX08L3N0cm9uZz48c21hbGw+e2FjdGl2aXR5LmRldGFpbH08L3NtYWxsPjwvZGl2Pjx0aW1lPnthY3Rpdml0eS50aW1lfTwvdGltZT48L2Rpdj4pfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L3NlY3Rpb24+XG4gICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInBhbmVsIGhlYWx0aC1wYW5lbFwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZyBleWVicm93PVwic3lzdGVlbWNoZWNrXCIgdGl0bGU9XCJLbGFhciB2b29yIGdlYnJ1aWtcIiAvPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhbHRoLXJvd1wiPjxzcGFuPjxJY29uIG5hbWU9XCJjaGVja1wiIHNpemU9ezE2fSAvPiBLZW5uaXNzdHJ1Y3R1dXI8L3NwYW4+PHN0cm9uZz5Hb2VkPC9zdHJvbmc+PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoZWFsdGgtcm93XCI+PHNwYW4+PEljb24gbmFtZT1cImNoZWNrXCIgc2l6ZT17MTZ9IC8+IFNraWxscyBnZXNwaWVnZWxkPC9zcGFuPjxzdHJvbmc+R29lZDwvc3Ryb25nPjwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhbHRoLXJvd1wiPjxzcGFuPjxJY29uIG5hbWU9XCJjbG9ja1wiIHNpemU9ezE2fSAvPiBFZXJzdGUgb25kZXJob3VkPC9zcGFuPjxzdHJvbmc+UGxhbiBuYSB3ZWVrIDE8L3N0cm9uZz48L2Rpdj5cbiAgICAgICAgPC9zZWN0aW9uPlxuICAgICAgPC9kaXY+XG4gICAgPC8+XG4gIClcbn1cblxuZnVuY3Rpb24gS2VubmlzVmlldygpIHtcbiAgY29uc3QgZm9sZGVycyA9IFsnY29tcGFueScsICdwZXJzb25hbCcsICdzb3VyY2VzJywgJ3F1ZXJpZXMnLCAnbG9ncycsICdfYXJjaGl2ZSddXG4gIHJldHVybiA8PlxuICAgIDxTZWN0aW9uSGVhZGluZyBleWVicm93PVwiY29udGV4dGxhYWdcIiB0aXRsZT1cIktlbm5pc1wiIHRleHQ9XCJFZW4ga2xlaW5lLCBjb250cm9sZWVyYmFyZSB2YXVsdCBnZWVmdCBkZSBhZ2VudCBob3V2YXN0LlwiIC8+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50LWdyaWQgY29udGVudC1ncmlkLW1haW5cIj5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInBhbmVsIGZvbGRlci1wYW5lbFwiPjxkaXYgY2xhc3NOYW1lPVwicGFuZWwtdG9wXCI+PGRpdj48c3BhbiBjbGFzc05hbWU9XCJleWVicm93XCI+dmF1bHQ8L3NwYW4+PGgzPk1hcHN0cnVjdHV1cjwvaDM+PC9kaXY+PGJ1dHRvbiBjbGFzc05hbWU9XCJpY29uLWJ1dHRvblwiIGFyaWEtbGFiZWw9XCJOaWV1d2UgbWFwXCI+PEljb24gbmFtZT1cInBsdXNcIiBzaXplPXsxN30gLz48L2J1dHRvbj48L2Rpdj48ZGl2IGNsYXNzTmFtZT1cImZvbGRlci1saXN0XCI+e2ZvbGRlcnMubWFwKChmb2xkZXIpID0+IDxidXR0b24gY2xhc3NOYW1lPVwiZm9sZGVyLXJvd1wiIGtleT17Zm9sZGVyfT48c3BhbiBjbGFzc05hbWU9XCJmb2xkZXItaWNvblwiPjxJY29uIG5hbWU9XCJmb2xkZXJcIiBzaXplPXsxN30gLz48L3NwYW4+PHNwYW4+PHN0cm9uZz57Zm9sZGVyfS88L3N0cm9uZz48c21hbGw+e2ZvbGRlciA9PT0gJ2NvbXBhbnknID8gJ0JlZHJpamZzY29udGV4dCBlbiBwcm9qZWN0ZW4nIDogZm9sZGVyID09PSAncGVyc29uYWwnID8gJ1BlcnNvb25saWprZSBjb250ZXh0JyA6ICdMZWdlIHRlbXBsYXRlLW1hcCd9PC9zbWFsbD48L3NwYW4+PEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTV9IC8+PC9idXR0b24+KX08L2Rpdj48L3NlY3Rpb24+XG4gICAgICA8YXNpZGUgY2xhc3NOYW1lPVwicGFuZWwgY2FwdHVyZS1wYW5lbFwiPjxTZWN0aW9uSGVhZGluZyBleWVicm93PVwic25lbCB2YXN0bGVnZ2VuXCIgdGl0bGU9XCJOaWV1d2UgY2FwdHVyZVwiIC8+PHA+U2NocmlqZiBlZXJzdCBydXcuIERlIGFnZW50IGhlbHB0IGxhdGVyIG1ldCBjbGFzc2lmaWNlcmVuLCBsaW5rZW4gZW4gb3BzbGFhbi48L3A+PGxhYmVsIGh0bWxGb3I9XCJjYXB0dXJlXCI+Tm90aXRpZTwvbGFiZWw+PHRleHRhcmVhIGlkPVwiY2FwdHVyZVwiIHBsYWNlaG9sZGVyPVwiQmlqdm9vcmJlZWxkOiBlbGtlIHZyaWpkYWcgbWFhayBpayBlZW4ga2xhbnR1cGRhdGUuLi5cIj48L3RleHRhcmVhPjxidXR0b24gY2xhc3NOYW1lPVwiYnV0dG9uIGJ1dHRvbi1wcmltYXJ5IGZ1bGwtYnV0dG9uXCI+T3BzbGFhbiBpbiBpbmJveCA8SWNvbiBuYW1lPVwiYXJyb3dcIiBzaXplPXsxNn0gLz48L2J1dHRvbj48c21hbGwgY2xhc3NOYW1lPVwiZm9ybS1oZWxwXCI+RGUgZGVtbyBzbGFhdCBub2cgbmlldHMgZXh0ZXJuIG9wLjwvc21hbGw+PC9hc2lkZT5cbiAgICA8L2Rpdj5cbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJwYW5lbCBydWxlcy1wYW5lbFwiPjxTZWN0aW9uSGVhZGluZyBleWVicm93PVwiYnJvbnJlZ2Vsc1wiIHRpdGxlPVwiWm8gYmxpamZ0IEtlbm5pcyBiZXRyb3V3YmFhclwiIC8+PGRpdiBjbGFzc05hbWU9XCJydWxlLWdyaWRcIj48ZGl2PjxzdHJvbmc+MS4gWm9layBlZXJzdDwvc3Ryb25nPjxwPkxlZXMgYmVzdGFhbmRlIG5vdGl0aWVzIHZvb3JkYXQgamUgZWVuIG5pZXV3ZSBwYWdpbmEgbWFha3QuPC9wPjwvZGl2PjxkaXY+PHN0cm9uZz4yLiBMYWJlbCBzdGF0dXM8L3N0cm9uZz48cD5NYWFrIHZlcnNjaGlsIHR1c3NlbiBnZWNvbnRyb2xlZXJkLCBnZW1lbGQgZW4gYWZnZWxlaWQuPC9wPjwvZGl2PjxkaXY+PHN0cm9uZz4zLiBMb2cgd2lqemlnaW5nZW48L3N0cm9uZz48cD5FZW4gb25kZXJob3Vkc3JlZ2VsIG1hYWt0IGxhdGVyIHppY2h0YmFhciB3YXQgZXIgZ2ViZXVyZGUuPC9wPjwvZGl2PjwvZGl2Pjwvc2VjdGlvbj5cbiAgPC8+XG59XG5cbmZ1bmN0aW9uIEN1cnN1c1ZpZXcoKSB7XG4gIHJldHVybiA8PjxTZWN0aW9uSGVhZGluZyBleWVicm93PVwibGVlcnBhZFwiIHRpdGxlPVwiQ3Vyc3VzXCIgdGV4dD1cIlZhbiBsZWdlIG1hcCBuYWFyIGVlbiBzeXN0ZWVtIGRhdCBlZW4gZWNodGUgdGFhayBhYW5rYW4uXCIgLz48ZGl2IGNsYXNzTmFtZT1cImNvdXJzZS1zdW1tYXJ5XCI+PGRpdj48c3BhbiBjbGFzc05hbWU9XCJleWVicm93XCI+dm9vcnRnYW5nPC9zcGFuPjxzdHJvbmc+MjIlPC9zdHJvbmc+PHA+SmUgaGVidCBkZSB3ZXJrcnVpbXRlIGVuIGRlIGJhc2lzcmVnZWxzIGdlemllbi48L3A+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJjb3Vyc2UtcHJvZ3Jlc3NcIj48UHJvZ3Jlc3NCYXIgdmFsdWU9ezIyfSAvPjxzbWFsbD4yIC8gOCBtb2R1bGVzPC9zbWFsbD48L2Rpdj48YnV0dG9uIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tcHJpbWFyeVwiPkdhIGRvb3IgPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTZ9IC8+PC9idXR0b24+PC9kaXY+PHNlY3Rpb24gY2xhc3NOYW1lPVwiY291cnNlLWdyaWRcIj57bW9kdWxlcy5tYXAoKG1vZHVsZSkgPT4gPGFydGljbGUgY2xhc3NOYW1lPVwiY291cnNlLWNhcmRcIiBrZXk9e21vZHVsZS5udW1iZXJ9PjxzcGFuIGNsYXNzTmFtZT1cIm1vZHVsZS1udW1iZXJcIj57bW9kdWxlLm51bWJlcn08L3NwYW4+PHNwYW4gY2xhc3NOYW1lPXtgc3RhdHVzIHN0YXR1cy0ke21vZHVsZS5zdGF0dXMudG9Mb3dlckNhc2UoKX1gfT57bW9kdWxlLnN0YXR1c308L3NwYW4+PGgzPnttb2R1bGUudGl0bGV9PC9oMz48cD57bW9kdWxlLnRleHR9PC9wPjxQcm9ncmVzc0JhciB2YWx1ZT17bW9kdWxlLnByb2dyZXNzfSAvPjxidXR0b24gY2xhc3NOYW1lPVwidGV4dC1saW5rXCI+TW9kdWxlIG9wZW5lbiA8SWNvbiBuYW1lPVwiYXJyb3dcIiBzaXplPXsxNH0gLz48L2J1dHRvbj48L2FydGljbGU+KX08L3NlY3Rpb24+PC8+XG59XG5cbmZ1bmN0aW9uIFNraWxsc1ZpZXcoKSB7XG4gIHJldHVybiA8PjxTZWN0aW9uSGVhZGluZyBleWVicm93PVwiZ2VyZWVkc2NoYXBcIiB0aXRsZT1cIlNraWxsc1wiIHRleHQ9XCJFZW4gc2tpbGwgYmV3YWFydCB3ZXJrd2lqemUsIGJlc2xpc3JlZ2VscyBlbiBjb250cm9sZXB1bnRlbiBvcCBlZW4gdmFzdGUgcGxlay5cIiAvPjxkaXYgY2xhc3NOYW1lPVwic2tpbGwtZ3JpZFwiPntza2lsbHMubWFwKChza2lsbCkgPT4gPGFydGljbGUgY2xhc3NOYW1lPVwic2tpbGwtY2FyZFwiIGtleT17c2tpbGwubmFtZX0+PGRpdiBjbGFzc05hbWU9XCJza2lsbC1jYXJkLXRvcFwiPjxzcGFuIGNsYXNzTmFtZT1cInNraWxsLWljb25cIj48SWNvbiBuYW1lPVwic3BhcmtcIiBzaXplPXsxOH0gLz48L3NwYW4+PHNwYW4gY2xhc3NOYW1lPVwidGFnXCI+e3NraWxsLnRhZ308L3NwYW4+PC9kaXY+PGgzPntza2lsbC5uYW1lfTwvaDM+PHA+e3NraWxsLmRlc2NyaXB0aW9ufTwvcD48ZGl2IGNsYXNzTmFtZT1cInNraWxsLWNhcmQtZm9vdGVyXCI+PHNwYW4+U3BpZWdlbCBhY3RpZWY8L3NwYW4+PGJ1dHRvbiBjbGFzc05hbWU9XCJ0ZXh0LWxpbmtcIj5PcGVuIDxJY29uIG5hbWU9XCJhcnJvd1wiIHNpemU9ezE0fSAvPjwvYnV0dG9uPjwvZGl2PjwvYXJ0aWNsZT4pfTwvZGl2PjxzZWN0aW9uIGNsYXNzTmFtZT1cInBhbmVsIGJ1aWxkLXNraWxsXCI+PGRpdj48c3BhbiBjbGFzc05hbWU9XCJleWVicm93XCI+dm9sZ2VuZGUgc3RhcDwvc3Bhbj48aDI+TWFhayBlZW4gc2tpbGwgdmFuIGplIGVpZ2VuIHRhYWs8L2gyPjxwPkdlYnJ1aWsgZGUgc3lzdGVtLWJ1aWxkZXIuIEJlZ2luIG1ldCBlZW4gY29uY3JlZXQgcHJvYmxlZW0gZW4gZHJpZSBlY2h0ZSB2b29yYmVlbGRlbi48L3A+PC9kaXY+PGJ1dHRvbiBjbGFzc05hbWU9XCJidXR0b24gYnV0dG9uLXByaW1hcnlcIj5Ta2lsbCBvbnR3ZXJwZW4gPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTZ9IC8+PC9idXR0b24+PC9zZWN0aW9uPjwvPlxufVxuXG5mdW5jdGlvbiBDb21tdW5pdHlWaWV3KCkge1xuICBjb25zdCBpdGVtcyA9IFt7IHRpdGxlOiAnU3RhcnQgaGllcicsIHRleHQ6ICdWb2xnIGRlIGVlcnN0ZSB0ZXN0IGVuIGRlZWwgZWVuIHNjcmVlbnNob3QgdmFuIGplIHN0cnVjdHV1ci4nIH0sIHsgdGl0bGU6ICdWcmFnZW4gc3RlbGxlbicsIHRleHQ6ICdHZWJydWlrIGNvbnRleHQsIGRvZWwsIGlucHV0LCBwb2dpbmcgZW4gZ2V3ZW5zdGUgdWl0a29tc3QuJyB9LCB7IHRpdGxlOiAnU2hvd2Nhc2UnLCB0ZXh0OiAnRGVlbCBlZW4gd29ya2Zsb3cgbWV0IGRlIHJldmlld3N0YXAgZW4gaGV0IGxlZXJwdW50LicgfV1cbiAgcmV0dXJuIDw+PFNlY3Rpb25IZWFkaW5nIGV5ZWJyb3c9XCJzYW1lbiBsZXJlblwiIHRpdGxlPVwiQ29tbXVuaXR5XCIgdGV4dD1cIkVlbiB3ZXJrZW5kZSB3b3JrZmxvdyB3b3JkdCBiZXRlciB3YW5uZWVyIGFuZGVyZW4gaGVtIGt1bm5lbiB2b2xnZW4gZW4gYmV2cmFnZW4uXCIgLz48c2VjdGlvbiBjbGFzc05hbWU9XCJjb21tdW5pdHktaGVyb1wiPjxkaXY+PHNwYW4gY2xhc3NOYW1lPVwiZXllYnJvd1wiPndlZWtyaXRtZTwvc3Bhbj48aDI+RWVuIGtsZWluZSB0ZXN0IHBlciB3ZWVrPC9oMj48cD5LaWVzIGVlbiB0YWFrLCBtYWFrIGRlIGNvbnRleHQgemljaHRiYWFyLCBkcmFhaSBkZSB3b3JrZmxvdyBlbiBzY2hyaWpmIG9wIHdhYXIgZGUgYWdlbnQgbm9nIGh1bHAgbm9kaWcgaGFkLjwvcD48YnV0dG9uIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tcHJpbWFyeVwiPk9wZW4gd2Vla3BsYW4gPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTZ9IC8+PC9idXR0b24+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJ3ZWVrLWxpc3RcIj48c3Bhbj48Yj4wMTwvYj4gS2llcyBlZW4gZWNodGUgdGFhazwvc3Bhbj48c3Bhbj48Yj4wMjwvYj4gTWFhayBkZSBpbnB1dCBzY2hvb248L3NwYW4+PHNwYW4+PGI+MDM8L2I+IFJldmlldyBkZSBvdXRwdXQ8L3NwYW4+PC9kaXY+PC9zZWN0aW9uPjxkaXYgY2xhc3NOYW1lPVwiY29tbXVuaXR5LWdyaWRcIj57aXRlbXMubWFwKChpdGVtKSA9PiA8YXJ0aWNsZSBjbGFzc05hbWU9XCJwYW5lbCBjb21tdW5pdHktY2FyZFwiIGtleT17aXRlbS50aXRsZX0+PHNwYW4gY2xhc3NOYW1lPVwiZXllYnJvd1wiPmNvbW11bml0eTwvc3Bhbj48aDM+e2l0ZW0udGl0bGV9PC9oMz48cD57aXRlbS50ZXh0fTwvcD48YnV0dG9uIGNsYXNzTmFtZT1cInRleHQtbGlua1wiPk9wZW4gcGFnaW5hIDxJY29uIG5hbWU9XCJhcnJvd1wiIHNpemU9ezE0fSAvPjwvYnV0dG9uPjwvYXJ0aWNsZT4pfTwvZGl2PjwvPlxufVxuXG5mdW5jdGlvbiBBcHAoKSB7XG4gIGNvbnN0IFt2aWV3LCBzZXRWaWV3XSA9IHVzZVN0YXRlPFZpZXc+KCdvdmVyemljaHQnKVxuICBjb25zdCBbbW9iaWxlTmF2LCBzZXRNb2JpbGVOYXZdID0gdXNlU3RhdGUoZmFsc2UpXG4gIGNvbnN0IGFjdGl2ZUxhYmVsID0gdXNlTWVtbygoKSA9PiBuYXZpZ2F0aW9uLmZpbmQoKGl0ZW0pID0+IGl0ZW0uaWQgPT09IHZpZXcpPy5sYWJlbCA/PyAnT3ZlcnppY2h0JywgW3ZpZXddKVxuXG4gIGNvbnN0IG5hdmlnYXRlID0gKG5leHRWaWV3OiBWaWV3KSA9PiB7XG4gICAgc2V0VmlldyhuZXh0VmlldylcbiAgICBzZXRNb2JpbGVOYXYoZmFsc2UpXG4gICAgd2luZG93LnNjcm9sbFRvKHsgdG9wOiAwLCBiZWhhdmlvcjogJ3Ntb290aCcgfSlcbiAgfVxuXG4gIHJldHVybiA8ZGl2IGNsYXNzTmFtZT1cImFwcC1zaGVsbFwiPlxuICAgIDxhIGNsYXNzTmFtZT1cInNraXAtbGlua1wiIGhyZWY9XCIjbWFpblwiPkdhIG5hYXIgaW5ob3VkPC9hPlxuICAgIDxhc2lkZSBjbGFzc05hbWU9e2BzaWRlYmFyICR7bW9iaWxlTmF2ID8gJ3NpZGViYXItb3BlbicgOiAnJ31gfT5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYnJhbmRcIj48c3BhbiBjbGFzc05hbWU9XCJicmFuZC1tYXJrXCI+PEljb24gbmFtZT1cInNwYXJrXCIgc2l6ZT17MTh9IC8+PC9zcGFuPjxzcGFuPjxzdHJvbmc+QUktc3lzdGVlbTwvc3Ryb25nPjxzbWFsbD53ZXJrcnVpbXRlPC9zbWFsbD48L3NwYW4+PC9kaXY+XG4gICAgICA8bmF2IGFyaWEtbGFiZWw9XCJIb29mZG5hdmlnYXRpZVwiPntuYXZpZ2F0aW9uLm1hcCgoaXRlbSkgPT4gPGJ1dHRvbiBjbGFzc05hbWU9e3ZpZXcgPT09IGl0ZW0uaWQgPyAnbmF2LWl0ZW0gYWN0aXZlJyA6ICduYXYtaXRlbSd9IGtleT17aXRlbS5pZH0gb25DbGljaz17KCkgPT4gbmF2aWdhdGUoaXRlbS5pZCl9PjxJY29uIG5hbWU9e2l0ZW0uaWNvbn0gc2l6ZT17MTd9IC8+PHNwYW4+e2l0ZW0ubGFiZWx9PC9zcGFuPjwvYnV0dG9uPil9PC9uYXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNpZGViYXItYm90dG9tXCI+PGRpdiBjbGFzc05hbWU9XCJzaWRlYmFyLW5vdGVcIj48c3BhbiBjbGFzc05hbWU9XCJzdGF0dXMtZG90XCIgLz48c3Bhbj48c3Ryb25nPlRlbXBsYXRlIGFjdGllZjwvc3Ryb25nPjxzbWFsbD5EZW1vLW9tZ2V2aW5nPC9zbWFsbD48L3NwYW4+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJwcm9maWxlXCI+PHNwYW4gY2xhc3NOYW1lPVwiYXZhdGFyXCI+RE08L3NwYW4+PHNwYW4+PHN0cm9uZz5Kb3V3IG5hYW08L3N0cm9uZz48c21hbGw+RWlnZW4gd2Vya3J1aW10ZTwvc21hbGw+PC9zcGFuPjwvZGl2PjwvZGl2PlxuICAgIDwvYXNpZGU+XG4gICAgPG1haW4gaWQ9XCJtYWluXCI+XG4gICAgICA8aGVhZGVyIGNsYXNzTmFtZT1cInRvcGJhclwiPjxidXR0b24gY2xhc3NOYW1lPVwibW9iaWxlLW1lbnVcIiBhcmlhLWxhYmVsPVwiTmF2aWdhdGllIG9wZW5lblwiIG9uQ2xpY2s9eygpID0+IHNldE1vYmlsZU5hdigob3BlbikgPT4gIW9wZW4pfT48SWNvbiBuYW1lPVwibWVudVwiIHNpemU9ezIwfSAvPjwvYnV0dG9uPjxkaXYgY2xhc3NOYW1lPVwiYnJlYWRjcnVtYlwiPjxzcGFuPldlcmtydWltdGU8L3NwYW4+PHNwYW4+Lzwvc3Bhbj48c3Ryb25nPnthY3RpdmVMYWJlbH08L3N0cm9uZz48L2Rpdj48ZGl2IGNsYXNzTmFtZT1cInRvcGJhci1hY3Rpb25zXCI+PGJ1dHRvbiBjbGFzc05hbWU9XCJzZWFyY2gtYnV0dG9uXCIgYXJpYS1sYWJlbD1cIlpvZWtlblwiPjxJY29uIG5hbWU9XCJzZWFyY2hcIiBzaXplPXsxN30gLz48L2J1dHRvbj48c3BhbiBjbGFzc05hbWU9XCJ0b3BiYXItZGF0ZVwiPlRlbXBsYXRlIHYxPC9zcGFuPjxzcGFuIGNsYXNzTmFtZT1cInRvcGJhci1hdmF0YXJcIj5ETTwvc3Bhbj48L2Rpdj48L2hlYWRlcj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1oZWFkZXJcIj48ZGl2PjxzcGFuIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj57YWN0aXZlTGFiZWx9PC9zcGFuPjxwIGNsYXNzTmFtZT1cInBhZ2UtZGF0ZVwiPkRvbmRlcmRhZyA4IGF1Z3VzdHVzIDIwMjY8L3A+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJwYWdlLWFjdGlvbnNcIj48YnV0dG9uIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tc2Vjb25kYXJ5XCI+SHVscCBub2RpZz88L2J1dHRvbj48L2Rpdj48L2Rpdj5cbiAgICAgIHt2aWV3ID09PSAnb3ZlcnppY2h0JyA/IDxEYXNoYm9hcmRIb21lIG9uTmF2aWdhdGU9e25hdmlnYXRlfSAvPiA6IG51bGx9XG4gICAgICB7dmlldyA9PT0gJ2tlbm5pcycgPyA8S2VubmlzVmlldyAvPiA6IG51bGx9XG4gICAgICB7dmlldyA9PT0gJ2N1cnN1cycgPyA8Q3Vyc3VzVmlldyAvPiA6IG51bGx9XG4gICAgICB7dmlldyA9PT0gJ3NraWxscycgPyA8U2tpbGxzVmlldyAvPiA6IG51bGx9XG4gICAgICB7dmlldyA9PT0gJ2NvbW11bml0eScgPyA8Q29tbXVuaXR5VmlldyAvPiA6IG51bGx9XG4gICAgICA8Zm9vdGVyIGNsYXNzTmFtZT1cImZvb3RlclwiPjxzcGFuPkFJLXN5c3RlZW0gdGVtcGxhdGU8L3NwYW4+PHNwYW4+S2VubmlzLWZpcnN0LiBDb250cm9sZWVyYmFhci4gVWl0YnJlaWRiYWFyLjwvc3Bhbj48L2Zvb3Rlcj5cbiAgICA8L21haW4+XG4gIDwvZGl2PlxufVxuXG5leHBvcnQgZGVmYXVsdCBBcHBcblxuIl0sImZpbGUiOiJFOi9NRGF0YS9NYXJnZW1ha2VuL2Rhc2hib2FyZC9zcmMvQXBwLnRzeCJ9

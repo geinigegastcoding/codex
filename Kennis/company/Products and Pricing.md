@@ -1,8 +1,12 @@
 # Products and Pricing
 
-This note records the latest known MagisData offer. **Last repository review: 24 July 2026.** The website repositories are uninitialized gitlinks in this checkout, so these prices could not be revalidated against the live pricing component. Confirm against the production website before quoting a customer.
+This note records the current commercial direction after the AI-company pivot. **Pricing is not established yet.** Do not reuse historical package prices or quote them as current.
 
-## 1. Website Packages (Yearly Subscriptions)
+## Historical offers (superseded)
+
+The website, visibility, AI automation and growth-consulting packages below are historical planning material. They are not current offers or prices.
+
+<!--
 Optimized for small businesses (plumbers, barbers) looking for high-performance, conversion-focused websites.
 
 | Package | Pricing | Target Audience / Features |
@@ -32,6 +36,20 @@ Saves business owners time by automating lead capture, intake, and back-office w
 ## 4. Growth Consulting (Groeigesprek)
 - **Eerste groeigesprek**: Gratis (to assess blockers in website/SEO/automation).
 - **Maandelijks groeigesprek**: EUR 20 / maand (monthly check-in to keep priorities sharp and prevent ideas from stalling).
+-->
+
+## Current provisional offers
+
+| Offer | Status | Description |
+| :--- | :--- | :--- |
+| **AI operating system / Mainframe-style system** | Concept | A structured folder and directory system with skills, instructions and context for use with an AI agent. Inspired by [hetmainframe.nl](https://hetmainframe.nl/). |
+| **Course: use your AI system** | Concept | Practical training for setting up and working with the folder, directory and skill system alongside an AI agent. |
+| **AI audit for companies** | Planned service | A review of current AI use, workflows, opportunities and risks, resulting in a practical roadmap. |
+
+## Pricing state
+
+- No offer has an approved price, package structure, subscription cadence or VAT treatment.
+- Pricing and delivery format must be decided before publishing a checkout, proposal template or sales claim.
 
 ---
 ## Related Links
@@ -42,6 +60,6 @@ Saves business owners time by automating lead capture, intake, and back-office w
 
 ## Quoting rule
 
-Treat amounts in this note as **latest known**, not guaranteed current. Confirm price, billing cadence, VAT treatment, scope, hosting/support and renewal terms in writing before sending a proposal.
+Do not quote prices until Daniel explicitly approves them. Describe the offers as provisional and confirm scope, delivery format, support and VAT treatment in writing.
 
 %% ponytail: synchronized with pricing-data.tsx; kept tables clear and factual %%

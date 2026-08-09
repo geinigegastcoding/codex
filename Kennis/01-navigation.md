@@ -24,7 +24,7 @@ sources: []
 - [[company/decisions]] — adopted decisions and revisit conditions.
 - [[company/progress]] — progress context.
 - [[company/Business_Data]] — business data contract.
-- [[company/Products and Pricing]] — commercial offerings.
+- [[company/Products and Pricing]] — current AI offers and undecided pricing.
 - [[company/Article_Inventory]] — content inventory.
 - [[company/Competitor_Research/Competitor_Analysis]] — competitor synthesis.
 - [[company/SOP's/video-to-prd-SOP]] — video-to-PRD workflow.

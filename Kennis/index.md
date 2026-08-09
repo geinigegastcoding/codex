@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Canonical navigation for Daniel's second brain. Last updated: 2026-07-29.
+> Canonical navigation for Daniel's second brain. Last updated: 2026-08-08.
 
 ## System
 
@@ -15,7 +15,7 @@
 The imported `Kennis` material is under `company/`. It is company-only context. Start with [[company/Readme]], [[company/Status]], [[company/PROJECTS]], and [[company/decisions]]. Historical logs are preserved under `logs/`.
 
 - [[company/Business_Data]] — business data contract.
-- [[company/Products and Pricing]] — commercial offerings.
+- [[company/Products and Pricing]] — current AI offers and undecided pricing.
 - [[company/progress]] — progress context.
 - [[company/Article_Inventory]] — content inventory.
 - [[company/Competitor_Research/Competitor_Analysis]] — competitor synthesis.

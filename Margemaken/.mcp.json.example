@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "voorbeeld": {
+      "command": "VUL_LOKALE_COMMAND_IN",
+      "args": [],
+      "env": {
+        "EXAMPLE_TOKEN": "ZET_GEEN_ECHTE_SLEUTEL_IN_DIT_BESTAND"
+      }
+    }
+  }
+}
+

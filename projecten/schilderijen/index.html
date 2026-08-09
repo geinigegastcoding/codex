@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atelier Swipe: ontdek schilderijen, bewaar je favorieten en ontdek je persoonlijke smaak."
+    />
+    <meta name="theme-color" content="#f3f0e9" />
+    <title>Atelier Swipe — ontdek je schilderstijl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#discoverView" aria-label="Atelier Swipe home">
+          <span class="wordmark-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="wordmark-copy">atelier<span>/</span>swipe</span>
+        </a>
+
+        <nav class="topnav" aria-label="Hoofdnavigatie">
+          <button class="nav-tab is-active" type="button" data-view="discover">
+            Ontdekken
+            <span class="nav-count" id="remainingCount">10</span>
+          </button>
+          <button class="nav-tab" type="button" data-view="saved">
+            Opgeslagen
+            <span class="nav-count" id="savedCount">0</span>
+          </button>
+        </nav>
+
+        <button class="profile-trigger" type="button" data-view="profile">
+          <span class="profile-orbit" aria-hidden="true"><span></span></span>
+          Mijn stijl
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3.5 6 8 10.5 12.5 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+          </svg>
+        </button>
+      </header>
+
+      <main>
+        <section class="view discover-view" id="discoverView" aria-labelledby="discoverTitle">
+          <div class="intro-column">
+            <p class="eyebrow"><span></span> De persoonlijke galerie</p>
+            <h1 id="discoverTitle">Swipe rechts voor <em>meer kleur.</em></h1>
+            <p class="intro-copy">
+              Geen algoritme dat doet alsof het je kent. Gewoon kijken, voelen en kiezen. Na tien werken weet je waar je oog naartoe trekt.
+            </p>
+
+            <div class="micro-legend" aria-label="Uitleg van de knoppen">
+              <div class="legend-row">
+                <span class="legend-icon legend-icon-no">×</span>
+                <span>Niet mijn werk</span>
+              </div>
+              <div class="legend-row">
+                <span class="legend-icon legend-icon-yes">♥</span>
+                <span>Hangt bij mij thuis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swipe-column">
+            <div class="progress-row">
+              <span id="progressLabel">01 / 10</span>
+              <span class="progress-copy" id="progressCopy">Je eerste indruk telt.</span>
+            </div>
+
+            <div class="card-stack" id="cardStack" aria-live="polite"></div>
+
+            <div class="action-row" aria-label="Kies voor dit schilderij">
+              <button class="action-button action-button-pass" type="button" data-action="pass" aria-label="Overslaan" title="Overslaan (pijl links)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" /></svg>
+              </button>
+              <button class="action-button action-button-undo" type="button" data-action="undo" aria-label="Laatste keuze terugdraaien" title="Terugdraaien (backspace)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 8 5 12l4 4M5.5 12H14a4.5 4.5 0 0 1 0 9h-1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" /></svg>
+              </button>
+              <button class="action-button action-button-like" type="button" data-action="like" aria-label="Opslaan als favoriet" title="Opslaan (pijl rechts)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2S4.5 15.6 4.5 9.7A4.2 4.2 0 0 1 12 7.1a4.2 4.2 0 0 1 7.5 2.6c0 5.9-7.5 10.5-7.5 10.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7" /></svg>
+              </button>
+            </div>
+
+            <p class="shortcut-hint"><kbd>←</kbd> overslaan <span>·</span> <kbd>→</kbd> opslaan <span>·</span> <kbd>⌫</kbd> terug</p>
+          </div>
+
+          <aside class="side-column">
+            <div class="side-note">
+              <span class="note-index">01</span>
+              <p>Je verzameling wordt alleen op dit apparaat bewaard.</p>
+            </div>
+            <div class="side-note side-note-bottom">
+              <span class="note-index">Tip</span>
+              <p>Twijfel je? Kies op gevoel. Je hoeft niets uit te leggen.</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="view profile-view is-hidden" id="profileView" aria-labelledby="profileTitle">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> De uitslag</p>
+              <h2 id="profileTitle">Jouw stijl in wording.</h2>
+            </div>
+            <button class="text-button" type="button" data-view="discover">Verder ontdekken <span>→</span></button>
+          </div>
+          <div id="profileContent"></div>
+        </section>
+
+        <section class="view saved-view is-hidden" id="savedView" aria-labelledby="savedTitle">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> Jouw collectie</p>
+              <h2 id="savedTitle">Werken om bij terug te komen.</h2>
+            </div>
+            <button class="text-button" type="button" data-view="discover">Nog een ronde <span>→</span></button>
+          </div>
+          <div class="saved-grid" id="savedGrid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>atelier/swipe <span class="footer-slash">/</span> 2026</span>
+        <span>Een kleine galerie voor grote gevoelens.</span>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

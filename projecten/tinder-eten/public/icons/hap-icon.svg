@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Hap appicoon">
+  <rect width="512" height="512" rx="116" fill="#59bd78"/>
+  <circle cx="256" cy="264" r="126" fill="#fffaf0" opacity=".16"/>
+  <circle cx="256" cy="264" r="92" fill="none" stroke="#fffaf0" stroke-width="22"/>
+  <path d="M154 126v116m-25-116v67c0 25 50 25 50 0v-67m-25 116v145" fill="none" stroke="#fffaf0" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350 127c-44 10-72 49-63 88 6 27 28 43 53 43l-19 129" fill="none" stroke="#fffaf0" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350 127c15 42 6 91-10 131" fill="none" stroke="#fffaf0" stroke-width="18" stroke-linecap="round"/>
+  <path d="M246 96v37m-18-18h36" stroke="#ffe47a" stroke-width="14" stroke-linecap="round"/>
+</svg>
