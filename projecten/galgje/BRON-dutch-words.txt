@@ -1,0 +1,8 @@
+Bron van woorden_frequentie_10000.txt
+
+Project: https://github.com/leukeleu/dutch-words
+De lijst is een gerangschikte lijst met veelgebruikte Nederlandse woorden,
+gebaseerd op de Leipzig Corpora Collection.
+
+Licentie volgens het bronproject: Creative Commons Attribution 4.0
+International (CC BY 4.0). Bewaar deze bronvermelding bij hergebruik.

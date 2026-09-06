@@ -10,6 +10,8 @@ status: active
 
 # Legal income opportunities - 2026-08-09
 
+> Historical snapshot. Use [the current shortlist](2026-09-01-legal-income-opportunities.md) for live opportunities; some leads below have since closed or been fulfilled.
+
 These are leads found in a Leiden-area search. Confirm that the location is useful, that the vacancy is still open, and that the exact tasks and hours fit the legal rules before applying.
 
 ## Best current leads

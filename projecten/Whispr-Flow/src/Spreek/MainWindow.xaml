@@ -1,0 +1,716 @@
+<Window x:Class="Spreek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Spreek - Voice anywhere"
+        Width="1120"
+        Height="760"
+        MinWidth="980"
+        MinHeight="680"
+        WindowStartupLocation="CenterScreen"
+        SourceInitialized="OnSourceInitialized"
+        Loaded="OnLoaded"
+        Closing="OnClosing">
+    <Grid Background="{StaticResource CanvasBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="224" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                Background="{StaticResource SurfaceBrush}"
+                BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="0,0,1,0">
+            <Grid Margin="18,24,18,18">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Border Width="38"
+                            Height="38"
+                            Background="{StaticResource AccentBrush}"
+                            CornerRadius="10">
+                        <TextBlock Text="S"
+                                   FontFamily="{StaticResource DisplayFont}"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" />
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <TextBlock Text="SPREEK"
+                                   FontFamily="{StaticResource DisplayFont}"
+                                   FontWeight="SemiBold"
+                                   FontSize="17" />
+                        <TextBlock Text="VOICE ANYWHERE"
+                                   Style="{StaticResource Eyebrow}"
+                                   FontSize="9" />
+                    </StackPanel>
+                </Grid>
+
+                <StackPanel Grid.Row="1" Margin="0,36,0,0">
+                    <TextBlock Text="WORKSPACE" Style="{StaticResource Eyebrow}" Margin="12,0,0,8" />
+                    <Button x:Name="HomeNavButton" Style="{StaticResource NavButton}" Click="OnNavigate" Tag="Home" Content="01   Home" />
+                    <Button x:Name="HistoryNavButton" Style="{StaticResource NavButton}" Click="OnNavigate" Tag="History" Content="02   History" />
+                    <Button x:Name="DictionaryNavButton" Style="{StaticResource NavButton}" Click="OnNavigate" Tag="Dictionary" Content="03   Dictionary" />
+                    <Button x:Name="SnippetsNavButton" Style="{StaticResource NavButton}" Click="OnNavigate" Tag="Snippets" Content="04   Snippets" />
+                    <Button x:Name="SettingsNavButton" Style="{StaticResource NavButton}" Click="OnNavigate" Tag="Settings" Content="05   Settings" />
+                </StackPanel>
+
+                <Border Grid.Row="2" Style="{StaticResource InsetCard}" Padding="14">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Ellipse x:Name="SidebarStatusDot"
+                                     Width="8"
+                                     Height="8"
+                                     Fill="{StaticResource SuccessBrush}"
+                                     VerticalAlignment="Center" />
+                            <TextBlock x:Name="SidebarStatusText"
+                                       Grid.Column="1"
+                                       Text="Nova-3 ready"
+                                       FontWeight="SemiBold"
+                                       FontSize="12"
+                                       Margin="9,0,0,0" />
+                        </Grid>
+                        <TextBlock x:Name="SidebarShortcutText"
+                                   Text="Hold Ctrl + Win"
+                                   Style="{StaticResource MutedText}"
+                                   FontSize="11"
+                                   Margin="17,5,0,0" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Column="1" Margin="36,28,36,30">
+            <Grid x:Name="HomePage">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="Home" Style="{StaticResource PageTitle}" />
+                        <TextBlock Text="Your private dictation cockpit." Style="{StaticResource MutedText}" Margin="0,4,0,0" />
+                    </StackPanel>
+                    <Border Grid.Column="1" Style="{StaticResource StatusPill}" VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse x:Name="HomeStatusDot" Width="7" Height="7" Fill="{StaticResource SuccessBrush}" VerticalAlignment="Center" />
+                            <TextBlock x:Name="HomeConnectionText" Text="Nova-3 ready" FontSize="12" FontWeight="SemiBold" Margin="8,0,0,0" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+
+                <ScrollViewer Grid.Row="1" Margin="0,24,0,0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <Border Style="{StaticResource Card}" Padding="26" MinHeight="212">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="184" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel VerticalAlignment="Center" Margin="4,0,28,0">
+                                    <TextBlock Text="SPEAK. RELEASE. DONE." Style="{StaticResource Eyebrow}" Foreground="{StaticResource AccentBrush}" />
+                                    <TextBlock Text="Words land where you work."
+                                               FontFamily="{StaticResource DisplayFont}"
+                                               FontSize="26"
+                                               FontWeight="SemiBold"
+                                               Margin="0,9,0,0" />
+                                    <TextBlock Text="Hold your shortcut, speak naturally in Dutch or English, then release. Spreek saves locally before it pastes."
+                                               Style="{StaticResource MutedText}"
+                                               MaxWidth="540"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,9,0,0" />
+                                    <StackPanel Orientation="Horizontal" Margin="0,18,0,0">
+                                        <Border Style="{StaticResource StatusPill}" Background="{StaticResource CanvasBrush}">
+                                            <TextBlock x:Name="HomePushShortcutText" Text="CTRL + WIN" FontFamily="{StaticResource DisplayFont}" FontSize="12" />
+                                        </Border>
+                                        <TextBlock Text="Hold to talk" Style="{StaticResource MutedText}" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <Grid Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Ellipse Width="156" Height="156" Fill="{StaticResource AccentDarkBrush}" />
+                                    <Ellipse Width="132" Height="132" Stroke="{StaticResource AccentBrush}" StrokeThickness="1" Opacity="0.65" />
+                                    <Button x:Name="HomeRecordButton"
+                                            Width="108"
+                                            Height="108"
+                                            Padding="0"
+                                            Background="{StaticResource AccentBrush}"
+                                            BorderThickness="0"
+                                            ToolTip="Start or stop hands-free dictation"
+                                            Click="OnHomeRecord">
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Ellipse x:Name="Orb" Fill="{TemplateBinding Background}">
+                                                    <Ellipse.Style>
+                                                        <Style TargetType="Ellipse">
+                                                            <Setter Property="Stroke" Value="Transparent" />
+                                                            <Setter Property="StrokeThickness" Value="3" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=Button}}" Value="True">
+                                                                    <Setter Property="Stroke" Value="{StaticResource TextBrush}" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Ellipse.Style>
+                                                </Ellipse>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="Orb" Property="Opacity" Value="0.72" />
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                    <StackPanel IsHitTestVisible="False" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <TextBlock x:Name="HomeRecordTitle" Text="START" FontFamily="{StaticResource DisplayFont}" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" />
+                                        <TextBlock x:Name="HomeRecordSubtitle" Text="hands-free" FontSize="10" HorizontalAlignment="Center" Opacity="0.9" />
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <UniformGrid Columns="3" Margin="0,14,0,0">
+                            <Border Style="{StaticResource Card}" Margin="0,0,7,0" Padding="18">
+                                <StackPanel>
+                                    <TextBlock Text="TODAY" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock x:Name="TodayDurationText" Text="0m 00s" FontFamily="{StaticResource DisplayFont}" FontSize="22" FontWeight="SemiBold" Margin="0,8,0,0" />
+                                    <TextBlock Text="dictated" Style="{StaticResource MutedText}" />
+                                </StackPanel>
+                            </Border>
+                            <Border Style="{StaticResource Card}" Margin="7,0" Padding="18">
+                                <StackPanel>
+                                    <TextBlock Text="ESTIMATED COST" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock x:Name="TodayCostText" Text="$0.0000" FontFamily="{StaticResource DisplayFont}" FontSize="22" FontWeight="SemiBold" Margin="0,8,0,0" />
+                                    <TextBlock Text="Deepgram usage" Style="{StaticResource MutedText}" />
+                                </StackPanel>
+                            </Border>
+                            <Border Style="{StaticResource Card}" Margin="7,0,0,0" Padding="18">
+                                <StackPanel>
+                                    <TextBlock Text="CAPTURES" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock x:Name="TodayCapturesText" Text="0" FontFamily="{StaticResource DisplayFont}" FontSize="22" FontWeight="SemiBold" Margin="0,8,0,0" />
+                                    <TextBlock Text="saved locally" Style="{StaticResource MutedText}" />
+                                </StackPanel>
+                            </Border>
+                        </UniformGrid>
+
+                        <Grid Margin="0,14,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*" />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+                            <Border Style="{StaticResource Card}" Margin="0,0,7,0">
+                                <StackPanel>
+                                    <Grid>
+                                        <TextBlock Text="Latest transcript" Style="{StaticResource SectionTitle}" />
+                                        <Button Content="Open history" Style="{StaticResource CompactButton}" HorizontalAlignment="Right" Click="OnOpenHistory" />
+                                    </Grid>
+                                    <TextBlock x:Name="RecentTranscriptText"
+                                               Text="Your first transcript will appear here."
+                                               Style="{StaticResource MutedText}"
+                                               FontSize="14"
+                                               MaxHeight="88"
+                                               TextTrimming="CharacterEllipsis"
+                                               Margin="0,16,0,0" />
+                                </StackPanel>
+                            </Border>
+                            <Border Grid.Column="1" Style="{StaticResource Card}" Margin="7,0,0,0">
+                                <StackPanel>
+                                    <TextBlock Text="Input health" Style="{StaticResource SectionTitle}" />
+                                    <Grid Margin="0,15,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Ellipse Width="7" Height="7" Fill="{StaticResource SuccessBrush}" VerticalAlignment="Center" />
+                                        <TextBlock x:Name="HomeMicText" Grid.Column="1" Text="Microphone ready" Margin="9,0,0,0" FontSize="13" />
+                                    </Grid>
+                                    <Grid Margin="0,9,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Ellipse Width="7" Height="7" Fill="{StaticResource SuccessBrush}" VerticalAlignment="Center" />
+                                        <TextBlock x:Name="HomeHotkeyText" Grid.Column="1" Text="Global shortcuts ready" Margin="9,0,0,0" FontSize="13" />
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+
+            <Grid x:Name="HistoryPage" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="History" Style="{StaticResource PageTitle}" />
+                        <TextBlock Text="Every capture is local, searchable, editable, and recoverable." Style="{StaticResource MutedText}" Margin="0,4,0,0" />
+                    </StackPanel>
+                    <Button Content="Export Markdown" Style="{StaticResource CompactButton}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="OnExportHistory" />
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,22,0,14">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="190" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="HistorySearchBox" TextChanged="OnHistoryFilterChanged" ToolTip="Search transcript text" />
+                    <ComboBox x:Name="HistoryStatusCombo" Grid.Column="1" Margin="12,0,0,0" SelectionChanged="OnHistoryFilterChanged" SelectedIndex="0">
+                        <ComboBoxItem Content="All captures" Tag="All" />
+                        <ComboBoxItem Content="Completed" Tag="Completed" />
+                        <ComboBoxItem Content="Copied" Tag="Copied" />
+                        <ComboBoxItem Content="Needs retry" Tag="NeedsRetry" />
+                        <ComboBoxItem Content="Quick Notes" Tag="QuickNote" />
+                    </ComboBox>
+                </Grid>
+                <Border Grid.Row="2" Style="{StaticResource Card}" Padding="4">
+                    <Grid>
+                        <DataGrid x:Name="HistoryGrid" SelectionChanged="OnHistorySelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="WHEN" Binding="{Binding CreatedAt, StringFormat={}{0:dd MMM HH:mm}}" Width="128" IsReadOnly="True" />
+                                <DataGridTextColumn Header="TRANSCRIPT" Binding="{Binding Text}" Width="*" IsReadOnly="True" />
+                                <DataGridTextColumn Header="TIME" Binding="{Binding DurationSeconds, StringFormat={}{0:0.0}s}" Width="72" IsReadOnly="True" />
+                                <DataGridTextColumn Header="LANG" Binding="{Binding Language}" Width="72" IsReadOnly="True" />
+                                <DataGridTextColumn Header="STATUS" Binding="{Binding Status}" Width="108" IsReadOnly="True" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel x:Name="HistoryEmptyState" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="NO CAPTURES YET" Style="{StaticResource Eyebrow}" HorizontalAlignment="Center" />
+                            <TextBlock Text="Hold Ctrl + Win anywhere to create your first transcript." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                <Border x:Name="HistoryDetailCard" Grid.Row="3" Style="{StaticResource Card}" Margin="0,14,0,0" Padding="16" Visibility="Collapsed">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="HistoryEditor" AcceptsReturn="True" MinHeight="70" MaxHeight="120" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+                        <WrapPanel Grid.Column="1" Margin="14,0,0,0" VerticalAlignment="Center">
+                            <Button Content="Copy" Style="{StaticResource CompactButton}" Margin="0,0,6,6" Click="OnCopyHistory" />
+                            <Button Content="Save edit" Style="{StaticResource CompactButton}" Margin="0,0,6,6" Click="OnSaveHistoryEdit" />
+                            <Button x:Name="HistoryRetryButton" Content="Retry" Style="{StaticResource SuccessButton}" Padding="11,6" MinHeight="32" Margin="0,0,6,6" Click="OnRetryHistory" />
+                            <Button Content="Delete" Style="{StaticResource DangerButton}" Padding="11,6" MinHeight="32" Margin="0,0,0,6" Click="OnDeleteHistory" />
+                        </WrapPanel>
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Grid x:Name="DictionaryPage" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Dictionary" Style="{StaticResource PageTitle}" />
+                        <TextBlock Text="Teach Nova-3 your names, brands, products, and uncommon words." Style="{StaticResource MutedText}" Margin="0,4,0,0" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Button Content="Import CSV" Style="{StaticResource CompactButton}" Margin="0,0,8,0" Click="OnImportDictionary" />
+                        <Button Content="Export" Style="{StaticResource CompactButton}" Click="OnExportDictionary" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,24,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="14" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Border Style="{StaticResource Card}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBox x:Name="DictionarySearchBox" TextChanged="OnDictionaryFilterChanged" ToolTip="Search dictionary" />
+                            <Grid Grid.Row="1" Margin="0,14,0,0">
+                                <ListBox x:Name="DictionaryList" SelectionChanged="OnDictionarySelectionChanged">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border Style="{StaticResource InsetCard}">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*" />
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <StackPanel>
+                                                        <TextBlock Text="{Binding Term}" FontWeight="SemiBold" FontSize="14" />
+                                                        <TextBlock Text="{Binding HeardAs, StringFormat=Heard as: {0}}" Style="{StaticResource MutedText}" Margin="0,3,0,0" />
+                                                    </StackPanel>
+                                                    <CheckBox Grid.Column="1" IsChecked="{Binding Starred}" IsHitTestVisible="False" ToolTip="Priority keyterm" />
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                <StackPanel x:Name="DictionaryEmptyState" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="YOUR WORDS, EXACTLY" Style="{StaticResource Eyebrow}" HorizontalAlignment="Center" />
+                                    <TextBlock Text="Add a term on the right or import a CSV." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Column="2" Style="{StaticResource Card}">
+                        <StackPanel>
+                            <Grid>
+                                <TextBlock x:Name="DictionaryEditorTitle" Text="Add a word" Style="{StaticResource SectionTitle}" />
+                                <Button Content="New" Style="{StaticResource CompactButton}" HorizontalAlignment="Right" Click="OnNewDictionary" />
+                            </Grid>
+                            <TextBlock Text="Correct spelling" Style="{StaticResource FieldLabel}" Margin="0,22,0,6" />
+                            <TextBox x:Name="DictionaryTermBox" MaxLength="60" />
+                            <TextBlock Text="Often heard as (optional)" Style="{StaticResource FieldLabel}" Margin="0,16,0,6" />
+                            <TextBox x:Name="DictionaryHeardAsBox" MaxLength="60" />
+                            <CheckBox x:Name="DictionaryStarBox" Content="Prioritize this keyterm" Margin="0,16,0,0" />
+                            <TextBlock Text="Starred terms are sent first when Deepgram's keyterm limit is reached." Style="{StaticResource MutedText}" FontSize="11" Margin="0,6,0,0" />
+                            <StackPanel Orientation="Horizontal" Margin="0,22,0,0">
+                                <Button Content="Save word" Style="{StaticResource PrimaryButton}" Click="OnSaveDictionary" />
+                                <Button x:Name="DictionaryDeleteButton" Content="Delete" Style="{StaticResource DangerButton}" Margin="8,0,0,0" Click="OnDeleteDictionary" IsEnabled="False" />
+                            </StackPanel>
+                            <TextBlock x:Name="DictionaryStatusText" Style="{StaticResource MutedText}" Margin="0,14,0,0" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Grid>
+
+            <Grid x:Name="SnippetsPage" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Snippets" Style="{StaticResource PageTitle}" />
+                        <TextBlock Text="Say a short trigger; paste a complete reusable block." Style="{StaticResource MutedText}" Margin="0,4,0,0" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Button Content="Import JSON" Style="{StaticResource CompactButton}" Margin="0,0,8,0" Click="OnImportSnippets" />
+                        <Button Content="Export" Style="{StaticResource CompactButton}" Click="OnExportSnippets" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,24,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="14" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Border Style="{StaticResource Card}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBox x:Name="SnippetSearchBox" TextChanged="OnSnippetFilterChanged" ToolTip="Search snippets" />
+                            <Grid Grid.Row="1" Margin="0,14,0,0">
+                                <ListBox x:Name="SnippetList" SelectionChanged="OnSnippetSelectionChanged">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border Style="{StaticResource InsetCard}">
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Name}" FontWeight="SemiBold" FontSize="14" />
+                                                    <TextBlock Text="{Binding Text}" Style="{StaticResource MutedText}" Margin="0,3,0,0" MaxHeight="42" TextTrimming="CharacterEllipsis" />
+                                                </StackPanel>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                <StackPanel x:Name="SnippetEmptyState" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="SAY LESS. WRITE MORE." Style="{StaticResource Eyebrow}" HorizontalAlignment="Center" />
+                                    <TextBlock Text="Add a trigger on the right. Use {date} and {time} dynamically." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Column="2" Style="{StaticResource Card}">
+                        <StackPanel>
+                            <Grid>
+                                <TextBlock x:Name="SnippetEditorTitle" Text="Add a snippet" Style="{StaticResource SectionTitle}" />
+                                <Button Content="New" Style="{StaticResource CompactButton}" HorizontalAlignment="Right" Click="OnNewSnippet" />
+                            </Grid>
+                            <TextBlock Text="Spoken trigger" Style="{StaticResource FieldLabel}" Margin="0,22,0,6" />
+                            <TextBox x:Name="SnippetNameBox" MaxLength="60" />
+                            <TextBlock Text="Replacement text" Style="{StaticResource FieldLabel}" Margin="0,16,0,6" />
+                            <TextBox x:Name="SnippetTextBox" AcceptsReturn="True" TextWrapping="Wrap" Height="176" MaxLength="4000" VerticalScrollBarVisibility="Auto" />
+                            <TextBlock Text="Variables: {date} becomes 2026-09-02; {time} becomes 14:30." Style="{StaticResource MutedText}" FontSize="11" Margin="0,8,0,0" />
+                            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                                <Button Content="Save snippet" Style="{StaticResource PrimaryButton}" Click="OnSaveSnippet" />
+                                <Button x:Name="SnippetDeleteButton" Content="Delete" Style="{StaticResource DangerButton}" Margin="8,0,0,0" Click="OnDeleteSnippet" IsEnabled="False" />
+                            </StackPanel>
+                            <TextBlock x:Name="SnippetStatusText" Style="{StaticResource MutedText}" Margin="0,14,0,0" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Grid>
+
+            <Grid x:Name="SettingsPage" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Settings" Style="{StaticResource PageTitle}" />
+                        <TextBlock Text="One-time setup for private, system-wide dictation." Style="{StaticResource MutedText}" Margin="0,4,0,0" />
+                    </StackPanel>
+                    <Button Content="Save settings" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Right" VerticalAlignment="Center" Click="OnSaveSettings" />
+                </Grid>
+                <ScrollViewer Grid.Row="1" Margin="0,22,0,0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <Border x:Name="ApiSettingsCard" Style="{StaticResource Card}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,28,0">
+                                    <TextBlock Text="DEEPGRAM" Style="{StaticResource Eyebrow}" Foreground="{StaticResource AccentBrush}" />
+                                    <TextBlock Text="API access" Style="{StaticResource SectionTitle}" Margin="0,7,0,0" />
+                                    <TextBlock Text="Encrypted with Windows DPAPI. Never written to settings or logs." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="API key" Style="{StaticResource FieldLabel}" />
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <PasswordBox x:Name="ApiKeyBox" ToolTip="Leave blank to keep the saved key" />
+                                        <Button Grid.Column="1" Content="Test Nova-3" Margin="10,0,0,0" Click="OnTestApiKey" />
+                                    </Grid>
+                                    <TextBlock x:Name="ApiStatusText" Text="No key checked yet." Style="{StaticResource MutedText}" Margin="0,9,0,0" />
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,28,0">
+                                    <TextBlock Text="TRANSCRIPTION" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock Text="Nova-3 stream" Style="{StaticResource SectionTitle}" Margin="0,7,0,0" />
+                                    <TextBlock Text="EU routing and multilingual code-switching are the defaults." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="12" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="12" />
+                                        <ColumnDefinition Width="120" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel>
+                                        <TextBlock Text="Region" Style="{StaticResource FieldLabel}" />
+                                        <ComboBox x:Name="RegionCombo">
+                                            <ComboBoxItem Content="EU (api.eu.deepgram.com)" Tag="api.eu.deepgram.com" />
+                                            <ComboBoxItem Content="Global (api.deepgram.com)" Tag="api.deepgram.com" />
+                                        </ComboBox>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2">
+                                        <TextBlock Text="Language" Style="{StaticResource FieldLabel}" />
+                                        <ComboBox x:Name="LanguageCombo">
+                                            <ComboBoxItem Content="Dutch + English" Tag="Multilingual" />
+                                            <ComboBoxItem Content="Dutch only" Tag="Dutch" />
+                                            <ComboBoxItem Content="English only" Tag="English" />
+                                        </ComboBox>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="4">
+                                        <TextBlock Text="Endpoint (ms)" Style="{StaticResource FieldLabel}" />
+                                        <TextBox x:Name="EndpointingBox" Text="300" />
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,28,0">
+                                    <TextBlock Text="INPUT" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock Text="Microphone" Style="{StaticResource SectionTitle}" Margin="0,7,0,0" />
+                                    <TextBlock Text="Captured locally as 16 kHz mono PCM for reliable streaming and retry." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="Recording device" Style="{StaticResource FieldLabel}" />
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <ComboBox x:Name="MicrophoneCombo" DisplayMemberPath="Name" SelectedValuePath="DeviceNumber" />
+                                        <Button Grid.Column="1" Content="Refresh" Margin="10,0,0,0" Click="OnRefreshMicrophones" />
+                                    </Grid>
+                                    <TextBlock x:Name="MicrophoneStatusText" Style="{StaticResource MutedText}" Margin="0,9,0,0" />
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,28,0">
+                                    <TextBlock Text="SHORTCUTS" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock Text="Global controls" Style="{StaticResource SectionTitle}" Margin="0,7,0,0" />
+                                    <TextBlock Text="Use names like Ctrl+Win, Ctrl+Win+Space, or Shift+Alt+Z." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="14" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="14" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel>
+                                        <TextBlock Text="Push to talk" Style="{StaticResource FieldLabel}" />
+                                        <TextBox x:Name="PushShortcutBox" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2">
+                                        <TextBlock Text="Hands-free" Style="{StaticResource FieldLabel}" />
+                                        <TextBox x:Name="HandsFreeShortcutBox" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="2">
+                                        <TextBlock Text="Paste last" Style="{StaticResource FieldLabel}" />
+                                        <TextBox x:Name="PasteLastShortcutBox" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="2" Grid.Column="2">
+                                        <TextBlock Text="Quick Note" Style="{StaticResource FieldLabel}" />
+                                        <TextBox x:Name="QuickNoteShortcutBox" />
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,28,0">
+                                    <TextBlock Text="BEHAVIOR" Style="{StaticResource Eyebrow}" />
+                                    <TextBlock Text="Paste and privacy" Style="{StaticResource SectionTitle}" Margin="0,7,0,0" />
+                                    <TextBlock Text="No screenshots. No analytics. Local history stays under your Windows profile." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="16" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel>
+                                        <TextBlock Text="Insertion method" Style="{StaticResource FieldLabel}" />
+                                        <ComboBox x:Name="InsertionModeCombo">
+                                            <ComboBoxItem Content="Automatic" Tag="Auto" />
+                                            <ComboBoxItem Content="Ctrl + V" Tag="ControlV" />
+                                            <ComboBoxItem Content="Ctrl + Shift + V" Tag="ControlShiftV" />
+                                            <ComboBoxItem Content="Unicode typing" Tag="Unicode" />
+                                        </ComboBox>
+                                        <CheckBox x:Name="PressEnterCheckBox" Content="Allow trailing 'press enter' command" Margin="0,13,0,0" />
+                                        <CheckBox x:Name="ShowFlowBarCheckBox" Content="Show Flow Bar while idle" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2">
+                                        <CheckBox x:Name="PrivacyOptOutCheckBox" Content="Request Deepgram model-improvement opt-out" />
+                                        <CheckBox x:Name="RetainAudioCheckBox" Content="Keep successful audio files" />
+                                        <CheckBox x:Name="StartWithWindowsCheckBox" Content="Start Spreek with Windows" />
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,28,0">
+                                    <TextBlock Text="QUICK NOTE" Style="{StaticResource Eyebrow}" Foreground="{StaticResource SuccessBrush}" />
+                                    <TextBlock Text="Kennis inbox" Style="{StaticResource SectionTitle}" Margin="0,7,0,0" />
+                                    <TextBlock Text="A recovered or completed Quick Note becomes one idempotent Markdown capture." Style="{StaticResource MutedText}" Margin="0,8,0,0" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="Destination folder" Style="{StaticResource FieldLabel}" />
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox x:Name="QuickNoteFolderBox" />
+                                        <Button Grid.Column="1" Content="Browse" Margin="10,0,0,0" Click="OnBrowseQuickNoteFolder" />
+                                    </Grid>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource Card}" Margin="0,14,0,0" BorderBrush="{StaticResource DangerDarkBrush}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel>
+                                    <TextBlock Text="Local data" Style="{StaticResource SectionTitle}" />
+                                    <TextBlock x:Name="DataFolderText" Text="%LOCALAPPDATA%\Spreek" Style="{StaticResource MutedText}" Margin="0,6,0,0" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                    <Button Content="Open folder" Margin="0,0,8,0" Click="OnOpenDataFolder" />
+                                    <Button Content="Clear history + audio" Style="{StaticResource DangerButton}" Click="OnClearHistory" />
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <TextBlock x:Name="SettingsStatusText" Style="{StaticResource MutedText}" Margin="4,14,4,22" />
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+
+        <Border x:Name="Toast"
+                Grid.Column="1"
+                Background="{StaticResource RaisedBrush}"
+                BorderBrush="{StaticResource BorderStrongBrush}"
+                BorderThickness="1"
+                CornerRadius="10"
+                Padding="14,10"
+                Margin="0,20,24,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                MaxWidth="430"
+                Visibility="Collapsed">
+            <TextBlock x:Name="ToastText" FontSize="13" />
+        </Border>
+    </Grid>
+</Window>

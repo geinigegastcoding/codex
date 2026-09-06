@@ -1,7 +1,7 @@
 ---
 title: Current 15-plus job application packet
 created: 2026-08-09
-updated: 2026-08-09
+updated: 2026-09-02
 type: income-action
 status: ready-for-guardian-and-user-details
 tags: [personal, income, job-application, Netherlands]
@@ -33,6 +33,15 @@ At the advertised rate, 2 hours is about EUR 12.12 gross per week and 12 hours i
 - Application: the page offers a WhatsApp application route and an in-person conversation.
 
 For a 15-year-old, ask the store to confirm the legal task package and hours before accepting anything. Do not agree to duties that conflict with Dutch youth-work rules.
+
+## Additional backup: Jumbo Foodmarkt Leidschendam
+
+- [Vakkenvuller](https://nl.jobs.jumbo.com/nl/vacature/bijbaan-vakkenvuller/2023-18111/)
+- [Schoonmaker](https://nl.jobs.jumbo.com/nl/vacature/bijbaan-schoonmaker/2026-34744/)
+- [Spoelkeuken](https://nl.jobs.jumbo.com/nl/vacature/bijbaan-spoelkeuken/2026-34746/)
+- The official pages list minimum age 15 and 0-10 hours per week.
+
+Use this only if the location is reachable. A guardian must confirm the exact duties, shift times, and age-appropriate task package before any application.
 
 ## Information still required
 
@@ -66,4 +75,3 @@ Send only through the official vacancy route and only after guardian review. Do 
 - No cashier, machinery, dangerous substances, heavy lifting, or other prohibited work for a 15-year-old without explicit legal confirmation.
 - Do not share an ID or bank details until the guardian has verified the recipient and the employment process.
 - The Dutch government currently lists EUR 4.50 gross per hour as the statutory minimum for age 15 from 1 July 2026. An employer may offer more; the exact contract and holiday-pay treatment control the final amount. [Government minimum wages](https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts)
-

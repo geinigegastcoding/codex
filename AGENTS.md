@@ -5,6 +5,7 @@
 
 ## General Rules
 
+- **No unsolicited mock-ups**: Never offer or create mock-ups, visual companions, wireframes, or design-only prototypes unless the user explicitly asks for them. When the user asks to build or improve something, work directly in the real project.
 - **Think before coding**: No silent assumptions. State assumptions explicitly, surface trade-offs, ask before guessing, and push back if a simpler approach exists.
 - **Simplicity first**: Write the minimum code required to solve the problem. Do not add speculative features or build abstractions for single-use code. If a senior engineer would call it overcomplicated, simplify it.
 - **Surgical changes**: Touch only what must be changed. Do not improve adjacent code, comments, or formatting, and do not refactor what isn't broken. Match the existing codebase style.
