@@ -1,0 +1,2 @@
+The rules only apply to the astra model.
+Never ever create a picture like this: ![alt text](image.png) if I ask you to create an image for me. Because this doesnt mean anything you should make logical and fitting images. 

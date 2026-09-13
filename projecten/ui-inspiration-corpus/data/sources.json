@@ -1,0 +1,957 @@
+[
+  {
+    "id": "shadcn-ui",
+    "name": "shadcn/ui",
+    "rank": 1,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/shadcn-ui/ui",
+    "license": "MIT",
+    "license_url": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+    "terms_url": "https://ui.shadcn.com/docs",
+    "description": "Copy-and-own React components with a registry and CLI for adding source code to a project.",
+    "categories": [
+      "react",
+      "tailwind",
+      "components",
+      "registry"
+    ],
+    "provides": [
+      "copy/paste UI",
+      "registry CLI",
+      "tokens",
+      "page blocks"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the MIT copyright and license notice in redistributed code.",
+    "scraping_api": "Use the repository or documented registry; do not scrape the docs site.",
+    "acquisition": "Pin a Git commit or use the documented shadcn registry commands.",
+    "limitations": [
+      "Registry dependencies may have their own licenses.",
+      "Website examples and copy are not automatically reusable."
+    ],
+    "examples": [
+      "Dialog",
+      "Table",
+      "Sidebar"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Preferred starting point for reusable code, not screenshots."
+  },
+  {
+    "id": "radix-primitives",
+    "name": "Radix Primitives",
+    "rank": 2,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/radix-ui/primitives",
+    "license": "MIT",
+    "license_url": "https://github.com/radix-ui/primitives/blob/main/LICENSE",
+    "terms_url": "https://www.radix-ui.com/primitives",
+    "description": "Accessible, low-level React primitives for building custom interfaces.",
+    "categories": [
+      "react",
+      "headless",
+      "accessibility",
+      "components"
+    ],
+    "provides": [
+      "accessible primitives",
+      "interaction behavior",
+      "unstyled components"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the MIT notice.",
+    "scraping_api": "Use package or repository distribution; do not scrape examples.",
+    "acquisition": "Install the needed package or pin a repository commit.",
+    "limitations": [
+      "Visual styling remains your responsibility.",
+      "Inspect any non-code asset separately."
+    ],
+    "examples": [
+      "Dialog",
+      "Popover",
+      "Tooltip"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Strong accessibility foundation for original visual systems."
+  },
+  {
+    "id": "react-aria-components",
+    "name": "React Aria Components",
+    "rank": 3,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/adobe/react-spectrum",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+    "terms_url": "https://react-spectrum.adobe.com/react-aria/",
+    "description": "Accessible, unstyled component APIs and hooks from Adobe's React Spectrum project.",
+    "categories": [
+      "react",
+      "headless",
+      "accessibility",
+      "components"
+    ],
+    "provides": [
+      "ARIA behavior",
+      "keyboard interaction",
+      "unstyled components"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve Apache-2.0 notices and file-level notices.",
+    "scraping_api": "Use the repository/package distribution; do not scrape Adobe product visuals.",
+    "acquisition": "Install the required package and pin its version.",
+    "limitations": [
+      "Spectrum visual assets and trademarks require separate review."
+    ],
+    "examples": [
+      "Button",
+      "Dialog",
+      "ComboBox"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Use for behavior and accessibility, then apply an original design system."
+  },
+  {
+    "id": "tailwind-css",
+    "name": "Tailwind CSS",
+    "rank": 4,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "license": "MIT",
+    "license_url": "https://github.com/tailwindlabs/tailwindcss/blob/main/LICENSE",
+    "terms_url": "https://tailwindcss.com/docs",
+    "description": "Utility-first CSS framework and design token-friendly styling foundation.",
+    "categories": [
+      "css",
+      "tailwind",
+      "tokens"
+    ],
+    "provides": [
+      "utilities",
+      "responsive styling",
+      "theme variables"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the MIT notice when redistributing the framework code.",
+    "scraping_api": "Use npm or GitHub distribution; docs content is not a component asset license.",
+    "acquisition": "Install a pinned package version.",
+    "limitations": [
+      "Utility classes do not themselves license third-party examples or assets."
+    ],
+    "examples": [
+      "Responsive layout",
+      "Theme variables",
+      "Container queries"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Good base for original layouts and normalized tokens."
+  },
+  {
+    "id": "base-ui",
+    "name": "Base UI",
+    "rank": 5,
+    "classification": "A",
+    "source_type": "official_site",
+    "url": "https://base-ui.com/",
+    "license": "MIT",
+    "license_url": "https://github.com/mui/base-ui/blob/master/LICENSE",
+    "terms_url": "https://base-ui.com/",
+    "description": "Unstyled accessible React components intended to be composed into original interfaces.",
+    "categories": [
+      "react",
+      "headless",
+      "accessibility",
+      "components"
+    ],
+    "provides": [
+      "unstyled components",
+      "keyboard behavior",
+      "accessibility"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the MIT notice.",
+    "scraping_api": "Use the official package/repository; do not scrape site examples.",
+    "acquisition": "Install the package and pin its version.",
+    "limitations": [
+      "Do not confuse base-ui.com with unrelated similarly named projects."
+    ],
+    "examples": [
+      "Menu",
+      "Select",
+      "Popover"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Useful when the corpus needs behavior without prescribing a visual style."
+  },
+  {
+    "id": "mui-core",
+    "name": "MUI Core",
+    "rank": 6,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/mui/material-ui",
+    "license": "MIT for MUI Core; paid license for MUI X Pro/Premium/Enterprise",
+    "license_url": "https://mui.com/legal/",
+    "terms_url": "https://mui.com/pricing/",
+    "description": "Mature React component system with Material UI, Joy UI, Base UI, and system utilities.",
+    "categories": [
+      "react",
+      "components",
+      "design-system"
+    ],
+    "provides": [
+      "components",
+      "themes",
+      "layout utilities",
+      "tokens"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes for Core; conditional for paid X packages",
+    "modification": "yes for Core",
+    "attribution": "Preserve MIT notices; review paid package EULAs.",
+    "scraping_api": "Use packages and repositories; do not scrape Pro demos.",
+    "acquisition": "Install Core packages at pinned versions.",
+    "limitations": [
+      "Do not copy paid Pro/Premium blocks into a public corpus without the correct license.",
+      "Avoid implying Material Design or Google affiliation."
+    ],
+    "examples": [
+      "Data Grid",
+      "Dialog",
+      "Date Picker"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Split Core and paid X records in any downstream manifest."
+  },
+  {
+    "id": "flowbite-free",
+    "name": "Flowbite Free",
+    "rank": 7,
+    "classification": "B",
+    "source_type": "official_site",
+    "url": "https://flowbite.com/",
+    "license": "MIT for released free code; CC BY 3.0 for documentation code; Pro uses a separate EULA",
+    "license_url": "https://flowbite.com/docs/getting-started/license/",
+    "terms_url": "https://flowbite.com/license/",
+    "description": "Tailwind components and sections with a useful free tier and stricter Pro boundaries.",
+    "categories": [
+      "tailwind",
+      "components",
+      "blocks",
+      "icons"
+    ],
+    "provides": [
+      "UI components",
+      "landing sections",
+      "icons",
+      "templates"
+    ],
+    "internal_local_use": "free_code_and_metadata_only",
+    "commercial_public_use": "yes for free code; conditional for Pro",
+    "modification": "yes for free code; restricted for Pro redistribution",
+    "attribution": "Check the applicable free-code, CC BY, or Pro requirement.",
+    "scraping_api": "Use documented downloads and repositories; do not scrape Pro pages.",
+    "acquisition": "Acquire only free source files or a licensed Pro seat.",
+    "limitations": [
+      "Do not publish a public repository of Pro elements.",
+      "Do not redistribute downloaded Pro files or build a competing template service."
+    ],
+    "examples": [
+      "Hero sections",
+      "Navbar",
+      "Dashboard cards"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "B is deliberate because the product mixes multiple license scopes."
+  },
+  {
+    "id": "hyperui",
+    "name": "HyperUI",
+    "rank": 8,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/markmead/hyperui",
+    "license": "MIT",
+    "license_url": "https://github.com/markmead/hyperui/blob/main/LICENSE",
+    "terms_url": "https://www.hyperui.dev/blog/faqs/",
+    "description": "Copy-and-paste Tailwind components and sections with no runtime package dependency.",
+    "categories": [
+      "tailwind",
+      "blocks",
+      "landing",
+      "components"
+    ],
+    "provides": [
+      "hero sections",
+      "pricing blocks",
+      "navigation",
+      "forms"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the MIT notice.",
+    "scraping_api": "Use the repository; do not scrape site presentation or copy.",
+    "acquisition": "Pin a repository commit and copy only needed code.",
+    "limitations": [
+      "The site’s visual presentation and copy should not be treated as a separate asset license."
+    ],
+    "examples": [
+      "Hero",
+      "Pricing",
+      "Footer"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Excellent source for layout patterns when the code license is preserved."
+  },
+  {
+    "id": "carbon-design-system",
+    "name": "Carbon Design System",
+    "rank": 9,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/carbon-design-system/carbon",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+    "terms_url": "https://carbondesignsystem.com/",
+    "description": "Open-source IBM design system with components, themes, tokens, motion guidance, and type foundations.",
+    "categories": [
+      "design-system",
+      "tokens",
+      "motion",
+      "components"
+    ],
+    "provides": [
+      "components",
+      "color tokens",
+      "spacing tokens",
+      "themes",
+      "motion"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes for Apache-licensed code",
+    "modification": "yes",
+    "attribution": "Preserve Apache notices and review embedded fonts/assets separately.",
+    "scraping_api": "Use repositories and package distribution; do not scrape IBM product screens.",
+    "acquisition": "Pin the code/design-kit repository and record file-level licenses.",
+    "limitations": [
+      "Do not imply IBM affiliation.",
+      "Design kits can contain assets with different treatment."
+    ],
+    "examples": [
+      "Themes",
+      "Data Table",
+      "Notification"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Strong token and enterprise UI reference."
+  },
+  {
+    "id": "primer",
+    "name": "Primer",
+    "rank": 10,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/primer/css",
+    "license": "MIT",
+    "license_url": "https://github.com/primer/css/blob/main/LICENSE",
+    "terms_url": "https://primer.github.io/design/",
+    "description": "GitHub’s open design system code and primitives for CSS, tokens, and branded components.",
+    "categories": [
+      "design-system",
+      "tokens",
+      "css",
+      "components"
+    ],
+    "provides": [
+      "CSS",
+      "design tokens",
+      "brand components",
+      "type and spacing"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes for MIT repositories",
+    "modification": "yes",
+    "attribution": "Preserve MIT notices and separate trademark/icon licenses.",
+    "scraping_api": "Use repositories; do not scrape GitHub product screens or brand assets.",
+    "acquisition": "Pin the needed repository and record package-level notices.",
+    "limitations": [
+      "GitHub marks and product visuals are not licensed by the CSS repository alone."
+    ],
+    "examples": [
+      "Primer primitives",
+      "Form controls",
+      "Typography"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Use code/tokens as A; keep branded visual references separate."
+  },
+  {
+    "id": "style-dictionary",
+    "name": "Style Dictionary",
+    "rank": 11,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/style-dictionary/style-dictionary",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/style-dictionary/style-dictionary/blob/main/LICENSE",
+    "terms_url": "https://www.styledictionary.org/",
+    "description": "Transforms normalized design tokens into platform-specific outputs.",
+    "categories": [
+      "tokens",
+      "tooling",
+      "css",
+      "ios",
+      "android"
+    ],
+    "provides": [
+      "token transforms",
+      "CSS variables",
+      "JavaScript tokens",
+      "platform outputs"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve Apache notices.",
+    "scraping_api": "Not an extraction permission; only process owned or authorized inputs.",
+    "acquisition": "Install a pinned package version.",
+    "limitations": [
+      "It does not grant rights to tokens extracted from third-party websites."
+    ],
+    "examples": [
+      "DTCG tokens",
+      "CSS variables",
+      "iOS output"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Use after legal review and normalization, not as a crawler."
+  },
+  {
+    "id": "google-fonts",
+    "name": "Google Fonts",
+    "rank": 12,
+    "classification": "B",
+    "source_type": "official_catalog",
+    "url": "https://developers.google.com/fonts",
+    "license": "Family-specific; commonly OFL-1.1, Apache-2.0, or Ubuntu Font License",
+    "license_url": "https://github.com/google/fonts/blob/main/README.md",
+    "terms_url": "https://developers.google.com/fonts/faq",
+    "description": "Large font catalog suitable for a local font index when each family’s license is recorded.",
+    "categories": [
+      "fonts",
+      "typography"
+    ],
+    "provides": [
+      "font files",
+      "family metadata",
+      "CSS/API metadata"
+    ],
+    "internal_local_use": "font_files_with_per_family_license",
+    "commercial_public_use": "usually yes, subject to family license",
+    "modification": "usually yes under OFL, subject to Reserved Font Names",
+    "attribution": "Preserve each family’s license and notices.",
+    "scraping_api": "Use documented API or repository; do not bulk-mirror blindly.",
+    "acquisition": "Pin a family/version and save its license file beside the font.",
+    "limitations": [
+      "No single Google Fonts license covers every family.",
+      "Reserved Font Names can restrict modified distribution."
+    ],
+    "examples": [
+      "Inter",
+      "IBM Plex Sans",
+      "Source Sans 3"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "B keeps the family-level license gate visible."
+  },
+  {
+    "id": "heroicons",
+    "name": "Heroicons",
+    "rank": 13,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/tailwindlabs/heroicons",
+    "license": "MIT",
+    "license_url": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE",
+    "terms_url": "https://heroicons.com/",
+    "description": "MIT-licensed SVG icon set with React and Vue packages.",
+    "categories": [
+      "icons",
+      "svg",
+      "react"
+    ],
+    "provides": [
+      "SVG icons",
+      "React icons",
+      "Vue icons"
+    ],
+    "internal_local_use": "asset_files_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve MIT notices.",
+    "scraping_api": "Use the repository or package; do not collect unrelated brand marks.",
+    "acquisition": "Pin the package/repository version.",
+    "limitations": [
+      "Brand logos are not automatically covered by a generic icon-set license."
+    ],
+    "examples": [
+      "Arrow",
+      "Chart Bar",
+      "Magnifying Glass"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Safe default icon source for the corpus."
+  },
+  {
+    "id": "open-peeps",
+    "name": "Open Peeps",
+    "rank": 14,
+    "classification": "A",
+    "source_type": "official_site",
+    "url": "https://www.openpeeps.com/",
+    "license": "CC0",
+    "license_url": "https://www.openpeeps.com/",
+    "terms_url": "https://www.openpeeps.com/",
+    "description": "Hand-drawn people illustration library released for broad reuse under CC0.",
+    "categories": [
+      "illustrations",
+      "people",
+      "cc0"
+    ],
+    "provides": [
+      "SVG illustrations",
+      "character parts",
+      "editable poses"
+    ],
+    "internal_local_use": "asset_files_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Not required by CC0; keep source metadata for provenance.",
+    "scraping_api": "Use the official download flow; do not misrepresent third-party marks as CC0.",
+    "acquisition": "Download permitted source files and retain source URL.",
+    "limitations": [
+      "Privacy, publicity, and trademark rights can still apply to embedded real-world marks."
+    ],
+    "examples": [
+      "People",
+      "Poses",
+      "Scenes"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Good first illustration source because the reuse grant is explicit."
+  },
+  {
+    "id": "motion",
+    "name": "Motion",
+    "rank": 15,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/motiondivision/motion",
+    "license": "MIT",
+    "license_url": "https://github.com/motiondivision/motion/blob/main/LICENSE.md",
+    "terms_url": "https://motion.dev/",
+    "description": "Animation runtime and examples for React, JavaScript, and Vue.",
+    "categories": [
+      "motion",
+      "react",
+      "animation"
+    ],
+    "provides": [
+      "layout animation",
+      "gestures",
+      "scroll animation",
+      "motion primitives"
+    ],
+    "internal_local_use": "code_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the MIT notice.",
+    "scraping_api": "Use runtime packages and repository examples; do not scrape showcase content.",
+    "acquisition": "Install a pinned package version.",
+    "limitations": [
+      "Example media or third-party assets need their own review."
+    ],
+    "examples": [
+      "Drag",
+      "Layout transitions",
+      "Scroll reveal"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Use for behavior; keep motion subtle and accessible."
+  },
+  {
+    "id": "openverse",
+    "name": "Openverse",
+    "rank": 20,
+    "classification": "B",
+    "source_type": "documented_api",
+    "url": "https://openverse.org/",
+    "license": "Per-asset license; Openverse does not own or guarantee every asset",
+    "license_url": "https://docs.openverse.org/_preview/4259/terms_of_service.html",
+    "terms_url": "https://docs.openverse.org/",
+    "description": "Search and API index for openly licensed media, with responsibility remaining on the reuser.",
+    "categories": [
+      "images",
+      "illustrations",
+      "api"
+    ],
+    "provides": [
+      "image discovery",
+      "license metadata",
+      "creator metadata"
+    ],
+    "internal_local_use": "metadata_and_individually_verified_assets",
+    "commercial_public_use": "per asset",
+    "modification": "per asset",
+    "attribution": "Usually required by the original license.",
+    "scraping_api": "Use the documented API; no catalog scraping, rate bypass, or mirror service.",
+    "acquisition": "Record source URL, creator, license, and attribution before saving an asset.",
+    "limitations": [
+      "Openverse does not independently grant the underlying asset license.",
+      "Do not store the full catalog."
+    ],
+    "examples": [
+      "CC0 photos",
+      "CC BY illustrations"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "B is the correct default for every search result until manually verified."
+  },
+  {
+    "id": "unsplash-api",
+    "name": "Unsplash API",
+    "rank": 21,
+    "classification": "B",
+    "source_type": "documented_api",
+    "url": "https://unsplash.com/documentation",
+    "license": "Unsplash License plus API guidelines and terms",
+    "license_url": "https://unsplash.com/license",
+    "terms_url": "https://unsplash.com/api-terms",
+    "description": "Photo API with attribution, hotlinking, download-event, and rate-limit requirements.",
+    "categories": [
+      "images",
+      "photography",
+      "api"
+    ],
+    "provides": [
+      "photo search",
+      "photo metadata",
+      "creator attribution"
+    ],
+    "internal_local_use": "metadata_or_terms-compliant_assets",
+    "commercial_public_use": "conditional",
+    "modification": "yes under license, subject to restrictions",
+    "attribution": "Credit the photographer and Unsplash as required by the API guidelines.",
+    "scraping_api": "Use only the documented API; trigger download_location and respect quotas.",
+    "acquisition": "Use API URLs and record creator/profile/source metadata.",
+    "limitations": [
+      "Do not sell unmodified images or build a competing image service.",
+      "Keep API keys private."
+    ],
+    "examples": [
+      "Hero photography",
+      "Texture references"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Do not bulk-download into the corpus by default."
+  },
+  {
+    "id": "stripe-reference",
+    "name": "Stripe product design reference",
+    "rank": 30,
+    "classification": "C",
+    "source_type": "manual_reference",
+    "url": "https://docs.stripe.com/stripe-apps/design",
+    "license": "No general reusable product-visual license",
+    "license_url": "https://stripe.com/legal/marks",
+    "terms_url": "https://stripe.com/legal/marks",
+    "description": "Reference for product hierarchy, restrained color, and dashboard interaction patterns.",
+    "categories": [
+      "reference",
+      "fintech",
+      "saas"
+    ],
+    "provides": [
+      "visual analysis",
+      "interaction analysis",
+      "product patterns"
+    ],
+    "internal_local_use": "url_and_own_notes_only",
+    "commercial_public_use": "no copied assets",
+    "modification": "do not modify or rehost brand assets",
+    "attribution": "Identify Stripe as the source of the reference link; do not imply endorsement.",
+    "scraping_api": "Do not scrape or mirror product screenshots.",
+    "acquisition": "Save URL, date, and original design observations only.",
+    "limitations": [
+      "Stripe marks, trade dress, screenshots, and copy remain protected."
+    ],
+    "examples": [
+      "Payment dashboard",
+      "Checkout hierarchy"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Reference-only by design."
+  },
+  {
+    "id": "apple-reference",
+    "name": "Apple Human Interface Guidelines",
+    "rank": 31,
+    "classification": "C",
+    "source_type": "manual_reference",
+    "url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "license": "Guidance content; no general license to copy Apple visuals or assets",
+    "license_url": "https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html",
+    "terms_url": "https://developer.apple.com/app-store/marketing/guidelines/",
+    "description": "Reference for platform conventions, hierarchy, motion, and interaction clarity.",
+    "categories": [
+      "reference",
+      "mobile",
+      "platform"
+    ],
+    "provides": [
+      "interaction analysis",
+      "platform patterns",
+      "accessibility guidance"
+    ],
+    "internal_local_use": "url_and_own_notes_only",
+    "commercial_public_use": "no copied assets",
+    "modification": "do not modify or rehost Apple assets",
+    "attribution": "Keep Apple attribution in internal notes when quoting guidance.",
+    "scraping_api": "Do not scrape Apple pages or assets.",
+    "acquisition": "Save URL, date, and original observations only.",
+    "limitations": [
+      "Apple logos, screenshots, icons, and product imagery are restricted."
+    ],
+    "examples": [
+      "Navigation",
+      "Motion",
+      "Settings"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Use for principles, not visual cloning."
+  },
+  {
+    "id": "mobbin-reference",
+    "name": "Mobbin",
+    "rank": 40,
+    "classification": "D",
+    "source_type": "avoid_automation",
+    "url": "https://mobbin.co/",
+    "license": "Proprietary service content",
+    "license_url": "https://mobbin.collaboo.co/terms",
+    "terms_url": "https://mobbin.collaboo.co/terms",
+    "description": "Valuable manual inspiration source, but not an approved automated local corpus source.",
+    "categories": [
+      "reference",
+      "screenshots",
+      "flows"
+    ],
+    "provides": [
+      "screen references",
+      "flow references"
+    ],
+    "internal_local_use": "metadata_only_with_authorized_access",
+    "commercial_public_use": "no",
+    "modification": "no",
+    "attribution": "Follow the service terms if manually linking.",
+    "scraping_api": "Terms prohibit unauthorized scraping, archiving, rehosting, and AI indexing.",
+    "acquisition": "Store only a source link and personal notes unless written permission says otherwise.",
+    "limitations": [
+      "Do not create a screenshot mirror or content repository."
+    ],
+    "examples": [
+      "Mobile flows",
+      "Onboarding screens"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Blocked from automated acquisition."
+  },
+  {
+    "id": "dribbble-reference",
+    "name": "Dribbble",
+    "rank": 41,
+    "classification": "D",
+    "source_type": "avoid_automation",
+    "url": "https://dribbble.com/",
+    "license": "Proprietary user content",
+    "license_url": "https://dribbble.com/terms",
+    "terms_url": "https://developer.dribbble.com/terms/",
+    "description": "Manual visual reference only; automated copying or storage is not approved.",
+    "categories": [
+      "reference",
+      "screenshots",
+      "visual-design"
+    ],
+    "provides": [
+      "visual references",
+      "layout references"
+    ],
+    "internal_local_use": "metadata_only_with_authorized_access",
+    "commercial_public_use": "no",
+    "modification": "no",
+    "attribution": "Follow Dribbble and creator terms for manual links.",
+    "scraping_api": "Terms prohibit scraping, copying, saving, storing, and competing services.",
+    "acquisition": "Save URL and own notes only.",
+    "limitations": [
+      "Do not download shots or build a local screenshot repository."
+    ],
+    "examples": [
+      "Dashboard references",
+      "Brand explorations"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Blocked from automated acquisition."
+  },
+  {
+    "id": "behance-reference",
+    "name": "Behance",
+    "rank": 42,
+    "classification": "D",
+    "source_type": "avoid_automation",
+    "url": "https://www.behance.net/",
+    "license": "Proprietary user content",
+    "license_url": "https://www.adobe.com/legal/terms.html",
+    "terms_url": "https://www.adobe.com/legal/terms.html",
+    "description": "Manual portfolio reference only; Adobe terms do not approve general extraction or mining.",
+    "categories": [
+      "reference",
+      "screenshots",
+      "portfolio"
+    ],
+    "provides": [
+      "visual references",
+      "case-study references"
+    ],
+    "internal_local_use": "metadata_only_with_authorized_access",
+    "commercial_public_use": "no",
+    "modification": "no",
+    "attribution": "Follow Adobe and creator terms for manual links.",
+    "scraping_api": "Adobe terms prohibit data mining and similar extraction; API rules add storage limits.",
+    "acquisition": "Save URL and own notes only.",
+    "limitations": [
+      "Do not create a local copy of project media or screenshots."
+    ],
+    "examples": [
+      "Case studies",
+      "Editorial layouts"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Blocked from automated acquisition."
+  },
+  {
+    "id": "refero-reference",
+    "name": "Refero",
+    "rank": 43,
+    "classification": "C",
+    "source_type": "manual_reference",
+    "url": "https://refero.design/",
+    "license": "Proprietary service content; no general local-repository license found",
+    "license_url": "https://refero.collaboo.co/terms",
+    "terms_url": "https://doc.refero.design/mcp/getting-started",
+    "description": "Screen and flow reference service; use the official website or MCP as a research interface.",
+    "categories": [
+      "reference",
+      "screenshots",
+      "flows",
+      "mcp"
+    ],
+    "provides": [
+      "screen references",
+      "flow references",
+      "MCP search"
+    ],
+    "internal_local_use": "url_and_own_notes_only",
+    "commercial_public_use": "no copied assets",
+    "modification": "no",
+    "attribution": "Keep Refero as the source of the link in internal notes.",
+    "scraping_api": "Use official MCP under its plan terms; do not download or mirror the content corpus.",
+    "acquisition": "Save URLs and personal analysis; request written permission for asset export.",
+    "limitations": [
+      "Official MCP returns requested results server-side; it does not grant local rehosting rights."
+    ],
+    "examples": [
+      "SaaS flows",
+      "Mobile screens",
+      "Product patterns"
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-10",
+    "notes": "The community CLI was smoke-tested for listing only; pull/download remains intentionally disabled."
+  },
+  {
+    "id": "lucide-icons",
+    "name": "Lucide Icons",
+    "rank": 16,
+    "classification": "A",
+    "source_type": "official_repository",
+    "url": "https://github.com/lucide-icons/lucide",
+    "license": "ISC",
+    "license_url": "https://github.com/lucide-icons/lucide/blob/main/LICENSE",
+    "terms_url": "https://lucide.dev/",
+    "description": "Open-source SVG icon library with framework packages and a broad general-purpose vocabulary.",
+    "categories": [
+      "icons",
+      "svg",
+      "react"
+    ],
+    "provides": [
+      "SVG icons",
+      "React icons",
+      "icon packages"
+    ],
+    "internal_local_use": "asset_files_and_metadata",
+    "commercial_public_use": "yes",
+    "modification": "yes",
+    "attribution": "Preserve the ISC notice; do not treat brand logos as generic icons.",
+    "scraping_api": "Use the repository or package distribution; do not scrape unrelated showcase content.",
+    "acquisition": "Pin the package or repository version and retain its license.",
+    "limitations": [
+      "Third-party libraries bundled with a distribution can have their own licenses.",
+      "Brand marks need separate review."
+    ],
+    "examples": [
+      "Search",
+      "Settings",
+      "Arrow"
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-10",
+    "notes": "Added through the CLI write path as an end-to-end check."
+  }
+]

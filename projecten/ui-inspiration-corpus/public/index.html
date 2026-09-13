@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Private local UI inspiration corpus with license-aware source metadata." />
+    <title>UI Sourcebook — Local corpus</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8f36a'/%3E%3Cpath d='M16 7v18M7 16h18M10 10l12 12M22 10 10 22' stroke='%2317200f' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="UI Sourcebook home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>
+          <strong>UI Sourcebook</strong>
+          <small>private local corpus</small>
+        </span>
+      </a>
+      <div class="topbar-meta">
+        <span class="local-badge"><span aria-hidden="true"></span> local-only</span>
+        <button class="text-button" id="resetFilters" type="button">Reset filters</button>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="filters" aria-label="Corpus filters">
+        <div class="filter-heading">
+          <span class="eyebrow">Explore</span>
+          <h2>Source filters</h2>
+        </div>
+
+        <label class="field-label" for="search">Search</label>
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Try “tokens” or “React”" autocomplete="off" />
+        </div>
+
+        <label class="field-label" for="classification">Reuse class</label>
+        <select id="classification">
+          <option value="">All classes</option>
+          <option value="A">A · reusable under license</option>
+          <option value="B">B · verify per asset</option>
+          <option value="C">C · reference only</option>
+          <option value="D">D · avoid automation</option>
+        </select>
+
+        <label class="field-label" for="category">Category</label>
+        <select id="category">
+          <option value="">All categories</option>
+        </select>
+
+        <div class="filter-note">
+          <span class="note-mark" aria-hidden="true">!</span>
+          <p>Every record carries its acquisition boundary. When in doubt, keep the source as a link and note.</p>
+        </div>
+      </aside>
+
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="workspace-head">
+          <div>
+            <span class="eyebrow">Private corpus / 2026.09</span>
+            <h1 id="page-title">Find a source worth reusing.</h1>
+            <p id="resultsSummary">Loading the source index…</p>
+          </div>
+          <button class="refresh-button" id="refresh" type="button"><span aria-hidden="true">↻</span> Refresh</button>
+        </div>
+
+        <div class="stats" id="stats" aria-label="Corpus summary"></div>
+        <div class="source-grid" id="sourceGrid" aria-live="polite"></div>
+      </section>
+
+      <aside class="details" id="details" aria-label="Selected source" hidden>
+        <button class="close-button" id="closeDetails" type="button" aria-label="Close source details">×</button>
+        <div id="detailContent"></div>
+      </aside>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

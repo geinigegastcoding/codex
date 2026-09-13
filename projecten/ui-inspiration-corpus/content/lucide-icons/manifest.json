@@ -1,0 +1,31 @@
+{
+  "source_id": "lucide-icons",
+  "source_name": "Lucide Icons",
+  "source_url": "https://github.com/lucide-icons/lucide",
+  "license": "ISC",
+  "license_url": "https://github.com/lucide-icons/lucide/blob/main/LICENSE",
+  "terms_url": "https://lucide.dev/",
+  "attribution": "Preserve the ISC notice; do not treat brand logos as generic icons.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "lucide-icons",
+    "repository": "lucide"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:11.750Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/HEAD/README.md",
+      "bytes": 8385,
+      "sha256": "3a4175a78457cdb371e11375d102652d78bfbe2879ecd9174bae097bfb2efcd6"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/HEAD/LICENSE",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    }
+  ]
+}

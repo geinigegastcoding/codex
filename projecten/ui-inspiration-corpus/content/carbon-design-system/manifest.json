@@ -1,0 +1,31 @@
+{
+  "source_id": "carbon-design-system",
+  "source_name": "Carbon Design System",
+  "source_url": "https://github.com/carbon-design-system/carbon",
+  "license": "Apache-2.0",
+  "license_url": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+  "terms_url": "https://carbondesignsystem.com/",
+  "attribution": "Preserve Apache notices and review embedded fonts/assets separately.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "carbon-design-system",
+    "repository": "carbon"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:06.232Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/carbon-design-system/carbon/HEAD/README.md",
+      "bytes": 9081,
+      "sha256": "1379b2bc49aae94c6dcd2b76cdb4f165a18220c2c613faf431fee74b18f3baa2"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/carbon-design-system/carbon/HEAD/LICENSE",
+      "bytes": 11339,
+      "sha256": "037b3e9eaff51477b270e9082f54b99175e4dd893548654f00995045b68294b8"
+    }
+  ]
+}

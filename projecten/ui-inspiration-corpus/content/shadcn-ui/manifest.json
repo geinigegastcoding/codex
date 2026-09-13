@@ -1,0 +1,43 @@
+{
+  "source_id": "shadcn-ui",
+  "source_name": "shadcn/ui",
+  "source_url": "https://github.com/shadcn-ui/ui",
+  "license": "MIT",
+  "license_url": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+  "terms_url": "https://ui.shadcn.com/docs",
+  "attribution": "Preserve the MIT copyright and license notice in redistributed code.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "shadcn-ui",
+    "repository": "ui"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:31:12.007Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/shadcn-ui/ui/HEAD/README.md",
+      "bytes": 467,
+      "sha256": "bb0869848a2063e405b141aa6fae8b10f132ac45036f613459e2d778b7609619"
+    },
+    {
+      "path": "LICENSE.md",
+      "source_url": "https://raw.githubusercontent.com/shadcn-ui/ui/HEAD/LICENSE.md",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "packages/shadcn/package.json",
+      "source_url": "https://raw.githubusercontent.com/shadcn-ui/ui/HEAD/packages/shadcn/package.json",
+      "bytes": 3953,
+      "sha256": "390285f1cfedeb445c96cd9808f5b6bb3019ea034c75f14622b9537fcde5ca9d"
+    },
+    {
+      "path": "apps/v4/registry/new-york-v4/ui/button.tsx",
+      "source_url": "https://raw.githubusercontent.com/shadcn-ui/ui/HEAD/apps/v4/registry/new-york-v4/ui/button.tsx",
+      "bytes": 2382,
+      "sha256": "79dd6f75f8136394442202d6b8b922fb269eaad0a5dba579397c9d5b41f893bb"
+    }
+  ]
+}

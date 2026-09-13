@@ -1,0 +1,31 @@
+{
+  "source_id": "react-aria-components",
+  "source_name": "React Aria Components",
+  "source_url": "https://github.com/adobe/react-spectrum",
+  "license": "Apache-2.0",
+  "license_url": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+  "terms_url": "https://react-spectrum.adobe.com/react-aria/",
+  "attribution": "Preserve Apache-2.0 notices and file-level notices.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "adobe",
+    "repository": "react-spectrum"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:03.490Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/adobe/react-spectrum/HEAD/README.md",
+      "bytes": 4483,
+      "sha256": "f960a969da920635c343031a31170ece94521e4865c12fb79ecbb7e5b4b73936"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/adobe/react-spectrum/HEAD/LICENSE",
+      "bytes": 11335,
+      "sha256": "7dfe6526888bac51759c99f9a51262ba2711a8c12a067f2181609dd9a4066b84"
+    }
+  ]
+}

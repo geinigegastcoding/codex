@@ -1,0 +1,31 @@
+{
+  "source_id": "heroicons",
+  "source_name": "Heroicons",
+  "source_url": "https://github.com/tailwindlabs/heroicons",
+  "license": "MIT",
+  "license_url": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE",
+  "terms_url": "https://heroicons.com/",
+  "attribution": "Preserve MIT notices.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "tailwindlabs",
+    "repository": "heroicons"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:09.290Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/README.md",
+      "bytes": 4167,
+      "sha256": "882d87eaa1621c488938872bcb5af525e0ec150a966f27306878f2d9b8639d01"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    }
+  ]
+}

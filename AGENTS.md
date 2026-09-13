@@ -29,3 +29,37 @@ So here is a rule you can use to find where to work.
 - If the project file is opened in `C:\Users\Daniël\Desktop\Codex` it means that the repo is located on the laptop. This means that all mentions of `E:\MData` are not relevant and should use the laptop root instead; for example, use `C:\Users\Daniël\Desktop\Codex\Kennis\company\councils` instead of `E:\MData\Kennis\company\councils`. When you know you are working on the laptop, a quick way to confirm this is checking that there is no E drive.
 - If the project file is opened in E:\MData than proceed with the regular file path descriptions or as mentioned above replace the file paths of the laptop with the one associated with the E drive instead. 
 - **Verify when working on website**: When you are working on the main website of magisdata always verify your work using screenshots. 
+
+## Root folder routing
+
+Use the folder that matches the task. Keep website checkouts separate, and read a folder's local `AGENTS.md` before working there.
+
+| Folder | Use it for |
+|---|---|
+| `.agents/` | Agent and MCP configuration. |
+| `.claude/` | Claude-specific skills and configuration. |
+| `.git/` | Git internals. Do not edit directly. |
+| `CRM/` | CRM work. |
+| `fitness-app-worktree/` | Fitness app work in this checkout. |
+| `Jarvis/` | Jarvis work. |
+| `Kennis/` | Durable knowledge, company/personal context, sources, and logs. |
+| `klanten/` | Client-specific work, in the matching client folder. |
+| `magisdata-main-site-v2/` | Main MagisData website checkout. |
+| `magisdata-redesign-test/` | Website redesign tests and experiments. |
+| `magisdata-redesign-v2/` | Website redesign work. |
+| `magisdata-system-design/` | Website and design-system work. |
+| `Margemaken/` | Margemaken project work. |
+| `Marketing/` | General marketing work. |
+| `overig/` | Supporting documents, templates, or work that has no better home. |
+| `projecten/` | Here live all my other projects if I mention we are working on something not hte main website look here first and if there is not a dedicated folder yet ask to create one before proceeding. |
+| `screenshots/` | Screenshots and visual references only. |
+| `skills/` | Shared or custom skills. |
+| `Website/` / `WebsiteMagisData/` | MagisData website work in this checkout.|
+If the correct folder is unclear, inspect first and ask before creating a new top-level folder.
+
+## Model individual rules
+Depending on what model you are I have some individuel rules that only apply to your model but they are strict rules. If you are a model reading this and your model name is not in the following list you only have to follow the main agents.md's
+astra: @astra.md
+
+## Design Systems
+Dont mix up design systems. For example you shouldn't use the design system of the website as context for a completely different stand alone project. So dont even read it. Keep the design original you dont have to check the other thing to avoid similarities but just dont use it search on your own.

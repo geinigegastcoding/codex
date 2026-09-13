@@ -1,0 +1,31 @@
+{
+  "source_id": "mui-core",
+  "source_name": "MUI Core",
+  "source_url": "https://github.com/mui/material-ui",
+  "license": "MIT for MUI Core; paid license for MUI X Pro/Premium/Enterprise",
+  "license_url": "https://mui.com/legal/",
+  "terms_url": "https://mui.com/pricing/",
+  "attribution": "Preserve MIT notices; review paid package EULAs.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "mui",
+    "repository": "material-ui"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:04.454Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/mui/material-ui/HEAD/README.md",
+      "bytes": 8234,
+      "sha256": "76804c6145bb25b647b89e72ef62adb9a01e36263713b1c95dee0c553c176c02"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/mui/material-ui/HEAD/LICENSE",
+      "bytes": 1068,
+      "sha256": "4c57cedbef546270e5648786682f633b2e6ae62c8862a45797bcb6d0bffda98d"
+    }
+  ]
+}

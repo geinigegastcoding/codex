@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Theoretisch, transparant dossier over de mogelijke organisatie van een economisch-linkse maatschappelijke beweging in Nederland.">
+  <title>Theoretisch campagnedossier — economische linkerzijde</title>
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --ink: #171717;
+      --muted: #655f57;
+      --line: #d7cdbd;
+      --accent: #d95c32;
+      --accent-dark: #87341f;
+      --panel: #fffdf8;
+      --good: #2d684d;
+      --warn: #8a5a18;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent-dark); }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #fffdf8 0%, #f4e7d4 100%);
+      padding: 3.5rem 0 2.5rem;
+    }
+    .eyebrow { color: var(--accent-dark); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; }
+    h1 { max-width: 800px; font-size: clamp(2.3rem, 6vw, 4.8rem); margin: .55rem 0 1rem; letter-spacing: -.04em; }
+    h2 { font-size: clamp(1.75rem, 3vw, 2.55rem); margin: 0 0 1rem; }
+    h3 { font-size: 1.35rem; margin: 1.6rem 0 .5rem; }
+    .lead { max-width: 820px; color: #39342f; font-size: 1.15rem; }
+    .stamp {
+      display: inline-flex; gap: .5rem; align-items: center; margin-top: 1rem;
+      padding: .45rem .7rem; border: 1px solid var(--accent); color: var(--accent-dark);
+      font-size: .86rem; font-weight: 700; transform: rotate(-1deg);
+    }
+    nav { position: sticky; top: 0; z-index: 5; border-bottom: 1px solid var(--line); background: rgba(245,241,232,.94); backdrop-filter: blur(8px); }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: .25rem .9rem; padding: .65rem 0; }
+    nav a { font-size: .9rem; font-weight: 700; text-decoration: none; }
+    main { padding: 2.5rem 0 4rem; }
+    section { scroll-margin-top: 4.5rem; margin: 0 0 3.2rem; }
+    .notice { border-left: 6px solid var(--accent); background: #fff7eb; padding: 1rem 1.2rem; margin: 1.5rem 0 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { grid-column: span 4; border: 1px solid var(--line); background: var(--panel); padding: 1.1rem; }
+    .card.wide { grid-column: span 6; }
+    .card.full { grid-column: 1 / -1; }
+    .card h3 { margin-top: 0; }
+    .metric { font: 800 2rem/1 Georgia, serif; color: var(--accent-dark); }
+    .muted { color: var(--muted); }
+    ul { padding-left: 1.25rem; }
+    li + li { margin-top: .3rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); margin: 1rem 0; font-size: .94rem; }
+    th, td { border: 1px solid var(--line); padding: .65rem .7rem; text-align: left; vertical-align: top; }
+    th { background: #eee4d5; }
+    .status { font-weight: 800; }
+    .good { color: var(--good); }
+    .warn { color: var(--warn); }
+    .receipt {
+      max-width: 390px; margin: 1.2rem 0; padding: 1rem 1.1rem;
+      background: #fff; border: 1px dashed #9e9384; box-shadow: 7px 7px 0 rgba(217,92,50,.16);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .receipt strong { display: block; font-size: 1.05rem; letter-spacing: .04em; }
+    .receipt hr { border: 0; border-top: 1px dashed #9e9384; margin: .6rem 0; }
+    .timeline { border-left: 3px solid var(--accent); padding-left: 1.1rem; }
+    .timeline article { margin: 0 0 1.25rem; }
+    .timeline h3 { margin: 0; }
+    details { border: 1px solid var(--line); background: var(--panel); margin: .65rem 0; }
+    summary { cursor: pointer; padding: .75rem .9rem; font-weight: 800; }
+    details > div { border-top: 1px solid var(--line); padding: .8rem .9rem; }
+    .pill { display: inline-block; margin: .15rem .25rem .15rem 0; padding: .2rem .5rem; border-radius: 999px; background: #eadcc9; font-size: .82rem; }
+    footer { border-top: 1px solid var(--line); padding: 1.5rem 0 3rem; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 760px) {
+      .card, .card.wide { grid-column: 1 / -1; }
+      table { display: block; overflow-x: auto; }
+      nav .wrap { gap: .4rem .7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <div class="wrap">
+      <div class="eyebrow">Synthese van reports 1–6 · 8 september 2026</div>
+      <h1>Nederland werkt.<br>De rekening klopt niet.</h1>
+      <p class="lead">Een theoretisch, transparant dossier over waar een economisch-linkse maatschappelijke beweging mogelijk ruimte ziet — en welke data zouden bewijzen dat die hypothese niet klopt.</p>
+      <div class="stamp">OBJECTIEF SCENARIO · GEEN NEP-OPERATIES · BRONNEN EERST</div>
+    </div>
+  </header>
+
+  <nav aria-label="Hoofdnavigatie">
+    <div class="wrap">
+      <a href="#kern">Kern</a>
+      <a href="#audit">Report-audit</a>
+      <a href="#scenario">Scenario</a>
+      <a href="#media">Media & organisatie</a>
+      <a href="#budget">Budget</a>
+      <a href="#falsificatie">Falsificatie</a>
+      <a href="#bronnen">Bronnen</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <div class="notice" role="note">
+      <strong>Afgebakende status.</strong> Dit is theoretische analyse en openbare informatie-infrastructuur. Het bevat geen instructies voor nepaccounts, astroturfing, misleidende claims, verborgen financiering, microtargeting of individuele politieke profiling. Lees de volledige werkwijze in <a href="00_overzicht_en_werkwijze.md">00_overzicht_en_werkwijze.md</a>.
+    </div>
+
+    <section id="kern">
+      <h2>De kern in 60 seconden</h2>
+      <div class="grid">
+        <div class="card"><div class="metric">Wonen</div><p>Breed belangrijk en minder sterk door één partij geclaimd. Combineer huur, grond, bouw, vergunningen, netcapaciteit en eigendom.</p></div>
+        <div class="card"><div class="metric">Werk</div><p>Maak loon, roosters, flexwerk, schijnzelfstandigheid en risicoverdeling concreet. Een klasseverhaal moet uitvoerbaar worden.</p></div>
+        <div class="card"><div class="metric">Zorg</div><p>Meet tijd, toegang, personeel en bureaucratie. “Meer geld” zonder capaciteit en financiering is geen plan.</p></div>
+        <div class="card wide"><h3>De strategische hypothese</h3><p>Economische gelijkheid, publieke voorzieningen en machtsverdeling kunnen mogelijk worden georganiseerd zonder één cultureel-progressief totaalpakket te eisen. Dat is een te testen hypothese, geen verborgen meerderheid.</p></div>
+        <div class="card wide"><h3>De organisatorische keuze</h3><p>Beweging eerst. Bouw lokale dossiers, retentie, expertise en transparantie. Beslis pas na 12–24 maanden of verkiezingsdeelname of samenwerking meerwaarde heeft.</p></div>
+      </div>
+    </section>
+
+    <section id="audit">
+      <h2>Wat de reports opleveren</h2>
+      <p>Reports 1, 2, 5 en 6 vormen de evidence-first basis. Reports 3 en 4 zijn identiek en worden vooral gebruikt als contrasterend voorbeeld van ideeën die niet werken of niet verantwoord zijn.</p>
+      <table>
+        <thead><tr><th>Bron</th><th>Overgenomen</th><th>Beoordeling</th></tr></thead>
+        <tbody>
+          <tr><td>Report 1</td><td>issue ownership, lokale luistercyclus, uitvoering en falsificatie</td><td class="status good">sterke basis; kanaalambitie teruggebracht</td></tr>
+          <tr><td>Report 2</td><td>rekeningframe, open dossiers, accountarchitectuur, eerste 100 dagen</td><td class="status good">bruikbaar als scenario; formats blijven prototypes</td></tr>
+          <tr><td>Report 3/4</td><td>alleen creatieve contrasten zoals kassabon/baksteen</td><td class="status warn">nepaccounts, lichte leugens, infiltratie en ontwijking afgewezen</td></tr>
+          <tr><td>Report 5</td><td>methodologie, costing, privacy, governance en 24-maandenplan</td><td class="status good">meest voorzichtig; enkele cijfers opnieuw controleren</td></tr>
+          <tr><td>Report 6</td><td>anti-establishment ≠ anti-institutioneel; bron-naar-content-flow</td><td class="status good">sterkste eindbalans; bronconflicten behouden</td></tr>
+        </tbody>
+      </table>
+      <p><a href="01_audit_reports_1-6.md">Lees de volledige report-audit →</a></p>
+    </section>
+
+    <section id="scenario">
+      <h2>Het theoretische scenario</h2>
+      <div class="grid">
+        <div class="card"><h3>Materieel</h3><p>Wonen, werk, zorg, energie en vaste lasten. Niet alleen wat iets kost, maar wie risico draagt en wie rendement ontvangt.</p></div>
+        <div class="card"><h3>Laag in temperatuur</h3><p>Geen culturele identiteit als hoofdproduct. Wel duidelijke antwoorden op migratie, klimaat en EU wanneer beleid en uitvoering dat vereisen.</p></div>
+        <div class="card"><h3>Institutioneel precies</h3><p>Geen vaag “kartel”. Benoem bevoegdheid, contract, geldstroom, resultaat, wederhoor en concrete wijziging.</p></div>
+        <div class="card full"><h3>Creatieve hypothese</h3><div class="receipt"><strong>DE REKENING</strong><span>huur · zorg · loon · energie</span><hr><span>bron: openbaar dossier</span><br><span>datum: 08-09-2026</span><br><strong>Geen complotten. Contracten.</strong></div><p class="muted">De kassabon is een testbaar visueel idee, geen definitief logo. De baksteen is directer maar draagt meer associaties met vernieling en confrontatie.</p></div>
+      </div>
+      <h3>Tekstuele prototypes</h3>
+      <span class="pill">Vrij in je leven. Zeker in je bestaan.</span>
+      <span class="pill">Leg de rekening waar het geld zit.</span>
+      <span class="pill">Meer loon. Minder lek.</span>
+      <span class="pill">Een huis is om in te wonen.</span>
+      <span class="pill">Wie beslist, legt de rekening uit.</span>
+      <p class="muted">Deze regels zijn onderzoeksmateriaal. Ze zijn niet getest en worden niet als bewezen effectieve overtuigingstechniek gepresenteerd.</p>
+      <p><a href="02_theoretisch_scenario_plan.md">Lees het volledige scenario-plan →</a></p>
+    </section>
+
+    <section id="media">
+      <h2>Media, accounts en organisatie</h2>
+      <div class="grid">
+        <div class="card wide"><h3>Accountregel</h3><p>Één herkenbare nationale identiteit per gebruikt platform. Research desk alleen als bronnen en correcties kunnen worden bijgehouden. Lokale accounts alleen met echte lokale teams.</p></div>
+        <div class="card wide"><h3>Geen schaduwnetwerk</h3><p>Geen anonieme meme-accounts, geen onafhankelijke burgerinitiatieven simuleren, geen gekochte engagement, geen verborgen creatorbetalingen.</p></div>
+        <div class="card full"><h3>Bron → uitleg → correctie</h3><p>Iedere publicatie begint bij een bronbestand en eindigt bij een openbaar bronnenblad en correctielog. Een dossier kan worden afgeleid tot een samenvatting, video, visualisatie, Q&A en lokale factsheet — maar niet tot vijf verschillende feiten.</p></div>
+      </div>
+      <div class="timeline">
+        <article><h3>Dag 1–14 · fundament</h3><p>Juridische vorm, privacy, bronarchief, drie pilots, 20–30 interviews, minimale site en nieuwsbrief.</p></article>
+        <article><h3>Dag 15–45 · luisteren</h3><p>Openbare rekeningavond of woon-/zorgtafel, eerste dossier, externe kritiek en geaggregeerde verslaglegging.</p></article>
+        <article><h3>Dag 46–100 · reproduceerbaarheid</h3><p>Hetzelfde format in drie gebieden; tweede activiteit, financiële tussenstand, wederhoor en schaalbesluit.</p></article>
+      </div>
+      <p><a href="03_onderzoek_media_organisatie.md">Lees het onderzoeks-, media- en organisatiemodel →</a></p>
+    </section>
+
+    <section id="budget">
+      <h2>Indicatief laagbudgetscenario</h2>
+      <p>€50.000 is genoeg voor een proof-of-concept, niet voor nationale dominantie.</p>
+      <table>
+        <thead><tr><th>Post</th><th>Bedrag</th><th>Waarom</th></tr></thead>
+        <tbody>
+          <tr><td>Juridisch, boekhouding, privacy, verzekering</td><td>€7.500</td><td>basis-compliance</td></tr>
+          <tr><td>Onderzoek, interviews, data</td><td>€10.000</td><td>representation-gap en dossiers</td></tr>
+          <tr><td>Site, nieuwsbrief, minimale administratie</td><td>€6.000</td><td>eigen bron en directe distributie</td></tr>
+          <tr><td>Lokale bijeenkomsten, materiaal, reizen</td><td>€10.000</td><td>drie pilots</td></tr>
+          <tr><td>Audio/video/editing</td><td>€5.000</td><td>begrijpelijke afleidingen</td></tr>
+          <tr><td>Training vrijwilligers</td><td>€5.000</td><td>veiligheid en retentie</td></tr>
+          <tr><td>Reserve</td><td>€6.500</td><td>onvoorziene kosten en correcties</td></tr>
+          <tr><th>Totaal</th><th>€50.000</th><th></th></tr>
+        </tbody>
+      </table>
+      <p class="muted">Dit zijn indicatieve scenario-bedragen uit de synthese, geen offerte of financieel advies.</p>
+    </section>
+
+    <section id="falsificatie">
+      <h2>Wanneer moet het plan worden gestopt?</h2>
+      <div class="grid">
+        <div class="card"><h3>Inhoud</h3><p>Geen verbreding buiten PRO/SP/PvdD/DENK-achtige kringen, of geen aantoonbare issue-associatie op wonen, zorg en werk.</p></div>
+        <div class="card"><h3>Organisatie</h3><p>Lokale groepen verdwijnen zodra centrale staf wegvalt; tweede activiteit en leiderschapsopvolging blijven laag.</p></div>
+        <div class="card"><h3>Media</h3><p>Bereik groeit, maar begrip en vertrouwen niet; earned media bestaat vooral uit controverse en correcties stapelen zich op.</p></div>
+        <div class="card full"><h3>Economische geloofwaardigheid</h3><p>De kernvoorstellen houden geen onafhankelijke costing, juridische toets of uitvoeringskritiek vol. Dan moet het beleid veranderen — niet de rekenmethode worden aangevallen.</p></div>
+      </div>
+    </section>
+
+    <section id="bronnen">
+      <h2>Bronnen en open onzekerheden</h2>
+      <details open>
+        <summary>Bevestigde ankers</summary>
+        <div>
+          <ul>
+            <li><a href="https://www.kiesraad.nl/actueel/nieuws/2025/11/7/kiesraad-uitslag-tweede-kamerverkiezing-betrouwbaar">Kiesraad: uitslag en opkomst 2025</a></li>
+            <li><a href="https://www.ipsos-publiek.nl/actueel/ipsos-io-zetelpeiling-kiezers-reageren-afkeurend-op-kabinet-richting-prinsjesdag/">Ipsos I&amp;O: septemberpeiling 2026</a></li>
+            <li><a href="https://www.uva.nl/content/nieuws/persberichten/2026/06/de-nederlandse-kiezer-beweeglijk-maar-niet-willekeurig.html">UvA/SKON: NKO 2025</a></li>
+            <li><a href="https://www.scp.nl/actueel/nieuws/2026/03/03/onbekendheid-met-lokale-politiek-is-risico-voor-vertrouwen-in-gemeentebestuur">SCP: lokaal versus landelijk vertrouwen</a></li>
+            <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024R0900">EUR-Lex: politieke reclame en targeting</a></li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary>Open bronconflicten</summary>
+        <div>
+          <p>De Peilingwijzer-pagina wordt in de beschikbare webweergave tegenstrijdig gedateerd op juli versus de 4-september-update. Gebruik voor actuele cijfers de Ipsos-pagina met veldwerkdatum. Ook het 2026-box-3-heffingsvrije vermogen verschijnt als €51.396 in een beleidsdocument en als €58.568 op de actuele publieke belastingpagina. Geen van beide bedragen wordt hier als beleidsbelofte gebruikt.</p>
+        </div>
+      </details>
+      <p><a href="04_bronnen_factcheck_en_open_punten.md">Lees de volledige factchecklog en research backlog →</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>Laatste controle:</strong> 8 september 2026 · lokaal bestand · geen externe libraries.</p>
+      <p><a href="#top">Terug naar boven ↑</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "source_id": "tailwind-css",
+  "source_name": "Tailwind CSS",
+  "source_url": "https://github.com/tailwindlabs/tailwindcss",
+  "license": "MIT",
+  "license_url": "https://github.com/tailwindlabs/tailwindcss/blob/main/LICENSE",
+  "terms_url": "https://tailwindcss.com/docs",
+  "attribution": "Preserve the MIT notice when redistributing the framework code.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "tailwindlabs",
+    "repository": "tailwindcss"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:28:17.334Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/README.md",
+      "bytes": 1838,
+      "sha256": "a7db79d5cd483c6f6d1a51f4042e32598ec39e2391a5dd5be62a71d59299cda8"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    }
+  ]
+}

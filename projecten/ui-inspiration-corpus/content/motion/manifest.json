@@ -1,0 +1,31 @@
+{
+  "source_id": "motion",
+  "source_name": "Motion",
+  "source_url": "https://github.com/motiondivision/motion",
+  "license": "MIT",
+  "license_url": "https://github.com/motiondivision/motion/blob/main/LICENSE.md",
+  "terms_url": "https://motion.dev/",
+  "attribution": "Preserve the MIT notice.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "motiondivision",
+    "repository": "motion"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:10.227Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/motiondivision/motion/HEAD/README.md",
+      "bytes": 6300,
+      "sha256": "d3e3bdca2f42ae0ba7e0ddc36c4858b815897de89b457bdceb8418624eb35c2b"
+    },
+    {
+      "path": "LICENSE.md",
+      "source_url": "https://raw.githubusercontent.com/motiondivision/motion/HEAD/LICENSE.md",
+      "bytes": 1100,
+      "sha256": "1bf0dc3f7727723e5a032ed12164a47cf92c05204cb1a3485f123c24e2833ed1"
+    }
+  ]
+}

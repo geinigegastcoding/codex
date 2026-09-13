@@ -1,0 +1,31 @@
+{
+  "source_id": "hyperui",
+  "source_name": "HyperUI",
+  "source_url": "https://github.com/markmead/hyperui",
+  "license": "MIT",
+  "license_url": "https://github.com/markmead/hyperui/blob/main/LICENSE",
+  "terms_url": "https://www.hyperui.dev/blog/faqs/",
+  "attribution": "Preserve the MIT notice.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "markmead",
+    "repository": "hyperui"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:05.161Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/markmead/hyperui/HEAD/README.md",
+      "bytes": 781,
+      "sha256": "df252bda60aae4faafc147a6010aabf6538e8c6b091893433d37b1237ebff162"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/markmead/hyperui/HEAD/LICENSE",
+      "bytes": 1061,
+      "sha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98"
+    }
+  ]
+}

@@ -1,118 +1,170 @@
-import { useEffect, useMemo, useState } from 'react'
-import {
-  Badge,
-  Button,
-  Card,
-  Divider,
-  FluentProvider,
-  Input,
-  ProgressBar,
-  Select,
-  Tab,
-  TabList,
-  createLightTheme,
-} from '@fluentui/react-components'
-import {
-  ArrowLeftRegular,
-  ArrowRightRegular,
-  ArrowRotateClockwiseRegular,
-  BookOpenRegular,
-  BookmarkFilled,
-  BookmarkRegular,
-  CheckmarkCircleFilled,
-  CheckmarkRegular,
-  ChevronRightRegular,
-  ClockRegular,
-  DataBarVerticalRegular,
-  DismissCircleFilled,
-  FilterRegular,
-  HomeRegular,
-  LightbulbRegular,
-  PlayRegular,
-  SearchRegular,
-  SettingsRegular,
-  SparkleRegular,
-  TargetArrowRegular,
-  TrophyRegular,
-} from '@fluentui/react-icons'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import {
   categories,
-  categoryLabels,
   fallacies,
   fallacyById,
+  questions,
   type Category,
   type Difficulty,
   type Fallacy,
+  type PracticeMode,
   type Question,
 } from './data'
 import {
-  buildQuestionQueue,
+  addSession,
   defaultSettings,
+  getAccuracy,
   getCategoryStats,
   getMastery,
-  getOverallStats,
   getQuestionById,
-  getWeakestFallacies,
-  isLearned,
+  getStats,
+  getWeakSpots,
   loadState,
   recordAnswer,
+  selectQuestions,
   toggleId,
-  type AnswerRecord,
   type AppState,
-  type Mastery,
   type PracticeSettings,
 } from './learning'
 import './App.css'
 
-const fallacyTheme = createLightTheme({
-  10: '#f5fbf6',
-  20: '#e9f5eb',
-  30: '#d8ebdc',
-  40: '#c5e0cb',
-  50: '#acd2b7',
-  60: '#91c2a2',
-  70: '#74b18c',
-  80: '#5ca27b',
-  90: '#468f69',
-  100: '#347f5b',
-  110: '#286e4e',
-  120: '#205e42',
-  130: '#1a4e37',
-  140: '#143f2c',
-  150: '#0f3223',
-  160: '#092619',
-})
+type View = 'home' | 'library' | 'practice' | 'progress' | 'detail'
+type LibraryFilter = 'all' | 'needs-work' | 'strong' | 'saved'
+type IconName =
+  | 'home'
+  | 'book'
+  | 'target'
+  | 'chart'
+  | 'search'
+  | 'arrow'
+  | 'chevron'
+  | 'bookmark'
+  | 'check'
+  | 'clock'
+  | 'spark'
+  | 'moon'
+  | 'sun'
+  | 'flame'
+  | 'refresh'
+  | 'brain'
+  | 'play'
+  | 'timer'
+  | 'quote'
+  | 'filter'
+  | 'close'
+  | 'info'
 
-type View = 'home' | 'practice' | 'library' | 'progress' | 'detail'
-type LibraryFilter = 'all' | 'beginner' | 'learned' | 'unlearned' | 'hard'
+const iconPaths: Record<IconName, string> = {
+  home: 'M3 10.8 12 3l9 7.8v8.7a1.5 1.5 0 0 1-1.5 1.5h-4.3v-6.2H8.8V21H4.5A1.5 1.5 0 0 1 3 19.5v-8.7Z',
+  book: 'M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5m0-16v16m3-13h9m-9 4h7',
+  target: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-4.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-4.5h.01',
+  chart: 'M4 19.5V14m5 5.5V9m5 10.5V4.5m5 15V12',
+  search: 'm20 20-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z',
+  arrow: 'M5 12h13m-5-5 5 5-5 5',
+  chevron: 'm9 5 7 7-7 7',
+  bookmark: 'M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-3.5L6 21V4.5Z',
+  check: 'm5 12.5 4.2 4.2L19 7',
+  clock: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-14v5l3.5 2',
+  spark: 'm12 3 1.1 5.2L18 10l-4.9 1.8L12 17l-1.1-5.2L6 10l4.9-1.8L12 3Zm6.3 11.8.5 2.4 2.2.8-2.2.8-.5 2.4-.5-2.4-2.2-.8 2.2-.8.5-2.4Z',
+  moon: 'M20.8 15.2A8.8 8.8 0 0 1 8.8 3.2a9 9 0 1 0 12 12Z',
+  sun: 'M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z',
+  flame: 'M12.5 21c4.2 0 7-2.5 7-6.4 0-3.3-2.1-5.2-4.1-7.5-.6 2-1.5 3.1-2.4 3.8.2-3.8-1.6-6.3-4.6-8.9.1 3.5-3.8 5.6-3.8 10.1C4.6 17.9 7.6 21 12.5 21Zm-.2-2.5c-1.7 0-3-1.2-3-2.9 0-1.1.6-2.2 1.7-3.4.1 1.4.7 2.3 1.6 3 .2-.6.5-1.1 1-1.8.6.8 1 1.5 1 2.3 0 1.7-1.3 2.8-3.3 2.8Z',
+  refresh: 'M20 11a8.1 8.1 0 0 0-14.7-3L3 11m0 0V5m0 6h6m-5 2a8.1 8.1 0 0 0 14.7 3L21 13m0 0v6m0-6h-6',
+  brain: 'M9.2 4.1A3.2 3.2 0 0 0 6 7.3c0 .3 0 .6.1.9A3.7 3.7 0 0 0 4 11.5a3.6 3.6 0 0 0 2.1 3.3A3.2 3.2 0 0 0 9 20a3.1 3.1 0 0 0 3-2.2 3.1 3.1 0 0 0 3 2.2 3.2 3.2 0 0 0 2.9-5.2 3.6 3.6 0 0 0 2.1-3.3 3.7 3.7 0 0 0-2.1-3.3A3.2 3.2 0 0 0 15 4.1a3.1 3.1 0 0 0-3 2.2 3.1 3.1 0 0 0-2.8-2.2ZM12 6.5V18m-3-6h3m3-2h-3',
+  play: 'M8 5.3a1.5 1.5 0 0 1 2.3-1.2l8.2 6.1a2.2 2.2 0 0 1 0 3.6l-8.2 6.1A1.5 1.5 0 0 1 8 18.7V5.3Z',
+  timer: 'M9 2h6m-3 0v3m7.1.9 1.4-1.4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-4v4l2.8 1.8',
+  quote: 'M9.2 11.2H5.5A1.5 1.5 0 0 0 4 12.7v4.8A1.5 1.5 0 0 0 5.5 19h3.7a1.5 1.5 0 0 0 1.5-1.5v-7A4.5 4.5 0 0 0 6.2 6H5.5m9.3 5.2h3.7a1.5 1.5 0 0 1 1.5 1.5v4.8a1.5 1.5 0 0 1-1.5 1.5h-3.7a1.5 1.5 0 0 1-1.5-1.5v-7A4.5 4.5 0 0 1 17.8 6h.7',
+  filter: 'M4 5h16M7 12h10m-6 7h2',
+  close: 'm6 6 12 12M18 6 6 18',
+  info: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-10v5m0-8h.01',
+}
 
-const navigation: { id: Exclude<View, 'detail' | 'practice'>; label: string; hint: string }[] = [
-  { id: 'home', label: 'Overzicht', hint: 'Je startpunt' },
-  { id: 'library', label: 'Bibliotheek', hint: 'Alle fallacies' },
-  { id: 'progress', label: 'Voortgang', hint: 'Je leerpatroon' },
+const navItems: { id: Exclude<View, 'detail'>; label: string; note: string; icon: IconName }[] = [
+  { id: 'home', label: 'Today', note: 'Your starting point', icon: 'home' },
+  { id: 'library', label: 'Learn', note: 'The field guide', icon: 'book' },
+  { id: 'practice', label: 'Practice', note: 'Train your radar', icon: 'target' },
+  { id: 'progress', label: 'Progress', note: 'Patterns over time', icon: 'chart' },
 ]
+
+const modeMeta: Record<PracticeMode, { label: string; eyebrow: string; description: string; detail: string; icon: IconName; className: string }> = {
+  identify: {
+    label: 'Identify the fallacy',
+    eyebrow: 'Name the move',
+    description: 'Read a real-world argument and choose the pattern hiding inside it.',
+    detail: 'Multiple choice · 5 min',
+    icon: 'target',
+    className: 'mode-lime',
+  },
+  valid: {
+    label: 'Fallacy or valid?',
+    eyebrow: 'Keep your skepticism honest',
+    description: 'Not every imperfect argument is a fallacy. Decide when the reasoning holds up.',
+    detail: 'Binary calls · 4 min',
+    icon: 'check',
+    className: 'mode-teal',
+  },
+  scenario: {
+    label: 'Scenario analysis',
+    eyebrow: 'Slow down the claim',
+    description: 'Unpack longer debates, ads, and conversations with a full explanation after your call.',
+    detail: 'Deep reads · 8 min',
+    icon: 'quote',
+    className: 'mode-violet',
+  },
+  speed: {
+    label: 'Speed round',
+    eyebrow: 'Build your streak',
+    description: 'Quick decisions against the clock. Can you keep a clear head when the timer talks back?',
+    detail: '45 seconds · best score',
+    icon: 'timer',
+    className: 'mode-orange',
+  },
+}
+
+function Icon({ name, size = 18 }: { name: IconName; size?: number }) {
+  return (
+    <svg className="icon" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+      <path d={iconPaths[name]} />
+    </svg>
+  )
+}
 
 function App() {
   const [state, setState] = useState<AppState>(() => loadState())
   const [view, setView] = useState<View>('home')
   const [selectedFallacyId, setSelectedFallacyId] = useState(fallacies[0].id)
-  const [sessionSettings, setSessionSettings] = useState<PracticeSettings>(defaultSettings)
-  const [sessionKey, setSessionKey] = useState(0)
+  const [activeMode, setActiveMode] = useState<PracticeMode | null>(null)
+  const [practiceKey, setPracticeKey] = useState(0)
   const [toast, setToast] = useState('')
-  const stats = getOverallStats(state)
+  const stats = useMemo(() => getStats(state), [state])
 
   useEffect(() => {
-    localStorage.setItem('fallacy-lab-state-v1', JSON.stringify(state))
+    window.localStorage.setItem('signal-noise-fallacy-lab-v1', JSON.stringify(state))
   }, [state])
 
   useEffect(() => {
+    document.documentElement.dataset.theme = state.theme
+  }, [state.theme])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [view, practiceKey, selectedFallacyId])
+
+  useEffect(() => {
     if (!toast) return undefined
-    const timeout = window.setTimeout(() => setToast(''), 2400)
+    const timeout = window.setTimeout(() => setToast(''), 2600)
     return () => window.clearTimeout(timeout)
   }, [toast])
 
   function navigate(nextView: View) {
     setView(nextView)
+    if (nextView !== 'practice') setActiveMode(null)
+  }
+
+  function startPractice(mode?: PracticeMode) {
+    setActiveMode(mode ?? null)
+    setPracticeKey((value) => value + 1)
+    setView('practice')
   }
 
   function openFallacy(id: string) {
@@ -120,423 +172,358 @@ function App() {
     setView('detail')
   }
 
-  function startPractice(overrides: Partial<PracticeSettings> = {}) {
-    const nextSettings = { ...state.settings, ...overrides }
-    setState((current) => ({ ...current, settings: nextSettings }))
-    setSessionSettings(nextSettings)
-    setSessionKey((key) => key + 1)
-    setView('practice')
-  }
-
-  function updateSettings(nextSettings: PracticeSettings) {
-    setState((current) => ({ ...current, settings: nextSettings }))
-    setSessionSettings(nextSettings)
-  }
-
-  function toggleBookmark(id: string) {
-    setState((current) => ({ ...current, bookmarkedIds: toggleId(current.bookmarkedIds, id) }))
-    setToast(state.bookmarkedIds.includes(id) ? 'Verwijderd uit opgeslagen fallacies' : 'Fallacy opgeslagen')
+  function toggleSaved(id: string) {
+    const wasSaved = state.savedIds.includes(id)
+    setState((current) => ({ ...current, savedIds: toggleId(current.savedIds, id) }))
+    setToast(wasSaved ? 'Removed from your saved list' : 'Saved to your field notes')
   }
 
   function toggleLearned(id: string) {
-    const wasMarked = state.learnedIds.includes(id)
+    const wasLearned = state.learnedIds.includes(id)
     setState((current) => ({ ...current, learnedIds: toggleId(current.learnedIds, id) }))
-    setToast(wasMarked ? 'Gemarkeerd als nieuw' : 'Gemarkeerd als geleerd')
+    setToast(wasLearned ? 'Moved back to your learning queue' : 'Marked as familiar')
   }
 
-  function saveAnswer(input: Omit<AnswerRecord, 'answeredAt' | 'nextReviewAt' | 'reviewStage'>) {
-    setState((current) => recordAnswer(current, input))
+  function saveAnswer(answer: Parameters<typeof recordAnswer>[1]) {
+    setState((current) => recordAnswer(current, answer))
+  }
+
+  function saveSession(session: Parameters<typeof addSession>[1]) {
+    setState((current) => addSession(current, session))
+  }
+
+  function toggleTheme() {
+    setState((current) => ({ ...current, theme: current.theme === 'dark' ? 'light' : 'dark' }))
+  }
+
+  function resetProgress() {
+    if (!window.confirm('Reset all local answers, saved notes, and session history?')) return
+    setState((current) => ({ ...current, answers: [], sessions: [], savedIds: [], learnedIds: [] }))
+    setToast('Local progress reset')
   }
 
   return (
-    <FluentProvider theme={fallacyTheme} className="app-provider">
-      <div className="app-shell">
-        <aside className="sidebar" aria-label="Hoofdnavigatie">
-          <div className="brand-lockup">
-            <div className="brand-mark" aria-hidden="true">F</div>
-            <div>
-              <strong>Fallacy Lab</strong>
-              <span>Leer scherper denken</span>
-            </div>
-          </div>
+    <div className="app-shell">
+      <aside className="sidebar" aria-label="Main navigation">
+        <button type="button" className="brand" onClick={() => navigate('home')} aria-label="Signal / Noise home">
+          <span className="brand-mark"><span>S</span><span>N</span></span>
+          <span className="brand-type"><strong>signal / noise</strong><small>fallacy lab</small></span>
+        </button>
 
-          <div className="sidebar-section-label">Werkruimte</div>
-          <nav className="sidebar-nav">
-            {navigation.map((item) => (
-              <Button
-                key={item.id}
-                appearance="subtle"
-                className={`nav-button ${view === item.id || (view === 'detail' && item.id === 'library') ? 'is-active' : ''}`}
-                icon={navIcon(item.id)}
-                onClick={() => navigate(item.id)}
-              >
-                <span>{item.label}</span>
-                <small>{item.hint}</small>
-              </Button>
-            ))}
-          </nav>
-
-          <div className="sidebar-spacer" />
-          <Card className="sidebar-progress-card">
-            <div className="eyebrow">Jouw leerpad</div>
-            <div className="sidebar-progress-row">
-              <strong>{stats.learned}</strong>
-              <span>van {fallacies.length} geleerd</span>
-            </div>
-            <ProgressBar value={stats.learned / fallacies.length} />
-            <button type="button" className="text-link" onClick={() => navigate('progress')}>
-              Bekijk voortgang <ArrowRightRegular />
-            </button>
-          </Card>
-          <div className="sidebar-footer">
-            <span className="status-dot" />
-            <span>Lokale opslag actief</span>
-          </div>
-        </aside>
-
-        <div className="content-shell">
-          <header className="topbar">
-            <div className="mobile-brand">
-              <div className="brand-mark small" aria-hidden="true">F</div>
-              <strong>Fallacy Lab</strong>
-            </div>
-            <div className="topbar-context">
-              <span className="context-dot" />
-              <span>{stats.learned ? `${stats.learned} fallacies in beweging` : 'Je eerste sessie wacht'}</span>
-            </div>
-            <div className="topbar-actions">
-              <span className="saved-count"><BookmarkFilled /> {state.bookmarkedIds.length}</span>
-              <Button appearance="primary" size="small" icon={<PlayRegular />} onClick={() => startPractice()}>
-                Snel oefenen
-              </Button>
-            </div>
-          </header>
-
-          <main className="main-content">
-            {view === 'home' && (
-              <Dashboard
-                state={state}
-                onStartPractice={() => startPractice()}
-                onWeakPractice={() => startPractice({ source: 'errors' })}
-                onOpenLibrary={() => navigate('library')}
-                onOpenFallacy={openFallacy}
-              />
-            )}
-            {view === 'library' && (
-              <Library
-                state={state}
-                onOpenFallacy={openFallacy}
-                onToggleBookmark={toggleBookmark}
-              />
-            )}
-            {view === 'detail' && (
-              <FallacyDetail
-                state={state}
-                fallacyId={selectedFallacyId}
-                onBack={() => navigate('library')}
-                onOpenFallacy={openFallacy}
-                onToggleBookmark={toggleBookmark}
-                onToggleLearned={toggleLearned}
-                onStartPractice={() => startPractice({ category: fallacyById[selectedFallacyId]?.category ?? 'all' })}
-              />
-            )}
-            {view === 'progress' && (
-              <ProgressView
-                state={state}
-                onStartPractice={startPractice}
-                onOpenFallacy={openFallacy}
-              />
-            )}
-            {view === 'practice' && (
-              <PracticeView
-                key={sessionKey}
-                state={state}
-                settings={sessionSettings}
-                onClose={() => navigate('home')}
-                onAnswer={saveAnswer}
-                onRestart={(nextSettings) => {
-                  updateSettings(nextSettings)
-                  setSessionKey((key) => key + 1)
-                }}
-              />
-            )}
-          </main>
-        </div>
-
-        <nav className="mobile-nav" aria-label="Mobiele navigatie">
-          {navigation.map((item) => (
+        <div className="sidebar-label">Workspace</div>
+        <nav className="sidebar-nav">
+          {navItems.map((item) => (
             <button
-              key={item.id}
               type="button"
-              className={view === item.id || (view === 'detail' && item.id === 'library') ? 'is-active' : ''}
-              onClick={() => navigate(item.id)}
+              key={item.id}
+              className={['nav-item', view === item.id || (view === 'detail' && item.id === 'library') ? 'is-active' : ''].filter(Boolean).join(' ')}
+              onClick={() => item.id === 'practice' ? startPractice() : navigate(item.id)}
             >
-              {navIcon(item.id)}
-              <span>{item.label}</span>
+              <span className="nav-icon"><Icon name={item.icon} /></span>
+              <span className="nav-copy"><strong>{item.label}</strong><small>{item.note}</small></span>
+              {item.id === 'practice' && state.answers.some((answer) => !answer.isCorrect) && <span className="nav-dot" aria-label="You have mistakes to revisit" />}
             </button>
           ))}
-          <button type="button" className={view === 'practice' ? 'is-active' : ''} onClick={() => startPractice()}>
-            <TargetArrowRegular />
-            <span>Oefenen</span>
-          </button>
         </nav>
 
-        {toast && <div className="toast" role="status">{toast}</div>}
+        <div className="sidebar-spacer" />
+        <div className="local-card">
+          <div className="local-card-top"><span className="live-dot" /><span>Local only</span><Icon name="info" size={14} /></div>
+          <p>Your answers stay in this browser. No account, no cloud, no noise.</p>
+        </div>
+        <button type="button" className="theme-toggle" onClick={toggleTheme}>
+          <span className="theme-icon"><Icon name={state.theme === 'dark' ? 'sun' : 'moon'} size={16} /></span>
+          <span>{state.theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
+        </button>
+      </aside>
+
+      <div className="app-main">
+        <header className="topbar">
+          <div className="mobile-brand">
+            <span className="brand-mark compact"><span>S</span><span>N</span></span>
+            <strong>signal / noise</strong>
+          </div>
+          <div className="topbar-context">
+            <span className="live-dot" />
+            <span>Private practice room</span>
+          </div>
+          <div className="topbar-actions">
+            <button type="button" className="saved-pill" aria-label={'Open saved field notes (' + state.savedIds.length + ')'} onClick={() => { navigate('library'); setToast('Showing the field guide — use Saved to filter your notes') }}>
+              <Icon name="bookmark" size={16} /> <span>{state.savedIds.length}</span>
+            </button>
+            <button type="button" className="topbar-cta" onClick={() => startPractice('identify')}>
+              <Icon name="play" size={14} /> Quick practice
+            </button>
+          </div>
+        </header>
+
+        <main className="main-content">
+          {view === 'home' && (
+            <Home
+              state={state}
+              stats={stats}
+              onPractice={startPractice}
+              onOpenLibrary={() => navigate('library')}
+              onOpenProgress={() => navigate('progress')}
+              onOpenFallacy={openFallacy}
+            />
+          )}
+          {view === 'library' && (
+            <Library state={state} onOpen={openFallacy} onToggleSaved={toggleSaved} />
+          )}
+          {view === 'detail' && (
+            <FallacyDetail
+              state={state}
+              fallacyId={selectedFallacyId}
+              onBack={() => navigate('library')}
+              onOpen={openFallacy}
+              onToggleSaved={toggleSaved}
+              onToggleLearned={toggleLearned}
+              onPractice={() => startPractice('identify')}
+            />
+          )}
+          {view === 'progress' && (
+            <Progress
+              state={state}
+              stats={stats}
+              onPractice={startPractice}
+              onOpen={openFallacy}
+              onReset={resetProgress}
+            />
+          )}
+          {view === 'practice' && (
+            activeMode ? (
+              <PracticeSession
+                key={practiceKey}
+                state={state}
+                mode={activeMode}
+                settings={defaultSettings}
+                onAnswer={saveAnswer}
+                onSessionComplete={saveSession}
+                onBack={() => { setActiveMode(null); setView('practice') }}
+                onExit={() => navigate('home')}
+                onStartAgain={() => { setPracticeKey((value) => value + 1) }}
+              />
+            ) : (
+              <PracticeHub state={state} onStart={startPractice} />
+            )
+          )}
+        </main>
       </div>
-    </FluentProvider>
+
+      <nav className="mobile-nav" aria-label="Mobile navigation">
+        {navItems.map((item) => (
+          <button
+            type="button"
+            key={item.id}
+            className={view === item.id || (view === 'detail' && item.id === 'library') ? 'is-active' : ''}
+            onClick={() => item.id === 'practice' ? startPractice() : navigate(item.id)}
+          >
+            <Icon name={item.icon} size={19} />
+            <span>{item.label}</span>
+          </button>
+        ))}
+      </nav>
+
+      {toast && <div className="toast" role="status"><Icon name="check" size={15} />{toast}</div>}
+    </div>
   )
 }
 
-function Dashboard({
+function Home({
   state,
-  onStartPractice,
-  onWeakPractice,
+  stats,
+  onPractice,
   onOpenLibrary,
+  onOpenProgress,
   onOpenFallacy,
 }: {
   state: AppState
-  onStartPractice: () => void
-  onWeakPractice: () => void
+  stats: ReturnType<typeof getStats>
+  onPractice: (mode?: PracticeMode) => void
   onOpenLibrary: () => void
+  onOpenProgress: () => void
   onOpenFallacy: (id: string) => void
 }) {
-  const stats = getOverallStats(state)
-  const weakest = getWeakestFallacies(state).slice(0, 3)
-  const latestAnswer = state.answers[0]
-  const continueFallacy = latestAnswer?.fallacyId ? fallacyById[latestAnswer.fallacyId] : fallacies[0]
-  const dailyProgress = state.answers.filter((answer) => new Date(answer.answeredAt).toDateString() === new Date().toDateString()).length
+  const weakSpots = getWeakSpots(state)
+  const nextFallacy = weakSpots[0]?.fallacy ?? fallacies[0]
+  const dailyCount = state.answers.filter((answer) => new Date(answer.answeredAt).toDateString() === new Date().toDateString()).length
+  const lastSession = state.sessions[0]
 
   return (
-    <div className="page-stack dashboard-page">
-      <section className="page-heading intro-heading">
-        <div>
-          <div className="eyebrow accent-eyebrow"><SparkleRegular /> Korte sessies, blijvend inzicht</div>
-          <h1>Leer drogredenen herkennen.</h1>
-          <p>Train je radar voor slechte argumenten met voorbeelden die steeds iets lastiger worden.</p>
+    <div className="page-stack home-page">
+      <section className="hero-grid">
+        <div className="hero-card">
+          <div className="hero-copy">
+            <div className="eyebrow eyebrow-lime"><span className="eyebrow-mark"><Icon name="spark" size={13} /></span> A five-minute thinking ritual</div>
+            <h1>See the move.<br /><em>Name the fallacy.</em></h1>
+            <p>Arguments rarely announce their weak spots. Train your eye to catch the hidden leap, ask a better question, and stay honest when the answer is inconvenient.</p>
+            <div className="hero-actions">
+              <button type="button" className="button button-primary" onClick={() => onPractice('identify')}><Icon name="play" size={15} /> Start a practice set <Icon name="arrow" size={16} /></button>
+              <button type="button" className="button button-ghost" onClick={onOpenLibrary}>Browse the field guide</button>
+            </div>
+          </div>
+          <div className="hero-visual" aria-hidden="true">
+            <div className="visual-grid" />
+            <span className="orbit orbit-one" />
+            <span className="orbit orbit-two" />
+            <span className="visual-node node-one" />
+            <span className="visual-node node-two" />
+            <span className="visual-node node-three" />
+            <div className="signal-chip chip-top"><span className="chip-dot lime" /> CLAIM</div>
+            <div className="signal-chip chip-bottom"><span className="chip-dot violet" /> ASSUMPTION</div>
+            <div className="visual-core"><span>?</span><small>look closer</small></div>
+          </div>
+          <div className="hero-footer">
+            <span><Icon name="brain" size={15} /> 24 patterns to learn</span>
+            <span><Icon name="clock" size={15} /> Built for short sessions</span>
+            <span><Icon name="moon" size={15} /> Works offline</span>
+          </div>
         </div>
-        <div className="heading-note">
-          <span className="heading-note-icon"><LightbulbRegular /></span>
-          <span><strong>Tip van vandaag</strong><br />Vraag altijd: welk stuk van deze zin bewijst eigenlijk de conclusie?</span>
-        </div>
+
+        <aside className="today-card">
+          <div className="card-overline"><span className="overline-line" /> TODAY’S SIGNAL</div>
+          <div className="today-number">{String(Math.min(dailyCount, 5)).padStart(2, '0')}<span>/05</span></div>
+          <h2>{dailyCount >= 5 ? 'You made the time.' : 'A small reset beats a perfect plan.'}</h2>
+          <p>{dailyCount >= 5 ? 'Daily practice complete. Let the ideas breathe, then come back tomorrow.' : 'Five thoughtful calls today will sharpen more than an hour of passive reading.'}</p>
+          <div className="mini-progress"><span style={{ width: String(Math.min(dailyCount / 5, 1) * 100) + '%' }} /></div>
+          <button type="button" className="text-button" onClick={() => onPractice('valid')}>{dailyCount >= 5 ? 'Keep going anyway' : 'Do today’s set'} <Icon name="arrow" size={15} /></button>
+          <div className="today-note"><Icon name="spark" size={15} /><span><strong>Prompt</strong> — What would change your mind?</span></div>
+        </aside>
       </section>
 
-      <section className="dashboard-grid dashboard-grid-top">
-        <Card className="continue-card accent-card">
-          <div className="card-kicker"><span className="kicker-line" /> Doorgaan met leren</div>
-          <div className="continue-content">
-            <div>
-              <span className="continue-label">Volgende op je leerpad</span>
-              <h2>{continueFallacy.nameNl}</h2>
-              <p>{continueFallacy.nameEn} <span className="muted-separator">/</span> {continueFallacy.category}</p>
-              <Button appearance="primary" icon={<ArrowRightRegular />} onClick={() => onOpenFallacy(continueFallacy.id)}>
-                Ga verder
-              </Button>
-            </div>
-            <div className="continue-orbit" aria-hidden="true">
-              <span className="orbit-ring ring-one" />
-              <span className="orbit-ring ring-two" />
-              <span className="orbit-core">F</span>
-            </div>
-          </div>
-        </Card>
-
-        <Card className="daily-card">
-          <div className="card-header-row">
-            <div>
-              <div className="card-kicker"><ClockRegular /> Dagelijkse oefening</div>
-              <h2>Vijf minuten scherpte</h2>
-            </div>
-            <Badge appearance="tint" color={dailyProgress >= 5 ? 'success' : 'informative'}>{dailyProgress >= 5 ? 'Afgerond' : `${dailyProgress}/5`}</Badge>
-          </div>
-          <p>Een korte mix van bekende en nieuwe patronen. Fouten komen vanzelf terug.</p>
-          <div className="daily-progress-line">
-            <ProgressBar value={Math.min(dailyProgress / 5, 1)} />
-            <span>{dailyProgress >= 5 ? 'Goed bezig' : `${5 - dailyProgress} vragen te gaan`}</span>
-          </div>
-          <Button appearance="outline" icon={<PlayRegular />} onClick={onStartPractice}>
-            Start dagelijkse oefening
-          </Button>
-        </Card>
+      <section className="stats-row" aria-label="Your practice summary">
+        <StatTile label="Questions answered" value={String(stats.total)} hint={stats.total ? 'Keep the loop going' : 'Your first call is waiting'} icon="target" />
+        <StatTile label="Accuracy" value={String(stats.accuracy) + '%'} hint={stats.total ? 'Across every mode' : 'A baseline starts here'} icon="chart" accent="teal" />
+        <StatTile label="Best streak" value={String(stats.bestStreak)} hint={stats.bestStreak ? 'Consecutive clear reads' : 'Find your rhythm'} icon="flame" accent="orange" />
+        <StatTile label="Patterns in hand" value={String(stats.learned) + '/' + String(fallacies.length)} hint={String(stats.mastered) + ' strongly held'} icon="brain" accent="violet" />
       </section>
 
-      <section className="stats-strip" aria-label="Samenvatting van je voortgang">
-        <StatItem label="Vragen beantwoord" value={String(stats.totalAnswered)} hint="in alle sessies" icon={<TargetArrowRegular />} />
-        <StatItem label="Percentage correct" value={`${stats.accuracy}%`} hint="op basis van antwoorden" icon={<CheckmarkCircleFilled />} />
-        <StatItem label="Fallacies geleerd" value={`${stats.learned}/${fallacies.length}`} hint={`${stats.mastered} beheerst`} icon={<BookOpenRegular />} />
-        <StatItem label="Opgeslagen" value={String(state.bookmarkedIds.length)} hint="om later terug te lezen" icon={<BookmarkFilled />} />
+      <section className="section-heading with-action">
+        <div><div className="eyebrow">Choose your angle</div><h2>Practice the way your brain needs today.</h2></div>
+        <button type="button" className="text-button" onClick={() => onPractice()}>{lastSession ? 'Change the mode' : 'See all modes'} <Icon name="arrow" size={15} /></button>
+      </section>
+      <section className="mode-preview-grid">
+        {(Object.keys(modeMeta) as PracticeMode[]).map((mode) => (
+          <button type="button" key={mode} className={['mode-preview', modeMeta[mode].className].join(' ')} onClick={() => onPractice(mode)}>
+            <span className="mode-preview-icon"><Icon name={modeMeta[mode].icon} size={21} /></span>
+            <span className="mode-preview-copy"><small>{modeMeta[mode].eyebrow}</small><strong>{modeMeta[mode].label}</strong><span>{modeMeta[mode].description}</span></span>
+            <span className="mode-preview-arrow"><Icon name="arrow" size={16} /></span>
+          </button>
+        ))}
       </section>
 
-      <section className="dashboard-grid dashboard-grid-bottom">
-        <Card className="list-card">
-          <div className="section-header">
-            <div>
-              <div className="eyebrow">Waar je winst zit</div>
-              <h2>Zwakste fallacies</h2>
-            </div>
-            {weakest.length > 0 && <Button appearance="subtle" onClick={onWeakPractice}>Oefen mijn zwakke punten <ArrowRightRegular /></Button>}
-          </div>
-          {weakest.length > 0 ? (
-            <div className="weak-list">
-              {weakest.map((item, index) => (
-                <button type="button" className="weak-row" key={item.fallacy.id} onClick={() => onOpenFallacy(item.fallacy.id)}>
-                  <span className="rank-number">0{index + 1}</span>
-                  <span className="weak-name"><strong>{item.fallacy.nameNl}</strong><small>{item.fallacy.nameEn}</small></span>
-                  <span className="weak-meter"><span style={{ width: `${item.accuracy ?? 0}%` }} /></span>
-                  <span className="weak-score">{item.accuracy}%</span>
-                  <ChevronRightRegular />
+      <section className="home-lower-grid">
+        <div className="focus-card">
+          <div className="section-heading"><div><div className="eyebrow">Adaptive focus</div><h2>Your next useful wobble.</h2></div><span className="section-icon"><Icon name="spark" size={17} /></span></div>
+          <p className="section-intro">{weakSpots.length ? 'Your misses come back with a little more space around them. That is how a weak spot becomes a reflex.' : 'Once you have a few answers, this space will point you toward the patterns worth revisiting.'}</p>
+          {weakSpots.length ? (
+            <div className="focus-list">
+              {weakSpots.slice(0, 3).map((item, index) => (
+                <button type="button" key={item.fallacy.id} className="focus-row" onClick={() => onOpenFallacy(item.fallacy.id)}>
+                  <span className="focus-index">0{index + 1}</span>
+                  <span className="focus-name"><strong>{item.fallacy.name}</strong><small>{item.attempts} {item.attempts === 1 ? 'attempt' : 'attempts'} · {item.mastery}</small></span>
+                  <span className="focus-meter"><span style={{ width: String(item.accuracy ?? 0) + '%' }} /></span>
+                  <span className="focus-score">{item.accuracy}%</span><Icon name="chevron" size={15} />
                 </button>
               ))}
             </div>
           ) : (
-            <div className="empty-list compact-empty">
-              <div className="empty-icon"><TargetArrowRegular /></div>
-              <strong>Je hebt nog geen missers.</strong>
-              <span>Na je eerste oefening zie je hier precies waar je extra aandacht kunt gebruiken.</span>
-            </div>
+            <div className="empty-inline"><span className="empty-round"><Icon name="target" size={18} /></span><span><strong>No weak spots yet.</strong><small>Practice a round and the app will tune the next one for you.</small></span></div>
           )}
-        </Card>
+          <button type="button" className="inline-link" onClick={() => onPractice(weakSpots.length ? 'identify' : undefined)}>{weakSpots.length ? 'Practice my weak spots' : 'Start finding your pattern'} <Icon name="arrow" size={15} /></button>
+        </div>
 
-        <Card className="list-card recent-card">
-          <div className="section-header">
-            <div>
-              <div className="eyebrow">Laatste pogingen</div>
-              <h2>Recente resultaten</h2>
-            </div>
-            <Button appearance="subtle" onClick={() => onOpenLibrary()}>Bibliotheek <ArrowRightRegular /></Button>
+        <div className="continue-card">
+          <div className="section-heading"><div><div className="eyebrow">Keep the thread</div><h2>{lastSession ? 'Your last read' : 'A good first read'}</h2></div><span className="continue-tag">{lastSession ? modeMeta[lastSession.mode].label : 'Suggested'}</span></div>
+          <div className="continue-main">
+            <div className="continue-number">{String(fallacies.findIndex((fallacy) => fallacy.id === nextFallacy.id) + 1).padStart(2, '0')}</div>
+            <div><small>Try this one next</small><h3>{nextFallacy.name}</h3><p>{nextFallacy.definition}</p></div>
           </div>
-          {state.answers.length > 0 ? (
-            <div className="recent-list">
-              {state.answers.slice(0, 4).map((answer) => <RecentAnswer key={`${answer.questionId}-${answer.answeredAt}`} answer={answer} />)}
-            </div>
-          ) : (
-            <div className="empty-list compact-empty">
-              <div className="empty-icon soft"><ClockRegular /></div>
-              <strong>Je geschiedenis verschijnt hier.</strong>
-              <span>Beantwoord een vraag om je leerpad te starten.</span>
-            </div>
-          )}
-        </Card>
+          <div className="continue-actions"><button type="button" className="button button-primary small-button" onClick={() => onOpenFallacy(nextFallacy.id)}>Open field note <Icon name="arrow" size={15} /></button><button type="button" className="icon-button" aria-label="Open progress" onClick={onOpenProgress}><Icon name="chart" size={17} /></button></div>
+        </div>
       </section>
     </div>
   )
 }
 
-function Library({
-  state,
-  onOpenFallacy,
-  onToggleBookmark,
-}: {
-  state: AppState
-  onOpenFallacy: (id: string) => void
-  onToggleBookmark: (id: string) => void
-}) {
+function StatTile({ label, value, hint, icon, accent = 'lime' }: { label: string; value: string; hint: string; icon: IconName; accent?: string }) {
+  return (
+    <div className={['stat-tile', 'accent-' + accent].join(' ')}>
+      <span className="stat-icon"><Icon name={icon} size={17} /></span>
+      <span className="stat-copy"><small>{label}</small><strong>{value}</strong><span>{hint}</span></span>
+    </div>
+  )
+}
+
+function PracticeHub({ state, onStart }: { state: AppState; onStart: (mode?: PracticeMode) => void }) {
+  const weakSpots = getWeakSpots(state)
+  return (
+    <div className="page-stack practice-page">
+      <section className="practice-heading">
+        <div><div className="eyebrow eyebrow-lime"><span className="eyebrow-mark"><Icon name="target" size={13} /></span> Training room</div><h1>Choose your kind of hard.</h1><p>Every mode trains a different part of the skill: spotting, resisting, unpacking, and responding under pressure.</p></div>
+        <div className="practice-heading-stamp"><span className="stamp-top">ADAPTIVE</span><strong>{weakSpots.length ? 'Focus mode on' : 'Baseline mode'}</strong><span>{weakSpots.length ? 'Your miss patterns shape the queue.' : 'Your first few answers set the baseline.'}</span></div>
+      </section>
+      <section className="mode-hub-grid">
+        {(Object.keys(modeMeta) as PracticeMode[]).map((mode, index) => (
+          <button type="button" key={mode} className={['mode-hub-card', modeMeta[mode].className].join(' ')} onClick={() => onStart(mode)}>
+            <span className="mode-card-top"><span className="mode-card-index">0{index + 1}</span><span className="mode-card-icon"><Icon name={modeMeta[mode].icon} size={23} /></span></span>
+            <span className="mode-card-body"><small>{modeMeta[mode].eyebrow}</small><strong>{modeMeta[mode].label}</strong><span>{modeMeta[mode].description}</span></span>
+            <span className="mode-card-footer"><span>{modeMeta[mode].detail}</span><Icon name="arrow" size={17} /></span>
+          </button>
+        ))}
+      </section>
+      <div className="adaptive-banner"><span className="adaptive-banner-icon"><Icon name="spark" size={18} /></span><span><strong>The queue learns with you.</strong> Miss a pattern and it gets another seat in your next practice set. Get it right repeatedly and it gives your attention to something less familiar.</span><button type="button" className="text-button" onClick={() => onStart(weakSpots.length ? 'identify' : 'valid')}>Use my focus <Icon name="arrow" size={15} /></button></div>
+    </div>
+  )
+}
+
+function Library({ state, onOpen, onToggleSaved }: { state: AppState; onOpen: (id: string) => void; onToggleSaved: (id: string) => void }) {
   const [query, setQuery] = useState('')
-  const [filter, setFilter] = useState<LibraryFilter>('all')
   const [category, setCategory] = useState<Category | 'all'>('all')
-  const filteredFallacies = useMemo(() => {
-    const normalized = query.trim().toLowerCase()
-    return fallacies.filter((fallacy) => {
-      const matchesQuery = !normalized || [fallacy.nameNl, fallacy.nameEn, fallacy.definition, fallacy.category].join(' ').toLowerCase().includes(normalized)
-      const matchesCategory = category === 'all' || fallacy.category === category
-      const matchesFilter =
-        filter === 'all' ||
-        (filter === 'beginner' && fallacy.difficulty === 'Easy') ||
-        (filter === 'hard' && fallacy.difficulty === 'Hard') ||
-        (filter === 'learned' && isLearned(state, fallacy.id)) ||
-        (filter === 'unlearned' && !isLearned(state, fallacy.id))
-      return matchesQuery && matchesCategory && matchesFilter
-    })
-  }, [category, filter, query, state])
+  const [filter, setFilter] = useState<LibraryFilter>('all')
+  const normalizedQuery = query.trim().toLowerCase()
+  const filtered = useMemo(() => fallacies.filter((fallacy) => {
+    const haystack = [fallacy.name, fallacy.alsoKnownAs, fallacy.definition, fallacy.explanation, fallacy.category].join(' ').toLowerCase()
+    const matchesQuery = !normalizedQuery || haystack.includes(normalizedQuery)
+    const matchesCategory = category === 'all' || fallacy.category === category
+    const matchesFilter = filter === 'all'
+      || (filter === 'needs-work' && getMastery(state, fallacy.id) !== 'Strong')
+      || (filter === 'strong' && getMastery(state, fallacy.id) === 'Strong')
+      || (filter === 'saved' && state.savedIds.includes(fallacy.id))
+    return matchesQuery && matchesCategory && matchesFilter
+  }), [category, filter, normalizedQuery, state])
 
   return (
     <div className="page-stack library-page">
-      <section className="page-heading library-heading">
-        <div>
-          <div className="eyebrow accent-eyebrow"><BookOpenRegular /> De bibliotheek</div>
-          <h1>Alle patronen op een rij.</h1>
-          <p>Lees compact, herken het patroon en test jezelf zodra je klaar bent.</p>
-        </div>
-        <Badge appearance="tint" color="brand">{filteredFallacies.length} van {fallacies.length}</Badge>
+      <section className="page-heading library-heading"><div><div className="eyebrow eyebrow-lime"><span className="eyebrow-mark"><Icon name="book" size={13} /></span> Field guide</div><h1>Learn the shape of an argument.</h1><p>Short notes for the pattern, the leap, and the look-alikes that make it easy to miss.</p></div><div className="library-count"><strong>{String(filtered.length).padStart(2, '0')}</strong><span>of {fallacies.length} notes</span></div></section>
+      <section className="library-toolbar">
+        <label className="search-field"><Icon name="search" size={18} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search by name, pattern, or phrase..." aria-label="Search fallacies" />{query && <button type="button" className="clear-search" onClick={() => setQuery('')} aria-label="Clear search"><Icon name="close" size={15} /></button>}</label>
+        <label className="category-select"><Icon name="filter" size={16} /><select value={category} onChange={(event) => setCategory(event.target.value as Category | 'all')} aria-label="Filter by category"><option value="all">All categories</option>{categories.map((item) => <option key={item} value={item}>{item}</option>)}</select></label>
       </section>
-
-      <Card className="library-toolbar">
-        <div className="search-wrap">
-          <Input
-            value={query}
-            onChange={(_, data) => setQuery(data.value)}
-            contentBefore={<SearchRegular />}
-            placeholder="Zoek op strawman, persoon, oorzaak..."
-            aria-label="Zoek in fallacies"
-          />
-        </div>
-        <div className="toolbar-select">
-          <FilterRegular />
-          <Select aria-label="Filter op categorie" value={category} onChange={(_, data) => setCategory(data.value as Category | 'all')}>
-            <option value="all">Alle categorieen</option>
-            {categories.map((item) => <option key={item} value={item}>{categoryLabels[item]}</option>)}
-          </Select>
-        </div>
-      </Card>
-
-      <TabList selectedValue={filter} onTabSelect={(_, data) => setFilter(data.value as LibraryFilter)} className="filter-tabs" aria-label="Filter fallacies">
-        <Tab value="all">Alle</Tab>
-        <Tab value="beginner">Beginner</Tab>
-        <Tab value="learned">Geleerd</Tab>
-        <Tab value="unlearned">Nog leren</Tab>
-        <Tab value="hard">Moeilijk</Tab>
-      </TabList>
-
-      {filteredFallacies.length > 0 ? (
-        <div className="fallacy-grid">
-          {filteredFallacies.map((fallacy) => (
-            <FallacyCard key={fallacy.id} fallacy={fallacy} state={state} onOpen={onOpenFallacy} onToggleBookmark={onToggleBookmark} />
-          ))}
-        </div>
-      ) : (
-        <Card className="empty-state-card">
-          <div className="empty-icon large"><SearchRegular /></div>
-          <h2>Geen fallacies gevonden</h2>
-          <p>Probeer een andere zoekterm of zet je filters terug.</p>
-          <Button appearance="secondary" onClick={() => { setQuery(''); setCategory('all'); setFilter('all') }}>Filters wissen</Button>
-        </Card>
-      )}
+      <div className="filter-row" role="tablist" aria-label="Filter field guide">
+        {([
+          ['all', 'All notes'],
+          ['needs-work', 'Needs attention'],
+          ['strong', 'Strong'],
+          ['saved', 'Saved'],
+        ] as [LibraryFilter, string][]).map(([value, label]) => <button type="button" key={value} className={filter === value ? 'is-active' : ''} onClick={() => setFilter(value)} role="tab" aria-selected={filter === value}>{label}{value === 'saved' && state.savedIds.length > 0 ? <span>{state.savedIds.length}</span> : null}</button>)}
+      </div>
+      {filtered.length ? <div className="library-grid">{filtered.map((fallacy) => <FallacyCard key={fallacy.id} fallacy={fallacy} state={state} onOpen={onOpen} onToggleSaved={onToggleSaved} />)}</div> : <div className="empty-state"><span className="empty-round large"><Icon name="search" size={22} /></span><h2>No notes match that search.</h2><p>Try a broader phrase or clear one of the filters.</p><button type="button" className="button button-ghost" onClick={() => { setQuery(''); setCategory('all'); setFilter('all') }}>Reset filters</button></div>}
     </div>
   )
 }
 
-function FallacyCard({
-  fallacy,
-  state,
-  onOpen,
-  onToggleBookmark,
-}: {
-  fallacy: Fallacy
-  state: AppState
-  onOpen: (id: string) => void
-  onToggleBookmark: (id: string) => void
-}) {
-  const bookmarked = state.bookmarkedIds.includes(fallacy.id)
+function FallacyCard({ fallacy, state, onOpen, onToggleSaved }: { fallacy: Fallacy; state: AppState; onOpen: (id: string) => void; onToggleSaved: (id: string) => void }) {
+  const accuracy = getAccuracy(state, fallacy.id)
   const mastery = getMastery(state, fallacy.id)
+  const isSaved = state.savedIds.includes(fallacy.id)
   return (
-    <Card className="fallacy-card">
-      <div className="fallacy-card-top">
-        <Badge appearance="tint" color={difficultyColor(fallacy.difficulty)}>{fallacy.difficulty}</Badge>
-        <Button
-          appearance="subtle"
-          size="small"
-          icon={bookmarked ? <BookmarkFilled /> : <BookmarkRegular />}
-          aria-label={bookmarked ? `Verwijder ${fallacy.nameNl} uit opgeslagen` : `Sla ${fallacy.nameNl} op`}
-          onClick={() => onToggleBookmark(fallacy.id)}
-        />
-      </div>
-      <button type="button" className="fallacy-card-button" onClick={() => onOpen(fallacy.id)}>
-        <span className="fallacy-index">{String(fallacies.findIndex((item) => item.id === fallacy.id) + 1).padStart(2, '0')}</span>
-        <h2>{fallacy.nameNl}</h2>
-        <p className="fallacy-en">{fallacy.nameEn}</p>
-        <p className="fallacy-definition">{fallacy.definition}</p>
-        <span className="card-bottom-line"><span>{fallacy.category}</span><MasteryPill mastery={mastery} /><ChevronRightRegular /></span>
-      </button>
-    </Card>
+    <article className="fallacy-card">
+      <div className="fallacy-card-top"><span className={['difficulty-pill', difficultyClass(fallacy.difficulty)].join(' ')}>{fallacy.difficulty}</span><button type="button" className={['bookmark-button', isSaved ? 'is-saved' : ''].filter(Boolean).join(' ')} onClick={() => onToggleSaved(fallacy.id)} aria-label={isSaved ? 'Remove ' + fallacy.name + ' from saved notes' : 'Save ' + fallacy.name}><Icon name="bookmark" size={16} /></button></div>
+      <button type="button" className="fallacy-card-main" onClick={() => onOpen(fallacy.id)}><span className="fallacy-number">{String(fallacies.findIndex((item) => item.id === fallacy.id) + 1).padStart(2, '0')}</span><h2>{fallacy.name}</h2><small>{fallacy.alsoKnownAs}</small><p>{fallacy.definition}</p></button>
+      <div className="fallacy-card-bottom"><span className="category-label">{fallacy.category}</span><span className={['mastery-label', masteryClass(mastery)].join(' ')}><span />{mastery}</span>{accuracy !== null && <span className="card-accuracy">{accuracy}%</span>}<button type="button" className="card-arrow" onClick={() => onOpen(fallacy.id)} aria-label={'Open ' + fallacy.name}><Icon name="arrow" size={15} /></button></div>
+    </article>
   )
 }
 
@@ -544,379 +531,230 @@ function FallacyDetail({
   state,
   fallacyId,
   onBack,
-  onOpenFallacy,
-  onToggleBookmark,
+  onOpen,
+  onToggleSaved,
   onToggleLearned,
-  onStartPractice,
+  onPractice,
 }: {
   state: AppState
   fallacyId: string
   onBack: () => void
-  onOpenFallacy: (id: string) => void
-  onToggleBookmark: (id: string) => void
+  onOpen: (id: string) => void
+  onToggleSaved: (id: string) => void
   onToggleLearned: (id: string) => void
-  onStartPractice: () => void
+  onPractice: () => void
 }) {
   const fallacy = fallacyById[fallacyId] ?? fallacies[0]
-  const bookmarked = state.bookmarkedIds.includes(fallacy.id)
-  const learned = state.learnedIds.includes(fallacy.id)
+  const isSaved = state.savedIds.includes(fallacy.id)
+  const isLearned = state.learnedIds.includes(fallacy.id)
   const mastery = getMastery(state, fallacy.id)
   return (
     <div className="page-stack detail-page">
-      <button type="button" className="back-link" onClick={onBack}><ArrowLeftRegular /> Terug naar bibliotheek</button>
-      <section className="detail-hero">
-        <div className="detail-hero-main">
-          <div className="eyebrow accent-eyebrow"><span className="detail-number">{String(fallacies.findIndex((item) => item.id === fallacy.id) + 1).padStart(2, '0')}</span> In de bibliotheek</div>
-          <div className="detail-title-row">
-            <div>
-              <h1>{fallacy.nameNl}</h1>
-              <p className="detail-english">{fallacy.nameEn}</p>
-            </div>
-            <div className="detail-actions">
-              <Button appearance="subtle" icon={bookmarked ? <BookmarkFilled /> : <BookmarkRegular />} onClick={() => onToggleBookmark(fallacy.id)}>
-                {bookmarked ? 'Opgeslagen' : 'Opslaan'}
-              </Button>
-              <Button appearance={learned ? 'secondary' : 'primary'} icon={<CheckmarkRegular />} onClick={() => onToggleLearned(fallacy.id)}>
-                {learned ? 'Geleerd' : 'Markeer als geleerd'}
-              </Button>
-            </div>
-          </div>
-          <div className="detail-meta"><Badge appearance="tint" color="brand">{fallacy.category}</Badge><Badge appearance="tint" color={difficultyColor(fallacy.difficulty)}>{fallacy.difficulty}</Badge><MasteryPill mastery={mastery} /></div>
+      <button type="button" className="back-link" onClick={onBack}><Icon name="arrow" size={15} /> Back to field guide</button>
+      <section className="detail-hero"><div className="detail-hero-number">{String(fallacies.findIndex((item) => item.id === fallacy.id) + 1).padStart(2, '0')}</div><div className="detail-title"><div className="eyebrow eyebrow-lime">Field note · {fallacy.category}</div><h1>{fallacy.name}</h1><p>{fallacy.alsoKnownAs}</p></div><div className="detail-actions"><button type="button" className={['button', 'button-ghost', isSaved ? 'button-saved' : ''].filter(Boolean).join(' ')} onClick={() => onToggleSaved(fallacy.id)}><Icon name="bookmark" size={16} />{isSaved ? 'Saved' : 'Save note'}</button><button type="button" className={['button', isLearned ? 'button-secondary' : 'button-primary'].join(' ')} onClick={() => onToggleLearned(fallacy.id)}><Icon name="check" size={16} />{isLearned ? 'In your toolkit' : 'Mark familiar'}</button></div></section>
+      <div className="detail-definition"><span className="definition-label">In one line</span><p>{fallacy.definition}</p><span className={['mastery-chip', masteryClass(mastery)].join(' ')}><span /> {mastery}</span></div>
+      <section className="detail-grid">
+        <div className="detail-main">
+          <article className="detail-block"><div className="detail-block-heading"><span className="detail-block-number">01</span><div><small>The move</small><h2>What is happening here?</h2></div></div><p>{fallacy.explanation}</p></article>
+          <article className="detail-block example-block"><div className="detail-block-heading"><span className="detail-block-number">02</span><div><small>In the wild</small><h2>A realistic example</h2></div></div><div className="quote-card"><span className="quote-mark">“</span><p>{fallacy.realisticExample}</p><span className="quote-tail">a claim worth slowing down for</span></div><div className="why-fails"><span className="why-fails-label"><Icon name="spark" size={14} /> Why it fails</span><p>{fallacy.whyItFails}</p></div></article>
+          <article className="detail-block"><div className="detail-block-heading"><span className="detail-block-number">03</span><div><small>The pocket version</small><h2>Simple example</h2></div></div><div className="simple-example">“{fallacy.simpleExample}”</div></article>
         </div>
-        <div className="detail-definition-card">
-          <div className="eyebrow">In een zin</div>
-          <p>{fallacy.definition}</p>
-        </div>
-      </section>
-
-      <section className="detail-columns">
-        <div className="detail-main-column">
-          <Card className="detail-card explanation-card">
-            <div className="eyebrow">De kern</div>
-            <h2>Wat gebeurt hier?</h2>
-            <p>{fallacy.explanation}</p>
-            <Divider />
-            <div className="quote-example"><span className="quote-mark">“</span><p>{fallacy.example}</p></div>
-          </Card>
-          <Card className="detail-card">
-            <div className="eyebrow">Meer context</div>
-            <h2>Extra voorbeelden</h2>
-            <div className="example-list">{fallacy.extraExamples.map((example) => <div className="example-row" key={example}><span className="example-bullet">+</span><p>{example}</p></div>)}</div>
-          </Card>
-          <Card className="detail-card warning-detail-card">
-            <div className="eyebrow">Waarom fout?</div>
-            <h2>Waar zit de sprong?</h2>
-            <p>{fallacy.whyWrong}</p>
-          </Card>
-        </div>
-        <aside className="detail-side-column">
-          <Card className="signal-card">
-            <div className="signal-icon"><LightbulbRegular /></div>
-            <div className="eyebrow">Herkenningssignalen</div>
-            <h2>Let hierop</h2>
-            <ul className="signal-list">{fallacy.signals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
-          </Card>
-          <Card className="confusion-card">
-            <div className="eyebrow">Makkelijk te verwarren</div>
-            <h2>Vergelijk ook</h2>
-            <div className="confusion-list">{fallacy.confusedWith.map((id) => { const related = fallacyById[id]; return related ? <button type="button" key={id} onClick={() => onOpenFallacy(id)}><span><strong>{related.nameNl}</strong><small>{related.nameEn}</small></span><ArrowRightRegular /></button> : null })}</div>
-          </Card>
-          <Card className="practice-callout">
-            <div className="eyebrow">Klaar om te testen?</div>
-            <h2>Zie je hem in het wild?</h2>
-            <p>Oefen met vragen uit dezelfde categorie.</p>
-            <Button appearance="primary" icon={<TargetArrowRegular />} onClick={onStartPractice}>Oefen deze categorie</Button>
-          </Card>
+        <aside className="detail-side">
+          <article className="signal-card"><div className="detail-block-heading compact-heading"><span className="signal-card-icon"><Icon name="search" size={17} /></span><div><small>Pattern recognition</small><h2>Listen for this</h2></div></div><ul>{fallacy.tips.map((tip) => <li key={tip}><span><Icon name="check" size={12} /></span>{tip}</li>)}</ul></article>
+          <article className="confused-card"><div className="detail-block-heading compact-heading"><span className="signal-card-icon violet-icon"><Icon name="brain" size={17} /></span><div><small>Close cousins</small><h2>Do not mix it up with…</h2></div></div><div className="confused-list">{fallacy.confusedWith.map((item) => { const related = fallacyById[item.id]; return related ? <button type="button" key={item.id} onClick={() => onOpen(item.id)}><span><strong>{related.name}</strong><small>{item.distinction}</small></span><Icon name="chevron" size={15} /></button> : null })}</div></article>
+          <article className="practice-prompt"><span className="prompt-icon"><Icon name="target" size={18} /></span><div><small>Make it stick</small><strong>See this pattern in context.</strong><button type="button" className="inline-link" onClick={onPractice}>Practice this family <Icon name="arrow" size={14} /></button></div></article>
         </aside>
       </section>
     </div>
   )
 }
 
-function ProgressView({
-  state,
-  onStartPractice,
-  onOpenFallacy,
-}: {
-  state: AppState
-  onStartPractice: (overrides?: Partial<PracticeSettings>) => void
-  onOpenFallacy: (id: string) => void
-}) {
-  const stats = getOverallStats(state)
-  const weakest = getWeakestFallacies(state)
+function Progress({ state, stats, onPractice, onOpen, onReset }: { state: AppState; stats: ReturnType<typeof getStats>; onPractice: (mode?: PracticeMode) => void; onOpen: (id: string) => void; onReset: () => void }) {
+  const weakSpots = getWeakSpots(state)
   const categoryStats = getCategoryStats(state)
+  const masteryCounts = {
+    New: fallacies.filter((item) => getMastery(state, item.id) === 'New').length,
+    'Warming up': fallacies.filter((item) => getMastery(state, item.id) === 'Warming up').length,
+    Practicing: fallacies.filter((item) => getMastery(state, item.id) === 'Practicing').length,
+    Strong: fallacies.filter((item) => getMastery(state, item.id) === 'Strong').length,
+  }
   return (
     <div className="page-stack progress-page">
-      <section className="page-heading progress-heading">
-        <div>
-          <div className="eyebrow accent-eyebrow"><DataBarVerticalRegular /> Je leerpatroon</div>
-          <h1>Voortgang die iets zegt.</h1>
-          <p>Geen scorebord. Alleen signalen die je helpen gerichter te oefenen.</p>
-        </div>
-        <Button appearance="primary" icon={<TargetArrowRegular />} onClick={() => onStartPractice({ source: 'errors' })}>Oefen mijn zwakke punten</Button>
+      <section className="page-heading progress-heading"><div><div className="eyebrow eyebrow-lime"><span className="eyebrow-mark"><Icon name="chart" size={13} /></span> Your pattern</div><h1>Progress that tells you something.</h1><p>Not a leaderboard. A clearer picture of what your attention is learning to notice.</p></div><button type="button" className="button button-primary" onClick={() => onPractice('identify')}><Icon name="play" size={15} /> Practice weak spots</button></section>
+      <section className="progress-hero"><div className="progress-hero-copy"><span className="eyebrow">Current read</span><h2>{state.answers.length ? stats.accuracy >= 75 ? 'Your signal is getting cleaner.' : 'You are finding the useful friction.' : 'Your baseline starts with one honest call.'}</h2><p>{state.answers.length ? String(stats.correct) + ' of ' + String(stats.total) + ' answers landed. Every miss is a useful pointer, not a verdict.' : 'Answer a few arguments across different modes and this page will start showing your learning pattern.'}</p></div><div className="ring-stat" style={{ background: 'conic-gradient(var(--violet) 0deg, var(--violet) ' + String(stats.accuracy * 3.6) + 'deg, var(--bg-soft) ' + String(stats.accuracy * 3.6) + 'deg, var(--bg-soft) 360deg)' }}><div className="ring-stat-inner"><strong>{stats.accuracy}<span>%</span></strong><small>accuracy</small></div></div><div className="progress-hero-note"><Icon name="flame" size={17} /><span><strong>{stats.currentStreak} current streak</strong><small>Best: {stats.bestStreak} in a row</small></span></div></section>
+      <section className="mastery-section"><div className="section-heading"><div><div className="eyebrow">Field guide coverage</div><h2>How much is sticking?</h2></div><span className="section-note">{stats.learned} of {fallacies.length} encountered</span></div><div className="mastery-bar">{(['New', 'Warming up', 'Practicing', 'Strong'] as const).map((level) => <span key={level} className={masteryClass(level)} style={{ width: String((masteryCounts[level] / fallacies.length) * 100) + '%' }} title={level + ': ' + masteryCounts[level]} />)}</div><div className="mastery-legend">{(['New', 'Warming up', 'Practicing', 'Strong'] as const).map((level) => <span key={level}><i className={masteryClass(level)} />{level}<strong>{masteryCounts[level]}</strong></span>)}</div></section>
+      <section className="progress-grid">
+        <article className="progress-card category-progress"><div className="section-heading"><div><div className="eyebrow">By family</div><h2>Where your radar is strongest.</h2></div><Icon name="chart" size={18} /></div><div className="category-list">{categoryStats.map((item) => <div className="category-row" key={item.category}><div><span>{item.category}</span><small>{item.attempts ? item.attempts + ' scored answers' : 'Not tested yet'}</small></div><div className="category-meter"><span style={{ width: String(item.attempts ? item.accuracy : 3) + '%' }} /></div><strong>{item.attempts ? item.accuracy + '%' : '—'}</strong></div>)}</div></article>
+        <article className="progress-card focus-progress"><div className="section-heading"><div><div className="eyebrow">Next up</div><h2>Worth another look.</h2></div><span className="section-icon"><Icon name="spark" size={17} /></span></div>{weakSpots.length ? <div className="progress-focus-list">{weakSpots.slice(0, 5).map((item) => <button type="button" key={item.fallacy.id} onClick={() => onOpen(item.fallacy.id)}><span className="focus-initial">{item.fallacy.name.charAt(0)}</span><span><strong>{item.fallacy.name}</strong><small>{item.attempts} {item.attempts === 1 ? 'attempt' : 'attempts'} · {item.mastery}</small></span><em>{item.accuracy}%</em><Icon name="chevron" size={15} /></button>)}</div> : <div className="empty-inline tall"><span className="empty-round"><Icon name="spark" size={18} /></span><span><strong>No data to tune yet.</strong><small>Take a practice set and the app will surface your next useful review.</small></span></div>}<button type="button" className="inline-link" onClick={() => onPractice(weakSpots.length ? 'identify' : undefined)}>Open a focused set <Icon name="arrow" size={15} /></button></article>
       </section>
-
-      <section className="progress-hero-grid">
-        <Card className="progress-score-card">
-          <div className="score-orbit" aria-hidden="true" style={{ background: `conic-gradient(var(--sage) 0deg ${stats.accuracy * 3.6}deg, #d6e8d8 ${stats.accuracy * 3.6}deg 360deg)` }}><span className="score-ring" /><strong>{stats.accuracy}%</strong></div>
-          <div><div className="eyebrow">Algemene nauwkeurigheid</div><h2>{stats.totalAnswered ? 'Je ziet steeds meer patronen.' : 'Je score start bij je eerste antwoord.'}</h2><p>{stats.totalAnswered ? `${stats.correct} van ${stats.totalAnswered} antwoorden waren correct.` : 'Oefen regelmatig en kijk vooral naar de uitleg na een fout.'}</p></div>
-        </Card>
-        <Card className="mastery-card">
-          <div className="eyebrow">Mastery</div>
-          <h2>Hoeveel blijft hangen?</h2>
-          <div className="mastery-grid">
-            <MasteryStat label="Nieuw" value={fallacies.filter((fallacy) => getMastery(state, fallacy.id) === 'Nieuw').length} className="new" />
-            <MasteryStat label="Aan het leren" value={stats.learning} className="learning" />
-            <MasteryStat label="Redelijk" value={stats.redelijk} className="okay" />
-            <MasteryStat label="Beheerst" value={stats.mastered} className="mastered" />
-          </div>
-        </Card>
-      </section>
-
-      <section className="progress-content-grid">
-        <Card className="progress-panel">
-          <div className="section-header"><div><div className="eyebrow">Per categorie</div><h2>Waar je sterk in bent</h2></div><TrophyRegular className="section-header-icon" /></div>
-          <div className="category-progress-list">{categoryStats.map((item) => <div className="category-progress-row" key={item.category}><div className="category-row-label"><span>{item.category}</span><small>{item.attempts ? `${item.accuracy}% correct` : 'Nog geen data'}</small></div><div className="wide-meter"><span style={{ width: `${item.attempts ? item.accuracy : 0}%` }} /></div></div>)}</div>
-        </Card>
-        <Card className="progress-panel">
-          <div className="section-header"><div><div className="eyebrow">Focus voor straks</div><h2>Moeilijkste fallacies</h2></div><LightbulbRegular className="section-header-icon" /></div>
-          {weakest.length > 0 ? <div className="focus-list">{weakest.slice(0, 5).map((item) => <button type="button" key={item.fallacy.id} onClick={() => onOpenFallacy(item.fallacy.id)}><span className="focus-initial">{item.fallacy.nameNl.charAt(0)}</span><span className="focus-name"><strong>{item.fallacy.nameNl}</strong><small>{item.attempts} {item.attempts === 1 ? 'poging' : 'pogingen'}</small></span><span className="focus-score">{item.accuracy}%</span><ChevronRightRegular /></button>)}</div> : <div className="empty-list"><div className="empty-icon"><TrophyRegular /></div><strong>Je focuslijst wordt hier gevuld.</strong><span>Maak een paar oefenvragen om je patronen te ontdekken.</span></div>}
-        </Card>
-      </section>
-
-      <Card className="progress-tip"><div className="progress-tip-icon"><SparkleRegular /></div><div><strong>Een fout is een geheugenhaakje.</strong><p>Fallacy Lab zet foute antwoorden opnieuw klaar: eerst binnenkort, daarna met meer ruimte ertussen.</p></div><Button appearance="subtle" icon={<ArrowRotateClockwiseRegular />} onClick={() => onStartPractice({ source: 'errors' })}>Bekijk mijn fouten</Button></Card>
+      <section className="sessions-card"><div className="section-heading"><div><div className="eyebrow">Recent sessions</div><h2>The habit, in miniature.</h2></div><button type="button" className="text-button danger-button" onClick={onReset}>Reset local progress</button></div>{state.sessions.length ? <div className="session-list">{state.sessions.slice(0, 6).map((session) => <div className="session-row" key={session.id}><span className={['session-mode-icon', modeMeta[session.mode].className].join(' ')}><Icon name={modeMeta[session.mode].icon} size={15} /></span><span className="session-info"><strong>{modeMeta[session.mode].label}</strong><small>{formatDate(session.completedAt)} · {session.durationSeconds}s</small></span><span className="session-score"><strong>{session.correct}/{session.total}</strong><small>{Math.round((session.correct / session.total) * 100)}%</small></span><span className="session-bar"><span style={{ width: String((session.correct / session.total) * 100) + '%' }} /></span></div>)}</div> : <div className="empty-state compact-empty"><span className="empty-round"><Icon name="clock" size={18} /></span><h3>Your session history is waiting.</h3><p>Finish a practice round and it will show up here.</p></div>}</section>
     </div>
   )
 }
 
-function PracticeView({
+function PracticeSession({
   state,
+  mode,
   settings,
-  onClose,
   onAnswer,
-  onRestart,
+  onSessionComplete,
+  onBack,
+  onExit,
+  onStartAgain,
 }: {
   state: AppState
+  mode: PracticeMode
   settings: PracticeSettings
-  onClose: () => void
-  onAnswer: (input: Omit<AnswerRecord, 'answeredAt' | 'nextReviewAt' | 'reviewStage'>) => void
-  onRestart: (settings: PracticeSettings) => void
+  onAnswer: (answer: Parameters<typeof recordAnswer>[1]) => void
+  onSessionComplete: (session: Parameters<typeof addSession>[1]) => void
+  onBack: () => void
+  onExit: () => void
+  onStartAgain: () => void
 }) {
-  const [queue] = useState<Question[]>(() => buildQuestionQueue(state, settings))
+  const [queue] = useState<Question[]>(() => selectQuestions(state, mode, settings))
   const [questionIndex, setQuestionIndex] = useState(0)
-  const [classification, setClassification] = useState<'fallacy' | 'none' | null>(null)
-  const [selectedFallacyId, setSelectedFallacyId] = useState<string | null>(null)
+  const [selection, setSelection] = useState<string | null>(null)
   const [answered, setAnswered] = useState(false)
-  const [isCorrect, setIsCorrect] = useState(false)
-  const [showHint, setShowHint] = useState(false)
-  const [sessionCorrect, setSessionCorrect] = useState(0)
+  const [score, setScore] = useState(0)
+  const [streak, setStreak] = useState(0)
+  const [bestStreak, setBestStreak] = useState(0)
   const [finished, setFinished] = useState(false)
-  const [settingsOpen, setSettingsOpen] = useState(false)
-  const [draftSettings, setDraftSettings] = useState(settings)
+  const [secondsLeft, setSecondsLeft] = useState(mode === 'speed' ? 45 : 0)
+  const startedAt = useRef(Date.now())
   const question = queue[questionIndex]
 
   useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement) return
-      if (event.key.toLowerCase() === 'e') setShowHint((current) => !current)
-      if (event.key === 'Enter' && answered) goNext()
-    }
-    window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
-  })
+    if (mode !== 'speed' || finished) return undefined
+    const timer = window.setInterval(() => setSecondsLeft((value) => Math.max(value - 1, 0)), 1000)
+    return () => window.clearInterval(timer)
+  }, [finished, mode])
 
-  function chooseClassification(next: 'fallacy' | 'none') {
-    if (!question || answered) return
-    setClassification(next)
-    if (next === 'none') finishAnswer(next, null)
+  useEffect(() => {
+    if (mode === 'speed' && secondsLeft === 0 && !finished) finishSession(score)
+  }, [finished, mode, score, secondsLeft])
+
+  function finishSession(finalScore: number) {
+    if (finished) return
+    setFinished(true)
+    onSessionComplete({ mode, correct: finalScore, total: mode === 'speed' ? Math.max(questionIndex + (answered ? 1 : 0), 1) : queue.length, durationSeconds: Math.max(1, Math.round((Date.now() - startedAt.current) / 1000)) })
   }
 
-  function chooseFallacy(id: string) {
-    if (!question || answered || classification !== 'fallacy') return
-    finishAnswer('fallacy', id)
-  }
-
-  function finishAnswer(nextClassification: 'fallacy' | 'none', nextFallacyId: string | null) {
-    if (!question || answered) return
-    const correctAnswer = nextClassification === 'none' ? null : nextFallacyId
-    const correct = question.correctFallacyId === correctAnswer
-    setSelectedFallacyId(nextFallacyId)
+  function evaluate(choice: string) {
+    if (!question || answered || finished) return
+    const correct = isChoiceCorrect(question, choice)
+    const nextScore = score + (correct ? 1 : 0)
+    const nextStreak = correct ? streak + 1 : 0
+    setSelection(choice)
     setAnswered(true)
-    setIsCorrect(correct)
-    setSessionCorrect((score) => score + (correct ? 1 : 0))
-    onAnswer({
-      questionId: question.id,
-      fallacyId: question.correctFallacyId,
-      selectedFallacyId: nextFallacyId,
-      classification: nextClassification,
-      isCorrect: correct,
-    })
-  }
+    setScore(nextScore)
+    setStreak(nextStreak)
+    setBestStreak((value) => Math.max(value, nextStreak))
+    onAnswer({ questionId: question.id, mode: question.mode, fallacyId: question.correctFallacyId, selectedFallacyId: choice === 'valid' || choice === 'fallacy' ? null : choice, isCorrect: correct })
 
-  function goNext() {
-    if (!answered) return
-    if (questionIndex >= queue.length - 1) {
-      setFinished(true)
-      return
+    if (mode === 'speed') {
+      window.setTimeout(() => {
+        if (questionIndex >= queue.length - 1 || secondsLeft <= 1) finishSession(nextScore)
+        else nextQuestion()
+      }, 620)
     }
-    setQuestionIndex((index) => index + 1)
-    setClassification(null)
-    setSelectedFallacyId(null)
+  }
+
+  function nextQuestion() {
+    setQuestionIndex((value) => value + 1)
+    setSelection(null)
     setAnswered(false)
-    setIsCorrect(false)
-    setShowHint(false)
   }
 
-  if (queue.length === 0) {
-    return <PracticeEmpty state={state} settings={draftSettings} onClose={onClose} onRestart={onRestart} />
-  }
+  if (!queue.length) return <PracticeEmpty mode={mode} onBack={onBack} onExit={onExit} />
+  if (finished) return <PracticeResult mode={mode} score={score} total={mode === 'speed' ? Math.max(questionIndex + (answered ? 1 : 0), 1) : queue.length} bestStreak={bestStreak} onExit={onExit} onAgain={onStartAgain} />
 
-  if (finished) {
-    return <PracticeFinished total={queue.length} correct={sessionCorrect} onClose={onClose} onRestart={() => onRestart(draftSettings)} />
-  }
-
-  const correctFallacy = question.correctFallacyId ? fallacyById[question.correctFallacyId] : null
-  const selectedFallacy = selectedFallacyId ? fallacyById[selectedFallacyId] : null
-  const optionFallacies = question.optionIds.map((id) => fallacyById[id]).filter(Boolean)
-
+  const options = getSessionOptions(question, mode)
+  const correctLabel = question.correctFallacyId ? fallacyById[question.correctFallacyId]?.name ?? 'the fallacy' : 'valid reasoning'
+  const answerTitle = answered ? (isChoiceCorrect(question, selection ?? '') ? mode === 'speed' ? 'Clean read' : 'That is the move.' : 'A useful miss.') : ''
   return (
-    <div className="practice-page">
-      <div className="practice-topbar">
-        <Button appearance="subtle" icon={<ArrowLeftRegular />} onClick={onClose}>Stoppen</Button>
-        <div className="practice-progress"><span>Vraag {questionIndex + 1} van {queue.length}</span><div className="practice-progress-track"><span style={{ width: `${((questionIndex + (answered ? 1 : 0)) / queue.length) * 100}%` }} /></div></div>
-        <Button appearance="subtle" icon={<SettingsRegular />} onClick={() => setSettingsOpen((open) => !open)}>Instellingen</Button>
-      </div>
-
-      {settingsOpen && <PracticeSettingsPanel settings={draftSettings} onChange={setDraftSettings} onRestart={() => onRestart(draftSettings)} />}
-
-      <div className="practice-intro"><div className="eyebrow accent-eyebrow"><TargetArrowRegular /> Herkenningsronde</div><h1>Wat gebeurt er in deze zin?</h1><p>Kijk eerst naar het patroon. Pas daarna naar het label.</p><span className="shortcut-hint"><kbd>E</kbd> hint <span>·</span> <kbd>Enter</kbd> volgende</span></div>
-
-      <Card className="question-card">
-        <div className="question-meta"><Badge appearance="tint" color={difficultyColor(question.difficulty)}>{question.difficulty}</Badge><span>{question.category ?? 'Controleerbare redenering'}</span></div>
-        <blockquote>{highlightStatement(question.statement, answered ? question.suspiciousPart : '')}</blockquote>
-        <div className="question-divider" />
-        {!answered ? (
-          <div className="answer-area">
-            <div className="answer-step-label"><span>01</span> Eerst de hoofdvraag</div>
-            <div className="classification-grid">
-              <button type="button" className={`classification-option ${classification === 'fallacy' ? 'selected' : ''}`} onClick={() => chooseClassification('fallacy')}><span className="classification-icon"><TargetArrowRegular /></span><span><strong>Dit is een fallacy</strong><small>Er zit een denkfout in</small></span><ArrowRightRegular /></button>
-              <button type="button" className={`classification-option ${classification === 'none' ? 'selected' : ''}`} onClick={() => chooseClassification('none')}><span className="classification-icon neutral"><CheckmarkRegular /></span><span><strong>Geen fallacy</strong><small>Dit argument kan kloppen</small></span><ArrowRightRegular /></button>
-            </div>
-            {classification === 'fallacy' && <div className="label-step"><div className="answer-step-label"><span>02</span> Welke fallacy zie je?</div><div className="fallacy-options">{optionFallacies.map((fallacy) => <button type="button" key={fallacy.id} onClick={() => chooseFallacy(fallacy.id)}><span className="option-letter">{String.fromCharCode(65 + optionFallacies.indexOf(fallacy))}</span><span><strong>{fallacy.nameNl}</strong><small>{fallacy.nameEn}</small></span><ArrowRightRegular /></button>)}</div></div>}
-            {showHint && <div className="hint-panel"><LightbulbRegular /><span><strong>Hint</strong> Kijk vooral naar: <mark>{question.suspiciousPart}</mark></span></div>}
-          </div>
-        ) : (
-          <div className={`feedback-area ${isCorrect ? 'correct' : 'incorrect'}`}>
-            <div className="feedback-header"><span className="feedback-icon">{isCorrect ? <CheckmarkCircleFilled /> : <DismissCircleFilled />}</span><div><div className="eyebrow">{isCorrect ? 'Correct' : 'Nog een keer kijken'}</div><h2>{isCorrect ? (correctFallacy ? correctFallacy.nameNl : 'Geen fallacy') : `Dit is ${correctFallacy ? correctFallacy.nameNl : 'geen fallacy'}`}</h2></div></div>
-            {!isCorrect && selectedFallacy && <p className="mistake-line">Je koos <strong>{selectedFallacy.nameNl}</strong>. Dit is echter <strong>{correctFallacy ? correctFallacy.nameNl : 'geen fallacy'}</strong>.</p>}
-            <div className="feedback-copy"><div className="eyebrow">Waarom?</div><p>{question.explanation}</p><div className="highlighted-copy"><span className="eyebrow">Verdacht gedeelte</span><p>{highlightStatement(question.statement, question.suspiciousPart)}</p></div><div className="contrast-copy"><span className="eyebrow">Waarom de andere antwoorden niet kloppen</span><p>{question.contrast}</p></div></div>
-            <Button appearance={isCorrect ? 'primary' : 'secondary'} icon={questionIndex >= queue.length - 1 ? <TrophyRegular /> : <ArrowRightRegular />} onClick={goNext}>{questionIndex >= queue.length - 1 ? 'Bekijk resultaat' : 'Volgende vraag'} <span className="enter-chip">Enter</span></Button>
-          </div>
-        )}
-      </Card>
+    <div className={['practice-session', mode === 'speed' ? 'speed-session' : ''].filter(Boolean).join(' ')}>
+      <div className="session-topline"><button type="button" className="back-link" onClick={onBack}><Icon name="arrow" size={15} /> All practice modes</button><div className="session-mode-name"><span className={['session-mode-dot', modeMeta[mode].className].join(' ')} />{modeMeta[mode].label}</div><div className="session-streak">{mode === 'speed' ? <><Icon name="timer" size={15} /><strong>{String(secondsLeft).padStart(2, '0')}s</strong></> : <><Icon name="flame" size={15} /><strong>{streak}</strong><span>streak</span></>}</div></div>
+      <div className="session-progress-row"><span>Question {questionIndex + 1} of {mode === 'speed' ? '∞' : queue.length}</span><div className="session-progress"><span style={{ width: mode === 'speed' ? String(Math.max(0, (secondsLeft / 45) * 100)) + '%' : String(((questionIndex + (answered ? 1 : 0)) / queue.length) * 100) + '%' }} /></div><span>{score} correct</span></div>
+      <section className="question-wrap">
+        <div className="question-label"><span className="question-number">{String(questionIndex + 1).padStart(2, '0')}</span><span className={['difficulty-pill', difficultyClass(question.difficulty)].join(' ')}>{question.difficulty}</span><span>{question.mode === 'scenario' ? 'Read the whole room' : question.mode === 'valid' ? 'Keep your skepticism honest' : 'Spot the hidden move'}</span></div>
+        <h1>{mode === 'speed' ? 'Quick read.' : mode === 'scenario' ? 'What is the argument doing?' : mode === 'valid' ? 'Does this reasoning hold up?' : 'Which pattern is hiding here?'}</h1>
+        <div className={['question-card', question.mode === 'scenario' ? 'scenario-question' : ''].filter(Boolean).join(' ')}><div className="question-card-mark"><Icon name={question.mode === 'scenario' ? 'quote' : 'brain'} size={17} /></div><p>{question.prompt}</p><span className="question-card-caption">{question.mode === 'scenario' ? 'Read for the structure, not the vibe.' : mode === 'speed' ? 'Trust the first clear signal.' : 'Take one breath. What is the leap?'}</span></div>
+        <div className="answer-area">
+          {mode === 'valid' ? <BinaryChoices answered={answered} selection={selection} question={question} onChoose={evaluate} /> : <div className="answer-options">{options.map((option, index) => <AnswerOption key={option} value={option} index={index} selected={selection === option} answered={answered} correct={answered && isChoiceCorrect(question, option)} onChoose={evaluate} />)}{mode === 'speed' && !options.includes('valid') && <AnswerOption value="valid" index={options.length} selected={selection === 'valid'} answered={answered} correct={answered && isChoiceCorrect(question, 'valid')} onChoose={evaluate} label="Valid reasoning" subtitle="No fallacy found" />}</div>}
+        </div>
+        {answered && mode !== 'speed' && <Feedback question={question} isCorrect={isChoiceCorrect(question, selection ?? '')} correctLabel={correctLabel} answerTitle={answerTitle} onNext={questionIndex >= queue.length - 1 ? () => finishSession(score) : nextQuestion} isLast={questionIndex >= queue.length - 1} />}
+        {answered && mode === 'speed' && <div className={['speed-feedback', isChoiceCorrect(question, selection ?? '') ? 'is-correct' : 'is-wrong'].join(' ')}><Icon name={isChoiceCorrect(question, selection ?? '') ? 'check' : 'close'} size={15} /><strong>{isChoiceCorrect(question, selection ?? '') ? '+1 ' + correctLabel : correctLabel}</strong><span>{isChoiceCorrect(question, selection ?? '') ? 'Next signal…' : 'Keep moving — the pattern comes back.'}</span></div>}
+      </section>
     </div>
   )
 }
 
-function PracticeSettingsPanel({
-  settings,
-  onChange,
-  onRestart,
-}: {
-  settings: PracticeSettings
-  onChange: (settings: PracticeSettings) => void
-  onRestart: () => void
-}) {
+function BinaryChoices({ answered, selection, question, onChoose }: { answered: boolean; selection: string | null; question: Question; onChoose: (value: string) => void }) {
   return (
-    <Card className="practice-settings-panel">
-      <div className="settings-panel-heading"><div><div className="eyebrow">Sessies aanpassen</div><h2>Jouw oefenmix</h2></div><SettingsRegular /></div>
-      <div className="settings-grid">
-        <label>Vragen<Select value={String(settings.questionCount)} onChange={(_, data) => onChange({ ...settings, questionCount: Number(data.value) as PracticeSettings['questionCount'] })}><option value="5">5 vragen</option><option value="10">10 vragen</option><option value="20">20 vragen</option></Select></label>
-        <label>Moeilijkheid<Select value={settings.difficulty} onChange={(_, data) => onChange({ ...settings, difficulty: data.value as PracticeSettings['difficulty'] })}><option value="all">Alle niveaus</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></Select></label>
-        <label>Bron<Select value={settings.source} onChange={(_, data) => onChange({ ...settings, source: data.value as PracticeSettings['source'] })}><option value="all">Alles</option><option value="learned">Alleen geleerd</option><option value="errors">Alleen fouten</option></Select></label>
-        <label>Categorie<Select value={settings.category} onChange={(_, data) => onChange({ ...settings, category: data.value as PracticeSettings['category'] })}><option value="all">Alle categorieen</option>{categories.map((category) => <option key={category} value={category}>{category}</option>)}</Select></label>
-      </div>
-      <div className="settings-panel-footer"><span>Fouten worden automatisch eerder opnieuw aangeboden.</span><Button appearance="primary" icon={<ArrowRotateClockwiseRegular />} onClick={onRestart}>Start nieuwe mix</Button></div>
-    </Card>
+    <div className="binary-grid">
+      <button type="button" className={choiceClass('valid', selection, answered, question)} onClick={() => onChoose('valid')} disabled={answered}><span className="binary-icon"><Icon name="check" size={18} /></span><span><strong>Valid reasoning</strong><small>The conclusion is supported well enough.</small></span><Icon name="arrow" size={16} /></button>
+      <button type="button" className={choiceClass('fallacy', selection, answered, question)} onClick={() => onChoose('fallacy')} disabled={answered}><span className="binary-icon warning-icon"><Icon name="target" size={18} /></span><span><strong>There is a fallacy</strong><small>A leap or distraction weakens the argument.</small></span><Icon name="arrow" size={16} /></button>
+    </div>
   )
 }
 
-function PracticeEmpty({
-  state,
-  settings,
-  onClose,
-  onRestart,
-}: {
-  state: AppState
-  settings: PracticeSettings
-  onClose: () => void
-  onRestart: (settings: PracticeSettings) => void
-}) {
-  const hasErrors = state.answers.some((answer) => !answer.isCorrect)
-  return <div className="practice-empty-page"><div className="empty-icon large"><TargetArrowRegular /></div><h1>Deze mix is nog leeg.</h1><p>{settings.source === 'errors' && !hasErrors ? 'Je hebt nog geen fout beantwoorde vragen om opnieuw te oefenen.' : 'Met deze filters zijn geen vragen beschikbaar.'}</p><div className="empty-actions"><Button appearance="primary" onClick={() => onRestart({ ...settings, source: 'all' })}>Oefen alles</Button><Button appearance="subtle" onClick={onClose}>Terug naar overzicht</Button></div></div>
+function AnswerOption({ value, index, selected, answered, correct, onChoose, label, subtitle }: { value: string; index: number; selected: boolean; answered: boolean; correct: boolean; onChoose: (value: string) => void; label?: string; subtitle?: string }) {
+  const fallacy = fallacyById[value]
+  const fallbackLabel = value === 'valid' ? 'Valid reasoning' : value === 'fallacy' ? 'There is a fallacy' : fallacy?.name
+  const fallbackSubtitle = value === 'valid' ? 'No fallacy found' : value === 'fallacy' ? 'A leap or distraction' : fallacy?.alsoKnownAs
+  return <button type="button" className={['answer-option', selected ? 'is-selected' : '', answered && correct ? 'is-correct' : '', answered && selected && !correct ? 'is-wrong' : ''].filter(Boolean).join(' ')} onClick={() => onChoose(value)} disabled={answered}><span className="option-letter">{String.fromCharCode(65 + index)}</span><span><strong>{label ?? fallbackLabel}</strong><small>{subtitle ?? fallbackSubtitle}</small></span><span className="option-trail">{answered && correct ? <Icon name="check" size={15} /> : answered && selected && !correct ? <Icon name="close" size={15} /> : <Icon name="chevron" size={15} />}</span></button>
 }
 
-function PracticeFinished({
-  total,
-  correct,
-  onClose,
-  onRestart,
-}: {
-  total: number
-  correct: number
-  onClose: () => void
-  onRestart: () => void
-}) {
-  const percentage = Math.round((correct / total) * 100)
-  return <div className="practice-finished-page"><div className="finished-mark"><TrophyRegular /></div><div className="eyebrow accent-eyebrow">Sessie afgerond</div><h1>{percentage >= 80 ? 'Sterke ronde.' : 'Goed dat je bent blijven kijken.'}</h1><p>Je had <strong>{correct} van {total}</strong> antwoorden correct. Bekijk de uitleg terug en laat de lastige patronen nog eens langskomen.</p><div className="finished-score"><span style={{ width: `${percentage}%` }} /><strong>{percentage}%</strong></div><div className="empty-actions"><Button appearance="primary" icon={<ArrowRotateClockwiseRegular />} onClick={onRestart}>Nog een ronde</Button><Button appearance="subtle" onClick={onClose}>Naar overzicht</Button></div></div>
+function Feedback({ question, isCorrect, correctLabel, answerTitle, onNext, isLast }: { question: Question; isCorrect: boolean; correctLabel: string; answerTitle: string; onNext: () => void; isLast: boolean }) {
+  return <article className={['feedback-card', isCorrect ? 'feedback-correct' : 'feedback-wrong'].join(' ')}><div className="feedback-heading"><span className="feedback-icon"><Icon name={isCorrect ? 'check' : 'spark'} size={18} /></span><div><div className="eyebrow">{isCorrect ? 'Good catch' : 'Keep this distinction'}</div><h2>{isCorrect ? answerTitle : 'The sharper read: ' + correctLabel}</h2></div></div><p className="feedback-explanation">{question.explanation}</p><div className="feedback-grid"><div><small><Icon name="search" size={13} /> Signal</small><p>{question.clue}</p></div><div><small><Icon name="brain" size={13} /> Do not confuse it with…</small><p>{question.contrast}</p></div></div><button type="button" className="button button-primary feedback-next" onClick={onNext}>{isLast ? 'See your result' : 'Next question'} <Icon name={isLast ? 'chart' : 'arrow'} size={15} /></button></article>
 }
 
-function StatItem({ label, value, hint, icon }: { label: string; value: string; hint: string; icon: React.ReactNode }) {
-  return <div className="stat-item"><span className="stat-icon">{icon}</span><div><div className="stat-label">{label}</div><strong>{value}</strong><small>{hint}</small></div></div>
+function PracticeResult({ mode, score, total, bestStreak, onExit, onAgain }: { mode: PracticeMode; score: number; total: number; bestStreak: number; onExit: () => void; onAgain: () => void }) {
+  const percentage = Math.round((score / total) * 100)
+  const headline = percentage >= 80 ? 'The signal came through.' : percentage >= 50 ? 'You found some useful friction.' : 'Good. Now you know where to look.'
+  return <div className="practice-result"><div className="result-orbit"><span className="result-orbit-inner"><Icon name={percentage >= 80 ? 'spark' : 'brain'} size={28} /></span></div><div className="eyebrow eyebrow-lime">Round complete · {modeMeta[mode].label}</div><h1>{headline}</h1><p>{score} of {total} reads landed. {percentage >= 80 ? 'That is a strong foundation for harder examples.' : 'The explanations are the point — let the distinctions do their work.'}</p><div className="result-score"><strong>{percentage}<span>%</span></strong><div><span className="result-score-bar"><i style={{ width: String(percentage) + '%' }} /></span><small>{bestStreak ? 'Best streak: ' + bestStreak : 'Every round starts a streak'}</small></div></div><div className="result-actions"><button type="button" className="button button-primary" onClick={onAgain}><Icon name="refresh" size={16} /> Run it back</button><button type="button" className="button button-ghost" onClick={onExit}>Back to today</button></div></div>
 }
 
-function MasteryStat({ label, value, className }: { label: string; value: number; className: string }) {
-  return <div className={`mastery-stat ${className}`}><strong>{value}</strong><span>{label}</span></div>
+function PracticeEmpty({ mode, onBack, onExit }: { mode: PracticeMode; onBack: () => void; onExit: () => void }) {
+  return <div className="empty-state practice-empty"><span className="empty-round large"><Icon name="target" size={23} /></span><h1>This set is empty for now.</h1><p>{mode === 'identify' ? 'Try another category or start the full field guide. Your practice queue will grow as you explore.' : 'There are not enough questions for this filter yet. Open the full mode to keep moving.'}</p><div className="result-actions"><button type="button" className="button button-primary" onClick={onBack}>Choose another mode</button><button type="button" className="button button-ghost" onClick={onExit}>Back to today</button></div></div>
 }
 
-function MasteryPill({ mastery }: { mastery: Mastery }) {
-  const color = mastery === 'Beheerst' ? 'success' : mastery === 'Redelijk' ? 'informative' : mastery === 'Aan het leren' ? 'warning' : 'subtle'
-  return <Badge appearance="tint" color={color}>{mastery}</Badge>
+function isChoiceCorrect(question: Question, choice: string): boolean {
+  if (question.mode === 'valid') return question.correctFallacyId ? choice === 'fallacy' : choice === 'valid'
+  return choice === question.correctFallacyId
 }
 
-function RecentAnswer({ answer }: { answer: AnswerRecord }) {
-  const question = getQuestionById(answer.questionId)
-  const label = answer.fallacyId ? fallacyById[answer.fallacyId]?.nameNl : 'Geen fallacy'
-  return <div className="recent-row"><span className={`result-dot ${answer.isCorrect ? 'is-correct' : 'is-wrong'}`}>{answer.isCorrect ? <CheckmarkRegular /> : '!'}</span><span className="recent-text"><strong>{label}</strong><small>{question?.difficulty ?? 'Oefening'} <span>·</span> {formatRelativeTime(answer.answeredAt)}</small></span><span className={answer.isCorrect ? 'result-label correct-label' : 'result-label wrong-label'}>{answer.isCorrect ? 'Correct' : 'Opnieuw'}</span></div>
+function getSessionOptions(question: Question, mode: PracticeMode): string[] {
+  if (mode === 'speed') {
+    if (question.mode === 'valid') return ['valid', 'fallacy']
+    if (question.correctFallacyId) return uniqueOptions(question.options).slice(0, 4)
+    const alternatives = fallacies.filter((fallacy) => !question.options.includes(fallacy.id)).slice(0, 3).map((fallacy) => fallacy.id)
+    return uniqueOptions([...alternatives, ...question.options]).slice(0, 3)
+  }
+  return question.options
 }
 
-function navIcon(id: string) {
-  if (id === 'home') return <HomeRegular />
-  if (id === 'library') return <BookOpenRegular />
-  return <DataBarVerticalRegular />
+function uniqueOptions(options: string[]) {
+  return [...new Set(options)]
 }
 
-function difficultyColor(difficulty: Difficulty) {
-  if (difficulty === 'Easy') return 'success' as const
-  if (difficulty === 'Medium') return 'warning' as const
-  return 'danger' as const
+function choiceClass(choice: string, selection: string | null, answered: boolean, question: Question) {
+  return ['binary-choice', selection === choice ? 'is-selected' : '', answered && isChoiceCorrect(question, choice) ? 'is-correct' : '', answered && selection === choice && !isChoiceCorrect(question, choice) ? 'is-wrong' : ''].filter(Boolean).join(' ')
 }
 
-function highlightStatement(statement: string, phrase: string) {
-  if (!phrase) return statement
-  const start = statement.indexOf(phrase)
-  if (start === -1) return statement
-  return <>{statement.slice(0, start)}<mark>{phrase}</mark>{statement.slice(start + phrase.length)}</>
+function difficultyClass(difficulty: Difficulty) {
+  return difficulty === 'Warm-up' ? 'difficulty-warm' : difficulty === 'Deep dive' ? 'difficulty-deep' : 'difficulty-stretch'
 }
 
-function formatRelativeTime(timestamp: number) {
-  const diff = Math.max(0, Date.now() - timestamp)
-  const minutes = Math.floor(diff / 60000)
-  if (minutes < 1) return 'net gedaan'
-  if (minutes < 60) return `${minutes} min geleden`
-  const hours = Math.floor(minutes / 60)
-  if (hours < 24) return `${hours} uur geleden`
-  return `${Math.floor(hours / 24)} d geleden`
+function masteryClass(mastery: string) {
+  return mastery.toLowerCase().replace(' ', '-')
+}
+
+function formatDate(timestamp: number) {
+  const date = new Date(timestamp)
+  const today = new Date()
+  if (date.toDateString() === today.toDateString()) return 'Today'
+  return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
 }
 
 export default App

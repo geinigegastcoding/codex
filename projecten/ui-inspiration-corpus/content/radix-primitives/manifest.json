@@ -1,0 +1,31 @@
+{
+  "source_id": "radix-primitives",
+  "source_name": "Radix Primitives",
+  "source_url": "https://github.com/radix-ui/primitives",
+  "license": "MIT",
+  "license_url": "https://github.com/radix-ui/primitives/blob/main/LICENSE",
+  "terms_url": "https://www.radix-ui.com/primitives",
+  "attribution": "Preserve the MIT notice.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "radix-ui",
+    "repository": "primitives"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:28:17.767Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/radix-ui/primitives/HEAD/README.md",
+      "bytes": 1704,
+      "sha256": "20cbda0a49f12fb8d23bc41106611cd89d8ff3c6950059b4a3092b58f357656d"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/radix-ui/primitives/HEAD/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source_id": "style-dictionary",
+  "source_name": "Style Dictionary",
+  "source_url": "https://github.com/style-dictionary/style-dictionary",
+  "license": "Apache-2.0",
+  "license_url": "https://github.com/style-dictionary/style-dictionary/blob/main/LICENSE",
+  "terms_url": "https://www.styledictionary.org/",
+  "attribution": "Preserve Apache notices.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "style-dictionary",
+    "repository": "style-dictionary"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:07.894Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/style-dictionary/style-dictionary/HEAD/README.md",
+      "bytes": 16347,
+      "sha256": "79bf235dacfe00e9cd71624ae898200a0fd6a6d13d0b5b1125ba331566ac1cf9"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/style-dictionary/style-dictionary/HEAD/LICENSE",
+      "bytes": 9793,
+      "sha256": "46ae5f0dc2e06a18cde8b06bdb45abea0b6e28d169e6eff2069536780304cf6e"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source_id": "primer",
+  "source_name": "Primer",
+  "source_url": "https://github.com/primer/css",
+  "license": "MIT",
+  "license_url": "https://github.com/primer/css/blob/main/LICENSE",
+  "terms_url": "https://primer.github.io/design/",
+  "attribution": "Preserve MIT notices and separate trademark/icon licenses.",
+  "classification": "A",
+  "mode": "github_raw",
+  "repository": {
+    "owner": "primer",
+    "repository": "css"
+  },
+  "ref": "HEAD",
+  "pulled_at": "2026-09-11T16:29:07.161Z",
+  "files": [
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/primer/css/HEAD/README.md",
+      "bytes": 2414,
+      "sha256": "1c14fe579bde96a7bcc2ccffba8c77d1a4f907981a8627e6d6fe8ae465345d01"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/primer/css/HEAD/LICENSE",
+      "bytes": 1078,
+      "sha256": "e2719fc6fd67f6d25fea6cc263509bc517460a554248a8b87426e06e51ea4984"
+    }
+  ]
+}

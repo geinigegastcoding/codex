@@ -1,0 +1,17 @@
+{
+  "name": "ui-inspiration-corpus",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "ui-corpus": "./bin/ui-corpus.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/ui-corpus.mjs serve",
+    "test": "node --test",
+    "validate": "node ./bin/ui-corpus.mjs validate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
