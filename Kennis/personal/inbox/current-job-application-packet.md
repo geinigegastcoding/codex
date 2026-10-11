@@ -1,7 +1,7 @@
 ---
 title: Current 15-plus job application packet
 created: 2026-08-09
-updated: 2026-09-02
+updated: 2026-09-25
 type: income-action
 status: ready-for-guardian-and-user-details
 tags: [personal, income, job-application, Netherlands]
@@ -14,6 +14,7 @@ This packet is prepared for a truthful application only. No application has been
 
 ## First choice: Lidl Leiden Vijf Meiplein
 
+- **Live recheck:** 25 September 2026. Lidl's official listing is still accepting applications.
 - Official vacancy: [Lidl bijbaan vanaf 15 jaar](https://www.werkenbijlidl.nl/jobs/bijbaan-leiden-vijf-meiplein-2-12-uur-leiden-700542)
 - Location: Vijf Meiplein 15, 2321 BN Leiden.
 - Hours: 2-12 per week.
@@ -21,15 +22,19 @@ This packet is prepared for a truthful application only. No application has been
 - Pay shown on the vacancy: EUR 6.06 gross per hour, all-in including holiday allowance.
 - Application: Lidl says no motivation letter or CV is required; the applicant leaves their details and completes the selection game.
 
+For a 15-year-old who is still subject to compulsory education, Dutch government guidance caps work at 2 hours on a school day and 12 hours in a school week. Agree only a schedule that fits those limits and the age-specific task package. [Government working-time rules for 15-year-olds](https://www.rijksoverheid.nl/vraag-en-antwoord/bijbaan-vakantiewerk-en-stage-door-jongeren/hoeveel-uur-werken-15-jaar)
+
 At the advertised rate, 2 hours is about EUR 12.12 gross per week and 12 hours is about EUR 72.72 gross per week before any applicable deductions. These are simple estimates, not a promised schedule or net pay.
 
 ## Backup: Jumbo Leiden Diamantplein
 
+- **Live recheck:** 25 September 2026. The official listing is still active.
 - Official vacancy: [Jumbo Vakkenvuller Diamantplein](https://nl.jobs.jumbo.com/nl/vacature/bijbaan-vakkenvuller/2023-18435/)
 - Location: Leiden Diamantplein.
 - Hours: 0-10 per week.
 - Age: 15+.
 - Pay shown on the vacancy: EUR 5.95-19.14 per hour, depending on age and applicable conditions.
+- The listing does not break out the 15-year-old rate in its accessible text; confirm the exact rate and age-appropriate duties before applying.
 - Application: the page offers a WhatsApp application route and an in-person conversation.
 
 For a 15-year-old, ask the store to confirm the legal task package and hours before accepting anything. Do not agree to duties that conflict with Dutch youth-work rules.

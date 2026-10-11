@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>VibeKeepAlive</AssemblyName>
+    <RootNamespace>VibeKeepAlive</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\codex.png" />
+    <Resource Include="Assets\claude.ico" />
+    <Resource Include="Assets\t3.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="SmokeTests\**" />
+    <EmbeddedResource Remove="SmokeTests\**" />
+    <None Remove="SmokeTests\**" />
+    <Page Remove="SmokeTests\**" />
+  </ItemGroup>
+</Project>

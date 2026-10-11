@@ -1,0 +1,67 @@
+[submodule "Website"]
+	path = Website
+	url = https://github.com/geinigegastcoding/magisdata.git
+
+[submodule "WebsiteMagisData"]
+	path = WebsiteMagisData
+	url = https://github.com/geinigegastcoding/magisdata.git
+
+[submodule "fitness-app-worktree"]
+	path = fitness-app-worktree
+	url = https://github.com/geinigegastcoding/fitness-app.git
+	branch = codex/fitness-production
+
+[submodule "klanten/WebsitePapa2"]
+	path = klanten/WebsitePapa2
+	url = https://github.com/geinigegastcoding/papawebsite.git
+	branch = codex/papa-father-app
+
+[submodule "projecten/API-router"]
+	path = projecten/API-router
+	url = https://github.com/geinigegastcoding/API-router.git
+	branch = master
+
+[submodule "projecten/N-Lang"]
+	path = projecten/N-Lang
+	url = https://github.com/geinigegastcoding/N-Lang.git
+
+[submodule "projecten/Reading-app"]
+	path = projecten/Reading-app
+	url = https://github.com/geinigegastcoding/Reading-app.git
+
+[submodule "projecten/Siteroast"]
+	path = projecten/Siteroast
+	url = https://github.com/geinigegastcoding/Siteroast.git
+
+[submodule "projecten/Startup"]
+	path = projecten/Startup
+	url = https://github.com/geinigegastcoding/project-pilot-local-dev-dashboard.git
+
+[submodule "projecten/_codex_bridge_research/agentify"]
+	path = projecten/_codex_bridge_research/agentify
+	url = https://github.com/agentify-sh/desktop.git
+
+[submodule "projecten/_codex_bridge_research/control"]
+	path = projecten/_codex_bridge_research/control
+	url = https://github.com/adamallcock/codex-chatgpt-control.git
+
+[submodule "projecten/_codex_bridge_research/miuuyy"]
+	path = projecten/_codex_bridge_research/miuuyy
+	url = https://github.com/miuuyy/codex-chatgpt-web.git
+
+[submodule "projecten/_codex_bridge_research/oracle"]
+	path = projecten/_codex_bridge_research/oracle
+	url = https://github.com/steipete/oracle.git
+
+[submodule "projecten/bromfietscentrum"]
+	path = projecten/bromfietscentrum
+	url = https://github.com/geinigegastcoding/bromfietscentrum.git
+
+[submodule "projecten/fitness-app"]
+	path = projecten/fitness-app
+	url = https://github.com/geinigegastcoding/fitness-app.git
+
+[submodule "projecten/calorie-tracker-android"]
+	path = projecten/calorie-tracker-android
+	url = https://github.com/geinigegastcoding/luna-calorie-tracker.git
+	branch = main

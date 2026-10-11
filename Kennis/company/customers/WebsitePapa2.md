@@ -58,10 +58,10 @@ Gerhard is highly regarded by his peers and managers from his time at Zilveren K
 **Version:** 0.1.0
 
 ### Tech Stack:
-- **Framework:** Next.js 16.0.0
+- **Framework:** Next.js 16.2.11
 - **UI:** React 19.0.0, Tailwind CSS 4.1.5 (@tailwindcss/postcss)
 - **Language:** TypeScript 5.8.3
-- **Deployment:** OpenNext (@opennextjs/cloudflare 1.19.4), Cloudflare Workers (Wrangler 4.86.0)
+- **Deployment:** OpenNext (@opennextjs/cloudflare 1.20.2), Cloudflare Workers (Wrangler 4.86.0)
 - **Fonts:** @fontsource/manrope (v5.0.19), @fontsource/space-grotesk (v5.0.18)
 
 ### App Structure (Next.js App Router):
@@ -85,7 +85,7 @@ Gerhard is highly regarded by his peers and managers from his time at Zilveren K
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && opennextjs-cloudflare build --skipNextBuild",
+    "build": "next build",
     "lint": "tsc --noEmit",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
@@ -95,8 +95,8 @@ Gerhard is highly regarded by his peers and managers from his time at Zilveren K
   "dependencies": {
     "@fontsource/manrope": "^5.0.19",
     "@fontsource/space-grotesk": "^5.0.18",
-    "@opennextjs/cloudflare": "^1.19.4",
-    "next": "^16.0.0",
+    "@opennextjs/cloudflare": "^1.20.2",
+    "next": "^16.2.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

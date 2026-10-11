@@ -6,21 +6,21 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
-    "@remotion/captions": "4.0.505",
-    "@remotion/cli": "4.0.505",
-    "@remotion/media": "4.0.505",
-    "@remotion/zod-types": "4.0.505",
+    "@remotion/captions": "4.0.534",
+    "@remotion/cli": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/zod-types": "4.0.534",
     "commander": "^14.0.0",
     "dotenv": "^17.2.0",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "remotion": "4.0.505",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.534",
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@remotion/eslint-config-flat": "4.0.505",
+    "@remotion/eslint-config-flat": "4.0.534",
     "@types/node": "^24.0.0",
-    "@types/react": "19.2.7",
+    "@types/react": "19.3.0",
     "@types/web": "0.0.166",
     "eslint": "9.19.0",
     "prettier": "3.8.1",
@@ -51,5 +51,7 @@
     "smoke:still": "remotion still src/index.ts SmokeTest out/smoke.png --frame=45 --scale=0.25",
     "smoke:render": "remotion render src/index.ts SmokeTest out/smoke.mp4 --scale=0.25 --frames=0-449 --codec=h264"
   },
-  "sideEffects": ["*.css"]
+  "sideEffects": [
+    "*.css"
+  ]
 }

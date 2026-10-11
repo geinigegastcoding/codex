@@ -1,6 +1,7 @@
 ---
 title: itch.io listing draft - Python beginner challenge pack
 created: 2026-08-09
+updated: 2026-09-25
 type: marketing-copy
 status: guardian-review
 tags: [personal, income, itch-io, digital-product, python]
@@ -13,11 +14,20 @@ This is a parent- or guardian-managed draft. Do not register, connect PayPal/Str
 
 ## Why this is a possible alternative
 
-itch.io's current terms say a publisher must be 18+ or have legal parental/guardian consent. Its Creator FAQ says creating pages is free, creators can choose an open revenue-share percentage, and the platform supports books and other digital content, not only games. It offers hosted downloads and analytics. [itch.io terms](https://itch.io/docs/legal/terms) [itch.io Creator FAQ](https://itch.io/docs/creators/faq.amp)
+itch.io's current terms say a publisher must be 18+ or have legal parental/guardian consent. Its Creator FAQ says creating pages and uploading files are free, creators can choose an open revenue-share percentage, and the platform supports books and other digital content, not only games. It offers hosted downloads and analytics. [itch.io terms](https://itch.io/docs/legal/terms) [itch.io Creator FAQ](https://itch.io/docs/creators/faq.amp)
 
-The trade-off is audience fit: itch.io is known mainly for games and indie creator content, so discovery for a beginner Python worksheet may be weaker than Etsy. It is still worth testing because there is no listing fee and the product is a digital creator resource.
+The trade-off is audience fit: itch.io is known mainly for games and indie creator content, so discovery for a beginner Python worksheet may be weaker than Etsy. A free listing does not make the payout route free or automatic.
 
 A current browse check found Python-related books and tutorials on itch.io, including a Python/pygame book with a USD 5 minimum and a Python-tagged books area. That supports the category fit, but it does not prove that this small pack will sell. [Example Python book](https://pygame.itch.io/pygame-book) [Python-tagged books](https://itch.io/books/top-rated/tag-python)
+
+### Live payout check (25 September 2026)
+
+- itch.io lets publishers choose a revenue-share percentage from 0% to 100%; payment processors still charge per sale, typically around $0.30 plus 2.9% according to itch.io. Exact fees depend on the selected processor, currency and buyer payment method. [itch.io payment guide](https://itch.io/docs/creators/payments)
+- In **Direct to you** mode, the seller is the merchant of record and is responsible for VAT collection and remittance. itch.io lists EUR as a PayPal currency; its listed Stripe direct-payment countries are the United States, Canada, Ireland and the United Kingdom, not the Netherlands. Confirm an eligible guardian-owned account before choosing this route.
+- In **itch.io Payouts** mode, itch.io handles VAT, but the balance is USD-only. A payout requires at least $5, a completed and validated tax interview, and a payout method; funds have a seven-day waiting period followed by review. itch.io also applies a one-time $3 tax-identity verification fee, and says missing tax identification can result in 30% withholding. [itch.io payment guide](https://itch.io/docs/creators/payments)
+- For a publisher under 18, itch.io requires legal guardian consent. Stripe also requires a legal guardian to become the account owner before an under-18 account can accept charges or receive transfers. [itch.io terms](https://itch.io/docs/legal/terms) [Stripe age requirements](https://support.stripe.com/questions/can-i-use-stripe-if-i-am-under-18)
+
+**Decision:** keep itch.io as a conditional backup. Do not call it a zero-cost payout path or use the EUR 4.99 draft price until the guardian selects an eligible payment route and checks its net proceeds, tax handling and currency costs.
 
 ## Listing fields
 
@@ -25,7 +35,7 @@ A current browse check found Python-related books and tutorials on itch.io, incl
 
 **Category:** Books or Tools, whichever best matches the current form
 
-**Minimum price:** EUR 4.99, subject to guardian approval and payment costs
+**Working test minimum:** EUR 4.99, not approved. Use only if the guardian confirms the chosen payment route supports EUR and checks processor fees, VAT and currency costs.
 
 **Optional revenue share:** 0-10% for the first test, chosen by the guardian after reviewing the dashboard and platform terms
 
