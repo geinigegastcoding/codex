@@ -1,0 +1,161 @@
+{
+  "status": "verified-local-founder-calculator",
+  "verifiedAtUtc": "2026-10-17T12:40:00.722891+00:00",
+  "entryPoint": "index.html",
+  "selfContainedHtml": true,
+  "scope": "Working offline decision aid, not an app paywall, settlement statement, demand model or forecast.",
+  "files": {
+    "index.html": {
+      "bytes": 23664,
+      "sha256": "d8ed8b738633beebc96cb9f874fff7c6dc54d8507695a25d93cec65244cc4e32"
+    },
+    "model.js": {
+      "bytes": 5730,
+      "sha256": "5765fdbed387121dc1858f9d30cb4c0cdf3d62a24f09734c3ce260a3a8233a9b"
+    },
+    "math-check.js": {
+      "bytes": 3699,
+      "sha256": "952d5e3fc30510272710fc9239faae1d2e4823ea96e1740f671aa06d22c6d3dd"
+    },
+    "browser-review.cjs": {
+      "bytes": 3684,
+      "sha256": "e3fc20315afc902d126dc9c35945b2f7c39fd0bbc9abc3e93d1ae0abff81dbd5"
+    },
+    "qa/math-check-output.txt": {
+      "bytes": 167,
+      "sha256": "d971c22b5349cff108c85d6d18d8ab26fb8b1328d20fb5e2398ee635f3ad595c"
+    },
+    "qa/confirmed/desktop-inputs.png": {
+      "bytes": 68015,
+      "sha256": "bd5af3d34d5fc4117060299a622b54464158c9542a7192a221000a3f894b32ff"
+    },
+    "qa/confirmed/desktop-results.png": {
+      "bytes": 57841,
+      "sha256": "b47fcd24e8e9f007d9285d190a2517da8bc468e9584ef8ff67ac69053652032b"
+    },
+    "qa/confirmed/desktop-snapshot.txt": {
+      "bytes": 4915,
+      "sha256": "a4fd692a2d27554590d29a394123491d918e36aadd2be72932537db6105d1d92"
+    },
+    "qa/confirmed/mobile-inputs.png": {
+      "bytes": 37914,
+      "sha256": "6088be426184195c1871559be5e5114408e20e20bf3a36e8b2b05ba138c4ea22"
+    },
+    "qa/confirmed/mobile-results.png": {
+      "bytes": 34581,
+      "sha256": "ebff9f28fc6102a4acb172766d752bfdc8dd6c1b6f743f71c1c714526bc9287f"
+    },
+    "qa/confirmed/mobile-snapshot.txt": {
+      "bytes": 4915,
+      "sha256": "a4fd692a2d27554590d29a394123491d918e36aadd2be72932537db6105d1d92"
+    },
+    "qa/confirmed/results.json": {
+      "bytes": 1222,
+      "sha256": "4dd93b788ec59882f6073e632a2ffcd77bca748fa07f3ab645c591ca8e9f5af3"
+    }
+  },
+  "calculationVerification": {
+    "status": "passed",
+    "sourceAndInlineModelExactlyMatch": true,
+    "knownCases": [
+      "Gross-basis 15% fee /21% VAT: €9.99 → €6.76 and €14.99 → €10.14 before refunds and support.",
+      "Tax-exclusive basis: €9.99 → €1.24 fee and €7.02 proceeds.",
+      "Zero volume retains €50 fixed costs; €1 support yields €5.76 unit contribution and nine-sale break-even.",
+      "Negative contribution and full refunds have no positive break-even count.",
+      "Blank values, sub-cent prices, unsafe amounts/volume and unsafe unit margin at zero volume are rejected."
+    ],
+    "rounding": "Safe integer cents; tax-exclusive amount, fee and proportional net refund rounded per line. Display is nl-NL EUR.",
+    "parentEdgeCorrection": "Independently reproduced valid:true with unsafe -120000000000000 unit contribution at zero volume; guarded the per-purchase difference and added a regression check before final browser confirmation."
+  },
+  "browserVerification": {
+    "phase": "confirmed",
+    "status": "passed",
+    "browser": "155.0.4283.45",
+    "noServer": true,
+    "localFileOnly": true,
+    "observations": [
+      {
+        "viewport": "desktop",
+        "width": 1280,
+        "height": 900,
+        "geometry": {
+          "pageWidth": 1280,
+          "contentWidth": 1280,
+          "tableViewport": 1084,
+          "tableWidth": 1084
+        },
+        "resultChangedOnInput": true,
+        "statusAfterInput": "Calculated from the assumptions above. These are modeled contributions, not guaranteed profit.",
+        "invalidHidden": true,
+        "invalidStatus": "Price hypothesis A is required. Check all inputs; blanks are not zero.",
+        "browserErrors": []
+      },
+      {
+        "viewport": "mobile",
+        "width": 390,
+        "height": 844,
+        "geometry": {
+          "pageWidth": 390,
+          "contentWidth": 390,
+          "tableViewport": 358,
+          "tableWidth": 358
+        },
+        "resultChangedOnInput": true,
+        "statusAfterInput": "Calculated from the assumptions above. These are modeled contributions, not guaranteed profit.",
+        "invalidHidden": true,
+        "invalidStatus": "Price hypothesis A is required. Check all inputs; blanks are not zero.",
+        "browserErrors": []
+      }
+    ]
+  },
+  "visualReview": {
+    "status": "passed",
+    "viewports": [
+      "1280×900",
+      "390×844"
+    ],
+    "inspected": [
+      "desktop inputs",
+      "desktop results",
+      "mobile inputs",
+      "mobile results"
+    ],
+    "scope": "Input/result hierarchy, readable table, wrapping and absence of horizontal overflow. Not a complete accessibility or customer-comprehension test."
+  },
+  "correctionHistory": [
+    "Initial browser pass found stale results after input changes, a 640px table in a 358px mobile viewport and raw internal field names on errors. Combined correction added live calculation, fitted table, human errors, standalone inline model and numeric range guards.",
+    "Parent subsequently corrected the specific zero-volume unsafe-margin combination, reran math and final browser checks. Prior initial files remain in pre-correction; initial browser evidence remains in qa/before."
+  ],
+  "toolHistory": [
+    "Local Python preview-server launch was rejected before execution by automatic tool policy (only stated reason: blocked by policy). No server was launched or workaround server used.",
+    "In-app file browser failed to initialize: failed to write kernel assets, OS error 3.",
+    "Fallback used installed headless Edge 155.0.4283.45 with already bundled Playwright against a direct file URL; external HTTP(S) requests blocked; contexts/browser closed. No dependency/browser downloads."
+  ],
+  "assumptions": {
+    "oneTimePricesEur": [
+      9.99,
+      14.99
+    ],
+    "vatPercent": 21,
+    "totalFeePercent": 15,
+    "feeBase": "Unresolved: selectable gross or tax-exclusive scenario, not a verified Ollo settlement base.",
+    "refundSharePercent": 0,
+    "refundTreatment": "Proportional reversal of proceeds after modeled VAT/fee; actual store refund/fee treatment can differ.",
+    "supportPerBuyerEur": 1,
+    "fixedMonthlyEur": 50,
+    "newPurchasesMonthly": 100,
+    "sameVolumeBothPrices": true
+  },
+  "limits": [
+    "No willingness-to-pay, conversion, CAC, renewal, currency conversion or user/revenue data.",
+    "Higher displayed contribution at the same assumed volume does not establish which price performs better in the market.",
+    "No billing, publication, external account writes, network integration or app-source changes."
+  ],
+  "primarySourcesReopenedDate": "2026-10-17",
+  "primarySources": [
+    "https://support.google.com/googleplay/android-developer/answer/112622?hl=en",
+    "https://support.google.com/googleplay/android-developer/answer/11131145?hl=en-en",
+    "https://support.google.com/googleplay/android-developer/answer/138000?hl=en-en"
+  ],
+  "sourceLimit": "Google tax-exclusive fee example is conditional on developer-remitted VAT; EU Play Billing guidance assigns VAT remittance to Google. These sources alone do not verify Ollo account-specific fee enrollment, transaction class or settlement base."
+}

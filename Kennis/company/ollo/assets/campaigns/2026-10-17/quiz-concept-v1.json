@@ -1,0 +1,17 @@
+{
+  "status": "unpublished-concept",
+  "mode": "built-in ImageGen",
+  "file": "quiz-concept-v1.png",
+  "promptFile": "quiz-concept-v1.prompt.txt",
+  "sourceImage": "Ollo app/src/main/res/drawable-nodpi/ollo_mascot.png (identity reference)",
+  "generatedOriginal": "C:\\Users\\Daniël\\.codex\\generated_images\\01a1469d-a67f-73e3-8985-e66a1dd64903\\exec-76d5bdcf-6ac6-4b32-bddb-2f963c02e9f0.png",
+  "width": 1122,
+  "height": 1402,
+  "pixelFormat": "Format24bppRgb",
+  "sha256": "5216eaa27e5a3b14319b465e86a0ac2dd4bdd06c953a21c0db94a0304c10eeac",
+  "textInImage": false,
+  "copyFile": "../../../AD-CONCEPTS.md",
+  "appAssetReplaced": false,
+  "boardCreated": false,
+  "boardLimitation": "Direct Creative Production MCP call not exposed in this session; used local preview."
+}

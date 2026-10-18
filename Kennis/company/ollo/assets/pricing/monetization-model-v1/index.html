@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Ollo one-time price model</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fffdfa;
+      --surface: #ffffff;
+      --ink: #29231e;
+      --muted: #5b5148;
+      --line: #d8cfc2;
+      --orange: #c94d1d;
+      --orange-light: #f6e2d6;
+      --focus: #74300f;
+      --good: #225d3d;
+      --bad: #8a2d22;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    main { max-width: 1180px; margin: 0 auto; padding: clamp(1rem, 4vw, 3rem); }
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: .4rem; font-size: clamp(1.8rem, 4vw, 2.75rem); line-height: 1.12; letter-spacing: -.025em; }
+    h2 { margin-bottom: .8rem; font-size: 1.25rem; line-height: 1.25; }
+    .intro { max-width: 68ch; color: var(--muted); }
+    .notice { margin: 1.5rem 0 2rem; padding: .9rem 1rem; background: var(--orange-light); border: 1px solid #d79a7e; }
+    .notice strong { color: #672708; }
+    form { display: grid; gap: 1.5rem; }
+    fieldset { min-width: 0; margin: 0; padding: 1rem 0 1.2rem; border: 0; border-top: 2px solid var(--ink); }
+    legend { padding: 0 .65rem 0 0; font-size: 1.2rem; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem 1.5rem; }
+    .field { min-width: 0; display: grid; align-content: start; gap: .3rem; }
+    label { font-weight: 650; }
+    .hint { margin: 0; max-width: 72ch; color: var(--muted); font-size: .92rem; }
+    input, select, button {
+      min-height: 2.8rem;
+      border: 1px solid #74685d;
+      border-radius: 3px;
+      padding: .55rem .7rem;
+      background: var(--surface);
+      color: var(--ink);
+      font: inherit;
+    }
+    input { width: 100%; font-variant-numeric: tabular-nums; }
+    select { width: 100%; }
+    input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    .unit { position: relative; }
+    .unit input { padding-right: 3rem; }
+    .unit span { position: absolute; right: .75rem; top: .55rem; color: var(--muted); pointer-events: none; }
+    .two-prices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: .4rem; }
+    .price-hypothesis { min-width: 0; }
+    .price-hypothesis h2 { margin: 0 0 .7rem; font-size: 1rem; }
+    .actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    button { width: auto; min-width: 9rem; padding: .55rem 1rem; border-color: var(--orange); background: var(--orange); color: white; font-weight: 700; cursor: pointer; }
+    button:hover { background: #a93d14; }
+    #status { margin: 0; font-weight: 650; }
+    #status[data-state="error"] { color: var(--bad); }
+    #status[data-state="ok"] { color: var(--good); }
+    .results { margin-top: 2.5rem; }
+    .results-intro { color: var(--muted); max-width: 72ch; }
+    .table-wrap { overflow-x: auto; padding: .5rem 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+    table { width: 100%; min-width: 0; table-layout: fixed; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    caption { text-align: left; padding: .7rem 0; color: var(--muted); }
+    th, td { padding: .7rem .8rem; text-align: right; vertical-align: top; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+    th:first-child, td:first-child { width: 44%; text-align: left; }
+    th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { width: 28%; }
+    thead th { background: #f1e9dc; color: var(--ink); }
+    tbody tr:nth-child(even) { background: #f5f0e7; }
+    tbody tr.key-row { font-weight: 750; border-top: 2px solid var(--orange); }
+    tbody tr.key-row td:first-child { color: #71300e; }
+    .empty { padding: 1rem 0; color: var(--muted); border-bottom: 1px solid var(--line); }
+    .method { margin-top: 2rem; padding-top: 1.2rem; border-top: 2px solid var(--ink); }
+    .method p { max-width: 75ch; }
+    .formula { font-variant-numeric: tabular-nums; background: #f1e9dc; padding: .1rem .3rem; }
+    .sources { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+    .sources li { margin: .4rem 0; }
+    a { color: #71300e; text-underline-offset: .18em; }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .93rem; }
+    ::selection { color: white; background: #71300e; }
+    @media (max-width: 640px) {
+      main { padding: 1rem; }
+      .fields, .two-prices { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+      fieldset { padding-top: .85rem; }
+      th, td { padding: .6rem .55rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Ollo one-time price model</h1>
+    <p class="intro">Compare two possible one-time prices against editable assumptions. This models contribution, not guaranteed profit or a Play payout.</p>
+
+    <p class="notice"><strong>Founder hypothesis only.</strong> Ollo 0.2.0-review has no billing and takes no payments. €9.99 and €14.99 are unvalidated test prices, not launch prices. Confirm Ollo’s Play enrollment, transaction classification, fee basis and tax treatment before operational use.</p>
+
+    <form id="model-form" novalidate>
+      <fieldset>
+        <legend>Price hypotheses</legend>
+        <p class="hint">Same proposed one-time product at each price; no subscription or renewal is modeled.</p>
+        <div class="two-prices">
+          <div class="price-hypothesis">
+            <h2>Hypothesis A</h2>
+            <label for="priceA">One-time customer price, VAT included</label>
+            <div class="unit"><input id="priceA" name="priceA" type="number" min="0.01" step="0.01" value="9.99" required><span>€</span></div>
+          </div>
+          <div class="price-hypothesis">
+            <h2>Hypothesis B</h2>
+            <label for="priceB">One-time customer price, VAT included</label>
+            <div class="unit"><input id="priceB" name="priceB" type="number" min="0.01" step="0.01" value="14.99" required><span>€</span></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Shared assumptions</legend>
+        <div class="fields">
+          <div class="field">
+            <label for="vatPct">Illustrative VAT rate</label>
+            <div class="unit"><input id="vatPct" name="vatPct" type="number" min="0" max="100" step="0.1" value="21" required><span>%</span></div>
+            <p class="hint">21% is an example for the Netherlands, not tax advice. Actual treatment may vary.</p>
+          </div>
+          <div class="field">
+            <label for="feePct">Illustrative total Play service + billing fee</label>
+            <div class="unit"><input id="feePct" name="feePct" type="number" min="0" max="100" step="0.1" value="15" required><span>%</span></div>
+            <p class="hint">15% is only an example, not a confirmed Ollo rate. Eligibility, enrollment and transaction class affect the applicable rate.</p>
+          </div>
+          <div class="field">
+            <label for="feeBase">Fee-base scenario — unresolved</label>
+            <select id="feeBase" name="feeBase">
+              <option value="gross" selected>Gross customer price including modeled VAT</option>
+              <option value="exVat">Tax-exclusive customer price</option>
+            </select>
+            <p class="hint">Google’s net-price fee example is scoped to countries where developers remit VAT; EU guidance says Google remits VAT for EU Play Billing purchases. Neither establishes Ollo’s account-specific fee base. Switch scenarios to see the sensitivity.</p>
+          </div>
+          <div class="field">
+            <label for="refundPct">Refund share assumption</label>
+            <div class="unit"><input id="refundPct" name="refundPct" type="number" min="0" max="100" step="0.1" value="0" required><span>%</span></div>
+            <p class="hint">Modeled as proportional reversal of proceeds after VAT and Play fee. Actual refund and fee treatment may differ.</p>
+          </div>
+          <div class="field">
+            <label for="supportCost">Support cost per new buyer</label>
+            <div class="unit"><input id="supportCost" name="supportCost" type="number" min="0" step="0.01" value="1.00" required><span>€</span></div>
+            <p class="hint">Illustrative €1; applied to every new buyer, including refunded buyers.</p>
+          </div>
+          <div class="field">
+            <label for="fixedMonthlyCost">Fixed monthly costs</label>
+            <div class="unit"><input id="fixedMonthlyCost" name="fixedMonthlyCost" type="number" min="0" step="0.01" value="50.00" required><span>€</span></div>
+            <p class="hint">Illustrative €50. Enter actual recurring bills when known. No RevenueCat currency conversion is included.</p>
+          </div>
+          <div class="field">
+            <label for="newPurchases">New purchases per month</label>
+            <input id="newPurchases" name="newPurchases" type="number" min="0" step="1" value="100" required>
+            <p class="hint">Illustrative volume of new one-time purchases only. No renewals, churn or conversion rate is assumed.</p>
+          </div>
+        </div>
+      </fieldset>
+      <div class="actions">
+        <button type="submit">Calculate</button>
+        <p id="status" role="status" aria-live="polite" data-state="ok">Illustrative inputs loaded.</p>
+      </div>
+    </form>
+
+    <section class="results" aria-labelledby="results-heading">
+      <h2 id="results-heading">Modeled amounts</h2>
+      <p class="results-intro">Every purchase is modeled in euros and rounded to cents by line. This is a decision aid: accounting, actual Play settlements, income taxes, development and unentered costs are outside the model.</p>
+      <div id="results-empty" class="empty" hidden>Enter valid values, then calculate to see the comparison. Blank fields are not treated as zero.</div>
+      <div id="results-table-wrap" class="table-wrap">
+        <table>
+          <caption>Shared volume and assumptions apply to both one-time price hypotheses.</caption>
+          <thead>
+            <tr><th scope="col">Calculation step</th><th id="headingA" scope="col">A · €9.99</th><th id="headingB" scope="col">B · €14.99</th></tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="method" aria-labelledby="method-heading">
+      <h2 id="method-heading">How the arithmetic works</h2>
+      <p>For each one-time purchase: tax-exclusive price = gross price ÷ (1 + VAT rate), rounded to cents; modeled VAT = gross price − rounded tax-exclusive price; modeled Play fee = chosen fee base × fee rate, rounded to cents; proceeds before refunds = gross − modeled VAT − modeled fee.</p>
+      <p>Refunds are an explicit simplifying assumption: the chosen refund share reverses that net proceeds amount proportionally. Support cost is then subtracted for every new buyer, including refunded buyers. Monthly modeled contribution = per-purchase contribution × new purchases − fixed monthly costs. Break-even purchases = ceiling(fixed monthly costs ÷ positive per-purchase contribution); if contribution is zero or negative, no break-even count is shown. Zero monthly volume still leaves fixed monthly costs.</p>
+      <p>Rounding is per line to the nearest cent; the fee is computed from the selected base before rounding. This is not intended to reproduce Play's settlement ledger.</p>
+    </section>
+
+    <section class="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Official references and limits</h2>
+      <ul>
+        <li><a href="https://support.google.com/googleplay/android-developer/answer/112622?hl=en">Google Play service-fee schedule</a> — fee rates depend on program, earnings eligibility and transaction type.</li>
+        <li><a href="https://support.google.com/googleplay/android-developer/answer/11131145?hl=en-en">Google Play service-fee explanation</a> — the purchase-price wording does not establish Ollo’s VAT-inclusive versus tax-exclusive fee base.</li>
+        <li><a href="https://support.google.com/googleplay/android-developer/answer/138000?hl=en-en">Google Play tax guidance</a> — the net-price fee example is scoped to developer-remitted VAT; its EU section says Google remits VAT for EU Play Billing purchases. This still does not establish Ollo’s account-specific fee base.</li>
+      </ul>
+      <p>Before operational use, confirm fee enrollment, install classification, fee base and applicable taxes in the current Play Console/accounting records. This page has no billing integration and does not represent a Play quote. The source review date recorded in PRICING.md is 17 October 2026.</p>
+    </section>
+
+    <footer>Offline local calculator. Inputs stay in this browser page; nothing is sent to a server.</footer>
+  </main>
+  <script id="pricing-model">
+(function (root) {
+  function calculate(input) {
+    const errors = [];
+    const labels = {
+      priceA: "Price hypothesis A",
+      priceB: "Price hypothesis B",
+      vatPct: "Illustrative VAT rate",
+      feePct: "Illustrative Play fee rate",
+      refundPct: "Refund share",
+      supportCost: "Support cost per new buyer",
+      fixedMonthlyCost: "Fixed monthly costs",
+      newPurchases: "New purchases per month"
+    };
+    const required = Object.keys(labels);
+    const values = {};
+
+    for (const key of required) {
+      const raw = input[key];
+      if (raw === "" || raw === null || raw === undefined || (typeof raw === "string" && raw.trim() === "")) {
+        errors.push(labels[key] + " is required.");
+        continue;
+      }
+      values[key] = Number(raw);
+      if (!Number.isFinite(values[key])) errors.push(labels[key] + " must be a finite number.");
+    }
+
+    if (input.feeBase !== "gross" && input.feeBase !== "exVat") errors.push("Choose a fee-base scenario.");
+    for (const key of ["priceA", "priceB"]) {
+      if (Number.isFinite(values[key]) && values[key] < 0.01) errors.push(labels[key] + " must be at least €0.01.");
+    }
+    for (const key of ["vatPct", "feePct", "refundPct"]) {
+      if (Number.isFinite(values[key]) && (values[key] < 0 || values[key] > 100)) errors.push(labels[key] + " must be between 0% and 100%.");
+    }
+    for (const key of ["supportCost", "fixedMonthlyCost", "newPurchases"]) {
+      if (Number.isFinite(values[key]) && values[key] < 0) errors.push(labels[key] + " cannot be negative.");
+    }
+    if (Number.isFinite(values.newPurchases) && !Number.isSafeInteger(values.newPurchases)) {
+      errors.push("New purchases per month must be a whole number within the safe calculation range.");
+    }
+
+    const toCents = function (amount, label) {
+      const cents = Math.round((amount + Number.EPSILON) * 100);
+      if (!Number.isSafeInteger(cents)) {
+        errors.push(label + " exceeds the safe calculation range.");
+        return null;
+      }
+      return cents;
+    };
+
+    const inputCents = {};
+    for (const key of ["priceA", "priceB", "supportCost", "fixedMonthlyCost"]) {
+      if (Number.isFinite(values[key])) inputCents[key] = toCents(values[key], labels[key]);
+    }
+    if (errors.length) return { valid: false, errors: errors };
+
+    const vatRate = values.vatPct / 100;
+    const feeRate = values.feePct / 100;
+    const refundRate = values.refundPct / 100;
+    const purchases = values.newPurchases;
+    const roundCents = function (rawCents, label) {
+      const cents = Math.round(rawCents + Number.EPSILON);
+      if (!Number.isSafeInteger(cents)) {
+        errors.push(label + " exceeds the safe calculation range; reduce the price, cost, or monthly purchase volume.");
+        return null;
+      }
+      return cents;
+    };
+
+    const scenarios = [
+      { id: "A", grossCents: inputCents.priceA },
+      { id: "B", grossCents: inputCents.priceB }
+    ].map(function (scenario) {
+      const exVatCents = roundCents(scenario.grossCents / (1 + vatRate), "Tax-exclusive price for hypothesis " + scenario.id);
+      const vatCents = scenario.grossCents - exVatCents;
+      const feeBaseCents = input.feeBase === "gross" ? scenario.grossCents : exVatCents;
+      const feeCents = roundCents(feeBaseCents * feeRate, "Play fee for hypothesis " + scenario.id);
+      const proceedsBeforeRefundCents = scenario.grossCents - vatCents - feeCents;
+      const refundReversalCents = roundCents(proceedsBeforeRefundCents * refundRate, "Refund reversal for hypothesis " + scenario.id);
+      const proceedsAfterRefundCents = proceedsBeforeRefundCents - refundReversalCents;
+      const contributionCents = roundCents(proceedsAfterRefundCents - inputCents.supportCost, "Per-purchase contribution for hypothesis " + scenario.id);
+      const atVolumeCents = roundCents(contributionCents * purchases, "Monthly contribution at selected volume for hypothesis " + scenario.id);
+      const monthlyCents = roundCents(atVolumeCents - inputCents.fixedMonthlyCost, "Monthly contribution after fixed costs for hypothesis " + scenario.id);
+      const breakEvenUnits = contributionCents > 0 ? Math.ceil(inputCents.fixedMonthlyCost / contributionCents) : null;
+
+      return {
+        id: scenario.id,
+        grossPrice: scenario.grossCents / 100,
+        exVat: exVatCents / 100,
+        modeledVat: vatCents / 100,
+        feeBaseAmount: feeBaseCents / 100,
+        storeFee: feeCents / 100,
+        proceedsBeforeRefund: proceedsBeforeRefundCents / 100,
+        refundReversal: refundReversalCents / 100,
+        proceedsAfterRefund: proceedsAfterRefundCents / 100,
+        supportCost: inputCents.supportCost / 100,
+        contributionPerPurchase: contributionCents / 100,
+        purchasesPerMonth: purchases,
+        atVolumeBeforeFixedCosts: atVolumeCents === null ? null : atVolumeCents / 100,
+        fixedMonthlyCosts: inputCents.fixedMonthlyCost / 100,
+        monthlyContribution: monthlyCents === null ? null : monthlyCents / 100,
+        breakEvenUnits: breakEvenUnits
+      };
+    });
+
+    if (errors.length) return { valid: false, errors: errors };
+
+    return {
+      valid: true,
+      assumptions: {
+        vatPct: values.vatPct,
+        feePct: values.feePct,
+        feeBase: input.feeBase,
+        refundPct: values.refundPct,
+        supportCost: inputCents.supportCost / 100,
+        fixedMonthlyCost: inputCents.fixedMonthlyCost / 100,
+        newPurchases: purchases
+      },
+      scenarios: scenarios
+    };
+  }
+
+  const api = { calculate: calculate };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  if (root) root.OlloPricing = api;
+})(typeof globalThis !== "undefined" ? globalThis : this);
+</script>
+  <script>
+    (function () {
+      const form = document.getElementById("model-form");
+      const status = document.getElementById("status");
+      const resultsBody = document.getElementById("results-body");
+      const headingA = document.getElementById("headingA");
+      const headingB = document.getElementById("headingB");
+      const resultsEmpty = document.getElementById("results-empty");
+      const resultsWrap = document.getElementById("results-table-wrap");
+      const currency = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" });
+      const number = new Intl.NumberFormat("nl-NL", { maximumFractionDigits: 1 });
+
+      function amount(value) { return currency.format(value); }
+      function row(label, a, b, key) {
+        const tr = document.createElement("tr");
+        if (key) tr.className = "key-row";
+        const first = document.createElement("th");
+        first.scope = "row";
+        first.textContent = label;
+        tr.appendChild(first);
+        [a, b].forEach(function (value) {
+          const td = document.createElement("td");
+          td.textContent = value;
+          tr.appendChild(td);
+        });
+        return tr;
+      }
+
+      function update() {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const result = window.OlloPricing.calculate(data);
+        if (!result.valid) {
+          status.textContent = result.errors[0] + " Check all inputs; blanks are not zero.";
+          status.dataset.state = "error";
+          resultsEmpty.hidden = false;
+          resultsWrap.hidden = true;
+          resultsBody.replaceChildren();
+          return;
+        }
+
+        headingA.textContent = "A · " + amount(Number(data.priceA));
+        headingB.textContent = "B · " + amount(Number(data.priceB));
+        const feeBaseLabel = result.assumptions.feeBase === "gross" ? "Gross price incl. modeled VAT" : "Tax-exclusive price";
+        const a = result.scenarios[0];
+        const b = result.scenarios[1];
+        const rows = [
+          ["Customer price (one-time, VAT included)", amount(a.grossPrice), amount(b.grossPrice), false],
+          ["Tax-exclusive price (modeled)", amount(a.exVat), amount(b.exVat), false],
+          ["Modeled VAT", amount(a.modeledVat), amount(b.modeledVat), false],
+          ["Selected fee base · " + feeBaseLabel, amount(a.feeBaseAmount), amount(b.feeBaseAmount), false],
+          ["Illustrative Play fee (" + number.format(result.assumptions.feePct) + "%)", amount(a.storeFee), amount(b.storeFee), false],
+          ["Proceeds before refund and support", amount(a.proceedsBeforeRefund), amount(b.proceedsBeforeRefund), false],
+          ["Proportionate refund reversal (" + number.format(result.assumptions.refundPct) + "%)", amount(-a.refundReversal), amount(-b.refundReversal), false],
+          ["Proceeds after modeled refund", amount(a.proceedsAfterRefund), amount(b.proceedsAfterRefund), false],
+          ["Support cost per new buyer", amount(-a.supportCost), amount(-b.supportCost), false],
+          ["Contribution per new purchase", amount(a.contributionPerPurchase), amount(b.contributionPerPurchase), true],
+          ["New purchases per month", number.format(result.assumptions.newPurchases), number.format(result.assumptions.newPurchases), false],
+          ["Contribution at selected volume, before fixed costs", amount(a.atVolumeBeforeFixedCosts), amount(b.atVolumeBeforeFixedCosts), false],
+          ["Fixed monthly costs", amount(-a.fixedMonthlyCosts), amount(-b.fixedMonthlyCosts), false],
+          ["Modeled monthly contribution after fixed costs", amount(a.monthlyContribution), amount(b.monthlyContribution), true],
+          ["Break-even new purchases per month*", a.breakEvenUnits === null ? "No break-even at this margin" : number.format(a.breakEvenUnits), b.breakEvenUnits === null ? "No break-even at this margin" : number.format(b.breakEvenUnits), false]
+        ];
+        resultsBody.replaceChildren();
+        rows.forEach(function (values) { resultsBody.appendChild(row(values[0], values[1], values[2], values[3])); });
+        resultsEmpty.hidden = true;
+        resultsWrap.hidden = false;
+        status.textContent = "Calculated from the assumptions above. These are modeled contributions, not guaranteed profit.";
+        status.dataset.state = "ok";
+      }
+
+      form.addEventListener("submit", function (event) { event.preventDefault(); update(); });
+      form.addEventListener("input", update);
+      form.addEventListener("change", update);
+      update();
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
+

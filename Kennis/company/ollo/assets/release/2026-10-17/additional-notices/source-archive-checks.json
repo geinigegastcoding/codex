@@ -1,0 +1,55 @@
+{
+  "checkedDate": "2026-10-17",
+  "scope": "Six exact source JARs for selected release runtime coordinates; matching file-name scan only; no legal applicability audit.",
+  "checks": [
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-stdlib:2.1.20",
+      "sourceArchiveUrl": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.1.20/kotlin-stdlib-2.1.20-sources.jar",
+      "sha256": "6f0c26b17398e3e4be3b82d9ef1e92d941a755d16faf9703109f208f9aac7480",
+      "bytes": 688172,
+      "matchingNoticeLicenseFiles": [],
+      "sourcePathInArchive": "jvmMain/kotlin/util/UnsignedJVM.kt",
+      "exactAttributionLines": [
+        "// Division and remainder are based on Guava's UnsignedLongs implementation",
+        "// Copyright 2011 The Guava Authors"
+      ],
+      "sourceFileSha256": "8606bfcdb979b9a87da2da017b3c12b5fc5aa952e1ea36222d9f1edb0d14e80d",
+      "noticeApplicability": "Source-level attribution candidate only; does not establish R8 retention or a legal requirement in the shipped object artifact."
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.10.2",
+      "sourceArchiveUrl": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.10.2/kotlinx-coroutines-core-jvm-1.10.2-sources.jar",
+      "sha256": "cd86e9635cc7ac1b7d9854ed589e3041fb11cc67d2273e7d312278ba5628e2c8",
+      "bytes": 409492,
+      "matchingNoticeLicenseFiles": []
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3",
+      "sourceArchiveUrl": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar",
+      "sha256": "d084ce9bf130919d4b899db09896531440d1e330919187c7932d7fe0fa5257b8",
+      "bytes": 106717,
+      "matchingNoticeLicenseFiles": []
+    },
+    {
+      "coordinate": "com.google.code.gson:gson:2.12.1",
+      "sourceArchiveUrl": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.12.1/gson-2.12.1-sources.jar",
+      "sha256": "c5ab4ceb195f2a9278058d6a396c4872a1a07ed8b53fe80230dfd3f173d7cf56",
+      "bytes": 207271,
+      "matchingNoticeLicenseFiles": []
+    },
+    {
+      "coordinate": "com.google.guava:listenablefuture:1.0",
+      "sourceArchiveUrl": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar",
+      "sha256": "3d1bd8d4a39b293612a40e547ec51d9ce34fa638d7adeae83871cdbe2923b161",
+      "bytes": 4021,
+      "matchingNoticeLicenseFiles": []
+    },
+    {
+      "coordinate": "org.jetbrains:annotations:23.0.0",
+      "sourceArchiveUrl": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar",
+      "sha256": "ff2309b42f7584520497bb48bc609aca04c9886cf48708f14be83f00423ec144",
+      "bytes": 37462,
+      "matchingNoticeLicenseFiles": []
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "date": "2026-10-17",
+  "scope": "Exact-version official Maven POMs absent from local Gradle cache; direct license elements only, no inherited parent/source notice audit",
+  "requests": 24,
+  "results": [
+    {
+      "coordinate": "androidx.annotation:annotation-experimental:1.4.1",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.annotation__annotation-experimental-1.4.1.pom",
+      "sha256": "fe57b228417f4d7c677903dc61fb4a7cf993d603499de26d8d8113e477cc4f1b",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.annotation:annotation-jvm:1.9.1",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.annotation__annotation-jvm-1.9.1.pom",
+      "sha256": "89b99c218d60019316b50aab79816707bc21696c896a030e1b1ae038961bcb8e",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.arch.core:core-common:2.2.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/arch/core/core-common/2.2.0/core-common-2.2.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.arch.core__core-common-2.2.0.pom",
+      "sha256": "1e17d4af8d6425be2a69f8af4d654a87e0456259a9eef1542869bcb023547e28",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.arch.core:core-runtime:2.2.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/arch/core/core-runtime/2.2.0/core-runtime-2.2.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.arch.core__core-runtime-2.2.0.pom",
+      "sha256": "0f953706598140d9d8735cdd5aeb1fa35933f4e2f31c0bf3eb81a053a4c8c1a5",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.autofill:autofill:1.0.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/autofill/autofill/1.0.0/autofill-1.0.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.autofill__autofill-1.0.0.pom",
+      "sha256": "3677abead5d4e06cf76cbacb954151e051779c2274494451fb424e375aa9e450",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.collection:collection-jvm:1.5.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/collection/collection-jvm/1.5.0/collection-jvm-1.5.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.collection__collection-jvm-1.5.0.pom",
+      "sha256": "11c415864d3402f61d426e67210158dce1b04680412526a994f1823ecd3cb388",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.collection:collection-ktx:1.5.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/collection/collection-ktx/1.5.0/collection-ktx-1.5.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.collection__collection-ktx-1.5.0.pom",
+      "sha256": "983f8d0630d072d5bfcd166a498ac7213f3a44a98c09051004ce96429d867cea",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.compose.material:material-icons-core-android:1.7.8",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-core-android/1.7.8/material-icons-core-android-1.7.8.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.compose.material__material-icons-core-android-1.7.8.pom",
+      "sha256": "df671e1144120b43f83464e1e94ff828d0ded8132b3b15b86de07f1b82d0d932",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.concurrent:concurrent-futures:1.1.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.concurrent__concurrent-futures-1.1.0.pom",
+      "sha256": "748a34eb5d13d19d187adecaea82667fded5f1b0b98a655e13ed2e4a8b3d8ae6",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.core:core-viewtree:1.0.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/core/core-viewtree/1.0.0/core-viewtree-1.0.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.core__core-viewtree-1.0.0.pom",
+      "sha256": "d4f2ed1176fa8c5612b80f74c952a8799142a9ed36022a1a238fde5b140580d9",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.customview:customview-poolingcontainer:1.0.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.customview__customview-poolingcontainer-1.0.0.pom",
+      "sha256": "9fa62196c4c4e79b6a58dbb38a8c022bef8db21989d7dae2da0f6f5b66289a9c",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.emoji2:emoji2:1.4.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.4.0/emoji2-1.4.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.emoji2__emoji2-1.4.0.pom",
+      "sha256": "1f67221484f7d1260eb6e2b490cd4e7046bf5cb536276d79f972ad3f198b474d",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.graphics:graphics-path:1.0.1",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.graphics__graphics-path-1.0.1.pom",
+      "sha256": "866fb357c7146f5f7678ad44e4bc6c2823d568defce1ed2805bb6c899606b228",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.interpolator:interpolator:1.0.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/interpolator/interpolator/1.0.0/interpolator-1.0.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.interpolator__interpolator-1.0.0.pom",
+      "sha256": "0ddc07cc39699f48ecd9ec894b5830c0f09e22e82959294edf37217224c88b7b",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.profileinstaller:profileinstaller:1.4.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/profileinstaller/profileinstaller/1.4.0/profileinstaller-1.4.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.profileinstaller__profileinstaller-1.4.0.pom",
+      "sha256": "d5fe39981a3b4b7c39585130da0bfc93835054c834a438d3e63e065e5f78be55",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.startup:startup-runtime:1.1.1",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.startup__startup-runtime-1.1.1.pom",
+      "sha256": "f4114b5c6859bb1bc3caf281cb6d6f25998fa7f7292c64ceaea74a93210e746b",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.tracing:tracing:1.2.0",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/tracing/tracing/1.2.0/tracing-1.2.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.tracing__tracing-1.2.0.pom",
+      "sha256": "f34bec4eb58871d31002901377108aaa1ebfe77fa6d882b8b86200b158e26ea1",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "androidx.versionedparcelable:versionedparcelable:1.1.1",
+      "url": "https://dl.google.com/dl/android/maven2/androidx/versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/androidx.versionedparcelable__versionedparcelable-1.1.1.pom",
+      "sha256": "5f51e65873ca612de3838fa90d2ee95b8d040efd31b9c390a19bf94d615cdb2f",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "com.google.guava:listenablefuture:1.0",
+      "url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "license metadata inherited from exact declared parent",
+      "file": "upstream-poms/com.google.guava__listenablefuture-1.0.pom",
+      "sha256": "53873caf26bc1ed8a567ea6c939ab2aaa3f47a5e32d5cade95ddf5080d23238a",
+      "licenses": [],
+      "parentEvidence": {
+        "coordinate": "com.google.guava:guava-parent:26.0-android",
+        "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom",
+        "file": "upstream-poms/com.google.guava__guava-parent-26.0-android.pom",
+        "sha256": "f8698ab46ca996ce889c1afc8ca4f25eb8ac6b034dc898d4583742360016cc04",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains:annotations:23.0.0",
+      "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/org.jetbrains__annotations-23.0.0.pom",
+      "sha256": "c9490f655132328df2cfbcfdf743f53fc3916d6c1d10437175a6ca6e3a67771c",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2",
+      "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.10.2/kotlinx-coroutines-android-1.10.2.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/org.jetbrains.kotlinx__kotlinx-coroutines-android-1.10.2.pom",
+      "sha256": "b92d3672e7f9e8f4c4e2ab187c3e31fecc506496396f4a5f27ee1c957a42b319",
+      "licenses": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.10.2",
+      "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.10.2/kotlinx-coroutines-core-jvm-1.10.2.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/org.jetbrains.kotlinx__kotlinx-coroutines-core-jvm-1.10.2.pom",
+      "sha256": "658f576b96c832e7382406adb197d64d8e2e97de10e96dfa3700decfa2a60def",
+      "licenses": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3",
+      "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/org.jetbrains.kotlinx__kotlinx-serialization-core-jvm-1.7.3.pom",
+      "sha256": "734f5f749208dd0bef3d98caa594cf9222afdf0fee5b6843347a8fe64e240427",
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "coordinate": "org.jspecify:jspecify:1.0.0",
+      "url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+      "checkedDate": "2026-10-17",
+      "status": "fetched direct license metadata",
+      "file": "upstream-poms/org.jspecify__jspecify-1.0.0.pom",
+      "sha256": "cdab929a3b95211f43d2090c5e2d0dfe8465960e378bc32b35841dab324433a6",
+      "licenses": [
+        {
+          "name": "The Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    }
+  ],
+  "parentRequests": 1,
+  "reviewApkSha256": "9baadfb3feae151e9d33f4ce31112bf2b12966baaa9817117e9fb180a1c19c28",
+  "parentArtifactHashValidation": "25 downloaded POMs and every extracted candidate text hash matched before checkpoint; 64 inventory rows have traced metadata."
+}

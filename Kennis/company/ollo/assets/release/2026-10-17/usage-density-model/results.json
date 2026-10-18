@@ -1,0 +1,138 @@
+{
+  "scope": "Synthetic host-side SQLite model only; not Room, Android, device, user, startup, or battery measurement.",
+  "environment": {
+    "python": "3.14.3",
+    "sqlite": "3.50.4",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "database": ":memory:",
+    "repeats_per_query": 5,
+    "timing_statistic": "median fetchall wall time"
+  },
+  "fixture": {
+    "base_epoch_ms": 1799971200000,
+    "base_utc": "2027-01-15T00:00:00Z",
+    "days": 32,
+    "eligible_observed_hours_per_day": 4,
+    "idle_gap_hours_per_day": 20,
+    "apps": [
+      "app.reader",
+      "app.video",
+      "app.chat",
+      "app.music"
+    ],
+    "switch_interval_minutes": 5,
+    "interval_duration_seconds": 1,
+    "zone": "UTC",
+    "rows_raw": 460800,
+    "rows_coalesced": 1536,
+    "coalescing_factor": 300.0,
+    "per_day_package_totals_and_bounds_equal": true,
+    "canonical_package_time_runs_equal_including_gaps": true
+  },
+  "storage": {
+    "raw": {
+      "page_count": 8673,
+      "page_size_bytes": 4096,
+      "page_count_times_page_size_bytes": 35524608
+    },
+    "coalesced": {
+      "page_count": 34,
+      "page_size_bytes": 4096,
+      "page_count_times_page_size_bytes": 139264
+    }
+  },
+  "queries": {
+    "current_day": {
+      "raw": {
+        "rows_returned": 14400,
+        "duration_ms_sum": 14400000,
+        "package_totals_ms": {
+          "app.chat": 3600000,
+          "app.music": 3600000,
+          "app.reader": 3600000,
+          "app.video": 3600000
+        },
+        "median_fetch_ms_5_runs": 59.987,
+        "query_plan": [
+          "SEARCH usage_interval USING INDEX index_usage_interval_startWall (startWall<?)"
+        ]
+      },
+      "coalesced": {
+        "rows_returned": 48,
+        "duration_ms_sum": 14400000,
+        "package_totals_ms": {
+          "app.chat": 3600000,
+          "app.music": 3600000,
+          "app.reader": 3600000,
+          "app.video": 3600000
+        },
+        "median_fetch_ms_5_runs": 0.217,
+        "query_plan": [
+          "SEARCH usage_interval USING INDEX index_usage_interval_startWall (startWall<?)"
+        ]
+      }
+    },
+    "30_day_history_single_range": {
+      "raw": {
+        "rows_returned": 432000,
+        "duration_ms_sum": 432000000,
+        "package_totals_ms": {
+          "app.chat": 108000000,
+          "app.music": 108000000,
+          "app.reader": 108000000,
+          "app.video": 108000000
+        },
+        "median_fetch_ms_5_runs": 725.895,
+        "query_plan": [
+          "SEARCH usage_interval USING INDEX index_usage_interval_startWall (startWall<?)"
+        ]
+      },
+      "coalesced": {
+        "rows_returned": 1440,
+        "duration_ms_sum": 432000000,
+        "package_totals_ms": {
+          "app.chat": 108000000,
+          "app.music": 108000000,
+          "app.reader": 108000000,
+          "app.video": 108000000
+        },
+        "median_fetch_ms_5_runs": 2.576,
+        "query_plan": [
+          "SEARCH usage_interval USING INDEX index_usage_interval_startWall (startWall<?)"
+        ]
+      }
+    },
+    "30_day_history_app_shape": {
+      "raw": {
+        "queries_per_read": 30,
+        "rows_returned": 432000,
+        "duration_ms_sum": 432000000,
+        "package_totals_ms": {
+          "app.chat": 108000000,
+          "app.music": 108000000,
+          "app.reader": 108000000,
+          "app.video": 108000000
+        },
+        "median_fetch_ms_5_runs": 1136.712,
+        "query_plan_per_day": [
+          "SEARCH usage_interval USING INDEX index_usage_interval_startWall (startWall<?)"
+        ]
+      },
+      "coalesced": {
+        "queries_per_read": 30,
+        "rows_returned": 1440,
+        "duration_ms_sum": 432000000,
+        "package_totals_ms": {
+          "app.chat": 108000000,
+          "app.music": 108000000,
+          "app.reader": 108000000,
+          "app.video": 108000000
+        },
+        "median_fetch_ms_5_runs": 3.178,
+        "query_plan_per_day": [
+          "SEARCH usage_interval USING INDEX index_usage_interval_startWall (startWall<?)"
+        ]
+      }
+    }
+  }
+}

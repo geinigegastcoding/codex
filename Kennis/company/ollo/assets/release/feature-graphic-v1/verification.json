@@ -1,0 +1,78 @@
+{
+  "status": "unpublished-google-play-feature-graphic-draft",
+  "createdAt": "2026-10-17T12:55:15.053Z",
+  "platformRequirements": {
+    "checkedDate": "2026-10-17",
+    "source": "https://support.google.com/googleplay/android-developer/answer/9866151?hl=en-en",
+    "format": "PNG",
+    "width": 1024,
+    "height": 500,
+    "alpha": false,
+    "channels": 3
+  },
+  "output": {
+    "file": "feature-graphic.png",
+    "width": 1024,
+    "height": 500,
+    "channels": 3,
+    "hasAlpha": false,
+    "bytes": 42403,
+    "sha256": "545a631f30377ded640b572f26db12d1f99f18da96c69759351b494363ad4ce3"
+  },
+  "source": {
+    "file": "inputs/ollo_mascot.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "0edbcd365a6724bfdd54c1cfc6ad039230a1ca4ba62ceca619a379c4dd402ed1",
+    "equalsAppMascot": true
+  },
+  "copy": [
+    "Ollo",
+    "Een pauze.",
+    "Jouw keuze."
+  ],
+  "layout": {
+    "focalContentCentered": true,
+    "headlineAndMascotWithinConservativeCenterArea": true,
+    "backgroundDetailsAtEdges": true,
+    "cta": false,
+    "storeBadge": false,
+    "fakeScreenshot": false,
+    "efficacyOrHealthClaim": false,
+    "customerOrTestimonialClaim": false,
+    "priceOrPromotionClaim": false,
+    "exclusiveFeatureClaim": false
+  },
+  "altTextDraft": "De oranje pixelmascotte van Ollo naast de tekst ‘Een pauze. Jouw keuze.’ op een crèmekleurig vlak.",
+  "toolchain": {
+    "node": "v24.19.0",
+    "sharp": "0.35.5",
+    "newDependenciesInstalled": false,
+    "remoteAssetsUsed": false
+  },
+  "visualReview": {
+    "status": "passed",
+    "findings": [
+      "1024×500 image is opaque RGB PNG with no clipping.",
+      "Mascot is visibly pixel-crisp; single restrained spark and edge pixel decorations maintain the orange identity.",
+      "Name, two-line tagline and mascot sit inside generous central margins; the cream field avoids pure white and the orange background provides contrast.",
+      "Only intended copy is present; no badge, CTA, screenshot, price, or performance claim."
+    ]
+  },
+  "limitation": "File-format and layout checks do not establish Play approval, surface-specific cropping behavior, listing publication, or ad performance.",
+  "altTextCharacters": 98,
+  "parentVerification": {
+    "atUtc": "2026-10-17T13:01:03.260614+00:00",
+    "status": "passed",
+    "outputHashMatched": true,
+    "inputByteIdenticalToAppSource": true,
+    "pngHeader": "8 bits/channel, RGB color type2, no alpha;1024×500",
+    "visualReview": "Viewed the actual PNG. Readable Dutch copy, crisp original mascot, no clipping, centered key content and edge decoration; no extra polish pass.",
+    "primarySourceReopened": "https://support.google.com/googleplay/android-developer/answer/9866151?hl=en-en",
+    "sourceChecks": "Required dimensions/format and central focal-content/edge-decoration recommendations checked. Crop behavior and platform approval remain unverified.",
+    "metadataCorrection": "Localized alt text to Dutch in renderer, brief and manifest; PNG bytes unchanged.",
+    "fontLimit": "Renderer uses installed Segoe UI with Arial/sans-serif fallbacks. Fonts are not bundled; another host may render typography differently.",
+    "rendererSha256": "069dc70360eb46dd603345d2ff6bda294014857b5c2132582cfb4323e16979b1",
+    "briefSha256": "ec3b681f94561fb12d516ac727490d5981a4e24e1d68359b0eac02d13508886e"
+  }
+}

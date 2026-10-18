@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-17",
+  "reason": "Narrow privacy copy: user-initiated exports may use a chosen cloud document provider; current app has no cloud analytics",
+  "oldFooter": "Geen account. Gegevens blijven lokaal.",
+  "newFooter": "Geen account. Geen cloudanalyse.",
+  "preservedPreviousFiles": {
+    "mini-pauze-card-v1-pre-privacy-wording.png": "26a18b5f8cb91bbd7ce51ef35144ca19091b51000e072c5c0f83506e9a635e82",
+    "mini-pauze-card-v1-pre-privacy-wording.svg": "6ea566e7034146171c5b9497b02bafb9dbb6795521ef5c41e56f654c398b7184"
+  },
+  "originalIllustrationsChanged": false,
+  "publication": false,
+  "newMiniPngSha256": "e5a25f8da0f538eeab64e1e04db04663e208d7568c67d78b2dfe5b98f4e1b89f",
+  "pixelDifferenceBounds": [
+    295,
+    1273,
+    564,
+    1301
+  ],
+  "quizPngUnchanged": true
+}

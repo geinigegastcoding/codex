@@ -1,0 +1,57 @@
+{
+  "status": "unpublished-local-concepts",
+  "width": 1080,
+  "height": 1350,
+  "textMode": "deterministic SVG, no generated lettering",
+  "font": "Segoe UI with sans-serif fallback; not embedded in editable SVG; raster export fixed",
+  "sourceImages": "Existing built-in ImageGen outputs, embedded byte-for-byte; no new generation or bitmap edit",
+  "publicDestination": null,
+  "platformAcceptanceClaim": false,
+  "appAssetReplaced": false,
+  "boardCreated": false,
+  "boardLimitation": "Direct Creative Production MCP transport not exposed in this session",
+  "cards": [
+    {
+      "name": "mini-pauze-card-v1",
+      "image": "mini-pauze-concept-v1.png",
+      "sourceSha256": "e89f9c83ff802c9d518f76766abfa0ee7ab497b325665eb1a61b15bd881d50f4",
+      "headline": [
+        "Even pauze.",
+        "Jij kiest."
+      ],
+      "body": [
+        "Een beslismoment voor",
+        "apps die jij kiest."
+      ],
+      "footer": "Geen account. Geen cloudanalyse.",
+      "alt": "De oranje pixelmascotte onderbreekt een lint van donkere tegels. Dit is een illustratie, geen appbeeld.",
+      "svg": "mini-pauze-card-v1.svg",
+      "png": "mini-pauze-card-v1.png",
+      "svgSha256": "b9a5993f771f9408bdd4455bc329707c44e6b93a05cec5ba3a052afadc014e41",
+      "pngSha256": "e5a25f8da0f538eeab64e1e04db04663e208d7568c67d78b2dfe5b98f4e1b89f",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "name": "quiz-card-v1",
+      "image": "quiz-concept-v1.png",
+      "sourceSha256": "5216eaa27e5a3b14319b465e86a0ac2dd4bdd06c953a21c0db94a0304c10eeac",
+      "headline": [
+        "Drie vragen.",
+        "Jij kiest."
+      ],
+      "body": [
+        "Een optionele quiz",
+        "vóór je een gekozen app opent."
+      ],
+      "footer": "Schaken · rekenen · wist-je-dat",
+      "alt": "De oranje pixelmascotte bij drie blokken met schaak-, reken- en boekmotieven. Dit is een illustratie, geen appbeeld.",
+      "svg": "quiz-card-v1.svg",
+      "png": "quiz-card-v1.png",
+      "svgSha256": "434b228834d796eb118baa3c6021b4c765656d0e3db78f5d9baba0d4fd6efafb",
+      "pngSha256": "848d161d1f54177f22a3e60001e4bcc9ea674fc93a4c31674940c6cb51f8b150",
+      "width": 1080,
+      "height": 1350
+    }
+  ]
+}

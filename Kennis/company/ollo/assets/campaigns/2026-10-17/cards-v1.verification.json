@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "file": "mini-pauze-card-v1.png",
+      "checks": [
+        "PNG size/hash",
+        "SVG size/hash",
+        "original PNG embedded byte-for-byte",
+        "exact Dutch SVG copy"
+      ],
+      "pass": true
+    },
+    {
+      "file": "quiz-card-v1.png",
+      "checks": [
+        "PNG size/hash",
+        "SVG size/hash",
+        "original PNG embedded byte-for-byte",
+        "exact Dutch SVG copy"
+      ],
+      "pass": true
+    }
+  ],
+  "visualReview": "Parent inspected both PNG exports at full canvas: copy including accented voor, complete mascot/illustration, margins and footer visible",
+  "limits": [
+    "Editable SVG uses system font, not embedded",
+    "No public destination, platform review, audience testing or publication",
+    "Illustrations are metaphors, not app screenshots or efficacy evidence"
+  ],
+  "privacyCopyRevision": {
+    "footer": "Geen account. Geen cloudanalyse.",
+    "differenceConfinedToFooter": true,
+    "previousRenderPreserved": true
+  }
+}

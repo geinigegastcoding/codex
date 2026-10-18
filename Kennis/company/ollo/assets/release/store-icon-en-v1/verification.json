@@ -1,0 +1,35 @@
+{
+  "renderedAtUtc": "2026-10-18T22:38:52.716Z",
+  "renderedDateEuropeAmsterdam": "2026-10-19",
+  "source": "app/src/main/res/drawable/ic_ollo.xml",
+  "sourceSha256": "f647adecc8d6c2a4df1aba9f469021fd3e893825b59bfb7ac75854b6ccd4e75e",
+  "sourceCopyMatchesRepoBytes": true,
+  "sourceViewport": "108x108",
+  "pathCount": 6,
+  "sourceColors": [
+    "#FFF3EB",
+    "#B94000",
+    "#FF6B1A",
+    "#FFFFFF",
+    "#25231F"
+  ],
+  "svgSha256": "d465ed4124eccc00e94295edeb95cd52482b157ac55e063db89afa3e9b2e32d6",
+  "output": "store-icon.png",
+  "outputSha256": "504743c475c30edfdc7ec4f6b23be560ff5b5b101f2eefe4783ae279b17d33e0",
+  "format": "png",
+  "width": 512,
+  "height": 512,
+  "channels": 4,
+  "hasAlpha": true,
+  "alphaRange": [
+    255,
+    255
+  ],
+  "bytes": 3632,
+  "visualReview": {
+    "status": "Reviewed",
+    "date": "2026-10-19",
+    "note": "Mascot centered on a uniform opaque cream background; non-background pixel bounds x=104..407 and y=132..388. Exact vector geometry and its five source colors are retained; raster antialiasing creates edge shades."
+  },
+  "playChannelRequirement": "RGBA PNG with alpha channel present; all alpha values are 255 (fully opaque). This meets the documented channel format and dimensions, not a guarantee of Play approval."
+}

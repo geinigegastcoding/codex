@@ -1,0 +1,2 @@
+// Division and remainder are based on Guava's UnsignedLongs implementation
+// Copyright 2011 The Guava Authors

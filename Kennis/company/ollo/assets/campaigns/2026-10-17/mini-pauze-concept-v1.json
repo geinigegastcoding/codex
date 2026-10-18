@@ -1,0 +1,13 @@
+{
+  "status": "unpublished-concept",
+  "mode": "built-in ImageGen",
+  "file": "mini-pauze-concept-v1.png",
+  "width": 1122,
+  "height": 1402,
+  "sha256": "e89f9c83ff802c9d518f76766abfa0ee7ab497b325665eb1a61b15bd881d50f4",
+  "textInImage": false,
+  "copyFile": "../../../AD-CONCEPTS.md",
+  "appAssetReplaced": false,
+  "boardCreated": false,
+  "boardLimitation": "Direct Creative Production MCP call not exposed in this session; used local preview."
+}

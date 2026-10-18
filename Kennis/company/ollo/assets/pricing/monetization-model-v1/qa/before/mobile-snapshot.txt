@@ -1,0 +1,93 @@
+Ollo one-time price model
+
+Compare two possible one-time prices against editable assumptions. This models contribution, not guaranteed profit or a Play payout.
+
+Founder hypothesis only. Ollo 0.2.0-review has no billing and takes no payments. €9.99 and €14.99 are unvalidated test prices, not launch prices. Confirm Ollo’s Play enrollment, transaction classification, fee basis and tax treatment before operational use.
+
+Price hypotheses
+
+Same proposed one-time product at each price; no subscription or renewal is modeled.
+
+Hypothesis A
+One-time customer price, VAT included
+€
+Hypothesis B
+One-time customer price, VAT included
+€
+Shared assumptions
+Illustrative VAT rate
+%
+
+21% is an example for the Netherlands, not tax advice. Actual treatment may vary.
+
+Illustrative total Play service + billing fee
+%
+
+15% is only an example, not a confirmed Ollo rate. Eligibility, enrollment and transaction class affect the applicable rate.
+
+Fee-base scenario — unresolved
+Gross customer price including modeled VAT
+Tax-exclusive customer price
+
+Google describes a percentage of purchase price but the exact VAT-inclusive or tax-exclusive calculation base is not established here. Switch scenarios to see the sensitivity.
+
+Refund share assumption
+%
+
+Modeled as proportional reversal of proceeds after VAT and Play fee. Actual refund and fee treatment may differ.
+
+Support cost per new buyer
+€
+
+Illustrative €1; applied to every new buyer, including refunded buyers.
+
+Fixed monthly costs
+€
+
+Illustrative €50. Enter actual recurring bills when known. No RevenueCat currency conversion is included.
+
+New purchases per month
+
+Illustrative volume of new one-time purchases only. No renewals, churn or conversion rate is assumed.
+
+Calculate
+
+Calculated from the assumptions above. These are modeled contributions, not guaranteed profit.
+
+Modeled amounts
+
+Every purchase is modeled in euros and rounded to cents by line. This is a decision aid: accounting, actual Play settlements, income taxes, development and unentered costs are outside the model.
+
+Shared volume and assumptions apply to both one-time price hypotheses.
+Calculation step	A · € 9,99	B · € 14,99
+Customer price (one-time, VAT included)	€ 9,99	€ 14,99
+Tax-exclusive price (modeled)	€ 8,26	€ 12,39
+Modeled VAT	€ 1,73	€ 2,60
+Selected fee base · Gross price incl. modeled VAT	€ 9,99	€ 14,99
+Illustrative Play fee (15%)	€ 1,50	€ 2,25
+Proceeds before refund and support	€ 6,76	€ 10,14
+Proportionate refund reversal (0%)	−€ 0,00	−€ 0,00
+Proceeds after modeled refund	€ 6,76	€ 10,14
+Support cost per new buyer	−€ 1,00	−€ 1,00
+Contribution per new purchase	€ 5,76	€ 9,14
+New purchases per month	100	100
+Contribution at selected volume, before fixed costs	€ 576,00	€ 914,00
+Fixed monthly costs	−€ 50,00	−€ 50,00
+Modeled monthly contribution after fixed costs	€ 526,00	€ 864,00
+Break-even new purchases per month*	9	6
+How the arithmetic works
+
+For each one-time purchase: tax-exclusive price = gross price ÷ (1 + VAT rate), rounded to cents; modeled VAT = gross price − rounded tax-exclusive price; modeled Play fee = chosen fee base × fee rate, rounded to cents; proceeds before refunds = gross − modeled VAT − modeled fee.
+
+Refunds are an explicit simplifying assumption: the chosen refund share reverses that net proceeds amount proportionally. Support cost is then subtracted for every new buyer, including refunded buyers. Monthly modeled contribution = per-purchase contribution × new purchases − fixed monthly costs. Break-even purchases = ceiling(fixed monthly costs ÷ positive per-purchase contribution); if contribution is zero or negative, no break-even count is shown. Zero monthly volume still leaves fixed monthly costs.
+
+Rounding is per line to the nearest cent; the fee is computed from the selected base before rounding. This is not intended to reproduce Play's settlement ledger.
+
+Official references and limits
+Google Play service-fee schedule — fee rates depend on program, earnings eligibility and transaction type.
+Google Play service-fee explanation — describes the fee as a percentage of purchase price; it does not establish this model’s VAT-inclusive versus tax-exclusive fee base.
+Google Play tax guidance — regional tax handling and buyer-facing prices; not a substitute for confirming Ollo’s actual tax treatment.
+
+Before operational use, confirm fee enrollment, install classification, fee base and applicable taxes in the current Play Console/accounting records. This page has no billing integration and does not represent a Play quote. The source review date recorded in PRICING.md is 16 October 2026.
+
+Offline local calculator. Inputs stay in this browser page; nothing is sent to a server.

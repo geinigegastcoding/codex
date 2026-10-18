@@ -1,0 +1,41 @@
+{
+  "phase": "confirmed",
+  "status": "passed",
+  "browser": "155.0.4283.45",
+  "noServer": true,
+  "localFileOnly": true,
+  "observations": [
+    {
+      "viewport": "desktop",
+      "width": 1280,
+      "height": 900,
+      "geometry": {
+        "pageWidth": 1280,
+        "contentWidth": 1280,
+        "tableViewport": 1084,
+        "tableWidth": 1084
+      },
+      "resultChangedOnInput": true,
+      "statusAfterInput": "Calculated from the assumptions above. These are modeled contributions, not guaranteed profit.",
+      "invalidHidden": true,
+      "invalidStatus": "Price hypothesis A is required. Check all inputs; blanks are not zero.",
+      "browserErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "geometry": {
+        "pageWidth": 390,
+        "contentWidth": 390,
+        "tableViewport": 358,
+        "tableWidth": 358
+      },
+      "resultChangedOnInput": true,
+      "statusAfterInput": "Calculated from the assumptions above. These are modeled contributions, not guaranteed profit.",
+      "invalidHidden": true,
+      "invalidStatus": "Price hypothesis A is required. Check all inputs; blanks are not zero.",
+      "browserErrors": []
+    }
+  ]
+}

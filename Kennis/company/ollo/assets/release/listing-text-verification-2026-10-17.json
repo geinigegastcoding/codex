@@ -1,0 +1,80 @@
+{
+  "verifiedAtUtc": "2026-10-17T13:03:47.021705+00:00",
+  "status": "verified-unpublished-copy-only",
+  "changes": [
+    {
+      "file": "STORE-LISTING-DRAFT.md",
+      "beforeSha256": "7d40c771f88725e7c972a726bfe7cdb4b03edadb90fdcfcd196b97ca0f86f89d",
+      "afterSha256": "23f8f5fd3e11f27635532567ff1f9684a8a5965f7d1ffeae4827dce69d6151d6",
+      "changes": [
+        {
+          "before": "Instellingen en Ollo-meetgegevens blijven lokaal op dit toestel.",
+          "after": "Ollo bewaart instellingen en meetgegevens op dit toestel. Bij export kies je zelf de opslagplek; dat kan ook een clouddienst zijn."
+        },
+        {
+          "before": "Deze telling is apart met code gecontroleerd op 16 oktober 2026.",
+          "after": "Deze telling is apart met code gecontroleerd op 17 oktober 2026."
+        }
+      ]
+    },
+    {
+      "file": "MARKETING.md",
+      "beforeSha256": "82f21b22aa648c53dfb8e7daa4864c9f4929698ed64e901943915c4ea797b8f8",
+      "afterSha256": "c7de3fbb5a0b9a180d7c563600a4cd1f0361a9367fa1930e960f9b8d423ec39e",
+      "changes": [
+        {
+          "before": "| “Your data stays on your phone” | Current release has local storage/export and no server/account. Do not imply protection from someone with access to the unlocked device or from OS backups without explaining settings. |",
+          "after": "| “Stored locally. You choose where exports go.” | Ollo stores its settings and measurements on-device and has no server/account. User-selected exports can be saved through a cloud-backed Android document provider and remain outside app deletion. This does not protect data from someone with access to the unlocked device. |"
+        }
+      ]
+    },
+    {
+      "file": "AD-CONCEPTS.md",
+      "beforeSha256": "b7408bb5d351caae2d4fae9fe8892fe1b9888c75e00672448fccd3fd2ccb80d7",
+      "afterSha256": "65829f148e3ffd4a7c0e62cb4270b4295900da33f1ee92debcdfb1710978639c",
+      "changes": [
+        {
+          "before": "simple pixel animation of data staying inside a phone outline.",
+          "after": "simple pixel animation of Ollo storing its own settings on-device, with a separate user-chosen export path."
+        },
+        {
+          "before": "Ollo keeps settings and measurements on your phone. No account, server, or internet permission in this build. Android access is still your choice.",
+          "after": "Ollo stores settings and measurements on your phone. You choose where exports go. No account, server, or internet permission in this build. Android access is still your choice."
+        },
+        {
+          "before": "local storage does not mean exempt from device backup or physical access.",
+          "after": "distinguish app-owned local storage from user-selected exports, which may use a cloud provider and survive deletion in Ollo. Local storage does not prevent physical access."
+        }
+      ]
+    }
+  ],
+  "listingCounts": {
+    "appName": 21,
+    "shortDescription": 75,
+    "fullDescription": 1575
+  },
+  "limits": {
+    "appName": 30,
+    "shortDescription": 80,
+    "fullDescription": 4000
+  },
+  "countMethod": "Unicode codepoints of exact text blocks, including spaces and line breaks; fences excluded.",
+  "primarySourceReopened": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en-EN",
+  "technicalSource": {
+    "commit": "41e2e44",
+    "uiFile": "app/src/main/java/app/ollo/ui/OlloApp.kt",
+    "uiSha256": "c321da25f0efbfd560d701a7a1d402aed51867f5adbbc7b179cb794817e60f2e",
+    "behavior": "CreateDocument CSV/JSON launchers write through the chosen ContentResolver URI; current Settings/Privacy copy already explains cloud providers and saved-export survival."
+  },
+  "scope": "One current store paragraph, one marketing-table claim and one unrendered ad-concept direction/variant/claim note qualified. Existing PNG/MP4 assets and app code unchanged; no submission/publication/legal review.",
+  "subsequentNonFieldEdits": {
+    "atUtc": "2026-10-17T13:05:28.576314+00:00",
+    "scope": "Added the bounded name/discovery source note to Marketing, an owner listing-identity input and spacing fixes outside the exact listing fields. Field counts remain21/75/1575.",
+    "publicNativePackageLookup": "Tool internal error; no inference of absence or availability.",
+    "sources": [
+      "https://play.google.com/store/apps/details?id=com.ollo.olloapp",
+      "https://play.google.com/store/apps/details?id=com.ollodrive.user",
+      "https://play.google.com/store/apps/details?id=com.ollo.ollo"
+    ]
+  }
+}

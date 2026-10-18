@@ -1,0 +1,170 @@
+{
+  "status": "unpublished-local-concept",
+  "generatedAt": "2026-10-17T11:48:35.809Z",
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "expectedFrames": 300,
+    "format": "MP4/H.264",
+    "pixelFormat": "yuv420p",
+    "durationSeconds": 10,
+    "audioTracks": 0,
+    "videoBytes": 668637,
+    "poster": {
+      "file": "poster.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "e7fea82e094bd2909fa94840e1af5b42eb7431c1fb66e122c638c356b6275766"
+    },
+    "decodedFrameCount": 300
+  },
+  "files": {
+    "video": {
+      "file": "quiz-opening-v1.mp4",
+      "sha256": "7ac1dcc9fb9bcb4c091d97bf73dacc80c8cc31b25ce07a6375d731fd615aade2"
+    },
+    "source": {
+      "file": "render.mjs",
+      "sha256": "9016fbbc93453d0ffbaf1b11961e8623eef5b1facf5c5ee02035cc84b1366cfd"
+    },
+    "brief": {
+      "file": "brief.md",
+      "sha256": "34a65ff60c921b0e0a102d519d6854655112efdb4879736a3107b3660de4e2ce"
+    }
+  },
+  "sourceAssets": {
+    "appMascot": {
+      "file": "inputs/ollo_mascot.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0edbcd365a6724bfdd54c1cfc6ad039230a1ca4ba62ceca619a379c4dd402ed1",
+      "equalsAppSource": true
+    },
+    "quizIllustration": {
+      "file": "../quiz-concept-v1.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "5216eaa27e5a3b14319b465e86a0ac2dd4bdd06c953a21c0db94a0304c10eeac",
+      "equalsExistingConcept": true
+    }
+  },
+  "exactDutchCopy": [
+    "Een app openen?",
+    "OPTIONEEL",
+    "Eerst drie vragen.",
+    "vóór je een gekozen app opent.",
+    "Schaken · Rekenen · Wist je dat?",
+    "Drie vragen.",
+    "Jij kiest.",
+    "Een optionele quiz vóór je",
+    "een gekozen app opent.",
+    "CONCEPT"
+  ],
+  "claimReview": {
+    "optionalQuizOnly": true,
+    "chosenAppScopeVisible": true,
+    "learningOrScreenTimeOutcomeClaim": false,
+    "storeAvailabilityOrDestinationClaim": false,
+    "fakeAppUiOrScreenshot": false,
+    "audio": false
+  },
+  "manualVisualReview": {
+    "status": "passed",
+    "findings": [
+      "Opening mascot now reads clearly at phone scale after a single size correction.",
+      "Optional label and chosen-app qualifier are visible and legible.",
+      "Chess, arithmetic and fact motifs receive one restrained pixel spark each.",
+      "Final title and qualifier hold through the last frame; reviewed start/end contain no black frame or clipped copy.",
+      "The poster is an actual extracted video frame. No fake app UI is shown."
+    ]
+  },
+  "toolchain": {
+    "node": "v24.19.0",
+    "sharp": "0.35.5",
+    "ffmpeg": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers\r",
+    "remotionUsed": false,
+    "browserOrExtraDependencyInstalled": false
+  },
+  "hostLimit": "SVG frames + bundled Sharp + installed FFmpeg; host render and media checks do not establish platform acceptance or ad performance.",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "duration": "10.000000"
+      }
+    ],
+    "format": {
+      "duration": "10.000000",
+      "size": "668637"
+    }
+  },
+  "inspectedFrames": [
+    {
+      "timeSeconds": 0.25,
+      "file": "qa/first.png"
+    },
+    {
+      "timeSeconds": 2.45,
+      "file": "qa/optional.png"
+    },
+    {
+      "timeSeconds": 4.85,
+      "file": "qa/topics.png"
+    },
+    {
+      "timeSeconds": 8.0,
+      "file": "qa/final.png"
+    },
+    {
+      "timeSeconds": 9.8,
+      "file": "qa/last.png"
+    },
+    {
+      "timeSeconds": 8.8,
+      "file": "poster.png"
+    }
+  ],
+  "parentVerification": {
+    "verifiedAtUtc": "2026-10-17T11:55:00Z",
+    "status": "passed",
+    "independentFfprobe": {
+      "width": 1080,
+      "height": 1920,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": "30/1",
+      "decodedFrames": 300,
+      "durationSeconds": 10.0,
+      "videoStreams": 1,
+      "audioStreams": 0,
+      "bytes": 668637
+    },
+    "hashesMatched": [
+      "video",
+      "poster",
+      "render.mjs",
+      "inputs/ollo_mascot.png"
+    ],
+    "sourceReviewed": true,
+    "framesVisuallyInspected": [
+      "qa/first.png",
+      "qa/optional.png",
+      "qa/topics.png",
+      "qa/last.png",
+      "poster.png"
+    ],
+    "briefCorrection": {
+      "previousSha256": "a6a15251d85632a44b9b29b709812d23abcaad6e93db415b81de213495a1b24f",
+      "reason": "Align approximate timing and opening motion description with actual render source; video and poster unchanged."
+    },
+    "scope": "Host media, source, claims and selected-frame review; no audience or platform acceptance result."
+  }
+}

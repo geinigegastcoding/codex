@@ -1,0 +1,192 @@
+{
+  "status": "unpublished-local-concept",
+  "createdAt": "2026-10-17T12:23:22.521Z",
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "expectedFrames": 360,
+    "decodedFrames": 360,
+    "durationSeconds": 12,
+    "container": "MP4",
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audioTracks": 0,
+    "videoBytes": 399193,
+    "poster": {
+      "file": "poster.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "f127d425fb4633a0effd11d569ef2cb1b28baac69b6a6cc1d18854da23bea4ef"
+    }
+  },
+  "files": {
+    "video": {
+      "file": "statistics-context-v1.mp4",
+      "sha256": "bcd7fc9e02c3601a1bf896c6ee70219e30d493700c0ac82674502d0d7f97788d"
+    },
+    "source": {
+      "file": "render.mjs",
+      "sha256": "1bacfa35973a2388df997703f8168040673f9207ab76aeb787cef78cdf2aaa30"
+    },
+    "brief": {
+      "file": "brief.md",
+      "sha256": "766525c920682053cd08a3e0c76daed9eca6dc959b607767e695093502cd23a3"
+    }
+  },
+  "sourceAssets": {
+    "mascot": {
+      "file": "inputs/ollo_mascot.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0edbcd365a6724bfdd54c1cfc6ad039230a1ca4ba62ceca619a379c4dd402ed1",
+      "equalsAppSource": true
+    },
+    "confirmedWeek": {
+      "file": "C:/Users/Daniël/Desktop/Codex/projecten/Ollo/screenshots/2026-10-16-insights/confirmed/partial-week.png",
+      "width": 1080,
+      "height": 2400,
+      "sha256": "a32ee811a504a48a24c536c606f41647273171dc1eaf87ac81a2ea649289b665",
+      "fictitiousFixture": true,
+      "embeddedUnmodified": true
+    },
+    "confirmedMonth": {
+      "file": "C:/Users/Daniël/Desktop/Codex/projecten/Ollo/screenshots/2026-10-16-insights/confirmed/partial-month.png",
+      "width": 1080,
+      "height": 2400,
+      "sha256": "33299d9829b5d7bb341db8dc86c13e30fa1fe1fc9476b077916209b0ca32cfaa",
+      "fictitiousFixture": true,
+      "embeddedUnmodified": true
+    }
+  },
+  "screenshotTreatment": {
+    "wholeImageVisible": true,
+    "cropped": false,
+    "retouched": false,
+    "labelsRecreated": false,
+    "sourcePixelsResampledOnlyForComposition": true,
+    "externalDemoWarning": "FICTIEVE REVIEWDATA remains visible for every frame where a statistics screenshot is shown; original UI also visibly reads Demo · fictief."
+  },
+  "storyboard": [
+    {
+      "start": 0,
+      "end": 1.9,
+      "copy": [
+        "Geen meting?",
+        "Dan ook geen nul."
+      ],
+      "visual": "Mascot with one restrained pixel-spark beat."
+    },
+    {
+      "start": 1.9,
+      "end": 6,
+      "copy": [
+        "Onbekend ≠ nul.",
+        "FICTIEVE REVIEWDATA"
+      ],
+      "visual": "Full confirmed mixed-week screenshot, including unknown dash, measured zero, 6/7 days, and partial-day label."
+    },
+    {
+      "start": 6,
+      "end": 9.15,
+      "copy": [
+        "Ook dekking staat erbij.",
+        "FICTIEVE REVIEWDATA"
+      ],
+      "visual": "Full confirmed 30-day screenshot, including 24/30 available and 3 partial days."
+    },
+    {
+      "start": 9.15,
+      "end": 12,
+      "copy": [
+        "Cijfers met context.",
+        "Inzicht zonder oordeel."
+      ],
+      "visual": "Mascot sign-off; no CTA."
+    }
+  ],
+  "exactDutchCopy": [
+    "Geen meting?",
+    "Dan ook geen nul.",
+    "Onbekend ≠ nul.",
+    "Ook dekking staat erbij.",
+    "FICTIEVE REVIEWDATA",
+    "Cijfers met context.",
+    "Inzicht zonder oordeel.",
+    "CONCEPT"
+  ],
+  "claimReview": {
+    "unknownIsNotZeroSupportedByCurrentUi": true,
+    "partialMeasurementDisclosed": true,
+    "fictionalScreenshotsLabeled": true,
+    "efficacyOrHealthClaim": false,
+    "exclusiveFeatureClaim": false,
+    "privacyClaim": false,
+    "downloadStorePriceOrDestinationClaim": false,
+    "customerQuote": false
+  },
+  "manualVisualReview": {
+    "status": "passed-with-observation",
+    "findings": [
+      "Opening and end-card copy are fully inside frame; mascot pixels remain crisp.",
+      "Both full confirmed screenshots are uncropped and readable at the rendered portrait size; original Demo · fictief labels remain visible.",
+      "The outer FICTIEVE REVIEWDATA badge remains prominent during both screenshot scenes and the week-to-month handoff.",
+      "At the brief 0.2-second crossfade, outgoing and incoming headings overlap for a moment; the transition is short and all still scenes are clear.",
+      "Poster is a frame extracted from the MP4; no CTA, destination, outcome claim, or audio is present."
+    ]
+  },
+  "toolchain": {
+    "node": "v24.19.0",
+    "sharp": "0.35.5",
+    "ffmpeg": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "remotionUsed": false,
+    "browserOrExtraDependencyInstalled": false
+  },
+  "hostLimit": "Locally rendered graphic composition using confirmed review captures. Host video QA does not establish app acceptance, user comprehension, campaign performance, or field measurement accuracy.",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "duration": "12.000000",
+        "nb_read_frames": "360"
+      }
+    ],
+    "format": {
+      "duration": "12.000000",
+      "size": "399193"
+    }
+  },
+  "inspectedFrames": [
+    {
+      "file": "qa/opening.png",
+      "timeSeconds": 0.65
+    },
+    {
+      "file": "qa/week.png",
+      "timeSeconds": 3.6
+    },
+    {
+      "file": "qa/month.png",
+      "timeSeconds": 7.2
+    },
+    {
+      "file": "qa/ending.png",
+      "timeSeconds": 10.6
+    },
+    {
+      "file": "qa/last.png",
+      "timeSeconds": 11.85
+    },
+    {
+      "file": "qa/handoff.png",
+      "timeSeconds": 5.95
+    }
+  ]
+}

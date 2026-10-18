@@ -1,0 +1,259 @@
+{
+  "status": "unpublished-local-concept",
+  "createdAt": "2026-10-17T12:29:16.847Z",
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "expectedFrames": 360,
+    "decodedFrames": 360,
+    "durationSeconds": 12,
+    "container": "MP4",
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audioTracks": 0,
+    "videoBytes": 408454,
+    "poster": {
+      "file": "poster.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "ca50e06b880b94cfe9772d558bd05cff490ce7802046fe913f4428ea5a173e62"
+    }
+  },
+  "files": {
+    "video": {
+      "file": "statistics-context-v1.mp4",
+      "sha256": "12bf4d10a5d0eceb66ffdbd79fae5ebecd4e96b132dca27cad450764d3f8fb31"
+    },
+    "source": {
+      "file": "render.mjs",
+      "sha256": "4ac24203c345fa46a2e87d39e9baa0d71989d5ba9b0cf1026313a83ff2f058bd"
+    },
+    "brief": {
+      "file": "brief.md",
+      "sha256": "52fbc752b5da7ef7fe094858d078bdff606ad93508210f8c84eb38eed40c6192"
+    }
+  },
+  "sourceAssets": {
+    "mascot": {
+      "file": "inputs/ollo_mascot.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0edbcd365a6724bfdd54c1cfc6ad039230a1ca4ba62ceca619a379c4dd402ed1",
+      "equalsAppSource": true
+    },
+    "confirmedWeek": {
+      "file": "inputs/partial-week.png",
+      "originalCapture": "screenshots/2026-10-16-insights/confirmed/partial-week.png",
+      "width": 1080,
+      "height": 2400,
+      "sha256": "a32ee811a504a48a24c536c606f41647273171dc1eaf87ac81a2ea649289b665",
+      "equalsConfirmedScreenshot": true,
+      "fictitiousFixture": true,
+      "embeddedUnmodified": true
+    },
+    "confirmedMonth": {
+      "file": "inputs/partial-month.png",
+      "originalCapture": "screenshots/2026-10-16-insights/confirmed/partial-month.png",
+      "width": 1080,
+      "height": 2400,
+      "sha256": "33299d9829b5d7bb341db8dc86c13e30fa1fe1fc9476b077916209b0ca32cfaa",
+      "equalsConfirmedScreenshot": true,
+      "fictitiousFixture": true,
+      "embeddedUnmodified": true
+    }
+  },
+  "screenshotTreatment": {
+    "wholeImageVisible": true,
+    "cropped": false,
+    "retouched": false,
+    "labelsRecreated": false,
+    "sourcePixelsResampledOnlyForComposition": true,
+    "externalDemoWarning": "FICTIEVE REVIEWDATA remains visible for every frame where a statistics screenshot is shown; original UI also visibly reads Demo · fictief."
+  },
+  "sceneTransitions": {
+    "overlap": false,
+    "fadeThroughBackground": true,
+    "activeSceneOpacityAssertion": "At most one scene opacity > 0 per encoded frame."
+  },
+  "storyboard": [
+    {
+      "start": 0.06,
+      "end": 1.78,
+      "copy": [
+        "Geen meting?",
+        "Dan ook geen nul."
+      ],
+      "visual": "Mascot bobs; single pixel spark appears at sign-off."
+    },
+    {
+      "start": 1.82,
+      "end": 5.98,
+      "copy": [
+        "Onbekend ≠ nul.",
+        "FICTIEVE REVIEWDATA"
+      ],
+      "visual": "Full confirmed mixed-week screenshot, including unknown dash, measured zero, 6/7 days, and partial-day label."
+    },
+    {
+      "start": 6.02,
+      "end": 9.18,
+      "copy": [
+        "Ook dekking staat erbij.",
+        "FICTIEVE REVIEWDATA"
+      ],
+      "visual": "Full confirmed 30-day screenshot, including 24/30 available and 3 partial days."
+    },
+    {
+      "start": 9.22,
+      "end": 12,
+      "copy": [
+        "Cijfers met context.",
+        "Inzicht zonder oordeel."
+      ],
+      "visual": "Mascot sign-off with one pixel spark; no CTA."
+    }
+  ],
+  "exactDutchCopy": [
+    "Geen meting?",
+    "Dan ook geen nul.",
+    "Onbekend ≠ nul.",
+    "Ook dekking staat erbij.",
+    "FICTIEVE REVIEWDATA",
+    "Cijfers met context.",
+    "Inzicht zonder oordeel.",
+    "CONCEPT"
+  ],
+  "claimReview": {
+    "unknownIsNotZeroSupportedByCurrentUi": true,
+    "partialMeasurementDisclosed": true,
+    "fictionalScreenshotsLabeled": true,
+    "efficacyOrHealthClaim": false,
+    "exclusiveFeatureClaim": false,
+    "privacyClaim": false,
+    "downloadStorePriceOrDestinationClaim": false,
+    "customerQuote": false
+  },
+  "manualVisualReview": {
+    "status": "passed",
+    "findings": [
+      "Week and month screen/caption opacity windows are separated by a short fade through the warm background.",
+      "Inspected week-fade, month-fade, and sign-off frames; no doubled screenshot UI or headings appear.",
+      "Last frame retains the sign-off; no fade-to-black. Poster is an extracted sign-off frame.",
+      "The one pixel spark appears at sign-off, not in the opening."
+    ],
+    "scope": "Transition and ending visual check after the single combined correction."
+  },
+  "toolchain": {
+    "node": "v24.19.0",
+    "sharp": "0.35.5",
+    "ffmpeg": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "remotionUsed": false,
+    "browserOrExtraDependencyInstalled": false
+  },
+  "hostLimit": "Locally rendered graphic composition using confirmed review captures. Host video QA does not establish app acceptance, user comprehension, campaign performance, or field measurement accuracy.",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "duration": "12.000000",
+        "nb_read_frames": "360"
+      }
+    ],
+    "format": {
+      "duration": "12.000000",
+      "size": "408454"
+    }
+  },
+  "inspectedFrames": [
+    {
+      "file": "qa/handoff-week-fade.png",
+      "timeSeconds": 5.9
+    },
+    {
+      "file": "qa/handoff-month-fade.png",
+      "timeSeconds": 6.05
+    },
+    {
+      "file": "qa/ending.png",
+      "timeSeconds": 11.85
+    }
+  ],
+  "previousVersion": {
+    "archiveDirectory": "pre-transition-correction",
+    "videoSha256": "bcd7fc9e02c3601a1bf896c6ee70219e30d493700c0ac82674502d0d7f97788d",
+    "note": "Original render, source, brief, manifest, QA frames, and inputs retained before corrected output was written."
+  },
+  "independentFfprobe": {
+    "width": 1080,
+    "height": 1920,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "fps": "30/1",
+    "decodedFrames": 360,
+    "durationSeconds": 12.0,
+    "streams": 1,
+    "audioStreams": 0,
+    "bytes": 408454
+  },
+  "parentVerification": {
+    "atUtc": "2026-10-17T12:33:07.989735+00:00",
+    "status": "passed",
+    "independentMediaProbe": {
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "decodedFrames": 360,
+      "durationSeconds": 12,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audioTracks": 0,
+      "bytes": 408454
+    },
+    "outputAndSourceHashesMatched": true,
+    "nativeCaptureInputsByteIdentical": true,
+    "insightsUiBodyUnchanged": {
+      "fromCommit": "710579f",
+      "toCommit": "ed1bbed",
+      "sha256": "c02e5e15f8ca4126ea1158dcae716d06ed3b979f90dd0df1a2b29aa65f1eb781"
+    },
+    "sceneOpacityExclusivity": {
+      "framesIndependentlyChecked": 360,
+      "maxActiveScenes": 1,
+      "fadeDurationSeconds": 0.22,
+      "windows": [
+        [
+          0.06,
+          1.78
+        ],
+        [
+          1.82,
+          5.98
+        ],
+        [
+          6.02,
+          9.18
+        ],
+        [
+          9.22,
+          12.18
+        ]
+      ],
+      "method": "Independently sampled the exact final source windows and default fade duration at frame/30."
+    },
+    "visualReview": [
+      "original full week/month scenes",
+      "corrected outgoing week fade",
+      "corrected incoming month fade",
+      "corrected sign-off"
+    ],
+    "scope": "One combined transition/source-portability correction confirmed; no extra polish loop, new app rendering, audience test, publication or platform approval."
+  }
+}

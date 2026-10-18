@@ -1,0 +1,70 @@
+{
+  "status": "unpublished-google-play-feature-graphic-draft",
+  "createdAtUtc": "2026-10-18T22:11:01.610Z",
+  "renderedLocalDate": "2026-10-19",
+  "platformRequirements": {
+    "checkedDate": "2026-10-19",
+    "source": "https://support.google.com/googleplay/android-developer/answer/9866151?hl=en-en",
+    "format": "PNG",
+    "width": 1024,
+    "height": 500,
+    "alpha": false,
+    "channels": 3
+  },
+  "output": {
+    "file": "feature-graphic.png",
+    "width": 1024,
+    "height": 500,
+    "format": "png",
+    "colorSpace": "srgb",
+    "depth": "uchar",
+    "bitsPerSample": 8,
+    "channels": 3,
+    "hasAlpha": false,
+    "bytes": 42664,
+    "sha256": "689d565fd308b4bce5e0296720b60d7fd9aca059b6d9704039851f21297609b0"
+  },
+  "source": {
+    "file": "inputs/ollo_mascot.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "0edbcd365a6724bfdd54c1cfc6ad039230a1ca4ba62ceca619a379c4dd402ed1",
+    "equalsAppMascot": true
+  },
+  "copy": [
+    "Ollo",
+    "A pause.",
+    "Your choice."
+  ],
+  "layout": {
+    "focalContentCentered": true,
+    "headlineAndMascotWithinConservativeCenterArea": true,
+    "backgroundDetailsAtEdges": true,
+    "cta": false,
+    "storeBadge": false,
+    "fakeScreenshot": false,
+    "efficacyOrHealthClaim": false,
+    "customerOrTestimonialClaim": false,
+    "priceOrPromotionClaim": false,
+    "exclusiveFeatureClaim": false
+  },
+  "altTextDraft": "Ollo’s orange pixel mascot beside “A pause. Your choice.” on a cream panel.",
+  "toolchain": {
+    "node": "v24.19.0",
+    "sharp": "0.35.5",
+    "newDependenciesInstalled": false,
+    "remoteAssetsUsed": false
+  },
+  "altTextCharacters": 75,
+  "visualReview": {
+    "status": "passed",
+    "reviewedLocalDate": "2026-10-19",
+    "findings": [
+      "All three intended text lines are legible and fully inside the cream panel.",
+      "The second tagline ends before the mascot circle; text and mascot do not overlap.",
+      "The mascot remains pixel-crisp and the small spark is visible; decorative pixels stay near the outer edges.",
+      "No app UI, CTA, store badge, price, or results claim appears."
+    ]
+  },
+  "limitation": "File-format and layout checks do not establish Play approval, surface-specific cropping behavior, listing publication, or ad performance."
+}

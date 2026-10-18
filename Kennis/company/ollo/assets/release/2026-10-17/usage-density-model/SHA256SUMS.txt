@@ -1,0 +1,3 @@
+# SHA-256 provenance (UTF-8 file bytes)
+f4cd1ab0b4bc6a0cc5959fbf9de7547e425f073b9697c7f4d6a077fa08f85103  model.py
+729498a5ad7f7a5d83847aec81ed4863113f302c46fd717b859e6fc13ddb51f9  results.json
