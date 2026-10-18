@@ -21,7 +21,7 @@
 - **RevenueCat 10.28.1** installed through Gradle: customer info, `ollo_pro`, one-time `lifetime`, purchase/restore, cancel/error/pending handling and official Paywall presentation. Complete Kotlin/setup guide: [[REVENUECAT-INTEGRATION]].
 - Orange native Pro preview added. **Every current feature remains free while you test.** Future themes, learning packs and custom presets are labeled proposals.
 - Android 16 Test Store checks covered paywall, cancellation, failure, simulated success, entitlement and restore. No real payment. Production billing remains unverified.
-- Sandbox price is currently **$99.99** with generic hosted styling, clearly labeled **Test price**. Your roughly **€15 lifetime Ultimate** and final branding need the dashboard setup you deferred. No further login request.
+- The observed sandbox returned **$99.99** with generic hosted styling, clearly labeled **Test price**. Your roughly **€15 lifetime Ultimate** and final branding need the dashboard setup you deferred. No further login request.
 - **Pro Lite remains research:** optional ad-earned access to future extras. No ad SDK, fake reward or fixed one-minute promise. Normal core features should stay free.
 
 ## Research and marketing

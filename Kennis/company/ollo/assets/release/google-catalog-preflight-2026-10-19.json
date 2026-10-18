@@ -1,0 +1,97 @@
+{
+  "status": "bounded metadata preflight only; notices not merged",
+  "candidateSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93",
+  "records": [
+    {
+      "coordinate": "com.google.android.gms:play-services-base:18.5.0",
+      "aarSha256": "59a5c0c2da12311d75d965ce1f419498536b1a167fb28ff7dfc2dfd9cefa4157",
+      "catalogSha256": "f49b0d3754fe9430ca8e1d7578b98f9c74c912fa5182bee2db86f0c386ab7970",
+      "noticeTextSha256": "653d2e7a2bb02c79b897e826df9c3b2d8e8b1a3b2cef5e29585124fa455ddaf5",
+      "catalogType": "dict",
+      "catalogEntries": 16,
+      "noticeTextBytes": 313001,
+      "sampleEntry": [
+        [
+          "Animal Sniffer",
+          {
+            "length": 1096,
+            "start": 19
+          }
+        ]
+      ]
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-basement:18.9.0",
+      "aarSha256": "c6ed7236b1b3ce0296b508a5c0a09108fd52d83559d35cad2639505cd04ab255",
+      "catalogSha256": "c24c8840650fb045069d5b9d37bae5a0e58338c546a6845053d933741ed77878",
+      "noticeTextSha256": "ce8b3284215b312d3aaeb2ca73228b1b52557ca5151bd8725b47e11a707ccf77",
+      "catalogType": "dict",
+      "catalogEntries": 17,
+      "noticeTextBytes": 331345,
+      "sampleEntry": [
+        [
+          "Animal Sniffer",
+          {
+            "length": 1096,
+            "start": 19
+          }
+        ]
+      ]
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-location:19.0.0",
+      "aarSha256": "6b205c43ba5df751eca8ce9dae7a58effafac7d637fb4fc708a7522d1b99cf80",
+      "catalogSha256": "00e7208dad893362fe51520a5fca416cba179b1f0b8249553fbdb1f78580f28c",
+      "noticeTextSha256": "a344fdfbc3f94c9a41cd14d413bc9075a468eda20b2a0308b35929a572f07e71",
+      "catalogType": "dict",
+      "catalogEntries": 16,
+      "noticeTextBytes": 83057,
+      "sampleEntry": [
+        [
+          "AndroidX lifecycle common library",
+          {
+            "length": 10694,
+            "start": 115
+          }
+        ]
+      ]
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-places-placereport:17.0.0",
+      "aarSha256": "2c7fd63ad02f28150ae4ffe4615dac7d694d790e2c4667f777aedc8ee054e929",
+      "catalogSha256": "35e32e56d0a3ca9700cc65ac093af901a525c039088c122427ccb033c8effc30",
+      "noticeTextSha256": "af106893a5827deaa5ded6f7ad9db71a8d6cc21b4e814627334acabe07634b65",
+      "catalogType": "dict",
+      "catalogEntries": 11,
+      "noticeTextBytes": 55737,
+      "sampleEntry": [
+        [
+          "STL",
+          {
+            "length": 680,
+            "start": 29078
+          }
+        ]
+      ]
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-tasks:18.2.0",
+      "aarSha256": "7f2aaa8f502068eaf54356ca92aec04271d6e7c416c52c45c0d23440fcbd1654",
+      "catalogSha256": "f49b0d3754fe9430ca8e1d7578b98f9c74c912fa5182bee2db86f0c386ab7970",
+      "noticeTextSha256": "653d2e7a2bb02c79b897e826df9c3b2d8e8b1a3b2cef5e29585124fa455ddaf5",
+      "catalogType": "dict",
+      "catalogEntries": 16,
+      "noticeTextBytes": 313001,
+      "sampleEntry": [
+        [
+          "Animal Sniffer",
+          {
+            "length": 1096,
+            "start": 19
+          }
+        ]
+      ]
+    }
+  ],
+  "next": "Resolve catalog offsets/component identities against final runtime and existing bundled terms; do not infer all catalog entries ship or need the same license."
+}
