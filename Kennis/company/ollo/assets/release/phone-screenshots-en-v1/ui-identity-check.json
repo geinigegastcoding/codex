@@ -1,0 +1,45 @@
+{
+  "apkSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93",
+  "sourceCommit": "0bef8f68c04041e4b58f2be6c2ade4d24d69df8f",
+  "status": "passed",
+  "proof": "Exact RGB pixels inside each UI rectangle equal the declared whole-raw Lanczos3 resampling; exterior captions only.",
+  "pathNormalization": "Windows capture paths normalized to forward slashes for comparison",
+  "captures": [
+    {
+      "frame": "framed/01-choose-your-apps.png",
+      "rawSha256": "201029d4e34f206f4c2371c00aeafa3780a80138ace4035051022f205b26e007",
+      "declaredResamplingPixelsEqual": true,
+      "uiRegionSha256": "448d8ee10cc49c3ebcdf46590f51e8b289687c4e19abba7ab3a8fb813e755e5b"
+    },
+    {
+      "frame": "framed/02-keep-essentials-close.png",
+      "rawSha256": "46f420694421bd3dd021dc96f30669e376f52025d1bb42660b85a9e6d22cf83b",
+      "declaredResamplingPixelsEqual": true,
+      "uiRegionSha256": "e738d2f3c564c061800b4d858e5cffd51f9d00e5adb5cc92d52f0ca014ee01ff"
+    },
+    {
+      "frame": "framed/03-make-room-for-routines.png",
+      "rawSha256": "0a0b700a770ca5d988496c3dcc5cba8b11118b1bda5b5c5913f108966024c0ee",
+      "declaredResamplingPixelsEqual": true,
+      "uiRegionSha256": "af1ab230456439df44e31a3bafe0ab3bf9e2711a5c35e795986a8ef7aa061139"
+    },
+    {
+      "frame": "framed/04-find-an-offline-idea.png",
+      "rawSha256": "8247c260f97b737cdb67b684cd7b4802dd92353edc043945e49f1147ac8bb7af",
+      "declaredResamplingPixelsEqual": true,
+      "uiRegionSha256": "a479142c02ec82bf0e37fc9ba22e0de66e6467cb1a9b6d6e743b664a863af983"
+    },
+    {
+      "frame": "framed/05-understand-your-patterns.png",
+      "rawSha256": "9426625640f3b3b5cdac02b817260a82da64d58986768d19ac68fb74bbc6b5bd",
+      "declaredResamplingPixelsEqual": true,
+      "uiRegionSha256": "da85afa7df00597ee8e2a71b20a5ed4161ecdcbd397d69f5285f08c7b38d4d22"
+    },
+    {
+      "frame": "framed/06-a-calmer-daily-view.png",
+      "rawSha256": "44672e02b36a6e08141a45157638917179446b68facddb2e1101d4d5702f2364",
+      "declaredResamplingPixelsEqual": true,
+      "uiRegionSha256": "e432b181f45d0a8021e2410f430edb0e3231453cfbe1d665564e2fd1a241331e"
+    }
+  ]
+}

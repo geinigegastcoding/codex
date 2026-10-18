@@ -33,8 +33,8 @@ Acceptance for each fix: preserve the failure trace, identify the shared cause, 
 
 | ID | Status | Remaining work / source |
 |---|---|---|
-| BUILD-01 | Memory native scope passed | Exact0.3.1 candidate `b35661d1…`, source `6f798f9`:44debug/native checks and4parent-viewed captures per font(normal/200%). Persistence read, export, isolation, explicit save/forget, quiz/hard-block guards pass. Debug grants cleared explicitly; no natural-expiry/physical claim. Seven/nine-step onboarding acceptance still pending. |
-| BUILD-02 | In progress | Package the final tested APK with SHA-256, exact source commit, Gradle checks and scoped runtime results. Stable fallback is the editor-row APK `c2adee7f…`; never promote a failed or untested candidate. |
+| BUILD-01 | Implemented and scoped native checks passed | Exact0.3.1 APK4ea8eec8…, source0bef8f6:44memory checks/fourviewed captures per font; explicit save/forget, DB read/export, isolation, quiz/hard-block guards. Debug grants cleared explicitly; no natural-expiry/physical claim. |
+| BUILD-02 | Complete test APK delivered locally | `artifacts/Ollo-0.3.1-complete-free-testing-debug-2026-10-19.apk`, SHA4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93.91units,lint0/18,13packagechecks,16KBalignment. All22native captures reviewed. APK ignored byGit; download separately. |
 | BUILD-03 | Open, owner inputs | Production signing/update continuity, actual Google Play key, Play app/catalog and real purchase track. Test Store is implemented; production release acceptance is not. See [[REVENUECAT-INTEGRATION]]. |
 | BILL-01 | Dashboard owner-deferred | Configure `lifetime` as one-time/nonconsumable, attach `ollo_pro`, current lifetime-only offering, hosted paywall branding and actual price. Do not ask for browser login again now. Current sandbox catalog price is not the proposed €15 price. |
 | BILL-02 | Test Store implemented; live pending | Keep customer-info/entitlement/restore/error/cancel handling and free exit. Verify the production purchase/update/refund lifecycle later; Customer Center only where useful. No real purchase in this run. |
@@ -49,12 +49,12 @@ Acceptance for each fix: preserve the failure trace, identify the shared cause, 
 
 | ID | Status | Next step |
 |---|---|---|
-| ONBOARD-01 | Implemented; continue scoped review | Exact-package installed-app defaults for distractions/essentials, editable whole rows, persistent actions, English copy and skippable permissions. Test that owner edits and zero selections survive; no forced paywall. |
-| ONBOARD-02 | Implemented; native checks in progress | Seven-step app-choice-first path; optional nine-step usage-history route, Back/rotation/zero-selection/free-completion checks underway on exact0.3.1 candidate. Personal intention/retention experiments remain optional research, no telemetry added. |
+| ONBOARD-01 | Implemented and verified in scoped emulator cases | Exact-package installed suggestions, whole rows, persistent actions, English copy, optional permissions and no forced paywall. User deselections/zero optional selections survive Back/rotation/fresh activity; normal/200% font. Physical/TalkBack remain open. |
+| ONBOARD-02 | Implemented; discovery still open | Seven-step app-choice-first route plus optional nine-step history. Exact4eaAPK passed40native checks/sevenviewed captures per font, including free completion with permissions declined. Optional intention/retention experiments remain research; no telemetry. |
 | USP-01 | Research saved; experiments pending | Rank useful differentiators against current competitor overlap, not “first/only” claims. Purpose → gentle finish cue, optional remembered choices and context-aware offline alternatives are candidates. See [[LAUNCH-USP-RETENTION]] and [[FEATURE-RESEARCH]]. |
 | RETAIN-01 | Research/validation pending | Test graceful re-entry, user-chosen routines and clear progress; avoid punitive streaks or time-in-app goals. Define tester questions and success criteria; do not invent user evidence. |
-| STORE-01 | In progress | Refresh English Play text for actual 0.3.0 English UI and RevenueCat boundary; old Dutch/no-internet passages are historical. Verify field limits and avoid absolute blocking claims while BUG-01/02 remain. |
-| STORE-02 | Open | Capture genuine clean app screens, prepare orange/pixel screenshot layouts and feature graphic, verify required sizes and readability, retain originals and sources. Label staged demo data; no fake app UI or unpublished extras. |
+| STORE-01 | English drafts complete; owner submission pending | Current title/short/full fields and actual-feature/network boundaries saved. No absolute blocking/no-internet claims, unconfigured price or finished-Pro-extra claims. See [[ENGLISH-STORE-LISTING]]. |
+| STORE-02 | Six screenshots and artwork prepared | Genuine4eaAPK1080×1920 rawcaptures, six reviewed opaqueRGB frames with outside captions, explicitfictional labels onstats/Today, alttexts and pixel-identity proof. English1024×500featuregraphic and512×512RGBA native-vector icon ready; no upload/approval. See [[STORE-ASSET-PRODUCTION]]. |
 | ADS-01 | Scripts prepared; footage pending | Preserve English Google Flow UGC concepts and real recording slots/shot list. Wait for owner footage and authorization before generating video/AI people; do not publish or spend. See [[GLOBAL-UGC-SCRIPTS]] and [[RECORDING-SHOT-LIST]]. |
 
 ## Explicitly later

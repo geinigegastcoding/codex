@@ -1,0 +1,163 @@
+{
+  "renderedAtUtc": "2026-10-18T23:08:15.492Z",
+  "renderedDateEuropeAmsterdam": "2026-10-19",
+  "renderer": "render.mjs",
+  "transform": {
+    "rawInput": "1080x1920 PNG; dimensions validated; any alpha channel must be fully opaque",
+    "uiResize": "936x1664 at x=72, y=204; uniform scale 0.8666666667; Lanczos3; no crop",
+    "uiTreatment": "raw app screenshot retained as one rectangular layer; no retouching, repainting, text overlay, or compositing inside the UI rectangle",
+    "externalFrame": "1080x1920 opaque RGB; cream background, charcoal exact title, small orange pixel spark; FICTIONAL DEMO DATA label only for captures 05 and 06"
+  },
+  "captures": [
+    {
+      "raw": {
+        "file": "raw/01-choose-your-apps.png",
+        "sha256": "201029d4e34f206f4c2371c00aeafa3780a80138ace4035051022f205b26e007",
+        "width": 1080,
+        "height": 1920,
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          255,
+          255
+        ]
+      },
+      "frame": {
+        "file": "framed/01-choose-your-apps.png",
+        "sha256": "84fe3a1d485cd0cba3aa1619dd13b991549e6b1039a7db1456f36cf70d1e2496",
+        "width": 1080,
+        "height": 1920,
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 167772
+      },
+      "title": "Choose what to pause.",
+      "fictionalDemoDataLabel": null
+    },
+    {
+      "raw": {
+        "file": "raw/02-keep-essentials-close.png",
+        "sha256": "46f420694421bd3dd021dc96f30669e376f52025d1bb42660b85a9e6d22cf83b",
+        "width": 1080,
+        "height": 1920,
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          255,
+          255
+        ]
+      },
+      "frame": {
+        "file": "framed/02-keep-essentials-close.png",
+        "sha256": "69c901481ece621f183ee1e69e462222988ac5c1de7e9132a0abba8f24f4d965",
+        "width": 1080,
+        "height": 1920,
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 174211
+      },
+      "title": "Keep essentials close.",
+      "fictionalDemoDataLabel": null
+    },
+    {
+      "raw": {
+        "file": "raw/03-make-room-for-routines.png",
+        "sha256": "0a0b700a770ca5d988496c3dcc5cba8b11118b1bda5b5c5913f108966024c0ee",
+        "width": 1080,
+        "height": 1920,
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          255,
+          255
+        ]
+      },
+      "frame": {
+        "file": "framed/03-make-room-for-routines.png",
+        "sha256": "8fb4144f20b075d02d5840252f3a33b65e8a12d2eea6b7ca73651a00087a8d4d",
+        "width": 1080,
+        "height": 1920,
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 174816
+      },
+      "title": "Make room for routines.",
+      "fictionalDemoDataLabel": null
+    },
+    {
+      "raw": {
+        "file": "raw/04-find-an-offline-idea.png",
+        "sha256": "8247c260f97b737cdb67b684cd7b4802dd92353edc043945e49f1147ac8bb7af",
+        "width": 1080,
+        "height": 1920,
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          255,
+          255
+        ]
+      },
+      "frame": {
+        "file": "framed/04-find-an-offline-idea.png",
+        "sha256": "737405ef74673de03d67f400bdce21b9ee8d90f706ee438e353dbbf46f16420b",
+        "width": 1080,
+        "height": 1920,
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 197524
+      },
+      "title": "Find an offline idea.",
+      "fictionalDemoDataLabel": null
+    },
+    {
+      "raw": {
+        "file": "raw/05-understand-your-patterns.png",
+        "sha256": "9426625640f3b3b5cdac02b817260a82da64d58986768d19ac68fb74bbc6b5bd",
+        "width": 1080,
+        "height": 1920,
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          255,
+          255
+        ]
+      },
+      "frame": {
+        "file": "framed/05-understand-your-patterns.png",
+        "sha256": "d376b1efbf3846a23c126efdbf44b2564dab7b975905280c12680f839fd8c6e5",
+        "width": 1080,
+        "height": 1920,
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 181681
+      },
+      "title": "Understand your patterns.",
+      "fictionalDemoDataLabel": "FICTIONAL DEMO DATA"
+    },
+    {
+      "raw": {
+        "file": "raw/06-a-calmer-daily-view.png",
+        "sha256": "44672e02b36a6e08141a45157638917179446b68facddb2e1101d4d5702f2364",
+        "width": 1080,
+        "height": 1920,
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          255,
+          255
+        ]
+      },
+      "frame": {
+        "file": "framed/06-a-calmer-daily-view.png",
+        "sha256": "dade97734153d5950d8454daa811b2c26919ade43a5662ac1c506d72bc0e25cc",
+        "width": 1080,
+        "height": 1920,
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 173708
+      },
+      "title": "A calmer daily view.",
+      "fictionalDemoDataLabel": "FICTIONAL DEMO DATA"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "reviewedDateEuropeAmsterdam": "2026-10-19",
+  "reviewScope": "All six final framed PNGs inspected visually at phone-listing scale; no renderer or image edits made during review.",
+  "candidate": {
+    "sourceCommit": "0bef8f68c04041e4b58f2be6c2ade4d24d69df8f",
+    "apkSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93"
+  },
+  "frameCheck": {
+    "dimensions": "1080x1920",
+    "uiTransform": "Complete raw 1080x1920 UI uniformly scaled to 936x1664 (13/15) at x=72,y=204; no crop or edits inside UI rectangle.",
+    "result": "All six frames show the app UI without frame-induced clipping, overlap, or external claims beyond the displayed screen content. Titles are legible."
+  },
+  "screens": [
+    {
+      "file": "framed/01-choose-your-apps.png",
+      "title": "Choose what to pause.",
+      "result": "Title and selected-app state are clear. The bottom of the scrollable app list continues beneath the app's fixed action area in this captured viewport; this is visible native screen content, not a frame crop."
+    },
+    {
+      "file": "framed/02-keep-essentials-close.png",
+      "title": "Keep essentials close.",
+      "result": "Title and optional-essentials state are clear; the screen explains that calls, alarms, and system settings remain available."
+    },
+    {
+      "file": "framed/03-make-room-for-routines.png",
+      "title": "Make room for routines.",
+      "result": "Title and morning routine schedule controls are readable; no overlap or frame-induced clipping observed."
+    },
+    {
+      "file": "framed/04-find-an-offline-idea.png",
+      "title": "Find an offline idea.",
+      "result": "Title and Ideas-screen filters and suggestions are readable. The displayed offline wording refers to the Ideas screen; no whole-app connectivity claim was added to the frame."
+    },
+    {
+      "file": "framed/05-understand-your-patterns.png",
+      "title": "Understand your patterns.",
+      "result": "Title, weekly chart, and fixture values are legible. “FICTIONAL DEMO DATA” is clearly visible in the frame and the app screen also marks its data as demo."
+    },
+    {
+      "file": "framed/06-a-calmer-daily-view.png",
+      "title": "A calmer daily view.",
+      "result": "Title, Today metrics, goal progress, and chart are legible. “FICTIONAL DEMO DATA” is clearly visible in the frame and the app screen also marks its data as demo."
+    }
+  ],
+  "limits": [
+    "This is a visual and framing review only; it does not establish Google Play acceptance, conversion performance, or device-wide behavior.",
+    "Captures 05 and 06 use partial fictional read-only fixtures, not real user activity.",
+    "The screenshots represent the named preview APK and source commit; later app changes require fresh captures and review."
+  ]
+}

@@ -14,9 +14,9 @@ Ollo is currently a native, local Android review app. This area holds research a
 
 | Start here | What it answers |
 |---|---|
-| [[OLLO-WRAP-UP-2026-10-17]] | Updated16–18October founder summary: app improvements, research, English scripts, assets and remaining decisions |
+| [[OLLO-WRAP-UP-2026-10-17]] | Updated16–19October founder summary: app improvements, research, English scripts, assets and remaining decisions |
 | [[BACKLOG]] | Single unfinished-work list, reported bugs, deferred SDKs and07:00 overnight deadline |
-| [[CONTINUOUS-IMPROVEMENT]] | Live launch restart checkpoint, capacity reserve and active half-hour continuation; older stop entries are historical |
+| [[CONTINUOUS-IMPROVEMENT]] | Latest testedAPK/Git handoff, safe runtime cleanup, reset reserve and19October07:00hard stop; older entries historical |
 | [[product-marketing-context]] | Verified product facts, founder direction and clearly labelled audience assumptions |
 | [[MARKETING]] | First audience hypothesis, claims, a €0-media 30-day learning plan and decision rules |
 | [[GLOBAL-UGC-SCRIPTS]] | Eight English/global UGC scripts with real-app footage slots, including optional purpose-cue and local-storage takes; no video generated |
@@ -82,4 +82,4 @@ Owner decision18October: RevenueCat dashboard/catalog/entitlement/offering/hoste
 
 - [English feature graphic](assets/release/feature-graphic-en-v1/feature-graphic.png):1024×500opaqueRGB, source/render/verification beside it.
 - [Store icon](assets/release/store-icon-en-v1/store-icon.png):512×512RGBA with opaque alpha, direct render of the unchanged native vector.
-- These are prepared assets, not a store upload or approval. Genuine screenshot set is still in progress; see [[STORE-ASSET-PRODUCTION]].
+- These are prepared assets, not a store upload or approval. [Six reviewed English phone screenshots](assets/release/phone-screenshots-en-v1/README.md), including raw captures, alttexts and explicit fictional-data labels; see [[STORE-ASSET-PRODUCTION]].

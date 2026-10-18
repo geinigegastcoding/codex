@@ -9,6 +9,15 @@ tags: [ollo, google-play, screenshots, production]
 
 # Ollo Google Play screenshot production brief
 
+## Delivered set — 19 October 2026
+
+[Six screenshots, originals, alt texts and review](assets/release/phone-screenshots-en-v1/README.md) are prepared from the exact0.3.1 APK4ea8eec8…/source0bef8f6 on the owned API36AVD. App choices, essentials, morning routine and Ideas are actual fresh configuration screens. Insights and Today use the existing read-only partial fixture, with large **FICTIONAL DEMO DATA** labels outside the UI. The opening-prompt slot in the earlier plan was replaced with Today; no prompt was fabricated.
+
+All raw screens are1080×1920. Each opaqueRGB frame preserves the whole UI at13/15scale, with captions/spark outside it; exact UI-region pixel comparison passes for allsix. Allsix frames reviewed, six alttexts<=140characters. Existing app-row continuation under its native fixed action area is retained, not cropped away in post. Feature graphic: [English1024×500](assets/release/feature-graphic-en-v1/feature-graphic.png). Icon: [512×512RGBA](assets/release/store-icon-en-v1/store-icon.png), direct unchanged vector render. Nothing was uploaded or approved byPlay.
+
+## Earlier capture plan — historical reference
+
+
 Produce six ordered English-language phone screenshots from the real stable 0.3.0 app (`c2adee7f`, source `4db5eb2`) on a clean review setup. These are capture instructions, not generated assets. Keep original, unaltered captures and record build, device/emulator, resolution, UI language and setup in a take log. The product UI is orange pixel-styled; frame the real UI cleanly and use restrained orange/cream/charcoal framing only if it does not obscure or alter app content.
 
 ## Ordered six-screen set

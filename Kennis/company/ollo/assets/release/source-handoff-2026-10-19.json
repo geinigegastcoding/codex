@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "appSourceCommit": "0bef8f68c04041e4b58f2be6c2ade4d24d69df8f",
+  "evidenceCommit": "2dc8a3e5d0e825aea63bacf48776a373899c46ce",
+  "remoteBranchShaEqual": true,
+  "canonicalHeadBlobsVerified": 2391,
+  "trackedWorktreeAndIndexClean": true,
+  "preservedUntrackedScopes": [
+    "docs/evidence/2026-10-18-editor-drafts/",
+    "screenshots/2026-10-18-editor-drafts/"
+  ],
+  "apkSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93",
+  "knowledgeFoundationCommit": "48fb127e581a0d85392e56ec53d2e492ab4afc79",
+  "scope": "Git blob bytes, not CRLF checkout bytes; APK ignored/download separately"
+}

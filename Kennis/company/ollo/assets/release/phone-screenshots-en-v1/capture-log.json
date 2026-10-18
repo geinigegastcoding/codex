@@ -1,0 +1,62 @@
+{
+  "startedUtc": "2026-10-18T23:05:16.761078+00:00",
+  "captures": [
+    {
+      "id": "01-choose-your-apps",
+      "route": "onboarding/distractions",
+      "fixture": "fresh actual app/default configuration",
+      "raw": "raw\\01-choose-your-apps.png",
+      "rawSha256": "201029d4e34f206f4c2371c00aeafa3780a80138ace4035051022f205b26e007",
+      "fictionalDataLabelRequired": false
+    },
+    {
+      "id": "02-keep-essentials-close",
+      "route": "onboarding/essentials",
+      "fixture": "fresh actual app/default configuration",
+      "raw": "raw\\02-keep-essentials-close.png",
+      "rawSha256": "46f420694421bd3dd021dc96f30669e376f52025d1bb42660b85a9e6d22cf83b",
+      "fictionalDataLabelRequired": false
+    },
+    {
+      "id": "03-make-room-for-routines",
+      "route": "morning",
+      "fixture": "fresh actual app/default configuration",
+      "raw": "raw\\03-make-room-for-routines.png",
+      "rawSha256": "0a0b700a770ca5d988496c3dcc5cba8b11118b1bda5b5c5913f108966024c0ee",
+      "fictionalDataLabelRequired": false
+    },
+    {
+      "id": "04-find-an-offline-idea",
+      "route": "alternatives",
+      "fixture": "fresh actual app/default configuration",
+      "raw": "raw\\04-find-an-offline-idea.png",
+      "rawSha256": "8247c260f97b737cdb67b684cd7b4802dd92353edc043945e49f1147ac8bb7af",
+      "fictionalDataLabelRequired": false
+    },
+    {
+      "id": "05-understand-your-patterns",
+      "route": "insights",
+      "fixture": "partial fictional read-only fixture",
+      "raw": "raw\\05-understand-your-patterns.png",
+      "rawSha256": "9426625640f3b3b5cdac02b817260a82da64d58986768d19ac68fb74bbc6b5bd",
+      "fictionalDataLabelRequired": true
+    },
+    {
+      "id": "06-a-calmer-daily-view",
+      "route": "today",
+      "fixture": "partial fictional read-only fixture",
+      "raw": "raw\\06-a-calmer-daily-view.png",
+      "rawSha256": "44672e02b36a6e08141a45157638917179446b68facddb2e1101d4d5702f2364",
+      "fictionalDataLabelRequired": true
+    }
+  ],
+  "scope": "genuine production-screen UI in debug APK; default installed-app setup and clearly fictional read-only measurement fixtures; no enforcement, outcome, Play approval or physical-device claim",
+  "apkSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93",
+  "sourceCommit": "0bef8f68c04041e4b58f2be6c2ade4d24d69df8f",
+  "displayBefore": "Physical size: 1080x2400",
+  "density": "Physical density: 420",
+  "displayCapture": "Physical size: 1080x2400\r\nOverride size: 1080x1920",
+  "status": "captured, visual and format review pending",
+  "displayRestored": true,
+  "finishedUtc": "2026-10-18T23:06:27.820963+00:00"
+}
