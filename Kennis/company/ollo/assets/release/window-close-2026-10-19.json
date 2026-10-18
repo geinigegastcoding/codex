@@ -1,0 +1,17 @@
+{
+  "atUtc": "2026-10-18T23:18:26Z",
+  "primaryUsedPercent": 91,
+  "primaryRemainingPercent": 9,
+  "weeklyUsedPercent": 90,
+  "fiveHourResetsAt": 1792378615,
+  "resetUtc": "2026-10-19T02:56:55Z",
+  "firstWindowMilestoneClosed": true,
+  "safeRuntimeIdle": true,
+  "ownedRunningOperations": [],
+  "appEvidenceCommit": "2dc8a3e5d0e825aea63bacf48776a373899c46ce",
+  "knowledgeHandoffCommit": "8beb03c6df1753e34eb417e1b33ea5de50ffd7d9",
+  "apkSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93",
+  "next": "No new long work before reset. Final window only bounded catalog/runtime notice comparison and finalhandoff,20%reserve/hardstop05:00UTC.",
+  "automation": "same activeheartbeat expires05:00UTC; deadline stop precedes reservefastpath",
+  "resetCreditsUsed": false
+}
