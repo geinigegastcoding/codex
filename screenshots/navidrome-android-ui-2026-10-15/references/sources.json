@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-15",
+  "confirmed_platform": "Android",
+  "reference_platform_notice": "Mobbin inputs are iOS screenshots used for interaction patterns, not claimed to be Android screenshots.",
+  "mobbin": [
+    {
+      "id": "19b25d60-7a9b-4ba5-b024-f78800c8e04c",
+      "mobbin_url": "https://mobbin.com/screens/19b25d60-7a9b-4ba5-b024-f78800c8e04c",
+      "app_name": "Spotify",
+      "platform": "ios",
+      "file": "spotify-download-progress.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/spotify-download-progress.jpg"
+    },
+    {
+      "id": "768254d2-404f-4ef7-b44e-445c297dda7c",
+      "mobbin_url": "https://mobbin.com/screens/768254d2-404f-4ef7-b44e-445c297dda7c",
+      "app_name": "Spotify",
+      "platform": "ios",
+      "file": "spotify-library.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/spotify-library.jpg"
+    },
+    {
+      "id": "bd50673f-8bc3-4b9e-8f80-4fcaf435f61c",
+      "mobbin_url": "https://mobbin.com/screens/bd50673f-8bc3-4b9e-8f80-4fcaf435f61c",
+      "app_name": "Spotify",
+      "platform": "ios",
+      "file": "spotify-playlist-offline.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/spotify-playlist-offline.jpg"
+    },
+    {
+      "id": "0344b16a-a8e5-442b-a8f9-efddae1ab159",
+      "mobbin_url": "https://mobbin.com/screens/0344b16a-a8e5-442b-a8f9-efddae1ab159",
+      "app_name": "Dropbox",
+      "platform": "ios",
+      "file": "dropbox-upload-progress.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/dropbox-upload-progress.jpg"
+    },
+    {
+      "id": "06d24dee-d5f1-41cb-b8db-9592acacbf96",
+      "mobbin_url": "https://mobbin.com/screens/06d24dee-d5f1-41cb-b8db-9592acacbf96",
+      "app_name": "TIDAL",
+      "platform": "ios",
+      "file": "tidal-playlist.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/tidal-playlist.jpg"
+    },
+    {
+      "id": "48ab5685-3b18-478c-a4fa-8f5cdacc8df3",
+      "mobbin_url": "https://mobbin.com/screens/48ab5685-3b18-478c-a4fa-8f5cdacc8df3",
+      "app_name": "SoundCloud",
+      "platform": "ios",
+      "file": "soundcloud-compact-playlist.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/soundcloud-compact-playlist.jpg"
+    },
+    {
+      "id": "13b9a098-e675-4166-b4b4-20102e5e4703",
+      "mobbin_url": "https://mobbin.com/screens/13b9a098-e675-4166-b4b4-20102e5e4703",
+      "app_name": "SoundCloud",
+      "platform": "ios",
+      "file": "soundcloud-miniplayer.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-android-ui-2026-10-15/references/soundcloud-miniplayer.jpg"
+    }
+  ],
+  "primary_sources": [
+    "https://www.navidrome.org/docs/faq/",
+    "https://opensubsonic.netlify.app/docs/extensions/sonicsimilarity/",
+    "https://github.com/NeptuneHub/AudioMuse-AI-NV-plugin",
+    "https://developer.android.com/media/media3/exoplayer/downloading-media",
+    "https://developer.android.com/media/media3/session/background-playback",
+    "https://developer.android.com/training/data-storage/shared/documents-files",
+    "https://developer.android.com/develop/ui/compose/accessibility/api-defaults"
+  ],
+  "recommendation_boundaries": [
+    "Local MP3 import and playback only; no server upload is part of the confirmed scope",
+    "Sonic matching requires available analysis; local-only MP3s need separate local analysis or features",
+    "Offline operation requires locally available media and metadata",
+    "Mockups are fictional UI states; no runtime verified",
+    "Android runtime/framework not selected or built"
+  ],
+  "research_note": "C:/Users/Daniël/Desktop/Codex/Kennis/personal/resources/navidrome-android-ui-onderzoek-2026-10-15.md"
+}

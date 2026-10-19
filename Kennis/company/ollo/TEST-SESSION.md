@@ -1,5 +1,15 @@
 # Ollo — 15-minute Android test session
 
+## Owner self-test: current overnight candidate
+
+- Candidate: `0.3.2-preview` /versionCode6, source `2a10ebd`. Exact APK/native acceptance and current download identity are recorded in project `docs/OVERNIGHT_HANDOFF.md`; use that guide rather than an older artifact. All current features remain free.
+- Over the next couple of days, try changing the suggested app choices, declining optional setup access, returning later, and remembering/editing/forgetting one app's opening purpose/time. Note confusing decisions as well as failures.
+- Try the routines and usage views during ordinary use. Check that missing/partial measurements remain understandable. Keep real calls, alarms and Android recovery available; emulator checks do not establish physical-device reliability.
+- If one of the four reported quiz problems occurs, record the Ollo/Android/device version, target-app version, the short action sequence, existing pause/grant state and whether audio played. The canonical issue list is [[BACKLOG]]; these reports are not claimed fixed.
+- The Pro screen is a free-testing preview. Dashboard branding, real price and production purchase testing remain owner-deferred. Preserve an existing installation if Android rejects an update because the signer differs; JSON export is not a restore mechanism.
+
+The participant session below remains a separate, unrun research protocol; do not count self-testing or emulator assertions as completed customer interviews.
+
 **Status: not yet run.** This is a neutral usability/value session, not physical-device acceptance or evidence of product efficacy. Use an existing Ollo installation in a safe test environment. Do not uninstall, update, overwrite, or replace a participant’s installed test app. The 0.2.0-review APK has a different signing certificate from the earlier 0.1.1 build; if the right version is not already available, use a spare device/emulator rather than replacing an installation. Passing this session does not establish OEM/background, call/alarm, battery, or release-signing acceptance; see [DEVICE_CHECKLIST.md](../../../projecten/Ollo/docs/DEVICE_CHECKLIST.md) separately.
 
 ## Before the session

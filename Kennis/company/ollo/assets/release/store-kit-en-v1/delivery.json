@@ -1,0 +1,89 @@
+{
+  "archive": "Ollo-English-Play-Store-Kit-2026-10-19.zip",
+  "sha256": "cccf9904c547912b1c4d04370561c59635c9d715e74b19bcb2710ea749cff2fc",
+  "bytes": 1038804,
+  "files": 13,
+  "images": 8,
+  "allExtractedFileBytesEqual": true,
+  "manifest": {
+    "status": "prepared, unpublished English store kit",
+    "capturedApkSha256": "4ea8eec82b63294c60f18d0bcdb1e6332507aa830fef4804a15089ac1f37ba93",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "f547fb7f6e1e6e6fef7285e6e22adfe59d8cf952370cff1075561f2ed64687f9",
+        "bytes": 1678
+      },
+      {
+        "path": "listing-en.md",
+        "sha256": "39516660991d89b282e2837dae8368686d3349b1b5cb905ab86f6c5501b93aaf",
+        "bytes": 6832
+      },
+      {
+        "path": "screenshot-notes.md",
+        "sha256": "16434ecb56004c28168e60174efdba422678e72b5b997f3646eed11e24a40455",
+        "bytes": 2208
+      },
+      {
+        "path": "artwork/feature-graphic.png",
+        "sha256": "689d565fd308b4bce5e0296720b60d7fd9aca059b6d9704039851f21297609b0",
+        "bytes": 42664,
+        "width": 1024,
+        "height": 500
+      },
+      {
+        "path": "artwork/store-icon.png",
+        "sha256": "504743c475c30edfdc7ec4f6b23be560ff5b5b101f2eefe4783ae279b17d33e0",
+        "bytes": 3632,
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "phone/01-choose-your-apps.png",
+        "sha256": "84fe3a1d485cd0cba3aa1619dd13b991549e6b1039a7db1456f36cf70d1e2496",
+        "bytes": 167772,
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "path": "phone/02-keep-essentials-close.png",
+        "sha256": "69c901481ece621f183ee1e69e462222988ac5c1de7e9132a0abba8f24f4d965",
+        "bytes": 174211,
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "path": "phone/03-make-room-for-routines.png",
+        "sha256": "8fb4144f20b075d02d5840252f3a33b65e8a12d2eea6b7ca73651a00087a8d4d",
+        "bytes": 174816,
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "path": "phone/04-find-an-offline-idea.png",
+        "sha256": "737405ef74673de03d67f400bdce21b9ee8d90f706ee438e353dbbf46f16420b",
+        "bytes": 197524,
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "path": "phone/05-understand-your-patterns.png",
+        "sha256": "d376b1efbf3846a23c126efdbf44b2564dab7b975905280c12680f839fd8c6e5",
+        "bytes": 181681,
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "path": "phone/06-a-calmer-daily-view.png",
+        "sha256": "dade97734153d5950d8454daa811b2c26919ade43a5662ac1c506d72bc0e25cc",
+        "bytes": 173708,
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "images": 8,
+    "phoneScreenshots": 6,
+    "scope": "reviewed genuine native UI; last2includeexplicitfictionaldemo labels; no Pro/price efficacy claim",
+    "screenshotNotesAdaptation": "Only the framed/ path prefix changes to phone/ to match archive paths; source screenshot notes remain unchanged in vault."
+  }
+}

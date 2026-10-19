@@ -4,7 +4,7 @@
 **Purpose:** Rank practical next experiments for Ollo’s Android product.  
 **Evidence limit:** Seven primary-source pages were reviewed: four official product/platform pages and three peer-reviewed research papers. This is a focused comparison, not a complete market or systematic literature review. No user demand, efficacy, or uniqueness is inferred from product descriptions alone.
 
-**Current implementation, 18 October:** the descriptions below retain the 16/17 October research baseline. The [implementation update](#implementation-update-18-october2026) records the built preset-purpose/timed-cue experiment and twelve-card facts catalog. [[CUE-ACTION-CLARITY]] records the later reminder wording; demand and USP remain unvalidated. The [later Android parity update](#android-parity-update-18-october2026) records direct overlap with purpose/session and learning-gate features.
+**Current implementation, 19 October:** the descriptions below retain the dated research baseline. Preset purpose/timed cues, twelve fact cards and optional per-app remembered purpose/time are implemented; each opening still needs confirmation. Free-text purposes, automatic task-completion detection, config import/restore and widgets remain proposals. Usage/rules stay local, while the current preview includes RevenueCat purchase-service network calls. [[BACKLOG]] is the authoritative unfinished-work list. The [implementation update](#implementation-update-18-october2026), [[CUE-ACTION-CLARITY]] and [Android parity update](#android-parity-update-18-october2026) preserve earlier scope and competitor overlap. Demand and an exclusive USP remain unvalidated.
 
 ## Starting point: what is already real
 

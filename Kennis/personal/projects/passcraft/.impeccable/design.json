@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T22:27:37+02:00",
+  "title": "Design System: Passcraft",
+  "extensions": {
+    "nativePlatform": {
+      "platform": "android",
+      "implementation": "Kotlin / Jetpack Compose / Material 3",
+      "minimumApi": 28,
+      "material3Version": "1.3.2",
+      "dimensions": "dp",
+      "textDimensions": "sp through MaterialTheme.typography and Android font scaling",
+      "themeSelection": "isSystemInDarkTheme() selects the explicit Light or Dark color scheme; system bar icon appearance follows that selection.",
+      "componentEncoding": "Native component descriptors and source evidence are recorded below. No HTML/CSS preview or web rendering approximation is generated.",
+      "colorEncoding": "Primitives live only in DESIGN.md frontmatter. No tonal ramps are synthesized: the shipped app defines paired light/dark semantic schemes, not an eight-step ramp.",
+      "inheritedDefaults": "MaterialTheme receives a colorScheme only. Typography, Shapes, native state layers, disabled colors, and unspecified scheme roles retain Material 3 defaults."
+    },
+    "colorMeta": {
+      "cobalt": { "role": "primary", "displayName": "Cobalt" },
+      "white": { "role": "neutral", "displayName": "White" },
+      "light-primary-container": { "role": "primary", "displayName": "Light Primary Container" },
+      "light-on-primary-container": { "role": "primary", "displayName": "Light On Primary Container" },
+      "light-secondary-container": { "role": "secondary", "displayName": "Light Secondary Container" },
+      "light-on-secondary-container": { "role": "secondary", "displayName": "Light On Secondary Container" },
+      "cool-paper": { "role": "neutral", "displayName": "Cool Paper" },
+      "light-surface-high": { "role": "neutral", "displayName": "Light Surface High" },
+      "ink-navy": { "role": "neutral", "displayName": "Ink Navy" },
+      "light-secondary-ink": { "role": "neutral", "displayName": "Light Secondary Ink" },
+      "light-outline": { "role": "neutral", "displayName": "Light Outline" },
+      "night-primary": { "role": "primary", "displayName": "Night Primary" },
+      "night-on-primary": { "role": "primary", "displayName": "Night On Primary" },
+      "night-primary-container": { "role": "primary", "displayName": "Night Primary Container" },
+      "night-on-primary-container": { "role": "primary", "displayName": "Night On Primary Container" },
+      "night-secondary-container": { "role": "secondary", "displayName": "Night Secondary Container" },
+      "night-on-secondary-container": { "role": "secondary", "displayName": "Night On Secondary Container" },
+      "night-background": { "role": "neutral", "displayName": "Night Background" },
+      "night-surface": { "role": "neutral", "displayName": "Night Surface" },
+      "night-surface-high": { "role": "neutral", "displayName": "Night Surface High" },
+      "night-ink": { "role": "neutral", "displayName": "Night Ink" },
+      "night-secondary-ink": { "role": "neutral", "displayName": "Night Secondary Ink" },
+      "night-outline": { "role": "neutral", "displayName": "Night Outline" }
+    },
+    "typographyMeta": {
+      "headline-large": { "displayName": "Headline Large", "nativeRole": "MaterialTheme.typography.headlineLarge", "purpose": "Main screen headings; explicit semibold." },
+      "headline-medium": { "displayName": "Headline Medium", "nativeRole": "MaterialTheme.typography.headlineMedium", "purpose": "Settings heading; explicit semibold." },
+      "headline-small": { "displayName": "Headline Small", "nativeRole": "MaterialTheme.typography.headlineSmall", "purpose": "Pass and empty-library titles; explicit semibold." },
+      "title-large": { "displayName": "Title Large", "nativeRole": "MaterialTheme.typography.titleLarge", "purpose": "Native app bar and Wallet heading; semibold at the call sites." },
+      "title-medium": { "displayName": "Title Medium", "nativeRole": "MaterialTheme.typography.titleMedium", "purpose": "Section titles with explicit semibold; scan instruction inherits role weight." },
+      "title-small": { "displayName": "Title Small", "nativeRole": "MaterialTheme.typography.titleSmall", "purpose": "Saved-state and hardware-state text." },
+      "body-large": { "displayName": "Body Large", "nativeRole": "MaterialTheme.typography.bodyLarge", "purpose": "Introductory and explanatory copy." },
+      "body-medium": { "displayName": "Body Medium", "nativeRole": "MaterialTheme.typography.bodyMedium", "purpose": "Pass subtitle, ordinary content, and NFC result." },
+      "body-small": { "displayName": "Body Small", "nativeRole": "MaterialTheme.typography.bodySmall", "purpose": "Secondary help and local-state captions." },
+      "label-large": { "displayName": "Label Large", "nativeRole": "MaterialTheme.typography.labelLarge", "purpose": "Pass identification and native button labels." }
+    },
+    "nativeLayout": {
+      "maximumContentWidthDp": 680,
+      "alignment": "TopCenter",
+      "root": "Scaffold with TopAppBar, SnackbarHost, root-only NavigationBar, and nonempty-library ExtendedFloatingActionButton",
+      "scrolling": "LazyColumn for library; vertically scrolling Column for editor, detail, settings, and NFC",
+      "insets": "Scaffold content padding is applied and consumed; content uses imePadding; editor save bar uses navigationBarsPadding and imePadding.",
+      "responsiveBehavior": "Single centered column at all widths; no custom breakpoint system is implemented.",
+      "primaryActionMinHeightDp": 52,
+      "secondaryActionMinHeightDp": 48
+    },
+    "nativeElevation": [
+      { "name": "pass-card", "value": "No explicit elevation", "purpose": "Flat colored pass surface." },
+      { "name": "editor-save-bar", "value": "2dp shadowElevation", "purpose": "Persistent save action surface." },
+      { "name": "material-components", "value": "Material 3 defaults", "purpose": "Floating action button, dialogs, snackbar, and native state treatment." }
+    ],
+    "nativeMotion": {
+      "customTokens": false,
+      "behavior": "No custom motion timing or easing is defined. Native Material touch feedback and state/progress behavior are retained."
+    },
+    "nativeComponents": [
+      {
+        "name": "Primary Button",
+        "kind": "button",
+        "refersTo": ["button-primary-light", "button-primary-dark"],
+        "nativeComponent": "androidx.compose.material3.Button",
+        "description": "Full-width primary action with native pill shape, labelLarge, primary/onPrimary colors, and a growing minimum height.",
+        "behavior": "Native touch, focus, and disabled states. Save/import actions respect storage and busy states; NFC actions require enabled hardware.",
+        "evidence": "PasscraftApp.kt: PasscraftApp, Library, PassDetails, NfcScreen"
+      },
+      {
+        "name": "Outlined Button",
+        "kind": "button",
+        "refersTo": ["button-outlined-light", "button-outlined-dark"],
+        "nativeComponent": "androidx.compose.material3.OutlinedButton",
+        "description": "Full-width secondary action with native outline and pill shape.",
+        "behavior": "Uses native focus and disabled treatment; importing replaces its icon with CircularProgressIndicator and changes its label.",
+        "evidence": "PasscraftApp.kt: Editor, PassDetails, SettingsScreen"
+      },
+      {
+        "name": "Text Button",
+        "kind": "button",
+        "nativeComponent": "androidx.compose.material3.TextButton",
+        "description": "Supporting links and dialog actions use native primary-colored text and state layers.",
+        "evidence": "PasscraftApp.kt: dialogs, PassDetails, SettingsScreen, NfcScreen"
+      },
+      {
+        "name": "Outlined Field",
+        "kind": "input",
+        "nativeComponent": "androidx.compose.material3.OutlinedTextField",
+        "description": "Column-width native field with label, placeholder, keyboard type, and multiline notes variant.",
+        "behavior": "Notes use 3 minimum and 6 maximum lines; URL fields use KeyboardType.Uri. No custom inline error appearance is defined.",
+        "evidence": "PasscraftApp.kt: Field"
+      },
+      {
+        "name": "Root Navigation",
+        "kind": "nav",
+        "nativeComponent": "NavigationBar / NavigationBarItem / TopAppBar",
+        "description": "Three icon-and-label destinations with native selection emphasis and a native top app bar.",
+        "behavior": "Root routes show bottom navigation. Detail/editor use the app-bar back action. System bar foreground appearance tracks the device theme.",
+        "evidence": "PasscraftApp.kt: PasscraftApp"
+      },
+      {
+        "name": "NFC Filter Chip",
+        "kind": "chip",
+        "nativeComponent": "androidx.compose.material3.FilterChip",
+        "description": "Native selected tonal container and unselected outline distinguish NFC modes and payload types.",
+        "behavior": "Mode changes stop scans; payload-type chips disable while a scan is active.",
+        "evidence": "PasscraftApp.kt: NfcScreen"
+      },
+      {
+        "name": "Pass Card",
+        "kind": "card",
+        "refersTo": ["pass-card-default"],
+        "nativeComponent": "Column / RoundedCornerShape / Image",
+        "description": "Flat colored pass with padded identity header and edge-to-edge artwork below it.",
+        "headerPadding": "{spacing.pass-inset}",
+        "behavior": "User-selected color persists across app themes. Foreground is white or dark ink by luminance. Artwork uses ContentScale.Fit; compact views omit the QR block. Detail adds the QR bitmap.",
+        "artworkMaxHeightDp": { "compact": 210, "detail": 360 },
+        "evidence": "PasscraftApp.kt: PassCard"
+      },
+      {
+        "name": "Create Pass Floating Action",
+        "kind": "button",
+        "nativeComponent": "androidx.compose.material3.ExtendedFloatingActionButton",
+        "description": "Native tonal floating action with outlined Add vector and text label.",
+        "behavior": "Appears in the nonempty library; the empty library uses its full-width primary action.",
+        "evidence": "PasscraftApp.kt: PasscraftApp"
+      },
+      {
+        "name": "Native Feedback",
+        "kind": "custom",
+        "nativeComponent": "SnackbarHost / AlertDialog / CircularProgressIndicator / LinearProgressIndicator",
+        "description": "Native feedback for busy, saved, unavailable, destructive, and error states.",
+        "behavior": "Local-save wording stays explicit. Wallet fallback reports a saved image and import instructions, without asserting a completed Wallet import. NFC actions disable when unavailable; settings link requires supported-but-off hardware.",
+        "evidence": "PasscraftApp.kt: PasscraftApp, Editor, PassDetails, NfcScreen; MainActivity.kt: onResume, prepareImage"
+      }
+    ],
+    "evidence": {
+      "appRoot": "C:/Users/Daniël/Desktop/Codex/projecten/Passcraft",
+      "sourceFiles": [
+        "app/src/main/java/app/passcraft/PasscraftApp.kt",
+        "app/src/main/java/app/passcraft/MainActivity.kt",
+        "app/src/main/java/app/passcraft/PassExport.kt",
+        "app/src/main/java/app/passcraft/PassStore.kt",
+        "app/src/main/res/values/styles.xml",
+        "app/src/main/res/drawable/ic_launcher.xml",
+        "app/build.gradle.kts"
+      ],
+      "capturesRoot": "C:/Users/Daniël/Desktop/Codex/screenshots/passcraft-2026-10-15",
+      "reviewedCaptures": [
+        "phone-empty.png",
+        "phone-library.png",
+        "phone-detail.png",
+        "phone-editor.png",
+        "phone-imported.png",
+        "phone-artwork-detail.png",
+        "phone-nfc.png",
+        "phone-nfc-write.png",
+        "phone-dark.png",
+        "phone-large-text.png",
+        "phone-wallet-steps.png"
+      ],
+      "assetProvenance": {
+        "shippedRasterArtwork": "None",
+        "launcher": "Local Android vector drawable: ic_launcher.xml",
+        "uiIcons": "androidx.compose.material outlined vector icons, including the auto-mirrored Back vector",
+        "passArtwork": "Runtime images selected by the user through the system image picker",
+        "qr": "Runtime bitmap generated by ZXing QRCodeWriter from the pass data",
+        "exports": "Runtime PNG rendered by Android Canvas using the user's pass data and artwork",
+        "captureFixtures": "Verification content only; not a reusable illustration or brand asset"
+      },
+      "scope": "Documentation only. Implementation, build outputs, and screenshot files were not changed. Native captures verify appearance; source defines the recorded values and behavior."
+    }
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "Camera contact sheet",
+    "overview": "The user's picture is the expressive material. Cool surfaces, dark ink, cobalt actions, and a compact native control vocabulary frame that material without competing with it. The built app uses a centered, single-column composition with generous page margins and clear saved-state text.\n\nThis is a native Kotlin and Jetpack Compose system. Material 3 supplies typography, control shapes, state layers, dialogs, and navigation. System typography is an intentional Android platform choice. The build is the authority for the values below.",
+    "keyCharacteristics": [
+      "Personal artwork provides the visual variety.",
+      "Paired light and dark schemes follow the device setting.",
+      "Native controls retain familiar touch, focus, and disabled behavior.",
+      "Flat pass cards sit within a quiet, spacious single column.",
+      "Labels distinguish local saving from a handoff to Google Wallet."
+    ],
+    "rules": [
+      { "name": "The Artwork Owns Color Rule", "body": "Keep application chrome on its semantic theme roles; preserve the selected pass color and full-color artwork in light and dark mode.", "section": "colors" },
+      { "name": "The Native Type Rule", "body": "Reuse Material typography roles and allow Android font scaling; do not replace them with fixed bitmap or web typography in the app.", "section": "typography" },
+      { "name": "The Top and Scroll Rule", "body": "Preserve top-aligned, inset-aware scrolling when adding content or supporting larger font scales.", "section": "layout" }
+    ],
+    "dos": [
+      "**Do** let the user's artwork and pass color provide visual variety.",
+      "**Do** reuse Material components, typography roles, and semantic theme colors.",
+      "**Do** keep the centered column, repeated page gutters, and top-aligned scrolling.",
+      "**Do** preserve native focus, touch, disabled, progress, and font-scale behavior.",
+      "**Do** name local-save, busy, error, and hardware states explicitly."
+    ],
+    "donts": [
+      "**Don't** crop or recolor uploaded artwork to fit the application palette.",
+      "**Don't** treat a Google Wallet image handoff as a confirmed Wallet save.",
+      "**Don't** enable scan/write actions when NFC is unavailable or off.",
+      "**Don't** replace the native Android system with website styling or web component approximations."
+    ]
+  }
+}

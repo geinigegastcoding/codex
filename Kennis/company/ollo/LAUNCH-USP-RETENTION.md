@@ -9,6 +9,8 @@ tags: [ollo, launch, differentiation, retention]
 
 # Ollo launch differentiation and retention
 
+**Implementation status19October:** editable installed-app defaults, shorter optional-history onboarding and optional remembered purpose/time are built; remembered choices require confirmation at every opening. Any older “next feature” recommendation below is a dated research proposal, not a claim this remains unbuilt. Current features are free during testing. Usage/rules remain local; RevenueCat purchase services use network calls. Demand, retention effects and exclusive differentiation remain unvalidated. Use [[BACKLOG]] for current priorities.
+
 **Research date:** 18 October 2026. **Scope:** launch positioning and next product bets for the current Android product. This is desk research, not interviews, demand sizing, a systematic competitor audit, or evidence of Ollo outcomes. Reddit users are self-selected and often describe unusually strong struggles. Competitor statements below are listing/help-center claims, not hands-on verification. No accounts, purchases, installations, or outreach were made.
 
 ## Launch read

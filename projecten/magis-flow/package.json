@@ -1,0 +1,9 @@
+{
+  "name": "magis-flow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lokale workflowplanner met transparante scenario's en exporteerbare bouwplannen.",
+  "engines": { "node": ">=24.14.0" },
+  "scripts": { "start": "node server.js", "test": "node --test test/*.test.js", "check": "node --check server.js && node --check public/app.js && node --check public/model.js" }
+}

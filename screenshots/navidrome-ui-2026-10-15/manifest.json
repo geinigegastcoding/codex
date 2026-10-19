@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-15",
+  "status": "complete: five independent concept images generated and visually inspected",
+  "generator": "built-in ImageGen",
+  "app_built": false,
+  "platform": "Desktop/web, explicit temporary assumption; user preference not yet received",
+  "target_viewport": {
+    "width": 1440,
+    "height": 1024
+  },
+  "prompt_set": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/prompts.json",
+  "reference_sources": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/references/sources.json",
+  "display_order": [
+    {
+      "number": 1,
+      "id": "nachtdienst",
+      "path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/nachtdienst.png",
+      "width": 1487,
+      "height": 1058,
+      "title": "Nachtdienst",
+      "generated_source": "C:/Users/Daniël/.codex/generated_images/01a140fb-e50e-7601-8add-e7e81bbc8620/exec-c79d01a5-a53e-42a0-844f-3c9ae7e7d573.png",
+      "initial_prompt_id": "nachtdienst",
+      "initial_reference_paths": [
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\tidal-album.jpg",
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\spotify-queue.jpg"
+      ],
+      "edit_prompt": null,
+      "attempts": 1
+    },
+    {
+      "number": 2,
+      "id": "platenkamer",
+      "path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/platenkamer-v2.png",
+      "width": 1486,
+      "height": 1059,
+      "edit": "Changed album action label Afspelen to Pauzeren to match active pause icon.",
+      "title": "Platenkamer",
+      "generated_source": "C:/Users/Daniël/.codex/generated_images/01a140fb-ccef-7fe3-9fac-4d1ddc9bef7e/exec-30c893a2-ce6c-4f32-9941-456a1d4b469d.png",
+      "initial_prompt_id": "platenkamer",
+      "initial_reference_paths": [
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\apple-playlist.jpg",
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\tidal-album.jpg"
+      ],
+      "edit_prompt": "Use case: precise-object-edit.\nEdit the provided Navidrome desktop UI screenshot with one targeted text correction. Change ONLY the main brick-red album action button label from \"Afspelen\" to \"Pauzeren\", so its text agrees with the existing pause icon while Window Seat is playing. Spell the replacement exactly: P a u z e r e n. Keep the existing pause icon and fit the new label naturally inside the same button without changing its size, position, styling or typography.\nPreserve the entire screenshot composition, all six track names and durations, current track highlighting, album artwork, every other text label, navigation, search, footer player, colors, spacing, typography, image dimensions and aspect ratio (source 1487 x 1058). Do not redesign or add, remove or move anything else. No crop, frame, watermark or surrounding canvas. Opaque background.",
+      "attempts": 2
+    },
+    {
+      "number": 3,
+      "id": "index",
+      "path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/index-v2.png",
+      "width": 1486,
+      "height": 1059,
+      "edit": "Select Alle artiesten and unselect Mara Vale to make mixed albums consistent.",
+      "title": "Index",
+      "generated_source": "C:/Users/Daniël/.codex/generated_images/01a140fb-fbc6-77b2-9672-acc5ebbdc6cd/exec-615edb97-7ff3-4807-92f2-0dc946e93517.png",
+      "initial_prompt_id": "index",
+      "initial_reference_paths": [
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\spotify-playlist.jpg",
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\tidal-actions.jpg"
+      ],
+      "edit_prompt": "Use case: precise-object-edit.\nEdit the supplied finished Navidrome UI screenshot. Make ONE semantic selection repair in the LEFT ARTIESTEN COLUMN ONLY.\nAdd a first row directly beneath the heading \"Artiesten\", with the exact label \"Alle artiesten\". Select this new row using exactly the same pale-blue rounded row background and bold cobalt-blue text style currently used on \"Mara Vale\". Shift the existing artist names down by one normal row to make space, preserving their order, typography and spacing. Remove the pale-blue background and blue bold selected text from \"Mara Vale\"; render Mara Vale exactly like the other unselected dark-text artist names. Only \"Alle artiesten\" is selected in the artists column.\nThis produces a coherent browse state: all artists selected -> mixed artists' albums in the middle column -> Slow Light selected -> six Slow Light tracks in the right pane.\nPreserve EVERY OTHER DETAIL of the supplied image: entire layout, dimensions and composition, all three column widths, navidrome wordmark, navigation and search, all album names and art in the middle column, Slow Light's selected album highlight, the large ochre album cover, Slow Light header and artist, all six track names/artists/durations, Window Seat's blue playing highlight, playback controls, footer artwork/text, elapsed 2:14 and total 4:32, progress bar, volume and Wachtrij control. Do not redesign, reflow or simplify any other area. Do not add other controls, panels or text. No cropping, no new frame, no watermark. Preserve the crisp legible text and refined white/cool-gray/cobalt style. Output the complete finished screenshot with the sole artist-column selection repair.",
+      "attempts": 2
+    },
+    {
+      "number": 4,
+      "id": "panorama",
+      "path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/panorama.png",
+      "width": 1487,
+      "height": 1058,
+      "title": "Panorama",
+      "generated_source": "C:/Users/Daniël/.codex/generated_images/01a140fb-ccef-7fe3-9fac-4d1ddc9bef7e/exec-f476c8c5-5c7f-4f39-89c7-9f52831a8920.png",
+      "initial_prompt_id": "panorama",
+      "initial_reference_paths": [
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\apple-playlist.jpg",
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\tidal-album.jpg"
+      ],
+      "edit_prompt": null,
+      "attempts": 1
+    },
+    {
+      "number": 5,
+      "id": "mixtape",
+      "path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/mixtape-v2.png",
+      "width": 1488,
+      "height": 1057,
+      "edit": "Changed main playlist action label Afspelen to Pauzeren.",
+      "title": "Mixtape",
+      "generated_source": "C:/Users/Daniël/.codex/generated_images/01a140fb-e50e-7601-8add-e7e81bbc8620/exec-df7cc415-fe57-4b86-8fbb-60cc560378aa.png",
+      "initial_prompt_id": "mixtape",
+      "initial_reference_paths": [
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\spotify-playlist.jpg",
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\spotify-queue.jpg",
+        "C:\\Users\\Daniël\\Desktop\\Codex\\screenshots\\navidrome-ui-2026-10-15\\references\\tidal-actions.jpg"
+      ],
+      "edit_prompt": "Use case: text-localization. Targeted exact text correction to the supplied UI screenshot. Change ONLY the text \"Afspelen\" on the coral main playlist action button beneath \"Voor onderweg\" to the Dutch word \"Pauzeren\". Preserve the existing pause icon to its left. Keep the same font style, font size, weight, baseline, centering, button dimensions, shape and coral color. Preserve every other pixel-level visual detail as closely as possible: the entire layout, artwork, sidebar, typography, all other text and icons, track table, queue, current Window Seat playing state, timestamps, progress bars and bottom player. Do not redesign, move, add or remove anything. Keep the full opaque original screenshot canvas and the original 1488 x 1057 dimensions and aspect ratio, no crop or framing. The sole requested visible change is Afspelen becoming Pauzeren.",
+      "attempts": 2
+    }
+  ],
+  "verification": [
+    "All five accepted PNG files exist, have nonzero length and open as images",
+    "Actual widths/heights read from saved images",
+    "All five accepted files visually inspected in main chat",
+    "Playback labels repaired in Platenkamer and Mixtape; artist scope repaired in Index",
+    "Original generated rasters copied without resampling or manual image edits"
+  ],
+  "remaining_visual_limitations": [
+    "Native canvas sizes differ slightly from the 1440x1024 target; originals preserved",
+    "Nachtdienst: inactive lyric contrast needs measurement before implementation",
+    "Platenkamer: next-track miniature artwork differs from the main album cover",
+    "Index: queue label at far right is tight; album list/art size interprets prompt more broadly",
+    "Panorama: artwork rectangles are slightly wider than square",
+    "Mixtape: queue total reads 18:13 although displayed four track durations sum to 17:39; this is known synthetic metadata error, not a real queue calculation",
+    "Fictional supporting years/artwork vary between concepts; imagery is not a pixel-perfect specification",
+    "Accessibility and interactions have not been tested in software"
+  ]
+}

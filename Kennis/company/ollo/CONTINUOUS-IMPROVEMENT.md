@@ -1,7 +1,7 @@
 ---
 title: Ollo continuous improvement checkpoint
 created: 2026-10-16
-updated: 2026-10-18
+updated: 2026-10-19
 type: project
 status: active
 tags: [ollo, checkpoint]
@@ -32,10 +32,10 @@ This section is the current handoff; older entries below are historical and supe
 | Research | English USP/pricing/retention experiments updated; remembered-choice usability is implemented, demand unvalidated. Six reviewed genuine phone frames+raws/alttexts/pixelidentity proof, English graphic/icon prepared. Fresh primaryPOM hashes verified purchase→Billing8.3→Googleclient/DataTransport edges; no collection inference/SDKchange. |
 | Licenses | 17missing primaryPOMs recovered:12Apache declarations and5GoogleSDK-term clients. New bounded primaryterms/AAR review and exactbillingdependency path saved; final embedded-notice/runtime comparison and owner/applicability review open. No blanket production-clearance claim. |
 | Emulator | SAFE RUNTIME IDLE: new ownAPI36AVD originalc2adAPK/nineprivatefiles/settings/display restored with equal hashes; serial unavailable/no matching emulator/qemu process. No phone/originalreviewVM change. Original olderreviewVM restoration remains owner-deferred. |
-| Capacity | FIRST WINDOW CLOSED: actual18October23:18:26UTC primary91%used/9%remaining,weekly90%used.10%closing threshold reached with completed APK/store/Git milestone and safe idle; do not restart long work before reset. Next reset19October02:56:55UTC/04:56:55Amsterdam(1792378615). Final window closes25%/stops substantive20%;hardstop07:00Amsterdam/05:00UTC. No resetcredits used. |
+| Capacity | FINAL WINDOW CLOSING: actual19October03:44:07UTC primary48%used/52%remaining,weekly99%used. Finish current notice validation/owned cleanup/Git handoff only; no new feature/research batch. Next primary reset07:58:43UTC(1792396723) is beyond this run; weekly reset1792874939. Preserve at least20%primary;hardstop07:00Amsterdam/05:00UTC. No resetcredits used. |
 | Schedule | Same id ACTIVE; checks00/28/58 with expiry05:00UTC/07:00Amsterdam. Deadline cleanup required even in reserve. Final reset alignment at04:58local,65seconds after boundary. Local host/services required. |
-| Owned operations | SAFE IDLE: no owned emulator/build/browser/activeagent/native task; no pending restoration. Native and Git pushes completed/remote SHAs matched. App2dc8a3e; knowledgehandoff8beb03c plus this small threshold checkpoint. Wait for checkpoint push verification before yielding. Private backups ignored; oldreviewVM/phone untouched. |
-| Next | Keep the completed milestone closed on unchanged pre-reset wakes; use actual limits/time, remain quiet. After final natural reset, bounded read-only Googlecatalog offsets/component/runtime notice comparison is the next independent task; preflightJSON saved(5AARs,base/tasks identical). Do not change frozen4eaAPK without justified work/checks. No thirdwindow; no extending heartbeat expiry. Finishhandoff06:40; deleteheartbeat at07:00. Fourquizbugs/dashboard/physicaltesting/deferredSDKs remain owner/future work. |
+| Owned operations | Source2a10ebd built4dcbAPK(48636044bytes),91units/lint0-18/13packagechecks/16KBalignment/42asset-byte checks pass. Current native session86030/ownedAVD25616; authoritative receipt docs/evidence/2026-10-19-readable-notices/recovery-confirmation/native-ui.json. At most one explicitly logged Android SystemUI Wait recovery per phase; all reader assertions still required. Previous attempts restored originalAPK/ninefiles/settings/stopped. OriginalreviewVM/phone untouched;4ea remains fully accepted fallback until final scope reviewed. |
+| Next | Finish bounded notice correction: full123-coordinate scan found12AARcatalogs(3empty),76componentnames/79variants/41exacttexts607210bytes. Deterministic generator/native per-component viewer prepared, existing Apache/MIT/BSD blocks retained; build/native validation pending. Keep4ea unchanged; promote newerAPK only after checks. Final cadence remains00/28/58/UNTIL05:00UTC: aligning to07:58UTC would violate hardstop, so do not extend. Finishhandoff06:40; deleteheartbeat07:00. Fourquizbugs/dashboard/physicaltesting/deferredSDKs remain open. |
 
 ## Capacity and continuity
 

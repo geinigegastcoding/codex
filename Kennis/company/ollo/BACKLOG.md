@@ -1,6 +1,6 @@
 ---
 title: Ollo launch and future-work backlog
-updated: 2026-10-18
+updated: 2026-10-19
 type: project
 status: active
 ---
@@ -39,7 +39,7 @@ Acceptance for each fix: preserve the failure trace, identify the shared cause, 
 | BILL-01 | Dashboard owner-deferred | Configure `lifetime` as one-time/nonconsumable, attach `ollo_pro`, current lifetime-only offering, hosted paywall branding and actual price. Do not ask for browser login again now. Current sandbox catalog price is not the proposed €15 price. |
 | BILL-02 | Test Store implemented; live pending | Keep customer-info/entitlement/restore/error/cancel handling and free exit. Verify the production purchase/update/refund lifecycle later; Customer Center only where useful. No real purchase in this run. |
 | BILL-03 | Future proposal | Normal blocking, essentials, emergency access and basic stats stay free. Candidate Pro extras/customization need real value and implementation before sale. ~€15 lifetime Ultimate is a hypothesis; Pro Lite needs a provider/reward/privacy/economics decision. No ad SDK or fake rewarded access. See [[LAUNCH-PRICING-AND-PRO-LITE]]. |
-| LEGAL-01 | Evidence reviewed; final notice/owner review open | Five Google client AARs/primary terms and hashes reviewed; compare their embedded third-party catalogs with final runtime and bundled notices. Do not infer applicable notices or agreement authority from POM labels alone. All17missing primaryPOMs recovered. See [[GOOGLE-SDK-TERMS-REVIEW]] and [[LAUNCH-DEPENDENCY-LICENSES]]. |
+| LEGAL-01 | Notice correction in progress; owner review open | Full123-coordinate scan:12embedded catalog pairs(3empty),76component names/79variants/41distinct exact notice texts. Generator/native viewer prepared; newerAPK build/native acceptance pending. Frozen4ea retained. Separate Google SDK terms/authority/applicability review stays open; no blanket legal clearance. See [[GOOGLE-SDK-TERMS-REVIEW]] and [[LAUNCH-DEPENDENCY-LICENSES]]. |
 | LEGAL-02 | Owner inputs / drafts | Actual privacy identity/contact/hosting, source-current Data safety and Accessibility declarations, reviewer video and store-console submission. RevenueCat uses network services; usage/rules remain local. See [[DATA-SAFETY-WORKSHEET]] and [[ACCESSIBILITY-REVIEW-DRAFT]]. |
 | QA-STARTUP | Observed; investigation open | New API36debug/instrumented post-install startup ANR before feature results (13.741s display); a separate cold MainActivity launch completed in5.492s. Host had about1.3GiBfreeRAM. Resource/bytecode verification load observed, cause not established; reproduce outside instrumentation/on hardware before a performance claim. Evidence: project `docs/evidence/2026-10-19-opening-memory-native/confirmed/normal-startup-failed/`. |
 | QA-01 | Open | Physical Pixel/Samsung/other OEM, TalkBack, real calls/alarms, battery/reboot/overnight and update-lineage acceptance; do not substitute the API36 emulator. See project `docs/DEVICE_CHECKLIST.md`. |
@@ -56,6 +56,10 @@ Acceptance for each fix: preserve the failure trace, identify the shared cause, 
 | STORE-01 | English drafts complete; owner submission pending | Current title/short/full fields and actual-feature/network boundaries saved. No absolute blocking/no-internet claims, unconfigured price or finished-Pro-extra claims. See [[ENGLISH-STORE-LISTING]]. |
 | STORE-02 | Six screenshots and artwork prepared | Genuine4eaAPK1080×1920 rawcaptures, six reviewed opaqueRGB frames with outside captions, explicitfictional labels onstats/Today, alttexts and pixel-identity proof. English1024×500featuregraphic and512×512RGBA native-vector icon ready; no upload/approval. See [[STORE-ASSET-PRODUCTION]]. |
 | ADS-01 | Scripts prepared; footage pending | Preserve English Google Flow UGC concepts and real recording slots/shot list. Wait for owner footage and authorization before generating video/AI people; do not publish or spend. See [[GLOBAL-UGC-SCRIPTS]] and [[RECORDING-SHOT-LIST]]. |
+| USP-02 | Future discovery | Free-text purposes, user-chosen task-finish conditions and richer offline alternatives need discovery before implementation. Current preset/timed cue and remembered choices are built; no automatic detection of sent messages or task completion. See [[FEATURE-RESEARCH]]. |
+| DATA-01 | Future proposal | Accountless settings backup/import with validation, migration and recovery. Current CSV/JSON exports are not an import or device-restore feature. |
+| UX-02 | Future proposals | Mascot home-screen widget and optional background reminders. The Quick Settings tile already exists; no new notification permission or background reminder service was added. |
+| SCOPE-01 | Deferred roadmap | Selective Shorts/Reels and browser/website filtering need app-version/language compatibility, consent/privacy and platform-policy decisions. No selective-content blocker or VPN is active. Retain these as proposals, not launch claims. |
 
 ## Explicitly later
 

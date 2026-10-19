@@ -1,7 +1,7 @@
 ---
 title: Reading-app — productonderzoek en ideeën
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-10-12
 type: project-research
 tags: [personal, reading-app, product, research, android]
 status: active
@@ -31,7 +31,7 @@ De bronnen hieronder zijn vooral Reddit-discussies. Reddit is bruikbaar voor ong
 | Eigen bibliotheek kunnen zoeken en ordenen | Mensen willen hun eigen boeken, lijsten en statussen snel vinden; verborgen of versnipperde lijsten voelen als een defect. | Hoog binnen deze set | Maak cataloguszoeken en zoeken in Mijn bibliotheek expliciet verschillende acties. Voeg lokale tekstzoeking, filters en eenvoudige sortering toe. |
 | Catalogusdekking mag handmatige invoer niet blokkeren | Recente Android-trackerreviews beschrijven boeken die niet gevonden worden en een ontbrekende handmatige fallback als reden om de app niet te kunnen gebruiken. | Middel-laag binnen deze set | Behandel handmatig toevoegen en later corrigeren als kernpad van R-07; een online catalogusresultaat is nooit de enige manier om een persoonlijk archief te vullen. |
 | Grote collecties vragen om snelle lokale navigatie | Naast zoeken kan een zeer lange persoonlijke lijst behoefte geven aan een alfabetische sprong; dit komt hier uit één recente Bookshelf-feedback en is geen basisbehoefte. | Laag | Houd vrije lokale zoeking als basis en parkeer een letterindex als schaalafhankelijke QOL-optie. |
-| Lage invoerfrictie | Een momenteel gelezen boek, duidelijke status en een direct bruikbare boekpagina zijn belangrijker dan een volle homepage. | Hoog binnen deze set | Houd een “Verder lezen”-ingang prominent en maak voortgang/notitie vanuit daar bereikbaar. |
+| Lage invoerfrictie | Een momenteel gelezen boek, duidelijke status en een direct bruikbare boekpagina zijn belangrijker dan een volle homepage; een verse Android-test toont dat een paginaladder en een door de IME bedekte opslagknop de kernflow breken. | Hoog binnen deze set voor de basisroute; middel-laag voor de precieze control | Houd een `Verder lezen`-ingang prominent; kies absolute paginainvoer of `Vul tot pagina`, houd velden/opslaan bereikbaar met het toetsenbord en geef duidelijke validatiefout. Geen timer of statistiek nodig. |
 | Meerdere boeken tegelijk kunnen hervatten | Lezers wisselen geregeld tussen fysieke, digitale en audioboeken of tussen boeken voor verschillende plekken en stemmingen; een te grote actieve lijst kan juist overzicht kosten. | Middel | Laat meerdere boeken `Bezig` zijn, maar houd de snelle terugkeerweergave klein en voorspelbaar. Geen harde limiet op de onderliggende collectie. |
 | Hervatten na een lange pauze | Een gebruiker kan voortgang onthouden maar toch namen, details of het verhaalverloop kwijt zijn; hulp moet niet aanvoelen als extra administratie. | Laag-middel | Gebruik hooguit bestaande eigen notities, pagina en hoofdstuk als terugkeercontext. Geen automatisch gegenereerde recap of extra meetlaag. |
 | Eigen notities en quotes terugvinden | Gebruikers willen notities per boek én alle eigen reviews/notities op één plek zien; export naar Markdown wordt expliciet gevraagd. | Middel | Behandel Journal als doorzoekbaar archief, niet alleen als chronologische feed. |
@@ -41,6 +41,9 @@ De bronnen hieronder zijn vooral Reddit-discussies. Reddit is bruikbaar voor ong
 | Statistieken zijn aantrekkelijk, maar niet universeel | Sommige lezers waarderen grafieken en timers; anderen willen minder meetdruk of kunnen er angstig van worden. | Laag-middel | Voeg alleen een metric toe als die een concrete reflectievraag beantwoordt en door de gebruiker verborgen kan worden. |
 | Sync tussen apparaten | Er is vraag naar gedeelde voortgang tussen meerdere e-readers en telefoons. | Middel | Relevant voor een latere syncfase, maar in conflict met de huidige local-only v1. Geen account of cloud suggereren zonder scopebesluit. |
 | Terugkeer vanaf het homescreen | Een recente trackerdiscussie noemt een homescreen-widget als bonus, maar het bewijs is dun en komt deels uit iOS-/e-readercontext. | Laag | Parkeer R-12 als optionele lokale snelkoppeling naar `Verder lezen`; de kernroute in de app blijft eerst leidend. |
+| Boekenideeën ontstaan buiten de tracker | Een lezer beschrijft Reddit, Instagram en de boekhandel als ontdekkingsmomenten; een losse notitie wordt later vergeten. | Laag binnen één technische Reddit-thread | Versterk R-05 met een optionele Android-share-target naar een bewerkbare, voorlopige capture; automatische metadata-koppeling blijft controleerbaar en niet stil. |
+| Context hoort navigeerbaar te zijn, niet alleen zichtbaar | Recente trackerfeedback vraagt naast auteur-/serietekst om doorklikken naar de volledige auteurscatalogus en de rest van een serie. | Laag-middel binnen één thread | Verfijn R-11 naar lokale serie-/auteurcontext met expliciete links; voeg geen automatische serie-uitbreiding of release-notificaties toe. |
+| Rustige, gelabelde UI is een toegankelijkheidsfunctie | Een blinde lezer beschrijft dat esthetisch dichte trackers vaak onbruikbaar zijn met een screenreader. | Laag-middel binnen één Reddit-thread; sterke sample bias | Maak TalkBack-labels, focusvolgorde, tekstschaal en afzonderlijke actiedoelen releasecriteria; voeg geen visuele drukte toe om meer functies te tonen. |
 
 ## 2.1 Tweede en derde pass — app stores, portability en Nederlandstalige signalen
 
@@ -165,6 +168,31 @@ Deze pass legt recente Google Play-vermeldingen van kleinere Android-trackers na
 | Notities worden onderdeel van lokale terugvindbaarheid | PagePath noemt in zijn actuele release notes expliciet zoeken in notities vanuit de bibliotheek. Dat laat zien dat notitietekst als retrievalveld kan functioneren, maar bewijst niet dat een tweede zoekingang nodig is. | Laag-middel binnen één changelog | Houd R-04’s algemene Journal-zoeking als canonieke route en neem boeknaam/type mee in de resultaten. Onderzoek een aparte Bibliotheek-zoekingang pas als één centrale Journal-route aantoonbaar tekortschiet. |
 | DNF met een reden is een gewenste uitleg, niet automatisch een vierde status | Een Bookfolks-review vraagt om een DNF-lijst met ruimte voor waarom het boek niet werkte; de ontwikkelaar zet dit op de backlog. | Laag-middel binnen één review | Bevestig R-06: bewaar een optionele privéreden bij de huidige leesperiode en toon DNF als uitkomst/historie. Voeg geen vierde hoofdstatus of losse DNF-inbox toe zonder scopebesluit. |
 
+## 2.12 Vijftiende pass — capture buiten de app, navigeerbare context en toegankelijkheid
+
+Deze pass combineert recente Reddit-signalen uit tracker-, e-reader- en self-hosted communities met actuele Android-richtlijnen voor share targets, zoeken en list-detail-layouts. Reddit blijft zelfselectie en bevat hier ook ontwikkelaars en power users; de Android-bronnen onderbouwen interactie- en toegankelijkheidskeuzes, niet de marktvraag.
+
+| Signaal | Nieuwe aanwijzing | Confidence | Gevolg voor de app |
+|---|---|---:|---|
+| Een ontdekking buiten de app moet als ruwe capture kunnen blijven bestaan | In een self-hosted-thread ontstaat een boekidee via Reddit, Instagram of een boekhandel; de huidige notitie-app-capture wordt later vergeten. De gewenste oplossing is snel invoeren met metadata die nu of later kan worden gekoppeld. | Laag; één technische gebruiker, met bias naar self-hosted/power-userworkflows | R-05 krijgt een kleine share-targetvariant: bewaar eerst titel/URL/ruwe tekst en markeer `Nog niet gekoppeld`; laat de gebruiker later kiezen of corrigeren. |
+| Gedeelde tekst moet vóór opslag bevestigbaar en bewerkbaar zijn | Android beschrijft ontvangen `text/plain` en URL’s via de Sharesheet en zegt expliciet dat een share target gedeelde tekst eerst moet laten bevestigen en bewerken. | Hoog voor platformgedrag, niet voor featurevraag | Een toekomstige share-flow opent een gewone capture-editor met ingevulde tekst; er is geen stille automatische toevoeging of onbetrouwbare metadata-match. |
+| Automatische voortgang voorkomt vergeten handmatige invoer | In een recente trackerthread noemt één lezer automatische tracking de enige onmisbare functie omdat handmatige invoer anders wordt vergeten. | Laag-middel; één commentaar, bovendien afhankelijk van Kobo/StoryGraph-integratie | Houd directe lokale paginainvoer en `Verder lezen` als kern. Parkeer readerintegraties, automatische tracking en live sync onder de bestaande local-only-scopewaarschuwing. |
+| Serie- en auteursmetadata moet een route zijn | Een recente minimalistische trackerthread noemt onderscheid tussen auteur/titel én doorklikken naar een auteurscatalogus en de rest van een serie als ontbrekende flow. | Laag-middel; één gebruikerscommentaar in een productfeedbackthread | R-11 mag naast labelweergave een lokale contextlijst openen; alleen bekende records tonen, zonder automatisch boeken toe te voegen. |
+| Accessibility kan de keuze voor een tracker bepalen | Een blinde lezer schrijft dat eenvoudige, ongeclusterde apps beter werken met een screenreader en dat visueel aantrekkelijke apps vaak ongelabelde functies hebben. | Laag-middel; één direct gebruikerssignaal, Reddit-sample bias | Behandel semantische labels, traversal order, tekstschaal en 48dp-doelen als functionele acceptatiecriteria, niet als laatste visuele polish. |
+| Een Journal hoeft niet zwaar te worden om waardevol te zijn | In een recente Kindle-discussie wordt een lichte terugblik voorgesteld: één quote, een directe reactie en later eventueel één zin; dezelfde thread bevat ook lezers die alleen noteren wanneer een boek echt blijft hangen. | Laag-middel binnen één thread | Houd R-03 capture-first en R-04 doorzoekbaar, maar voeg geen verplicht sjabloon, weekritueel of statistieklaag toe. |
+
+## 2.13 Zestiende pass — directe voortgang, hervatcontext en rustige Android-UX
+
+Deze pass combineert twee nieuwe Reddit-signalen over een sobere persoonlijke bibliotheek en hervatten met directe Android-testfeedback over pagina-invoer en de IME. De Compose-bronnen zijn actuele platformrichtlijnen: ze onderbouwen de interactie- en toegankelijkheidseis, niet de marktvraag. Reddit blijft zelfselectie; de testercommunity bevat relatief veel ontwikkelaars en mensen die nieuwe apps actief testen.
+
+| Signaal | Nieuwe aanwijzing | Confidence | Gevolg voor de app |
+|---|---|---:|---|
+| Pagina-voortgang moet een sprong zijn, geen tap-ladder | Een Android-tester beschrijft dat een paginategel steeds de volgende ongelezen pagina invult; bij pagina 120 zijn dat 120 taps. De gewenste oplossing is een sprong naar een absolute pagina of `Vul tot pagina`. | Laag-middel binnen één testerthread; sterke bias naar vroege Android-appfeedback | Versterk R-03: gebruik een absoluut paginaveld als primaire control en maak een eventuele paginategel alleen aanvullende context. Leg ook één afrondingsregel vast zodat Bibliotheek en boekdetail niet verschillende percentages tonen. |
+| De IME mag totaalpagina en opslaan niet verbergen | In dezelfde test bedekt het toetsenbord `Total Pages` en `Save`; een lege opslagpoging geeft geen melding. Androids actuele insets- en semanticsdocumentatie beschrijft juist ruimte voor de softwarekeyboard en expliciete foutbetekenis. | Hoog voor de platformregel; laag-middel voor productvraag door één testerthread | Maak R-03 concreet: de invoer scrollt of past zich aan de IME aan, de primaire opslagactie blijft bereikbaar en lege verplichte velden geven zichtbare én voor assistive technology herkenbare foutfeedback. Een stille no-op is geen geldige uitkomst. |
+| Een rustige bibliotheek kan de volledige job zijn | Een r/ebooks-vraag zoekt een eenvoudige lijst tussen Kindle en Kobo en wijst challenges, statistieken en extra trackerbreedte af; de gebruiker wil eigen boeken, TBR en gelezen boeken bijhouden. | Middel-laag binnen één directe gebruikersvraag; Reddit-sample bias | Bevestig de bestaande private/local-first houding: de kern moet nuttig blijven zonder dashboard, communitylaag of meetdruk. Voeg geen statistiek- of challengefeature toe als compensatie voor een lege startpagina. |
+| Boekgebonden eigen notities kunnen een pauze overbruggen | Een andere directe vraag noemt willekeurige notities en screenshots en het vergeten van personages/details na een leesonderbreking. De kleinste vertaling is bestaande boekgebonden `Notitie`-capture, niet een aparte character-database of automatische spoilerrecap. | Laag-middel; één recente vraag met ontwikkelaarsreacties en Reddit-sample bias | Versterk R-03’s lichte hervatcontext: toon optioneel de laatste eigen notitie naast pagina/hoofdstuk. Houd de context door de lezer geschreven en laat capture-first zwaarder wegen dan een nieuw gestructureerd model. |
+| Een custom rij moet één begrijpelijke focusroute hebben | Compose semantics laat custom componenten hun betekenis, rol, foutstatus en eventueel samengevoegde subtree expliciet maken. Compose focus targets maakt een klikbare component al focusbaar en waarschuwt tegen een tweede losse `focusable`-target. | Hoog voor platformrichtlijn, niet voor featurevraag | Maak boek- en Journalrijen semantisch voorspelbaar: één primaire openactie, afzonderlijke 48dp-doelen voor favoriet/overflow, geen dubbele TalkBack- of toetsenbordfocus. Gebruik dezelfde regel voor error states. |
+
 ## 3. Verbatim voice-of-reader
 
 De citaten zijn kort gehouden; ze zijn signalen, geen requirements.
@@ -236,6 +264,21 @@ Deze fragmenten zijn bewust kort; de datum is de datum van de bron of van de rel
 - “No way to add your own book if it's not found. Useless to me.” — [Google Play: ReadList](https://play.google.com/store/apps/details?hl=en&id=com.booktracker.readlist) — 2026-03-28; catalogusuitval zonder handmatige fallback blokkeert de persoonlijke collectie — `#pain` `#outcome`.
 - “If they added a dnf list with a place to add why it wasn't working, that would be perfect.” — [Google Play: Bookfolks](https://play.google.com/store/apps/details?hl=en_NZ&id=com.dailyreading.club) — 2026-07-25; DNF-context is gewenst, maar de review zegt niet dat dit een vierde hoofdstatus moet zijn — `#pain` `#outcome`.
 
+### 3.12 Nieuwe korte signalen — vijftiende pass
+
+- “And then I forget about it.” — [r/selfhosted: Looking for a to-read tracker/app](https://www.reddit.com/r/selfhosted/comments/1s0m42y/looking_for_a_toread_trackerapp/) — 2026-04 (ongeveer; bron toont vijf maanden geleden); een snelle externe capture moet later terugvindbaar blijven — `#pain` `#trigger`.
+- “The only feature id be unable to do without is the automatic tracking.” — [r/Booktokreddit: Book tracking apps](https://www.reddit.com/r/Booktokreddit/comments/1w65g8b/what_is_it_that_you_like_the_most_about_book/) — 2026-09-03; automatische tracking verlaagt vergeten handmatige invoer, maar de reactie hangt aan Kobo/StoryGraph-integratie — `#pain` `#alternative`.
+- “Differentiating search by author vs title is important.” — [r/Booktokreddit: A minimalist reading tracker](https://www.reddit.com/r/Booktokreddit/comments/1ubmsb3/a_minimalist_reading_tracker_for_people_who_just/) — 2026-07 (ongeveer; bron toont twee maanden geleden); zoeken en context moeten niet in één onduidelijke titelmatch samenvallen — `#pain` `#outcome`.
+- “I’m blind and I use a screen reader, so the simpler and unclustered apps can be, the better.” — [r/Booktokreddit: Book tracking apps](https://www.reddit.com/r/Booktokreddit/comments/1upkuge/book_tracking_apps/) — 2026-07 (ongeveer; bron toont twee maanden geleden); toegankelijkheid is een directe gebruiksvoorwaarde, niet alleen een visuele voorkeur — `#pain` `#language`.
+- “A journal becomes useful when you want to remember why a book mattered.” — [r/kindle: Are you using any type of “Reading Journal”?](https://www.reddit.com/r/kindle/comments/1w32ftl/are_you_using_any_type_of_reading_journal/) — 2026-08-31; de waarde zit in terugkijken, niet in een verplicht uitgebreid schema — `#outcome` `#language`.
+
+### 3.13 Nieuwe korte signalen — zestiende pass
+
+- “Not looking for reading trackers or challenges or stats” — [r/ebooks: Looking for a simple Bookshelf or Book Tracker App](https://www.reddit.com/r/ebooks/comments/1wlj9s9/looking_for_a_simple_bookshelf_or_book_tracker_app/) — 2026-09-20; een directe gebruiker wil tussen Kindle/Kobo alleen bezit, TBR en gelezen boeken eenvoudig bijhouden — `#outcome` `#objection`.
+- “my current system is basically random notes and screenshots” — [r/ebooks: Is there a good book reading tracker app that helps you keep track of characters and details?](https://www.reddit.com/r/ebooks/comments/1wgyihb/is_there_a_good_book_reading_tracker_app_that/) — 2026-09 (ongeveer; bron toonde 26 dagen geleden); eigen context raakt verspreid en wordt na een pauze moeilijk terug te vinden — `#pain`.
+- “a “jump to page” or “fill up to here” on tap would help a lot.” — [r/TestersCommunity: I Need Testers for my Reader Tracker](https://www.reddit.com/r/TestersCommunity/comments/1x3rylm/i_need_testers_for_my_reader_tracker_a_clean_book/) — 2026-10-12; directe Android-testfeedback over voortgang zonder tientallen taps — `#pain` `#outcome`.
+- “the keyboard covers Total Pages and the Save button” — [r/TestersCommunity: I Need Testers for my Reader Tracker](https://www.reddit.com/r/TestersCommunity/comments/1x3rylm/i_need_testers_for_my_reader_tracker_a_clean_book/) — 2026-10-12; IME- en validatiefouten blokkeren de kerninvoer — `#pain` `#language`.
+
 ## 4. Gerangschikte ideeënbacklog
 
 Prioriteit is een volgorde voor productonderzoek, niet een belofte om te bouwen.
@@ -255,6 +298,8 @@ De lokale bibliotheek moet resultaten direct uit lokale data tonen; een storing 
 **QOL-variant bij grote collecties (lage confidence).** Een alfabetische snelkoppeling of letterindex kan lange lijsten versnellen, maar pas nadat echte schaalpijn zichtbaar is. Het vervangt geen vrije lokale zoeking en voegt geen genre- of tagmodel toe.
 
 **Bewijs.** De behoefte aan eigen bibliotheekzoeking, duidelijke lijsten en betere zoekresultaten komt terug in [r/TheStoryGraph](https://www.reddit.com/r/TheStoryGraph/comments/y0pyjp/site_tutorial/), [r/goodreads](https://www.reddit.com/r/goodreads/comments/gzpsp0/) en recente StoryGraph-feedback over search en cataloguskwaliteit. De letter-sprong komt uit één recente [Bookshelf-review op Google Play](https://play.google.com/store/apps/details?hl=pt_PT&id=com.bookshelf.prod). Confidence: hoog voor lokale zoeking; laag voor een letterindex.
+
+De actuele [Android Compose-richtlijn voor SearchBar](https://developer.android.com/develop/ui/compose/components/search-bar?hl=en) raadt een blijvende zoekbalk aan wanneer zoeken de primaire taak van het scherm is. Voor Mijn bibliotheek en Journal betekent dit: query en resultaten mogen niet achter een onduidelijk icon-only pad verdwijnen; dit maakt nog geen tweede algemene zoekingang nodig.
 
 #### R-02 — Lokale export en herstelbaar backupbestand
 
@@ -280,15 +325,25 @@ Een onafhankelijke [r/ReadingSuggestions-discussie](https://www.reddit.com/r/Rea
 
 Voortgang accepteert direct een absolute huidige pagina (en eventueel hoofdstuk), niet alleen een sessieverschil of timer. Review- en notitievelden bewaren een concept bij teruggaan, rotatie of een tijdelijke fout, zonder een opgeslagen item te verwarren met een onafgemaakt concept. Na opslaan blijft de gebruiker op een voorspelbare plek en ziet die de nieuwe waarde direct.
 
+De recente [Android-tracker-testfeedback](https://www.reddit.com/r/TestersCommunity/comments/1x3rylm/i_need_testers_for_my_reader_tracker_a_clean_book/) maakt de kleinste interactie concreet: een gebruiker moet naar een absolute pagina kunnen springen of `Vul tot pagina` kunnen kiezen. Een raster dat telkens alleen de volgende ongelezen pagina vult is geen primaire control voor een boek op pagina 120. Als de IME open is, blijven `Totaal pagina’s` en `Opslaan` bereikbaar; lege verplichte velden geven zichtbare foutfeedback. Gebruik op Bibliotheek en boekdetail dezelfde afrondingsregel voor percentages, zodat de voortgang niet op twee manieren wordt weergegeven. Confidence: laag-middel voor deze precieze interactie; de thread komt uit een testercommunity met sterke ontwikkelaars- en vroege-appbias.
+
 **Capture versus verwerken.** Een quote of notitie moet eerst met boek, type en tekst kunnen worden opgeslagen. Titel, locatie en een latere interpretatie zijn optioneel en later bewerkbaar. Vraag niet om een perfecte samenvatting tijdens het moment waarop iemand alleen een gedachte wil bewaren.
 
 **QOL-variant: lichte hervatcontext (hypothese).** Als iemand na een langere pauze terugkomt, mag boekdetail de meest recente eigen `Notitie`/`Samenvatting`, laatste pagina en eventueel hoofdstuk zichtbaar maken. Dit hergebruikt het bestaande Journal-model en vraagt geen automatisch verhaaloverzicht. De precieze trigger en de vraag of een notitiepreview helpt, moeten nog eerstehands worden getoetst.
+
+Een recente [r/ebooks-vraag over personages en details](https://www.reddit.com/r/ebooks/comments/1wgyihb/is_there_a_good_book_reading_tracker_app_that/) beschrijft willekeurige notities en screenshots die na een pauze onvoldoende helpen om terug te keren in een groter verhaal. De kleinste nuttige vertaling blijft een boekgebonden `Notitie` met optionele pagina/hoofdstuklocatie; voeg geen aparte character-database, automatische recap of spoilergevoelige samenvatting toe zonder sterker bewijs. Confidence: laag-middel binnen één directe vraag.
 
 De recente [Bookly-review over directe huidige paginainvoer](https://play.google.com/store/apps/details?hl=en-US&id=com.twodoor.bookly) maakt de keuze voor absolute pagina’s concreet: de gebruiker hoeft niet eerst een leessessie te reconstrueren om de juiste stand op te slaan.
 
 Een recente Android-trackervermelding, [Reading Tracker & Page Counter op Google Play](https://play.google.com/store/apps/details?id=com.tenline.readingtracker), combineert die absolute pagina met een korte eigen notitie over wat er laatst gebeurde. Dat is concurrentpositionering en geen gebruikersreview, maar het is een bruikbare kleine vorm voor de al geparkeerde hervatcontext: pagina eerst, eigen context optioneel.
 
 **Bewijs.** De wens voor een duidelijke currently-reading-optie, individuele boekpagina’s en een eenvoudige UI staat samen in [r/books: Best Apps for Books](https://www.reddit.com/r/books/comments/13jrguc/best_apps_for_books/) en in de bestaande succescriteria van [design.md](design.md). De uitbreiding naar meerdere boeken wordt ondersteund door [r/Booktokreddit over meerdere boeken](https://www.reddit.com/r/Booktokreddit/comments/1q3gm0z/reading_multiple_books_at_once/), [r/ReadingSuggestions over meerdere boeken](https://www.reddit.com/r/ReadingSuggestions/comments/1qxtd45/multiple_books/) en [r/books over hoeveel boeken lezers tegelijk lezen](https://www.reddit.com/r/books/comments/1t93u9v/weekly_faq_thread_may_10_2026_how_many_books_do/). De terugkeer na een onderbreking en de voorkeur voor een eenvoudige actuele voortgangsweergave staan in [r/ereader over gratis booktrackers](https://www.reddit.com/r/ereader/comments/1w9qdwx/what_are_the_best_free_book_tracking_apps_for/) en [r/ereader over een reading journal](https://www.reddit.com/r/ereader/comments/1w32df7/are_you_using_any_type_of_reading_journal/). De concrete signalen voor conceptbehoud en directe paginainvoer staan in [StoryGraph op Google Play](https://play.google.com/store/apps/details?id=com.thestorygraph.thestorygraph) en [Bookly op Google Play](https://play.google.com/store/apps/details?hl=en-US&id=com.twodoor.bookly). Confidence: hoog voor snelle terugkeer en directe capture; middel voor precies drie zichtbare kaarten; laag-middel voor hervatcontext.
+
+Een recente [r/Booktokreddit-reactie](https://www.reddit.com/r/Booktokreddit/comments/1w65g8b/what_is_it_that_you_like_the_most_about_book/) noemt automatische tracking onmisbaar omdat handmatige invoer wordt vergeten. Dit bevestigt de invoerfrictie achter R-03, maar niet de keuze voor Kobo-/readerintegraties: die horen bij de bestaande local-only-scopewaarschuwing en blijven voorlopig geparkeerd.
+
+Een recente [r/kindle-discussie over reading journals](https://www.reddit.com/r/kindle/comments/1w32ftl/are_you_using_any_type_of_reading_journal/) verdedigt een lichte terugblik boven een uitgebreid schema. R-03’s capture-first-regel blijft daarom: een quote of directe reactie mag waardevol zijn zonder verplicht weekritueel, statistiek of vaste template.
+
+De nieuwe [r/ebooks-vraag om een eenvoudige bibliotheek](https://www.reddit.com/r/ebooks/comments/1wlj9s9/looking_for_a_simple_bookshelf_or_book_tracker_app/) ondersteunt dezelfde begrenzing vanuit een andere hoek: tussen Kindle en Kobo volstaan boeken, TBR en gelezen. De gebruiker wees juist challenges, statistieken en extra trackerbreedte af. Dit bevestigt de local-only kernrichting, maar is geen bewijs voor een aparte bezit-/leenlaag.
 
 #### R-04 — Journal doorzoekbaar maken
 
@@ -311,6 +366,8 @@ De actuele [PagePath-vermelding op Google Play](https://play.google.com/store/ap
 **QOL-variant: snel parkeren.** Als een suggestie nog niet in de catalogus is gevonden, mag de gebruiker een voorlopig TBR-item bewaren met titel/auteur en een optionele bron of korte gedachte. Toon duidelijk `Nog niet gekoppeld` en bied later koppeling aan een echt catalogusrecord; neem geen onbetrouwbare editie stil over.
 
 **Bewijs.** De eerdere trackerdiscussie noemt de behoefte aan ordening; recente [r/boeken-discussie over een grote TBR](https://www.reddit.com/r/boeken/comments/1w7xbmo/ik_heb_zoveel_boeken_die_ik_wil_lezen_waar_begin/) laat zien dat een kleine shortlist en kunnen wisselen tussen boeken praktischer kunnen zijn dan één rigide volgorde. De vraag om aanbevelingen van werk, Reddit of vrienden eerst snel te noteren staat in [r/kobo: Best place for tracking books you read and want to read?](https://www.reddit.com/r/kobo/comments/1qc1sl7/best_place_for_tracking_books_you_read_and_want/). Confidence: middel-laag voor de QOL-variant; nog geen eerstehands validatie.
+
+**QOL-variant: bewaren vanuit het Android-deelmenu.** Android kan een app als ontvanger van `text/plain` en URL’s tonen in de Sharesheet. Gebruik dit alleen als ingang naar dezelfde voorlopige capture als hierboven: ingevulde tekst blijft bewerkbaar, de gebruiker bevestigt vóór opslaan en een onzekere catalogusmatch wordt niet automatisch toegevoegd. Een widget is hiervoor niet nodig.
 
 #### R-06 — Leesperioden voor pauze, DNF en herlezen
 
@@ -368,13 +425,23 @@ De Nederlandstalige feedback op een verwijderde trackerpost laat een kleiner maa
 
 **Bewijs.** De behoefte om serievolgorde en nieuwe delen niet te missen staat expliciet in [How do you keep track of book series you are reading?](https://www.reddit.com/r/fantasybooks/comments/1o931hq/how_do_you_keep_track_of_book_series_you_are/) en komt terug in [Weekly FAQ: Do you keep track of the books you read?](https://www.reddit.com/r/books/comments/1pgfr8j/weekly_faq_thread_december_07_2025_do_you_keep/). Recente Nederlandstalige leesdiscussies tonen bovendien veel serie- en reread-context in de dagelijkse workflow, bijvoorbeeld [Welk boek herlees jij vaker?](https://www.reddit.com/r/boeken/comments/1w4cn6s/welk_boek_herlees_jij_vaker/). Confidence: middel; eerst nog catalogus- en gebruikersvarianten toetsen.
 
+Een recente [r/Booktokreddit-reactie op een minimalistische tracker](https://www.reddit.com/r/Booktokreddit/comments/1ubmsb3/a_minimalist_reading_tracker_for_people_who_just/) maakt R-11 concreter: auteur en serie moeten niet alleen als metadata zichtbaar zijn, maar een route openen naar bekende werken en de rest van de reeks. Versterk daarom de kleinste versie met lokale doorklikcontext; confidence blijft laag-middel door één productfeedbackcommentaar.
+
+#### R-13 — Lokale `Lezen voor de lijst`-modus (open scope)
+
+**Probleem.** Nederlandse leerlingen kunnen een persoonlijk leesarchief willen gebruiken naast de onderwijscontext van `Lezen voor de lijst`, maar de huidige app heeft geen onderscheid tussen een algemeen boek en een boek dat voor zo’n lijst wordt gebruikt.
+
+**Kleinste nuttige versie.** Een optionele lokale modus met een profiel, instelbaar aantal te lezen boeken, lijstlidmaatschap, status-/reflectiechecklist, een handmatig vastgelegd S/N-niveau en een expliciet advieslabel. Toon onbekend als onbekend; leid geen niveau af uit pagina-aantal, genre of titel. Een docent of officiële lijst blijft leidend voor geschiktheid.
+
+**Bewijs en grens.** [Lezen voor de lijst — lezen](https://www.lezenvoordelijst.nl/voor-mediatheken-bibliotheken/lezen/) en [werken met niveaus](https://lezenvoordelijst.nl/docenteninformatie/werken-met-niveaus/) beschrijven de onderwijscontext en waarschuwen dat niveau niet één-op-één aan een leerjaar hangt. Dat ondersteunt correcte onzekerheid en handmatige controle, maar niet de vraag of de Reading-app deze doelgroep moet bedienen. Confidence: middel voor de bronregels, laag voor productvraag. Dit blijft een expliciete scopekeuze buiten de huidige drie-status-v1.
+
 ### P2 — parkeren tenzij nieuwe signalen het veranderen
 
 - **Sociale feed, openbare reviews, vrienden en DM’s.** Sommige lezers willen dit, maar het botst met de huidige privé-archiefhouding en de expliciete wens om sociale media niet op te dringen.
 - **Streaks, badges, confetti en dagelijkse doelen.** Ze bestaan in trackers, maar zijn geen bewijs dat deze app ze nodig heeft; ze kunnen leesdruk toevoegen.
 - **AI-samenvattingen of automatisch gegenereerde notitietitels.** De gebruiker wil eigen woorden bewaren. De huidige spec verbiedt al automatisch AI-titeltjes; dat blijft een goede grens.
 - **Een ingebouwde ebook/PDF-reader met highlights.** De exportbehoefte is relevant, maar volledige tekstweergave, DRM, annotatiesynchronisatie en bestandsbeheer zijn een ander product. Onderzoek hooguit een import/exportbrug voor handmatig ingevoerde notities.
-- **Cloudsync, accounts en companion-apps.** De behoefte aan voortgang, annotaties en bibliotheek op meerdere apparaten, desktop of web komt terug in recente e-readerdiscussies. Dit vereist een expliciet privacy-, conflict- en kostenbesluit. Gebruik R-02 als eenvoudige portability bridge en suggereer geen live sync zolang opslag lokaal blijft.
+- **Cloudsync, accounts en companion-apps.** De behoefte aan voortgang, annotaties en bibliotheek op meerdere apparaten, desktop of web komt terug in recente e-readerdiscussies. Automatische tracking via Kobo/readerintegraties is dezelfde categorie: minder invoer, maar afhankelijk van externe data en synchronisatie. Dit vereist een expliciet privacy-, conflict- en kostenbesluit. Gebruik R-02 als eenvoudige portability bridge en suggereer geen live sync zolang opslag lokaal blijft.
 - **Aanbevelingsalgoritme en willekeurige Discover-tab.** Voeg pas discovery toe als er een concreet probleem is dat cataloguszoeken niet oplost. De app hoeft niet meteen een tweede sociale of commerciële startpagina te worden.
 - **Uitgebreide vrije custom fields.** Bron, bezit, prijs, conditie, locatie of auteurkenmerken kunnen nuttig zijn voor power users, maar zijn nog geen kernbehoefte. Onderzoek eerst welke velden terugvinden of een concrete beheeractie verbeteren.
 - **Barcode- of camerascan voor een fysieke collectie.** Dit kan de eerste catalogusinvoer versnellen, maar brengt camera-permission, verkeerde ISBN-/editieherkenning en een aparte bezit-/leenadministratie mee. Houd dit bij R-09 geparkeerd; geen camera in v1 en geen automatische toevoeging zonder controle.
@@ -395,6 +462,18 @@ De Nederlandstalige feedback op een verwijderde trackerpost laat een kleiner maa
 
 **Bewijs en randvoorwaarden.** In de recente [r/ReadingSuggestions-thread over lees-trackers](https://www.reddit.com/r/ReadingSuggestions/comments/1w0z6yn/what_app_do_you_use_to_keep_track_of_the_books/) wordt een homescreen-widget als bonus genoemd. Vergelijkbare terugkeer- of widgetwaarde verschijnt in [r/ereader: Ereader Widget?](https://www.reddit.com/r/ereader/comments/1qz6qxx/ereader_widget/) en [r/ebooks: ereading apps with bookshelves?](https://www.reddit.com/r/ebooks/comments/1w5i0n7/ereading_apps_with_bookshelves/), maar beide gaan over apps die de tekst zelf tonen. De [Android-richtlijn voor app widgets](https://developer.android.com/develop/ui/views/appwidgets/overview?authuser=0000) benadrukt compacte glanceable informatie, navigatie naar rijkere appdetails en aanpassing aan verschillende groottes. Confidence: laag-middel voor snelle homescreen-terugkeer, laag voor een tracker-specifieke widget en hoog voor de platformrandvoorwaarden. Heropen pas nadat R-03 in de app zelf aantoonbaar werkt en er directe Android-tracker-evidence is.
 
+#### R-14 — Boekenlijstcontext in de homescreen-widget (geparkeerd)
+
+**Probleem.** Als R-13 ooit wordt gekozen, kan een leerling de lijstmodus buiten de app willen hervatten; dit is een uitbreiding van R-12, geen tweede widgetconcept.
+
+**Kleinste nuttige versie.** Toon hooguit de actieve boektitel/pagina, het aantal boeken in de gekozen lijst en één deep link naar de lijstmodus. Geen checklistbewerking, niveauadvies, timer of notificatie in de widget. R-14 kan pas bestaan als R-12 en R-13 afzonderlijk zijn gevalideerd.
+
+**Bewijs.** De [Android-richtlijn voor app widgets](https://developer.android.com/develop/ui/views/appwidgets/overview?authuser=0000) ondersteunt glanceable informatie en navigatie; de onderwijscontext komt uit R-13. Confidence: laag.
+
+#### R-15 — Launcher-logo (geen productfeature)
+
+Dit is een visuele assetnotitie uit de log van 2026-09-12, geen gebruikersbehoefte of backlogfeature. Als een launcher-icoon later nodig is, hoort dat bij een expliciete ontwerp-/buildopdracht. De onderzoeksloop maakt hier geen mockup van en wijzigt `design.md` niet.
+
 ## 5. Ontwerpregels uit actuele Android-bronnen
 
 Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bestaande tokens in [design.md](design.md) niet.
@@ -411,6 +490,11 @@ Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bes
 10. **Ontwerp tegen actuele systeeminsets.** Bij target SDK 35 wordt edge-to-edge op Android 15 en hoger afgedwongen. Laat achtergronden en scrollende inhoud desgewenst doorlopen, maar houd tekst, knoppen en gesture-gevoelige acties uit system bars, display cutouts en de IME. Gebruik runtime-insets, geen vaste statusbarhoogtes, en test zowel gesture- als 3-knopsnavigatie. [Android edge-to-edge design](https://developer.android.com/design/ui/mobile/guides/layout-and-content/edge-to-edge).
 11. **Bevestig gevolgen, niet alleen knoppen.** Bij verwijderen, vervangen door een restore of het weggooien van een leesperiode moet de bevestiging de concrete consequentie benoemen en een duidelijke annuleeractie bieden. Dismiss via Back of buiten de dialoog is altijd veilig; er verschijnt geen succesfeedback vóór de lokale write echt gelukt is. [Android dialogs and user input](https://developer.android.com/develop/ui/compose/quick-guides/content/display-user-input?hl=en).
 12. **Gebruik feedback die de volgende actie ondersteunt.** Een Snackbar is geschikt voor korte bevestiging van een geslaagde lokale write, offline-status of een herstelbare verwijdering. Geef alleen een actie als die werkelijk uitvoerbaar is; `Ongedaan maken` vervangt geen bevestigingsdialoog, restore-preview of expliciete foutmelding. [Android Snackbar](https://developer.android.com/develop/ui/compose/components/snackbar).
+13. **Laat externe capture eerst bevestigen en bewerken.** Een toekomstige Android-share-target mag een gedeelde URL of tekst voorinvullen, maar nooit stil een boekrecord aanmaken. Toon de ruwe invoer, laat titel/auteur/bron corrigeren en maak de onzekere koppeling expliciet. Androids richtlijn voor [ontvangen van eenvoudige data](https://developer.android.com/develop/ui/compose/sharing/receive) noemt bevestigen en bewerken juist bij tekst een kernkwaliteit van een share target.
+14. **Maak zoeken zichtbaar wanneer het de primaire taak is.** Gebruik op Bibliotheek en Journal geen icon-only zoekingang als de gebruiker daar lokaal zoekt. Bewaar query en resultaatcontext; houd cataloguszoeken en lokale archiefzoeking begrijpelijk gescheiden. [Compose SearchBar](https://developer.android.com/develop/ui/compose/components/search-bar?hl=en).
+15. **Gebruik list-detail voor collectiecontext op grotere schermen.** Een boeklijst kan op compact scherm naar boekdetail navigeren en op expanded width naast detail blijven staan. Serie-/auteurcontext hoort daarbij als navigeerbare lijst, niet als decoratieve metadata. [Android list-detail](https://developer.android.com/develop/adaptive-apps/guides/list-detail).
+16. **Maak samengestelde rijen en foutstatussen semantisch eenduidig.** Een boek- of Journalrij heeft één primaire openactie; favoriet en overflow blijven afzonderlijke 48dp-doelen. Gebruik semantics om custom inhoud, rol, staat en fouttekst betekenis te geven en voorkom een dubbele focusroute door `clickable` en `focusable` niet naast elkaar op hetzelfde element te zetten. [Compose semantics](https://developer.android.com/develop/ui/compose/accessibility/semantics?hl=en), [Focus targets](https://developer.android.com/develop/ui/compose/touch-input/focus/focus-target).
+17. **Houd formulierinhoud bereikbaar wanneer de IME verschijnt.** Een toevoeg- of voortgangsformulier moet kunnen scrollen of zijn layout aan `WindowInsets.ime` aanpassen, zodat totaalpagina en opslaan niet achter het toetsenbord verdwijnen. Gebruik expliciete foutfeedback bij lege of ongeldige velden; een knop die niets doet zonder uitleg is geen herstelbare fouttoestand. [Set up window insets](https://developer.android.com/develop/ui/compose/system/insets-ui), [Use keyboard IME animations](https://developer.android.com/develop/ui/compose/system/keyboard-animations?hl=en).
 
 ## 6. Bekende documentatiegaten
 
@@ -426,6 +510,7 @@ Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bes
 - De spec beschrijft nog geen voorlopig, niet-aan-een-editie-gekoppeld boekidee en maakt nog niet expliciet onderscheid tussen ruwe capture en latere verwerking. R-03 en R-05 houden dit bewust klein; een voorlopig item moet als onvolledig herkenbaar blijven.
 - De spec maakt nog geen onderscheid tussen een persoonlijk leesarchief en een fysieke bezit-/leeninventaris. Barcode- of camerascan blijft daarom een P2-idee bij R-09 en geen reden om de local-only v1 met camera-toegang te belasten.
 - De spec noemt runtime-insets, maar legt de Android-15 edge-to-edge-, display-cutout-, gesture- en IME-matrix nog niet uit. Ontwerpregel 10 maakt dit een expliciet controlepunt vóór implementatie.
+- R-03 legt nog niet vast of voortgang via een absoluut paginaveld, `Vul tot pagina` of een andere directe sprong wordt ingevoerd, hoe een formulier onder de IME scrollt, hoe lege opslag wordt gemeld en welke afrondingsregel Bibliotheek en boekdetail delen.
 - De spec definieert niet of een DNF een rating mag krijgen, hoe een DNF-reread wordt verwijderd of hoe de gevolgen aan de gebruiker worden getoond. R-06 en ontwerpregel 11 maken dit expliciete beslissingen.
 - Serie-/omnibusrelaties, volgnummer en `Volgende deel` zijn nog niet beschreven. R-11 blijft een P1-onderzoek naast de persoonlijke keuzehulp van R-05.
 - Er is nog geen expliciet feedback- en undo-contract: welke lokale writes een Snackbar tonen, wanneer `Ongedaan maken` veilig is en wanneer een restore-preview nodig blijft. Ontwerpregel 12 en R-09 maken dit controlepunt zichtbaar.
@@ -434,6 +519,10 @@ Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bes
 - De spec legt nog niet vast hoe een verkeerde startdatum, statuskeuze of importdatum wordt gecorrigeerd zonder verwijderen en opnieuw toevoegen. R-02, R-06 en R-09 maken dit een herstelcontract vóór verdere bulkfuncties.
 - R-01 definieert lokale tekstzoeking en sortering, maar nog niet hoe navigatie zich gedraagt bij een uitzonderlijk grote collectie. De letterindex blijft daarom een lage-confidence QOL-variant, geen nieuwe kernfunctie.
 - R-02 beschrijft nog niet hoe een import omgaat met velden die de app niet ondersteunt. Een toekomstige preview moet zulke velden zichtbaar als overgeslagen melden; stil verlies is geen acceptabele default.
+- R-05 beschrijft voorlopig parkeren, maar de spec legt nog niet vast of een gedeelde URL/tekst via het Android-deelmenu als bewerkbare capture binnenkomt of alleen via handmatige invoer.
+- R-01 noemt lokale tekstzoeking, maar de spec beschrijft nog niet of de zoekingang persistent zichtbaar blijft wanneer zoeken de primaire taak van Bibliotheek of Journal is.
+- R-11 noemt serie-/omnibusmetadata, maar de spec legt nog niet vast dat auteur en serie navigeerbare contextlijsten openen in plaats van alleen tekstlabels te tonen.
+- De spec noemt TalkBack en vergroot lettertype, maar heeft nog geen componentgerichte accessibility-acceptatiecheck voor labels, traversal order, tekstschaal, samengestelde rijen, semantische foutstatussen en het vermijden van dubbele focusdoelen.
 - R-07 beschrijft handmatig toevoegen als fallback, maar de huidige spec tekent de `geen resultaat`-tak nog niet uit als gelijkwaardig aan een catalogusresultaat.
 - R-04 heeft nog geen expliciete keuze tussen centraal zoeken in Journal en een tweede zoekveld in Bibliotheek; de huidige richting blijft één centrale Journal-route.
 - R-06 legt nog niet vast waar een optionele DNF-reden leeft, hoe lang die zichtbaar is en of zij privé blijft; dit blijft een leesperiodebeslissing.
@@ -447,12 +536,12 @@ Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bes
 
 De volgende lus moet klein blijven en maximaal enkele beslissingen toevoegen:
 
-1. Lees alleen nieuwe 1–3-sterrenreviews of reviews van andere Android-trackers; controleer specifiek of de signalen over herstel, imports en invoerfrictie zich buiten deze eerste app-store-set herhalen.
+1. Lees alleen nieuwe 1–3-sterrenreviews, reviews van andere Android-trackers of directe Android-testfeedback; controleer specifiek of herstel, imports, absolute paginainvoer, IME-bereikbaarheid en invoerfrictie zich buiten deze eerste tester-/app-store-set herhalen.
 2. Zoek Nederlandstalige lezers- en e-readercommunities om te testen of de huidige Nederlandse interface en terminologie natuurlijk zijn.
 3. Vergelijk drie lokale dataflows: handmatige backup, JSON restore en Markdown-export. Noteer welk probleem elk formaat oplost en hoe quote-reflectierelaties daarin passen; voeg geen formaat toe zonder doel.
 4. Zoek specifiek naar ervaringen met aparte leesperioden, DNF-rating, serievolgorde en verkeerde catalogusedities. Heropen R-10 alleen bij een tweede onafhankelijke bron of eerstehands signaal; beslis daarna of R-06, R-07 of R-11 verder komt.
-5. Zoek bij andere tracker-apps naar eerstehands bewijs voor absolute pagina-invoer, importmapping, dataherstel, catalogusuitval, DNF-redenen en homescreen-shortcuts; controleer specifiek of widgetwaarde ook voor Android-trackers geldt en niet alleen voor reader-apps.
-6. Toets tegelijk de precieze hervatcontext: helpt een eigen laatste notitie, of is alleen titel/pagina genoeg? Vergelijk dit met meerdere gelijktijdige `Bezig`-boeken en bewaak dat `Snel parkeren` en capture-versus-verwerken geen verborgen tweede inbox worden.
+5. Zoek bij andere tracker-apps naar eerstehands bewijs voor absolute pagina-invoer of `Vul tot pagina`, importmapping, dataherstel, catalogusuitval, DNF-redenen, externe capture, IME-/validatiegedrag en klikbare seriecontext; controleer specifiek of automatische tracking en widgetwaarde ook voor Android-trackers gelden en niet alleen voor reader-apps.
+6. Toets tegelijk de precieze hervatcontext: helpt een eigen laatste notitie, of is alleen titel/pagina genoeg? Vergelijk dit met meerdere gelijktijdige `Bezig`-boeken en bewaak dat `Snel parkeren`, de share-target en capture-versus-verwerken geen verborgen tweede inbox worden.
 7. Herzie de backlog: voeg alleen nieuwe ideeën toe als ze een bron, een concreet probleem en een kleinste nuttige versie hebben. Verwijder dubbele varianten en verlaag ideeën met alleen algemeen gebruikersgedrag naar hypothese.
 
 ## 8. Onderzoekslog
@@ -577,6 +666,23 @@ De volgende lus moet klein blijven en maximaal enkele beslissingen toevoegen:
 - **Bewust niet gedaan:** geen officiële automatische slagingsbeslissing, automatische boekclassificatie, verborgen catalogusclaim, docentaccount, cloud-dataset, Glance-migratie of tweede concurrerende widget toegevoegd. De huidige klassieke RemoteViews-widget blijft passend voor de bestaande native implementatie en is inhoudelijk beperkt gehouden voor het glanceable gebruik.
 - **Volgende stap:** build/lint/APK, emulator-smoke van de lijstmodus en widget, persist/export/reset-controle en visuele controle op een echte Android-render. Daarna alleen uitbreiden met schoolregels die de gebruiker of docent zelf kan onderbouwen.
 
+### 2026-09-18 — vijftiende pass: capture buiten de app, contextnavigatie en toegankelijkheid
+
+- **Gedaan:** recente Reddit-discussies over trackerkeuze, externe TBR-capture, series, accessibility en reading journals gelezen; actuele Android-documentatie voor share targets, SearchBar en list-detail-layouts gecontroleerd.
+- **Nieuwe signalen:** boekideeën ontstaan buiten de app en verdwijnen in losse notities; automatische tracking vermindert vergeten invoer maar botst met local-only; serie-/auteursmetadata moet navigeerbaar zijn; eenvoudige, gelabelde UI is voor screenreadergebruikers een harde voorwaarde; een lichte Journal-capture kan genoeg zijn.
+- **Verwerkt:** R-01, R-03, R-05 en R-11 aangescherpt; Android-share-target, zichtbare lokale zoekingang en componentgerichte accessibility-criteria toegevoegd; R-13 t/m R-15 uit de vorige log nu als backlog-/scope-items gedocumenteerd, waarbij R-15 expliciet geen productfeature is.
+- **Bewust niet gedaan:** geen automatische readerintegratie, cloudsync, widgetuitbreiding, sociale laag, niveau-inferentie, mockup, code of wijziging aan design.md toegevoegd.
+- **Volgende stap:** herhaling zoeken in directe Android-trackerreviews en Nederlandstalige lezersbronnen; pas daarna bepalen of externe capture of seriecontext boven de huidige P1-volgorde komt.
+
+### 2026-10-12 — zestiende pass: directe pagina-invoer en rustige Android-UX
+
+- **Gedaan:** nieuwe Reddit-signalen gelezen over een sobere bibliotheek, eigen context na een leesonderbreking en een actuele Android-tracker-test; actuele Android-documentatie gecontroleerd voor Compose semantics, focus targets, IME/insets en list-detail.
+- **Nieuwe signalen:** een simpele boekenlijst zonder challenges/statistieken is voor sommige lezers het hele doel; willekeurige notities en screenshots helpen onvoldoende bij hervatten; een paginaladder en door de IME bedekte opslagknop maken directe voortgang onbruikbaar.
+- **Verwerkt:** de P0-basis van R-03 aangescherpt met absolute paginainvoer of `Vul tot pagina`, toetsenbordbereikbaarheid, foutfeedback en consistente percentageweergave; de bestaande lichte hervatcontext bevestigd zonder character-database of automatische recap. Android-regels 16–17 en de bijbehorende documentatiegaten toegevoegd.
+- **Bias en confidence:** de Android-testfeedback is laag-middel voor de precieze control door de tester-/ontwikkelaarssteekproef; de IME-, semantics- en focusregels zijn hoog als platformrichtlijn. De sobere bibliotheek- en hervatvragen blijven Reddit-signalen, geen brede marktschatting.
+- **Bewust niet gedaan:** geen appcode, design.md, mockup, readerintegratie, cloudsync, sociale laag, statistiekdashboard, automatische samenvatting of extra status toegevoegd.
+- **Volgende stap:** directe Android-trackerreviews en Nederlandstalige bronnen blijven toetsen; kijk vooral of de page-jump/IME-foutpatronen en de voorkeur voor minimale lokale archieven onafhankelijk terugkomen.
+
 ## 9. Onderhoudsritme
 
 Deze onderzoeksloop draait zelfstandig wekelijks op maandagochtend in dezelfde Codex-taak. Een run:
@@ -644,6 +750,14 @@ Een wijziging aan [design.md](design.md) blijft een expliciete open beslissing; 
 - [Reddit — What app do you use to keep track of the books you've read? (r/ReadingSuggestions)](https://www.reddit.com/r/ReadingSuggestions/comments/1w0z6yn/what_app_do_you_use_to_keep_track_of_the_books/)
 - [Reddit — Ereader Widget? (r/ereader)](https://www.reddit.com/r/ereader/comments/1qz6qxx/ereader_widget/)
 - [Reddit — ereading apps with bookshelves? (r/ebooks)](https://www.reddit.com/r/ebooks/comments/1w5i0n7/ereading_apps_with_bookshelves/)
+- [Reddit — Looking for a to-read tracker/app (r/selfhosted)](https://www.reddit.com/r/selfhosted/comments/1s0m42y/looking_for_a_toread_trackerapp/)
+- [Reddit — What do you like most about book tracking apps? (r/Booktokreddit)](https://www.reddit.com/r/Booktokreddit/comments/1w65g8b/what_is_it_that_you_like_the_most_about_book/)
+- [Reddit — A minimalist reading tracker (r/Booktokreddit)](https://www.reddit.com/r/Booktokreddit/comments/1ubmsb3/a_minimalist_reading_tracker_for_people_who_just/)
+- [Reddit — Book tracking apps? (r/Booktokreddit)](https://www.reddit.com/r/Booktokreddit/comments/1upkuge/book_tracking_apps/)
+- [Reddit — Are you using any type of “Reading Journal”? (r/kindle)](https://www.reddit.com/r/kindle/comments/1w32ftl/are_you_using_any_type_of_reading_journal/)
+- [Reddit — Looking for a simple Bookshelf or Book Tracker App (r/ebooks)](https://www.reddit.com/r/ebooks/comments/1wlj9s9/looking_for_a_simple_bookshelf_or_book_tracker_app/)
+- [Reddit — Is there a good book reading tracker app that helps you keep track of characters and details? (r/ebooks)](https://www.reddit.com/r/ebooks/comments/1wgyihb/is_there_a_good_book_reading_tracker_app_that/)
+- [Reddit — I Need Testers for my Reader Tracker (r/TestersCommunity)](https://www.reddit.com/r/TestersCommunity/comments/1x3rylm/i_need_testers_for_my_reader_tracker_a_clean_book/)
 - [Android — Mobile UI design](https://developer.android.com/design/ui/mobile)
 - [Android — Material 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3)
 - [Android — Accessibility in Jetpack Compose](https://developer.android.com/develop/ui/compose/accessibility)
@@ -659,6 +773,14 @@ Een wijziging aan [design.md](design.md) blijft een expliciete open beslissing; 
 - [Android — App widgets overview](https://developer.android.com/develop/ui/views/appwidgets/overview?authuser=0000)
 - [Android — Create an app widget with Glance](https://developer.android.com/develop/ui/compose/glance/create-app-widget)
 - [Android — Request runtime permissions](https://developer.android.com/training/permissions/requesting)
+- [Android — Receive simple data from other apps](https://developer.android.com/develop/ui/compose/sharing/receive)
+- [Android — Compose SearchBar](https://developer.android.com/develop/ui/compose/components/search-bar?hl=en)
+- [Android — Common mobile layouts](https://developer.android.com/design/ui/mobile/guides/layout-and-content/common-layouts?hl=en)
+- [Android — Compose semantics](https://developer.android.com/develop/ui/compose/accessibility/semantics?hl=en)
+- [Android — Focus targets](https://developer.android.com/develop/ui/compose/touch-input/focus/focus-target)
+- [Android — Set up window insets](https://developer.android.com/develop/ui/compose/system/insets-ui)
+- [Android — Use keyboard IME animations](https://developer.android.com/develop/ui/compose/system/keyboard-animations?hl=en)
+- [Android — Build a list-detail layout](https://developer.android.com/develop/adaptive-apps/guides/list-detail)
 - [Lezen voor de lijst — Lezen](https://www.lezenvoordelijst.nl/voor-mediatheken-bibliotheken/lezen/)
 - [Lezen voor de lijst — Werken met niveaus](https://lezenvoordelijst.nl/docenteninformatie/werken-met-niveaus/)
 - [Lezen voor de lijst — niveaus 15–19](https://www.lezenvoordelijst.nl/media/660277/pdf_leesniveaus15tm19.pdf)

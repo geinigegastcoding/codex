@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-10-15",
+  "research_note": "C:/Users/Daniël/Desktop/Codex/Kennis/personal/resources/navidrome-ui-onderzoek-2026-10-15.md",
+  "mobbin": [
+    {
+      "id": "2fa96991-87fe-4f02-ad49-b5e961974bbe",
+      "mobbin_url": "https://mobbin.com/screens/2fa96991-87fe-4f02-ad49-b5e961974bbe",
+      "app_name": "Spotify",
+      "platform": "web",
+      "file": "spotify-playlist.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/references/spotify-playlist.jpg"
+    },
+    {
+      "id": "a426b1ab-57e7-411e-b4d5-1c3c7c366b60",
+      "mobbin_url": "https://mobbin.com/screens/a426b1ab-57e7-411e-b4d5-1c3c7c366b60",
+      "app_name": "Apple Music",
+      "platform": "ios",
+      "file": "apple-playlist.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/references/apple-playlist.jpg"
+    },
+    {
+      "id": "3f5c3037-07b2-4921-9401-9ad7e24ca8d1",
+      "mobbin_url": "https://mobbin.com/screens/3f5c3037-07b2-4921-9401-9ad7e24ca8d1",
+      "app_name": "TIDAL",
+      "platform": "web",
+      "file": "tidal-album.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/references/tidal-album.jpg"
+    },
+    {
+      "id": "76a11d4b-80e8-43d1-a396-fbea7f111285",
+      "mobbin_url": "https://mobbin.com/screens/76a11d4b-80e8-43d1-a396-fbea7f111285",
+      "app_name": "TIDAL",
+      "platform": "web",
+      "file": "tidal-actions.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/references/tidal-actions.jpg"
+    },
+    {
+      "id": "05495a0a-5a18-4253-aaea-f88ba572826c",
+      "mobbin_url": "https://mobbin.com/screens/05495a0a-5a18-4253-aaea-f88ba572826c",
+      "app_name": "Spotify",
+      "platform": "ios",
+      "file": "spotify-queue.jpg",
+      "local_path": "C:/Users/Daniël/Desktop/Codex/screenshots/navidrome-ui-2026-10-15/references/spotify-queue.jpg"
+    }
+  ],
+  "official": [
+    "https://navidrome.org/docs/developers/subsonic-api/",
+    "https://navidrome.org/docs/usage/features/smart-playlists/",
+    "https://navidrome.org/docs/usage/library/tagging/",
+    "https://navidrome.org/docs/developers/api-v1/",
+    "https://opensubsonic.netlify.app/docs/extensions/songlyrics/",
+    "https://opensubsonic.netlify.app/docs/extensions/indexbasedqueue/",
+    "https://opensubsonic.netlify.app/docs/endpoints/getopensubsonicextensions/",
+    "https://github.com/jeffvli/feishin",
+    "https://github.com/supersonic-app/supersonic/blob/main/README.md"
+  ],
+  "issue_evidence": [
+    "https://github.com/navidrome/navidrome/discussions/3555",
+    "https://github.com/navidrome/navidrome/issues/5331",
+    "https://github.com/navidrome/navidrome/issues/6073",
+    "https://github.com/navidrome/navidrome/discussions/5154"
+  ],
+  "limitations": [
+    "No user server or library accessed",
+    "Platform and listening preferences not yet supplied",
+    "Desk research and visual references, not user tests",
+    "Concept images do not verify audio, interactive behavior or accessibility compliance"
+  ]
+}

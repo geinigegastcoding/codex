@@ -1,5 +1,7 @@
 # Luna calorie tracker — production checklist
 
+Current research: [15 October 2026 launch-readiness plan](C:/Users/Daniël/Desktop/Codex/Kennis/company/calorie-tracker-launch-readiness-2026-10-15.md). This older checklist predates later implementation; use the dated plan's evidence and conditional gates before treating an unchecked item as missing.
+
 Use this for release readiness. Items marked **release-only** can stay open during the first debug build; items marked **build-now** are foundations that should exist early.
 
 ## Build now

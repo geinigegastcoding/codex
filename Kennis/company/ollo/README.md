@@ -10,7 +10,7 @@ sources: [https://github.com/geinigegastcoding/Ollo]
 
 # Ollo working index
 
-Ollo is currently a native, local Android review app. This area holds research and proposals while the founder tests it. A proposal here does not mean the app implements it, that a user asked for it, or that a price/privacy change is approved.
+Ollo is currently a native Android review app: usage/rules stay local, while the RevenueCat preview uses purchase-service network calls. This area holds research and proposals while the founder tests it. A proposal here does not mean the app implements it, that a user asked for it, or that a price/privacy change is approved.
 
 | Start here | What it answers |
 |---|---|
@@ -24,7 +24,8 @@ Ollo is currently a native, local Android review app. This area holds research a
 | [[ENGLISH-STORE-LISTING]] | Current English title, short/full Play text with source-checked feature/network boundaries |
 | [[STORE-ASSET-PRODUCTION]] | Genuine screenshot capture brief, format/alt-text requirements and staging limits |
 | [[PRODUCTION-SIGNING]] | Owner signing inputs, debug/release separation and update-lineage gate |
-| [[GOOGLE-SDK-TERMS-REVIEW]] | Five Google client artifacts, primary terms and remaining local notice/owner review |
+| [[GOOGLE-SDK-TERMS-REVIEW]] | Pinned runtime notice preservation, generator/native reader, exact acceptance scopes and separate SDK-terms review |
+| [English store kit](assets/release/store-kit-en-v1/README.md) | Downloadable ZIP contents, six screenshots, artwork, listing copy and exact file identities |
 | [[ENGLISH-UI-PREPARATION]] | Approved English-first candidate, scoped native/build checks, recording guidance and installation limits |
 | [[ENGLISH-SUPPORT-COPY]] | Plain English answers with current English candidate labels and update/export limits |
 | [[AD-CONCEPTS]] | Earlier Dutch-first scripts, two rendered videos, two orange pixel illustrations and two typeset 1080×1350 concept cards |
