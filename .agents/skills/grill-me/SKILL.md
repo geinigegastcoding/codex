@@ -1,0 +1,7 @@
+---
+name: grill-me
+description: A relentless interview to sharpen a plan or design.
+disable-model-invocation: true
+---
+
+Read and follow `../grilling/SKILL.md` before starting the interview. Resolve this path relative to the directory containing this `SKILL.md`.
