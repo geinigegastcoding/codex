@@ -57,6 +57,16 @@
 	path = projecten/bromfietscentrum
 	url = https://github.com/geinigegastcoding/bromfietscentrum.git
 
+[submodule "projecten/Learnins"]
+	path = projecten/Learnins
+	url = https://github.com/geinigegastcoding/Learnins.git
+	branch = main
+
+[submodule "projecten/Ollo"]
+	path = projecten/Ollo
+	url = https://github.com/geinigegastcoding/Ollo.git
+	branch = main
+
 [submodule "projecten/fitness-app"]
 	path = projecten/fitness-app
 	url = https://github.com/geinigegastcoding/fitness-app.git
