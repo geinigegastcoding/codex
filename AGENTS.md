@@ -18,6 +18,14 @@
 - **Match codebase conventions even if you disagree**: Adhere strictly to the existing codebase patterns (e.g., matching naming conventions like snake_case or architectural patterns like class components) even if the model assumes a different style is superior.
 - **Fail loud**: Do not hide uncertainty or silent errors. A task is not complete if records were silently skipped or edge cases went unchecked. The model must surface warnings and validation failures explicitly by default.
 
+## Verification and quality
+
+- **Prove the change works**: Define success criteria before implementation and use the project's existing verification commands and harnesses. Run the relevant code and, when practical, exercise changed flows as a user. Choose checks that can actually fail when the intended behavior is broken; include meaningful edge cases and failure paths. Capture useful evidence such as test output, logs, traces, or screenshots.
+- **Find failures early**: For bugs and non-trivial behavior, when practical, first reproduce the issue or write a meaningful test that fails for the right reason. Fix the cause, rerun the failing check and relevant regression checks, and investigate unexpected results. Do not introduce a failure merely to satisfy this rule.
+- **Check critical properties**: Identify important invariants, state transitions, concurrency, ordering, security, or data integrity risks affected by a change. Use property-based tests or fuzzing when they add value. For high-cost or poorly covered critical behavior, consider a formal model and check it with an appropriate tool such as TLA+ or Kani; state the model's assumptions and limits. Do not claim formal proof when only tests or an unchecked diagram were used.
+- **Evidence over abstract review**: Ground review findings in a failing test, reproduction, runtime evidence, or a concrete code path. Label unverified risks clearly; avoid unsupported style and speculative YAGNI findings. Reuse or improve a project verification harness when it will make repeated checks more reliable.
+- **Report honestly**: Before calling work complete, report the checks run, their outcomes, relevant evidence, and any failures, blockers, or important gaps. If a check cannot be run, say why and do not imply it passed. Scale verification to the change and its risk; avoid unnecessary tests or tooling for trivial changes.
+
 ## Additional Rules
 
 - **Always use ponytail skill full mode**: Always activate and follow the `ponytail` skill in `full` mode for any coding, refactoring, or design task.

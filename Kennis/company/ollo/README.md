@@ -1,7 +1,7 @@
 ---
 title: Ollo working index
 created: 2026-10-16
-updated: 2026-10-19
+updated: 2026-10-20
 type: project
 status: active
 tags: [ollo, navigation]
@@ -12,10 +12,15 @@ sources: [https://github.com/geinigegastcoding/Ollo]
 
 Ollo is currently a native Android review app: usage/rules stay local, while the RevenueCat preview uses purchase-service network calls. This area holds research and proposals while the founder tests it. A proposal here does not mean the app implements it, that a user asked for it, or that a price/privacy change is approved.
 
+**Latest test APK, 20 October:** [Ollo 0.4.2 purposes and reminders](E:/MData/projecten/Ollo/artifacts/Ollo-0.4.2-purpose-reminders-debug-2026-10-20.apk). SHA-256 `f73cd1b87c9d804aacbebcb609f9338f08c43e3aa4731a964a0b581957fe30ab`; 157 unit tests, 150 native checks in 21 normal/200% cases, 13 package checks and 16 KB alignment pass; zero lint errors. Includes custom reasons/finish cues, better check-in returns, contextual offline suggestions and optional local reminders alongside the 0.4.0 features. Source and installed hashes match the preserved archive. See [[PRODUCT-WORK-2026-10-20]] for exact evidence, failed attempts, limits and cleanup. Five requested feature groups and production gates stay open; source is uncommitted.
+
 | Start here | What it answers |
 |---|---|
+| [[PRODUCT-WORK-2026-10-20]] | Current full autonomous objective, 22:00 APK target, five-hour reserve, implementation and exact acceptance status |
+| [[USP-ONBOARDING-RESEARCH-2026-10-20]] | Current primary-source overlap check and parent purpose/finish, personalization and Pro decisions |
+| [[ANDROID-USAGE-PERMISSIONS-2026-10-20]] | Android totals/events, permission routes, exercise input and browser/filtering constraints |
 | [[OLLO-WRAP-UP-2026-10-17]] | Updated16–19October founder summary: app improvements, research, English scripts, assets and remaining decisions |
-| [[BACKLOG]] | Single unfinished-work list, reported bugs, deferred SDKs and07:00 overnight deadline |
+| [[BACKLOG]] | Current unfinished-work list, reported bugs, owner launch actions and historical milestones |
 | [[CONTINUOUS-IMPROVEMENT]] | Latest testedAPK/Git handoff, safe runtime cleanup, reset reserve and19October07:00hard stop; older entries historical |
 | [[product-marketing-context]] | Verified product facts, founder direction and clearly labelled audience assumptions |
 | [[MARKETING]] | First audience hypothesis, claims, a €0-media 30-day learning plan and decision rules |
@@ -67,7 +72,7 @@ Ollo is currently a native Android review app: usage/rules stay local, while the
 
 **Current source:** English-first native Android, orange pixel identity, local rules/usage and no Ollo account. RevenueCat10.28.1 now adds purchase services/network traffic; no ad network, PostHog or Firebase service (transitive encoder codecs are present). Android16 SDK Test Store success/cancel/error/restore and active entitlement are observed; real Google Play acceptance remains pending. Production signing and Play configuration remain open.
 
-**Latest human direction,18–19October:** bounded overnight launch preparation; hard stop19October07:00Europe/Amsterdam. First natural window uses10%closing/5%reserve; final window closes25%/stops substantive work20%remaining. Delete the heartbeat at the deadline. The source repo contains `docs/OVERNIGHT_HANDOFF.md`; unfinished work lives in [[BACKLOG]]. All current features remain free during testing; show a non-gating Pro preview and research special future extras/customization. Gradle builds and Android Studio emulation; the old review VM stays stopped/restoration deferred.
+**Latest human direction,20 October:** work autonomously on the full product list using scoped Luna help and parent engineering/product decisions. Deliver a testable APK by approximately 22:00 Amsterdam, retaining at least 20% of the five-hour allowance for build, checks and handoff. Use Gradle and the official Android Studio emulator. All current features remain free during testing. No commits or pushes unless requested; preserve installation data. The earlier overnight deadline is historical. [[PRODUCT-WORK-2026-10-20]] holds the current checklist and candidate evidence.
 
 **Recommendations to test:** a small deliberate pause as the marketing promise; purpose → finish cue and graceful re-entry as feature experiments; a useful free core with one optional permanent Plus entitlement if people value its concrete additions. The €9.99/€14.99 cells are unvalidated interview/offer hypotheses. No Plus features have been sold or promised.
 
@@ -75,7 +80,7 @@ Ollo is currently a native Android review app: usage/rules stay local, while the
 
 ## Next review order
 
-The bounded overnight loop is active until19October07:00Amsterdam. Follow the live checkpoint and latest two-window/final20%reserve override; earlier unlimited-loop/5%rules do not extend this deadline. Physical-device/OEM acceptance and evidence of paid demand still require real external inputs. They are remaining limitations, not instructions to start another task.
+Follow the active 20 October work plan: finish trustworthy setup/figures and reproduced bug fixes, validate settings portability/widget, then continue the remaining purpose/finish, exercise/task, alternatives/learning, reminder/filter and customization requests. Keep the full objective active across APK checkpoints. Physical-device/OEM acceptance and evidence of paid demand remain separate from emulator/build evidence.
 
 Owner decision18October: RevenueCat dashboard/catalog/entitlement/offering/hosted-paywall configuration will be completed later. No further web sign-in is requested now. Local code/build verification can continue; live store configuration and end-to-end purchases are not claimed verified. See [[REVENUECAT-INTEGRATION]] for the exact later checklist.
 

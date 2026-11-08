@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon_dashlab"
+        android:label="DashLab"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:usesCleartextTraffic="false">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity-alias android:name=".Chooser" android:targetActivity=".MainActivity" android:enabled="true" android:exported="true" android:icon="@drawable/icon_dashlab" android:label="DashLab">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Shopify" android:targetActivity=".MainActivity" android:enabled="false" android:exported="true" android:icon="@drawable/icon_shopify" android:label="Shopify">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Youtube" android:targetActivity=".MainActivity" android:enabled="false" android:exported="true" android:icon="@drawable/icon_youtube" android:label="YT Studio">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Phantom" android:targetActivity=".MainActivity" android:enabled="false" android:exported="true" android:icon="@drawable/icon_phantom" android:label="Phantom">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Tiktok" android:targetActivity=".MainActivity" android:enabled="false" android:exported="true" android:icon="@drawable/icon_tiktok" android:label="TikTok Studio">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Stripe" android:targetActivity=".MainActivity" android:enabled="false" android:exported="true" android:icon="@drawable/icon_stripe" android:label="Stripe">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Amazon" android:targetActivity=".MainActivity" android:enabled="false" android:exported="true" android:icon="@drawable/icon_amazon" android:label="Amazon Seller">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+    </application>
+</manifest>

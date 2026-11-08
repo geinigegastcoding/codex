@@ -16,15 +16,15 @@ Use this when receiving the shared Codex workspace on a laptop or desktop, or wh
 
 ## Update repositories safely
 
-- Include the Codex root, nested Git repositories, and submodules. Check `.git` files as well as `.git` directories, and use `git submodule status --recursive` to find nested checkouts.
-- Inspect each repository's branch, upstream, and working-tree status before updating it. Fetch remotes, then fast-forward only a clean branch with a known upstream.
-- If a checkout is dirty, fetch but leave its working tree and branch untouched. If it is detached, fetch but do not guess a branch or move a submodule away from its pinned commit.
-- Do not reset, stash, overwrite, or initialize into an existing non-empty folder. Report any checkout that could not be advanced and why.
+- Inventory the Codex root, nested Git repositories, worktrees, and submodules. Check both `.git` files and directories, and use `git submodule status --recursive`. Distinguish local checkouts from configured submodules that have no worktree; do not initialize missing submodules unless the user asks to restore them.
+- When the user asks for every repo, include every actual checkout under the workspace. For a specifically requested GitHub repo that is not present, verify its owner/name and clone it into the workspace's established project area only when the destination does not exist.
+- Inspect each checkout's branch, upstream, and working-tree status before updating it. Fetch remotes, then fast-forward clean branches with a known upstream. If a dirty checkout must be updated because the user explicitly asked, compare incoming paths with all tracked and untracked local changes first; fast-forward only when they do not overlap.
+- If a checkout is detached, fetch but do not guess a branch or move a submodule away from its pinned commit. Do not reset, stash, overwrite, or clone into an existing non-empty folder. Report any checkout that could not be advanced and why.
 
 ## Register priority T3 projects
 
 - Check the current project registry first and avoid registering a workspace twice. Keep the Codex root project if it already exists.
-- Register the important workspaces, not every repository: Luna at `projecten/calorie-tracker-android`, Ollo at `projecten/Ollo`, the main MagisData site at `Website`, N-Lang at `projecten/N-Lang`, and the dad website at `klanten/WebsitePapa2` when those paths exist.
+- By default, register the important workspaces: Luna at `projecten/calorie-tracker-android`, Ollo at `projecten/Ollo`, the main MagisData site at `Website`, N-Lang at `projecten/N-Lang`, and the dad website at `klanten/WebsitePapa2` when those paths exist. If the user asks to link every repo, register each existing Git checkout as its own project and use a clear title that matches its remote. Do not register missing submodule paths.
 - Verify each registered workspace resolves to the shared Kennis directory and can read `Kennis/01-navigation.md`. Leave automatic pulling disabled unless the user asks for it.
 
 ## Set up dependencies within the download limit

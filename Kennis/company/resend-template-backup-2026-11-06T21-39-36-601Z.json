@@ -1,0 +1,478 @@
+{
+  "createdAt": "2026-11-06T21:39:36.610Z",
+  "description": "Resend response snapshots; null content means unavailable, not necessarily empty.",
+  "records": [
+    {
+      "name": "MagisData — hoe we werken",
+      "alias": "magisdata-hoe-we-werken",
+      "id": "d05c43ea-63aa-4f74-99a8-02270f50c432",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — hoe we werken\nID: d05c43ea-63aa-4f74-99a8-02270f50c432\nStatus: draft\nAlias: magisdata-hoe-we-werken\nSubject: Hoe werkt een AI-systeem in de praktijk?\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:31:30.386599+00\nUpdated at: 2026-11-06 21:31:30.412+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Hoe werkt een AI-systeem in de praktijk?</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:40px;padding-right:28px;padding-bottom:40px;padding-left:28px;font-family:Inter,Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#171c2b;font-weight:700;\">Van terugkerend werk naar een werkend systeem.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek beeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:28px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#171c2b;\">Waar kost terugkerend werk je elke week opnieuw tijd? Vaak zit de grootste kans in een proces dat uit veel kleine stappen bestaat.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#171c2b;\">Bij MagisData beginnen we met dat proces: wat komt er binnen, welke informatie is nodig en waar wil je zelf de controle houden?</p><p style=\"margin-top:0;margin-bottom:26px;font-size:16px;line-height:1.65;color:#171c2b;\">Heb je zo’n proces in gedachten? Beantwoord deze mail gerust met een korte beschrijving. Dan denk ik met je mee over een passende eerste stap.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#171c2b;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#dfe4f0;padding-top:16px;font-size:14px;line-height:1.5;color:#5f6880;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#3d45d7;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nVAN TERUGKEREND WERK NAAR EEN WERKEND SYSTEEM.\n\nWaar kost terugkerend werk je elke week opnieuw tijd? Vaak zit de grootste kans\nin een proces dat uit veel kleine stappen bestaat.\n\nBij MagisData beginnen we met dat proces: wat komt er binnen, welke informatie\nis nodig en waar wil je zelf de controle houden?\n\nHeb je zo’n proces in gedachten? Beantwoord deze mail gerust met een korte\nbeschrijving. Dan denk ik met je mee over een passende eerste stap.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — welkom en samenwerking",
+      "alias": "magisdata-welkom-samenwerking",
+      "id": "fe6725d5-41c1-46b4-abb9-d56bf803dc10",
+      "retain": true,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — welkom en samenwerking\nID: fe6725d5-41c1-46b4-abb9-d56bf803dc10\nStatus: draft\nAlias: magisdata-welkom-samenwerking\nSubject: Welkom bij MagisData\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:25:08.451281+00\nUpdated at: 2026-11-06 21:25:08.481+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Welkom bij MagisData</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:40px;padding-right:28px;padding-bottom:40px;padding-left:28px;font-family:Inter,Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#171c2b;font-weight:700;\">Fijn dat we gaan samenwerken.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek beeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:28px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#171c2b;\">Welkom bij MagisData. Ik kijk ernaar uit om samen te ontdekken waar we terugkerend werk uit handen kunnen nemen.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#171c2b;\">We beginnen bij hoe je nu werkt en wat voor jou belangrijk is. Van daaruit bepalen we samen de volgende stap.</p><p style=\"margin-top:0;margin-bottom:26px;font-size:16px;line-height:1.65;color:#171c2b;\">Heb je alvast vragen of iets dat je wilt delen? Je kunt deze e-mail gewoon beantwoorden.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#171c2b;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#dfe4f0;padding-top:16px;font-size:14px;line-height:1.5;color:#5f6880;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#3d45d7;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nFIJN DAT WE GAAN SAMENWERKEN.\n\nWelkom bij MagisData. Ik kijk ernaar uit om samen te ontdekken waar we\nterugkerend werk uit handen kunnen nemen.\n\nWe beginnen bij hoe je nu werkt en wat voor jou belangrijk is. Van daaruit\nbepalen we samen de volgende stap.\n\nHeb je alvast vragen of iets dat je wilt delen? Je kunt deze e-mail gewoon\nbeantwoorden.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — voorbereiding kennismaking",
+      "alias": "magisdata-voorbereiding-kennismaking",
+      "id": "6f929507-bbd7-4345-9baf-aa85aaab5469",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voorbereiding kennismaking\nID: 6f929507-bbd7-4345-9baf-aa85aaab5469\nStatus: draft\nAlias: magisdata-voorbereiding-kennismaking\nSubject: Ter voorbereiding op ons gesprek\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:20:24.568718+00\nUpdated at: 2026-11-06 21:20:24.589+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Ter voorbereiding op ons gesprek</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Tot snel bij onze kennismaking.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Ik kijk ernaar uit om meer over je bedrijf en je vragen te horen.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Denk voor ons gesprek gerust alvast na over welk terugkerend werk jou of je team de meeste tijd kost. Je hoeft verder niets voor te bereiden.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">[Voeg hier de datum, tijd en locatie of gesprekslink toe.]</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nTOT SNEL BIJ ONZE KENNISMAKING.\n\nIk kijk ernaar uit om meer over je bedrijf en je vragen te horen.\n\nDenk voor ons gesprek gerust alvast na over welk terugkerend werk jou of je team\nde meeste tijd kost. Je hoeft verder niets voor te bereiden.\n\n[Voeg hier de datum, tijd en locatie of gesprekslink toe.]\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — aanvraag ontvangen (vernieuwd)",
+      "alias": "magisdata-aanvraag-vernieuwd",
+      "id": "4e7161fa-b69b-424e-bb62-7d6ada7ad99d",
+      "retain": true,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — aanvraag ontvangen (vernieuwd)\nID: 4e7161fa-b69b-424e-bb62-7d6ada7ad99d\nStatus: draft\nAlias: magisdata-aanvraag-vernieuwd\nSubject: Je aanvraag is ontvangen\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:20:24.098484+00\nUpdated at: 2026-11-06 21:20:24.118+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Je aanvraag is ontvangen</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Bedankt voor je aanvraag.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Je bericht is goed ontvangen. Fijn dat je met ons wilt kijken waar AI werk uit handen kan nemen.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Ik bekijk je vraag en neem contact met je op om de mogelijkheden te bespreken.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Wil je nog iets toevoegen? Beantwoord dan gerust deze e-mail.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nBEDANKT VOOR JE AANVRAAG.\n\nJe bericht is goed ontvangen. Fijn dat je met ons wilt kijken waar AI werk uit\nhanden kan nemen.\n\nIk bekijk je vraag en neem contact met je op om de mogelijkheden te bespreken.\n\nWil je nog iets toevoegen? Beantwoord dan gerust deze e-mail.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — na oplevering (vernieuwd)",
+      "alias": "magisdata-na-oplevering-vernieuwd",
+      "id": "b5a94359-05d2-4064-9344-82f1c06efd88",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — na oplevering (vernieuwd)\nID: b5a94359-05d2-4064-9344-82f1c06efd88\nStatus: draft\nAlias: magisdata-na-oplevering-vernieuwd\nSubject: Hoe gaat het met je systeem?\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:19:33.418118+00\nUpdated at: 2026-11-06 21:19:33.441+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Hoe gaat het met je systeem?</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Hoe gaat het in de praktijk?</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Ik ben benieuwd hoe het systeem voor je werkt sinds de oplevering.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Zijn er dingen die goed gaan, vragen die opkomen of stappen die nog makkelijker kunnen? Jouw ervaring helpt om te zien wat er nodig is.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Laat het gerust weten door op deze mail te reageren. Ik denk graag met je mee.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nHOE GAAT HET IN DE PRAKTIJK?\n\nIk ben benieuwd hoe het systeem voor je werkt sinds de oplevering.\n\nZijn er dingen die goed gaan, vragen die opkomen of stappen die nog makkelijker\nkunnen? Jouw ervaring helpt om te zien wat er nodig is.\n\nLaat het gerust weten door op deze mail te reageren. Ik denk graag met je mee.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — oplevering (vernieuwd)",
+      "alias": "magisdata-oplevering-vernieuwd",
+      "id": "c459b1b9-fe31-4315-b1c4-02ba08a4b0fb",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — oplevering (vernieuwd)\nID: c459b1b9-fe31-4315-b1c4-02ba08a4b0fb\nStatus: draft\nAlias: magisdata-oplevering-vernieuwd\nSubject: Klaar om ermee aan de slag te gaan\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:19:32.946125+00\nUpdated at: 2026-11-06 21:19:32.97+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Klaar om ermee aan de slag te gaan</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Je systeem staat klaar.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Fijn dat we samen aan de slag zijn gegaan. Het is tijd om te laten zien wat er is gemaakt en hoe je ermee verder kunt.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">[Beschrijf hier wat is opgeleverd en voeg de relevante links of bestanden toe.]</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Neem het rustig door. Loop je ergens tegenaan of wil je iets bespreken? Stuur me gerust een bericht.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nJE SYSTEEM STAAT KLAAR.\n\nFijn dat we samen aan de slag zijn gegaan. Het is tijd om te laten zien wat er\nis gemaakt en hoe je ermee verder kunt.\n\n[Beschrijf hier wat is opgeleverd en voeg de relevante links of bestanden toe.]\n\nNeem het rustig door. Loop je ergens tegenaan of wil je iets bespreken? Stuur me\ngerust een bericht.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — voortgangsupdate (vernieuwd)",
+      "alias": "magisdata-voortgang-vernieuwd",
+      "id": "95fdb041-04dc-4ccb-8f57-de8ad2ad34b1",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voortgangsupdate (vernieuwd)\nID: 95fdb041-04dc-4ccb-8f57-de8ad2ad34b1\nStatus: draft\nAlias: magisdata-voortgang-vernieuwd\nSubject: Een update over onze samenwerking\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:19:32.470647+00\nUpdated at: 2026-11-06 21:19:32.495+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Een update over onze samenwerking</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Een korte update.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Ik houd je graag op de hoogte van de voortgang.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">[Beschrijf hier wat is afgerond en waar je nu aan werkt.]</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">[Beschrijf hier de volgende stap en eventuele punten die je samen wilt bespreken.]</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nEEN KORTE UPDATE.\n\nIk houd je graag op de hoogte van de voortgang.\n\n[Beschrijf hier wat is afgerond en waar je nu aan werkt.]\n\n[Beschrijf hier de volgende stap en eventuele punten die je samen wilt\nbespreken.]\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — start samenwerking (vernieuwd)",
+      "alias": "magisdata-start-vernieuwd",
+      "id": "0c442276-7cc7-4efb-8968-e61a126c1f03",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — start samenwerking (vernieuwd)\nID: 0c442276-7cc7-4efb-8968-e61a126c1f03\nStatus: draft\nAlias: magisdata-start-vernieuwd\nSubject: We gaan van start\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:19:32.013186+00\nUpdated at: 2026-11-06 21:19:32.033+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>We gaan van start</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Fijn dat we gaan samenwerken.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Mooi dat we samen aan de slag gaan. Ik kijk ernaar uit om je bedrijf en je manier van werken verder te leren kennen.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">We stemmen samen af wat er nodig is om te beginnen en wat de volgende stap wordt.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Heb je alvast vragen of informatie die je wilt delen? Reageer gerust op deze mail.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nFIJN DAT WE GAAN SAMENWERKEN.\n\nMooi dat we samen aan de slag gaan. Ik kijk ernaar uit om je bedrijf en je\nmanier van werken verder te leren kennen.\n\nWe stemmen samen af wat er nodig is om te beginnen en wat de volgende stap\nwordt.\n\nHeb je alvast vragen of informatie die je wilt delen? Reageer gerust op deze\nmail.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — voorstel (vernieuwd)",
+      "alias": "magisdata-voorstel-vernieuwd",
+      "id": "92a11442-9694-48af-aa81-83231a7259db",
+      "retain": true,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voorstel (vernieuwd)\nID: 92a11442-9694-48af-aa81-83231a7259db\nStatus: draft\nAlias: magisdata-voorstel-vernieuwd\nSubject: Het voorstel voor jouw bedrijf\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:19:31.532458+00\nUpdated at: 2026-11-06 21:19:31.58+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Het voorstel voor jouw bedrijf</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Een volgende stap voor jouw bedrijf.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Bedankt voor het gesprek en het delen van je plannen.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">In het voorstel vind je hoe we jouw vraag kunnen aanpakken. Neem het rustig door; ik licht het graag toe.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Heb je vragen of wil je iets aanvullen? Reageer gerust op deze mail.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nEEN VOLGENDE STAP VOOR JOUW BEDRIJF.\n\nBedankt voor het gesprek en het delen van je plannen.\n\nIn het voorstel vind je hoe we jouw vraag kunnen aanpakken. Neem het rustig\ndoor; ik licht het graag toe.\n\nHeb je vragen of wil je iets aanvullen? Reageer gerust op deze mail.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — na kennismaking (vernieuwd)",
+      "alias": "magisdata-kennismaking-vernieuwd",
+      "id": "e82d2a92-21cf-4b13-a60f-2b65c6b2d3df",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — na kennismaking (vernieuwd)\nID: e82d2a92-21cf-4b13-a60f-2b65c6b2d3df\nStatus: draft\nAlias: magisdata-kennismaking-vernieuwd\nSubject: Fijn om kennis te maken\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:19:31.071082+00\nUpdated at: 2026-11-06 21:19:31.089+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Fijn om kennis te maken</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Bedankt voor het gesprek.</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Fijn om kennis te maken en meer te horen over je bedrijf en de werkzaamheden die tijd kosten.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Ik zet de belangrijkste punten uit ons gesprek op een rij en kom bij je terug over de mogelijkheden.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Heb je in de tussentijd nog iets dat ik mee moet nemen? Je kunt gewoon op deze mail reageren.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nBEDANKT VOOR HET GESPREK.\n\nFijn om kennis te maken en meer te horen over je bedrijf en de werkzaamheden die\ntijd kosten.\n\nIk zet de belangrijkste punten uit ons gesprek op een rij en kom bij je terug\nover de mogelijkheden.\n\nHeb je in de tussentijd nog iets dat ik mee moet nemen? Je kunt gewoon op deze\nmail reageren.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — voorstel opvolgen (vernieuwd)",
+      "alias": "magisdata-voorstel-opvolgen-vernieuwd",
+      "id": "db4b151a-514c-480a-ac2f-f55f6e28b844",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voorstel opvolgen (vernieuwd)\nID: db4b151a-514c-480a-ac2f-f55f6e28b844\nStatus: draft\nAlias: magisdata-voorstel-opvolgen-vernieuwd\nSubject: Even terugkomen op het voorstel\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 21:18:38.91925+00\nUpdated at: 2026-11-06 21:18:38.942+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>Even terugkomen op het voorstel</title></head><body style=\"margin:0;background-color:#ffffff;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#ffffff;\"><tr><td align=\"center\" bgcolor=\"#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"max-width:600px;background-color:#ffffff;\"><tr><td bgcolor=\"#ffffff\" style=\"padding-top:36px;padding-right:28px;padding-bottom:36px;padding-left:28px;font-family:Arial,Helvetica,sans-serif;\"><h1 style=\"margin-top:0;margin-bottom:24px;font-size:30px;line-height:1.2;color:#102c43;font-weight:700;\">Heb je het voorstel kunnen bekijken?</h1><img src=\"https://magisdata.nl/assets/magisdata-hero.png\" alt=\"Klassiek standbeeld met blauwe digitale details\" width=\"544\" height=\"306\" border=\"0\" style=\"display:block;width:100%;max-width:544px;height:auto;border:0;\"><p style=\"margin-top:26px;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Ik kom nog even terug op het voorstel dat ik je heb gestuurd.</p><p style=\"margin-top:0;margin-bottom:18px;font-size:16px;line-height:1.65;color:#20354a;\">Misschien heb je nog vragen of zijn je plannen veranderd. Ik denk graag met je mee over wat past bij jouw situatie.</p><p style=\"margin-top:0;margin-bottom:24px;font-size:16px;line-height:1.65;color:#20354a;\">Laat gerust weten wat je ervan vindt door op deze mail te reageren. Dan bekijken we samen de volgende stap.</p><p style=\"margin-top:0;margin-bottom:32px;font-size:16px;line-height:1.65;color:#20354a;\">Groet,<br>Daniel</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td style=\"border-top-width:1px;border-top-style:solid;border-top-color:#e1e7ed;padding-top:16px;font-size:14px;line-height:1.5;color:#486175;\">MagisData &middot; <a href=\"https://magisdata.nl/\" style=\"font-size:14px;line-height:1.5;color:#174a70;text-decoration:underline;\">magisdata.nl</a></td></tr></table></td></tr></table></td></tr></table></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nHEB JE HET VOORSTEL KUNNEN BEKIJKEN?\n\nIk kom nog even terug op het voorstel dat ik je heb gestuurd.\n\nMisschien heb je nog vragen of zijn je plannen veranderd. Ik denk graag met je\nmee over wat past bij jouw situatie.\n\nLaat gerust weten wat je ervan vindt door op deze mail te reageren. Dan bekijken\nwe samen de volgende stap.\n\nGroet,\nDaniel\n\nMagisData · magisdata.nl https://magisdata.nl/"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "MagisData — na oplevering",
+      "alias": "magisdata-na-oplevering",
+      "id": "b728fd85-ce9f-45df-9477-87e648b26ca3",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — na oplevering\nID: b728fd85-ce9f-45df-9477-87e648b26ca3\nStatus: draft\nAlias: magisdata-na-oplevering\nSubject: Hoe gaat het met je systeem?\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 19:23:27.763317+00\nUpdated at: 2026-11-06 21:14:28.675+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — oplevering",
+      "alias": "magisdata-oplevering",
+      "id": "fcc53172-3199-4569-9f1c-d7069b1714b3",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — oplevering\nID: fcc53172-3199-4569-9f1c-d7069b1714b3\nStatus: draft\nAlias: magisdata-oplevering\nSubject: Klaar om ermee aan de slag te gaan\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 19:23:25.368662+00\nUpdated at: 2026-11-06 21:14:27.512+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — voorstel opvolgen",
+      "alias": "magisdata-voorstel-opvolgen",
+      "id": "50fb8672-e6ef-4fab-8fec-aaf5b8a2aa66",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voorstel opvolgen\nID: 50fb8672-e6ef-4fab-8fec-aaf5b8a2aa66\nStatus: draft\nAlias: magisdata-voorstel-opvolgen\nSubject: Even terugkomen op het voorstel\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 19:23:23.000182+00\nUpdated at: 2026-11-06 21:14:26.9+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — voortgangsupdate",
+      "alias": "magisdata-voortgangsupdate",
+      "id": "e1d04bdd-ad29-4ed0-bf01-ad18e33f7d60",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voortgangsupdate\nID: e1d04bdd-ad29-4ed0-bf01-ad18e33f7d60\nStatus: draft\nAlias: magisdata-voortgangsupdate\nSubject: Een update over onze samenwerking\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 18:52:26.749434+00\nUpdated at: 2026-11-06 21:14:25.588+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — start samenwerking",
+      "alias": "magisdata-start-samenwerking",
+      "id": "ff6dd8b1-e9f9-4122-883d-1c0cb597efc1",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — start samenwerking\nID: ff6dd8b1-e9f9-4122-883d-1c0cb597efc1\nStatus: draft\nAlias: magisdata-start-samenwerking\nSubject: We gaan van start\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 18:52:24.303004+00\nUpdated at: 2026-11-06 21:14:25.066+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — voorstel",
+      "alias": "magisdata-voorstel",
+      "id": "1b56b986-d7f2-4896-b6c9-1ffb8a2d7f87",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — voorstel\nID: 1b56b986-d7f2-4896-b6c9-1ffb8a2d7f87\nStatus: draft\nAlias: magisdata-voorstel\nSubject: Ons voorstel voor jouw bedrijf\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 18:52:21.906081+00\nUpdated at: 2026-11-06 21:14:24.292+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — na kennismaking",
+      "alias": "magisdata-na-kennismaking",
+      "id": "9f7a85d1-a82c-418b-b2be-7fc220fb5e24",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — na kennismaking\nID: 9f7a85d1-a82c-418b-b2be-7fc220fb5e24\nStatus: draft\nAlias: magisdata-na-kennismaking\nSubject: Fijn om kennis te maken\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 18:52:19.445284+00\nUpdated at: 2026-11-06 21:14:23.768+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\nnull"
+        }
+      ],
+      "tiptap": "Existing TipTap JSON content:\n\nnull"
+    },
+    {
+      "name": "MagisData — aanvraag ontvangen",
+      "alias": "magisdata-aanvraag-ontvangen",
+      "id": "15dfd5a4-c999-4d46-beb7-0ba3af53dfc6",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: MagisData — aanvraag ontvangen\nID: 15dfd5a4-c999-4d46-beb7-0ba3af53dfc6\nStatus: draft\nAlias: magisdata-aanvraag-ontvangen\nSubject: Je aanvraag is ontvangen\nFrom: Daniel van MagisData <contact@magisdata.nl>\nReply-to: \nCreated at: 2026-11-06 18:44:43.846977+00\nUpdated at: 2026-11-06 21:14:22.583+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\nnone"
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html dir=\"ltr\" lang=\"en\"><head><meta content=\"width=device-width\" name=\"viewport\"/><meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\"/><meta name=\"x-apple-disable-message-reformatting\"/><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\"/><meta name=\"x-apple-disable-message-reformatting\"/><meta content=\"telephone=no,address=no,email=no,date=no,url=no\" name=\"format-detection\"/><style>@media (prefers-color-scheme: dark){li::marker{color:#c4c4c4}}</style></head><body dir=\"ltr\" lang=\"en\"><!--$--><!--html--><!--head--><!--body--><table border=\"0\" width=\"100%\" cellPadding=\"0\" cellSpacing=\"0\" role=\"presentation\" align=\"center\"><tbody><tr><td dir=\"ltr\" lang=\"en\" style=\"font-family:-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, &#x27;Roboto&#x27;, &#x27;Oxygen&#x27;, &#x27;Ubuntu&#x27;, &#x27;Cantarell&#x27;, &#x27;Fira Sans&#x27;, &#x27;Droid Sans&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif;font-size:14px;min-height:100%;line-height:155%\"><table align=\"center\" width=\"100%\" border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" role=\"presentation\" style=\"max-width:600px;width:100%;align:center\"><tbody><tr style=\"width:100%\"><td style=\"padding-top:36px;padding-right:32px;padding-bottom:36px;padding-left:32px\"><h1 style=\"margin:0;padding:0;font-size:32px;line-height:1.2;padding-top:24px;font-weight:600;color:#102c43;padding-bottom:12px\">Bedankt voor je aanvraag.</h1><table align=\"center\" width=\"100%\" border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" role=\"presentation\"><tbody style=\"width:100%\"><tr style=\"width:100%\"><td align=\"center\" data-id=\"__react-email-column\"><img alt=\"Blauw-wit beeld van een klassiek standbeeld\" src=\"https://magisdata.nl/assets/magisdata-hero.png\" style=\"display:block;outline:none;border:none;text-decoration:none;max-width:100%;height:auto\" width=\"100%\"/></td></tr></tbody></table><p style=\"margin:0;padding:0;font-size:16px;padding-top:10px;padding-bottom:10px;color:#20354a;line-height:1.65\">We hebben je bericht goed ontvangen. Fijn dat je met ons wilt kijken waar AI werk uit handen kan nemen.</p><p style=\"margin:0;padding:0;font-size:16px;padding-top:10px;padding-bottom:10px;color:#20354a;line-height:1.65\">We bekijken je vraag en nemen contact met je op om de mogelijkheden te bespreken.</p><p style=\"margin:0;padding:0;font-size:16px;padding-top:10px;padding-bottom:10px;color:#20354a;line-height:1.65\">Wil je nog iets toevoegen? Beantwoord dan gerust deze e-mail.</p><p style=\"margin:0;padding:0;font-size:16px;padding-top:10px;padding-bottom:10px;color:#20354a;line-height:1.65\">Tot snel,<br/>Daniel</p><table align=\"center\" width=\"100%\" border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" role=\"presentation\" class=\"node-footer\" style=\"font-size:0.8em\"><tbody><tr><td style=\"padding-top:32px\"><hr class=\"divider\" style=\"width:100%;border:none;border-color:transparent;border-top:1px solid #eaeaea;padding-bottom:1em;border-style:solid;border-width:0;border-top-width:2px\"/><p style=\"margin:0;padding:0;font-size:14px;padding-top:14px;padding-bottom:0.5em;color:#486175;line-height:1.5\">MagisData · <a href=\"https://magisdata.nl/\" rel=\"noopener noreferrer nofollow\" style=\"color:#0670DB;text-decoration-line:none;text-decoration:underline\" target=\"_blank\">magisdata.nl</a></p></td></tr></tbody></table></td></tr></tbody></table><p style=\"margin:0;padding:0;font-size:1em;padding-top:0.5em;padding-bottom:0.5em;color:#20354a\"><br/></p><p style=\"margin:0;padding:0;font-size:1em;padding-top:0.5em;padding-bottom:0.5em;color:#20354a\"><br/></p></td></tr></tbody></table><!--/$--></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nBEDANKT VOOR JE AANVRAAG.\n\n\n\nWe hebben je bericht goed ontvangen. Fijn dat je met ons wilt kijken waar AI werk uit handen kan nemen.\n\nWe bekijken je vraag en nemen contact met je op om de mogelijkheden te bespreken.\n\nWil je nog iets toevoegen? Beantwoord dan gerust deze e-mail.\n\nTot snel,\nDaniel\n\n----------------------------------------\n\nMagisData · magisdata.nl https://magisdata.nl/\n\n\n\n\n\n"
+        }
+      ],
+      "tiptap": null
+    },
+    {
+      "name": "Welcome Onboarding",
+      "alias": "welcome-onboarding",
+      "id": "a68813ea-c273-4f37-9556-041e570d2482",
+      "retain": false,
+      "template": [
+        {
+          "type": "text",
+          "text": "Name: Welcome Onboarding\nID: a68813ea-c273-4f37-9556-041e570d2482\nStatus: draft\nAlias: welcome-onboarding\nSubject: Ons pad samen. \nFrom: Contact <contact@magisdata.nl>\nReply-to: none\nCreated at: 2026-11-06 18:13:10.009693+00\nUpdated at: 2026-11-06 18:33:12.824+00\nPublished at: never"
+        },
+        {
+          "type": "text",
+          "text": "Variables:\n  {{{Klantnaam}}} (string) — fallback:  "
+        },
+        {
+          "type": "text",
+          "text": "HTML:\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html dir=\"ltr\" lang=\"en\"><head><meta content=\"width=device-width\" name=\"viewport\"/><meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\"/><meta name=\"x-apple-disable-message-reformatting\"/><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\"/><meta name=\"x-apple-disable-message-reformatting\"/><meta content=\"telephone=no,address=no,email=no,date=no,url=no\" name=\"format-detection\"/><style>@media (prefers-color-scheme: dark){li::marker{color:#c4c4c4}}</style></head><body dir=\"ltr\" lang=\"en\"><!--$--><!--html--><!--head--><!--body--><table border=\"0\" width=\"100%\" cellPadding=\"0\" cellSpacing=\"0\" role=\"presentation\" align=\"center\"><tbody><tr><td dir=\"ltr\" lang=\"en\" style=\"font-family:-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, &#x27;Roboto&#x27;, &#x27;Oxygen&#x27;, &#x27;Ubuntu&#x27;, &#x27;Cantarell&#x27;, &#x27;Fira Sans&#x27;, &#x27;Droid Sans&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif;font-size:1em;min-height:100%;line-height:155%\"><table align=\"center\" width=\"100%\" border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" role=\"presentation\" style=\"max-width:600px;align:center;width:100%;border-radius:0px;line-height:155%\"><tbody><tr style=\"width:100%\"><td style=\"padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px\"><h1 style=\"margin:0;padding:0;font-size:42px;line-height:1.44em;padding-top:0.389em;font-weight:600;text-align:center\">Welkom bij magisdata</h1><img alt=\"Een klassiek standbeeld dat overgaat in digitale stippen, met de tekst &quot;Samen onderweg naar de toekomst\" src=\"https://resend-attachments.s3.amazonaws.com/ar-agr8V50nYpXPPm7rKj2/19358ac2-b8ed-47ba-96ac-b15f23eebb13\" style=\"display:block;outline:none;border:none;text-decoration:none;max-width:100%;border-radius:8px;height:auto\" width=\"100%\"/><p style=\"margin:0;padding:0;font-size:1em;padding-top:0.5em;padding-bottom:0.5em\"><br/></p><p style=\"margin:0;padding:0;font-size:1em;padding-top:0.5em;padding-bottom:0.5em\">{{{Klantnaam}}}</p></td></tr></tbody></table></td></tr></tbody></table><!--/$--></body></html>"
+        },
+        {
+          "type": "text",
+          "text": "Text:\nWELKOM BIJ MAGISDATA\n\n\n\n\n{{{Klantnaam}}}"
+        }
+      ],
+      "tiptap": null
+    }
+  ]
+}

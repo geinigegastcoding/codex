@@ -1,0 +1,720 @@
+{
+  "retrieved": "2026-10-24",
+  "task": "Research distinctive visual directions for an Android app that helps people interrupt automatic scrolling and open apps intentionally.",
+  "searches": [
+    {
+      "key": "blockers",
+      "query": "screen time app home screen",
+      "screens": [
+        {
+          "id": "e09ab022-2a22-4f25-9187-0b672a220a61",
+          "image_url": "https://mobbin.com/api/mcp/short/amLn4gFe",
+          "mobbin_url": "https://mobbin.com/screens/e09ab022-2a22-4f25-9187-0b672a220a61",
+          "app_name": "Insight Timer",
+          "platform": "ios"
+        },
+        {
+          "id": "1e81e6f2-25ef-4787-8471-1fc3448d9688",
+          "image_url": "https://mobbin.com/api/mcp/short/sMwqzbC3",
+          "mobbin_url": "https://mobbin.com/screens/1e81e6f2-25ef-4787-8471-1fc3448d9688",
+          "app_name": "Jomo",
+          "platform": "ios"
+        },
+        {
+          "id": "fb90ee25-28c8-43b7-9736-ba35e8db5da3",
+          "image_url": "https://mobbin.com/api/mcp/short/yD48FBpG",
+          "mobbin_url": "https://mobbin.com/screens/fb90ee25-28c8-43b7-9736-ba35e8db5da3",
+          "app_name": "Future Pro",
+          "platform": "ios"
+        },
+        {
+          "id": "fc3f2fbd-6a46-4fbb-94ca-90aae5db1ec5",
+          "image_url": "https://mobbin.com/api/mcp/short/LEEHbBNh",
+          "mobbin_url": "https://mobbin.com/screens/fc3f2fbd-6a46-4fbb-94ca-90aae5db1ec5",
+          "app_name": "Opal",
+          "platform": "ios"
+        },
+        {
+          "id": "d4e84c64-5a07-412b-9ad7-54ede0b988ef",
+          "image_url": "https://mobbin.com/api/mcp/short/PeHdRfzR",
+          "mobbin_url": "https://mobbin.com/screens/d4e84c64-5a07-412b-9ad7-54ede0b988ef",
+          "app_name": "Brick",
+          "platform": "ios"
+        },
+        {
+          "id": "ce1de9eb-443f-4c3e-a629-1a1cefe49515",
+          "image_url": "https://mobbin.com/api/mcp/short/o08Fgb2x",
+          "mobbin_url": "https://mobbin.com/screens/ce1de9eb-443f-4c3e-a629-1a1cefe49515",
+          "app_name": "Hulu",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "intentions",
+      "query": "one sec app opening intervention",
+      "screens": [
+        {
+          "id": "1a5fccc9-e92f-493f-ac2c-8eb92927e95e",
+          "image_url": "https://mobbin.com/api/mcp/short/Wldqkhba",
+          "mobbin_url": "https://mobbin.com/screens/1a5fccc9-e92f-493f-ac2c-8eb92927e95e",
+          "app_name": "One",
+          "platform": "ios"
+        },
+        {
+          "id": "b431c1cd-aece-45d1-b483-8314bf9d2756",
+          "image_url": "https://mobbin.com/api/mcp/short/58wJEXVx",
+          "mobbin_url": "https://mobbin.com/screens/b431c1cd-aece-45d1-b483-8314bf9d2756",
+          "app_name": "One",
+          "platform": "ios"
+        },
+        {
+          "id": "99fa9f5f-b28c-4014-b28a-4cb7f83a80bf",
+          "image_url": "https://mobbin.com/api/mcp/short/S8sSaYSl",
+          "mobbin_url": "https://mobbin.com/screens/99fa9f5f-b28c-4014-b28a-4cb7f83a80bf",
+          "app_name": "One",
+          "platform": "ios"
+        },
+        {
+          "id": "4c605cc1-5502-4543-a0e8-20bb6ebaec83",
+          "image_url": "https://mobbin.com/api/mcp/short/E620eTKd",
+          "mobbin_url": "https://mobbin.com/screens/4c605cc1-5502-4543-a0e8-20bb6ebaec83",
+          "app_name": "One",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "opal",
+      "query": "Opal focus session",
+      "screens": [
+        {
+          "id": "ff22ffa6-d47e-4f5a-a06c-78bdaea733f6",
+          "image_url": "https://mobbin.com/api/mcp/short/XF2epMy2",
+          "mobbin_url": "https://mobbin.com/screens/ff22ffa6-d47e-4f5a-a06c-78bdaea733f6",
+          "app_name": "Opal",
+          "platform": "ios"
+        },
+        {
+          "id": "f4a87447-8dde-4111-ad25-2f264eff24ab",
+          "image_url": "https://mobbin.com/api/mcp/short/aCwhU6Jw",
+          "mobbin_url": "https://mobbin.com/screens/f4a87447-8dde-4111-ad25-2f264eff24ab",
+          "app_name": "Opal",
+          "platform": "ios"
+        },
+        {
+          "id": "ef91eca7-9f2b-4980-b222-7a5ab0249cd9",
+          "image_url": "https://mobbin.com/api/mcp/short/KVbvDBGf",
+          "mobbin_url": "https://mobbin.com/screens/ef91eca7-9f2b-4980-b222-7a5ab0249cd9",
+          "app_name": "Opal",
+          "platform": "ios"
+        },
+        {
+          "id": "ec7042c0-5e04-4fbd-bedc-5747a9662074",
+          "image_url": "https://mobbin.com/api/mcp/short/QgX6ll9T",
+          "mobbin_url": "https://mobbin.com/screens/ec7042c0-5e04-4fbd-bedc-5747a9662074",
+          "app_name": "Opal",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "jomo",
+      "query": "Jomo blocking rules",
+      "screens": [
+        {
+          "id": "ff9de1b3-3548-467b-bc94-85a305a62ba0",
+          "image_url": "https://mobbin.com/api/mcp/short/sYtUzZZT",
+          "mobbin_url": "https://mobbin.com/screens/ff9de1b3-3548-467b-bc94-85a305a62ba0",
+          "app_name": "Jomo",
+          "platform": "ios"
+        },
+        {
+          "id": "f47f84b0-a863-41bb-aa7f-41539b523401",
+          "image_url": "https://mobbin.com/api/mcp/short/iEAiFWSd",
+          "mobbin_url": "https://mobbin.com/screens/f47f84b0-a863-41bb-aa7f-41539b523401",
+          "app_name": "Jomo",
+          "platform": "ios"
+        },
+        {
+          "id": "f3008dde-4f15-4652-afa9-a49c9c397724",
+          "image_url": "https://mobbin.com/api/mcp/short/PZmTyI86",
+          "mobbin_url": "https://mobbin.com/screens/f3008dde-4f15-4652-afa9-a49c9c397724",
+          "app_name": "Jomo",
+          "platform": "ios"
+        },
+        {
+          "id": "ef76690d-ddc7-431c-9c19-4b63190ca03d",
+          "image_url": "https://mobbin.com/api/mcp/short/1wRIZJU8",
+          "mobbin_url": "https://mobbin.com/screens/ef76690d-ddc7-431c-9c19-4b63190ca03d",
+          "app_name": "Jomo",
+          "platform": "ios"
+        },
+        {
+          "id": "dd1cc854-dcec-4abe-ac7e-6571b745a712",
+          "image_url": "https://mobbin.com/api/mcp/short/9imRgqxN",
+          "mobbin_url": "https://mobbin.com/screens/dd1cc854-dcec-4abe-ac7e-6571b745a712",
+          "app_name": "Jomo",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "brick",
+      "query": "Brick home screen",
+      "screens": []
+    },
+    {
+      "key": "endel",
+      "query": "Endel home screen",
+      "screens": []
+    },
+    {
+      "key": "headspace",
+      "query": "Headspace meditation",
+      "screens": [
+        {
+          "id": "efc82d96-660f-4e91-bff9-1f3d083c34eb",
+          "image_url": "https://mobbin.com/api/mcp/short/7yT3vius",
+          "mobbin_url": "https://mobbin.com/screens/efc82d96-660f-4e91-bff9-1f3d083c34eb",
+          "app_name": "Headspace",
+          "platform": "ios"
+        },
+        {
+          "id": "d5b9ff12-33e0-4ec4-ae64-82c70e68ba0d",
+          "image_url": "https://mobbin.com/api/mcp/short/JWhr6dew",
+          "mobbin_url": "https://mobbin.com/screens/d5b9ff12-33e0-4ec4-ae64-82c70e68ba0d",
+          "app_name": "Headspace",
+          "platform": "ios"
+        },
+        {
+          "id": "cda46030-4c2b-4b7c-b6f1-6e08db0ddf96",
+          "image_url": "https://mobbin.com/api/mcp/short/O3Zs8Rs2",
+          "mobbin_url": "https://mobbin.com/screens/cda46030-4c2b-4b7c-b6f1-6e08db0ddf96",
+          "app_name": "Headspace",
+          "platform": "ios"
+        },
+        {
+          "id": "cb9c8eeb-c6d2-46e3-80b6-fe2b808916f9",
+          "image_url": "https://mobbin.com/api/mcp/short/0ZaY3dBz",
+          "mobbin_url": "https://mobbin.com/screens/cb9c8eeb-c6d2-46e3-80b6-fe2b808916f9",
+          "app_name": "Headspace",
+          "platform": "ios"
+        },
+        {
+          "id": "c7fcbf0d-0846-43a4-a0b5-89e681b6f4ce",
+          "image_url": "https://mobbin.com/api/mcp/short/0cg4NiDH",
+          "mobbin_url": "https://mobbin.com/screens/c7fcbf0d-0846-43a4-a0b5-89e681b6f4ce",
+          "app_name": "Headspace",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "oura",
+      "query": "Oura readiness",
+      "screens": [
+        {
+          "id": "f861b807-74b7-4bcb-a194-853f10408071",
+          "image_url": "https://mobbin.com/api/mcp/short/1vfCZdoD",
+          "mobbin_url": "https://mobbin.com/screens/f861b807-74b7-4bcb-a194-853f10408071",
+          "app_name": "Oura",
+          "platform": "ios"
+        },
+        {
+          "id": "f2b123f2-bf28-4fc4-83b7-b4d4a7f91ab1",
+          "image_url": "https://mobbin.com/api/mcp/short/cy7i9N6N",
+          "mobbin_url": "https://mobbin.com/screens/f2b123f2-bf28-4fc4-83b7-b4d4a7f91ab1",
+          "app_name": "Oura",
+          "platform": "ios"
+        },
+        {
+          "id": "effb9325-fdde-485f-8e3b-85bb744e8df3",
+          "image_url": "https://mobbin.com/api/mcp/short/rThhVfCH",
+          "mobbin_url": "https://mobbin.com/screens/effb9325-fdde-485f-8e3b-85bb744e8df3",
+          "app_name": "Oura",
+          "platform": "ios"
+        },
+        {
+          "id": "ddaf36f7-b2d3-4ff8-9b61-f8871f0d88b3",
+          "image_url": "https://mobbin.com/api/mcp/short/y2ehAijt",
+          "mobbin_url": "https://mobbin.com/screens/ddaf36f7-b2d3-4ff8-9b61-f8871f0d88b3",
+          "app_name": "Oura",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "stoic",
+      "query": "Stoic daily journal",
+      "screens": [
+        {
+          "id": "fe9d0245-915d-448a-9cc8-2610e7e2c6b1",
+          "image_url": "https://mobbin.com/api/mcp/short/4yd4kjK4",
+          "mobbin_url": "https://mobbin.com/screens/fe9d0245-915d-448a-9cc8-2610e7e2c6b1",
+          "app_name": "stoic.",
+          "platform": "ios"
+        },
+        {
+          "id": "29493be0-df7a-4d60-b094-81761d272482",
+          "image_url": "https://mobbin.com/api/mcp/short/hQen3i0c",
+          "mobbin_url": "https://mobbin.com/screens/29493be0-df7a-4d60-b094-81761d272482",
+          "app_name": "stoic.",
+          "platform": "ios"
+        },
+        {
+          "id": "c00fcab1-8056-49b2-8693-a57a91b3de74",
+          "image_url": "https://mobbin.com/api/mcp/short/PxtceJKK",
+          "mobbin_url": "https://mobbin.com/screens/c00fcab1-8056-49b2-8693-a57a91b3de74",
+          "app_name": "stoic.",
+          "platform": "ios"
+        },
+        {
+          "id": "261d032c-d068-472f-b1ec-cd098496f11e",
+          "image_url": "https://mobbin.com/api/mcp/short/1OQ6uEAQ",
+          "mobbin_url": "https://mobbin.com/screens/261d032c-d068-472f-b1ec-cd098496f11e",
+          "app_name": "stoic.",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "duolingo",
+      "query": "Duolingo exercise",
+      "screens": [
+        {
+          "id": "fa963b87-61a6-40be-8192-3060fe947088",
+          "image_url": "https://mobbin.com/api/mcp/short/iDWDdAG9",
+          "mobbin_url": "https://mobbin.com/screens/fa963b87-61a6-40be-8192-3060fe947088",
+          "app_name": "Duolingo",
+          "platform": "ios"
+        },
+        {
+          "id": "f9982fb3-93cb-428a-b041-42f06d4d017c",
+          "image_url": "https://mobbin.com/api/mcp/short/3SEmrOBG",
+          "mobbin_url": "https://mobbin.com/screens/f9982fb3-93cb-428a-b041-42f06d4d017c",
+          "app_name": "Duolingo",
+          "platform": "ios"
+        },
+        {
+          "id": "f7262955-3afd-4e31-ae9b-a90fdf91ea0e",
+          "image_url": "https://mobbin.com/api/mcp/short/Dl6fys3W",
+          "mobbin_url": "https://mobbin.com/screens/f7262955-3afd-4e31-ae9b-a90fdf91ea0e",
+          "app_name": "Duolingo",
+          "platform": "ios"
+        },
+        {
+          "id": "f677e276-0b54-4f01-9359-08e9c393e039",
+          "image_url": "https://mobbin.com/api/mcp/short/1a0C0Trs",
+          "mobbin_url": "https://mobbin.com/screens/f677e276-0b54-4f01-9359-08e9c393e039",
+          "app_name": "Duolingo",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "forest",
+      "query": "Forest focus timer",
+      "screens": [
+        {
+          "id": "fb6274de-c7ca-4981-b33a-d024d3945180",
+          "image_url": "https://mobbin.com/api/mcp/short/YjGfOWAp",
+          "mobbin_url": "https://mobbin.com/screens/fb6274de-c7ca-4981-b33a-d024d3945180",
+          "app_name": "Forest",
+          "platform": "ios"
+        },
+        {
+          "id": "faa0e4b3-3710-4c77-92ad-b9a0db119ac8",
+          "image_url": "https://mobbin.com/api/mcp/short/ZZfvIUAQ",
+          "mobbin_url": "https://mobbin.com/screens/faa0e4b3-3710-4c77-92ad-b9a0db119ac8",
+          "app_name": "Forest",
+          "platform": "ios"
+        },
+        {
+          "id": "efb6eb28-0c29-45d6-bd3d-324276212d83",
+          "image_url": "https://mobbin.com/api/mcp/short/vOzQu6yQ",
+          "mobbin_url": "https://mobbin.com/screens/efb6eb28-0c29-45d6-bd3d-324276212d83",
+          "app_name": "Forest",
+          "platform": "ios"
+        },
+        {
+          "id": "e90ead02-dcfc-4fb5-a20e-835b7b3b3e43",
+          "image_url": "https://mobbin.com/api/mcp/short/M5IcYGNx",
+          "mobbin_url": "https://mobbin.com/screens/e90ead02-dcfc-4fb5-a20e-835b7b3b3e43",
+          "app_name": "Forest",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "finch",
+      "query": "Finch home",
+      "screens": []
+    },
+    {
+      "key": "breathing",
+      "query": "breathing exercise screen",
+      "screens": [
+        {
+          "id": "9967cbc6-63a4-4389-8d14-8e336e156ac6",
+          "image_url": "https://mobbin.com/api/mcp/short/YHPa9w6Z",
+          "mobbin_url": "https://mobbin.com/screens/9967cbc6-63a4-4389-8d14-8e336e156ac6",
+          "app_name": "Calm Sleep",
+          "platform": "ios"
+        },
+        {
+          "id": "8cad3cd9-ead8-429c-8d48-a9fd14c76bc9",
+          "image_url": "https://mobbin.com/api/mcp/short/7XZCqwa9",
+          "mobbin_url": "https://mobbin.com/screens/8cad3cd9-ead8-429c-8d48-a9fd14c76bc9",
+          "app_name": "Life Reset",
+          "platform": "ios"
+        },
+        {
+          "id": "22a34ba5-9da8-41c2-800c-d1376abc076d",
+          "image_url": "https://mobbin.com/api/mcp/short/nyJXnWn7",
+          "mobbin_url": "https://mobbin.com/screens/22a34ba5-9da8-41c2-800c-d1376abc076d",
+          "app_name": "Breathwrk",
+          "platform": "ios"
+        },
+        {
+          "id": "b7a85dff-8e86-4211-9dec-73f5bf2ac492",
+          "image_url": "https://mobbin.com/api/mcp/short/A25OkFk9",
+          "mobbin_url": "https://mobbin.com/screens/b7a85dff-8e86-4211-9dec-73f5bf2ac492",
+          "app_name": "Opal",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "key": "things",
+      "query": "Things task list",
+      "screens": [
+        {
+          "id": "ff5ef47a-ab1f-4138-812c-f0169388180c",
+          "image_url": "https://mobbin.com/api/mcp/short/PdiGxBeF",
+          "mobbin_url": "https://mobbin.com/screens/ff5ef47a-ab1f-4138-812c-f0169388180c",
+          "app_name": "Things 3",
+          "platform": "ios"
+        },
+        {
+          "id": "feadd020-045b-477e-b54f-d4c405995a58",
+          "image_url": "https://mobbin.com/api/mcp/short/HTnqgrjV",
+          "mobbin_url": "https://mobbin.com/screens/feadd020-045b-477e-b54f-d4c405995a58",
+          "app_name": "Things 3",
+          "platform": "ios"
+        },
+        {
+          "id": "f16197bf-3c84-4272-8f80-fa8c7c03a2aa",
+          "image_url": "https://mobbin.com/api/mcp/short/7D20nMXn",
+          "mobbin_url": "https://mobbin.com/screens/f16197bf-3c84-4272-8f80-fa8c7c03a2aa",
+          "app_name": "Things 3",
+          "platform": "ios"
+        },
+        {
+          "id": "edf4fbc7-d3e0-4666-a709-4fe12f672689",
+          "image_url": "https://mobbin.com/api/mcp/short/WxV0KOtf",
+          "mobbin_url": "https://mobbin.com/screens/edf4fbc7-d3e0-4666-a709-4fe12f672689",
+          "app_name": "Things 3",
+          "platform": "ios"
+        }
+      ]
+    }
+  ],
+  "curated": [
+    {
+      "id": "f4a87447-8dde-4111-ad25-2f264eff24ab",
+      "image_url": "https://mobbin.com/api/mcp/short/aCwhU6Jw",
+      "mobbin_url": "https://mobbin.com/screens/f4a87447-8dde-4111-ad25-2f264eff24ab",
+      "app_name": "Opal",
+      "platform": "ios",
+      "search": "opal",
+      "file": "references/opal-f4a87447.webp"
+    },
+    {
+      "id": "b7a85dff-8e86-4211-9dec-73f5bf2ac492",
+      "image_url": "https://mobbin.com/api/mcp/short/A25OkFk9",
+      "mobbin_url": "https://mobbin.com/screens/b7a85dff-8e86-4211-9dec-73f5bf2ac492",
+      "app_name": "Opal",
+      "platform": "ios",
+      "search": "breathing",
+      "file": "references/opal-b7a85dff.webp"
+    },
+    {
+      "id": "ff9de1b3-3548-467b-bc94-85a305a62ba0",
+      "image_url": "https://mobbin.com/api/mcp/short/sYtUzZZT",
+      "mobbin_url": "https://mobbin.com/screens/ff9de1b3-3548-467b-bc94-85a305a62ba0",
+      "app_name": "Jomo",
+      "platform": "ios",
+      "search": "jomo",
+      "file": "references/jomo-ff9de1b3.webp"
+    },
+    {
+      "id": "ef76690d-ddc7-431c-9c19-4b63190ca03d",
+      "image_url": "https://mobbin.com/api/mcp/short/1wRIZJU8",
+      "mobbin_url": "https://mobbin.com/screens/ef76690d-ddc7-431c-9c19-4b63190ca03d",
+      "app_name": "Jomo",
+      "platform": "ios",
+      "search": "jomo",
+      "file": "references/jomo-ef76690d.webp"
+    },
+    {
+      "id": "d5b9ff12-33e0-4ec4-ae64-82c70e68ba0d",
+      "image_url": "https://mobbin.com/api/mcp/short/JWhr6dew",
+      "mobbin_url": "https://mobbin.com/screens/d5b9ff12-33e0-4ec4-ae64-82c70e68ba0d",
+      "app_name": "Headspace",
+      "platform": "ios",
+      "search": "headspace",
+      "file": "references/headspace-d5b9ff12.webp"
+    },
+    {
+      "id": "c7fcbf0d-0846-43a4-a0b5-89e681b6f4ce",
+      "image_url": "https://mobbin.com/api/mcp/short/0cg4NiDH",
+      "mobbin_url": "https://mobbin.com/screens/c7fcbf0d-0846-43a4-a0b5-89e681b6f4ce",
+      "app_name": "Headspace",
+      "platform": "ios",
+      "search": "headspace",
+      "file": "references/headspace-c7fcbf0d.webp"
+    },
+    {
+      "id": "f2b123f2-bf28-4fc4-83b7-b4d4a7f91ab1",
+      "image_url": "https://mobbin.com/api/mcp/short/cy7i9N6N",
+      "mobbin_url": "https://mobbin.com/screens/f2b123f2-bf28-4fc4-83b7-b4d4a7f91ab1",
+      "app_name": "Oura",
+      "platform": "ios",
+      "search": "oura",
+      "file": "references/oura-f2b123f2.webp"
+    },
+    {
+      "id": "261d032c-d068-472f-b1ec-cd098496f11e",
+      "image_url": "https://mobbin.com/api/mcp/short/1OQ6uEAQ",
+      "mobbin_url": "https://mobbin.com/screens/261d032c-d068-472f-b1ec-cd098496f11e",
+      "app_name": "stoic.",
+      "platform": "ios",
+      "search": "stoic",
+      "file": "references/stoic--261d032c.webp"
+    },
+    {
+      "id": "29493be0-df7a-4d60-b094-81761d272482",
+      "image_url": "https://mobbin.com/api/mcp/short/hQen3i0c",
+      "mobbin_url": "https://mobbin.com/screens/29493be0-df7a-4d60-b094-81761d272482",
+      "app_name": "stoic.",
+      "platform": "ios",
+      "search": "stoic",
+      "file": "references/stoic--29493be0.webp"
+    },
+    {
+      "id": "fa963b87-61a6-40be-8192-3060fe947088",
+      "image_url": "https://mobbin.com/api/mcp/short/iDWDdAG9",
+      "mobbin_url": "https://mobbin.com/screens/fa963b87-61a6-40be-8192-3060fe947088",
+      "app_name": "Duolingo",
+      "platform": "ios",
+      "search": "duolingo",
+      "file": "references/duolingo-fa963b87.webp"
+    },
+    {
+      "id": "fb6274de-c7ca-4981-b33a-d024d3945180",
+      "image_url": "https://mobbin.com/api/mcp/short/YjGfOWAp",
+      "mobbin_url": "https://mobbin.com/screens/fb6274de-c7ca-4981-b33a-d024d3945180",
+      "app_name": "Forest",
+      "platform": "ios",
+      "search": "forest",
+      "file": "references/forest-fb6274de.webp"
+    },
+    {
+      "id": "faa0e4b3-3710-4c77-92ad-b9a0db119ac8",
+      "image_url": "https://mobbin.com/api/mcp/short/ZZfvIUAQ",
+      "mobbin_url": "https://mobbin.com/screens/faa0e4b3-3710-4c77-92ad-b9a0db119ac8",
+      "app_name": "Forest",
+      "platform": "ios",
+      "search": "forest",
+      "file": "references/forest-faa0e4b3.webp"
+    },
+    {
+      "id": "feadd020-045b-477e-b54f-d4c405995a58",
+      "image_url": "https://mobbin.com/api/mcp/short/HTnqgrjV",
+      "mobbin_url": "https://mobbin.com/screens/feadd020-045b-477e-b54f-d4c405995a58",
+      "app_name": "Things 3",
+      "platform": "ios",
+      "search": "things",
+      "file": "references/things-3-feadd020.webp"
+    },
+    {
+      "id": "22a34ba5-9da8-41c2-800c-d1376abc076d",
+      "image_url": "https://mobbin.com/api/mcp/short/nyJXnWn7",
+      "mobbin_url": "https://mobbin.com/screens/22a34ba5-9da8-41c2-800c-d1376abc076d",
+      "app_name": "Breathwrk",
+      "platform": "ios",
+      "search": "breathing",
+      "file": "references/breathwrk-22a34ba5.webp"
+    }
+  ],
+  "flows": [
+    {
+      "key": "jomo_flow",
+      "query": "Jomo starting an app blocking session",
+      "page": 1,
+      "has_next_page": true,
+      "flows": [
+        {
+          "id": "cee5c462-2dcd-4d5a-9a98-20ba51ae67af",
+          "name": "Setting up an unlock method",
+          "actions": [
+            "Setting Up"
+          ],
+          "mobbin_url": "https://mobbin.com/flows/cee5c462-2dcd-4d5a-9a98-20ba51ae67af",
+          "app_name": "Jomo",
+          "platform": "ios",
+          "screen_count": 8,
+          "screens": [
+            {
+              "screen_id": "70d46a0a-4e06-4644-9c7d-d84eb83d2ee0",
+              "image_url": "https://mobbin.com/api/mcp/short/xC7DPuRT",
+              "position": 1
+            },
+            {
+              "screen_id": "6e83d8d7-db3c-47c1-bd87-e44513a34f29",
+              "image_url": "https://mobbin.com/api/mcp/short/gmmIgYGd",
+              "position": 2
+            },
+            {
+              "screen_id": "41f8aab1-91b0-4ad8-9ada-f694718476b9",
+              "image_url": "https://mobbin.com/api/mcp/short/oN7soyJu",
+              "position": 3
+            },
+            {
+              "screen_id": "75bfb6b0-dcce-4072-8703-7307a40225f5",
+              "image_url": "https://mobbin.com/api/mcp/short/HVwD800V",
+              "position": 4
+            },
+            {
+              "screen_id": "18d321fb-d254-44bb-851e-f7950c9cb4b5",
+              "image_url": "https://mobbin.com/api/mcp/short/vnBZBpK6",
+              "position": 5
+            },
+            {
+              "screen_id": "e5d5a047-15db-4b2f-a977-3b559b4e8b4f",
+              "image_url": "https://mobbin.com/api/mcp/short/TxdbDfNR",
+              "position": 6
+            },
+            {
+              "screen_id": "03e54d6e-2503-4352-8c20-79bf4eb56c9e",
+              "image_url": "https://mobbin.com/api/mcp/short/iDh3yCQ6",
+              "position": 7
+            },
+            {
+              "screen_id": "1a6bf4e3-c78c-45af-b4d7-b478a86e253a",
+              "image_url": "https://mobbin.com/api/mcp/short/L7QTo48n",
+              "position": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "opal_flow",
+      "query": "Opal onboarding",
+      "page": 1,
+      "has_next_page": true,
+      "flows": [
+        {
+          "id": "91394aa7-8b77-461f-b95a-ad3f177e98f3",
+          "name": "Onboarding",
+          "actions": [
+            "Onboarding"
+          ],
+          "mobbin_url": "https://mobbin.com/flows/91394aa7-8b77-461f-b95a-ad3f177e98f3",
+          "app_name": "Opal",
+          "platform": "ios",
+          "screen_count": 17,
+          "screens": [
+            {
+              "screen_id": "52839da1-dfe1-4642-bb90-edafc32b26cf",
+              "image_url": "https://mobbin.com/api/mcp/short/CEJFYuMj",
+              "position": 1
+            },
+            {
+              "screen_id": "b043e1a5-8afe-49da-93da-78ec0c424af7",
+              "image_url": "https://mobbin.com/api/mcp/short/33YwnL1P",
+              "position": 2
+            },
+            {
+              "screen_id": "3b7e454b-ae3c-4f70-9db8-a9d82dc8a3db",
+              "image_url": "https://mobbin.com/api/mcp/short/GyllC2I5",
+              "position": 3
+            },
+            {
+              "screen_id": "6677da06-37a6-40dc-9e8b-2364e337949d",
+              "image_url": "https://mobbin.com/api/mcp/short/3Cbvrpwf",
+              "position": 4
+            },
+            {
+              "screen_id": "2d665db3-5294-42a3-be3a-ab1a3c486f6f",
+              "image_url": "https://mobbin.com/api/mcp/short/ChX9rvjt",
+              "position": 5
+            },
+            {
+              "screen_id": "ed11e747-e234-4577-8c74-3431275ad0f9",
+              "image_url": "https://mobbin.com/api/mcp/short/EHUvI5Y1",
+              "position": 6
+            },
+            {
+              "screen_id": "44c9724e-d6fc-45a1-a876-5858f6c4d34c",
+              "image_url": "https://mobbin.com/api/mcp/short/uCo2QUHs",
+              "position": 7
+            },
+            {
+              "screen_id": "44e232a7-87d8-440c-b373-faf296082d66",
+              "image_url": "https://mobbin.com/api/mcp/short/jjlD7BFe",
+              "position": 8
+            },
+            {
+              "screen_id": "550a30b2-bda2-4613-801b-7a374e3b2fe8",
+              "image_url": "https://mobbin.com/api/mcp/short/s8ZM1aDQ",
+              "position": 9
+            },
+            {
+              "screen_id": "09015b65-75fb-4b7b-8cad-9986fbb84013",
+              "image_url": "https://mobbin.com/api/mcp/short/r5RwdHl5",
+              "position": 10
+            },
+            {
+              "screen_id": "d35a8e2e-8b81-4d2a-93c4-3f42fd7760f4",
+              "image_url": "https://mobbin.com/api/mcp/short/avnXtI3v",
+              "position": 11
+            },
+            {
+              "screen_id": "2a58fa7d-37b2-4e34-8cf7-6b0dae7026e4",
+              "image_url": "https://mobbin.com/api/mcp/short/vjwt0Qjz",
+              "position": 12
+            },
+            {
+              "screen_id": "1a7b1501-b102-4724-a81e-85b00920b89a",
+              "image_url": "https://mobbin.com/api/mcp/short/NZsgAhQG",
+              "position": 13
+            },
+            {
+              "screen_id": "3df27095-1780-43f2-a52d-ab6172e3c704",
+              "image_url": "https://mobbin.com/api/mcp/short/OCYruN6K",
+              "position": 14
+            },
+            {
+              "screen_id": "36e5b321-eb2f-452d-9b53-557fe3142fcd",
+              "image_url": "https://mobbin.com/api/mcp/short/ZKdPPr9l",
+              "position": 15
+            },
+            {
+              "screen_id": "6215151d-719f-4bbf-9516-2bfb8e3e26be",
+              "image_url": "https://mobbin.com/api/mcp/short/RA1VRzvi",
+              "position": 16
+            },
+            {
+              "screen_id": "76948985-3cad-4966-9c1c-5575abc656e0",
+              "image_url": "https://mobbin.com/api/mcp/short/Jo3BHEYd",
+              "position": 17
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

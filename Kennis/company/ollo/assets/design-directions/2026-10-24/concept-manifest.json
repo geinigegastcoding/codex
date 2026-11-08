@@ -1,0 +1,85 @@
+{
+  "created": "2026-10-24",
+  "generator": "built-in image_gen",
+  "source_commit": "07a372e4181236413cf97dccbd738c49f1377115",
+  "display_order": [
+    {
+      "number": 1,
+      "name": "Pocket Console",
+      "file": "pocket-console.png",
+      "prompt": "pocket-console-prompt.txt",
+      "source_references": [
+        "E:/MData/projecten/Ollo/app/src/main/res/drawable-nodpi/ollo_mascot.png",
+        "E:/MData/projecten/Ollo/screenshots/demo/today.png",
+        "references/opal-f4a87447.webp",
+        "references/things-3-feadd020.webp"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Window Seat",
+      "file": "window-seat.png",
+      "prompt": "window-seat-prompt.txt",
+      "source_references": [
+        "E:/MData/projecten/Ollo/app/src/main/res/drawable-nodpi/ollo_mascot.png",
+        "E:/MData/projecten/Ollo/screenshots/demo/today.png",
+        "references/forest-fb6274de.webp",
+        "references/headspace-d5b9ff12.webp"
+      ]
+    },
+    {
+      "number": 3,
+      "name": "Margin Notes",
+      "file": "margin-notes.png",
+      "prompt": "margin-notes-prompt.txt",
+      "source_references": [
+        "E:/MData/projecten/Ollo/app/src/main/res/drawable-nodpi/ollo_mascot.png",
+        "E:/MData/projecten/Ollo/screenshots/demo/today.png",
+        "references/stoic--261d032c.webp",
+        "references/things-3-feadd020.webp"
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "foreground": "#25231F",
+      "background": "#FF6B1A",
+      "ratio": 5.5
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#FF6B1A",
+      "ratio": 2.85
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#B94000",
+      "ratio": 5.53
+    },
+    {
+      "foreground": "#68655F",
+      "background": "#F4F1E8",
+      "ratio": 5.14
+    },
+    {
+      "foreground": "#25231F",
+      "background": "#E3E8D3",
+      "ratio": 12.51
+    },
+    {
+      "foreground": "#F5F1E7",
+      "background": "#242620",
+      "ratio": 13.56
+    },
+    {
+      "foreground": "#B7B8A9",
+      "background": "#242620",
+      "ratio": 7.61
+    },
+    {
+      "foreground": "#263D30",
+      "background": "#EEF2E6",
+      "ratio": 10.31
+    }
+  ]
+}

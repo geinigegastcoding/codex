@@ -1,5 +1,7 @@
 # Production readiness and launch gates
 
+**20 October update:** Current autonomous work and the latest 0.4.2 test-candidate evidence are in [[PRODUCT-WORK-2026-10-20]]: 157 unit tests, 150 selected native checks, 13 package checks and 16 KB alignment pass. The older version/source acceptance below is historical. Production signing, live billing, owner declarations and physical-device/store acceptance remain open; a debug APK does not close those gates.
+
 **Status date: 19 October 2026.** Current source checkpoint `6f798f9` builds versionCode 5 / versionName `0.3.1-preview`. This candidate passed91unit tests,lint0errors/18existing warnings and13debug-package checks. Remembered-choice native checks passed44/fourviewed captures at each normal/200%font; onboarding normal40checks passed,200%phase is finishing. A label-only optional-essentials clarification is pending rebuild/confirmation. Its default path is a seven-step, app-choice-first setup; the optional usage-history path retains nine steps. Do not treat source presence as candidate acceptance.
 
 The previous stable `0.3.0` APK (`c2adee7f…`) has scoped emulator and RevenueCat Test Store evidence. Those checks do not establish `0.3.1` acceptance, production readiness, Play approval, or physical/OEM behavior. See the dated evidence sections below and the project [app README](../../../projecten/Ollo/README.md) for artifact identity.
