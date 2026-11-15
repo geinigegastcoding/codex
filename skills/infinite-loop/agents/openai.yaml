@@ -1,0 +1,7 @@
+interface:
+  display_name: "Infinite Loop"
+  short_description: "Autonomous improvements with a testable deadline"
+  default_prompt: "Use $infinite-loop to improve this project by owner value until I stop you or the stated deadline, and deliver a verified testable result."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,7 +1,7 @@
 ---
 title: Reading-app — productonderzoek en ideeën
 created: 2026-09-09
-updated: 2026-10-12
+updated: 2026-10-26
 type: project-research
 tags: [personal, reading-app, product, research, android]
 status: active
@@ -29,7 +29,7 @@ De bronnen hieronder zijn vooral Reddit-discussies. Reddit is bruikbaar voor ong
 | Thema | Wat terugkomt | Confidence | Gevolg voor de app |
 |---|---|---:|---|
 | Eigen bibliotheek kunnen zoeken en ordenen | Mensen willen hun eigen boeken, lijsten en statussen snel vinden; verborgen of versnipperde lijsten voelen als een defect. | Hoog binnen deze set | Maak cataloguszoeken en zoeken in Mijn bibliotheek expliciet verschillende acties. Voeg lokale tekstzoeking, filters en eenvoudige sortering toe. |
-| Catalogusdekking mag handmatige invoer niet blokkeren | Recente Android-trackerreviews beschrijven boeken die niet gevonden worden en een ontbrekende handmatige fallback als reden om de app niet te kunnen gebruiken. | Middel-laag binnen deze set | Behandel handmatig toevoegen en later corrigeren als kernpad van R-07; een online catalogusresultaat is nooit de enige manier om een persoonlijk archief te vullen. |
+| Catalogusdekking mag handmatige invoer niet blokkeren | Recente Android-trackerreviews beschrijven boeken die niet gevonden worden en een ontbrekende handmatige fallback als reden om de app niet te kunnen gebruiken; een recente vraag van een fysieke-lezer wil eigen data kunnen invoeren. | Middel binnen deze set | Behandel handmatig toevoegen en later corrigeren als kernpad van R-07; een online catalogusresultaat is nooit de enige manier om een persoonlijk archief te vullen. |
 | Grote collecties vragen om snelle lokale navigatie | Naast zoeken kan een zeer lange persoonlijke lijst behoefte geven aan een alfabetische sprong; dit komt hier uit één recente Bookshelf-feedback en is geen basisbehoefte. | Laag | Houd vrije lokale zoeking als basis en parkeer een letterindex als schaalafhankelijke QOL-optie. |
 | Lage invoerfrictie | Een momenteel gelezen boek, duidelijke status en een direct bruikbare boekpagina zijn belangrijker dan een volle homepage; een verse Android-test toont dat een paginaladder en een door de IME bedekte opslagknop de kernflow breken. | Hoog binnen deze set voor de basisroute; middel-laag voor de precieze control | Houd een `Verder lezen`-ingang prominent; kies absolute paginainvoer of `Vul tot pagina`, houd velden/opslaan bereikbaar met het toetsenbord en geef duidelijke validatiefout. Geen timer of statistiek nodig. |
 | Meerdere boeken tegelijk kunnen hervatten | Lezers wisselen geregeld tussen fysieke, digitale en audioboeken of tussen boeken voor verschillende plekken en stemmingen; een te grote actieve lijst kan juist overzicht kosten. | Middel | Laat meerdere boeken `Bezig` zijn, maar houd de snelle terugkeerweergave klein en voorspelbaar. Geen harde limiet op de onderliggende collectie. |
@@ -193,6 +193,32 @@ Deze pass combineert twee nieuwe Reddit-signalen over een sobere persoonlijke bi
 | Boekgebonden eigen notities kunnen een pauze overbruggen | Een andere directe vraag noemt willekeurige notities en screenshots en het vergeten van personages/details na een leesonderbreking. De kleinste vertaling is bestaande boekgebonden `Notitie`-capture, niet een aparte character-database of automatische spoilerrecap. | Laag-middel; één recente vraag met ontwikkelaarsreacties en Reddit-sample bias | Versterk R-03’s lichte hervatcontext: toon optioneel de laatste eigen notitie naast pagina/hoofdstuk. Houd de context door de lezer geschreven en laat capture-first zwaarder wegen dan een nieuw gestructureerd model. |
 | Een custom rij moet één begrijpelijke focusroute hebben | Compose semantics laat custom componenten hun betekenis, rol, foutstatus en eventueel samengevoegde subtree expliciet maken. Compose focus targets maakt een klikbare component al focusbaar en waarschuwt tegen een tweede losse `focusable`-target. | Hoog voor platformrichtlijn, niet voor featurevraag | Maak boek- en Journalrijen semantisch voorspelbaar: één primaire openactie, afzonderlijke 48dp-doelen voor favoriet/overflow, geen dubbele TalkBack- of toetsenbordfocus. Gebruik dezelfde regel voor error states. |
 
+## 2.14 Zeventiende pass — historische invoer, handmatige controle en formulierherstel
+
+Deze pass toetst de betrouwbaarheid van het persoonlijke archief met verse Reddit-signalen uit tracker-, lees- en e-readercommunities en met actuele Android-richtlijnen voor validatie en focus. Reddit blijft zelfselectief: de bronnen bevatten uitgesproken gebruikers, hobbygemeenschappen en enkele appbouwers. De Android-bronnen onderbouwen platformgedrag, niet de omvang van de marktvraag.
+
+| Signaal | Nieuwe aanwijzing | Confidence | Gevolg voor de app |
+|---|---|---:|---|
+| Historische invoer is onderdeel van een archief | Een r/Booktokreddit-vraag zoekt een tracker die boeken van januari kan terugzetten nadat andere apps slechts ongeveer een week terug laten gaan. In r/readwithme moest een gebruiker na het verwijderen van Goodreads opnieuw bij nul beginnen en was het lastig om eerdere boeken te reconstrueren. | Middel binnen twee recente Reddit-discussies; Reddit-sample bias | Versterk R-02 en R-06: een handmatige toevoeging, import of afronding moet een expliciete historische datum kunnen bewaren; toon in een restore/import-preview welke datum uit de bron komt en welke datum de lokale invoer krijgt. Gebruik geen invoertijd als stille vervanging voor de leesdatum. |
+| Portabiliteit is een overstapcriterium, geen technische luxe | In dezelfde Booktokreddit-thread wordt het ontbreken van export als mogelijke vendor lock-in gezien; een andere lezer noemt een import van zeven jaar Goodreads-data als belangrijke overstapwaarde. | Middel-laag; één trackerthread en één leescommunitythread, met sterke voorkeurenbias | Houd R-02 P0 en maak de kleinste belofte concreet: exporteerbare eigen geschiedenis plus controleerbare restore, inclusief datums en notities. Geen account, cloudsync of open scopebesluit toevoegen. |
+| Handmatige invoer moet een volwaardige route blijven | Een directe r/IndianReaders-vraag gaat over fysieke boeken en vraagt expliciet om een eigen lijst waarin de lezer gegevens zelf kan invoeren. | Middel-laag binnen één recente lezersvraag; regionale community- en Reddit-sample bias | Versterk R-07: `Geen resultaat` en fysieke boeken krijgen een zichtbare handmatige invoerroute die later te corrigeren is. Een catalogusmatch blijft een versneller, geen vereiste; een scanner blijft buiten de v1-grens. |
+| Pauzeren kan geschiedenis bewaren zonder de actieve lijst te vervuilen | In r/readingjournals verplaatst een lezer meerdere gestarte maar tijdelijk stilgelegde boeken naar een aparte hold/pause-sectie om niet steeds dezelfde ongewijzigde actieve boeken te zien, terwijl het feit dat ze gestart waren behouden blijft. | Laag-middel; één directe post en commentaar in een journalingcommunity | Verfijn R-06: `Gepauzeerd` blijft een uitkomst van een leesperiode en herstelbare hervatcontext, niet een vierde rootstatus. Toon de periode in historie en laat hervatten de oude pagina/notities behouden. |
+| Formulierherstel moet focus en fouttekst samen behandelen | Androids actuele Compose-gids voor inputvalidatie koppelt een foutstatus aan `isError` en ondersteunende tekst. De actuele focusgids noemt logische focus, herstel na onderbreking/configuratiewijziging, zichtbare focus en scrollen naar het actieve element; de focuspagina is bijgewerkt op 2026-09-29. | Hoog voor platformrichtlijn; geen marktconfidence | Versterk R-03: behoud het concept, toon inline foutfeedback, verplaats focus naar het eerste ongeldige veld en scroll dat veld boven de IME. Herstel focus/scrollcontext na een veilige terugkeer of configuratiewijziging; laat een lege opslagpoging nooit stil eindigen. |
+
+De kleine productvertaling van deze pass is daarom **herstelbare historische capture**: een gebruiker kan een oud boek of oude leesperiode handmatig of via restore invoeren, ziet de bron- en leesdatum, en krijgt bij ongeldige invoer één duidelijk herstelpad. Dit blijft binnen de bestaande local-only-, drie-status- en typed-journalgrenzen. R-02 blijft P0; R-06 en R-07 blijven P1-onderzoek, maar krijgen scherpere minimale acceptatiecriteria. R-05, R-12 en de sociale/statistiekideeën worden door deze pass niet verhoogd.
+
+## 2.15 Achttiende pass — historische beginsituatie, rustige kern en terugkeerfocus
+
+Deze pass combineert een nieuwe Reddit-vraag over een al lopend boek met een brede r/books-discussie over waarom mensen hun lezen wel of niet bijhouden. Daarnaast zijn de actuele Compose-richtlijnen voor focusaanvraag en focusherstel gecontroleerd. Reddit blijft zelfselectief en bevat uitgesproken lezers; de Android-bronnen onderbouwen platformgedrag, niet de omvang van de marktvraag.
+
+| Signaal | Nieuwe aanwijzing | Confidence | Gevolg voor de app |
+|---|---|---:|---|
+| Een bestaande voortgang is geen reeks verzonnen leessessies | In een r/BookTrack-vraag heeft een lezer al honderden pagina’s gelezen, maar wordt een startdatum bij het invoeren van de huidige stand geïnterpreteerd alsof alle pagina’s op één dag zijn gelezen. De tijdelijke workaround verwijdert de datum en maakt dagelijkse historie minder duidelijk. | Middel binnen één directe thread; Reddit-sample bias | Verfijn R-02, R-03 en R-06: geef een historische beginsituatie een expliciete `Historische stand` met pagina/totaal en een bekende of onbekende peildatum, los van gedateerde leessessies. Als sessiedata ontbreken, bewaar het totaal zonder verzonnen dagstatistiek. |
+| De nuttigste tracker mag klein en stil blijven | In de brede r/books-weekthread beschrijven meerdere lezers een lijst, rating, datum en korte persoonlijke notitie als genoeg; anderen haken af wanneer tracking als extra werk of metriekdruk voelt. Er is ook vraag naar seriepositie en herinnering aan eerder gelezen boeken, maar geen unanieme vraag naar dashboards. | Middel binnen één algemene thread met meerdere onafhankelijke reacties; Reddit-sample bias en tegengestelde voorkeuren | Bevestig de rustige local-first kern. R-03/R-04 mogen titel, status, datum, pagina en eigen korte context snel terugvindbaar maken; verhoog geen statistiek-, challenge- of sociale scope. Houd metrics secundair of afwezig zolang ze geen concrete archiefvraag oplossen. |
+| Terugkeer naar een collectie moet focus en context behouden | Android documenteert `focusRestorer()` voor lijsten en grids en beschrijft focusherstel wanneer iemand vanuit een detail teruggaat. De recente focusgids noemt ook expliciete `requestFocus()` na een gebruikersactie en focus op de actieve navigatiebestemming. | Hoog voor platformrichtlijn; geen marktconfidence | Voeg ontwerpregel 19 toe: keer na Back uit boekdetail of notitiedetail terug naar het eerder gekozen boek-/Journalitem en behoud filter/scrollcontext. Herstel op keyboard/D-pad de focus in de lijst; leid focus in een navigatiegroep naar de actieve bestemming. Autofocus een invoerveld alleen na een expliciete actie. |
+
+De kleinste productvertaling van deze pass is **historische stand plus herstelbare terugkeer**: import of handmatige invoer mag een huidige pagina bewaren zonder een fictieve leessessie te maken, en een gebruiker die uit detail teruggaat verliest zijn plaats niet. Dit wijzigt de local-only-grens, de drie hoofdstatussen en de typed-journalgrens niet.
+
 ## 3. Verbatim voice-of-reader
 
 De citaten zijn kort gehouden; ze zijn signalen, geen requirements.
@@ -279,6 +305,21 @@ Deze fragmenten zijn bewust kort; de datum is de datum van de bron of van de rel
 - “a “jump to page” or “fill up to here” on tap would help a lot.” — [r/TestersCommunity: I Need Testers for my Reader Tracker](https://www.reddit.com/r/TestersCommunity/comments/1x3rylm/i_need_testers_for_my_reader_tracker_a_clean_book/) — 2026-10-12; directe Android-testfeedback over voortgang zonder tientallen taps — `#pain` `#outcome`.
 - “the keyboard covers Total Pages and the Save button” — [r/TestersCommunity: I Need Testers for my Reader Tracker](https://www.reddit.com/r/TestersCommunity/comments/1x3rylm/i_need_testers_for_my_reader_tracker_a_clean_book/) — 2026-10-12; IME- en validatiefouten blokkeren de kerninvoer — `#pain` `#language`.
 
+### 3.14 Nieuwe korte signalen — zeventiende pass
+
+- “they only let you go back like a week” — [r/Booktokreddit: Tracking books](https://www.reddit.com/r/Booktokreddit/comments/1x6nghg/tracking_books/) — 2026-10-15; historische backfill is een concrete archiefbehoefte — `#pain` `#outcome`.
+- “Their vendor lock-in has always been a red flag for me.” — [r/Booktokreddit: Tracking books](https://www.reddit.com/r/Booktokreddit/comments/1x6nghg/tracking_books/) — 2026-10-15; exportbaarheid beïnvloedt vertrouwen in een tracker — `#objection` `#pain`.
+- “I am just not a person to care about stats.” — [r/readwithme: What reading apps are you using?](https://www.reddit.com/r/readwithme/comments/1x7gycw/what_reading_apps_are_you_using/) — 2026-10-17; een persoonlijke tracker hoeft geen meetdashboard te zijn — `#objection` `#language`.
+- “typing out a book review on my phone keyboard is a nightmare.” — [r/readwithme: What reading apps are you using?](https://www.reddit.com/r/readwithme/comments/1x7gycw/what_reading_apps_are_you_using/) — 2026-10-17; langere invoer en toestelcontext kunnen een aparte frictie vormen — `#pain` `#language`.
+- “I mostly read physical books so I need to be able to feed data myself.” — [r/IndianReaders: Any book tracking apps out there?](https://www.reddit.com/r/IndianReaders/comments/1x0rd9m/any_book_tracking_apps_out_there/) — 2026-10-18; handmatige invoer is voor fysieke lezers een voorwaarde — `#pain` `#outcome`.
+- “I decided to put them on hold (or pause them) for a while” — [r/readingjournals: I finally caught up!](https://www.reddit.com/r/readingjournals/comments/1x8h6a4/i_finally_caught_up/) — 2026-10-17; pauzeren kan actieve keuzedruk verlagen zonder leesgeschiedenis te wissen — `#outcome` `#qol`.
+
+### 3.15 Nieuwe korte signalen — achttiende pass
+
+- “it thinks that I've made this progress one day” — [r/BookTrack: Add ongoing book to Book Tracker correctly](https://www.reddit.com/r/BookTrack/comments/1xebd3t/add_ongoing_book_to_book_tracker_correctly/) — 2026-10-24; een bestaande paginastand mag niet stil in één verzonnen leessessie veranderen — `#pain` `#outcome`.
+- “I don’t really care about any other features than just a list and a rating” — [r/books: Weekly FAQ Thread October 25 2026](https://www.reddit.com/r/books/comments/1xeyfbw/weekly_faq_thread_october_25_2026_do_you_keep/) — 2026-10-25; een eenvoudige terugvindbare lijst kan het hele doel zijn — `#outcome` `#objection`.
+- “date finished, title, author, a 1-5 star rating and 1-2 sentence comments” — [r/books: Weekly FAQ Thread October 25 2026](https://www.reddit.com/r/books/comments/1xeyfbw/weekly_faq_thread_october_25_2026_do_you_keep/) — 2026-10-25; korte eigen context is waardevoller dan verplichte metriek — `#outcome` `#qol`.
+
 ## 4. Gerangschikte ideeënbacklog
 
 Prioriteit is een volgorde voor productonderzoek, niet een belofte om te bouwen.
@@ -336,6 +377,8 @@ Een recente [r/ebooks-vraag over personages en details](https://www.reddit.com/r
 De recente [Bookly-review over directe huidige paginainvoer](https://play.google.com/store/apps/details?hl=en-US&id=com.twodoor.bookly) maakt de keuze voor absolute pagina’s concreet: de gebruiker hoeft niet eerst een leessessie te reconstrueren om de juiste stand op te slaan.
 
 Een recente Android-trackervermelding, [Reading Tracker & Page Counter op Google Play](https://play.google.com/store/apps/details?id=com.tenline.readingtracker), combineert die absolute pagina met een korte eigen notitie over wat er laatst gebeurde. Dat is concurrentpositionering en geen gebruikersreview, maar het is een bruikbare kleine vorm voor de al geparkeerde hervatcontext: pagina eerst, eigen context optioneel.
+
+R-03 moet naast absolute paginainvoer ook een ongedateerde of expliciet gedateerde beginsituatie kunnen onderscheiden van latere sessies. De recente [r/BookTrack-vraag over een al lopend boek](https://www.reddit.com/r/BookTrack/comments/1xebd3t/add_ongoing_book_to_book_tracker_correctly/) laat zien waarom: een startdatum plus totaalstand kan anders een fictieve dagprestatie creëren. Dit is een databetrouwbaarheidsregel, geen extra statistiekfeature.
 
 **Bewijs.** De wens voor een duidelijke currently-reading-optie, individuele boekpagina’s en een eenvoudige UI staat samen in [r/books: Best Apps for Books](https://www.reddit.com/r/books/comments/13jrguc/best_apps_for_books/) en in de bestaande succescriteria van [design.md](design.md). De uitbreiding naar meerdere boeken wordt ondersteund door [r/Booktokreddit over meerdere boeken](https://www.reddit.com/r/Booktokreddit/comments/1q3gm0z/reading_multiple_books_at_once/), [r/ReadingSuggestions over meerdere boeken](https://www.reddit.com/r/ReadingSuggestions/comments/1qxtd45/multiple_books/) en [r/books over hoeveel boeken lezers tegelijk lezen](https://www.reddit.com/r/books/comments/1t93u9v/weekly_faq_thread_may_10_2026_how_many_books_do/). De terugkeer na een onderbreking en de voorkeur voor een eenvoudige actuele voortgangsweergave staan in [r/ereader over gratis booktrackers](https://www.reddit.com/r/ereader/comments/1w9qdwx/what_are_the_best_free_book_tracking_apps_for/) en [r/ereader over een reading journal](https://www.reddit.com/r/ereader/comments/1w32df7/are_you_using_any_type_of_reading_journal/). De concrete signalen voor conceptbehoud en directe paginainvoer staan in [StoryGraph op Google Play](https://play.google.com/store/apps/details?id=com.thestorygraph.thestorygraph) en [Bookly op Google Play](https://play.google.com/store/apps/details?hl=en-US&id=com.twodoor.bookly). Confidence: hoog voor snelle terugkeer en directe capture; middel voor precies drie zichtbare kaarten; laag-middel voor hervatcontext.
 
@@ -496,6 +539,9 @@ Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bes
 16. **Maak samengestelde rijen en foutstatussen semantisch eenduidig.** Een boek- of Journalrij heeft één primaire openactie; favoriet en overflow blijven afzonderlijke 48dp-doelen. Gebruik semantics om custom inhoud, rol, staat en fouttekst betekenis te geven en voorkom een dubbele focusroute door `clickable` en `focusable` niet naast elkaar op hetzelfde element te zetten. [Compose semantics](https://developer.android.com/develop/ui/compose/accessibility/semantics?hl=en), [Focus targets](https://developer.android.com/develop/ui/compose/touch-input/focus/focus-target).
 17. **Houd formulierinhoud bereikbaar wanneer de IME verschijnt.** Een toevoeg- of voortgangsformulier moet kunnen scrollen of zijn layout aan `WindowInsets.ime` aanpassen, zodat totaalpagina en opslaan niet achter het toetsenbord verdwijnen. Gebruik expliciete foutfeedback bij lege of ongeldige velden; een knop die niets doet zonder uitleg is geen herstelbare fouttoestand. [Set up window insets](https://developer.android.com/develop/ui/compose/system/insets-ui), [Use keyboard IME animations](https://developer.android.com/develop/ui/compose/system/keyboard-animations?hl=en).
 
+18. **Maak formulierherstel expliciet via inline validatie en focus.** Toon bij een ongeldige waarde een duidelijke `isError`-/ondersteunende tekststatus op of na het relevante invoermoment, behoud de concepttekst en verplaats focus naar het eerste ongeldige veld. Scroll het veld en de fouttekst in beeld boven de IME; herstel focus en relevante scrollcontext na een onderbreking, dialoogsluiting of configuratiewijziging. [Validate input as the user types](https://developer.android.com/develop/ui/compose/quick-guides/content/validate-input), [Focus in Compose](https://developer.android.com/develop/ui/compose/touch-input/focus).
+19. **Herstel terugkeerfocus na detailnavigatie.** Bewaar vóór het openen van boek- of notitiedetail het actieve lijstitem en herstel na Back of een teruggesture de focus en zichtbare collectiecontext. Gebruik voor LazyColumn/LazyGrid een focusherstelpunt en geef in een navigatiegroep de actieve bestemming de eerste focus; gebruik `requestFocus()` alleen als gevolg van een expliciete gebruikersactie. Dit is vooral relevant voor hardwaretoetsenbord, D-pad en grotere schermen, niet als reden om op iedere root automatisch de IME te openen. [Restore focus](https://developer.android.com/develop/ui/compose/touch-input/focus/focus-restoration), bijgewerkt 2026-09-29, [Programmatically request focus](https://developer.android.com/develop/ui/compose/touch-input/focus/request-focus?hl=en), bijgewerkt 2026-10-22.
+
 ## 6. Bekende documentatiegaten
 
 - [design.md](design.md) zegt in de inleiding dat secties 9–23 schermen, gedrag, voorbeeldinhoud en overdracht bevatten, maar het huidige bestand eindigt bij §8.6. Dit moet vóór een bouwopdracht worden opgelost: ontbrekende secties aanvullen of de inleiding corrigeren.
@@ -532,15 +578,20 @@ Deze regels zijn praktische vertalingen voor de Reading-app; ze vervangen de bes
 - De huidige spec heeft één status-, voortgangs- en datumset per boek en geen leesperiodehistorie. R-06 beschrijft dit als open datamodelbeslissing vóór herlezen of DNF wordt toegevoegd.
 - Er is nog geen eerstehands onderzoek onder de beoogde gebruiker. Reddit vormt richting, geen validatie.
 
+- R-03 legt nog niet vast welk veld na een mislukte opslag focus krijgt, hoe fouttekst boven de IME wordt gebracht en hoe focus/scrollcontext na een onderbreking of configuratiewijziging wordt hersteld. Ontwerpregel 18 maakt dit een apart controlepunt.
+- R-02 en R-06 beschrijven nog niet hoe historische leesdatums worden onderscheiden van import- of invoertijden. Een restore-preview moet beide zichtbaar maken waar ze verschillen; een historische toevoeging mag niet stil naar vandaag verschuiven.
+- De spec beschrijft nog niet welk boek- of Journalitem focus terugkrijgt na Back uit detail, vooral niet in een lijst-detaillayout of op een groter scherm. Ontwerpregel 19 maakt het bewaren van focus en zichtbare collectiecontext een apart controlepunt.
+- De huidige spec beschrijft nog geen herstelbare `Gepauzeerd`-uitkomst of hoe een lezer een gestarte periode uit de actieve lijst haalt zonder haar als `DNF` of `Wil ik lezen` te vermommen. Dit blijft een R-06-scopebeslissing; de drie rootstatussen wijzigen niet automatisch.
+
 ## 7. Volgende onderzoekslus
 
 De volgende lus moet klein blijven en maximaal enkele beslissingen toevoegen:
 
-1. Lees alleen nieuwe 1–3-sterrenreviews, reviews van andere Android-trackers of directe Android-testfeedback; controleer specifiek of herstel, imports, absolute paginainvoer, IME-bereikbaarheid en invoerfrictie zich buiten deze eerste tester-/app-store-set herhalen.
+1. Lees alleen nieuwe 1–3-sterrenreviews, reviews van andere Android-trackers of directe Android-testfeedback; controleer specifiek of herstel, imports, historische beginsituaties, absolute paginainvoer, IME-bereikbaarheid en invoerfrictie zich buiten deze eerste tester-/app-store-set herhalen.
 2. Zoek Nederlandstalige lezers- en e-readercommunities om te testen of de huidige Nederlandse interface en terminologie natuurlijk zijn.
 3. Vergelijk drie lokale dataflows: handmatige backup, JSON restore en Markdown-export. Noteer welk probleem elk formaat oplost en hoe quote-reflectierelaties daarin passen; voeg geen formaat toe zonder doel.
 4. Zoek specifiek naar ervaringen met aparte leesperioden, DNF-rating, serievolgorde en verkeerde catalogusedities. Heropen R-10 alleen bij een tweede onafhankelijke bron of eerstehands signaal; beslis daarna of R-06, R-07 of R-11 verder komt.
-5. Zoek bij andere tracker-apps naar eerstehands bewijs voor absolute pagina-invoer of `Vul tot pagina`, importmapping, dataherstel, catalogusuitval, DNF-redenen, externe capture, IME-/validatiegedrag en klikbare seriecontext; controleer specifiek of automatische tracking en widgetwaarde ook voor Android-trackers gelden en niet alleen voor reader-apps.
+5. Zoek bij andere tracker-apps naar eerstehands bewijs voor absolute pagina-invoer of `Vul tot pagina`, importmapping, dataherstel, historische startsituaties, catalogusuitval, DNF-redenen, externe capture, IME-/validatiegedrag, focusherstel en klikbare seriecontext; controleer specifiek of automatische tracking en widgetwaarde ook voor Android-trackers gelden en niet alleen voor reader-apps.
 6. Toets tegelijk de precieze hervatcontext: helpt een eigen laatste notitie, of is alleen titel/pagina genoeg? Vergelijk dit met meerdere gelijktijdige `Bezig`-boeken en bewaak dat `Snel parkeren`, de share-target en capture-versus-verwerken geen verborgen tweede inbox worden.
 7. Herzie de backlog: voeg alleen nieuwe ideeën toe als ze een bron, een concreet probleem en een kleinste nuttige versie hebben. Verwijder dubbele varianten en verlaag ideeën met alleen algemeen gebruikersgedrag naar hypothese.
 
@@ -683,6 +734,26 @@ De volgende lus moet klein blijven en maximaal enkele beslissingen toevoegen:
 - **Bewust niet gedaan:** geen appcode, design.md, mockup, readerintegratie, cloudsync, sociale laag, statistiekdashboard, automatische samenvatting of extra status toegevoegd.
 - **Volgende stap:** directe Android-trackerreviews en Nederlandstalige bronnen blijven toetsen; kijk vooral of de page-jump/IME-foutpatronen en de voorkeur voor minimale lokale archieven onafhankelijk terugkomen.
 
+### 2026-10-19 — zeventiende pass: historische invoer, pauzeren en formulierherstel
+
+- **Gedaan:** verse Reddit-signalen gelezen uit r/Booktokreddit, r/readwithme, r/IndianReaders en r/readingjournals; actuele Android Compose-richtlijnen gecontroleerd voor inline inputvalidatie en focusherstel.
+- **Nieuwe signalen:** historische backfill en exportbaarheid beïnvloeden het vertrouwen in een tracker; fysieke lezers verwachten eigen invoer; een pauze kan een gestarte leesperiode uit de actieve lijst halen zonder haar te wissen; langere invoer vraagt om beter formulierherstel.
+- **Verwerkt:** R-02 en R-06 aangescherpt met expliciete historische datums en een herstelbare `Gepauzeerd`-uitkomst; R-07 versterkt met een volwaardige handmatige route; R-03 en Android-ontwerpregel 18 uitgebreid met inline foutfeedback, focus naar het eerste ongeldige veld en IME-veilige scrollcontext. R-02 blijft P0; R-06/R-07 blijven P1; R-05/R-12 en sociale/statistiekfeatures zijn niet verhoogd.
+- **Bias en confidence:** Reddit-signalen komen uit kleine, zelfselectieve communities; de nieuwe thread over minimale trackers bevat meerdere voorkeuren maar is geen representatieve steekproef. Appbouwers en self-promotion zijn niet als primaire vraag geteld. Android-validatie- en focusregels hebben hoge platformconfidence, maar zeggen niets over marktomvang.
+- **Bron- en backlogcontrole:** nieuwe bron-URL’s zijn uniek en er zijn geen dubbele R-koppen toegevoegd; bestaande local-only-, drie-status- en private-archivegrenzen blijven intact.
+- **Bewust niet gedaan:** geen appcode, design.md, images, mockup, account, cloudsync, scanner, sociale laag of statistiekdashboard gewijzigd of toegevoegd.
+- **Volgende stap:** zoek nog één onafhankelijke bron voor historische backfill of handmatige invoer en toets of `Gepauzeerd` als periode-uitkomst natuurlijker is dan een extra status; heropen geen nieuwe scope zonder tweede bevestiging.
+
+### 2026-10-26 — achttiende pass: historische beginsituatie, rustige kern en terugkeerfocus
+
+- **Gedaan:** een nieuwe r/BookTrack-vraag over het invoeren van een al lopend boek en de brede r/books-weekthread van 25 oktober gelezen; actuele Android Compose-pagina’s voor focusaanvraag en focusherstel gecontroleerd.
+- **Nieuwe signalen:** een bestaande paginastand kan ten onrechte als één dagprestatie worden opgeslagen; meerdere lezers vinden een lijst, rating, datum en korte eigen context genoeg, terwijl metriekdruk tracking minder aantrekkelijk maakt; Android beschrijft herstel van focus na terugkeer uit detail.
+- **Verwerkt:** R-02, R-03 en R-06 aangescherpt met het onderscheid tussen een historische beginsituatie en gedateerde sessies; de rustige kern en afwezigheid van dashboards bevestigd; Android-ontwerpregel 19 en het bijbehorende documentatiegat toegevoegd.
+- **Bias en confidence:** de r/books-thread is breder dan de eerdere nichethreads en bevat meerdere onafhankelijke reacties, maar blijft zelfselectie met tegengestelde voorkeuren voor statistiek. De r/BookTrack-thread is één directe casus. Android-focusregels hebben hoge platformconfidence; ze zeggen niets over marktomvang.
+- **Bron- en backlogcontrole:** alleen nieuwe, unieke bron-URL’s toegevoegd; geen backlogkoppen gedupliceerd of prioriteiten verhoogd. De local-only-, drie-status- en private-archivegrenzen blijven intact.
+- **Bewust niet gedaan:** geen appcode, design.md, images, mockup, account, cloudsync, scanner, sociale laag, dashboard of nieuwe status gewijzigd of toegevoegd.
+- **Volgende stap:** zoek een tweede onafhankelijke bron voor historische beginsituaties of importmapping en toets terugkeerfocus op een echte Android-tracker; houd de minimale kern als niet-functionele prioriteitsgrens.
+
 ## 9. Onderhoudsritme
 
 Deze onderzoeksloop draait zelfstandig wekelijks op maandagochtend in dezelfde Codex-taak. Een run:
@@ -787,3 +858,13 @@ Een wijziging aan [design.md](design.md) blijft een expliciete open beslissing; 
 - [Lezen voor de lijst — niveaus 12–15](https://www.lezenvoordelijst.nl/media/660274/pdf_leesniveaus_12tm15.pdf)
 - [Mobbin — Life Reset screen reference](https://mobbin.com/screens/c68ed0a3-309b-4e13-acfa-44f65e4246c1)
 - [Mobbin — Matter screen reference](https://mobbin.com/screens/e67d58bb-292d-4cfc-af54-ddb45124a44b)
+- [Reddit — Tracking books (r/Booktokreddit)](https://www.reddit.com/r/Booktokreddit/comments/1x6nghg/tracking_books/)
+- [Reddit — What reading apps are you using? (r/readwithme)](https://www.reddit.com/r/readwithme/comments/1x7gycw/what_reading_apps_are_you_using/)
+- [Reddit — Any book tracking apps out there? (r/IndianReaders)](https://www.reddit.com/r/IndianReaders/comments/1x0rd9m/any_book_tracking_apps_out_there/)
+- [Reddit — I finally caught up! (r/readingjournals)](https://www.reddit.com/r/readingjournals/comments/1x8h6a4/i_finally_caught_up/)
+- [Android — Validate input as the user types](https://developer.android.com/develop/ui/compose/quick-guides/content/validate-input)
+- [Android — Focus in Compose](https://developer.android.com/develop/ui/compose/touch-input/focus)
+- [Reddit — Add ongoing book to Book Tracker correctly (r/BookTrack)](https://www.reddit.com/r/BookTrack/comments/1xebd3t/add_ongoing_book_to_book_tracker_correctly/)
+- [Reddit — Weekly FAQ Thread October 25 2026 (r/books)](https://www.reddit.com/r/books/comments/1xeyfbw/weekly_faq_thread_october_25_2026_do_you_keep/)
+- [Android — Restore focus](https://developer.android.com/develop/ui/compose/touch-input/focus/focus-restoration)
+- [Android — Programmatically request focus](https://developer.android.com/develop/ui/compose/touch-input/focus/request-focus?hl=en)
