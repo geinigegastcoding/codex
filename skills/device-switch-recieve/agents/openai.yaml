@@ -1,0 +1,3 @@
+interface:
+  display_name: "Device Switch Recieve"
+  short_description: "Prepare a shared workspace on another device"

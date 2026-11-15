@@ -75,3 +75,23 @@
 	path = projecten/calorie-tracker-android
 	url = https://github.com/geinigegastcoding/luna-calorie-tracker.git
 	branch = main
+[submodule "lastdone-android"]
+	path = lastdone-android
+	url = https://github.com/geinigegastcoding/lastdone-android.git
+	branch = master
+[submodule "klanten/WebsitePapa2-orange-test"]
+	path = klanten/WebsitePapa2-orange-test
+	url = https://github.com/geinigegastcoding/papawebsite.git
+	branch = codex/papa-orange-test
+[submodule "projecten/cookclip"]
+	path = projecten/cookclip
+	url = https://github.com/geinigegastcoding/cookclip-android.git
+	branch = main
+[submodule "projecten/character-model-suite"]
+	path = projecten/character-model-suite
+	url = https://github.com/geinigegastcoding/character-model-suite.git
+	branch = main
+[submodule "projecten/kamerrede"]
+	path = projecten/kamerrede
+	url = https://github.com/geinigegastcoding/kamerrede.git
+	branch = main
